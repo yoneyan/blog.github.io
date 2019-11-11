@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clamav on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/clamav/</link>
+    <description>Recent content in clamav on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 10 Jul 2017 00:24:16 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/clamav/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>freshclamで更新できない</title>
+      <link>http://cloud.yoneyan.net/post/cannot-update-with-freshclam/</link>
+      <pubDate>Mon, 10 Jul 2017 00:24:16 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/cannot-update-with-freshclam/</guid>
+      <description>ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
+ウイルス定義ファイルを更新しようとすると&amp;hellip;    おい&amp;hellip;まじか&amp;hellip;
+root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).
+こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので
+rm /var/log/clamav/freshclam.log
+というコマンドを実行すると、
+root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started at Mon Jul 10 00:03:32 2017 Downloading main.cvd [100%] main.cvd updated (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr) Downloading daily.cvd [100%] daily.cvd updated (version: 23548, sigs: 1739222, f-level: 63, builder: neo) bytecode.cvd is up to date (version: 305, sigs: 62, f-level: 63, builder: neo) Database updated (6305533 signatures) from db.</description>
+    </item>
+    
+  </channel>
+</rss>

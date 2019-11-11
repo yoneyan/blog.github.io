@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>openvpn on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/openvpn/</link>
+    <description>Recent content in openvpn on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 17 Apr 2019 21:37:37 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/openvpn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EdgerouterでOpenVPNクライアントを使う</title>
+      <link>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</link>
+      <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</guid>
+      <description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
+サーバー側の設定はこちらから
+1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
+mkdir /config/vpn/ mkdir /config/vpn/VPN1 cd /config/vpn/VPN1  2．必要なファイルをEdgerouterに持ってくる winscpなどで必要なファイルを入れます。
+ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイルを入れてあげます。
+/config/vpn/VPN1/ca.crt
+/config/vpn/VPN1/client1.crt
+/config/vpn/VPN1/client1.key
+/config/vpn/VPN1/ta.key
+というようなファイル構成になります。
+3．OpenVPNクライアントのコンフィグを作ってあげる。 vi client.ovpn  client dev-type tun proto udp ;VPNサーバーのipアドレス、ポート番号を指定 remote 0.0.0.0 1194 resolv-retry infinite nobind persist-key persist-tun ca /config/vpn/VPN1/ca.crt cert /config/vpn/VPN1/client1.crt key /config/vpn/VPN1/client1.key tls-auth /config/vpn/VPN1/ta.key 1 cipher AES-256-CBC auth SHA512 ;圧縮を有効 comp-lzo verb 1 reneg-sec 0  4．設定を適応する configure set interfaces openvpn vtun0 config-file /config/vpn/VPN1/client.ovpn set interfaces openvpn vtun0 description server_name  5．疎通できているか確認する show interfaces openvpn ip a  これらのコマンドでS/L部分がu/uになっていると、リンクアップしているといる意味です。</description>
+    </item>
+    
+    <item>
+      <title>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</title>
+      <link>http://cloud.yoneyan.net/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</link>
+      <pubDate>Thu, 10 Jan 2019 11:49:55 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</guid>
+      <description>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
+その2ではopenvpnのクライアントになるpfsense側の設定をしていきます。
+前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
+サーバーIP:10.0.0.9
+openvpn（サーバー側）のポート:1194/udp
+サーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動 1.2.CAを追加する Addをクリックする
+Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
+Certificate data に ca.crtの内容をすべて入れます。
+Serial for next certificate はよくわからなかったので「1」と入れました。
+1.3.クライアント証明書を登録する Certificate ManagerにあるCertificateに移動します。
+Descriptive name に適当な名前をつけます。
+Certificate data にclient1.crtの内容を入れます。
+Private key data にclient1.keyの内容を入れます。
+2.pfsenseでopenvpnの設定を開く VPN-&amp;gt;OpenVPNを開きます。
+2.1.openvpnでclientを追加する AddでClientを追加します。
+2.2.設定をしていく Server host or address:10.0.0.9　&amp;lt;-サーバーIP
+Description: &amp;lt;-openvpnのClient名の設定（わかりやすい名前で良い）
+今回は証明書認証のみとなるので、ここには何も入力しないように注意して下さい。
+automatically generate a TLS Key.のチェックボックスを外します。
+チェックボックスを外すとTLS Keyを入力する欄が出てくるのでta.keyの内容をいれます。
+Peer Certificate Authority には1.2で登録したCA証明書を選択します。
+Client Certificate には1.</description>
+    </item>
+    
+    <item>
+      <title>UbuntuServerでOpenVPNサーバーを構築</title>
+      <link>http://cloud.yoneyan.net/post/2018-10-17-openvpn-server-for-ubuntuserver/</link>
+      <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/2018-10-17-openvpn-server-for-ubuntuserver/</guid>
+      <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
+OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
+2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
+3.varsファイルを設定していく export KEY_COUNTRY=&amp;quot;JA&amp;quot; export KEY_PROVINCE=&amp;quot;OSA&amp;quot; export KEY_CITY=&amp;quot;Osaka&amp;quot; export KEY_ORG=&amp;quot;test&amp;quot; export KEY_EMAIL=&amp;quot;test@myhost.mydomain&amp;quot; export KEY_OU=&amp;quot;test&amp;quot;  vi varsやnano varsのようなコマンドで設定しています。 varsファイルの編集が終わったら必ず
+source ./vars  を実行します。
+4.CA証明書・秘密鍵を作っていく ./clean-all cp openssl-1.0.0.cnf openssl.cnf ./build-ca  cp openssl-1.0.0.cnf openssl.cnfをしないと./build-caの段階でエラーを吐きます。
+5.サーバー証明書・秘密鍵を作っていく ./build-key-server server  Enterを押しまくってyを入力します。
+6.DHパラメータを作っていく ./build-dh  多少時間かかります。
+7.TLSの秘密鍵を作っていく openvpn --genkey --secret ta.key  8.クライアント側の証明書を作っていく ./build-key client1 nopass  client1のところは適当な名前にしてください client1.</description>
+    </item>
+    
+    <item>
+      <title>CentOSのOpenVPNサーバーを構築してみる</title>
+      <link>http://cloud.yoneyan.net/post/try-building-a-centos-openvpn-server/</link>
+      <pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/try-building-a-centos-openvpn-server/</guid>
+      <description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
+この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
+その１:VPS側（サーバー側）の設定
+その２:pfsense側（クライアント側）の設定
+その３:ファイアーウォールの設定
+VPS側で
+OpenVPNの設定をしていく この記事ではCentOSを使った紹介をしていきます。
+最初にやっておくこと
+CentOSにepelのレポジトリを使えるようにしておきましょう
+関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa  フォルダを作る mkdir /etc/openvpn/easy-rsa  フォルダ群をコピー cp /usr/share/easy-rsa/***/* /etc/openvpn/easy-rsa/ -R  米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）
+認証局を作る cd /etc/openvpn/easy-rsa ./easyrsa init-pki ./easyrsa build-ca ./easyrsa gen-dh cd /etc/openvpn openvpn --genkey --secret /etc/openvpn/ta.key  詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。
+./easyrsa build-caを実行すると&amp;hellip;
+Enter PEM pass phrase:  こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。
+サーバー側の証明書を作成 パスワードがめんどくさいのでパスワードなし(no pass)にします。
+cd /etc/openvpn/easy-rsa ./easyrsa build-server-full server nopass  Server側のkey:/etc/openvpn/easy-rsa/pki/private/server.key
+Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
+クライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kinect on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/kinect/</link>
+    <description>Recent content in kinect on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 17 Jan 2017 15:20:24 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/kinect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kinectでMMDを動かしてみた</title>
+      <link>http://cloud.yoneyan.net/post/i-tried-moving-mmd-with-kinect/</link>
+      <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/i-tried-moving-mmd-with-kinect/</guid>
+      <description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
+著者のPC環境 OS:windows10Pro
+CPU:corei7 4790k
+GPU:gtx970
+memory:16GB
+kinect:kinectv1（初期）
+となっています。そこそこのスペックが必要と思っていましたが、CF-S9(Corei5-520M/GPUオンボード)でも動いたので、そこまでのスペックの高くないパソコンでも動きました。
+環境構築をする 方法  OPENNIを使って動かす MoggNUIを使って動かす  kinectでMMDを動かす方法はこの二つがあります。
+今回は2番の方法で構築していきます。OPENNIを使ってもできますが、windows７じゃないと動かないなどの問題が起きてあきらめました&amp;hellip;
+それ以前にOPENNIを使って構築するのがくそみたいにめんどくさいので2番の方法をお勧めします。
+ダウンロード Kinect for Windows SDK v1.8（必須）
+https://www.microsoft.com/en-us/download/details.aspx?id=40278
+MikuMikuDance（DirectX9 Ver）とDxOpenNI.dll（必須）
+http://www.geocities.jp/higuchuu4/
+MoggNUI（必須）
+https://sites.google.com/site/moggproject/
+もし、リンク切れがあった場合はお問い合わせ欄又は下にあるフォーム欄に訂正箇所を送信していただけると助かります！！
+インストール １.最初にKinect for Windows SDK v1.8をインストールします。    インストールします。インストールすると自動的にドライバも導入されるのでこの作業はしましょう。
+2.MikuMikuDance（DirectX9 Ver）を適当なフォルダに展開する    こんな風に展開します。
+これでMikuMikuDance.exeを起動できるか確かめましょう。
+もし動かない場合は下のランタイムをインストールしてください。
+Microsoft Visual C++ 2005 再頒布可能パッケージ(x86)
+Microsoft Visual C++ 2008 再頒布可能パッケージ(x86)
+DirectX エンド ユーザー ランタイム
+3.DxOpenNI.dllとMoggNUIの導入 DxOpenNI.dllを展開すると
+   のように出てくるのでSamplesConfig.xmlだけをMMDのDataフォルダに入れます。</description>
+    </item>
+    
+    <item>
+      <title>Kinect v1を買ったので簡単に紹介</title>
+      <link>http://cloud.yoneyan.net/post/i-bought-kinectv1/</link>
+      <pubDate>Mon, 16 Jan 2017 17:47:38 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/i-bought-kinectv1/</guid>
+      <description>kinect v1をフリマアプリのメルカリで買ったので紹介させていただきます。
+kinectとは マイクロソフトから販売されているデバイスです。 kinect自体は15000円もするのでゲーム機の周辺機器としては高いです。 高い理由は中にCPUが入っているからです。中に入っているCPUを外してしまうと、ゲーム機内で処理負担が大きくなるといった問題があり、値段がどうしても上がってしまったみたいです。
+kinectはもともとwindowsに対応していなかった！ 今となってはマイクロソフトが公式にドライバやSDKなどを出していますが、それは2011年の話です。 kinectの初期型が出たのは2010年ですが、その頃は公式にドライバがなかったのでパソコンとは接続できませんでしたが、すごい人たちがkinectの構造を解析しオープンソースとしてドライバを出していました。しかし、その時マイクロソフトは否定的な立場をとっていましたが、その後、2011年4月になりSDKの公開を発表し2012年2月にkinect for windowsを正式に公開されました。
+kinectでできること 3D深度センサー、RGBカメラ、指向性マイクアレイが搭載されています。 ジェスチャーコントロール、体の動きを認識、音声認識です。 音声認識はマイクでもできるますが、体の動きを認識することができるので福祉の世界でも使われることが多くなっています。
+kinectはそこまで高くない（開発用途では） kinectは開発用途にも使え、開発用途としてはかなりお値段がお安いので、いろんなところで使われています。 なので、xboxでkinectを使ってゲームをする人よりも開発用途で使っている人の方がぶっちゃけた話を多いと思います。
+kinectv2を買わなかった理由 この理由は高かったからです。新世代は心拍数が計ることができるようになったり、6人同時キャプチャーもできるようになりましたが、    Xbox One Kinect センサー Amazon  楽天市場  Yahooショッピング      このようにkinect本体で15000円ほどかかり、    Xbox One Kinect センサー用 Windows PCアダプター Xbox One S/Xbox One X 用アダプター Amazon  楽天市場  Yahooショッピング      パソコンに接続するには変換ケーブルが必要になってくるので、新品で買うと約2万円ほどします。 中古で買うと少し値段はかからないと思いますが、抑えても10000円以上はするでしょう。 ということでメルカリでkinect v1が送料込みで4000円で売っていたので買ったという感じです。 amazonでは比較的安く売っています。    Xbox 360 Kinect センサー Amazon  楽天市場  Yahooショッピング</description>
+    </item>
+    
+  </channel>
+</rss>

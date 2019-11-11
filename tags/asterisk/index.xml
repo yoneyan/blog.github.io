@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>asterisk on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/asterisk/</link>
+    <description>Recent content in asterisk on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 25 Dec 2018 05:28:23 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/asterisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>大好きな曲を電話回線網から流す方法</title>
+      <link>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+最終日ということもあり気合を入れて紹介させていただきます。
+作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
+このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
+お家の方にも紹介していただけると楽しんでいただけると思います。電話帳に登録した方がいらっしゃれば、私の方まで報告していただけると嬉しいです。
+コンギョバージョン
+05054377759
+一般男性脱糞シリーズバージョン
+05054377762
+＊追記　ゆゆうたの様々な曲を取り寄せております、ゆゆうた楽曲専用ダイヤルを開設いたしました。
+ゆゆうた楽曲専用ダイヤル
+05053595690
+暇な方は是非この電話番号にかけてみてください。
+もし、通じない場合はお家の固定回線からかけてみてください
+誰でも簡単に作ることができるのでそのレシピを紹介します。
+仕組み {::nomarkdown}  {:/nomarkdown}
+材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+VPSは以下のものがおすすめです。
+＊VPS or 自宅サーバーをサーバーと略させていただきます。
+レシピ 0.SIP情報を観察する    ドメインとSIPアカウント、そのパスワードをメモっておきます。
+1.Asteriskをサーバーに入れてあげます CentOSさんの場合はパッケージが標準で搭載されていないので、Debianさんにお願いします。
+Debianさん
+apt -y install asterisk apt -y install mpg123  mpg123はasteriskでmp3を流すためのコーディック用のパッケージです。
+2.Asteriskの設定ファイルを調理してあげます /etc/asterisk/sip.conf　を開きます。
+（お好きなエディタから開いて下さい。)
+register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメイン  ;IP [fusion-smart_1] type=friend username=sipアカウント fromuser=sipアカウント secret=sipアカウントのパスワード host=smart.</description>
+    </item>
+    
+    <item>
+      <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</title>
+      <link>http://cloud.yoneyan.net/post/asterisk-error1/</link>
+      <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/asterisk-error1/</guid>
+      <description>Unable to retrieve PJSIP transport &amp;lsquo;simpletrans&amp;rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。</description>
+    </item>
+    
+  </channel>
+</rss>

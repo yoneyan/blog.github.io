@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPS on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/vps/</link>
+    <description>Recent content in VPS on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 05 Feb 2019 05:08:54 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VPSでスワップ領域を増やす</title>
+      <link>http://cloud.yoneyan.net/post/increase-swap-space-with-vps/</link>
+      <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/increase-swap-space-with-vps/</guid>
+      <description>VPSで格安のものになってくると、問題となってくるのがスペックになります。
+昔のVPSに比べると、メモリが512MBに増えておりかなり使えるものになってきましたが、それでも不足してしまうという現実があります。
+そこで、気休め程度になってしまいますが、スワップ領域を増やしてみました。
+１．確認する 最初にSWAP領域があるかないか調べるために以下のコマンドを実行します。
+free -m  total used free shared buff/cache available Mem: 481 158 104 0 218 310 Swap: 0 0 0  当方のVPSではこのようになっていました。
+Memがお分かりの通り、実メモリです。
+Swapがスワップ領域です。
+Total 0となっていると、その領域は存在しないという意味です。
+２．スワップ領域を作る dd if=/dev/zero of=/swapfile bs=1M count=4096  ３．適応させていく 3.1.スワップの権限を変更する chmod 600 /swapfile  3.2.スワップを適応する mkswap /swapfile swapon /swapfile  ４．スワップを恒久化する この操作を行わないと再起動で元通りになってしまうので、次回以降の起動のためにこれから設定していきます。
+HDDのマウントなどで使われるfstabに追記していきます。
+/etc/fstabを開き、以下のものを最下位に追記します。
+#Swap Area /swapfile swap swap defaults 0 0  これでスワップ領域の設定が完了します。
+まとめ このような方法でスワップ領域を簡単に作ることができます。
+メモリ不足の根本的な対策は違うプランにして増やすべきですが、私のようにお金がないやほかの諸々の事情がある場合はこれで乗り切れると思います。
+今回はこれで以上です。</description>
+    </item>
+    
+    <item>
+      <title>CentOSでL2TPサーバーを構築してみる</title>
+      <link>http://cloud.yoneyan.net/post/try-building-an-l2tp-server-on-centos/</link>
+      <pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/try-building-an-l2tp-server-on-centos/</guid>
+      <description>UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
+VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
+OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。
+L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分がありますが、AndroidやiOSやWindowsのようなクライアントの標準機能（外部アプリやソフトなし）で簡単に繋ぐことが可能なので、おすすめです。
+構築開始！ １ 必要な物をインストールする yum -y install xl2tpd libreswan  ２ L2TPを設定する L2TPサーバーの設定をしていきます。
+2.1 xl2tpdのメインの設定を変更する 共通する設定
+/etc/xl2tpd/xl2tpd.conf
+[global] ;パスの指定 auth file = /etc/ppp/chap-secrets ;グローバルIPアドレスをここに指定する listen-addr = xx.xx.xx.xx [lns default] ;L2TPクライアントから割り当てられるIPアドレスの範囲を指定する ip range = 192.168.1.128-192.168.1.254 ;L2TPサーバー側の仮想ネットワークのIPアドレスを指定する local ip = 192.168.1.99 ;chap認証を拒否するのか refuse chap = yes ;pap認証を拒否するのか refuse pap = yes ;認証を許可するのか require authentication = yes ;ホスト名 name = LinuxVPNserver ;デバッグを取るか、取らないか ppp debug = yes pppのオプションファイルの場所を指定 pppoptfile = /etc/ppp/options.</description>
+    </item>
+    
+    <item>
+      <title>大好きな曲を電話回線網から流す方法</title>
+      <link>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+最終日ということもあり気合を入れて紹介させていただきます。
+作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
+このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
+お家の方にも紹介していただけると楽しんでいただけると思います。電話帳に登録した方がいらっしゃれば、私の方まで報告していただけると嬉しいです。
+コンギョバージョン
+05054377759
+一般男性脱糞シリーズバージョン
+05054377762
+＊追記　ゆゆうたの様々な曲を取り寄せております、ゆゆうた楽曲専用ダイヤルを開設いたしました。
+ゆゆうた楽曲専用ダイヤル
+05053595690
+暇な方は是非この電話番号にかけてみてください。
+もし、通じない場合はお家の固定回線からかけてみてください
+誰でも簡単に作ることができるのでそのレシピを紹介します。
+仕組み {::nomarkdown}  {:/nomarkdown}
+材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+VPSは以下のものがおすすめです。
+＊VPS or 自宅サーバーをサーバーと略させていただきます。
+レシピ 0.SIP情報を観察する    ドメインとSIPアカウント、そのパスワードをメモっておきます。
+1.Asteriskをサーバーに入れてあげます CentOSさんの場合はパッケージが標準で搭載されていないので、Debianさんにお願いします。
+Debianさん
+apt -y install asterisk apt -y install mpg123  mpg123はasteriskでmp3を流すためのコーディック用のパッケージです。
+2.Asteriskの設定ファイルを調理してあげます /etc/asterisk/sip.conf　を開きます。
+（お好きなエディタから開いて下さい。)
+register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメイン  ;IP [fusion-smart_1] type=friend username=sipアカウント fromuser=sipアカウント secret=sipアカウントのパスワード host=smart.</description>
+    </item>
+    
+    <item>
+      <title>自宅サーバーとVPSの使い分け</title>
+      <link>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</link>
+      <pubDate>Sat, 10 Nov 2018 02:41:27 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</guid>
+      <description>今回は自分なりの自宅サーバーとVPSの使い分けの仕方を紹介します。 そもそもの話になってはしまうのですが、自宅サーバーとVPSの簡単な説明をさせていただきます。
+自宅サーバーとVPSの説明 自宅サーバーとは？ 自宅サーバーとはそのままの意味で、自宅で運用するサーバーのことを言います。  
+
+   こんな感じのものです。
+VPSとは？ VPSとは、自分の家ではなく、ホスティングサービスを貸している会社のサーバーの一部を使っているもののことを言います。 レンタルサーバーと違う点として、root権限を使うことができるので、自由にアプリケーションをインストールすることが出来るサービスです。 専用サーバーではなく共用サーバーになるので、パフォーマンスの低下などがありますが値段が安いので使っている方も多いサービスになります。 VPSの例として、 さくらのVPS ConoHa VPS Windows ServerなどはVPSで契約するとかなり安いです。ライセンス込みの値段になっているのでおすすめです。
+どちらを使うべきか？ このような方は自宅サーバーを使うべき！  ファイルサーバーを使っている 録画サーバーを使っている ハードが大好き メモリをかなり使うもの ゲームサーバーを使っている  このような用途で使われる方は自宅サーバーを使うべきです。 人にサーバーを貸したり、ゲームサーバーを運用する方はスペックがかなり必要になってくるのでVPSよりも自宅サーバーの方がいいです。
+このような方ならVPSがおすすめ  あまり使わない WebServerしか使わない メモリが少ないサービスを動かす 安定性重視  このような方はVPSのみで十分です。 安定性のことを考えると自宅サーバーよりも断然VPSです。お家に自家発電がある方は別ですがそのような家はないですよね&amp;hellip;
+自宅サーバーとVPSの両方を使うべきな人 安定性とハードな使い方をする人（ゲームサーバーや人にサーバーを貸すような使い方） は自宅サーバーとVPSの両方を使うべきです。 あまり、止めたくないサービスをVPSで動かし、ストレージサーバーやゲーム系のサーバーを自宅サーバーで動かすような運用の仕方が一番いいと思っています。 私自身もそのような運用の手段を取っております。 このブログはレンタルサーバーで運用していて、個人で使う物（あまり止めたくないもの）をVPSでストレージサーバーやゲームサーバーを自宅サーバーで運用しています。</description>
+    </item>
+    
+    <item>
+      <title>AWSのLightsailというVPSが安すぎる</title>
+      <link>http://cloud.yoneyan.net/post/aws-lightsail-is-too-cheap/</link>
+      <pubDate>Fri, 09 Nov 2018 02:20:35 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/aws-lightsail-is-too-cheap/</guid>
+      <description>AWSってみなさん知っている方が多いと思います。EC2という従量課金制のものがあることを知っている人が多いと思います。 AWSでVPSと同等のものがあります。それがLightsailです。 今回はLightsailの簡単な紹介とメリットとデメリットを書いていきます。
+Lightsailって何？ Lightsailは俗にいうVPSです。 Lightsail=VPSと考えても大丈夫です。
+何がいいのか？  安い（ガチで安い。安すぎる Lightsailの中身はEC2のサーバーと同じ（AWSの人が言ってた） WindowsServerも安い VPCピアというのでAWSの他のサービスに連携できるらしい（やってないのでわからない） データベースプランもある（これも使ったことないのでわからん）  値段 VPSを使う奥様方にはありがたいぐらい安いです。
+Linux系    80USD、160USDプランもあります。（2018/11/09執筆時）
+   OSは↑のものが対応しています。（2018/11/09執筆時）
+WindowsServer系    120USD、240USDプランもあります。（2018/11/09執筆時） SQL Serverプランもあります。 これを見るとかなりお値段がお安いことがわかると思います。
+メリット  安い IPv4の固定IP使える（たしか、上限5個まで。それ以上は0.5~1.0ドルぐらいかかります。） 安定している（AWSだけはある） 安い割にストレージ容量がでかい データベース専用プランあり 日本リージョンに対応している（東京リージョンのみ）  デメリット  Webコンソールはssh接続しかできない（OS自体バグったり、sshの設定をミスると最初からインストールする羽目になるので注意が必要です。） IPv6が使えない 一応、開発用途らしい（どっちでもいい） 大阪ゾーンはない（おそらくこれからもないんじゃねって感じ）  思うこと 正直なところWebコンソールからでもssh接続しかできないのがかなりの問題です。 OS自体バグる以前にsshの設定をミスると一発アウトなので気をつける必要がかなりあります。 会社で使えるかと言われると微妙なところなので、そこは正直に↓のところを使っておきましょう。 さくらのVPS konohaVPS 個人でする分や開発用途で使う分にはかなりおすすめです。 デメリットの部分さえわかって使えば、かなりおすすめのVPSの一つです。 AWSということもあり、安定していることもありおすすめです。</description>
+    </item>
+    
+    <item>
+      <title>自宅サーバとVPSの長所と短所の比較</title>
+      <link>http://cloud.yoneyan.net/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</link>
+      <pubDate>Tue, 12 Jun 2018 07:19:01 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</guid>
+      <description>この記事では、自宅サーバとVPSの二つを対象にして、長所と短所を比較してみます。
+自宅サーバの長所     ハードウェア単位での知識が増える ネットワークの勉強になる そこそこのスペックを比較的安く中古で買える ローカルでのファイルのやりとりは速い  自宅サーバの一番の特徴としてハードウェアの知識が増える点です。特に大学生で自分のようにインフラのような仕事につきたいと思ってる方にはおすすめです。 中古のサーバ機の場合は、比較的安くハードを買うことが出来るので、サーバを置く場所さえあればなんとかなりますファイルの共有をよくしている方はVPSよりも自宅サーバの方がおすすめです。やっぱり自宅の有線の方が当たり前ですが速いです。
+自宅サーバの短所  電気代やばい ハードウェアの管理をやっておかないとだめ  電気代はかなり行きます。そこが唯一の問題です。また、HDDが消耗品ということもあるのでハードウェアの管理をしっかりしておかないといけないという点です。  
+
+筆者の場合では、常時動かしているのは、ネットワーク機器(POE対応含める)10個、サーバ機器3つということもあり、月に約10000円くらいの電気代がかかってます。スペックのことを考えると確かにVPSより安くはなりますが、高いです(^^;)
+VPSの長所  安い ハードウェアの管理をしなくてもいい  比較的安いのが特徴です。HDDが壊れることなどを考える必要がないということや場所をとらないということもあり、自宅サーバに比べると入りやすくなっています。また、電気代+サーバ導入費用+(HDDやSSDなど)サーバの保守費用などのランニングコストのことを考えるとかなり安いです。 しかし、CPUやストレージが共用になっているので、処理を多用する場合は注意が必要です。
+VPSの短所  ハードウェアでの拡張が出来ない 共用使用になるので思ってるほど性能が発揮できない ストレージが高い  共用使用ということもあり、性能が発揮できないということや、スループットもあまりでない時があります。また、CPUに負荷を掛けすぎると、提供側から制限を掛けられる可能性があります。
+まとめ 自宅サーバとVPSには長所もあれば短所もそこそこあります。なので、CPUをよく動かすようなことやストレージサーバは自宅サーバにまかせて、安定性を求める部分（例えば、公開用サーバなど）にはVPSという運用の形態がおすすめです。</description>
+    </item>
+    
+  </channel>
+</rss>

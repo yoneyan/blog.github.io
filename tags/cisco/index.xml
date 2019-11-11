@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/cisco/</link>
+    <description>Recent content in Cisco on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 09 Dec 2018 21:59:07 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/cisco/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cisco892WでAPファームウェアを初期化する方法</title>
+      <link>http://cloud.yoneyan.net/post/how-to-initialize-ap-firmware-on-cisco892w/</link>
+      <pubDate>Sun, 09 Dec 2018 21:59:07 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/how-to-initialize-ap-firmware-on-cisco892w/</guid>
+      <description>Cisco892WはAPファームウェアとルータ用ファームウェアが別れているなかなか変態仕様になっています。 初期化をどのようにするのかこの記事で紹介していきます。
+そもそもCisco 892Wとは？ Cisco 892Wはルータとアクセスポイントが合体したものです。扱いとしてはルータになります。Cisco 892に無線機能がついただけのものです。
+Cisco892Wはルータとアクセスポイントが合体していることもあり、ルータ用OSとアクセスポイント用のOSが分かれている特殊な機種です。
+簡潔に言うと、ルータ用のファームウェアとアクセスポイント用のファームウェアは別々にあるということです。
+そのこともあり、ルータだけでなくアクセスポイント側の知識もないとこのルータを触ることが難しいので気合をいれて構築していきます！
+APファームウェアの初期化 これからいよいよAPファームウェアの初期化を行っていきます。
+グローバルコンフィグレーションモードではなく特権モードで行います。
+Router# &amp;lt;===特権モードはこんな感じ
+Router(config)#&amp;lt;===グローバルコンフィグレーションモードはこんな感じ
+service-module wlan-ap 0 reset  上記のコマンドを入力すると、
+ Use reset only to recover from shutdown or failed state AP config will not be saved Do you want to reset?[confirm]  「本当にリセットするの？」と892W君が確認してくれるのでyと入力するとリセットが開始されます。
+まとめ このような感じでAPファームウェアの初期化を行うことが可能となりました。
+892Wの欠点はAP側の設定を大胆に間違ってしまう（パスワードがわからなくなったりなど）と、初期化するしか方法がなくなるので注意が必要です。 家庭用のものではルータ＋APが入っているのが出回っていますが、業務用の場合であればルータとAPが分かれている場合が多いです。 家庭用であれば、合体している方が便利というのが一番だと思いますが、難しいところです。
+少しずつ、892WやAironet系のCiscoの無線機器の記事も出していく予定ですので、よろしくお願いします。</description>
+    </item>
+    
+    <item>
+      <title>CiscoルータでWANを冗長化する</title>
+      <link>http://cloud.yoneyan.net/post/redundant-wan-with-ciscorouter/</link>
+      <pubDate>Thu, 06 Dec 2018 00:31:45 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/redundant-wan-with-ciscorouter/</guid>
+      <description>関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。
+CiscoルータでWAN側の冗長化を行うために、HSRPというCisco独自のプロトコルを使用します。 また、デフォルトゲートウェイを冗長化するものとして、VRRPというプロトコルが存在しますが、今回はこれを使用しません。
+今回は例として、Cisco 841Mを使って構築します。
+VRRPの弱点 VRRPもHSRPと同様のCisco独自プロトコルですが、ルータの冗長化はできます。しかし、WAN側の冗長化ができないという欠点を持っています。
+そこで、今回はWAN側の冗長化を目標にしているので、HSRPを使用します。
+（VRRPでもできるのかもしれませんが知識不足で分かっておりません。）
+Cisco以外の機種では&amp;hellip; HSRPはお得意のCisco独自プロトコルとなっています。他社のネットワーク機器では独自のプロトコル又は出来ない可能性が高いので気をつけてください。
+構築していく 以下のようなトポ図で構築すると仮定します。
+   上のルータをrouter1とし、下のルータをrouter2とします。
+また、LAN側は同一ネットワークである必要があるので注意してください。
+各ルータのインターフェースは下記の通りとします。
+router1
+WAN側：GigabitEthernet 0/5
+LAN側：GigabitEthernet 0/0
+router2
+WAN側：GigabitEthernet 0/5
+LAN側：GigabitEthernet 0/0
+Router1の設定 LAN側のinterfaceに
+ standby 10 ip 192.168.0.1 standby 10 priority 105 standby 10 preempt  を設定するだけです。
+standby 10 ip 192.168.0.1の10の部分はHSRPのグループ番号なので適当な数字を入れても問題ありません。
+priority 105の部分はどのルータを優先的に使うのかという設定です。
+Router2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 priority 100  を設定するだけです。
+コンフィグの内容はrouter1に書いた内容と同じです。
+まとめ VRRPでは物理的なルータの冗長化をすることしかできませんが、Cisco独自プロトコルになってしまいます。 しかし、HSRPを使うとWANの冗長化をすることが簡単にできるので、家庭でCiscoのルータでWANの冗長化をする際は是非参考にしていただければ幸いです。</description>
+    </item>
+    
+    <item>
+      <title>Cisco_Aironetで802.11nの速度が出ない</title>
+      <link>http://cloud.yoneyan.net/post/cisco-aironet-does-not-get-802.11n-speed/</link>
+      <pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/cisco-aironet-does-not-get-802.11n-speed/</guid>
+      <description>お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&amp;hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
+Dot11Radio1の設定 5ghzの設定になるので、Dot11Radio1でコンフィグを弄ります。 方法を簡単に書くと、チャンネルを適当なところで固定してから40Mhzの設定をするという感じです。 802.11nは2つのチャンネルを束ねて、速度を倍にしているといったごり押しな規格になっておりチャンネルが自動設定ではなぜかうまく行かないので、手動で合わせます。 また、どのチャンネルが重なっていないのかはスマホにWifiアナライザーのアプリを入れておくとかなり幸せになれます。
+interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1  とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
+まとめ 802.11nの設定はコツさえ掴めたらなんとかなりますが、能力不足の自分にはかなりきつかったです。 もっとよく知りたい方は、Ciscoの公式サイトにしっかりと説明を書いてくれているのでじっくり読むことをおすすめします。</description>
+    </item>
+    
+    <item>
+      <title>Cisco_AironetでWPA2-PSKを使ってみる</title>
+      <link>http://cloud.yoneyan.net/post/try-using-wpa2psk-with-aironet/</link>
+      <pubDate>Tue, 09 Oct 2018 02:15:26 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/try-using-wpa2psk-with-aironet/</guid>
+      <description>自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
+前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
+初期の設定 マルチssidを有効にするために
+dot11 mbssid  を実行します。
+ssidの設定 vlanで指定する場合はauthentication openの前の行に下記のようなコマンドを入力してください。 vlan 100  100のところには適当な物に変更してください。
+2.4ghz側 dot11 ssid test-2.4ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  passwordのところにはssidに対するWifiのパスワードを設定してください。 5ghz側の設定も同じようにしていきます。
+5ghz側 dot11 ssid test-5ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  こちらも同様にpasswordのところには適当なパスワードを入力してください。
+無線の設定 トランクなどでvlanを分けている場合はSSIDから飛ばすVLANごとに設定を入れる必要があります。その場合は、
+ssid test-2.4ghz  の前の行に下記のようなコマンドを入れます。
+encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書き換えてください。</description>
+    </item>
+    
+    <item>
+      <title>勉強でおすすめのCiscoルータ3選</title>
+      <link>http://cloud.yoneyan.net/post/3-recommended-cisco-routers-for-study/</link>
+      <pubDate>Sun, 12 Aug 2018 01:40:01 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/3-recommended-cisco-routers-for-study/</guid>
+      <description>1位 C841M    C841M-4X-JSEC
+フラッシュメモリ:2G
+メモリ:512MB
+WAN(GigaEthernet対応) x2、LAN(GigaEthernet対応) x4
+IPsec VPNやSSL VPN、EasyVPNに対応（DMVPNは上位機種のみに対応)
+価格帯:10000円～
+
+Cisco Startシリーズ C841M-4X-JSEC/K9/START ［ギガビット対応VPNルータ（保守2年付）］
+posted with カエレバ
+Cisco Systems（シスコシステムズ）
+Amazon
+楽天市場
+Yahooショッピング
+Cisco C841Mという機種が一番おすすめです。理由は安いからです。安い上に、CiscoのOSであるIOSが入っていることもあり勉強としても使えるし、普通にルータとしても使えます。C841Mの4X-JSECという型番は上位機種に比べると劣りますが、勉強に使う分や家庭のルータとして使う分には全く問題ないでしょう。また、これはamazonのみの確認となりますが、保守が2年付いているのでもし壊れた時でも安心感があります。（普通に考えると、業務用なので壊れないと思いますが&amp;hellip;）DMVPNというようなよくわからない機能を使う場合は上位機種を買ってくださいｗ
+Cisco 892    Cisco 892(上)、Cisco892 W(下)
+フラッシュメモリ:256MB
+メモリ:512MB
+WAN(GigaEthernet x1, FastEthernet x1) x2、LAN(FastEthernetのみ) x8、よくわからないポート x1
+IPsec VPNやGET VPNやSSL VPNに対応
+価格:4000円～
+
+CISCO892J-K9
+posted with カエレバ
+Cisco Systems
+Amazon
+楽天市場
+Yahooショッピング
+
+CISCO 892W
+posted with カエレバ
+Cisco</description>
+    </item>
+    
+  </channel>
+</rss>

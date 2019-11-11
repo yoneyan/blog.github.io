@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>edgerouter on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/edgerouter/</link>
+    <description>Recent content in edgerouter on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 17 Apr 2019 21:37:37 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/edgerouter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EdgerouterでOpenVPNクライアントを使う</title>
+      <link>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</link>
+      <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</guid>
+      <description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
+サーバー側の設定はこちらから
+1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
+mkdir /config/vpn/ mkdir /config/vpn/VPN1 cd /config/vpn/VPN1  2．必要なファイルをEdgerouterに持ってくる winscpなどで必要なファイルを入れます。
+ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイルを入れてあげます。
+/config/vpn/VPN1/ca.crt
+/config/vpn/VPN1/client1.crt
+/config/vpn/VPN1/client1.key
+/config/vpn/VPN1/ta.key
+というようなファイル構成になります。
+3．OpenVPNクライアントのコンフィグを作ってあげる。 vi client.ovpn  client dev-type tun proto udp ;VPNサーバーのipアドレス、ポート番号を指定 remote 0.0.0.0 1194 resolv-retry infinite nobind persist-key persist-tun ca /config/vpn/VPN1/ca.crt cert /config/vpn/VPN1/client1.crt key /config/vpn/VPN1/client1.key tls-auth /config/vpn/VPN1/ta.key 1 cipher AES-256-CBC auth SHA512 ;圧縮を有効 comp-lzo verb 1 reneg-sec 0  4．設定を適応する configure set interfaces openvpn vtun0 config-file /config/vpn/VPN1/client.ovpn set interfaces openvpn vtun0 description server_name  5．疎通できているか確認する show interfaces openvpn ip a  これらのコマンドでS/L部分がu/uになっていると、リンクアップしているといる意味です。</description>
+    </item>
+    
+    <item>
+      <title>Edgerouterでポート開放をしてみる</title>
+      <link>http://cloud.yoneyan.net/post/try-opening-the-port-with-edgerouter/</link>
+      <pubDate>Fri, 22 Mar 2019 18:05:10 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/try-opening-the-port-with-edgerouter/</guid>
+      <description>今回はEdgerouterでポート開放をコマンド操作でしていきます。
+こちらのサイトを参考にさせていただきました。
+https://qiita.com/maiani/items/b45b0505377401be083a
+わかりにくい点などがありましたら、上記のサイトさんをご覧ください。
+コマンドで設定していく 今回は以下のポートを開放していきます。
+80/tcp 172.16.1.100
+3389/tcp,3389/udp 172.16.1.10
+1．ファイアウォールの設定 80/tcpの設定をしていきます。
+set firewall name WAN_IN rule 50 description &amp;quot;80/tcp http&amp;quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.16.1.100 set firewall name WAN_IN rule 50 destination port 80 set firewall name WAN_IN rule 50 protocol tcp  3389/tcpと3389/udpポートを設定します。
+set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp;quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.</description>
+    </item>
+    
+    <item>
+      <title>EdgerouterでPPPoEの設定をする</title>
+      <link>http://cloud.yoneyan.net/post/set-pppoe-with-edgerouter/</link>
+      <pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/set-pppoe-with-edgerouter/</guid>
+      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
+みんな大好きEdgerouterでPPPoEの設定をしていきます。
+この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）
+環境 プロバイダ:eo光
+サービス名:1ギガコース
+WAN側ポート:eth0
+設定していく 設定を適応する際はcommit
+設定を保存する際はsave
+コマンドが必要です。
+1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &amp;quot;PPPoE&amp;quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://cloud.yoneyan.net/post/try-using-ipv6-of-eo-with-edgerouter/</link>
+      <pubDate>Fri, 08 Mar 2019 00:07:05 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/try-using-ipv6-of-eo-with-edgerouter/</guid>
+      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
+Edgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）
+注意：今回の設定ではIPv6のファイアウォールの設定をしていないので、セキュリティ的にかなり危ないので、実際に構築する方はご注意下さい。（当方もファイアウォール周りがあまりわかっていないので、分かり次第、別の記事にさせていただきます。）
+前提条件 プロバイダーはK-opticomのeo光ネット1Gコース（ホームコース）を使用しております。
+WAN:eth0
+LAN:eth1
+とします。
+また、上の注意の点でも書きましたが、ファイアウォールを設定していないので、ご注意ください。
+使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface &#39;pppoe0&#39;  ↑これをやっていないせいでかなり時間をとりました。</description>
+    </item>
+    
+    <item>
+      <title>EdgeRouterでLAGとタグVLANを設定する</title>
+      <link>http://cloud.yoneyan.net/post/configure-lag-and-tagged-vlan-on-edgerouter/</link>
+      <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
+      <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
+
+EdgeRouter X, 5-port
+Amazon
+楽天市場
+それでは構築していきます。
+今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
+LACPの設定を行う まず、最初にLACPの設定を行っていきます。
+1．bondインタフェースを作成する set interfaces bonding bond0 description &amp;quot;LAG Interface&amp;quot;  descriptionはbond0に対する名前なので各自で変更してください。
+2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。
+LACPではhash-policyというものがあるので、ここではlayer2としておきます。
+タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
+今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
+set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。
+2．タグVLANの設定をする set interfaces bonding bond0 vif 100 address 192.</description>
+    </item>
+    
+  </channel>
+</rss>

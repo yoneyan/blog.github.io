@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on のんびりと生きたい</title>
+    <link>http://cloud.yoneyan.net/tags/</link>
+    <description>Recent content in Tags on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 11 Aug 2019 23:29:40 +0900</lastBuildDate>
+    
+	<atom:link href="http://cloud.yoneyan.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7</title>
+      <link>http://cloud.yoneyan.net/tags/centos7/</link>
+      <pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/centos7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kvm</title>
+      <link>http://cloud.yoneyan.net/tags/kvm/</link>
+      <pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/kvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freebsd</title>
+      <link>http://cloud.yoneyan.net/tags/freebsd/</link>
+      <pubDate>Mon, 22 Jul 2019 11:16:02 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/freebsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVMO</title>
+      <link>http://cloud.yoneyan.net/tags/mvmo/</link>
+      <pubDate>Tue, 18 Jun 2019 00:15:58 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/mvmo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thinkpad</title>
+      <link>http://cloud.yoneyan.net/tags/thinkpad/</link>
+      <pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/thinkpad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nginx</title>
+      <link>http://cloud.yoneyan.net/tags/nginx/</link>
+      <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>disk</title>
+      <link>http://cloud.yoneyan.net/tags/disk/</link>
+      <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/disk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TX1310 M1</title>
+      <link>http://cloud.yoneyan.net/tags/tx1310-m1/</link>
+      <pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/tx1310-m1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>edgerouter</title>
+      <link>http://cloud.yoneyan.net/tags/edgerouter/</link>
+      <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/edgerouter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openvpn</title>
+      <link>http://cloud.yoneyan.net/tags/openvpn/</link>
+      <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/openvpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FiberChannel</title>
+      <link>http://cloud.yoneyan.net/tags/fiberchannel/</link>
+      <pubDate>Sun, 07 Apr 2019 23:53:10 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/fiberchannel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CentOS</title>
+      <link>http://cloud.yoneyan.net/tags/centos/</link>
+      <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://cloud.yoneyan.net/tags/linux/</link>
+      <pubDate>Mon, 25 Mar 2019 12:23:32 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tv</title>
+      <link>http://cloud.yoneyan.net/tags/tv/</link>
+      <pubDate>Mon, 25 Mar 2019 12:23:32 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/tv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neovim</title>
+      <link>http://cloud.yoneyan.net/tags/neovim/</link>
+      <pubDate>Wed, 20 Feb 2019 18:53:54 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/neovim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lacp</title>
+      <link>http://cloud.yoneyan.net/tags/lacp/</link>
+      <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/lacp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VLAN</title>
+      <link>http://cloud.yoneyan.net/tags/vlan/</link>
+      <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/vlan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPS</title>
+      <link>http://cloud.yoneyan.net/tags/vps/</link>
+      <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/vps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wordpress</title>
+      <link>http://cloud.yoneyan.net/tags/wordpress/</link>
+      <pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RTX1200</title>
+      <link>http://cloud.yoneyan.net/tags/rtx1200/</link>
+      <pubDate>Wed, 30 Jan 2019 17:17:30 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/rtx1200/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPN</title>
+      <link>http://cloud.yoneyan.net/tags/vpn/</link>
+      <pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>asterisk</title>
+      <link>http://cloud.yoneyan.net/tags/asterisk/</link>
+      <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/asterisk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powerconnect</title>
+      <link>http://cloud.yoneyan.net/tags/powerconnect/</link>
+      <pubDate>Fri, 21 Dec 2018 11:44:05 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/powerconnect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openstack</title>
+      <link>http://cloud.yoneyan.net/tags/openstack/</link>
+      <pubDate>Wed, 12 Dec 2018 21:53:06 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/openstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>proxmox</title>
+      <link>http://cloud.yoneyan.net/tags/proxmox/</link>
+      <pubDate>Tue, 11 Dec 2018 23:59:39 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cisco</title>
+      <link>http://cloud.yoneyan.net/tags/cisco/</link>
+      <pubDate>Sun, 09 Dec 2018 21:59:07 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/cisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>http://cloud.yoneyan.net/tags/server/</link>
+      <pubDate>Mon, 12 Nov 2018 01:26:24 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homeserver</title>
+      <link>http://cloud.yoneyan.net/tags/homeserver/</link>
+      <pubDate>Sat, 10 Nov 2018 02:41:27 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/homeserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aironet</title>
+      <link>http://cloud.yoneyan.net/tags/aironet/</link>
+      <pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/aironet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nextcloud</title>
+      <link>http://cloud.yoneyan.net/tags/nextcloud/</link>
+      <pubDate>Tue, 25 Sep 2018 04:27:25 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/nextcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>router</title>
+      <link>http://cloud.yoneyan.net/tags/router/</link>
+      <pubDate>Wed, 27 Jun 2018 07:33:56 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/router/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pc</title>
+      <link>http://cloud.yoneyan.net/tags/pc/</link>
+      <pubDate>Sat, 19 May 2018 19:23:25 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/pc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>steam</title>
+      <link>http://cloud.yoneyan.net/tags/steam/</link>
+      <pubDate>Thu, 22 Mar 2018 17:22:35 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/steam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ps4</title>
+      <link>http://cloud.yoneyan.net/tags/ps4/</link>
+      <pubDate>Mon, 05 Feb 2018 13:24:35 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/ps4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xboxone</title>
+      <link>http://cloud.yoneyan.net/tags/xboxone/</link>
+      <pubDate>Thu, 01 Feb 2018 14:40:49 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/xboxone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NATタイプ3</title>
+      <link>http://cloud.yoneyan.net/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/</link>
+      <pubDate>Thu, 18 Jan 2018 12:01:34 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>password</title>
+      <link>http://cloud.yoneyan.net/tags/password/</link>
+      <pubDate>Wed, 13 Dec 2017 11:46:18 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/password/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>free_talk</title>
+      <link>http://cloud.yoneyan.net/tags/free_talk/</link>
+      <pubDate>Sun, 12 Nov 2017 03:52:56 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/free_talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clamav</title>
+      <link>http://cloud.yoneyan.net/tags/clamav/</link>
+      <pubDate>Mon, 10 Jul 2017 00:24:16 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/clamav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>http://cloud.yoneyan.net/tags/game/</link>
+      <pubDate>Mon, 26 Jun 2017 02:07:53 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IIJmio</title>
+      <link>http://cloud.yoneyan.net/tags/iijmio/</link>
+      <pubDate>Sat, 11 Feb 2017 03:17:06 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/iijmio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>http://cloud.yoneyan.net/tags/android/</link>
+      <pubDate>Tue, 31 Jan 2017 02:12:27 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service</title>
+      <link>http://cloud.yoneyan.net/tags/service/</link>
+      <pubDate>Sun, 29 Jan 2017 23:59:43 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gake</title>
+      <link>http://cloud.yoneyan.net/tags/gake/</link>
+      <pubDate>Wed, 25 Jan 2017 23:43:43 +0000</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/gake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kinect</title>
+      <link>http://cloud.yoneyan.net/tags/kinect/</link>
+      <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
+      
+      <guid>http://cloud.yoneyan.net/tags/kinect/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

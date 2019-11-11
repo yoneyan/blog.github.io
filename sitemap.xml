@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/introduction-of-home-and-other-equipment-in-2019-09/</loc>
+    <lastmod>2019-09-13T02:17:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/</loc>
+    <lastmod>2019-09-13T02:17:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/homeserver/</loc>
+    <lastmod>2019-09-13T02:17:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/</loc>
+    <lastmod>2019-09-13T02:17:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/</loc>
+    <lastmod>2019-09-13T02:17:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/introduction-of-home-network-equipment-in-2019-09/</loc>
+    <lastmod>2019-09-13T01:44:15+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/network/</loc>
+    <lastmod>2019-09-13T01:44:15+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/home-server-introduction-in-2019-09/</loc>
+    <lastmod>2019-09-13T00:49:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/what-to-do-when-you-dont-link-up-with-gs724t/</loc>
+    <lastmod>2019-08-15T00:48:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/convert-wireless-to-wired-with-centos_2/</loc>
+    <lastmod>2019-08-11T23:56:52+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/server/</loc>
+    <lastmod>2019-08-11T23:56:52+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/centos7/</loc>
+    <lastmod>2019-08-11T23:29:40+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</loc>
+    <lastmod>2019-08-11T23:29:40+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/</loc>
+    <lastmod>2019-08-11T23:29:40+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/kvm/</loc>
+    <lastmod>2019-07-31T21:58:46+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/br0-error-does-not-appear-during-virt-install/</loc>
+    <lastmod>2019-07-31T21:58:46+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/</loc>
+    <lastmod>2019-07-31T00:15:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/setting/</loc>
+    <lastmod>2019-07-31T00:15:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/enable-automatic-shutdown-with-apcupsd/</loc>
+    <lastmod>2019-07-30T01:52:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/freebsd/</loc>
+    <lastmod>2019-07-22T11:16:02+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/open-port-with-freebsd/</loc>
+    <lastmod>2019-07-22T11:16:02+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2019-06-20-gpd-micropc-reviews/</loc>
+    <lastmod>2019-06-20T01:31:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/review/</loc>
+    <lastmod>2019-06-20T01:31:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/why-you-think-mineo-is-the-strongest/</loc>
+    <lastmod>2019-06-18T00:15:58+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/mvmo/</loc>
+    <lastmod>2019-06-18T00:15:58+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/recommend/</loc>
+    <lastmod>2019-06-18T00:15:58+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/thinkpad/</loc>
+    <lastmod>2019-06-16T17:07:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2019-06-16-try-a-real-dual-boot-with-x230/</loc>
+    <lastmod>2019-06-16T17:07:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/build/</loc>
+    <lastmod>2019-06-04T19:03:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/nginx/</loc>
+    <lastmod>2019-06-04T19:03:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</loc>
+    <lastmod>2019-06-04T19:03:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/vps/</loc>
+    <lastmod>2019-06-04T19:03:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/disk/</loc>
+    <lastmod>2019-06-03T13:59:36+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/linux-disk-capacity-expansion-method/</loc>
+    <lastmod>2019-06-03T13:59:36+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/tx1310-m1/</loc>
+    <lastmod>2019-05-19T20:48:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/cannot-hotswap-with-tx1310_m1/</loc>
+    <lastmod>2019-05-19T20:48:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/free_talk/</loc>
+    <lastmod>2019-04-17T23:35:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</loc>
+    <lastmod>2019-04-17T23:35:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/edgerouter/</loc>
+    <lastmod>2019-04-17T21:37:37+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</loc>
+    <lastmod>2019-04-17T21:37:37+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/openvpn/</loc>
+    <lastmod>2019-04-17T21:37:37+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/configure-network-settings-for-brocade300_fabricos/</loc>
+    <lastmod>2019-04-07T23:53:10+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/fiberchannel/</loc>
+    <lastmod>2019-04-07T23:53:10+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/centos/</loc>
+    <lastmod>2019-03-31T20:02:44+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-using-lacp-and-tagged-vlan-on-centos7/</loc>
+    <lastmod>2019-03-31T20:02:44+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</loc>
+    <lastmod>2019-03-31T15:17:42+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/memo/</loc>
+    <lastmod>2019-03-31T15:17:42+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/linux/</loc>
+    <lastmod>2019-03-25T12:23:32+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/install-pt2-driver-on-linux/</loc>
+    <lastmod>2019-03-25T12:23:32+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/tv/</loc>
+    <lastmod>2019-03-25T12:23:32+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-opening-the-port-with-edgerouter/</loc>
+    <lastmod>2019-03-22T18:05:10+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/set-pppoe-with-edgerouter/</loc>
+    <lastmod>2019-03-12T00:06:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-using-ipv6-of-eo-with-edgerouter/</loc>
+    <lastmod>2019-03-08T00:07:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/neovim/</loc>
+    <lastmod>2019-02-20T18:53:54+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/how-to-fix-neovim-error/</loc>
+    <lastmod>2019-02-20T18:53:54+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/configure-lag-and-tagged-vlan-on-edgerouter/</loc>
+    <lastmod>2019-02-08T01:45:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/lacp/</loc>
+    <lastmod>2019-02-08T01:45:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/vlan/</loc>
+    <lastmod>2019-02-08T01:45:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/vps/</loc>
+    <lastmod>2019-02-05T05:08:54+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/increase-swap-space-with-vps/</loc>
+    <lastmod>2019-02-05T05:08:54+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/wordpress/</loc>
+    <lastmod>2019-01-30T19:41:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/gutenberg-editor-does-not-open-in-wordpress/</loc>
+    <lastmod>2019-01-30T19:41:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/rtx1200/</loc>
+    <lastmod>2019-01-30T17:17:30+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</loc>
+    <lastmod>2019-01-30T17:17:30+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-building-an-l2tp-server-on-centos/</loc>
+    <lastmod>2019-01-18T16:21:21+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/vpn/</loc>
+    <lastmod>2019-01-18T16:21:21+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</loc>
+    <lastmod>2019-01-10T11:49:55+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/asterisk/</loc>
+    <lastmod>2018-12-25T05:28:23+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</loc>
+    <lastmod>2018-12-25T05:28:23+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/powerconnect/</loc>
+    <lastmod>2018-12-21T11:44:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/configure-vlan-with-powerconnect/</loc>
+    <lastmod>2018-12-21T11:44:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/openstack/</loc>
+    <lastmod>2018-12-12T21:53:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/openstack/</loc>
+    <lastmod>2018-12-12T21:53:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/building-openstack-part1/</loc>
+    <lastmod>2018-12-12T21:53:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/proxmox/</loc>
+    <lastmod>2018-12-11T23:59:39+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/about-proxmox-is-quite-easy-to-use/</loc>
+    <lastmod>2018-12-11T23:59:39+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/cisco/</loc>
+    <lastmod>2018-12-09T21:59:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/how-to-initialize-ap-firmware-on-cisco892w/</loc>
+    <lastmod>2018-12-09T21:59:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/redundant-wan-with-ciscorouter/</loc>
+    <lastmod>2018-12-06T00:31:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/create-software-raid-with-proxmox/</loc>
+    <lastmod>2018-12-02T22:01:52+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/convert-wireless-to-wired-with-centos_1/</loc>
+    <lastmod>2018-11-20T14:06:55+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-setting-linkaggregation-on-centos/</loc>
+    <lastmod>2018-11-19T01:29:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/comparison/</loc>
+    <lastmod>2018-11-12T01:26:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/server/</loc>
+    <lastmod>2018-11-12T01:26:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/compare-recommended-rental-servers/</loc>
+    <lastmod>2018-11-12T01:26:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/take-a-look-inside-the-bladeserver_1/</loc>
+    <lastmod>2018-11-11T05:01:52+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/homeserver/</loc>
+    <lastmod>2018-11-10T02:41:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</loc>
+    <lastmod>2018-11-10T02:41:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/aws-lightsail-is-too-cheap/</loc>
+    <lastmod>2018-11-09T02:20:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/remodel/</loc>
+    <lastmod>2018-11-08T17:40:23+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-to-silence-the-rackserver_rx300s6/</loc>
+    <lastmod>2018-11-08T17:40:23+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/asterisk-error1/</loc>
+    <lastmod>2018-11-04T03:18:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-10-17-openvpn-server-for-ubuntuserver/</loc>
+    <lastmod>2018-10-17T00:34:29+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/reverse-proxy-with-grafana-with-nginx/</loc>
+    <lastmod>2018-10-15T04:20:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/aironet/</loc>
+    <lastmod>2018-10-09T02:33:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/cisco-aironet-does-not-get-802.11n-speed/</loc>
+    <lastmod>2018-10-09T02:33:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-using-wpa2psk-with-aironet/</loc>
+    <lastmod>2018-10-09T02:15:26+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/nextcloud/</loc>
+    <lastmod>2018-09-25T04:27:25+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/this-is-why-i-cant-upload-with-nextcloud/</loc>
+    <lastmod>2018-09-25T04:27:25+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/try-building-a-centos-openvpn-server/</loc>
+    <lastmod>2018-09-07T20:00:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/3-recommended-cisco-routers-for-study/</loc>
+    <lastmod>2018-08-12T01:40:01+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/how-to-play-a-pc-game-outside-1_rdp/</loc>
+    <lastmod>2018-08-06T03:08:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/how-to-play-pc-games-remotely_rdp/</loc>
+    <lastmod>2018-08-06T00:23:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/3-recommended-ultra-mobile-pcs/</loc>
+    <lastmod>2018-08-01T23:30:30+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/router/</loc>
+    <lastmod>2018-06-27T07:33:56+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/reasons-to-recommend-a-commercial-router-at-home/</loc>
+    <lastmod>2018-06-27T07:33:56+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</loc>
+    <lastmod>2018-06-12T07:19:01+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-06-05-pros-and-cons-of-rack-servers/</loc>
+    <lastmod>2018-06-05T15:04:37+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/pc/</loc>
+    <lastmod>2018-05-19T19:23:25+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/recommended-used-laptop-manufacturers/</loc>
+    <lastmod>2018-05-19T19:23:25+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/freesoft/</loc>
+    <lastmod>2018-04-30T02:33:50+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/5-recommended-free-tool-apps/</loc>
+    <lastmod>2018-04-30T02:33:50+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-04-25-silent-powerconnect6248/</loc>
+    <lastmod>2018-04-25T07:17:56+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/cannot-create-storage-pool-on-windows10/</loc>
+    <lastmod>2018-04-08T12:11:09+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/steam/</loc>
+    <lastmod>2018-03-22T17:22:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/3-recommended-town-construction-games-on-steam/</loc>
+    <lastmod>2018-03-22T17:22:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-03-09-those-who-play-beautiful-girl-games-should-buy-xbox360/</loc>
+    <lastmod>2018-03-09T22:09:46+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-03-08-impression-that-i-tried-using-p10lite-for-one-month/</loc>
+    <lastmod>2018-03-08T16:40:56+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/ps4/</loc>
+    <lastmod>2018-02-05T13:24:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-02-05-buy-ps3-first-before-you-buy-ps4/</loc>
+    <lastmod>2018-02-05T13:24:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/about-easy-to-use-inbox-in-gmail-management/</loc>
+    <lastmod>2018-02-03T16:52:18+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-02-01-3-recommended-multiplayer-games-for-ps4-and-xboxone/</loc>
+    <lastmod>2018-02-01T14:40:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/xboxone/</loc>
+    <lastmod>2018-02-01T14:40:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-01-20-how-to-karaoke-without-delay-on-ps4/</loc>
+    <lastmod>2018-01-20T10:56:41+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/</loc>
+    <lastmod>2018-01-18T12:01:34+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</loc>
+    <lastmod>2018-01-18T12:01:34+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2018-01-14-ps4slim-or-ps4pro/</loc>
+    <lastmod>2018-01-14T10:30:03+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/why-you-dont-really-need-usb-typec/</loc>
+    <lastmod>2017-12-13T19:20:14+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/about-the-strongest-password-management-software-called-lastpass/</loc>
+    <lastmod>2017-12-13T11:46:18+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/password/</loc>
+    <lastmod>2017-12-13T11:46:18+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/repair/</loc>
+    <lastmod>2017-11-13T02:59:19+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2017-11-13-repair-because-my-washing-machine-cannot-drain/</loc>
+    <lastmod>2017-11-13T02:59:19+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/free_talk/</loc>
+    <lastmod>2017-11-12T03:52:56+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/2017-11-12-i-asked-shacho-san-about-the-resale-of-pt3-or-the-development-of-pt4/</loc>
+    <lastmod>2017-11-12T03:52:56+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</loc>
+    <lastmod>2017-10-22T04:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/tunebrowser-is-the-best-music-playback-software/</loc>
+    <lastmod>2017-10-01T09:00:41+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/introduction-of-homeserver-in-fy2017/</loc>
+    <lastmod>2017-09-10T19:22:05+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/steam-recommended-girl-game/</loc>
+    <lastmod>2017-07-12T00:18:19+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/clamav/</loc>
+    <lastmod>2017-07-10T00:24:16+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/cannot-update-with-freshclam/</loc>
+    <lastmod>2017-07-10T00:24:16+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/game/</loc>
+    <lastmod>2017-06-26T02:07:53+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/three-recommended-paid-smartphone-games/</loc>
+    <lastmod>2017-06-26T02:07:53+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/wonderfox-dvd-video-converter-reviews/</loc>
+    <lastmod>2017-05-14T14:22:19+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</loc>
+    <lastmod>2017-04-21T00:00:59+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/serveros-selection-method/</loc>
+    <lastmod>2017-04-18T00:00:52+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/cons-of-android/</loc>
+    <lastmod>2017-04-08T13:47:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/impressions/</loc>
+    <lastmod>2017-04-08T13:47:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/change-from-carrier-to-iijmio_mnp/</loc>
+    <lastmod>2017-02-12T18:58:28+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/iijmio/</loc>
+    <lastmod>2017-02-11T03:17:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/transfer-from-carrier-to-iijmio/</loc>
+    <lastmod>2017-02-11T03:17:06+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</loc>
+    <lastmod>2017-02-08T23:34:47+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</loc>
+    <lastmod>2017-02-06T23:58:32+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/categories/software/</loc>
+    <lastmod>2017-02-05T23:59:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/4-recommended-browsers/</loc>
+    <lastmod>2017-02-05T23:59:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/3-free-software-recommended-for-pcremote/</loc>
+    <lastmod>2017-02-03T03:05:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/android/</loc>
+    <lastmod>2017-01-31T02:12:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/introduced-linageos14.1-to-zenfone2laser/</loc>
+    <lastmod>2017-01-31T02:12:27+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/6-recommended-simulation-games-on-steam/</loc>
+    <lastmod>2017-01-30T02:14:02+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/service/</loc>
+    <lastmod>2017-01-29T23:59:43+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/5-paid-services-to-contract/</loc>
+    <lastmod>2017-01-29T23:59:43+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/gake/</loc>
+    <lastmod>2017-01-25T23:43:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/i-bought-segasaturn-now/</loc>
+    <lastmod>2017-01-25T23:43:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/open-sidewinder-precisionpro/</loc>
+    <lastmod>2017-01-22T15:04:21+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/enjoy-karaoke-at-home_windows10/</loc>
+    <lastmod>2017-01-19T17:04:29+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/install-cm13-in-zenfone2laser/</loc>
+    <lastmod>2017-01-18T16:20:09+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/tags/kinect/</loc>
+    <lastmod>2017-01-17T15:20:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/i-tried-moving-mmd-with-kinect/</loc>
+    <lastmod>2017-01-17T15:20:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/i-bought-kinectv1/</loc>
+    <lastmod>2017-01-16T17:47:38+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/benefits-of-amazon-prime/</loc>
+    <lastmod>2017-01-16T16:42:28+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/impression-of-using-xboxone-controller/</loc>
+    <lastmod>2017-01-11T03:49:01+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/3-paid-store-apps-to-keep-in-windows10/</loc>
+    <lastmod>2017-01-09T17:28:02+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cloud.yoneyan.net/post/4-free-store-apps-you-want-to-keep-in-windows-10/</loc>
+    <lastmod>2017-01-09T04:09:02+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
