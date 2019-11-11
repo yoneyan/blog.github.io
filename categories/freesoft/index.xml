@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>freesoft on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/categories/freesoft/</link>
+    <link>http://yoneyan.dev/categories/freesoft/</link>
     <description>Recent content in freesoft on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 30 Apr 2018 02:33:50 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/categories/freesoft/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/categories/freesoft/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>おすすめの無料ツールアプリ5選</title>
-      <link>http://cloud.yoneyan.net/post/5-recommended-free-tool-apps/</link>
+      <link>http://yoneyan.dev/post/5-recommended-free-tool-apps/</link>
       <pubDate>Mon, 30 Apr 2018 02:33:50 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/5-recommended-free-tool-apps/</guid>
+      <guid>http://yoneyan.dev/post/5-recommended-free-tool-apps/</guid>
       <description>今回は、おすすめの無料ツールアプリを紹介していきます。 今回は5選ということでツールアプリを5つ紹介させていただきます。
 1.LastPass    対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.lastpass.lpandroid iOS(iTunes):https://itunes.apple.com/jp/app/lastpass-password-manager/id324613447?mt=8 公式サイト:https://www.lastpass.com/ja パスワード管理アプリのLastPassはおすすめです。 Android版ではアプリやブラウザなどで自動入力することができるので、Android端末を持っている方は是非入れてほしいアプリだと思います。つい最近までは、有料版のみでの対応となっていましたが、無料版でも自動入力が出来るようになりました。 iOS版でも半自動入力してくれます。 PC版のブラウザの拡張プラグインもあるので、端末間でのパスワードを共有するのに使うことが出来ます。 パソコンと端末をシームレスに共有することができるのでおすすめのアプリです。
 2.Keep    対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.google.android.keep&amp;amp;hl=ja iOS(iTunes):https://itunes.apple.com/jp/app/google-keep/id1029207872?mt=8 公式サイト:https://keep.google.com/ Googleが提供しているメモ帳サービスになります。 メモ帳アプリはいろいろありますが、Keepの良さはUIがかなりシンプルなところです。 使って損はないサービスのように思います。

@@ -2,165 +2,165 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/categories/</link>
+    <link>http://yoneyan.dev/categories/</link>
     <description>Recent content in Categories on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 13 Sep 2019 02:17:49 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>homeserver</title>
-      <link>http://cloud.yoneyan.net/categories/homeserver/</link>
+      <link>http://yoneyan.dev/categories/homeserver/</link>
       <pubDate>Fri, 13 Sep 2019 02:17:49 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/homeserver/</guid>
+      <guid>http://yoneyan.dev/categories/homeserver/</guid>
       <description></description>
     </item>
     
     <item>
       <title>network</title>
-      <link>http://cloud.yoneyan.net/categories/network/</link>
+      <link>http://yoneyan.dev/categories/network/</link>
       <pubDate>Fri, 13 Sep 2019 01:44:15 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/network/</guid>
+      <guid>http://yoneyan.dev/categories/network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>http://cloud.yoneyan.net/categories/server/</link>
+      <link>http://yoneyan.dev/categories/server/</link>
       <pubDate>Sun, 11 Aug 2019 23:56:52 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/server/</guid>
+      <guid>http://yoneyan.dev/categories/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>setting</title>
-      <link>http://cloud.yoneyan.net/categories/setting/</link>
+      <link>http://yoneyan.dev/categories/setting/</link>
       <pubDate>Wed, 31 Jul 2019 00:15:47 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/setting/</guid>
+      <guid>http://yoneyan.dev/categories/setting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>review</title>
-      <link>http://cloud.yoneyan.net/categories/review/</link>
+      <link>http://yoneyan.dev/categories/review/</link>
       <pubDate>Thu, 20 Jun 2019 01:31:33 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/review/</guid>
+      <guid>http://yoneyan.dev/categories/review/</guid>
       <description></description>
     </item>
     
     <item>
       <title>recommend</title>
-      <link>http://cloud.yoneyan.net/categories/recommend/</link>
+      <link>http://yoneyan.dev/categories/recommend/</link>
       <pubDate>Tue, 18 Jun 2019 00:15:58 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/recommend/</guid>
+      <guid>http://yoneyan.dev/categories/recommend/</guid>
       <description></description>
     </item>
     
     <item>
       <title>build</title>
-      <link>http://cloud.yoneyan.net/categories/build/</link>
+      <link>http://yoneyan.dev/categories/build/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/build/</guid>
+      <guid>http://yoneyan.dev/categories/build/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VPS</title>
-      <link>http://cloud.yoneyan.net/categories/vps/</link>
+      <link>http://yoneyan.dev/categories/vps/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/vps/</guid>
+      <guid>http://yoneyan.dev/categories/vps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>free_talk</title>
-      <link>http://cloud.yoneyan.net/categories/free_talk/</link>
+      <link>http://yoneyan.dev/categories/free_talk/</link>
       <pubDate>Wed, 17 Apr 2019 23:35:47 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/free_talk/</guid>
+      <guid>http://yoneyan.dev/categories/free_talk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>memo</title>
-      <link>http://cloud.yoneyan.net/categories/memo/</link>
+      <link>http://yoneyan.dev/categories/memo/</link>
       <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/memo/</guid>
+      <guid>http://yoneyan.dev/categories/memo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>openstack</title>
-      <link>http://cloud.yoneyan.net/categories/openstack/</link>
+      <link>http://yoneyan.dev/categories/openstack/</link>
       <pubDate>Wed, 12 Dec 2018 21:53:06 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/openstack/</guid>
+      <guid>http://yoneyan.dev/categories/openstack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>comparison</title>
-      <link>http://cloud.yoneyan.net/categories/comparison/</link>
+      <link>http://yoneyan.dev/categories/comparison/</link>
       <pubDate>Mon, 12 Nov 2018 01:26:24 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/comparison/</guid>
+      <guid>http://yoneyan.dev/categories/comparison/</guid>
       <description></description>
     </item>
     
     <item>
       <title>remodel</title>
-      <link>http://cloud.yoneyan.net/categories/remodel/</link>
+      <link>http://yoneyan.dev/categories/remodel/</link>
       <pubDate>Thu, 08 Nov 2018 17:40:23 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/remodel/</guid>
+      <guid>http://yoneyan.dev/categories/remodel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>freesoft</title>
-      <link>http://cloud.yoneyan.net/categories/freesoft/</link>
+      <link>http://yoneyan.dev/categories/freesoft/</link>
       <pubDate>Mon, 30 Apr 2018 02:33:50 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/freesoft/</guid>
+      <guid>http://yoneyan.dev/categories/freesoft/</guid>
       <description></description>
     </item>
     
     <item>
       <title>repair</title>
-      <link>http://cloud.yoneyan.net/categories/repair/</link>
+      <link>http://yoneyan.dev/categories/repair/</link>
       <pubDate>Mon, 13 Nov 2017 02:59:19 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/repair/</guid>
+      <guid>http://yoneyan.dev/categories/repair/</guid>
       <description></description>
     </item>
     
     <item>
       <title>impressions</title>
-      <link>http://cloud.yoneyan.net/categories/impressions/</link>
+      <link>http://yoneyan.dev/categories/impressions/</link>
       <pubDate>Sat, 08 Apr 2017 13:47:27 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/impressions/</guid>
+      <guid>http://yoneyan.dev/categories/impressions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>software</title>
-      <link>http://cloud.yoneyan.net/categories/software/</link>
+      <link>http://yoneyan.dev/categories/software/</link>
       <pubDate>Sun, 05 Feb 2017 23:59:24 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/categories/software/</guid>
+      <guid>http://yoneyan.dev/categories/software/</guid>
       <description></description>
     </item>
     

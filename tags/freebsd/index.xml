@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>freebsd on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/freebsd/</link>
+    <link>http://yoneyan.dev/tags/freebsd/</link>
     <description>Recent content in freebsd on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 22 Jul 2019 11:16:02 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/freebsd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/freebsd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FreeBSDでポート開放をする</title>
-      <link>http://cloud.yoneyan.net/post/open-port-with-freebsd/</link>
+      <link>http://yoneyan.dev/post/open-port-with-freebsd/</link>
       <pubDate>Mon, 22 Jul 2019 11:16:02 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/open-port-with-freebsd/</guid>
+      <guid>http://yoneyan.dev/post/open-port-with-freebsd/</guid>
       <description>FreeBSDとは 私自身もよくわかっていないところが多いので、https://ja.wikipedia.org/wiki/FreeBSDこちらを参考に箇条書きしてみるとこんな感じになりました。
  FreeBSDはUnix系のOS 処理速度よりも安定性を重視した設計がされているらしい？ Linux向けに開発されたものもしっかりと動く パッケージマネージャとしてpkgが入っている  始めよう 有効化する ファイアウォールのコマンドとしてipfwを使うのですが、初期の状態では
 root@localhost:~ # ipfw list ipfw: retrieving config failed: Protocol not available  とこのようなエラーが入ります。この場合は、/etc/rc.confからファイアウォールを有効にする必要が出てきます。

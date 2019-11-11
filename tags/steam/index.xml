@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>steam on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/steam/</link>
+    <link>http://yoneyan.dev/tags/steam/</link>
     <description>Recent content in steam on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 22 Mar 2018 17:22:35 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/steam/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Steamでおすすめの町建設ゲーム3選</title>
-      <link>http://cloud.yoneyan.net/post/3-recommended-town-construction-games-on-steam/</link>
+      <link>http://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/</link>
       <pubDate>Thu, 22 Mar 2018 17:22:35 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/3-recommended-town-construction-games-on-steam/</guid>
+      <guid>http://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/</guid>
       <description>今回はSteamでおすすめの町建設ゲームを3つほど紹介させていただきます。
 SimCity™ 4 Deluxe Edition    通常価格:1980円 対応OS:windowsXP（windows10動作可能） 最低スペック
  CPU pentium3 500以降 Memory 256MB GPU 32MB、DirectX7.0以降対応のグラフィックボードであること Storage 1.6GB以上  Steam:http://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/ 町建設ゲームで一番有名なのがSimcityシリーズだと思います。 Steam版の残念なところはSimcityシリーズの最新作はOriginにしかないところです。 最新作ではないというところもあり、かなりゲームシステム的には古いですが、逆に懐かしのSimcityのスーパーファミコン版を思い出すところもあり、これはこれで面白いと思います。 日本語化する必要はありますが、比較的簡単にできるので、そこら辺は安心してください。 町建設ゲームといえばSimcityシリーズというところもあるので、みなさん是非やってみてはいかがでしょうか。 スペック的には今のパソコンでは余裕でいけます。
@@ -25,10 +25,10 @@ Cities: Skylines    通常価格:2980円 （Deluxe Editionは3980円） 対応OS
     
     <item>
       <title>（英語の勉強にもなる）Steamおすすめ美少女ゲーム</title>
-      <link>http://cloud.yoneyan.net/post/steam-recommended-girl-game/</link>
+      <link>http://yoneyan.dev/post/steam-recommended-girl-game/</link>
       <pubDate>Wed, 12 Jul 2017 00:18:19 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/steam-recommended-girl-game/</guid>
+      <guid>http://yoneyan.dev/post/steam-recommended-girl-game/</guid>
       <description>PCゲームストアで有名なSteamの中には皆さん知っての通りたくさんの種類のゲームがあります。そこで、たくさんの種類の中でもギャルゲーと呼ばれる美少女ゲームというものがあります。Steamでは数多くのギャルゲーがあり、日本の会社が出したゲームもたくさんありますが、残念なことに世界に向けて売っているゲームになるので、ボイスは日本語なのに字幕が英語だけというものが多いので辞書引っ張りながらになるので時間はかかりますが、いい勉強にもなると思います。
 英語が本当に苦手な方でも面白いので国内版を是非国内版を買ってみてはいかがでしょうか。
 ここでの美少女ゲームはエ＊ゲーは該当しないので、18歳未満の方でも安心してできますｗ
@@ -62,10 +62,10 @@ Steam版では日本語と英語の両方に対応しています。
     
     <item>
       <title>Steamでおすすめのシミュレーションゲーム6選</title>
-      <link>http://cloud.yoneyan.net/post/6-recommended-simulation-games-on-steam/</link>
+      <link>http://yoneyan.dev/post/6-recommended-simulation-games-on-steam/</link>
       <pubDate>Mon, 30 Jan 2017 02:14:02 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/6-recommended-simulation-games-on-steam/</guid>
+      <guid>http://yoneyan.dev/post/6-recommended-simulation-games-on-steam/</guid>
       <description>今回はSteamでおすすめのシミュレーションゲームを紹介します。
 そもそもSteamとはなんじゃいという人は パソコン版のゲーム配信ストアです。PlayStationStoreのパソコン版と思ったらいいのではないのかなと思います。
 Prison Architect    リンク：http://store.steampowered.com/app/233450/

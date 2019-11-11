@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>remodel on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/categories/remodel/</link>
+    <link>http://yoneyan.dev/categories/remodel/</link>
     <description>Recent content in remodel on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 08 Nov 2018 17:40:23 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/categories/remodel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/categories/remodel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ラックサーバ(RX300 S6)を静音化してみる</title>
-      <link>http://cloud.yoneyan.net/post/try-to-silence-the-rackserver_rx300s6/</link>
+      <link>http://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</link>
       <pubDate>Thu, 08 Nov 2018 17:40:23 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/try-to-silence-the-rackserver_rx300s6/</guid>
+      <guid>http://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</guid>
       <description>現在、メインで動かし続けている自宅のサーバーがRX300 S6になりますが、2Uだからということもありますが、かなりうるさいという問題が発生しました。 普通に考えるとデータセンターに置く物なのでうるさい理由がわかりますが、この状態では家で他の作業が出来ないのであまりよくないのですがファンを静音化する作業してみました。
 そもそも、静音化とは サーバー内のファンの速度を意図的に落とすことのことです。 サーバーやパソコンにとってはあまりよろしくないのが実情ですが、うるさすぎるので仕方がないという感じです。 これによって壊れることもありますので、自己責任で作業をしてください。 かなりやってることはかなりよろしくないので、わかった上でしてください。
 作業していく 1．抵抗を選ぶ 1/4W（0.25W）の抵抗を使ってみたのですが、電流が強すぎて煙を出して「プシュ〜〜」という音をしながら焼ける事件が起きたので10Wのセメント抵抗を使います。 ファンに書いてある↓の電流と電圧などに気をつけて作業してください。抵抗値は電圧と電流を元に計算します。  
@@ -48,10 +48,10 @@ Yahooショッピング
     
     <item>
       <title>zenfone2laserにLineageOS 14.1を導入してみた</title>
-      <link>http://cloud.yoneyan.net/post/introduced-linageos14.1-to-zenfone2laser/</link>
+      <link>http://yoneyan.dev/post/introduced-linageos14.1-to-zenfone2laser/</link>
       <pubDate>Tue, 31 Jan 2017 02:12:27 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/introduced-linageos14.1-to-zenfone2laser/</guid>
+      <guid>http://yoneyan.dev/post/introduced-linageos14.1-to-zenfone2laser/</guid>
       <description>前回、zenfone2laserにCM13を導入しましたが、いつのまにかandroid7.0ベースのLineageOS 14.1というのが出ていたので今回はこれを導入してみます。
 カスタムROM情報 android7.1.1ベースになりました。
 android7.1.1でできること  マルチウィンドウが標準で使えるようになった アプリの一括アンインストールができるようになった バッテリー節電機能が強化された デザインの変更  などの機能強化されました。 またセキュリティも強化されています。
@@ -73,10 +73,10 @@ android7.1.1でできること  マルチウィンドウが標準で使えるよ
     
     <item>
       <title>zenfone2laserにCM13を導入する</title>
-      <link>http://cloud.yoneyan.net/post/install-cm13-in-zenfone2laser/</link>
+      <link>http://yoneyan.dev/post/install-cm13-in-zenfone2laser/</link>
       <pubDate>Wed, 18 Jan 2017 16:20:09 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/install-cm13-in-zenfone2laser/</guid>
+      <guid>http://yoneyan.dev/post/install-cm13-in-zenfone2laser/</guid>
       <description>昔に実は記事を作っていましたがブログを再構築したためもう一回書き直すことにしました。
 用意しておくもの パソコン、USBケーブル、スマホ本体を用意してください。
 パソコンにadbをインストール https://forum.xda-developers.com/showthread.php?t=2588979 こちらからダウンロードしてインストーラを実行すると、簡単にadbが構築できます。

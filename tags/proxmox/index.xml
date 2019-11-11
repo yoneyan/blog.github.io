@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>proxmox on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/proxmox/</link>
+    <link>http://yoneyan.dev/tags/proxmox/</link>
     <description>Recent content in proxmox on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 11 Dec 2018 23:59:39 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Proxmoxがかなり使いやすい件について</title>
-      <link>http://cloud.yoneyan.net/post/about-proxmox-is-quite-easy-to-use/</link>
+      <link>http://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</link>
       <pubDate>Tue, 11 Dec 2018 23:59:39 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/about-proxmox-is-quite-easy-to-use/</guid>
+      <guid>http://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</guid>
       <description>Proxmoxというハイパーバイザー型のOSがありますが、かなり使いやすいので便利な点をこの記事で紹介していきます。
 Proxmoxとはなんぞや(^^;)? KVMとOpenVZをサポートしているハイパーバイザー型のOSです。 Linuxには仮想マシンであるKVMとコンテナであるOpenVZはLinux系であればかんたんに構築できますが、GUI管理が簡単にできないという問題点がありました。 それがProxmoxでは簡単にWebGUIで操作することができます。
 ということで、そろそろ使いやすい点を紹介していきます。
@@ -38,10 +38,10 @@ LinuxではKVMを動かすことができますが、なかなかCUIでの操作
     
     <item>
       <title>proxmox（Debian系）でソフトウェアRAIDを組む</title>
-      <link>http://cloud.yoneyan.net/post/create-software-raid-with-proxmox/</link>
+      <link>http://yoneyan.dev/post/create-software-raid-with-proxmox/</link>
       <pubDate>Sun, 02 Dec 2018 22:01:52 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/create-software-raid-with-proxmox/</guid>
+      <guid>http://yoneyan.dev/post/create-software-raid-with-proxmox/</guid>
       <description>今回はproxmoxというハイパーバイザーOSを使ってソフトウェアRAIDを組んでみます。 ソフトウェアRAIDを組む方法として、mdadmを使って構築していきます。普通はmdadmをコマンド操作で構築しますが、正直なところキツイのでwebminを使ってRAID構築をしていきます。webminではWebUIから構築出来ますが、実際に動いているのはmdadmなので「コマンド操作したい！」となった時でも対応できるのでおすすめです。
 1．最初にWebminの導入 1.1 Webminをダウンロード http://www.webmin.com/download.html から最新版の.debファイルをwget経由でダウンロードします。
 wget https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  https://~all.debの部分は最新版のリンク先を貼り付けてください。

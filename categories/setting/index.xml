@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>setting on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/categories/setting/</link>
+    <link>http://yoneyan.dev/categories/setting/</link>
     <description>Recent content in setting on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 31 Jul 2019 00:15:47 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/categories/setting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/categories/setting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Allied Telesis stack状態を初期の状況に戻す方法</title>
-      <link>http://cloud.yoneyan.net/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/</link>
+      <link>http://yoneyan.dev/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/</link>
       <pubDate>Wed, 31 Jul 2019 00:15:47 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/</guid>
+      <guid>http://yoneyan.dev/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/</guid>
       <description>x510-28gtxというL3スイッチを実際に使っています。
 ヤフオクで購入したのですが、パスワードはわかるものの、stackが組まれており、よくわからない状態になっていたので完全に初期化してみました。
 スタック番号が「２」になっている状態です。
@@ -32,10 +32,10 @@ awplus#atmf cleanup  [atmf cleanup]というコマンドを使うことで、完
     
     <item>
       <title>EdgerouterでOpenVPNクライアントを使う</title>
-      <link>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</link>
+      <link>http://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</link>
       <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/using-openvpn-client-with-edgerouter/</guid>
+      <guid>http://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</guid>
       <description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
 サーバー側の設定はこちらから
 1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
@@ -51,10 +51,10 @@ ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイル�
     
     <item>
       <title>CentOS7でLACPとタグVLANを使ってみる</title>
-      <link>http://cloud.yoneyan.net/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
+      <link>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
       <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
+      <guid>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
       <description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
 環境 CentOS=========L3 Switch(vlan10,vlan20)
 2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
@@ -68,10 +68,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;qu
     
     <item>
       <title>proxmox（Debian系）でソフトウェアRAIDを組む</title>
-      <link>http://cloud.yoneyan.net/post/create-software-raid-with-proxmox/</link>
+      <link>http://yoneyan.dev/post/create-software-raid-with-proxmox/</link>
       <pubDate>Sun, 02 Dec 2018 22:01:52 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/create-software-raid-with-proxmox/</guid>
+      <guid>http://yoneyan.dev/post/create-software-raid-with-proxmox/</guid>
       <description>今回はproxmoxというハイパーバイザーOSを使ってソフトウェアRAIDを組んでみます。 ソフトウェアRAIDを組む方法として、mdadmを使って構築していきます。普通はmdadmをコマンド操作で構築しますが、正直なところキツイのでwebminを使ってRAID構築をしていきます。webminではWebUIから構築出来ますが、実際に動いているのはmdadmなので「コマンド操作したい！」となった時でも対応できるのでおすすめです。
 1．最初にWebminの導入 1.1 Webminをダウンロード http://www.webmin.com/download.html から最新版の.debファイルをwget経由でダウンロードします。
 wget https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  https://~all.debの部分は最新版のリンク先を貼り付けてください。
@@ -93,10 +93,10 @@ apt-get install mdadm  これでインストールは終了です。
     
     <item>
       <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</title>
-      <link>http://cloud.yoneyan.net/post/asterisk-error1/</link>
+      <link>http://yoneyan.dev/post/asterisk-error1/</link>
       <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/asterisk-error1/</guid>
+      <guid>http://yoneyan.dev/post/asterisk-error1/</guid>
       <description>Unable to retrieve PJSIP transport &amp;lsquo;simpletrans&amp;rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
 [transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
@@ -105,10 +105,10 @@ apt-get install mdadm  これでインストールは終了です。
     
     <item>
       <title>grafanaをnginxでリバースプロキシしてみる</title>
-      <link>http://cloud.yoneyan.net/post/reverse-proxy-with-grafana-with-nginx/</link>
+      <link>http://yoneyan.dev/post/reverse-proxy-with-grafana-with-nginx/</link>
       <pubDate>Mon, 15 Oct 2018 04:20:47 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/reverse-proxy-with-grafana-with-nginx/</guid>
+      <guid>http://yoneyan.dev/post/reverse-proxy-with-grafana-with-nginx/</guid>
       <description>みなさん大好きなGrafanaを使っている方は、たくさんいらっしゃると思うのですが、今回はnginxを使ってリバースプロキシを使ってみました。少しだけややこしいと思ったので記事にします。 正直なところ、ここを見なくても公式サイトにしっかりと載せてくれてます。 おそらく、そちらを見た方がいいです。 http://docs.grafana.org/installation/behind_proxy/
 今回やりたいこと ドメインはtest.domainと仮定します。 http://test.domain/grafana/でアクセス出来るようにする test.domainはもちろん自分のドメインに変えてください。
  nginxのリバースプロキシの設定 grafanaの設定  終了です
@@ -120,10 +120,10 @@ server { listen 80; server_name test.domain location /grafana/ { proxy_pass http
     
     <item>
       <title>Cisco_Aironetで802.11nの速度が出ない</title>
-      <link>http://cloud.yoneyan.net/post/cisco-aironet-does-not-get-802.11n-speed/</link>
+      <link>http://yoneyan.dev/post/cisco-aironet-does-not-get-802.11n-speed/</link>
       <pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/cisco-aironet-does-not-get-802.11n-speed/</guid>
+      <guid>http://yoneyan.dev/post/cisco-aironet-does-not-get-802.11n-speed/</guid>
       <description>お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&amp;hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
 Dot11Radio1の設定 5ghzの設定になるので、Dot11Radio1でコンフィグを弄ります。 方法を簡単に書くと、チャンネルを適当なところで固定してから40Mhzの設定をするという感じです。 802.11nは2つのチャンネルを束ねて、速度を倍にしているといったごり押しな規格になっておりチャンネルが自動設定ではなぜかうまく行かないので、手動で合わせます。 また、どのチャンネルが重なっていないのかはスマホにWifiアナライザーのアプリを入れておくとかなり幸せになれます。
 interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1  とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
@@ -132,10 +132,10 @@ interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-abov
     
     <item>
       <title>Cisco_AironetでWPA2-PSKを使ってみる</title>
-      <link>http://cloud.yoneyan.net/post/try-using-wpa2psk-with-aironet/</link>
+      <link>http://yoneyan.dev/post/try-using-wpa2psk-with-aironet/</link>
       <pubDate>Tue, 09 Oct 2018 02:15:26 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/try-using-wpa2psk-with-aironet/</guid>
+      <guid>http://yoneyan.dev/post/try-using-wpa2psk-with-aironet/</guid>
       <description>自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
 前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
 初期の設定 マルチssidを有効にするために
@@ -150,10 +150,10 @@ encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書�
     
     <item>
       <title>nextcloudでアップロードができない理由はこれだった...</title>
-      <link>http://cloud.yoneyan.net/post/this-is-why-i-cant-upload-with-nextcloud/</link>
+      <link>http://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/</link>
       <pubDate>Tue, 25 Sep 2018 04:27:25 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/this-is-why-i-cant-upload-with-nextcloud/</guid>
+      <guid>http://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/</guid>
       <description>nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
 戦犯は&amp;hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
 なぜわかったのか？ nextcloudのweb操作で小さいファイルだとアップロードできるのに、１MBを超えるファイルをアップロードしようとすると、なぜか途中で止まってしまうということが起こりました。 そこで、nextcloudのクライアントからを入れてみたときに、どんな挙動が起こるのか確かめてみると&amp;hellip;  
@@ -166,10 +166,10 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
     
     <item>
       <title>外でPCゲームをする方法その1（rdp編）</title>
-      <link>http://cloud.yoneyan.net/post/how-to-play-a-pc-game-outside-1_rdp/</link>
+      <link>http://yoneyan.dev/post/how-to-play-a-pc-game-outside-1_rdp/</link>
       <pubDate>Mon, 06 Aug 2018 03:08:24 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/how-to-play-a-pc-game-outside-1_rdp/</guid>
+      <guid>http://yoneyan.dev/post/how-to-play-a-pc-game-outside-1_rdp/</guid>
       <description>この記事はリモートでPCゲームをする方法（rdp編）の続き？になります。 前回の記事では家庭内LANでPCゲームをする方法を紹介しましたが、この記事では外でPCゲームをする方法を紹介します。
 方法として リモートデスクトップを使って外でPCゲームをする方法として、下の二つの方法があります。
  VPNをつなげてローカルIPでリモートデスクトップ接続する ルータをポート開放してリモートデスクトップ接続する  この記事では、VPNを使ったつなげてローカルIPでRDP接続する方法を紹介します。この方法が一番手っ取り早く、簡単にできる方法になると思います。(たぶん&amp;hellip;(^^;))
@@ -196,10 +196,10 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
     
     <item>
       <title>リモートでPCゲームをする方法(rdp編)</title>
-      <link>http://cloud.yoneyan.net/post/how-to-play-pc-games-remotely_rdp/</link>
+      <link>http://yoneyan.dev/post/how-to-play-pc-games-remotely_rdp/</link>
       <pubDate>Mon, 06 Aug 2018 00:23:06 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/how-to-play-pc-games-remotely_rdp/</guid>
+      <guid>http://yoneyan.dev/post/how-to-play-pc-games-remotely_rdp/</guid>
       <description>この記事では、Windows10Proに標準で搭載されている機能であるリモートデスクトップを使ってリモートでPCゲームをする方法を紹介します。 （リモートデスクトップを使って外でゲームをする方法はまたどっかで紹介します。） 正直なところゲームは出来ますが、リモートデスクトップ経由でゲームをするということが想定されていないためできないゲームもありますが、2D系のゲームなら比較的できます。 ですが、さすがに実用できるほどのものでもないのでそこだけは注意してください。 美少女ゲームぐらいであれば意外と動いてくれます。
 リモートデスクトップとは？ リモートデスクトップ正式名称はRDP（Remote Desktop Protocol）になります。 Windowsでは全エディションにRDPのクライアントが初期状態からインストールされているはずです。（AD環境下はわかりません） それによって、Windows搭載のRDPのバージョンさえ適合されていれば（されていなくてもたいてい動く）接続できます。
 準備するもの  Windows7 Pro以上（Windows7 Pro以上でないとRDPのホスト（サーバー）機能を使えないので注意！） クライアントのPCがWindows7以上であること（バージョンはなんでもよい）  Windows7以上ですが、Windows10の方が問題が起きにくいのでWindows10をおすすめします。
@@ -219,10 +219,10 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
     
     <item>
       <title>windows10で記憶域プールが作成できない</title>
-      <link>http://cloud.yoneyan.net/post/cannot-create-storage-pool-on-windows10/</link>
+      <link>http://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/</link>
       <pubDate>Sun, 08 Apr 2018 12:11:09 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/cannot-create-storage-pool-on-windows10/</guid>
+      <guid>http://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/</guid>
       <description>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できないという謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&amp;hellip;&amp;hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
 起きたこと    記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
@@ -234,10 +234,10 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
     
     <item>
       <title>pfsenseでPS4やPS3のNATタイプ3になる際の対処法</title>
-      <link>http://cloud.yoneyan.net/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</link>
+      <link>http://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</link>
       <pubDate>Thu, 18 Jan 2018 12:01:34 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</guid>
+      <guid>http://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</guid>
       <description>最近自作ルーターを構築して、WebGUIで管理できるpfsenseというOSインストールして使っている筆者です。
 pfsenseを構築したことで安定性がかなり上がったのですが、一つ問題が発生しました。それはPS3とPS4のオンライン機能です。pfsenseにしたことで、NATタイプ3になってしまい、オンラインで遊ぶ時に支障を来し始めたので、その対処法を紹介させていただきます。
 NATタイプとは？ PSにはネットワークの判別方法としてNATタイプというものがあります。
@@ -264,10 +264,10 @@ UPnP Access Control Listsの設定    設定例としてはこんな感じにな
     
     <item>
       <title>freshclamで更新できない</title>
-      <link>http://cloud.yoneyan.net/post/cannot-update-with-freshclam/</link>
+      <link>http://yoneyan.dev/post/cannot-update-with-freshclam/</link>
       <pubDate>Mon, 10 Jul 2017 00:24:16 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/cannot-update-with-freshclam/</guid>
+      <guid>http://yoneyan.dev/post/cannot-update-with-freshclam/</guid>
       <description>ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
 ウイルス定義ファイルを更新しようとすると&amp;hellip;    おい&amp;hellip;まじか&amp;hellip;
 root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).
@@ -279,10 +279,10 @@ root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started a
     
     <item>
       <title>teamviewerでリモート元のパソコンの音を消す方法</title>
-      <link>http://cloud.yoneyan.net/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</link>
+      <link>http://yoneyan.dev/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:59 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</guid>
+      <guid>http://yoneyan.dev/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</guid>
       <description>個人用途では無料で使える上に、様々なデバイスからパソコンにリモートアクセスすることが可能なのTeamViewerというソフトがあります。 teamviewerを使っていたらわかるんですが、リモート先の端末から音を出すとどうしてもリモート元のパソコンからも音が出てしまいます。 自分のようにギャルゲーをTeamViewerを使って遊んでいますが、音が出てかなり困っています&amp;hellip; それを対処するため一応、回避方法がわかったので紹介していきます。
 解決策 新しくオーディオデバイスを買うということです。 最初から内蔵されているオーディオデバイスではスピーカーの出力を担当させて、新たに買ったオーディオデバイスはTeamViewer専用で使うという方法です。 windowsの場合、アプリケーションをどれか一つのオーディオデバイスにしか出力することができません。既定値設定が一つのデバイスに絞られているので、実際には同時で複数のデバイスに出力することができません。 それならば、家で使うときはいつも使ってるオーディオデバイスを使えるようにします。逆に、TeamViewerのようなリモートソフトを使うときはリモート専用に別のオーディオデバイスを使えば家ではなることないと思いました。
 やってみる 1.TeamViewerの専用のオーディオデバイスを買います。 こういうのは安いもので十分なので、amazonでUSBオーディオデバイスでしらべると大量に出てくるのでそれから調べるのもありです。  
@@ -305,10 +305,10 @@ root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started a
     
     <item>
       <title>Simplicityでパーマリンクが日本語にできない</title>
-      <link>http://cloud.yoneyan.net/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</link>
+      <link>http://yoneyan.dev/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</link>
       <pubDate>Mon, 06 Feb 2017 23:58:32 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</guid>
+      <guid>http://yoneyan.dev/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</guid>
       <description>雑談 つい最近、wordpressテーマをstinger8からSimplicity2に変更しました。
 変更理由としてはstinger系が有料化したことにより、かなり機能が削られてしまいました。機能はプラグインで補えるのでどちらでもいいのですが、adsense広告がどうしても縦並びになってしまい悩んでいました。テーマ編集で横並びにしようと、ごにょごにょしても全く改善される見込みがなかったので。久しぶりにSimplicityを入れようと思い入れました。
 adsense広告が横並びになってくれる上に、いろいろこのテーマ単体で設定できるのでこれからは使おうかなと思っているところです。

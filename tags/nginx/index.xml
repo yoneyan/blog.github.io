@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nginx on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/nginx/</link>
+    <link>http://yoneyan.dev/tags/nginx/</link>
     <description>Recent content in nginx on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 04 Jun 2019 19:03:13 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>nginxでリバースプロキシとLet&#39;s Encryptを導入する</title>
-      <link>http://cloud.yoneyan.net/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
+      <link>http://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
+      <guid>http://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
       <description>nginxでLet&amp;rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
 当方のLet&amp;rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
 今回はリバースプロキシを使用します。

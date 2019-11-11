@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IIJmio on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/iijmio/</link>
+    <link>http://yoneyan.dev/tags/iijmio/</link>
     <description>Recent content in IIJmio on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 11 Feb 2017 03:17:06 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/iijmio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/iijmio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>キャリアから格安スマホ(IIJmio)に乗り換え（準備編）</title>
-      <link>http://cloud.yoneyan.net/post/transfer-from-carrier-to-iijmio/</link>
+      <link>http://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</link>
       <pubDate>Sat, 11 Feb 2017 03:17:06 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/transfer-from-carrier-to-iijmio/</guid>
+      <guid>http://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</guid>
       <description>あなたはどこの携帯電話会社で契約していますか？ 大手キャリアのau,docomo,softbankの三社で契約されている方が多いでしょう。 学生なら学生割引が効いて安くなりますが、それでも高くなってしまいます。
 この記事を書くきっかけ この記事を書くきっかけになったのは母親のスマホ料金です。端末前払いしているのに月額5700円です。これ保険などのオプション抜いてこれですよ。馬鹿なの？という値段設定です。 パカパカケータイからキャリア変更せずにそのまま契約したせいでこの値段になったのかもしれませんが、高すぎます&amp;hellip; わざわざ電話もかけないし、データ量7GBしかないのに家の光回線と同じ料金を払わないといけないのかという話になり、格安スマホに変えようとなったわけです。 ということで格安スマホに移行（準備編）をここでは説明させていただきます。 また、端末はキャリアで使っていたものではなく今回は新しく買いました。 そういうこともあり、キャリア端末を使って格安SIMを運用する際はやり方が少し異なる場合があるのでご注意ください。時間があれば記事を書こうかなと思っています。
 格安SIMの注意点  格安SIMの種類によって、昼間や帰宅ダッシュの時間帯の通信速度が遅くなる可能性が高い キャリアメールが使えない  通信速度が落ちるのは格安SIMの種類によるので、「格安SIM　速度　比較」でググると出てくるので各自で調べておいてください。今回はIIJmioにしました。

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>disk on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/disk/</link>
+    <link>http://yoneyan.dev/tags/disk/</link>
     <description>Recent content in disk on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 03 Jun 2019 13:59:36 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/disk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/disk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linuxのディスク容量拡張の方法</title>
-      <link>http://cloud.yoneyan.net/post/linux-disk-capacity-expansion-method/</link>
+      <link>http://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
       <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/linux-disk-capacity-expansion-method/</guid>
+      <guid>http://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
       <description>UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
 VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
 前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。

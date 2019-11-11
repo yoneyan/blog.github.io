@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>thinkpad on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/thinkpad/</link>
+    <link>http://yoneyan.dev/tags/thinkpad/</link>
     <description>Recent content in thinkpad on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 16 Jun 2019 17:07:07 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>x230で本当のデュアルブートをしてみる</title>
-      <link>http://cloud.yoneyan.net/post/2019-06-16-try-a-real-dual-boot-with-x230/</link>
+      <link>http://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</link>
       <pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/2019-06-16-try-a-real-dual-boot-with-x230/</guid>
+      <guid>http://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</guid>
       <description>神機種と呼ばれている x230というThinkpadを愛用しています。
 少し、話が逸れてしまいますが、自分が持っているThinkpadにはいくつか問題があります。
 まず、キーボードを交換した時にすべてのネジが行方不明になり出先でもキーボードの外れる問題

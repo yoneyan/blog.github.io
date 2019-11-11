@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>free_talk on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/categories/free_talk/</link>
+    <link>http://yoneyan.dev/categories/free_talk/</link>
     <description>Recent content in free_talk on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 17 Apr 2019 23:35:47 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/categories/free_talk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/categories/free_talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ラック型サーバーでハードウェアRAIDを使いたくない理由</title>
-      <link>http://cloud.yoneyan.net/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</link>
+      <link>http://yoneyan.dev/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</link>
       <pubDate>Wed, 17 Apr 2019 23:35:47 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</guid>
+      <guid>http://yoneyan.dev/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</guid>
       <description>この記事ではラック型サーバーでハードウェアRAIDを使いたくない理由をここで話したいと思います。
 簡潔に言うと、壊れるととてもめんどくさいからです。
 理由 ハードウェアRAIDは専用のSASやSATAカード内のチップで処理させています。
@@ -29,10 +29,10 @@
     
     <item>
       <title>自宅サーバーとVPSの使い分け</title>
-      <link>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</link>
+      <link>http://yoneyan.dev/post/use-of-homeserver-and-vps/</link>
       <pubDate>Sat, 10 Nov 2018 02:41:27 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</guid>
+      <guid>http://yoneyan.dev/post/use-of-homeserver-and-vps/</guid>
       <description>今回は自分なりの自宅サーバーとVPSの使い分けの仕方を紹介します。 そもそもの話になってはしまうのですが、自宅サーバーとVPSの簡単な説明をさせていただきます。
 自宅サーバーとVPSの説明 自宅サーバーとは？ 自宅サーバーとはそのままの意味で、自宅で運用するサーバーのことを言います。  
 
@@ -45,10 +45,10 @@ VPSとは？ VPSとは、自分の家ではなく、ホスティングサービ�
     
     <item>
       <title>自宅で業務用ルータをおすすめする理由</title>
-      <link>http://cloud.yoneyan.net/post/reasons-to-recommend-a-commercial-router-at-home/</link>
+      <link>http://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</link>
       <pubDate>Wed, 27 Jun 2018 07:33:56 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/reasons-to-recommend-a-commercial-router-at-home/</guid>
+      <guid>http://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</guid>
       <description>みなさんは、自宅のルータはどういうものを使ってますか？
 たぶん、普通の人ならプロバイダーが貸し出ししているルータ又は市販のルータを使ってると思います。（バッファローやIO dataのルータのように&amp;hellip;）
 業務用ルータのメリット  安定している 設定項目が多い コマンドで設定ができる（ごく一部の機種を除いて） POE対応の機種もある  このメリットを1つずつ紹介します。
@@ -76,10 +76,10 @@ Ciscoルータの紹介を記事にしているのでこちらから</descriptio
     
     <item>
       <title>ラック型サーバーの良い点と悪い点</title>
-      <link>http://cloud.yoneyan.net/post/2018-06-05-pros-and-cons-of-rack-servers/</link>
+      <link>http://yoneyan.dev/post/2018-06-05-pros-and-cons-of-rack-servers/</link>
       <pubDate>Tue, 05 Jun 2018 15:04:37 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/2018-06-05-pros-and-cons-of-rack-servers/</guid>
+      <guid>http://yoneyan.dev/post/2018-06-05-pros-and-cons-of-rack-servers/</guid>
       <description>みなさんは、家にサーバーありますか？ あると思います でも、単にサーバーを置くだけでは満足できなくなってきている方も多いと思います。 タワー型サーバーでは満足がいかなくなってくると、 次は&amp;hellip;&amp;hellip;ラック型サーバーに手を出してしまうのが普通だと思います。 筆者もまさしく、そんな状況になってラック型サーバーの良いところと悪いところを紹介します。
 ラック型サーバーの良いところ  CPU二個積めるやつやメモリがめちゃくちゃ搭載できるサーバーが比較的安い価格で買える メモリでRegisterdに対応しているサーバーが多い 積みやすい 漬物石の代わりになる  CPU二個積めるサーバーが安く手に入るというのが一番の特徴と言っても過言です。 CPU二個積む分消費電力が増えてしまうというやばいところが増えてくるというのも事実ですが、コア数を使うような仮想化用途ではおすすめです。 また、ラック型サーバーになってくると、メモリも6つ以上搭載出来るのが多くを占めるので、これも仮想化するのにはおすすめです。 ヤフオクで中古のタワー型サーバーの場合、メモリのECCでRegisteredに対応していない機種が多いということです。 2Uサーバーや1Uサーバーの一番の特徴は昔のアンプみたいに上に載せれる点です。 ハードウェアメンテナンスをする際は取り出す必要がありますが、大体のラック型サーバーは前面からHDDを交換できるので、比較的管理が楽なのでおすすめなところです。
 ラック型サーバーの悪いところ  うるさい タワー型に比べて高い（気がする） ファンが多い 電気代が&amp;hellip;  こういった感じです。 ラック型サーバーはうるさいというのが一番の欠点です。 どれくらいのうるさいのかと言うと、ダイソンの掃除機並にうるさいです。 ラック型サーバーになるので、24時間運用することになるので、ダイソンの掃除機が24時間鳴りっぱなしというすごい状況になります。 こちらにどんな感じの音なのか体験してほしいので、載せました。 これを聞いてみるとその迫力が少しでも伝わるのではないでしょうか？ ラック型サーバ＝ダイソンの掃除機 並の音になるので家に置くには難しい点です。 ほかに問題になってくるのが電気代です。 ほとんどのラック型サーバはタワー型サーバに比べて電気代が高いです。 ラック型は冗長化に優れすぎていて電源がホットスワップに対応している変態的なサーバになってしまうので、電源が二個入るのでその時点で待機電力がそこそこ食います。 また、マザーボードもタワー型に比べると消費電力が高い感じがする（低いものがあるかもしれない）ので、家に置くならタワー型がおすすめかなと思います。
@@ -88,10 +88,10 @@ Ciscoルータの紹介を記事にしているのでこちらから</descriptio
     
     <item>
       <title>USB-typeCが個人的にまだいらないと思う理由</title>
-      <link>http://cloud.yoneyan.net/post/why-you-dont-really-need-usb-typec/</link>
+      <link>http://yoneyan.dev/post/why-you-dont-really-need-usb-typec/</link>
       <pubDate>Wed, 13 Dec 2017 19:20:14 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/why-you-dont-really-need-usb-typec/</guid>
+      <guid>http://yoneyan.dev/post/why-you-dont-really-need-usb-typec/</guid>
       <description>USB-typeCが個人的にまだ必要でない理由をここに書いていきます。
 そもそもUSB-typeCというのは？ USBの次世代の規格です。USB3.0の次の規格でUSB3.1になります。 type-A,type-B,type-Cとありますが、これはUSBの形状が違うだけです。 このほかにもmini-type-A,mini-type-Bというものがあったり、micro-type-A,micro-type-Bといったものがあります。
 パソコンにはいらない パソコンにはいらないという理由は現時点で使われている周辺機器が、Type-Aの機器が多いという点です。  

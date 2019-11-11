@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>neovim on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/neovim/</link>
+    <link>http://yoneyan.dev/tags/neovim/</link>
     <description>Recent content in neovim on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 20 Feb 2019 18:53:54 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>neovimでUltiSnips requires py &gt;= 2.7 or py3というエラーの対処法</title>
-      <link>http://cloud.yoneyan.net/post/how-to-fix-neovim-error/</link>
+      <link>http://yoneyan.dev/post/how-to-fix-neovim-error/</link>
       <pubDate>Wed, 20 Feb 2019 18:53:54 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/how-to-fix-neovim-error/</guid>
+      <guid>http://yoneyan.dev/post/how-to-fix-neovim-error/</guid>
       <description>最近、新たにデスクトップPCにLinuxMintを導入してneovimやtmuxやらの環境構築をしている途中に
 UltiSnips requires py &amp;gt;= 2.7 or py3
 とこのようなエラーをneovimを起動する度に吐いてしまったので対処法を備忘録として載せておきます。

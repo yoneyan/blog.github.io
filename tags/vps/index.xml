@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VPS on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/vps/</link>
+    <link>http://yoneyan.dev/tags/vps/</link>
     <description>Recent content in VPS on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 05 Feb 2019 05:08:54 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/vps/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VPSでスワップ領域を増やす</title>
-      <link>http://cloud.yoneyan.net/post/increase-swap-space-with-vps/</link>
+      <link>http://yoneyan.dev/post/increase-swap-space-with-vps/</link>
       <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/increase-swap-space-with-vps/</guid>
+      <guid>http://yoneyan.dev/post/increase-swap-space-with-vps/</guid>
       <description>VPSで格安のものになってくると、問題となってくるのがスペックになります。
 昔のVPSに比べると、メモリが512MBに増えておりかなり使えるものになってきましたが、それでも不足してしまうという現実があります。
 そこで、気休め程度になってしまいますが、スワップ領域を増やしてみました。
@@ -36,10 +36,10 @@ HDDのマウントなどで使われるfstabに追記していきます。
     
     <item>
       <title>CentOSでL2TPサーバーを構築してみる</title>
-      <link>http://cloud.yoneyan.net/post/try-building-an-l2tp-server-on-centos/</link>
+      <link>http://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</link>
       <pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/try-building-an-l2tp-server-on-centos/</guid>
+      <guid>http://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</guid>
       <description>UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
 VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
 OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。
@@ -52,10 +52,10 @@ L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分が
     
     <item>
       <title>大好きな曲を電話回線網から流す方法</title>
-      <link>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <link>http://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
       <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <guid>http://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
       <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
 最終日ということもあり気合を入れて紹介させていただきます。
 作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
@@ -86,10 +86,10 @@ register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメ�
     
     <item>
       <title>自宅サーバーとVPSの使い分け</title>
-      <link>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</link>
+      <link>http://yoneyan.dev/post/use-of-homeserver-and-vps/</link>
       <pubDate>Sat, 10 Nov 2018 02:41:27 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/use-of-homeserver-and-vps/</guid>
+      <guid>http://yoneyan.dev/post/use-of-homeserver-and-vps/</guid>
       <description>今回は自分なりの自宅サーバーとVPSの使い分けの仕方を紹介します。 そもそもの話になってはしまうのですが、自宅サーバーとVPSの簡単な説明をさせていただきます。
 自宅サーバーとVPSの説明 自宅サーバーとは？ 自宅サーバーとはそのままの意味で、自宅で運用するサーバーのことを言います。  
 
@@ -102,10 +102,10 @@ VPSとは？ VPSとは、自分の家ではなく、ホスティングサービ�
     
     <item>
       <title>AWSのLightsailというVPSが安すぎる</title>
-      <link>http://cloud.yoneyan.net/post/aws-lightsail-is-too-cheap/</link>
+      <link>http://yoneyan.dev/post/aws-lightsail-is-too-cheap/</link>
       <pubDate>Fri, 09 Nov 2018 02:20:35 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/aws-lightsail-is-too-cheap/</guid>
+      <guid>http://yoneyan.dev/post/aws-lightsail-is-too-cheap/</guid>
       <description>AWSってみなさん知っている方が多いと思います。EC2という従量課金制のものがあることを知っている人が多いと思います。 AWSでVPSと同等のものがあります。それがLightsailです。 今回はLightsailの簡単な紹介とメリットとデメリットを書いていきます。
 Lightsailって何？ Lightsailは俗にいうVPSです。 Lightsail=VPSと考えても大丈夫です。
 何がいいのか？  安い（ガチで安い。安すぎる Lightsailの中身はEC2のサーバーと同じ（AWSの人が言ってた） WindowsServerも安い VPCピアというのでAWSの他のサービスに連携できるらしい（やってないのでわからない） データベースプランもある（これも使ったことないのでわからん）  値段 VPSを使う奥様方にはありがたいぐらい安いです。
@@ -117,10 +117,10 @@ WindowsServer系    120USD、240USDプランもあります。（2018/11/09執�
     
     <item>
       <title>自宅サーバとVPSの長所と短所の比較</title>
-      <link>http://cloud.yoneyan.net/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</link>
+      <link>http://yoneyan.dev/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</link>
       <pubDate>Tue, 12 Jun 2018 07:19:01 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</guid>
+      <guid>http://yoneyan.dev/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</guid>
       <description>この記事では、自宅サーバとVPSの二つを対象にして、長所と短所を比較してみます。
 自宅サーバの長所     ハードウェア単位での知識が増える ネットワークの勉強になる そこそこのスペックを比較的安く中古で買える ローカルでのファイルのやりとりは速い  自宅サーバの一番の特徴としてハードウェアの知識が増える点です。特に大学生で自分のようにインフラのような仕事につきたいと思ってる方にはおすすめです。 中古のサーバ機の場合は、比較的安くハードを買うことが出来るので、サーバを置く場所さえあればなんとかなりますファイルの共有をよくしている方はVPSよりも自宅サーバの方がおすすめです。やっぱり自宅の有線の方が当たり前ですが速いです。
 自宅サーバの短所  電気代やばい ハードウェアの管理をやっておかないとだめ  電気代はかなり行きます。そこが唯一の問題です。また、HDDが消耗品ということもあるのでハードウェアの管理をしっかりしておかないといけないという点です。  

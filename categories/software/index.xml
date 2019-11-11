@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/categories/software/</link>
+    <link>http://yoneyan.dev/categories/software/</link>
     <description>Recent content in software on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 05 Feb 2017 23:59:24 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/categories/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>おすすめのブラウザ4選</title>
-      <link>http://cloud.yoneyan.net/post/4-recommended-browsers/</link>
+      <link>http://yoneyan.dev/post/4-recommended-browsers/</link>
       <pubDate>Sun, 05 Feb 2017 23:59:24 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/4-recommended-browsers/</guid>
+      <guid>http://yoneyan.dev/post/4-recommended-browsers/</guid>
       <description>1.Chrome    リンク:https://www.google.co.jp/chrome/browser/
 OS:windows7以降(32bit,64bit),macos10.9以降,linux(64bitのみ),android,ios
 Chromiumベースで作られています。 googleが自ら作っているブラウザです。使っている人が一番多いといわれています。 しかし、このブラウザで20タブ前後開くとRAMが2G以上も消費します。なので、比較的高性能なパソコンでないと、動作に支障をきたすのであまりお勧めできません。 ですが、googleが作っていることもあって連携がちゃんとできているので、
@@ -32,10 +32,10 @@ OS:windows(32bit,64bit),macos10.9以降,linux(32bit,64bit)
     
     <item>
       <title>PCリモートにおすすめのフリーソフト3選</title>
-      <link>http://cloud.yoneyan.net/post/3-free-software-recommended-for-pcremote/</link>
+      <link>http://yoneyan.dev/post/3-free-software-recommended-for-pcremote/</link>
       <pubDate>Fri, 03 Feb 2017 03:05:13 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/3-free-software-recommended-for-pcremote/</guid>
+      <guid>http://yoneyan.dev/post/3-free-software-recommended-for-pcremote/</guid>
       <description>どうしてもPCを遠隔地や離れた部屋から操作したい時があります。そのときにリモートでPCを操作できるフリーソフトを集めてみました。
 1.TeamViewer    公式サイト:https://www.teamviewer.com/ja/download/windows/ 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/teamviewer/
 対応OS(ホスト側):windows,mac,linux,android
@@ -62,10 +62,10 @@ androidやiosでは今のところアプリはありませんが、作る計画�
     
     <item>
       <title>Windows10に入れておきたい有料ストアアプリ3選</title>
-      <link>http://cloud.yoneyan.net/post/3-paid-store-apps-to-keep-in-windows10/</link>
+      <link>http://yoneyan.dev/post/3-paid-store-apps-to-keep-in-windows10/</link>
       <pubDate>Mon, 09 Jan 2017 17:28:02 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/3-paid-store-apps-to-keep-in-windows10/</guid>
+      <guid>http://yoneyan.dev/post/3-paid-store-apps-to-keep-in-windows10/</guid>
       <description>前回の記事ではwindows10の無料ストアアプリの紹介をさせていただきました。
 ここではwindows10ストアアプリで購入しておきたいアプリを選んだのでそちらの方を紹介していきます。
 1.8-zip    値段:2000円（セール時は100円）
@@ -95,10 +95,10 @@ FL Studio Mobile（ストアアプリ）</description>
     
     <item>
       <title>Windows10に入れておきたい無料ストアアプリ4選</title>
-      <link>http://cloud.yoneyan.net/post/4-free-store-apps-you-want-to-keep-in-windows-10/</link>
+      <link>http://yoneyan.dev/post/4-free-store-apps-you-want-to-keep-in-windows-10/</link>
       <pubDate>Mon, 09 Jan 2017 04:09:02 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/4-free-store-apps-you-want-to-keep-in-windows-10/</guid>
+      <guid>http://yoneyan.dev/post/4-free-store-apps-you-want-to-keep-in-windows-10/</guid>
       <description>Windows8から新たに今までのソフトとは別のModern UIアプリというものが登場し、windows版のアプリストアもできました。Windows8リリース時の当初のストアアプリは悲惨なぐらいアプリの量が少なかったですが、最近はかなり増えてきました。（と言ってもandroidやiosのアプリストアには全くかないませんが…）ということもあって今回は入れておくと、便利だと個人的に思うWindows10アプリを集めてみました！！
 2019/04/17：記事の更新を致しました。
 1.テレbing    このアプリはテレビの番組表が見れます。

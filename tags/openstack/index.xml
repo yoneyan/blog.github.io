@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>openstack on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/openstack/</link>
+    <link>http://yoneyan.dev/tags/openstack/</link>
     <description>Recent content in openstack on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 12 Dec 2018 21:53:06 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>openstackを構築していくpart1</title>
-      <link>http://cloud.yoneyan.net/post/building-openstack-part1/</link>
+      <link>http://yoneyan.dev/post/building-openstack-part1/</link>
       <pubDate>Wed, 12 Dec 2018 21:53:06 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/building-openstack-part1/</guid>
+      <guid>http://yoneyan.dev/post/building-openstack-part1/</guid>
       <description>openstackを自力で一から頑張って構築していこうという試みを始めます。
 検証目的の場合であれば、centosのpackstackのような自動インストールツールを使うべきです。 実用的な運用を目指していこうという主旨の上でやっていきます。
 筆者自身も構築途中ということもあり、時間をかけて記事を出していく予定なので、よろしくお願いします。

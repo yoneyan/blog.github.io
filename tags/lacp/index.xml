@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lacp on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/lacp/</link>
+    <link>http://yoneyan.dev/tags/lacp/</link>
     <description>Recent content in lacp on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 08 Feb 2019 01:45:05 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/lacp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/lacp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EdgeRouterでLAGとタグVLANを設定する</title>
-      <link>http://cloud.yoneyan.net/post/configure-lag-and-tagged-vlan-on-edgerouter/</link>
+      <link>http://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</link>
       <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
+      <guid>http://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
       <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
 
 EdgeRouter X, 5-port

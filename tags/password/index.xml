@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>password on のんびりと生きたい</title>
-    <link>http://cloud.yoneyan.net/tags/password/</link>
+    <link>http://yoneyan.dev/tags/password/</link>
     <description>Recent content in password on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 13 Dec 2017 11:46:18 +0900</lastBuildDate>
     
-	<atom:link href="http://cloud.yoneyan.net/tags/password/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://yoneyan.dev/tags/password/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LastPassという最強のパスワード管理ソフトについて</title>
-      <link>http://cloud.yoneyan.net/post/about-the-strongest-password-management-software-called-lastpass/</link>
+      <link>http://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</link>
       <pubDate>Wed, 13 Dec 2017 11:46:18 +0900</pubDate>
       
-      <guid>http://cloud.yoneyan.net/post/about-the-strongest-password-management-software-called-lastpass/</guid>
+      <guid>http://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</guid>
       <description>みなさんはパスワード管理ソフトを知っていますか？パスワードは自分で覚えることに超したことはないですが、登録しているサイトが10個以上になってくると覚えることが厳しくなってきます。覚えにくくなることでパスワードの使い回しやわかりやすいパスワードにしてしまいがちになってしまいます。そこで、今回はLastPassというクラウド型のパスワード管理サービスを紹介していきます。
 LastPassとは？ クラウド型のパスワード管理サービスになります。 このサービスの特徴はパソコン、スマホなどのデバイスを問うことなく無料でパスワード管理をすることが出来るのが特徴になっています。ほかのパスワード管理サービスの中には、1Passwordというサービスがありますが、デバイス間でパスワードを同期させる場合は月額課金が必要となりますが、LastPassの場合は無料で使うことが出来ます。
 機能や対応OSなど 対応OS  Chromiumウェブプラグインが使えるブラウザ（windows,Mac,Linux） android ios  機能  マルチデバイスでIDとパスワードを同期 緊急アクセス  値段体系 値段体系として
