@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>recommend on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/categories/recommend/</link>
+    <link>https://yoneyan.dev/categories/recommend/</link>
     <description>Recent content in recommend on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 18 Jun 2019 00:15:58 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/categories/recommend/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/categories/recommend/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>mineoが最強だと思う理由</title>
-      <link>http://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/</link>
+      <link>https://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/</link>
       <pubDate>Tue, 18 Jun 2019 00:15:58 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/</guid>
+      <guid>https://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/</guid>
       <description>mineoは株式会社オプテージが運営しているMVMOのサービスです。
 今回は、mineoが個人的になぜ最強だと思うのか？どういう点で最強だと思ったのかを紹介させていただきます。
 そもそもmineoとは  mineoは格安SIMを提供するMVMOサービスです。
@@ -45,10 +45,10 @@ AndroidとiOSの両方で提供されていますが、iOSで契約すると、�
     
     <item>
       <title>x230で本当のデュアルブートをしてみる</title>
-      <link>http://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</link>
+      <link>https://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</link>
       <pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</guid>
+      <guid>https://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</guid>
       <description>神機種と呼ばれている x230というThinkpadを愛用しています。
 少し、話が逸れてしまいますが、自分が持っているThinkpadにはいくつか問題があります。
 まず、キーボードを交換した時にすべてのネジが行方不明になり出先でもキーボードの外れる問題
@@ -83,10 +83,10 @@ AndroidとiOSの両方で提供されていますが、iOSで契約すると、�
     
     <item>
       <title>Proxmoxがかなり使いやすい件について</title>
-      <link>http://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</link>
+      <link>https://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</link>
       <pubDate>Tue, 11 Dec 2018 23:59:39 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</guid>
+      <guid>https://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</guid>
       <description>Proxmoxというハイパーバイザー型のOSがありますが、かなり使いやすいので便利な点をこの記事で紹介していきます。
 Proxmoxとはなんぞや(^^;)? KVMとOpenVZをサポートしているハイパーバイザー型のOSです。 Linuxには仮想マシンであるKVMとコンテナであるOpenVZはLinux系であればかんたんに構築できますが、GUI管理が簡単にできないという問題点がありました。 それがProxmoxでは簡単にWebGUIで操作することができます。
 ということで、そろそろ使いやすい点を紹介していきます。
@@ -108,10 +108,10 @@ LinuxではKVMを動かすことができますが、なかなかCUIでの操作
     
     <item>
       <title>ブレードサーバーの中を見てみる1</title>
-      <link>http://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</link>
+      <link>https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</link>
       <pubDate>Sun, 11 Nov 2018 05:01:52 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</guid>
+      <guid>https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</guid>
       <description>みなさん、ブレードサーバーって知っていますか？
 今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
 ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
@@ -127,10 +127,10 @@ LinuxではKVMを動かすことができますが、なかなかCUIでの操作
     
     <item>
       <title>AWSのLightsailというVPSが安すぎる</title>
-      <link>http://yoneyan.dev/post/aws-lightsail-is-too-cheap/</link>
+      <link>https://yoneyan.dev/post/aws-lightsail-is-too-cheap/</link>
       <pubDate>Fri, 09 Nov 2018 02:20:35 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/aws-lightsail-is-too-cheap/</guid>
+      <guid>https://yoneyan.dev/post/aws-lightsail-is-too-cheap/</guid>
       <description>AWSってみなさん知っている方が多いと思います。EC2という従量課金制のものがあることを知っている人が多いと思います。 AWSでVPSと同等のものがあります。それがLightsailです。 今回はLightsailの簡単な紹介とメリットとデメリットを書いていきます。
 Lightsailって何？ Lightsailは俗にいうVPSです。 Lightsail=VPSと考えても大丈夫です。
 何がいいのか？  安い（ガチで安い。安すぎる Lightsailの中身はEC2のサーバーと同じ（AWSの人が言ってた） WindowsServerも安い VPCピアというのでAWSの他のサービスに連携できるらしい（やってないのでわからない） データベースプランもある（これも使ったことないのでわからん）  値段 VPSを使う奥様方にはありがたいぐらい安いです。
@@ -142,10 +142,10 @@ WindowsServer系    120USD、240USDプランもあります。（2018/11/09執�
     
     <item>
       <title>勉強でおすすめのCiscoルータ3選</title>
-      <link>http://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</link>
+      <link>https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</link>
       <pubDate>Sun, 12 Aug 2018 01:40:01 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</guid>
+      <guid>https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</guid>
       <description>1位 C841M    C841M-4X-JSEC
 フラッシュメモリ:2G
 メモリ:512MB
@@ -181,10 +181,10 @@ Cisco</description>
     
     <item>
       <title>おすすめウルトラモバイルPC3選。買うしかない...</title>
-      <link>http://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/</link>
+      <link>https://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/</link>
       <pubDate>Wed, 01 Aug 2018 23:30:30 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/</guid>
+      <guid>https://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/</guid>
       <description>みなさん、ウルトラモバイルPCって知ってますか？ 最近は昔ほどの勢いはありませんが、少なからずほしいと思う方がいらっしゃると思います。そこでこの記事では、ウルトラモバイルPC＝UMPCを紹介していきます。
 GPD Pocket    CPU:Atom x7-Z8750 メモリ:4G又は8G バッテリー:7000mAh、3.8V ストレージ:128G(eMMC)600 解像度:1920x1200 無線:Wifi802.11ac Bluetooth4.1 端子系:Type-A(USB3.0),Type-C(USB3.0),MicroHDMI,イヤホンジャック OS:Windows10 Home 価格:60000円～（GPD Pocket）
 これはやばいです。 小さいながらもキーボードとトラックポイントがしっかりと付いており、操作性は悪くないです。さすがに、小さすぎるということもありキーボードが打ちにくい点はありますが、慣れればなんとかなります。インターフェース系がType-AとType-Cが備わっているため、既存のUSB機器につなげることができるのでかなり利便性が高いです。また、Type-CはPowerDeliveryに対応していることもあり使いながらでも十分に充電できる仕様になっているのが特徴です。通勤や通学途中にAndroidタブレットでは物足りないという方にはもってこいの商品になっています。
@@ -199,10 +199,10 @@ GPD Win2    CPU:Core m3-7Y30 メモリ:4G又は8G バッテリー:7000mAh、3.8
     
     <item>
       <title>おすすめの中古ノートパソコンメーカー</title>
-      <link>http://yoneyan.dev/post/recommended-used-laptop-manufacturers/</link>
+      <link>https://yoneyan.dev/post/recommended-used-laptop-manufacturers/</link>
       <pubDate>Sat, 19 May 2018 19:23:25 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/recommended-used-laptop-manufacturers/</guid>
+      <guid>https://yoneyan.dev/post/recommended-used-laptop-manufacturers/</guid>
       <description>今回はおすすめの中古パソコンのメーカーを紹介をします！
 第1位　Let&amp;rsquo;s note    特徴  バッテリーが結構持つ キーボードがそこそこ打ちやすい 軽い＆頑丈 ディスクドライブが入る（機種によって違う）  個人的には中古ノートパソコンを買うならLet&amp;rsquo;s noteが一番いいと思います。 Let&amp;rsquo;s noteはかなり丈夫な作りになっており、パソコンを机の上から落としても壊れない設計になっているため、筆者のように雑に扱うパソコンユーザーにはかなりおすすめのノートパソコンとなります。 バッテリーも交換し気になっているのでバッテリーが劣化した場合は取り替えることで使えるのでおすすめです。スペック的には他の中古ノートパソコンと比べるとコストパフォーマンスはあまりよくありませんが、パソコン自体の重さが軽いのでモバイルノートパソコンとしていろんな場所で使える点がかなり優れた製品のように思います。また、業務で使うことを想定されていることもあって、新製品でもHDMIやD-subを搭載しているので変換ケーブルが必要ないので持ち歩きに使う端末としてめちゃくちゃおすすめです。 また、Let&amp;rsquo;s noteはキーストローク（キーボードのキーを押すときの深さのことです）が深くかなり打ちやすいので仕事や趣味で文字打ちを重視してる方はおすすめです。
 第二位 ThinkPad    特徴  頑丈 キーボード最強 トラックポインターがなかなか使いやすい かっこいい  中古のThinkpadもかなりいいと思います。 Let&amp;rsquo;s Noteに比べると重いというところはあるものの、かっこよさは絶対ThinkPadの方が上です。 最近のThinkPadではバッテリー交換が出来なくなってきているのですが、中古パソコンの大半はバッテリー交換が出来るようになっているので電池が消耗した際の交換もすぐ出来るのであえて中古を買うというのも一つの選択肢のように思います。 ThinkPadの特徴ともいえる、トラックポイントが慣れるとかなり使いやすいです。キーボードで打っている時にどうしてもマウスで動かさなければならないところが出てきても、トラックポイントの場合は少しの移動で済みます。
@@ -211,10 +211,10 @@ GPD Win2    CPU:Core m3-7Y30 メモリ:4G又は8G バッテリー:7000mAh、3.8
     
     <item>
       <title>Steamでおすすめの町建設ゲーム3選</title>
-      <link>http://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/</link>
+      <link>https://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/</link>
       <pubDate>Thu, 22 Mar 2018 17:22:35 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/</guid>
+      <guid>https://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/</guid>
       <description>今回はSteamでおすすめの町建設ゲームを3つほど紹介させていただきます。
 SimCity™ 4 Deluxe Edition    通常価格:1980円 対応OS:windowsXP（windows10動作可能） 最低スペック
  CPU pentium3 500以降 Memory 256MB GPU 32MB、DirectX7.0以降対応のグラフィックボードであること Storage 1.6GB以上  Steam:http://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/ 町建設ゲームで一番有名なのがSimcityシリーズだと思います。 Steam版の残念なところはSimcityシリーズの最新作はOriginにしかないところです。 最新作ではないというところもあり、かなりゲームシステム的には古いですが、逆に懐かしのSimcityのスーパーファミコン版を思い出すところもあり、これはこれで面白いと思います。 日本語化する必要はありますが、比較的簡単にできるので、そこら辺は安心してください。 町建設ゲームといえばSimcityシリーズというところもあるので、みなさん是非やってみてはいかがでしょうか。 スペック的には今のパソコンでは余裕でいけます。
@@ -223,10 +223,10 @@ Cities: Skylines    通常価格:2980円 （Deluxe Editionは3980円） 対応OS
     
     <item>
       <title>美少女ゲームをやる人はXbox360を買うべき！！</title>
-      <link>http://yoneyan.dev/post/2018-03-09-those-who-play-beautiful-girl-games-should-buy-xbox360/</link>
+      <link>https://yoneyan.dev/post/2018-03-09-those-who-play-beautiful-girl-games-should-buy-xbox360/</link>
       <pubDate>Fri, 09 Mar 2018 22:09:46 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-03-09-those-who-play-beautiful-girl-games-should-buy-xbox360/</guid>
+      <guid>https://yoneyan.dev/post/2018-03-09-those-who-play-beautiful-girl-games-should-buy-xbox360/</guid>
       <description>美少女ゲームをするのにXbox360がおすすめの理由をこの記事では紹介させていただきます。
 理由 ゲームソフトがほかのコンシューマ機に比べてかなり安いという点にあります。 PC版の方をやりたくても10年以上のゲームでさえ、中古価格が5000円や10000円のゲームも多いんですよねーー だからコンシューマ機版の美少女ゲームをやることになってしまうんですが、PC版に比べて安いとは言っても美少女ゲームの多くは結構お値段が張ります。（特に有名なやつは&amp;hellip;） 例えば、これらのソフトで比較してみましょう
 ゲームソフト比較 車輪の国、向日葵の少女 {:nomarkdown}  {:/nomarkdown} {:nomarkdown} {:/nomarkdown} {:nomarkdown} {:/nomarkdown} とこのようにPS3やPSPでは新品や中古に関わらず未だにこのような値段がします。 しかし、Xbox360版はかなり価格が抑えられています。他のコンシューマ機の中古のゲームソフトに比べてかなり安く買えます。 なぜかXbox360版の通常版より限定版が安いのはちょっと謎ですがw ゲームソフトによってPS3版の方が安いというものもありますが、美少女ゲームの多くはXbox360版のソフトの方が安く買うことが出来ます。
@@ -237,10 +237,10 @@ CHAOS;HEAD NOAH CHAOS;HEAD NOAHで比較してみましょう。 {:nomarkdown}  
     
     <item>
       <title>PS4を買う前にまずPS3を買え！！！</title>
-      <link>http://yoneyan.dev/post/2018-02-05-buy-ps3-first-before-you-buy-ps4/</link>
+      <link>https://yoneyan.dev/post/2018-02-05-buy-ps3-first-before-you-buy-ps4/</link>
       <pubDate>Mon, 05 Feb 2018 13:24:35 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-02-05-buy-ps3-first-before-you-buy-ps4/</guid>
+      <guid>https://yoneyan.dev/post/2018-02-05-buy-ps3-first-before-you-buy-ps4/</guid>
       <description>題名通りです。PS4を買う前にPS3を買った方がいい理由を今回紹介させていただきます。
 理由  PS3の方がゲームソフトが安い PSStoreでも同じゲームでもPS3の方が安い  みなさん、お気づきだと思いますが、理由はゲームソフトが安いという点です。 なにかしらPSのゲームソフトは高いです。パソコンでゲームをするユーザーの中でよく使われるSteamというゲームクライアントがあります。そこはしょっちゅうセールやってるので比較的安く買えることが多いですが、PSStoreでは安く買えるのは大体、年末とかゴールデンウイークあたりぐらいです。なので、いろんなゲームをやりたい人はまずPS3を買う方がいいのではないのかと思います。 PS4でPS3のソフトが動いたらいいんですが、互換機能が入っていないのでPS3を買うのが一番の近道ではないのかなと思います。
 PS3を手に入れる方法 メルカリやamazonの中古で売っています。 {:nomarkdown}  {:/nomarkdown} なるべくCECH-2500A以上の機種を購入した方がいいです。 初期シリーズのCECH*00はPS2との互換が取れていますが、半田クラックの問題がありYLOD問題がよく起こるので買うのは控えた方がいいです。どうしてもPS2をやりたい方は本体を買った方がいいでしょう。実機からBIOSの抜き取れる方はPCでPCSX2のエミュレータを使うのもありのように思います。 {:nomarkdown}  {:/nomarkdown}
@@ -252,10 +252,10 @@ PS3の短所 PS3も一応フルHDには対応している物の音ゲーや美�
     
     <item>
       <title>Gmail管理でInboxが超使いやすい件について</title>
-      <link>http://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/</link>
+      <link>https://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/</link>
       <pubDate>Sat, 03 Feb 2018 16:52:18 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/</guid>
+      <guid>https://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/</guid>
       <description>非常に悲しいことに、2019/04/02にInboxのサービスが終了してしまいました。
 みなさんはウェブメールは何を使っていますか？
 Googleの@gmail.comを使っている人もいれば、Appleの@icloud.comを使う人、Yahooの@yahoo.co.jpのようにいろんなウェブメールを使っていると思います。しかし、そこで問題となるのが、様々なメールが来ることで読むのがめんどくさくなるということがよくあります。そこで、今回は一番多くの人が利用しているGmailでの話になりますが、管理アプリを紹介していきます。
@@ -280,10 +280,10 @@ Gmailと分けることでアプリ使う層を分けることが出来るとい
     
     <item>
       <title>PS4やXboxONEおすすめのマルチプレイゲーム3選</title>
-      <link>http://yoneyan.dev/post/2018-02-01-3-recommended-multiplayer-games-for-ps4-and-xboxone/</link>
+      <link>https://yoneyan.dev/post/2018-02-01-3-recommended-multiplayer-games-for-ps4-and-xboxone/</link>
       <pubDate>Thu, 01 Feb 2018 14:40:49 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-02-01-3-recommended-multiplayer-games-for-ps4-and-xboxone/</guid>
+      <guid>https://yoneyan.dev/post/2018-02-01-3-recommended-multiplayer-games-for-ps4-and-xboxone/</guid>
       <description>今回は、個人的に買うべきだと思うマルチプレイで楽しめるおすすめのゲームを紹介していきたいと思います。 注意:基本的にはPS4の場合はPS4Plus、Xbox Oneの場合はXbox LIVE Goldに加入しないとオンライン対戦ができないので注意してください。 ということで今回はPS4、Xbox Oneで個人的に思うおすすめのマルチプレイゲームを5選に選らんだものを紹介させていただきます。
 1.BF1    販売日:2016年10月21日 マルチプレイ:2人~64人 PlayStation Store:https://store.playstation.com/ja-jp/product/JP0006-CUSA02400_00-BATTLEFIELD01REV?emcid=EAFranchise2017 XboxLIVE Store:https://www.microsoft.com/ja-jp/store/p/-1-Revolution/BPL68T0XK96W {:nomarkdown}  {:/nomarkdown} {:nomarkdown} {:/nomarkdown}
 
@@ -296,10 +296,10 @@ Gmailと分けることでアプリ使う層を分けることが出来るとい
     
     <item>
       <title>ps4slimとps4proはどっちの方がいいのか？</title>
-      <link>http://yoneyan.dev/post/2018-01-14-ps4slim-or-ps4pro/</link>
+      <link>https://yoneyan.dev/post/2018-01-14-ps4slim-or-ps4pro/</link>
       <pubDate>Sun, 14 Jan 2018 10:30:03 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-01-14-ps4slim-or-ps4pro/</guid>
+      <guid>https://yoneyan.dev/post/2018-01-14-ps4slim-or-ps4pro/</guid>
       <description>今回は現行機のPS4 slimとPS4 Proのどっちを買えばいいのか迷っている方の助けになればいいなと思い自分の意見を言いたいと思います。
 PS4の本体仕様を比較 PS4 Slim  メインプロセッサー
 Single-chip custom processor CPU : x86-64 AMD “Jaguar”, 8 cores GPU : 1.84 TFLOPS, AMD Radeon™ based graphics engine
@@ -321,10 +321,10 @@ Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T) IEEE 802.11 a/b/g/n/ac Bluetooth® 4
     
     <item>
       <title>LastPassという最強のパスワード管理ソフトについて</title>
-      <link>http://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</link>
+      <link>https://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</link>
       <pubDate>Wed, 13 Dec 2017 11:46:18 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</guid>
+      <guid>https://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</guid>
       <description>みなさんはパスワード管理ソフトを知っていますか？パスワードは自分で覚えることに超したことはないですが、登録しているサイトが10個以上になってくると覚えることが厳しくなってきます。覚えにくくなることでパスワードの使い回しやわかりやすいパスワードにしてしまいがちになってしまいます。そこで、今回はLastPassというクラウド型のパスワード管理サービスを紹介していきます。
 LastPassとは？ クラウド型のパスワード管理サービスになります。 このサービスの特徴はパソコン、スマホなどのデバイスを問うことなく無料でパスワード管理をすることが出来るのが特徴になっています。ほかのパスワード管理サービスの中には、1Passwordというサービスがありますが、デバイス間でパスワードを同期させる場合は月額課金が必要となりますが、LastPassの場合は無料で使うことが出来ます。
 機能や対応OSなど 対応OS  Chromiumウェブプラグインが使えるブラウザ（windows,Mac,Linux） android ios  機能  マルチデバイスでIDとパスワードを同期 緊急アクセス  値段体系 値段体系として
@@ -342,10 +342,10 @@ LastPassの長所と短所 長所 LastPassの長所として、無料でほぼ�
     
     <item>
       <title>（英語の勉強にもなる）Steamおすすめ美少女ゲーム</title>
-      <link>http://yoneyan.dev/post/steam-recommended-girl-game/</link>
+      <link>https://yoneyan.dev/post/steam-recommended-girl-game/</link>
       <pubDate>Wed, 12 Jul 2017 00:18:19 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/steam-recommended-girl-game/</guid>
+      <guid>https://yoneyan.dev/post/steam-recommended-girl-game/</guid>
       <description>PCゲームストアで有名なSteamの中には皆さん知っての通りたくさんの種類のゲームがあります。そこで、たくさんの種類の中でもギャルゲーと呼ばれる美少女ゲームというものがあります。Steamでは数多くのギャルゲーがあり、日本の会社が出したゲームもたくさんありますが、残念なことに世界に向けて売っているゲームになるので、ボイスは日本語なのに字幕が英語だけというものが多いので辞書引っ張りながらになるので時間はかかりますが、いい勉強にもなると思います。
 英語が本当に苦手な方でも面白いので国内版を是非国内版を買ってみてはいかがでしょうか。
 ここでの美少女ゲームはエ＊ゲーは該当しないので、18歳未満の方でも安心してできますｗ
@@ -379,10 +379,10 @@ Steam版では日本語と英語の両方に対応しています。
     
     <item>
       <title>有料スマホゲームのおすすめ3選</title>
-      <link>http://yoneyan.dev/post/three-recommended-paid-smartphone-games/</link>
+      <link>https://yoneyan.dev/post/three-recommended-paid-smartphone-games/</link>
       <pubDate>Mon, 26 Jun 2017 02:07:53 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/three-recommended-paid-smartphone-games/</guid>
+      <guid>https://yoneyan.dev/post/three-recommended-paid-smartphone-games/</guid>
       <description>スマートフォンゲームで課金ゲームが乱立する中でみなさんに個人的に思うandroid,iosの両方が対応する有料ゲームを紹介させていただきます。
 また、値段やアプリの対応OSのバージョンはブログ執筆時のもになりますのでご注意のほどよろしくお願いいたします。
 Minecraft: Pocket Edition    android 840円
@@ -420,10 +420,10 @@ MONUMENT VALLEY 2
     
     <item>
       <title>キャリアから格安スマホ(IIJmio)に乗り換え（MNP編）</title>
-      <link>http://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/</link>
+      <link>https://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/</link>
       <pubDate>Sun, 12 Feb 2017 18:58:28 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/</guid>
+      <guid>https://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/</guid>
       <description>MNPとは 正式名所はMobile Number Portabilityと言い、番号ポータビリティと言います。 キャリアを変更した際でも番号を変更せずにそのまま使うことができるシステムです。 例えば、auからドコモに切り替えのように大手キャリアから大手キャリアに乗り換える際は、ショップ側が勝手にMNP転出や転入をしてくれています。しかし、自分で格安スマホに乗り換える際は、それを自分でしなくてはいけないということになります。
 MNP転出の作業 MNP転出（MNP予約番号の取得）－＞乗り換え先にMNP転入 という形になります。 また、正常にMNP転入が完了すると、自動的に前使っていたキャリアとの契約が解除されます。 そのため契約解除月でないときに解除すると、1万円ぐらいかかることがあるので注意しましょう。
 MNP転出の際の注意点  キャリアメールが使えなくなる ポイントがなくなる 分割支払いの残額がある場合は引き続き支払う必要がある  キャリアメールを使っている場合はgmailなどのフリーメールを使うのがおすすめです。
@@ -439,10 +439,10 @@ MNP転出をする auから乗り換えるので、さっそく電話をかけ�
     
     <item>
       <title>キャリアから格安スマホ(IIJmio)に乗り換え（準備編）</title>
-      <link>http://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</link>
+      <link>https://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</link>
       <pubDate>Sat, 11 Feb 2017 03:17:06 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</guid>
+      <guid>https://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</guid>
       <description>あなたはどこの携帯電話会社で契約していますか？ 大手キャリアのau,docomo,softbankの三社で契約されている方が多いでしょう。 学生なら学生割引が効いて安くなりますが、それでも高くなってしまいます。
 この記事を書くきっかけ この記事を書くきっかけになったのは母親のスマホ料金です。端末前払いしているのに月額5700円です。これ保険などのオプション抜いてこれですよ。馬鹿なの？という値段設定です。 パカパカケータイからキャリア変更せずにそのまま契約したせいでこの値段になったのかもしれませんが、高すぎます&amp;hellip; わざわざ電話もかけないし、データ量7GBしかないのに家の光回線と同じ料金を払わないといけないのかという話になり、格安スマホに変えようとなったわけです。 ということで格安スマホに移行（準備編）をここでは説明させていただきます。 また、端末はキャリアで使っていたものではなく今回は新しく買いました。 そういうこともあり、キャリア端末を使って格安SIMを運用する際はやり方が少し異なる場合があるのでご注意ください。時間があれば記事を書こうかなと思っています。
 格安SIMの注意点  格安SIMの種類によって、昼間や帰宅ダッシュの時間帯の通信速度が遅くなる可能性が高い キャリアメールが使えない  通信速度が落ちるのは格安SIMの種類によるので、「格安SIM　速度　比較」でググると出てくるので各自で調べておいてください。今回はIIJmioにしました。
@@ -451,10 +451,10 @@ MNP転出をする auから乗り換えるので、さっそく電話をかけ�
     
     <item>
       <title>wordpressに入れておくべき日本製テーマ3選</title>
-      <link>http://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</link>
+      <link>https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</link>
       <pubDate>Wed, 08 Feb 2017 23:34:47 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</guid>
+      <guid>https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</guid>
       <description>ブログサイトでwordpressを使う方が増えています。 その事実としてなんと全世界のサイトで約25％がwordpressが使われているという統計が出ています。どこまで成長するか分からないですね。（もちろんいい意味で） ということで、たくさんの人がwordpressを使っているということもあるので今回はwordpressおすすめの（日本で作られた）テーマを3つ選びました。 あくまで個人的な意見なのでそこらへんはご了承ください
 1.simplicity リンク:https://wp-simplicity.com/ 設定方法などが公式サイトにしっかりと書かれているので初心者にはおすすめです。 当ブログサイトもこちらのテーマを使わせていただいております。 adsense広告の配置が簡単に変えられる点でとても気に入っています。(´▽｀) 記事のの手前にadsense広告を設置することも可能なので本当に助かっています。 画像遅延読み込みやSEO対策の詳細な設定もできます。なので、このテーマを入れておけばプラグインをインストールしまくる必要がなくなるのでサーバーの負担軽減にもなります。 シェアボタンの位置を簡単にカスタマイズできる点もおすすめです。
 2.Xeory    リンク:https://xeory.jp/ このテーマはダウンロードする際に簡単な会員登録が必要になります。 こちらも公式サイトにかなり親切丁寧に設定方法やSEO関連のことまで載っています。 企業向けのテーマとしておすすめです。 お問い合わせページを簡単に作ることができるのでwordpressを使って企業のホームページを作るときに便利です。 XeoryBaseというブログ用のテーマもあるのでブログとして使う方にもおすすめです。
@@ -464,10 +464,10 @@ MNP転出をする auから乗り換えるので、さっそく電話をかけ�
     
     <item>
       <title>Steamでおすすめのシミュレーションゲーム6選</title>
-      <link>http://yoneyan.dev/post/6-recommended-simulation-games-on-steam/</link>
+      <link>https://yoneyan.dev/post/6-recommended-simulation-games-on-steam/</link>
       <pubDate>Mon, 30 Jan 2017 02:14:02 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/6-recommended-simulation-games-on-steam/</guid>
+      <guid>https://yoneyan.dev/post/6-recommended-simulation-games-on-steam/</guid>
       <description>今回はSteamでおすすめのシミュレーションゲームを紹介します。
 そもそもSteamとはなんじゃいという人は パソコン版のゲーム配信ストアです。PlayStationStoreのパソコン版と思ったらいいのではないのかなと思います。
 Prison Architect    リンク：http://store.steampowered.com/app/233450/
@@ -515,10 +515,10 @@ Microsoft Flight Simulator X:Steam Edition    リンク：http://store.</descrip
     
     <item>
       <title>契約すべき有料サービス5選</title>
-      <link>http://yoneyan.dev/post/5-paid-services-to-contract/</link>
+      <link>https://yoneyan.dev/post/5-paid-services-to-contract/</link>
       <pubDate>Sun, 29 Jan 2017 23:59:43 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/5-paid-services-to-contract/</guid>
+      <guid>https://yoneyan.dev/post/5-paid-services-to-contract/</guid>
       <description>1.amazonプライム会員    公式サイト：https://www.amazon.co.jp/gp/prime
 年間:3900円（月額換算:325円）
 契約方法:クレジットカード（デビットカードも可能）のみ
@@ -544,10 +544,10 @@ Microsoft Flight Simulator X:Steam Edition    リンク：http://store.</descrip
     
     <item>
       <title>家でカラオケを楽しむ（カラオケ@DAM for windows10）</title>
-      <link>http://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</link>
+      <link>https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</link>
       <pubDate>Thu, 19 Jan 2017 17:04:29 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</guid>
+      <guid>https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</guid>
       <description>カラオケ@DAMを契約して半年以上経つのでそちらの詳細なレビューをします。
 カラオケ＠DAMとは カラオケ界で有名なDAMの開発、提供元の第一興商のサービスの一つです。
 もとはXboxOneだけのサービスでしたが、昨年windows10でのサービスを開始し、PS4でもサービスが開始しました。
@@ -586,10 +586,10 @@ USBマイクを介すると USBマイク-&amp;gt;パソコン-&amp;gt;音声出�
     
     <item>
       <title>Windows10に入れておきたい有料ストアアプリ3選</title>
-      <link>http://yoneyan.dev/post/3-paid-store-apps-to-keep-in-windows10/</link>
+      <link>https://yoneyan.dev/post/3-paid-store-apps-to-keep-in-windows10/</link>
       <pubDate>Mon, 09 Jan 2017 17:28:02 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/3-paid-store-apps-to-keep-in-windows10/</guid>
+      <guid>https://yoneyan.dev/post/3-paid-store-apps-to-keep-in-windows10/</guid>
       <description>前回の記事ではwindows10の無料ストアアプリの紹介をさせていただきました。
 ここではwindows10ストアアプリで購入しておきたいアプリを選んだのでそちらの方を紹介していきます。
 1.8-zip    値段:2000円（セール時は100円）

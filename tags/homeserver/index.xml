@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>homeserver on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/homeserver/</link>
+    <link>https://yoneyan.dev/tags/homeserver/</link>
     <description>Recent content in homeserver on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 10 Nov 2018 02:41:27 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/homeserver/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/homeserver/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>自宅サーバーとVPSの使い分け</title>
-      <link>http://yoneyan.dev/post/use-of-homeserver-and-vps/</link>
+      <link>https://yoneyan.dev/post/use-of-homeserver-and-vps/</link>
       <pubDate>Sat, 10 Nov 2018 02:41:27 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/use-of-homeserver-and-vps/</guid>
+      <guid>https://yoneyan.dev/post/use-of-homeserver-and-vps/</guid>
       <description>今回は自分なりの自宅サーバーとVPSの使い分けの仕方を紹介します。 そもそもの話になってはしまうのですが、自宅サーバーとVPSの簡単な説明をさせていただきます。
 自宅サーバーとVPSの説明 自宅サーバーとは？ 自宅サーバーとはそのままの意味で、自宅で運用するサーバーのことを言います。  
 
@@ -29,10 +29,10 @@ VPSとは？ VPSとは、自分の家ではなく、ホスティングサービ�
     
     <item>
       <title>ラックサーバ(RX300 S6)を静音化してみる</title>
-      <link>http://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</link>
+      <link>https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</link>
       <pubDate>Thu, 08 Nov 2018 17:40:23 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</guid>
+      <guid>https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</guid>
       <description>現在、メインで動かし続けている自宅のサーバーがRX300 S6になりますが、2Uだからということもありますが、かなりうるさいという問題が発生しました。 普通に考えるとデータセンターに置く物なのでうるさい理由がわかりますが、この状態では家で他の作業が出来ないのであまりよくないのですがファンを静音化する作業してみました。
 そもそも、静音化とは サーバー内のファンの速度を意図的に落とすことのことです。 サーバーやパソコンにとってはあまりよろしくないのが実情ですが、うるさすぎるので仕方がないという感じです。 これによって壊れることもありますので、自己責任で作業をしてください。 かなりやってることはかなりよろしくないので、わかった上でしてください。
 作業していく 1．抵抗を選ぶ 1/4W（0.25W）の抵抗を使ってみたのですが、電流が強すぎて煙を出して「プシュ〜〜」という音をしながら焼ける事件が起きたので10Wのセメント抵抗を使います。 ファンに書いてある↓の電流と電圧などに気をつけて作業してください。抵抗値は電圧と電流を元に計算します。  
@@ -64,10 +64,10 @@ Yahooショッピング
     
     <item>
       <title>自宅サーバとVPSの長所と短所の比較</title>
-      <link>http://yoneyan.dev/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</link>
+      <link>https://yoneyan.dev/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</link>
       <pubDate>Tue, 12 Jun 2018 07:19:01 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</guid>
+      <guid>https://yoneyan.dev/post/2018-06-12-comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</guid>
       <description>この記事では、自宅サーバとVPSの二つを対象にして、長所と短所を比較してみます。
 自宅サーバの長所     ハードウェア単位での知識が増える ネットワークの勉強になる そこそこのスペックを比較的安く中古で買える ローカルでのファイルのやりとりは速い  自宅サーバの一番の特徴としてハードウェアの知識が増える点です。特に大学生で自分のようにインフラのような仕事につきたいと思ってる方にはおすすめです。 中古のサーバ機の場合は、比較的安くハードを買うことが出来るので、サーバを置く場所さえあればなんとかなりますファイルの共有をよくしている方はVPSよりも自宅サーバの方がおすすめです。やっぱり自宅の有線の方が当たり前ですが速いです。
 自宅サーバの短所  電気代やばい ハードウェアの管理をやっておかないとだめ  電気代はかなり行きます。そこが唯一の問題です。また、HDDが消耗品ということもあるのでハードウェアの管理をしっかりしておかないといけないという点です。  
@@ -80,10 +80,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
     
     <item>
       <title>ラック型サーバーの良い点と悪い点</title>
-      <link>http://yoneyan.dev/post/2018-06-05-pros-and-cons-of-rack-servers/</link>
+      <link>https://yoneyan.dev/post/2018-06-05-pros-and-cons-of-rack-servers/</link>
       <pubDate>Tue, 05 Jun 2018 15:04:37 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-06-05-pros-and-cons-of-rack-servers/</guid>
+      <guid>https://yoneyan.dev/post/2018-06-05-pros-and-cons-of-rack-servers/</guid>
       <description>みなさんは、家にサーバーありますか？ あると思います でも、単にサーバーを置くだけでは満足できなくなってきている方も多いと思います。 タワー型サーバーでは満足がいかなくなってくると、 次は&amp;hellip;&amp;hellip;ラック型サーバーに手を出してしまうのが普通だと思います。 筆者もまさしく、そんな状況になってラック型サーバーの良いところと悪いところを紹介します。
 ラック型サーバーの良いところ  CPU二個積めるやつやメモリがめちゃくちゃ搭載できるサーバーが比較的安い価格で買える メモリでRegisterdに対応しているサーバーが多い 積みやすい 漬物石の代わりになる  CPU二個積めるサーバーが安く手に入るというのが一番の特徴と言っても過言です。 CPU二個積む分消費電力が増えてしまうというやばいところが増えてくるというのも事実ですが、コア数を使うような仮想化用途ではおすすめです。 また、ラック型サーバーになってくると、メモリも6つ以上搭載出来るのが多くを占めるので、これも仮想化するのにはおすすめです。 ヤフオクで中古のタワー型サーバーの場合、メモリのECCでRegisteredに対応していない機種が多いということです。 2Uサーバーや1Uサーバーの一番の特徴は昔のアンプみたいに上に載せれる点です。 ハードウェアメンテナンスをする際は取り出す必要がありますが、大体のラック型サーバーは前面からHDDを交換できるので、比較的管理が楽なのでおすすめなところです。
 ラック型サーバーの悪いところ  うるさい タワー型に比べて高い（気がする） ファンが多い 電気代が&amp;hellip;  こういった感じです。 ラック型サーバーはうるさいというのが一番の欠点です。 どれくらいのうるさいのかと言うと、ダイソンの掃除機並にうるさいです。 ラック型サーバーになるので、24時間運用することになるので、ダイソンの掃除機が24時間鳴りっぱなしというすごい状況になります。 こちらにどんな感じの音なのか体験してほしいので、載せました。 これを聞いてみるとその迫力が少しでも伝わるのではないでしょうか？ ラック型サーバ＝ダイソンの掃除機 並の音になるので家に置くには難しい点です。 ほかに問題になってくるのが電気代です。 ほとんどのラック型サーバはタワー型サーバに比べて電気代が高いです。 ラック型は冗長化に優れすぎていて電源がホットスワップに対応している変態的なサーバになってしまうので、電源が二個入るのでその時点で待機電力がそこそこ食います。 また、マザーボードもタワー型に比べると消費電力が高い感じがする（低いものがあるかもしれない）ので、家に置くならタワー型がおすすめかなと思います。

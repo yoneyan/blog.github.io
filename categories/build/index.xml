@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>build on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/categories/build/</link>
+    <link>https://yoneyan.dev/categories/build/</link>
     <description>Recent content in build on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 04 Jun 2019 19:03:13 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/categories/build/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/categories/build/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>nginxでリバースプロキシとLet&#39;s Encryptを導入する</title>
-      <link>http://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
+      <link>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
+      <guid>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
       <description>nginxでLet&amp;rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
 当方のLet&amp;rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
 今回はリバースプロキシを使用します。
@@ -32,10 +32,10 @@ certbot certonly --standalone  ２．設定に追加する certbotを実行す�
     
     <item>
       <title>Linuxのディスク容量拡張の方法</title>
-      <link>http://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
+      <link>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
       <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
+      <guid>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
       <description>UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
 VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
 前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。
@@ -53,10 +53,10 @@ sudo resize2fs /dev/sda2  もちろんですが、root権限が必要です。
     
     <item>
       <title>CentOS7でLACPとタグVLANを使ってみる</title>
-      <link>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
+      <link>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
       <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
+      <guid>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
       <description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
 環境 CentOS=========L3 Switch(vlan10,vlan20)
 2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
@@ -70,10 +70,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;qu
     
     <item>
       <title>LinuxでPT2ドライバをインストールする</title>
-      <link>http://yoneyan.dev/post/install-pt2-driver-on-linux/</link>
+      <link>https://yoneyan.dev/post/install-pt2-driver-on-linux/</link>
       <pubDate>Mon, 25 Mar 2019 12:23:32 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/install-pt2-driver-on-linux/</guid>
+      <guid>https://yoneyan.dev/post/install-pt2-driver-on-linux/</guid>
       <description>PT3ドライバでインストールする記事が多い気がするので、ここに備忘録として書きます。
 CentOSで今回はドライバインストールを行いましたが、他のディストリビューションでも同じです。
 作業開始！ 1．ドライバをダウンロードしてインストールする 1.1．ダウンロードする 以下のものをダウンロードします。 http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2
@@ -85,10 +85,10 @@ ls /dev/pt1* /dev/pt1video0 /dev/pt1video1 /dev/pt1video2 /dev/pt1video3  この
     
     <item>
       <title>CentOSでL2TPサーバーを構築してみる</title>
-      <link>http://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</link>
+      <link>https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</link>
       <pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</guid>
+      <guid>https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</guid>
       <description>UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
 VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
 OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。
@@ -101,10 +101,10 @@ L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分が
     
     <item>
       <title>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</title>
-      <link>http://yoneyan.dev/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</link>
+      <link>https://yoneyan.dev/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</link>
       <pubDate>Thu, 10 Jan 2019 11:49:55 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</guid>
+      <guid>https://yoneyan.dev/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</guid>
       <description>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
 その2ではopenvpnのクライアントになるpfsense側の設定をしていきます。
 前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
@@ -131,10 +131,10 @@ Client Certificate には1.</description>
     
     <item>
       <title>大好きな曲を電話回線網から流す方法</title>
-      <link>http://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <link>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
       <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <guid>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
       <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
 最終日ということもあり気合を入れて紹介させていただきます。
 作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
@@ -165,10 +165,10 @@ register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメ�
     
     <item>
       <title>UbuntuServerでOpenVPNサーバーを構築</title>
-      <link>http://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</link>
+      <link>https://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</link>
       <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</guid>
+      <guid>https://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</guid>
       <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
 OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
 2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
@@ -182,10 +182,10 @@ source ./vars  を実行します。
     
     <item>
       <title>CentOSのOpenVPNサーバーを構築してみる</title>
-      <link>http://yoneyan.dev/post/try-building-a-centos-openvpn-server/</link>
+      <link>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</link>
       <pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-building-a-centos-openvpn-server/</guid>
+      <guid>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</guid>
       <description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
 この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
 その１:VPS側（サーバー側）の設定
@@ -207,10 +207,10 @@ Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
     
     <item>
       <title>PowerConnect6248を静音化</title>
-      <link>http://yoneyan.dev/post/2018-04-25-silent-powerconnect6248/</link>
+      <link>https://yoneyan.dev/post/2018-04-25-silent-powerconnect6248/</link>
       <pubDate>Wed, 25 Apr 2018 07:17:56 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-04-25-silent-powerconnect6248/</guid>
+      <guid>https://yoneyan.dev/post/2018-04-25-silent-powerconnect6248/</guid>
       <description>今まで、家にはPowerConnect2724とx600-24Tsという24ポートのハブが二台あるんですが、それでも足りなくなってきたということもあり、PowerConnect6248をヤフオクで落札しました。L4スイッチで48ポートもあるということで、かなり期待しているんですが問題があります。 それはうるさいことです。 PowerConnect2724の24ポートのハブでもなかなかうるさかったのですが、48ポート搭載しているPowerConnect6248は許容範囲を超えちゃいました。 まあ、普通に考えて1Uサイズで48ポートもあってLayer4まで対応しちゃってるハブなのでファンがアレなので、今回は静音化してみます。 注意 分解するので故障の可能性があるので、自己責任でお願い致します。（これだけは言っておきますが、絶対しない方がいいです。機械的には&amp;hellip;） 普通の人は↓こういうものを諦めて買いましょう。
 
 TP-Link スイッチングハブ 48ポート TL-SG1048 10/100/1000Mbps 金属筐体 ギガビット 5年保証
@@ -236,10 +236,10 @@ PowerConnect6248中身[/caption] こんな感じになってます。
     
     <item>
       <title>PS4で遅延なくカラオケをする方法</title>
-      <link>http://yoneyan.dev/post/2018-01-20-how-to-karaoke-without-delay-on-ps4/</link>
+      <link>https://yoneyan.dev/post/2018-01-20-how-to-karaoke-without-delay-on-ps4/</link>
       <pubDate>Sat, 20 Jan 2018 10:56:41 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-01-20-how-to-karaoke-without-delay-on-ps4/</guid>
+      <guid>https://yoneyan.dev/post/2018-01-20-how-to-karaoke-without-delay-on-ps4/</guid>
       <description>お詫びと訂正
 (2019/03/11 20:08) 有線マイクでの採点は現時点ではできません。
 (2019/03/11 17:30) 当方の知識不足による影響で「センド＆リターン付きのミキサーを使う方法」にて間違った方法を載せておりました。原因と致しまして、当方のfx sendの知識が不十分でした。誠にお詫び申し上げます。只今、対処法につきまして、模索しておりますのでもう少しお待ちください。
@@ -276,10 +276,10 @@ PS4側につなげる必要があるので、オーディオアダプタをつ�
     
     <item>
       <title>サーバーOSの選定法</title>
-      <link>http://yoneyan.dev/post/serveros-selection-method/</link>
+      <link>https://yoneyan.dev/post/serveros-selection-method/</link>
       <pubDate>Tue, 18 Apr 2017 00:00:52 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/serveros-selection-method/</guid>
+      <guid>https://yoneyan.dev/post/serveros-selection-method/</guid>
       <description>個人的に思うサーバーOSの選定法を紹介していきます。 サーバーOSの種類としてはWindows系、Debian系、RedHatLinux系、Unix系などたくさんあり、選択に迷ってしまうというのが現状です。自分も今のところ自宅サーバーの範囲での趣味なので、参考になるのかわかりませんが、もし参考にしていただき、役に立つととても嬉しく思います。
 サーバー構成 自分の家の場合、メインブログ（本ページ）はレンタルサーバーで運用しています。その理由はまた、別記事で書く予定です。 基本的に自宅サーバーで動かしているのは、友達や家族、自分が使うためのサーバーにしています。 サーバーOSとしては windows10Pro&amp;mdash;バックアップサーバー、ファイル共有、DLNAサーバー、地デジ配信サーバー(spinel3を使用)、緊急地震速報の通知、リモートデスクトップ CentOS7&amp;mdash;&amp;mdash;&amp;mdash;-NTPサーバー、Webサーバー、NTPサーバー、仮想化サーバー、監視サーバー、簡易監視カメラ録画サーバー として使っています。
 サーバーOSを決める手順  自分がサーバーで具体的になにをやりたいのかを決める それに見合うサーバーOSを決める サーバー構成を決める  とこんな感じなのではないのかなと思います。
@@ -292,10 +292,10 @@ Windows系(windowsserver,windows10など) 普段使っているパソコンがwi
     
     <item>
       <title>kinectでMMDを動かしてみた</title>
-      <link>http://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</link>
+      <link>https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</link>
       <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</guid>
+      <guid>https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</guid>
       <description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
 著者のPC環境 OS:windows10Pro
 CPU:corei7 4790k

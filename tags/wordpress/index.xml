@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wordpress on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/wordpress/</link>
+    <link>https://yoneyan.dev/tags/wordpress/</link>
     <description>Recent content in wordpress on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 30 Jan 2019 19:41:05 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>wordpressでGutenbergエディタが開いてくれない</title>
-      <link>http://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</link>
+      <link>https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</link>
       <pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</guid>
+      <guid>https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</guid>
       <description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
 結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
 このようになった    Gutenbergが開いてくれない
@@ -37,10 +37,10 @@ Gutenbergプラグインが一番怪しいということがわかりました�
     
     <item>
       <title>wordpressに入れておくべき日本製テーマ3選</title>
-      <link>http://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</link>
+      <link>https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</link>
       <pubDate>Wed, 08 Feb 2017 23:34:47 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</guid>
+      <guid>https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</guid>
       <description>ブログサイトでwordpressを使う方が増えています。 その事実としてなんと全世界のサイトで約25％がwordpressが使われているという統計が出ています。どこまで成長するか分からないですね。（もちろんいい意味で） ということで、たくさんの人がwordpressを使っているということもあるので今回はwordpressおすすめの（日本で作られた）テーマを3つ選びました。 あくまで個人的な意見なのでそこらへんはご了承ください
 1.simplicity リンク:https://wp-simplicity.com/ 設定方法などが公式サイトにしっかりと書かれているので初心者にはおすすめです。 当ブログサイトもこちらのテーマを使わせていただいております。 adsense広告の配置が簡単に変えられる点でとても気に入っています。(´▽｀) 記事のの手前にadsense広告を設置することも可能なので本当に助かっています。 画像遅延読み込みやSEO対策の詳細な設定もできます。なので、このテーマを入れておけばプラグインをインストールしまくる必要がなくなるのでサーバーの負担軽減にもなります。 シェアボタンの位置を簡単にカスタマイズできる点もおすすめです。
 2.Xeory    リンク:https://xeory.jp/ このテーマはダウンロードする際に簡単な会員登録が必要になります。 こちらも公式サイトにかなり親切丁寧に設定方法やSEO関連のことまで載っています。 企業向けのテーマとしておすすめです。 お問い合わせページを簡単に作ることができるのでwordpressを使って企業のホームページを作るときに便利です。 XeoryBaseというブログ用のテーマもあるのでブログとして使う方にもおすすめです。

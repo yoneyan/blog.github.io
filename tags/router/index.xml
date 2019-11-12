@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>router on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/router/</link>
+    <link>https://yoneyan.dev/tags/router/</link>
     <description>Recent content in router on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 27 Jun 2018 07:33:56 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/router/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/router/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>自宅で業務用ルータをおすすめする理由</title>
-      <link>http://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</link>
+      <link>https://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</link>
       <pubDate>Wed, 27 Jun 2018 07:33:56 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</guid>
+      <guid>https://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</guid>
       <description>みなさんは、自宅のルータはどういうものを使ってますか？
 たぶん、普通の人ならプロバイダーが貸し出ししているルータ又は市販のルータを使ってると思います。（バッファローやIO dataのルータのように&amp;hellip;）
 業務用ルータのメリット  安定している 設定項目が多い コマンドで設定ができる（ごく一部の機種を除いて） POE対応の機種もある  このメリットを1つずつ紹介します。

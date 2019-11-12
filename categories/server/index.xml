@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>server on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/categories/server/</link>
+    <link>https://yoneyan.dev/categories/server/</link>
     <description>Recent content in server on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 11 Aug 2019 23:56:52 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/categories/server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/categories/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CentOSで無線を有線に変換する(2)</title>
-      <link>http://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/</link>
+      <link>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/</link>
       <pubDate>Sun, 11 Aug 2019 23:56:52 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/</guid>
+      <guid>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/</guid>
       <description>CentOSを使って無線を有線にしなければならないことができたので、備忘録として書きます。
 構築 APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。
 前提条件として
@@ -36,10 +36,10 @@ yum -y install dhcp  /etc/dhcp/dhcpd.conf</description>
     
     <item>
       <title>nmcliで無線がunmanagedの場合の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</link>
+      <link>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</link>
       <pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</guid>
       <description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
 ここでは無線LANをWLANと記述します。
 確認してみる nmcli device  より、WLANの管理状態を確かめてみます。
@@ -54,10 +54,10 @@ nmcli d wifi  としてもなにも帰ってこないので、 networkmanager-wi
     
     <item>
       <title>virt-install時にbr0のエラーが出て進まない</title>
-      <link>http://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</link>
+      <link>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</link>
       <pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</guid>
+      <guid>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</guid>
       <description>環境 OS: CentOS7 7.6.1810
 Bridge: br0 (eth0をbr0にブリッジで接続している)
 起こったこと virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。
@@ -67,10 +67,10 @@ Starting install... Retrieving file vmlinuz... | 6.3 MB 00:00:00 Retrieving file
     
     <item>
       <title>apcupsdで自動シャットダウンをできるようにする</title>
-      <link>http://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/</link>
+      <link>https://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/</link>
       <pubDate>Tue, 30 Jul 2019 01:52:07 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/</guid>
+      <guid>https://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/</guid>
       <description>apcupsdとは APC製のUPSにつながれたサーバ機器を安全にシャットダウンされるように作られたアプリケーションです。
 また、このアプリケーションを使うことで複数台のサーバ機器を同時にシャットダウン出来ることも特徴の一つです。
 構成 構成としてこのようになっています。
@@ -95,10 +95,10 @@ TX1310 M1をマスターとして運用します。
     
     <item>
       <title>nginxでリバースプロキシとLet&#39;s Encryptを導入する</title>
-      <link>http://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
+      <link>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
+      <guid>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
       <description>nginxでLet&amp;rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
 当方のLet&amp;rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
 今回はリバースプロキシを使用します。
@@ -114,10 +114,10 @@ certbot certonly --standalone  ２．設定に追加する certbotを実行す�
     
     <item>
       <title>Linuxのディスク容量拡張の方法</title>
-      <link>http://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
+      <link>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
       <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
+      <guid>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
       <description>UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
 VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
 前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。
@@ -135,10 +135,10 @@ sudo resize2fs /dev/sda2  もちろんですが、root権限が必要です。
     
     <item>
       <title>TX1310 M1でホットスワップが出来ない</title>
-      <link>http://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/</link>
+      <link>https://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/</link>
       <pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/</guid>
+      <guid>https://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/</guid>
       <description>ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
 何が出来ないのか？ 本来、この機器ではホットスワップには対応していないのですが、大体のAHCIで動いてるシステムは使えるはずなのですが、使えない。
 しかも、ホットスワップ出来ないだけだと不便だけで済みますが、記憶域プールが謎のエラーを吐いて、作成出来ないのが致命的です。
@@ -156,10 +156,10 @@ TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種
     
     <item>
       <title>CentOS7でLACPとタグVLANを使ってみる</title>
-      <link>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
+      <link>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
       <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
+      <guid>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
       <description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
 環境 CentOS=========L3 Switch(vlan10,vlan20)
 2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
@@ -173,10 +173,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;qu
     
     <item>
       <title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
+      <link>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
       <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
       <description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
 http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
 上のブログさんの記事を参考にしました。（ほぼ、同じです。）
@@ -188,10 +188,10 @@ http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
     
     <item>
       <title>VPSでスワップ領域を増やす</title>
-      <link>http://yoneyan.dev/post/increase-swap-space-with-vps/</link>
+      <link>https://yoneyan.dev/post/increase-swap-space-with-vps/</link>
       <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/increase-swap-space-with-vps/</guid>
+      <guid>https://yoneyan.dev/post/increase-swap-space-with-vps/</guid>
       <description>VPSで格安のものになってくると、問題となってくるのがスペックになります。
 昔のVPSに比べると、メモリが512MBに増えておりかなり使えるものになってきましたが、それでも不足してしまうという現実があります。
 そこで、気休め程度になってしまいますが、スワップ領域を増やしてみました。
@@ -211,10 +211,10 @@ HDDのマウントなどで使われるfstabに追記していきます。
     
     <item>
       <title>openstackを構築していくpart1</title>
-      <link>http://yoneyan.dev/post/building-openstack-part1/</link>
+      <link>https://yoneyan.dev/post/building-openstack-part1/</link>
       <pubDate>Wed, 12 Dec 2018 21:53:06 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/building-openstack-part1/</guid>
+      <guid>https://yoneyan.dev/post/building-openstack-part1/</guid>
       <description>openstackを自力で一から頑張って構築していこうという試みを始めます。
 検証目的の場合であれば、centosのpackstackのような自動インストールツールを使うべきです。 実用的な運用を目指していこうという主旨の上でやっていきます。
 筆者自身も構築途中ということもあり、時間をかけて記事を出していく予定なので、よろしくお願いします。
@@ -253,10 +253,10 @@ Swift 分散型のストレージサービスを提供するコンポーネン�
     
     <item>
       <title>CentOSで無線から有線に変換する(1)</title>
-      <link>http://yoneyan.dev/post/convert-wireless-to-wired-with-centos_1/</link>
+      <link>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_1/</link>
       <pubDate>Tue, 20 Nov 2018 14:06:55 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/convert-wireless-to-wired-with-centos_1/</guid>
+      <guid>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_1/</guid>
       <description>諸事情でどこかのイベントでバックボーンを構築をする際に無線から有線に変換する必要性が出てきたので、この記事ではその方法を紹介します。 トポ図 ルータ &amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; CentOS &amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; Client External Internal External(eth1),Internal(eth0)
 設定をしてみる 1.firewallコマンド eth0をInternalゾーン
 firewall-cmd --zone=internal --change-interface=eth0  eth1をExternalゾーン
@@ -266,10 +266,10 @@ firewall-cmd --zone=external --change-interface=eth1  永続化する時は、&a
     
     <item>
       <title>CentOSでリンクアグリゲーションの設定をしてみる</title>
-      <link>http://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</link>
+      <link>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</link>
       <pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</guid>
+      <guid>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</guid>
       <description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
 リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
 設定方法 設定方法として、以下の2つがあります。

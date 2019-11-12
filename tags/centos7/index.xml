@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CentOS7 on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/centos7/</link>
+    <link>https://yoneyan.dev/tags/centos7/</link>
     <description>Recent content in CentOS7 on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 11 Aug 2019 23:29:40 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/centos7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/centos7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>nmcliで無線がunmanagedの場合の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</link>
+      <link>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</link>
       <pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</guid>
       <description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
 ここでは無線LANをWLANと記述します。
 確認してみる nmcli device  より、WLANの管理状態を確かめてみます。
@@ -31,10 +31,10 @@ nmcli d wifi  としてもなにも帰ってこないので、 networkmanager-wi
     
     <item>
       <title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
+      <link>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
       <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
       <description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
 http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
 上のブログさんの記事を参考にしました。（ほぼ、同じです。）

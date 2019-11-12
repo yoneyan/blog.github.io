@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CentOS on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/centos/</link>
+    <link>https://yoneyan.dev/tags/centos/</link>
     <description>Recent content in CentOS on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 31 Mar 2019 20:02:44 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CentOS7でLACPとタグVLANを使ってみる</title>
-      <link>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
+      <link>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
       <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
+      <guid>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
       <description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
 環境 CentOS=========L3 Switch(vlan10,vlan20)
 2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
@@ -30,10 +30,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;qu
     
     <item>
       <title>CentOSでリンクアグリゲーションの設定をしてみる</title>
-      <link>http://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</link>
+      <link>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</link>
       <pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</guid>
+      <guid>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</guid>
       <description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
 リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
 設定方法 設定方法として、以下の2つがあります。
@@ -52,10 +52,10 @@ ip addr  これで確認することが可能になります。</description>
     
     <item>
       <title>CentOSのOpenVPNサーバーを構築してみる</title>
-      <link>http://yoneyan.dev/post/try-building-a-centos-openvpn-server/</link>
+      <link>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</link>
       <pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-building-a-centos-openvpn-server/</guid>
+      <guid>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</guid>
       <description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
 この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
 その１:VPS側（サーバー側）の設定

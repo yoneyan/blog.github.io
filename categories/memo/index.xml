@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>memo on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/categories/memo/</link>
+    <link>https://yoneyan.dev/categories/memo/</link>
     <description>Recent content in memo on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 31 Mar 2019 15:17:42 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/categories/memo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/categories/memo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
+      <link>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
       <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
       <description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
 http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
 上のブログさんの記事を参考にしました。（ほぼ、同じです。）
@@ -28,10 +28,10 @@ http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
     
     <item>
       <title>Edgerouterでポート開放をしてみる</title>
-      <link>http://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</link>
+      <link>https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</link>
       <pubDate>Fri, 22 Mar 2019 18:05:10 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</guid>
+      <guid>https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</guid>
       <description>今回はEdgerouterでポート開放をコマンド操作でしていきます。
 こちらのサイトを参考にさせていただきました。
 https://qiita.com/maiani/items/b45b0505377401be083a
@@ -46,10 +46,10 @@ set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp
     
     <item>
       <title>neovimでUltiSnips requires py &gt;= 2.7 or py3というエラーの対処法</title>
-      <link>http://yoneyan.dev/post/how-to-fix-neovim-error/</link>
+      <link>https://yoneyan.dev/post/how-to-fix-neovim-error/</link>
       <pubDate>Wed, 20 Feb 2019 18:53:54 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/how-to-fix-neovim-error/</guid>
+      <guid>https://yoneyan.dev/post/how-to-fix-neovim-error/</guid>
       <description>最近、新たにデスクトップPCにLinuxMintを導入してneovimやtmuxやらの環境構築をしている途中に
 UltiSnips requires py &amp;gt;= 2.7 or py3
 とこのようなエラーをneovimを起動する度に吐いてしまったので対処法を備忘録として載せておきます。
@@ -64,10 +64,10 @@ LinuxMintの場合はベースのディストリビューションがUbuntuに�
     
     <item>
       <title>wordpressでGutenbergエディタが開いてくれない</title>
-      <link>http://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</link>
+      <link>https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</link>
       <pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</guid>
+      <guid>https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</guid>
       <description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
 結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
 このようになった    Gutenbergが開いてくれない
@@ -88,10 +88,10 @@ Gutenbergプラグインが一番怪しいということがわかりました�
     
     <item>
       <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</title>
-      <link>http://yoneyan.dev/post/asterisk-error1/</link>
+      <link>https://yoneyan.dev/post/asterisk-error1/</link>
       <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/asterisk-error1/</guid>
+      <guid>https://yoneyan.dev/post/asterisk-error1/</guid>
       <description>Unable to retrieve PJSIP transport &amp;lsquo;simpletrans&amp;rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
 [transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
@@ -100,10 +100,10 @@ Gutenbergプラグインが一番怪しいということがわかりました�
     
     <item>
       <title>Windows10 Fall Creators Updateでonedriveのファイルオンデマンドが使えない場合の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</link>
+      <link>https://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</link>
       <pubDate>Sun, 22 Oct 2017 04:25:45 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</guid>
       <description>つい最近、年に二回のwindows10鬼の大型アップデートの時期が来てしまいました。 普通はwindows updateを待つべき何ですが、いきなりアップデートされては困るのでいつも手動でアップデートさせている筆者です。年一回で十分のように思ってしまうのは自分だけなのかなｗ 今回は、アップデートしたのはいいんですが、今回のアップデートの醍醐味のひとつであるonedriveのファイルオンデマンドが使えないので、その対処法についてこの記事ではご紹介していきます。  
 
 Windows 10 Fall Creators Updateにアップデートさせたのになんでないねんｗって普通なるよねー

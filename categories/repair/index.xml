@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>repair on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/categories/repair/</link>
+    <link>https://yoneyan.dev/categories/repair/</link>
     <description>Recent content in repair on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 13 Nov 2017 02:59:19 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/categories/repair/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/categories/repair/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>我が家の洗濯機が排水できないので修理する</title>
-      <link>http://yoneyan.dev/post/2017-11-13-repair-because-my-washing-machine-cannot-drain/</link>
+      <link>https://yoneyan.dev/post/2017-11-13-repair-because-my-washing-machine-cannot-drain/</link>
       <pubDate>Mon, 13 Nov 2017 02:59:19 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2017-11-13-repair-because-my-washing-machine-cannot-drain/</guid>
+      <guid>https://yoneyan.dev/post/2017-11-13-repair-because-my-washing-machine-cannot-drain/</guid>
       <description>我が家の洗濯機が壊れてしまいました(￣｡￣;)(おい、洗濯できねえよ(泣)) 機種はTW-180VEです。症状としてはエラーが出て、洗濯できても排水できないという状況らしい。 新しく買うのも、お金がかかるし、排水以外は故障していない感じなので修理することにしてみました。 それでいつものgoogle先生に聞いてみると、排水弁の問題がやたらと出てくるｗ これぐらいならなんとかなりそうと思ったので修理してみます。
 分解して故障箇所を特定してみる。    洗濯機の下の部分を外します。ネジはプラスドライバーで開けれます。  
 

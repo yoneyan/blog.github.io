@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>impressions on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/categories/impressions/</link>
+    <link>https://yoneyan.dev/categories/impressions/</link>
     <description>Recent content in impressions on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 08 Apr 2017 13:47:27 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/categories/impressions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/categories/impressions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>android使いが思う欠点</title>
-      <link>http://yoneyan.dev/post/cons-of-android/</link>
+      <link>https://yoneyan.dev/post/cons-of-android/</link>
       <pubDate>Sat, 08 Apr 2017 13:47:27 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/cons-of-android/</guid>
+      <guid>https://yoneyan.dev/post/cons-of-android/</guid>
       <description>android使いとしていつも触っていて思うandroidの欠点についてこの記事で話していきます。 この記事では批判している文章もありますが、ここを改善してほしいという期待の意味を込めて作っているということを頭に入れておいていただければありがたいです。
 筆者のandroidを使用歴 androidを初めて使ったのは2013年になります。 親に頼んでそろそろnexus7(2013)が出るのにあまりにも待てなくてnexus7(2012)を買ってもらいました。そこから、自分のandroid生活が始まりました。その頃のandroidのバージョンは4.3〜4.4の時でした。
 android4.4より以前の端末は使い物にならない android２.xを使ったことがなかったのであまり喋ることができませんが、友達に昔の端末を触らしてもらったときは今に比べるとレスポンスが悪く、確かに使いづらかった記憶があります。なので、androidからiphoneに買い換える人が多かったのだなあと思いました。
@@ -30,10 +30,10 @@ androidOSのアップデートがなかなか来ない androidのOS自体はgoog
     
     <item>
       <title>家でカラオケを楽しむ（カラオケ@DAM for windows10）</title>
-      <link>http://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</link>
+      <link>https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</link>
       <pubDate>Thu, 19 Jan 2017 17:04:29 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</guid>
+      <guid>https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</guid>
       <description>カラオケ@DAMを契約して半年以上経つのでそちらの詳細なレビューをします。
 カラオケ＠DAMとは カラオケ界で有名なDAMの開発、提供元の第一興商のサービスの一つです。
 もとはXboxOneだけのサービスでしたが、昨年windows10でのサービスを開始し、PS4でもサービスが開始しました。

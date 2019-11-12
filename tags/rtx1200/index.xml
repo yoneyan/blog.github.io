@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RTX1200 on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/rtx1200/</link>
+    <link>https://yoneyan.dev/tags/rtx1200/</link>
     <description>Recent content in RTX1200 on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 30 Jan 2019 17:17:30 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/rtx1200/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/rtx1200/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RTX1200でeo光のIPv6を使えるようにする</title>
-      <link>http://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</link>
+      <link>https://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</link>
       <pubDate>Wed, 30 Jan 2019 17:17:30 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</guid>
+      <guid>https://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</guid>
       <description>みなさんRTX1200というyamahaのルータを持っていますか？
 eo光が配布してくれるeo光多機能ルータというものがありますが、使いやすいのですが民生用ということもあり機能が限定されています。 また、安定性もそこまで正直なところそこまで良くないです。
 ということで、今回はRTX1200でもeo光のIPv6を使えるようになるという記事を拝見させていただきましたので、当ブログでも紹介させていただきます。

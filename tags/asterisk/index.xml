@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>asterisk on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/asterisk/</link>
+    <link>https://yoneyan.dev/tags/asterisk/</link>
     <description>Recent content in asterisk on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 25 Dec 2018 05:28:23 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/asterisk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/asterisk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>大好きな曲を電話回線網から流す方法</title>
-      <link>http://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <link>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
       <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <guid>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
       <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
 最終日ということもあり気合を入れて紹介させていただきます。
 作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
@@ -47,10 +47,10 @@ register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメ�
     
     <item>
       <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</title>
-      <link>http://yoneyan.dev/post/asterisk-error1/</link>
+      <link>https://yoneyan.dev/post/asterisk-error1/</link>
       <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/asterisk-error1/</guid>
+      <guid>https://yoneyan.dev/post/asterisk-error1/</guid>
       <description>Unable to retrieve PJSIP transport &amp;lsquo;simpletrans&amp;rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
 [transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。

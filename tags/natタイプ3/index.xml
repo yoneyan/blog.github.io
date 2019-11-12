@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NATタイプ3 on のんびりと生きたい</title>
-    <link>http://yoneyan.dev/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/</link>
+    <link>https://yoneyan.dev/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/</link>
     <description>Recent content in NATタイプ3 on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 18 Jan 2018 12:01:34 +0900</lastBuildDate>
     
-	<atom:link href="http://yoneyan.dev/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yoneyan.dev/tags/nat%E3%82%BF%E3%82%A4%E3%83%973/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pfsenseでPS4やPS3のNATタイプ3になる際の対処法</title>
-      <link>http://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</link>
+      <link>https://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</link>
       <pubDate>Thu, 18 Jan 2018 12:01:34 +0900</pubDate>
       
-      <guid>http://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</guid>
+      <guid>https://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</guid>
       <description>最近自作ルーターを構築して、WebGUIで管理できるpfsenseというOSインストールして使っている筆者です。
 pfsenseを構築したことで安定性がかなり上がったのですが、一つ問題が発生しました。それはPS3とPS4のオンライン機能です。pfsenseにしたことで、NATタイプ3になってしまい、オンラインで遊ぶ時に支障を来し始めたので、その対処法を紹介させていただきます。
 NATタイプとは？ PSにはネットワークの判別方法としてNATタイプというものがあります。
