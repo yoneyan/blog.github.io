@@ -18,7 +18,7 @@
       
       <guid>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/</guid>
       <description>CentOSを使って無線を有線にしなければならないことができたので、備忘録として書きます。
-構築 APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。
+構築    APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。
 前提条件として
 WLAN側：DHCP（ここでは、172.16.100.100がDHCPより取得したと仮定する）
 LAN側：172.16.200.1&amp;frasl;24
@@ -27,11 +27,11 @@ LANインターフェース:eth0
 とします。
 1．無線側の設定 1.1．WLAN側インターフェースを確認する NetworkManagerのデバイスを一覧で出してみます。
  nmcli device  とすると、
- DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet disconnected　-- wlp2s0 wifi disconnected　--  wlp2s0がunmanagedになっている場合は、nmcliで無線がunmanagedの場合の対処法 こちらに対処法を記事にしたのでご覧ください。
+ DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet disconnected　-- wlp2s0 wifi disconnected　--  wlp2s0がunmanagedになっている場合は、 nmcliで無線がunmanagedの場合の対処法 こちらに対処法を記事にしたのでご覧ください。
 1.2．WLANのSSIDを設定する nmcli device wifi connect [ssid] password [password]  [ssid]にWiFiのSSIDを、[password]にはSSIDに対するパスワードを入力してください。
 2．有線側の設定 2.1．IPアドレスを固定で設定する nmcli connection modify eth0 ipv4.method manual nmcli connection modify eth0 ipv4.addresses &amp;quot;172.16.200.1/24&amp;quot;  172.16.200.1/24の部分にLAN側のIPアドレスを記入します。
 2.2．DHCPサーバを構築する DHCPサーバをインストールする
-yum -y install dhcp  /etc/dhcp/dhcpd.conf</description>
+yum -y install dhcp  /etc/dhcp/dhcpd.</description>
     </item>
     
     <item>

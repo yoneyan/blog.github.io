@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="theme-color" content="#263238">
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.59.1" />
 
 <link rel="apple-touch-icon" href="https://yoneyan.dev/images/logo.png">
 
@@ -909,7 +909,7 @@ section.footer > header a {
 
 
 
-.thumb-0b536f0cdbf19c025c57ba9db2e6cf9b {
+.thumb-937409701cde51150a09041f7a30c8ae {
   background-image: url(https://yoneyan.dev/images/free_images/vpn_1.jpg);
 }
 
@@ -1429,8 +1429,8 @@ L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分が
 </div>
         
         <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/2019-01-10-use-openvpn-to-connect-vps-and-pfsense-at-home_part2/">
-    <div class="thumb thumb-0b536f0cdbf19c025c57ba9db2e6cf9b"></div>
+  <a href="https://yoneyan.dev/post/use-openvpn-to-connect-vps-and-pfsense-at-home_part2/">
+    <div class="thumb thumb-937409701cde51150a09041f7a30c8ae"></div>
 
     <div class="inner">
       <h2 class="title">openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</h2>
@@ -1446,23 +1446,18 @@ L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分が
 前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
 サーバーIP:10.0.0.9
 openvpn（サーバー側）のポート:1194/udp
-サーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動 1.2.CAを追加する Addをクリックする
-Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
+サーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動   1.2.CAを追加する Addをクリックする
+  Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
 Certificate data に ca.crtの内容をすべて入れます。
 Serial for next certificate はよくわからなかったので「1」と入れました。
 1.3.クライアント証明書を登録する Certificate ManagerにあるCertificateに移動します。
-Descriptive name に適当な名前をつけます。
+  Descriptive name に適当な名前をつけます。
 Certificate data にclient1.crtの内容を入れます。
 Private key data にclient1.keyの内容を入れます。
-2.pfsenseでopenvpnの設定を開く VPN-&gt;OpenVPNを開きます。
-2.1.openvpnでclientを追加する AddでClientを追加します。
-2.2.設定をしていく Server host or address:10.0.0.9　&lt;-サーバーIP
-Description: &lt;-openvpnのClient名の設定（わかりやすい名前で良い）
-今回は証明書認証のみとなるので、ここには何も入力しないように注意して下さい。
-automatically generate a TLS Key.のチェックボックスを外します。
-チェックボックスを外すとTLS Keyを入力する欄が出てくるのでta.keyの内容をいれます。
-Peer Certificate Authority には1.2で登録したCA証明書を選択します。
-Client Certificate には1.</div>
+2.pfsenseでopenvpnの設定を開く   VPN-&gt;OpenVPNを開きます。
+2.1.openvpnでclientを追加する   AddでClientを追加します。
+2.2.設定をしていく   Server host or address:10.0.0.9　&lt; -サーバーIP
+Description: &lt; - openvpnのClient名の設定（わかりやすい名前で良い）</div>
     </div>
   </a>
 </article>
