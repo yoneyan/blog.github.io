@@ -212,10 +212,10 @@ firewall_script=&amp;quot;/usr/local/etc/ipfw.rules&amp;quot;  /usr/local/etc/ip
     
     <item>
       <title>GPD MicroPCのレビュー</title>
-      <link>https://yoneyan.dev/post/2019-06-20-gpd-micropc-reviews/</link>
+      <link>https://yoneyan.dev/post/gpd-micropc-reviews/</link>
       <pubDate>Thu, 20 Jun 2019 01:31:33 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/2019-06-20-gpd-micropc-reviews/</guid>
+      <guid>https://yoneyan.dev/post/gpd-micropc-reviews/</guid>
       <description>クラウドファンディングから約4か月が経ちやっと届いたので軽くレビューしていきます。
 外見    GPD MicroPC（前方）
    GPD MicroPC（左）
@@ -260,10 +260,10 @@ AndroidとiOSの両方で提供されていますが、iOSで契約すると、�
     
     <item>
       <title>x230で本当のデュアルブートをしてみる</title>
-      <link>https://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</link>
+      <link>https://yoneyan.dev/post/try-a-real-dual-boot-with-x230/</link>
       <pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</guid>
+      <guid>https://yoneyan.dev/post/try-a-real-dual-boot-with-x230/</guid>
       <description>神機種と呼ばれている x230というThinkpadを愛用しています。
 少し、話が逸れてしまいますが、自分が持っているThinkpadにはいくつか問題があります。
 まず、キーボードを交換した時にすべてのネジが行方不明になり出先でもキーボードの外れる問題
@@ -291,8 +291,7 @@ AndroidとiOSの両方で提供されていますが、iOSで契約すると、�
 しかも、スリープ中にカバンに入れて持ち運んでる時にストレージが奥深くに追いやられて気付かずに起動してフリーズするといったこともあったりします。
 いろんな人にお前のPC大丈夫かと心配されることがあるかもしれません。（大丈夫だと思うのは自分だけかもしれませんが&amp;hellip;）
 実際の状態 これが本当のデュアルブートです pic.twitter.com/M18sngdCGS
-&amp;mdash; yoneyan (@yoneyan_ja) June 2, 2019  https://twitter.com/yoneyan_ja/status/1135093410673545216
-デュアルブート
+&amp;mdash; yoneyan (@yoneyan_ja) June 2, 2019  デュアルブート
 まとめ このようなことありますが、生活が豊かになるので皆さんも実践してみましょう！！</description>
     </item>
     
@@ -652,10 +651,10 @@ Private key data にclient1.keyの内容を入れます。
     
     <item>
       <title>大好きな曲を電話回線網から流す方法</title>
-      <link>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <link>https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/</link>
       <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <guid>https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
       <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
 最終日ということもあり気合を入れて紹介させていただきます。
 作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
@@ -671,8 +670,7 @@ Private key data にclient1.keyの内容を入れます。
 暇な方は是非この電話番号にかけてみてください。
 もし、通じない場合はお家の固定回線からかけてみてください
 誰でも簡単に作ることができるのでそのレシピを紹介します。
-仕組み {::nomarkdown}  {:/nomarkdown}
-材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+仕組み   材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
 VPSは以下のものがおすすめです。
 ＊VPS or 自宅サーバーをサーバーと略させていただきます。
 レシピ 0.SIP情報を観察する    ドメインとSIPアカウント、そのパスワードをメモっておきます。
@@ -1009,10 +1007,10 @@ Yahooショッピング
     
     <item>
       <title>UbuntuServerでOpenVPNサーバーを構築</title>
-      <link>https://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</link>
+      <link>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</link>
       <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</guid>
+      <guid>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</guid>
       <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
 OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
 2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
@@ -1587,12 +1585,12 @@ LastPassの長所と短所 長所 LastPassの長所として、無料でほぼ�
       <pubDate>Mon, 13 Nov 2017 02:59:19 +0900</pubDate>
       
       <guid>https://yoneyan.dev/post/2017-11-13-repair-because-my-washing-machine-cannot-drain/</guid>
-      <description>我が家の洗濯機が壊れてしまいました(￣｡￣;)(おい、洗濯できねえよ(泣)) 機種はTW-180VEです。症状としてはエラーが出て、洗濯できても排水できないという状況らしい。 新しく買うのも、お金がかかるし、排水以外は故障していない感じなので修理することにしてみました。 それでいつものgoogle先生に聞いてみると、排水弁の問題がやたらと出てくるｗ これぐらいならなんとかなりそうと思ったので修理してみます。
+      <description>我が家の洗濯機が壊れてしまいました。機種はTW-180VEです。 症状としてはエラーが出て、洗濯できても排水できないという状況らしい。 新しく買うのもお金がかかるということもあるので、排水以外は故障していない感じなので修理することにしてみました。 ぐぐると私と同じような排水弁の問題がかなり出てきました。 これぐらいならなんとかなるんではないかと思ったので修理してみます。
 分解して故障箇所を特定してみる。    洗濯機の下の部分を外します。ネジはプラスドライバーで開けれます。  
 
 はい、開きました。 排水弁と、モーター部分を見てみます。  
 
-はい、モーターと排水弁をつなげているはずのワイヤーがありません。 排水できなかったのはこれが原因のようです。 排水弁は左のプラスチックの塊で、モーターは丸っこいやつです。 本来なら排水弁とモーターは針金でつながれているはずなのですが、金属疲労かしらんけど切れていました。まあ、10年間使っていることも考えればこうなることもわかりますが&amp;hellip; もうちょっと丈夫にしてくれてもよかったんじゃねと思いましたが、これぐらいなら直せそうなので直していきます。
+はい、モーターと排水弁をつなげているはずのワイヤーがありません。 排水できなかったのはこれが原因のようです。 排水弁は左のプラスチックの塊で、モーターは丸っこいやつです。 本来なら排水弁とモーターは針金でつながれているはずなのですが、金属疲労かしらんけど切れていました。 10年間使っていることも考えればこうなることもわかりますが、こうなるとは誰もがわからないと思います。 もうちょっと丈夫にしてほしいと思いましたが、これぐらいなら直せそうなので直していきます。
 修理代 針金代100円のみ（ホームセンターで買いました） {:nomarkdown}  {:/nomarkdown} こんな感じのものでも十分使えます。
 修理していく 注意事項
  分解する際は電源コードを外して、感電が起こらないように注意してください。 基盤部分にはふれないようしましょう。（下手したら壊れます） 水漏れに注意して作業しましょう。（基盤部分に水がかかったりするとまずいので気をつけて作業してください） フローリングのように床が水に弱い場合はしっかりとタオルなどを用意しておきましょう     こいつが排水弁です。歯車みたいな形をしているところを回すと、  

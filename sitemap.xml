@@ -150,7 +150,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/2019-06-20-gpd-micropc-reviews/</loc>
+    <loc>https://yoneyan.dev/post/gpd-micropc-reviews/</loc>
     <lastmod>2019-06-20T01:31:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -192,7 +192,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/2019-06-16-try-a-real-dual-boot-with-x230/</loc>
+    <loc>https://yoneyan.dev/post/try-a-real-dual-boot-with-x230/</loc>
     <lastmod>2019-06-16T17:07:07+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -479,7 +479,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/2018-12-25-how-to-play-your-favorite-songs-from-the-telephone-network/</loc>
+    <loc>https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/</loc>
     <lastmod>2018-12-25T05:28:23+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -500,14 +500,14 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/tags/openstack/</loc>
+    <loc>https://yoneyan.dev/categories/openstack/</loc>
     <lastmod>2018-12-12T21:53:06+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/categories/openstack/</loc>
+    <loc>https://yoneyan.dev/tags/openstack/</loc>
     <lastmod>2018-12-12T21:53:06+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -647,7 +647,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/2018-10-17-openvpn-server-for-ubuntuserver/</loc>
+    <loc>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</loc>
     <lastmod>2018-10-17T00:34:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
