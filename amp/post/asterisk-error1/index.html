@@ -32,9 +32,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る - のんびりと生きたい</title>
     
-<meta name="description" content="Unable to retrieve PJSIP transport &lsquo;simpletrans&rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+<meta name="description" content="Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
 まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。">
 
 <meta property="og:title" content="asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る - のんびりと生きたい">
@@ -42,9 +42,9 @@
 <meta property="og:url" content="https://yoneyan.dev/amp/post/asterisk-error1/">
 <meta property="og:image" content="https://yoneyan.dev/images/free_images/phone.jpg">
 <meta property="og:site_name" content="のんびりと生きたい">
-<meta property="og:description" content="Unable to retrieve PJSIP transport &lsquo;simpletrans&rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+<meta property="og:description" content="Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
 まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。">
 <meta property="og:locale" content="ja_JP">
 
@@ -52,9 +52,9 @@
 <meta name="twitter:site" content="のんびりと生きたい">
 <meta name="twitter:url" content="https://yoneyan.dev/amp/post/asterisk-error1/">
 <meta name="twitter:title" content="asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る - のんびりと生きたい">
-<meta name="twitter:description" content="Unable to retrieve PJSIP transport &lsquo;simpletrans&rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+<meta name="twitter:description" content="Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
 まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。">
 <meta name="twitter:image" content="https://yoneyan.dev/images/free_images/phone.jpg">
 
@@ -90,7 +90,7 @@
         "height": 60
       }
     },
-    "description": "Unable to retrieve PJSIP transport \x26lsquo;simpletrans\x26rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。\n解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。\n[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0\/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。\nまとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。"
+    "description": "Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。\n解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。\n[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0\/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。\nまとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。"
   }
 </script>
 
@@ -1488,7 +1488,7 @@ section.footer > header a {
 <ul>
 <li>
 <ul>
-<li><a href="#unable-to-retrieve-pjsip-transport-simpletrans-というエラーについて">Unable to retrieve PJSIP transport &lsquo;simpletrans&rsquo;というエラーについて</a></li>
+<li><a href="#unable-to-retrieve-pjsip-transport-simpletransというエラーについて">Unable to retrieve PJSIP transport simpletransというエラーについて</a></li>
 <li><a href="#解決方法">解決方法</a></li>
 <li><a href="#まとめ">まとめ</a></li>
 </ul></li>
@@ -1499,7 +1499,7 @@ section.footer > header a {
 
   <div class="article-body">
 
-<h2 id="unable-to-retrieve-pjsip-transport-simpletrans-というエラーについて">Unable to retrieve PJSIP transport &lsquo;simpletrans&rsquo;というエラーについて</h2>
+<h2 id="unable-to-retrieve-pjsip-transport-simpletransというエラーについて">Unable to retrieve PJSIP transport simpletransというエラーについて</h2>
 
 <p>結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。</p>
 
@@ -1533,7 +1533,8 @@ password=password
 username=100
 </code></pre>
 
-<p>transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。</p>
+<p>transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。
+内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。</p>
 
 <h2 id="まとめ">まとめ</h2>
 

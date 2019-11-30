@@ -97,9 +97,9 @@ apt-get install mdadm  これでインストールは終了です。
       <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
       
       <guid>https://yoneyan.dev/post/asterisk-error1/</guid>
-      <description>Unable to retrieve PJSIP transport &amp;lsquo;simpletrans&amp;rsquo;というエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+      <description>Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
 まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。</description>
     </item>
     
