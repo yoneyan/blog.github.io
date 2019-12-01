@@ -479,13 +479,9 @@ set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp
       <pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate>
       
       <guid>https://yoneyan.dev/post/set-pppoe-with-edgerouter/</guid>
-      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。
-この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）
-環境 プロバイダ:eo光
-サービス名:1ギガコース
-WAN側ポート:eth0
-設定していく 設定を適応する際はcommit
-設定を保存する際はsave
+      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
+環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
+設定していく 設定を適応する際はcommit 設定を保存する際はsave
 コマンドが必要です。
 1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &amp;quot;PPPoE&amp;quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.</description>
     </item>
@@ -931,8 +927,8 @@ ip addr  これで確認することが可能になります。</description>
    こんな感じのものです。
 VPSとは？ VPSとは、自分の家ではなく、ホスティングサービスを貸している会社のサーバーの一部を使っているもののことを言います。 レンタルサーバーと違う点として、root権限を使うことができるので、自由にアプリケーションをインストールすることが出来るサービスです。 専用サーバーではなく共用サーバーになるので、パフォーマンスの低下などがありますが値段が安いので使っている方も多いサービスになります。 VPSの例として、 さくらのVPS ConoHa VPS Windows ServerなどはVPSで契約するとかなり安いです。ライセンス込みの値段になっているのでおすすめです。
 どちらを使うべきか？ このような方は自宅サーバーを使うべき！  ファイルサーバーを使っている 録画サーバーを使っている ハードが大好き メモリをかなり使うもの ゲームサーバーを使っている  このような用途で使われる方は自宅サーバーを使うべきです。 人にサーバーを貸したり、ゲームサーバーを運用する方はスペックがかなり必要になってくるのでVPSよりも自宅サーバーの方がいいです。
-このような方ならVPSがおすすめ  あまり使わない WebServerしか使わない メモリが少ないサービスを動かす 安定性重視  このような方はVPSのみで十分です。 安定性のことを考えると自宅サーバーよりも断然VPSです。お家に自家発電がある方は別ですがそのような家はないですよね&amp;hellip;
-自宅サーバーとVPSの両方を使うべきな人 安定性とハードな使い方をする人（ゲームサーバーや人にサーバーを貸すような使い方） は自宅サーバーとVPSの両方を使うべきです。 あまり、止めたくないサービスをVPSで動かし、ストレージサーバーやゲーム系のサーバーを自宅サーバーで動かすような運用の仕方が一番いいと思っています。 私自身もそのような運用の手段を取っております。 このブログはレンタルサーバーで運用していて、個人で使う物（あまり止めたくないもの）をVPSでストレージサーバーやゲームサーバーを自宅サーバーで運用しています。</description>
+このような方ならVPSがおすすめ  あまり使わない WebServerしか使わない メモリが少ないサービスを動かす 安定性重視  このような方はVPSのみで十分です。 安定性のことを考えると自宅サーバーよりも断然VPSです。 お家に自家発電がある方は別ですがそのような家はないですよね&amp;hellip;
+自宅サーバーとVPSの両方を使うべきな人 安定性とハードな使い方をする人（ゲームサーバーや人にサーバーを貸すような使い方） は自宅サーバーとVPSの両方を使うべきです。 あまり、止めたくないサービスをVPSで動かし、ストレージサーバーやゲーム系のサーバーを自宅サーバーで動かすような運用の仕方が一番いいと思っています。 私自身もそのような運用の手段を取っております。 このブログはレンタルサーバーで運用していて、個人で使う物であまり止めたくないサービスをVPS、ストレージサーバーやゲームサーバーを自宅サーバーで運用しています。</description>
     </item>
     
     <item>

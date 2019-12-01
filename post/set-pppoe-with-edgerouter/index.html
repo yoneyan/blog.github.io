@@ -23,28 +23,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>EdgerouterでPPPoEの設定をする - のんびりと生きたい</title>
     
-<meta name="description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。
-この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）
-環境 プロバイダ:eo光
-サービス名:1ギガコース
-WAN側ポート:eth0
-設定していく 設定を適応する際はcommit
-設定を保存する際はsave
+<meta name="description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
+環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
+設定していく 設定を適応する際はcommit 設定を保存する際はsave
 コマンドが必要です。
 1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &quot;PPPoE&quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.">
 
 <meta property="og:title" content="EdgerouterでPPPoEの設定をする - のんびりと生きたい">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://yoneyan.dev/post/set-pppoe-with-edgerouter/">
-<meta property="og:image" content="https://yoneyan.dev/images/free_images/router_1.png">
+<meta property="og:image" content="https://yoneyan.dev/images/free_images/router_1.jpg">
 <meta property="og:site_name" content="のんびりと生きたい">
-<meta property="og:description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。
-この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）
-環境 プロバイダ:eo光
-サービス名:1ギガコース
-WAN側ポート:eth0
-設定していく 設定を適応する際はcommit
-設定を保存する際はsave
+<meta property="og:description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
+環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
+設定していく 設定を適応する際はcommit 設定を保存する際はsave
 コマンドが必要です。
 1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &quot;PPPoE&quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.">
 <meta property="og:locale" content="ja_JP">
@@ -53,16 +45,12 @@ WAN側ポート:eth0
 <meta name="twitter:site" content="のんびりと生きたい">
 <meta name="twitter:url" content="https://yoneyan.dev/post/set-pppoe-with-edgerouter/">
 <meta name="twitter:title" content="EdgerouterでPPPoEの設定をする - のんびりと生きたい">
-<meta name="twitter:description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。
-この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）
-環境 プロバイダ:eo光
-サービス名:1ギガコース
-WAN側ポート:eth0
-設定していく 設定を適応する際はcommit
-設定を保存する際はsave
+<meta name="twitter:description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
+環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
+設定していく 設定を適応する際はcommit 設定を保存する際はsave
 コマンドが必要です。
 1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &quot;PPPoE&quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.">
-<meta name="twitter:image" content="https://yoneyan.dev/images/free_images/router_1.png">
+<meta name="twitter:image" content="https://yoneyan.dev/images/free_images/router_1.jpg">
 
 
 <script type="application/ld+json">
@@ -76,7 +64,7 @@ WAN側ポート:eth0
     "headline": "EdgerouterでPPPoEの設定をする-のんびりと生きたい",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/yoneyan.dev\/images\/free_images\/router_1.png",
+      "url": "https:\/\/yoneyan.dev\/images\/free_images\/router_1.jpg",
       "height": 800,
       "width": 800
     },
@@ -96,7 +84,7 @@ WAN側ポート:eth0
         "height": 60
       }
     },
-    "description": "Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。\nこの記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）\n環境 プロバイダ:eo光\nサービス名:1ギガコース\nWAN側ポート:eth0\n設定していく 設定を適応する際はcommit\n設定を保存する際はsave\nコマンドが必要です。\n1．基本的なPPPoEの設定 set interfaces ethernet eth0 description \x26quot;PPPoE\x26quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2."
+    "description": "Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。\n環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0\n設定していく 設定を適応する際はcommit 設定を保存する際はsave\nコマンドが必要です。\n1．基本的なPPPoEの設定 set interfaces ethernet eth0 description \x26quot;PPPoE\x26quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2."
   }
 </script>
 
@@ -940,7 +928,7 @@ section.footer > header a {
 
 
 .thumb-e4adede97234f17a19cf117ee40e89f5 {
-  background-image: url(https://yoneyan.dev/images/free_images/router_1.png);
+  background-image: url(https://yoneyan.dev/images/free_images/router_1.jpg);
 }
 
 
@@ -1504,7 +1492,7 @@ ga('send', 'pageview');
 <li><a href="#1-基本的なpppoeの設定">1．基本的なPPPoEの設定</a></li>
 <li><a href="#2-1-ファイアウォールの設定">2.1．ファイアウォールの設定</a></li>
 </ul></li>
-<li><a href="#2-２-ファイアウォールをpppoeに適応させる">2.２．ファイアウォールをpppoeに適応させる</a></li>
+<li><a href="#2-２-ファイアウォールをpppoeに適用させる">2.２．ファイアウォールをpppoeに適用させる</a></li>
 </ul></li>
 <li><a href="#まとめ">まとめ</a></li>
 </ul></li>
@@ -1537,23 +1525,19 @@ ga('send', 'pageview');
     <div class="clear-left"></div>
   </div>
 
-<p>みんな大好きEdgerouterでPPPoEの設定をしていきます。</p>
-
-<p>この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）</p>
+<p>みんな大好きEdgerouterでPPPoEの設定をしていきます。
+この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。</p>
 
 <h2 id="環境">環境</h2>
 
-<p>プロバイダ:eo光</p>
-
-<p>サービス名:1ギガコース</p>
-
-<p>WAN側ポート:eth0</p>
+<p>プロバイダ:eo光
+サービス名:1ギガコース
+WAN側ポート:eth0</p>
 
 <h2 id="設定していく">設定していく</h2>
 
-<p>設定を適応する際はcommit</p>
-
-<p>設定を保存する際はsave</p>
+<p>設定を適応する際はcommit
+設定を保存する際はsave</p>
 
 <p>コマンドが必要です。</p>
 
@@ -1596,7 +1580,7 @@ set firewall source-validation disable
 set firewall syn-cookies enable
 </code></pre>
 
-<h3 id="2-２-ファイアウォールをpppoeに適応させる">2.２．ファイアウォールをpppoeに適応させる</h3>
+<h3 id="2-２-ファイアウォールをpppoeに適用させる">2.２．ファイアウォールをpppoeに適用させる</h3>
 
 <pre><code>set interfaces ethernet eth0 pppoe 0 firewall in name WAN_IN
 set interfaces ethernet eth0 pppoe 0 firewall local name WAN_LOCAL
@@ -1604,11 +1588,9 @@ set interfaces ethernet eth0 pppoe 0 firewall local name WAN_LOCAL
 
 <h2 id="まとめ">まとめ</h2>
 
-<p>これで、取りあえずインターネットが繋がるようになりました。</p>
-
-<p>今回は、PPPoEでプロバイダに接続して、ファイアウォールを構築しただけです。</p>
-
-<p>また、EdgerRouterの記事を増やしていくので興味がある方は見てくださるとありがたいです。</p>
+<p>これで、取りあえずインターネットが繋がるようになりました。
+今回は、PPPoEでプロバイダに接続して、ファイアウォールを構築しただけです。<br />
+また、EdgerRouterの記事を増やしていくので興味がある方は見てくださるとありがたいです。</p>
 </div>
 
   <footer class="article-footer">
