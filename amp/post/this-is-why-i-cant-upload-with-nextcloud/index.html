@@ -44,7 +44,7 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
 <meta property="og:title" content="nextcloudでアップロードができない理由はこれだった... - のんびりと生きたい">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://yoneyan.dev/amp/post/this-is-why-i-cant-upload-with-nextcloud/">
-<meta property="og:image" content="https://yoneyan.dev/images/free_images/cloud_1.jpg">
+<meta property="og:image" content="https://yoneyan.dev/images/free_images/cloud_1.png">
 <meta property="og:site_name" content="のんびりと生きたい">
 <meta property="og:description" content="nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
 戦犯は&hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
@@ -68,7 +68,7 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
 対処法 nginxのコンフィグを変更する server { #省略 client\_max\_body_size 1000m; #省略 }  こんな感じで/etc/nginx/nginx.conf又は/etc/nginx/conf.d/cloud.confあたりに突っ込めばアップロードできるようになりました。
 nginxを再起動 systemctl restart nginx  nginxを再起動すると見事にファイルをアップロードできるようになりました。
 まとめ 今回の原因として、nginxをあまり触っていなかったことが問題になりました。 やっぱりコンフィグ類はちゃんと覚えておくべきだということを改めて実感しました。">
-<meta name="twitter:image" content="https://yoneyan.dev/images/free_images/cloud_1.jpg">
+<meta name="twitter:image" content="https://yoneyan.dev/images/free_images/cloud_1.png">
 
 
 <script type="application/ld+json">
@@ -82,7 +82,7 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
     "headline": "nextcloudでアップロードができない理由はこれだった...-のんびりと生きたい",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/yoneyan.dev\/images\/free_images\/cloud_1.jpg",
+      "url": "https:\/\/yoneyan.dev\/images\/free_images\/cloud_1.png",
       "height": 800,
       "width": 800
     },
@@ -1114,7 +1114,7 @@ section.footer > header a {
 
 
 .thumb-e609f839254c60896d411665e71c8256 {
-  background-image: url(https://yoneyan.dev/images/free_images/cloud_1.jpg);
+  background-image: url(https://yoneyan.dev/images/free_images/cloud_1.png);
 }
 
 
@@ -1138,7 +1138,7 @@ section.footer > header a {
 
 
 .thumb-51aa8682072ac76c5dbdc378e301c1dd {
-  background-image: url(https://yoneyan.dev/images/free_images/remote_game.jpg);
+  background-image: url(https://yoneyan.dev/images/free_images/remote-game.jpg);
 }
 
 
@@ -1204,13 +1204,13 @@ section.footer > header a {
 
 
 .thumb-7b46239b386cceb8891c2d0a96c4d291 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+  background-image: url(https://yoneyan.dev/images/review/p10_lite/p10_lite.jpg);
 }
 
 
 
 .thumb-0f839f2736dbd5f86b63656cf0ccb7da {
-  background-image: url(https://yoneyan.dev/images/game/hard/ps3-2.jpg);
+  background-image: url(https://yoneyan.dev/images/game/hard/PS3-2.jpg);
 }
 
 
@@ -1222,7 +1222,7 @@ section.footer > header a {
 
 
 .thumb-ef8f44e18a0b8ced053d57dfc00febf9 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+  background-image: url(https://yoneyan.dev/images/myself/karaoke/ps4/play.jpg);
 }
 
 
@@ -1306,7 +1306,7 @@ section.footer > header a {
 
 
 .thumb-1253d09e2eb935ad2082bb45fa7e1d07 {
-  background-image: url(https://yoneyan.dev/images/free_images/remote_game.jpg);
+  background-image: url(https://yoneyan.dev/images/free_images/pc_1.jpg);
 }
 
 
