@@ -104,8 +104,7 @@ source ./vars  を実行します。
         "width": 600,
         "height": 60
       }
-    },
-    "description": "UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。\nOpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。\n2.フォルダやらファイルを作る cd \/etc\/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。\n3.varsファイルを設定していく export KEY_COUNTRY=\x26quot;JA\x26quot; export KEY_PROVINCE=\x26quot;OSA\x26quot; export KEY_CITY=\x26quot;Osaka\x26quot; export KEY_ORG=\x26quot;test\x26quot; export KEY_EMAIL=\x26quot;test@myhost.mydomain\x26quot; export KEY_OU=\x26quot;test\x26quot;  vi varsやnano varsのようなコマンドで設定しています。 varsファイルの編集が終わったら必ず\nsource .\/vars  を実行します。\n4.CA証明書・秘密鍵を作っていく .\/clean-all cp openssl-1.0.0.cnf openssl.cnf .\/build-ca  cp openssl-1.0.0.cnf openssl.cnfをしないと.\/build-caの段階でエラーを吐きます。\n5.サーバー証明書・秘密鍵を作っていく .\/build-key-server server  Enterを押しまくってyを入力します。\n6.DHパラメータを作っていく .\/build-dh  多少時間かかります。\n7.TLSの秘密鍵を作っていく openvpn --genkey --secret ta.key  8.クライアント側の証明書を作っていく .\/build-key client1 nopass  client1のところは適当な名前にしてください client1."
+    }
   }
 </script>
 

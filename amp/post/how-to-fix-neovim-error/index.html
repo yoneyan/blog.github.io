@@ -107,8 +107,7 @@ LinuxMintの場合はベースのディストリビューションがUbuntuに�
         "width": 600,
         "height": 60
       }
-    },
-    "description": "最近、新たにデスクトップPCにLinuxMintを導入してneovimやtmuxやらの環境構築をしている途中に\nUltiSnips requires py \x26gt;= 2.7 or py3\nとこのようなエラーをneovimを起動する度に吐いてしまったので対処法を備忘録として載せておきます。\n環境 OS:LinuxMint 19\n原因 apt-get install neovim からインストールしたため、neovimの最新バージョンではないのが原因\nコマンドを入力 pip install neovim  これを入力すると、\nCollecting neovim Using cached https:\/\/files.pythonhosted.org\/packages\/78\/ec\/ac9905ccab8774b64c37cdff9e08db320c349eda0ae3161aebcac83e5590\/neovim-0.3.1.tar.gz Complete output from command python setup.py egg_info: Traceback (most recent call last): File \x26quot;\x26lt;string\x26gt;\x26quot;, line 1, in \x26lt;module\x26gt; ImportError: No module named setuptools ---------------------------------------- Command \x26quot;python setup.py egg_info\x26quot; failed with error code 1 in \/tmp\/pip-build-bezjAu\/neovim\/  このような謎エラーが出てきました。\nneovimとpip installで入れようとしているものとバージョンが合わないと怒られます。\nということで、neovimの公式からインストールしていきましょう。https:\/\/github.com\/neovim\/neovim\/wiki\/Installing-Neovim\nLinuxMintの場合はベースのディストリビューションがUbuntuになるので、Ubuntuのインストール方法を用います。"
+    }
   }
 </script>
 

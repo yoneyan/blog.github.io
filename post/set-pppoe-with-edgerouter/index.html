@@ -83,8 +83,7 @@
         "width": 600,
         "height": 60
       }
-    },
-    "description": "Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。\n環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0\n設定していく 設定を適応する際はcommit 設定を保存する際はsave\nコマンドが必要です。\n1．基本的なPPPoEの設定 set interfaces ethernet eth0 description \x26quot;PPPoE\x26quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2."
+    }
   }
 </script>
 
@@ -1589,7 +1588,7 @@ set interfaces ethernet eth0 pppoe 0 firewall local name WAN_LOCAL
 <h2 id="まとめ">まとめ</h2>
 
 <p>これで、取りあえずインターネットが繋がるようになりました。
-今回は、PPPoEでプロバイダに接続して、ファイアウォールを構築しただけです。<br />
+今回は、PPPoEでプロバイダに接続して、ファイアウォールを構築しただけです。
 また、EdgerRouterの記事を増やしていくので興味がある方は見てくださるとありがたいです。</p>
 </div>
 

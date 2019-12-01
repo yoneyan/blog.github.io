@@ -89,8 +89,7 @@ server { listen 80; server_name test.domain location /grafana/ { proxy_pass http
         "width": 600,
         "height": 60
       }
-    },
-    "description": "みなさん大好きなGrafanaを使っている方は、たくさんいらっしゃると思うのですが、今回はnginxを使ってリバースプロキシを使ってみました。少しだけややこしいと思ったので記事にします。 正直なところ、ここを見なくても公式サイトにしっかりと載せてくれてます。 おそらく、そちらを見た方がいいです。 http:\/\/docs.grafana.org\/installation\/behind_proxy\/\n今回やりたいこと ドメインはtest.domainと仮定します。 http:\/\/test.domain\/grafana\/でアクセス出来るようにする test.domainはもちろん自分のドメインに変えてください。\n nginxのリバースプロキシの設定 grafanaの設定  終了です\n1.nginxの設定 nginxのリバースプロキシの設定からしていきます。\nserver { listen 80; server_name test.domain location \/grafana\/ { proxy_pass http:\/\/localhost:3000\/; } }  2.grafana側の設定を変更する \/etc\/grafana\/grafana.iniから設定を変更する\n[server] domain = test.domain root_url = %(protocol)s:\/\/%(domain)s\/grafana\/  これで終わりです。 公式サイトではこの後にもHA Proxyの設定もいろいろ変更しないといけないと表記されていましたが、HA Proxyの設定をしなくてもいけました。\nまとめ Grafanaでリバースプロキシの設定をするときは少しgrafana側の設定をする必要がでてくるので、公式サイトさえみればなんとかなると思うので頑張って設定してください。"
+    }
   }
 </script>
 

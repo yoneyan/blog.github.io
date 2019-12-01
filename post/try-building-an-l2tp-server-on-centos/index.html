@@ -92,8 +92,7 @@ L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分が
         "width": 600,
         "height": 60
       }
-    },
-    "description": "UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。\nVultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。\nOpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。\nL2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分がありますが、AndroidやiOSやWindowsのようなクライアントの標準機能（外部アプリやソフトなし）で簡単に繋ぐことが可能なので、おすすめです。\n構築開始！ １ 必要な物をインストールする yum -y install xl2tpd libreswan  ２ L2TPを設定する L2TPサーバーの設定をしていきます。\n2.1 xl2tpdのメインの設定を変更する 共通する設定\n\/etc\/xl2tpd\/xl2tpd.conf\n[global] ;パスの指定 auth file = \/etc\/ppp\/chap-secrets ;グローバルIPアドレスをここに指定する listen-addr = xx.xx.xx.xx [lns default] ;L2TPクライアントから割り当てられるIPアドレスの範囲を指定する ip range = 192.168.1.128-192.168.1.254 ;L2TPサーバー側の仮想ネットワークのIPアドレスを指定する local ip = 192.168.1.99 ;chap認証を拒否するのか refuse chap = yes ;pap認証を拒否するのか refuse pap = yes ;認証を許可するのか require authentication = yes ;ホスト名 name = LinuxVPNserver ;デバッグを取るか、取らないか ppp debug = yes pppのオプションファイルの場所を指定 pppoptfile = \/etc\/ppp\/options."
+    }
   }
 </script>
 

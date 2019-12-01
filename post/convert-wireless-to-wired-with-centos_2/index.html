@@ -113,8 +113,7 @@ yum -y install dhcp  /etc/dhcp/dhcpd.">
         "width": 600,
         "height": 60
       }
-    },
-    "description": "CentOSを使って無線を有線にしなければならないことができたので、備忘録として書きます。\n構築   APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。\n前提条件として\nWLAN側：DHCP（ここでは、172.16.100.100がDHCPより取得したと仮定する）\nLAN側：172.16.200.1\x26frasl;24\nWLANインターフェース:wlp2s0\nLANインターフェース:eth0\nとします。\n1．無線側の設定 1.1．WLAN側インターフェースを確認する NetworkManagerのデバイスを一覧で出してみます。\n nmcli device  とすると、\n DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet disconnected　-- wlp2s0 wifi disconnected　--  wlp2s0がunmanagedになっている場合は、 nmcliで無線がunmanagedの場合の対処法 こちらに対処法を記事にしたのでご覧ください。\n1.2．WLANのSSIDを設定する nmcli device wifi connect [ssid] password [password]  [ssid]にWiFiのSSIDを、[password]にはSSIDに対するパスワードを入力してください。\n2．有線側の設定 2.1．IPアドレスを固定で設定する nmcli connection modify eth0 ipv4.method manual nmcli connection modify eth0 ipv4.addresses \x26quot;172.16.200.1\/24\x26quot;  172.16.200.1\/24の部分にLAN側のIPアドレスを記入します。\n2.2．DHCPサーバを構築する DHCPサーバをインストールする\nyum -y install dhcp  \/etc\/dhcp\/dhcpd."
+    }
   }
 </script>
 

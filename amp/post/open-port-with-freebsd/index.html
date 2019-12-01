@@ -104,8 +104,7 @@ firewall_script=&quot;/usr/local/etc/ipfw.rules&quot;  /usr/local/etc/ipfw.rules
         "width": 600,
         "height": 60
       }
-    },
-    "description": "FreeBSDとは 私自身もよくわかっていないところが多いので、https:\/\/ja.wikipedia.org\/wiki\/FreeBSDこちらを参考に箇条書きしてみるとこんな感じになりました。\n FreeBSDはUnix系のOS 処理速度よりも安定性を重視した設計がされているらしい？ Linux向けに開発されたものもしっかりと動く パッケージマネージャとしてpkgが入っている  始めよう 有効化する ファイアウォールのコマンドとしてipfwを使うのですが、初期の状態では\nroot@localhost:~ # ipfw list ipfw: retrieving config failed: Protocol not available  とこのようなエラーが入ります。この場合は、\/etc\/rc.confからファイアウォールを有効にする必要が出てきます。\n\/etc\/rc.confに以下の\n# Firewall firewall_enable=\x26quot;YES\x26quot;  設定をする こちらのサイトを参考にさせていただきました。ありがとうございます。\nhttps:\/\/server-setting.info\/freebsd\/freebsd_ipfw.html\n\/etc\/rc.confに以下を追加する\nfirewall_script=\x26quot;\/usr\/local\/etc\/ipfw.rules\x26quot;  \/usr\/local\/etc\/ipfw.rulesに以下のコンフィグを書きます。\n#!\/bin\/sh # IPF=\x26quot;ipfw -q add\x26quot; ipfw -q -f flush #loopback $IPF 10 allow all from any to any via lo0 $IPF 20 deny all from any to 127.0.0.0\/8 $IPF 30 deny all from 127."
+    }
   }
 </script>
 

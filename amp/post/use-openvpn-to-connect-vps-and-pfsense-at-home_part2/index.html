@@ -125,8 +125,7 @@ Private key data にclient1.keyの内容を入れます。
         "width": 600,
         "height": 60
       }
-    },
-    "description": "openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。\nその2ではopenvpnのクライアントになるpfsense側の設定をしていきます。\n前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。\nサーバーIP:10.0.0.9\nopenvpn（サーバー側）のポート:1194\/udp\nサーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System\/Certificate Managerに移動    1.2.CAを追加する Addをクリックする\n   Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。\nCertificate data に ca.crtの内容をすべて入れます。\nSerial for next certificate はよくわからなかったので「1」と入れました。\n1.3.クライアント証明書を登録する Certificate ManagerにあるCertificateに移動します。\n   Descriptive name に適当な名前をつけます。\nCertificate data にclient1.crtの内容を入れます。\nPrivate key data にclient1.keyの内容を入れます。\n2.pfsenseでopenvpnの設定を開く    VPN-\x26gt;OpenVPNを開きます。\n2.1.openvpnでclientを追加する    AddでClientを追加します。\n2.2.設定をしていく    Server host or address:10."
+    }
   }
 </script>
 

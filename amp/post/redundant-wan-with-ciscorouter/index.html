@@ -149,8 +149,7 @@ Router2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 pri
         "width": 600,
         "height": 60
       }
-    },
-    "description": "関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。\nCiscoルータでWAN側の冗長化を行うために、HSRPというCisco独自のプロトコルを使用します。 また、デフォルトゲートウェイを冗長化するものとして、VRRPというプロトコルが存在しますが、今回はこれを使用しません。\n今回は例として、Cisco 841Mを使って構築します。\nVRRPの弱点 VRRPもHSRPと同様のCisco独自プロトコルですが、ルータの冗長化はできます。しかし、WAN側の冗長化ができないという欠点を持っています。\nそこで、今回はWAN側の冗長化を目標にしているので、HSRPを使用します。\n（VRRPでもできるのかもしれませんが知識不足で分かっておりません。）\nCisco以外の機種では\x26hellip; HSRPはお得意のCisco独自プロトコルとなっています。他社のネットワーク機器では独自のプロトコル又は出来ない可能性が高いので気をつけてください。\n構築していく 以下のようなトポ図で構築すると仮定します。\n   上のルータをrouter1とし、下のルータをrouter2とします。\nまた、LAN側は同一ネットワークである必要があるので注意してください。\n各ルータのインターフェースは下記の通りとします。\nrouter1\nWAN側：GigabitEthernet 0\/5\nLAN側：GigabitEthernet 0\/0\nrouter2\nWAN側：GigabitEthernet 0\/5\nLAN側：GigabitEthernet 0\/0\nRouter1の設定 LAN側のinterfaceに\n standby 10 ip 192.168.0.1 standby 10 priority 105 standby 10 preempt  を設定するだけです。\nstandby 10 ip 192.168.0.1の10の部分はHSRPのグループ番号なので適当な数字を入れても問題ありません。\npriority 105の部分はどのルータを優先的に使うのかという設定です。\nRouter2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 priority 100  を設定するだけです。\nコンフィグの内容はrouter1に書いた内容と同じです。\nまとめ VRRPでは物理的なルータの冗長化をすることしかできませんが、Cisco独自プロトコルになってしまいます。 しかし、HSRPを使うとWANの冗長化をすることが簡単にできるので、家庭でCiscoのルータでWANの冗長化をする際は是非参考にしていただければ幸いです。"
+    }
   }
 </script>
 

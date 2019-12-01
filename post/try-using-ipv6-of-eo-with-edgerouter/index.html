@@ -95,8 +95,7 @@ LAN:eth1
         "width": 600,
         "height": 60
       }
-    },
-    "description": "Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon\nEdgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）\n注意：今回の設定ではIPv6のファイアウォールの設定をしていないので、セキュリティ的にかなり危ないので、実際に構築する方はご注意下さい。（当方もファイアウォール周りがあまりわかっていないので、分かり次第、別の記事にさせていただきます。）\n前提条件 プロバイダーはK-opticomのeo光ネット1Gコース（ホームコース）を使用しております。\nWAN:eth0\nLAN:eth1\nとします。\nまた、上の注意の点でも書きましたが、ファイアウォールを設定していないので、ご注意ください。\n使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length \/64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::\/0 next-hop-interface \x27pppoe0\x27  これをやっていないせいでかなり時間をとりました。"
+    }
   }
 </script>
 

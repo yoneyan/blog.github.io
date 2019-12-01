@@ -98,8 +98,7 @@ http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
         "width": 600,
         "height": 60
       }
-    },
-    "description": "CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。\nhttp:\/\/liliumrubellum.blog10.fc2.com\/blog-entry-300.html\n上のブログさんの記事を参考にしました。（ほぼ、同じです。）\n備忘録として、こちらに書かせていただきます。\nどれくらいの時間がかかるのか cat \/proc\/mdstat  と実行すると、RAID状況を確認できます。\n改善前 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2\/2] [UU] [\x26gt;....................] resync = 2.1% (21226880\/976628736) finish=1186.8min speed=13416K\/sec bitmap: 8\/8 pages [32KB], 65536KB chunk  13M\/secはあまりにも遅すぎるので、これをなのとかします。\n改善後 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2\/2] [UU] [\x26gt;....................] resync = 4.2% (41735552\/976628736) finish=292.9min speed=53181K\/sec bitmap: 8\/8 pages [32KB], 65536KB chunk  改善後はかなり速度が上がりました。"
+    }
   }
 </script>
 

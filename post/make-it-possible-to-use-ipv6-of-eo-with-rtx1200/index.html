@@ -83,8 +83,7 @@ eo光が配布してくれるeo光多機能ルータというものがありま�
         "width": 600,
         "height": 60
       }
-    },
-    "description": "みなさんRTX1200というyamahaのルータを持っていますか？\neo光が配布してくれるeo光多機能ルータというものがありますが、使いやすいのですが民生用ということもあり機能が限定されています。 また、安定性もそこまで正直なところそこまで良くないです。\nということで、今回はRTX1200でもeo光のIPv6を使えるようになるという記事を拝見させていただきましたので、当ブログでも紹介させていただきます。\n参考にさせていただいた記事 http:\/\/sky.jp\/sub218.html\n作業開始 共通部分 ipv6 route default gateway pp 1 ipv6 prefix 1 dhcp-prefix@pp1::\/64  pp部分 pp select 1 description pp PRV\/PPPoE\/0:eo pp keepalive interval 30 retry-interval=30 count=12 pp always-on on pppoe use lan2 pppoe auto disconnect off pp auth accept pap chap pp auth myname ID password ppp lcp mru on 1454 ppp ipcp ipaddress on ppp ipcp msext on ppp ccp type none ppp ipv6cp use on ip pp nat descriptor 1 ipv6 pp rip send off ipv6 pp dhcp service client ipv6 pp secure filter in 1010 1011 1012 2000 ipv6 pp secure filter out 3000 dynamic 100 101 102 103 104 105 106 pp enable 1  pppoeの設定箇所に以下のコンフィグを流し込む"
+    }
   }
 </script>
 

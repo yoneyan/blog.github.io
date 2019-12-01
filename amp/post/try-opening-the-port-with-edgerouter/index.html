@@ -107,8 +107,7 @@ set firewall name WAN_IN rule 50 description &quot;3389/tcp,3389/udp RDP&quot; s
         "width": 600,
         "height": 60
       }
-    },
-    "description": "今回はEdgerouterでポート開放をコマンド操作でしていきます。\nこちらのサイトを参考にさせていただきました。\nhttps:\/\/qiita.com\/maiani\/items\/b45b0505377401be083a\nわかりにくい点などがありましたら、上記のサイトさんをご覧ください。\nコマンドで設定していく 今回は以下のポートを開放していきます。\n80\/tcp 172.16.1.100\n3389\/tcp,3389\/udp 172.16.1.10\n1．ファイアウォールの設定 80\/tcpの設定をしていきます。\nset firewall name WAN_IN rule 50 description \x26quot;80\/tcp http\x26quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.16.1.100 set firewall name WAN_IN rule 50 destination port 80 set firewall name WAN_IN rule 50 protocol tcp  3389\/tcpと3389\/udpポートを設定します。\nset firewall name WAN_IN rule 50 description \x26quot;3389\/tcp,3389\/udp RDP\x26quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172."
+    }
   }
 </script>
 

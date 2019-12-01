@@ -119,8 +119,7 @@ Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
         "width": 600,
         "height": 60
       }
-    },
-    "description": "OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。\nこの記事の構成 このテーマは3つに分けて、記事にしていく予定です。\nその１:VPS側（サーバー側）の設定\nその２:pfsense側（クライアント側）の設定\nその３:ファイアーウォールの設定\nVPS側で\nOpenVPNの設定をしていく この記事ではCentOSを使った紹介をしていきます。\n最初にやっておくこと\nCentOSにepelのレポジトリを使えるようにしておきましょう\n関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa  フォルダを作る mkdir \/etc\/openvpn\/easy-rsa  フォルダ群をコピー cp \/usr\/share\/easy-rsa\/***\/* \/etc\/openvpn\/easy-rsa\/ -R  米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）\n認証局を作る cd \/etc\/openvpn\/easy-rsa .\/easyrsa init-pki .\/easyrsa build-ca .\/easyrsa gen-dh cd \/etc\/openvpn openvpn --genkey --secret \/etc\/openvpn\/ta.key  詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。\n.\/easyrsa build-caを実行すると\x26hellip;\nEnter PEM pass phrase:  こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。\nサーバー側の証明書を作成 パスワードがめんどくさいのでパスワードなし(no pass)にします。\ncd \/etc\/openvpn\/easy-rsa .\/easyrsa build-server-full server nopass  Server側のkey:\/etc\/openvpn\/easy-rsa\/pki\/private\/server.key\nServer側のcrt:\/etc\/openvpn\/easy-rsa\/pki\/issued\/server.crt\nクライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。"
+    }
   }
 </script>
 

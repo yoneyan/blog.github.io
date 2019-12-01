@@ -110,8 +110,7 @@ certbot certonly --standalone  ２．設定に追加する certbotを実行す�
         "width": 600,
         "height": 60
       }
-    },
-    "description": "nginxでLet\x26rsquo;s Encryptを用いてhttps（SSL\/TLS）を有効にする方法をこちらに書いていきます。\n当方のLet\x26rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。\n今回はリバースプロキシを使用します。\nリバースプロキシの設定 １．configを作成する \/etc\/nginx 上にnginxのいろんな設定ファイルがあります。\n特に、nginxのメインとなる主の設定ファイルとなるのが\/etc\/nginx\/nginx.confです。\nですが、このファイルを直接弄ってしまうとわかりにくいという問題が起きるので今回は\/etc\/nginx\/conf.d\/以下のファイルを新たに作成します。\n\/etc\/nginx\/conf.d\/[好きな名前].conf\nserver{ server_name example.net; listen 80; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-Host $host; proxy_set_header X-Forwarded-Server $host; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; location \/test1\/ { proxy_pass http:\/\/localhost:8080\/; } location \/test2\/ { proxy_pass http:\/\/localhost:3000\/; } }  ２．動いているか確認する systemctl restart nginx  nginxを再起動させて、リバースプロキシが働いてくれているか確認します。\nLet\x26rsquo;s Encryptの設定 ０．Let\x26rsquo;s Encryptで必要なものを入れる yum -y install epel-release yum -y install certbot  certbotというものが必要となるので、インストールします。\n１．証明書を取得する certbotを使って取得します。\ncertbot certonly --standalone  ２．設定に追加する certbotを実行することで、"
+    }
   }
 </script>
 

@@ -98,8 +98,7 @@ set interfaces ethernet eth3 vif 100  このようにしてあげることで使
         "width": 600,
         "height": 60
       }
-    },
-    "description": "EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。\n  Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。\n今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。\nLACPの設定を行う まず、最初にLACPの設定を行っていきます。\n1．bondインタフェースを作成する set interfaces bonding bond0 description \x26quot;LAG Interface\x26quot;  descriptionはbond0に対する名前なので各自で変更してください。\n2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。\nLACPではhash-policyというものがあるので、ここではlayer2としておきます。\nタグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。\n今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、\nset interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。"
+    }
   }
 </script>
 

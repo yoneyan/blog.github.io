@@ -104,8 +104,7 @@ switch:admin&gt; ipaddrshow SWITCH Ethernet IP Address: 192.168.10.100 Ethernet 
         "width": 600,
         "height": 60
       }
-    },
-    "description": " FC-SANを使うためにBrocade 300を導入したのはいいのですが、なかなか普通のL2やL3スイッチのようには設定が行かないので、備忘録もかねて記事化していきます。\nネットワーク設定とは？ sshやtelnet、アップデートの時などに必要になってきます。\nそのために今回はネットワーク設定をしていきます。\n設定方法 かなり簡単にできます。\nipaddrset  このコマンドを実行することで、ネットワーク設定が簡単にできます。\nウィザード方式で設定ができるのでかなり楽だと思います。\nswitch:admin\x26gt; ipaddrset Ethernet IP Address [10.77.77.77]:192.168.10.100 Ethernet Subnetmask [255.0.0.0]:255.255.255.0 Gateway IP Address [none]:192.168.10.1 DHCP [Off]:off  以上でネットワークの設定が完了します。\nIPアドレスが逆に知りたいときはipaddrshowというコマンドを実行することでわかります。\nswitch:admin\x26gt; ipaddrshow SWITCH Ethernet IP Address: 192.168.10.100 Ethernet Subnetmask: 255.255.255.0 Gateway IP Address: 192.168.10.1  "
+    }
   }
 </script>
 
