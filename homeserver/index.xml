@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homeservers on のんびりと生きたい</title>
+    <link>https://yoneyan.dev/homeserver/</link>
+    <description>Recent content in Homeservers on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Sep 2019 02:17:49 +0900</lastBuildDate>
+    
+	<atom:link href="https://yoneyan.dev/homeserver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019年度(8月)自宅その他機器の紹介</title>
+      <link>https://yoneyan.dev/homeserver/2019-09-etc/</link>
+      <pubDate>Fri, 13 Sep 2019 02:17:49 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/homeserver/2019-09-etc/</guid>
+      <description>サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話    Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS    UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+    Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。</description>
+    </item>
+    
+    <item>
+      <title>2019年度(8月)自宅ネットワーク機器の紹介</title>
+      <link>https://yoneyan.dev/homeserver/2019-08-net/</link>
+      <pubDate>Fri, 13 Sep 2019 01:44:15 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/homeserver/2019-08-net/</guid>
+      <description>サーバー機器はこちらで紹介しています。
+また、その他機器はこちらで紹介しています。
+余力があれば、自宅のネットワーク構成も記事にする予定です。
+現時点 ではVLAN数は「33」です。
+1F　リビング ここでは親が活動しているので、静かな機器を使用しています。
+   ルータ部分
+   AP部分
+ Ubiquiti Edgerouter ER-X (メインルータ) Aironet 1040 (5ghz n対応) TP-Link TL-SG105E TP-Link TL-SG108E  貧弱なので、自宅のルーティングはメインルータが全て担っています。
+２F　鯖部屋 鯖部屋になってしまいましたが、一応倉庫部屋です。
+   オレンジがスイッチ間、白がサーバー間、緑がマネージメント用に一応、別れています。
+以下のもの(SSB30 1台、Brocade 300以外)は常時電源入ってます。
+ AT-x510-28GTX　(2Fメインスイッチ) AT-x510-28GTX　(サーバースイッチ) Fujitsu SR-X324T1（ほしいときに使う） Fujitsu SR-X324T1（検証用サーバースイッチ） PowerConnect 2724 （マネージメントネットワーク） Cisco 4400 Wireless LAN Controller (WLC) GS728TPS (POE給電用) IX2105　（HomeNOC接続用） どこかのメーカのIP電話ゲートウェイ SSB30 x2 (近々RX100 S7に置き換え予定) Aironet 1700 GS108P (POE給電スイッチ) Brocade 300 (FC Switch) Aironet 1600  裏側はこのような感じです。</description>
+    </item>
+    
+    <item>
+      <title>2019年度(8月)自宅サーバーの紹介</title>
+      <link>https://yoneyan.dev/homeserver/2019-09-server/</link>
+      <pubDate>Fri, 13 Sep 2019 00:49:00 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/homeserver/2019-09-server/</guid>
+      <description>サーバーの紹介 ネットワーク機器は多すぎるので別記事にしています。
+また、サーバーやネットワークに属さない機器はこちらで紹介しています。
+   運用中  Fujitsu TX1310 M1 &amp;mdash;Windows Server 2019 Standard (AD,RDP) Fujitsu TX100 S3 &amp;mdash;-FiberChannel検証用 Fujitsu CELSIUS W510 &amp;mdash;-録画サーバー(Win10 Pro) Fujitsu TX100 S3 &amp;mdash;-鯖部屋クライアントPC(Win10 Pro) Dell T320 &amp;mdash;-メインサーバー1(CentOS7) x2 Dell T320 &amp;mdash;-メインサーバー2(CentOS7)(運用予定) x3 Dell T420 &amp;mdash;-貸出用(未完成) x4     機種 CPU RAM DISK その他     TX1310 M1 Pentium G3240 6G 120G(SSD)+160Gx2+700Gx2    TX100 S3 謎 2G iscsi boot    CELSIUS W510 Xeon E3-1225 4G 64G(SSD)+320Gx2 エンコード用 RX470   TX100 S3 Xeon E3-1280 6G 64G(SSD) AD管理   T320 E5-2450L 20G 120G(SSD)x2+1TBx6 メインサーバー   T320 E5-2450L 2G  構築予定   T420 E5-2450L 64G 1TBx2     1 家にADを構築したいと思ったので構築しました</description>
+    </item>
+    
+    <item>
+      <title>2017年度 自宅サーバーの紹介</title>
+      <link>https://yoneyan.dev/homeserver/2017-server/</link>
+      <pubDate>Sun, 10 Sep 2017 19:22:05 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/homeserver/2017-server/</guid>
+      <description>このページでは自分の所有又は契約しているサーバーの紹介をやっていきたいと思います。
+2017/09/10稼働中のサーバーのみ執筆
+所有しているサーバー 稼働中  TX100S1（CentOS7）主にネットワークを管理 TX100S1（windows10）主にファイルを管理 Raspberry Pi 2（raspbian）主にロガー  普段全く使わないサーバー  機種不明(corei3の初期)　主にゲーム用サーバー  検証用サーバー（こっちも全く使わない）  Express5800/110Rh-1 Express5800/110Rh-1  契約しているサーバー  Time4Server（CentOS7） レンタルサーバー  TX100 S1 (CentOS 7)    OS：CentOS7
+スペック
+CPU:Core2Duo E7500
+RAM:4G
+SSD(OS用) 64G
+HDD(データ用)160G、80G、80G
+使用用途:DHCPサーバー、VPNサーバー、WEBサーバー、PXEサーバー、ファイルサーバー、NTPサーバー
+このサーバーでは主に宅内のネットワークを担っているサーバーになっています。また、DHCPサーバーを使って宅内で使っている端末にIPアドレスを割り振りをしています。softetherVPNを使って外部から宅内ネットワークに接続できるので一応、外で家にファイルを忘れたという時でも対応できます。（たぶん）
+TX100 S1 (Windows10 Pro)    OS:Windows10 Pro 64bit
+スペック
+CPU:Core2Quad Q8400
+RAM:8G
+SSD(OS用) 32G
+HDD(データ用)750G、750G、320G、160G
+使用用途:DLNAサーバー、録画サーバー、TV配信サーバー（もちろん、ローカルのみ）、ファイルサーバー、バックアップサーバー、監視カメラ、緊急地震速報
+このサーバーで主に、ファイルサーバーを担っています。
+緊急地震速報はSignalNow Xを使って、地震情報を受け取ると、スピーカーから大音量でアラートをなるようにしています。PS3MediaServerを使って、テレビとかに配信できるようにしています。
+上記のサーバーのコンソール部          まあ、こんな感じです</description>
+    </item>
+    
+  </channel>
+</rss>

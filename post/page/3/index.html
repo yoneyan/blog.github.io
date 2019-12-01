@@ -275,6 +275,7 @@ article.sn .thumb {
   }
 }
 
+article.sn > .article-crumb,
 article.sn > .article-header,
 article.sn > .article-body,
 article.sn .article-footer {
@@ -286,6 +287,7 @@ article.sn > .article-body {
 }
 
 @media (max-width: 768px) {
+  article.sn > .article-crumb,
   article.sn > .article-header,
   article.sn > .article-body,
   article.sn .article-footer {
@@ -553,7 +555,7 @@ section.footer > header a {
 /* Parts:breadcrumb */
 .crumb ol {
   text-overflow: ellipsis;
-  color: #cfd8dc;
+  color: #90979a;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -573,7 +575,7 @@ section.footer > header a {
 }
 
 .crumb a {
-  color: #cfd8dc;
+  color: #000000;
 }
 
 .crumb i {
@@ -723,19 +725,19 @@ section.footer > header a {
 
 
 
-.thumb-f83a755fd9853572aad6c42556448636 {
+.thumb-b321bee5ec23290f401bfd429d918247 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg);
 }
 
 
 
-.thumb-2a85ed102c559293842df029813a72bc {
+.thumb-a22089782467ad0ea8e69c86618215c7 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/serverroom.jpg);
 }
 
 
 
-.thumb-07ba3fd37d86fe46e203f7f731958e4c {
+.thumb-19971e8392a11ceb1aa7842258d66991 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg);
 }
 
@@ -1191,7 +1193,7 @@ section.footer > header a {
 
 
 
-.thumb-3754dbb55b8f68d19048416c24928174 {
+.thumb-204b515bb46611ed78b48e609e708cfd {
   background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
@@ -1354,7 +1356,6 @@ section.footer > header a {
 
 
 
-
  body { font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif; } 
  .h-logo { font-family: Lobster, cursive; } 
     </style>
@@ -1399,84 +1400,6 @@ ga('send', 'pageview');
         
         
         
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/">
-    <div class="thumb thumb-eae1bfaf492ad7af34689bb252d299c2"></div>
-
-    <div class="inner">
-      <h2 class="title">LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-31T15:17:42JST">Mar 31, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
-http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
-上のブログさんの記事を参考にしました。（ほぼ、同じです。）
-備忘録として、こちらに書かせていただきます。
-どれくらいの時間がかかるのか cat /proc/mdstat  と実行すると、RAID状況を確認できます。
-改善前 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&gt;....................] resync = 2.1% (21226880/976628736) finish=1186.8min speed=13416K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  13M/secはあまりにも遅すぎるので、これをなのとかします。
-改善後 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&gt;....................] resync = 4.2% (41735552/976628736) finish=292.9min speed=53181K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  改善後はかなり速度が上がりました。</div>
-    </div>
-  </a>
-</article>
-</div>
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/install-pt2-driver-on-linux/">
-    <div class="thumb thumb-47fc8fa2a0b30b777f97e83a093989d7"></div>
-
-    <div class="inner">
-      <h2 class="title">LinuxでPT2ドライバをインストールする</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-25T12:23:32JST">Mar 25, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">PT3ドライバでインストールする記事が多い気がするので、ここに備忘録として書きます。
-CentOSで今回はドライバインストールを行いましたが、他のディストリビューションでも同じです。
-作業開始！ 1．ドライバをダウンロードしてインストールする 1.1．ダウンロードする 以下のものをダウンロードします。 http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2
-cd ~/src wget http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2  1.2．インストールする tar xvlf tip.tar.bz2 cd pt1-7662d0ecd74b/driver make sudo make install  2．modprobeにブラックリストを追加する vi /etc/modprobe.d/blacklist.conf  blacklist earth-pt1  を/etc/modprobe.d/blacklist.confに入力する
-3．再起動する sudo reboot  このコマンドを入力すると再起動されます。
-4．確認する ドライバが導入されたか確認するために、再起動後以下のコマンドを入力します。
-ls /dev/pt1* /dev/pt1video0 /dev/pt1video1 /dev/pt1video2 /dev/pt1video3  このように表示されると導入されています。</div>
-    </div>
-  </a>
-</article>
-</div>
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/">
-    <div class="thumb thumb-f36f9407596208cf49fea5da9719a479"></div>
-
-    <div class="inner">
-      <h2 class="title">Edgerouterでポート開放をしてみる</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-22T18:05:10JST">Mar 22, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">今回はEdgerouterでポート開放をコマンド操作でしていきます。
-こちらのサイトを参考にさせていただきました。
-https://qiita.com/maiani/items/b45b0505377401be083a
-わかりにくい点などがありましたら、上記のサイトさんをご覧ください。
-コマンドで設定していく 今回は以下のポートを開放していきます。
-80/tcp 172.16.1.100
-3389/tcp,3389/udp 172.16.1.10
-1．ファイアウォールの設定 80/tcpの設定をしていきます。
-set firewall name WAN_IN rule 50 description &quot;80/tcp http&quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.16.1.100 set firewall name WAN_IN rule 50 destination port 80 set firewall name WAN_IN rule 50 protocol tcp  3389/tcpと3389/udpポートを設定します。
-set firewall name WAN_IN rule 50 description &quot;3389/tcp,3389/udp RDP&quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.</div>
-    </div>
-  </a>
-</article>
-</div>
         
         <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/set-pppoe-with-edgerouter/">
@@ -1674,6 +1597,109 @@ eo光が配布してくれるeo光多機能ルータというものがありま�
 </article>
 </div>
         
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/">
+    <div class="thumb thumb-1b3694e31c6e8350e0fc49c085f23c00"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSでL2TPサーバーを構築してみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-01-18T16:21:21JST">Jan 18, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
+VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
+OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。
+L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分がありますが、AndroidやiOSやWindowsのようなクライアントの標準機能（外部アプリやソフトなし）で簡単に繋ぐことが可能なので、おすすめです。
+構築開始！ １ 必要な物をインストールする yum -y install xl2tpd libreswan  ２ L2TPを設定する L2TPサーバーの設定をしていきます。
+2.1 xl2tpdのメインの設定を変更する 共通する設定
+/etc/xl2tpd/xl2tpd.conf
+[global] ;パスの指定 auth file = /etc/ppp/chap-secrets ;グローバルIPアドレスをここに指定する listen-addr = xx.xx.xx.xx [lns default] ;L2TPクライアントから割り当てられるIPアドレスの範囲を指定する ip range = 192.168.1.128-192.168.1.254 ;L2TPサーバー側の仮想ネットワークのIPアドレスを指定する local ip = 192.168.1.99 ;chap認証を拒否するのか refuse chap = yes ;pap認証を拒否するのか refuse pap = yes ;認証を許可するのか require authentication = yes ;ホスト名 name = LinuxVPNserver ;デバッグを取るか、取らないか ppp debug = yes pppのオプションファイルの場所を指定 pppoptfile = /etc/ppp/options.</div>
+    </div>
+  </a>
+</article>
+</div>
+        
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/use-openvpn-to-connect-vps-and-pfsense-at-home_part2/">
+    <div class="thumb thumb-937409701cde51150a09041f7a30c8ae"></div>
+
+    <div class="inner">
+      <h2 class="title">openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-01-10T11:49:55JST">Jan 10, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
+その2ではopenvpnのクライアントになるpfsense側の設定をしていきます。
+前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
+サーバーIP:10.0.0.9
+openvpn（サーバー側）のポート:1194/udp
+サーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動   1.2.CAを追加する Addをクリックする
+  Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
+Certificate data に ca.crtの内容をすべて入れます。
+Serial for next certificate はよくわからなかったので「1」と入れました。
+1.3.クライアント証明書を登録する Certificate ManagerにあるCertificateに移動します。
+  Descriptive name に適当な名前をつけます。
+Certificate data にclient1.crtの内容を入れます。
+Private key data にclient1.keyの内容を入れます。
+2.pfsenseでopenvpnの設定を開く   VPN-&gt;OpenVPNを開きます。
+2.1.openvpnでclientを追加する   AddでClientを追加します。
+2.2.設定をしていく   Server host or address:10.0.0.9　&lt; -サーバーIP
+Description: &lt; - openvpnのClient名の設定（わかりやすい名前で良い）</div>
+    </div>
+  </a>
+</article>
+</div>
+        
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/">
+    <div class="thumb thumb-e154f7ce1b50d5030325abd3e883cbd9"></div>
+
+    <div class="inner">
+      <h2 class="title">大好きな曲を電話回線網から流す方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-25T05:28:23JST">Dec 25, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+最終日ということもあり気合を入れて紹介させていただきます。
+作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&hellip;）
+このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
+お家の方にも紹介していただけると楽しんでいただけると思います。電話帳に登録した方がいらっしゃれば、私の方まで報告していただけると嬉しいです。
+コンギョバージョン
+05054377759
+一般男性脱糞シリーズバージョン
+05054377762
+＊追記　ゆゆうたの様々な曲を取り寄せております、ゆゆうた楽曲専用ダイヤルを開設いたしました。
+ゆゆうた楽曲専用ダイヤル
+05053595690
+暇な方は是非この電話番号にかけてみてください。
+もし、通じない場合はお家の固定回線からかけてみてください
+誰でも簡単に作ることができるのでそのレシピを紹介します。
+仕組み   材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+＊VPS or 自宅サーバーをサーバーと略させていただきます。
+レシピ 0.SIP情報を観察する   ドメインとSIPアカウント、そのパスワードをメモっておきます。
+1.Asteriskをサーバーに入れてあげます CentOSさんの場合はパッケージが標準で搭載されていないので、Debianさんにお願いします。
+Debianさん
+apt -y install asterisk apt -y install mpg123  mpg123はasteriskでmp3を流すためのコーディック用のパッケージです。
+2.Asteriskの設定ファイルを調理してあげます /etc/asterisk/sip.conf　を開きます。
+（お好きなエディタから開いて下さい。)
+register=&gt;sipアカウント:sipアカウントのパスワード@ドメイン  ;IP [fusion-smart_1] type=friend username=sipアカウント fromuser=sipアカウント secret=sipアカウントのパスワード host=smart.</div>
+    </div>
+  </a>
+</article>
+</div>
+        
       </div>
     </div>
 
@@ -1720,15 +1746,15 @@ eo光が配布してくれるeo光多機能ルータというものがありま�
     <div class="articles sm">
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-and-other-equipment-in-2019-09/">
-    <div class="thumb thumb-f83a755fd9853572aad6c42556448636"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-etc/">
+    <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅その他機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T02:17:49JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1738,15 +1764,15 @@ eo光が配布してくれるeo光多機能ルータというものがありま�
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-network-equipment-in-2019-09/">
-    <div class="thumb thumb-2a85ed102c559293842df029813a72bc"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1756,15 +1782,15 @@ eo光が配布してくれるeo光多機能ルータというものがありま�
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/home-server-introduction-in-2019-09/">
-    <div class="thumb thumb-07ba3fd37d86fe46e203f7f731958e4c"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-server/">
+    <div class="thumb thumb-19971e8392a11ceb1aa7842258d66991"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅サーバーの紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T00:49:00JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 

@@ -275,6 +275,7 @@ article.sn .thumb {
   }
 }
 
+article.sn > .article-crumb,
 article.sn > .article-header,
 article.sn > .article-body,
 article.sn .article-footer {
@@ -286,6 +287,7 @@ article.sn > .article-body {
 }
 
 @media (max-width: 768px) {
+  article.sn > .article-crumb,
   article.sn > .article-header,
   article.sn > .article-body,
   article.sn .article-footer {
@@ -553,7 +555,7 @@ section.footer > header a {
 /* Parts:breadcrumb */
 .crumb ol {
   text-overflow: ellipsis;
-  color: #cfd8dc;
+  color: #90979a;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -573,7 +575,7 @@ section.footer > header a {
 }
 
 .crumb a {
-  color: #cfd8dc;
+  color: #000000;
 }
 
 .crumb i {
@@ -723,19 +725,19 @@ section.footer > header a {
 
 
 
-.thumb-f83a755fd9853572aad6c42556448636 {
+.thumb-b321bee5ec23290f401bfd429d918247 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg);
 }
 
 
 
-.thumb-2a85ed102c559293842df029813a72bc {
+.thumb-a22089782467ad0ea8e69c86618215c7 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/serverroom.jpg);
 }
 
 
 
-.thumb-07ba3fd37d86fe46e203f7f731958e4c {
+.thumb-19971e8392a11ceb1aa7842258d66991 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg);
 }
 
@@ -1191,7 +1193,7 @@ section.footer > header a {
 
 
 
-.thumb-3754dbb55b8f68d19048416c24928174 {
+.thumb-204b515bb46611ed78b48e609e708cfd {
   background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
@@ -1354,7 +1356,6 @@ section.footer > header a {
 
 
 
-
  body { font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif; } 
  .h-logo { font-family: Lobster, cursive; } 
     </style>
@@ -1399,94 +1400,6 @@ ga('send', 'pageview');
         
         
         
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/try-using-wpa2psk-with-aironet/">
-    <div class="thumb thumb-efab3ca6cb492519cd9130c2087724fc"></div>
-
-    <div class="inner">
-      <h2 class="title">Cisco_AironetでWPA2-PSKを使ってみる</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-10-09T02:15:26JST">Oct 9, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
-前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
-初期の設定 マルチssidを有効にするために
-dot11 mbssid  を実行します。
-ssidの設定 vlanで指定する場合はauthentication openの前の行に下記のようなコマンドを入力してください。 vlan 100  100のところには適当な物に変更してください。
-2.4ghz側 dot11 ssid test-2.4ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  passwordのところにはssidに対するWifiのパスワードを設定してください。 5ghz側の設定も同じようにしていきます。
-5ghz側 dot11 ssid test-5ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  こちらも同様にpasswordのところには適当なパスワードを入力してください。
-無線の設定 トランクなどでvlanを分けている場合はSSIDから飛ばすVLANごとに設定を入れる必要があります。その場合は、
-ssid test-2.4ghz  の前の行に下記のようなコマンドを入れます。
-encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書き換えてください。</div>
-    </div>
-  </a>
-</article>
-</div>
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/">
-    <div class="thumb thumb-e609f839254c60896d411665e71c8256"></div>
-
-    <div class="inner">
-      <h2 class="title">nextcloudでアップロードができない理由はこれだった...</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-09-25T04:27:25JST">Sep 25, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
-戦犯は&hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
-なぜわかったのか？ nextcloudのweb操作で小さいファイルだとアップロードできるのに、１MBを超えるファイルをアップロードしようとすると、なぜか途中で止まってしまうということが起こりました。 そこで、nextcloudのクライアントからを入れてみたときに、どんな挙動が起こるのか確かめてみると&hellip;  
-これについて調べてみると、phpというよりもwebサーバー本体のコンフィグの設定に問題があることを知りました。 apache2かnginxのどっちがおかしいのかと考えると、nginx側がおかしいということに気づきました。
-対処法 nginxのコンフィグを変更する server { #省略 client\_max\_body_size 1000m; #省略 }  こんな感じで/etc/nginx/nginx.conf又は/etc/nginx/conf.d/cloud.confあたりに突っ込めばアップロードできるようになりました。
-nginxを再起動 systemctl restart nginx  nginxを再起動すると見事にファイルをアップロードできるようになりました。
-まとめ 今回の原因として、nginxをあまり触っていなかったことが問題になりました。 やっぱりコンフィグ類はちゃんと覚えておくべきだということを改めて実感しました。</div>
-    </div>
-  </a>
-</article>
-</div>
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/try-building-a-centos-openvpn-server/">
-    <div class="thumb thumb-d2b93cf49d51b47b0a8699fc8c777bcc"></div>
-
-    <div class="inner">
-      <h2 class="title">CentOSのOpenVPNサーバーを構築してみる</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-09-07T20:00:06JST">Sep 7, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
-この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
-その１:VPS側（サーバー側）の設定
-その２:pfsense側（クライアント側）の設定
-その３:ファイアーウォールの設定
-VPS側で
-OpenVPNの設定をしていく この記事ではCentOSを使った紹介をしていきます。
-最初にやっておくこと
-CentOSにepelのレポジトリを使えるようにしておきましょう
-関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa  フォルダを作る mkdir /etc/openvpn/easy-rsa  フォルダ群をコピー cp /usr/share/easy-rsa/***/* /etc/openvpn/easy-rsa/ -R  米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）
-認証局を作る cd /etc/openvpn/easy-rsa ./easyrsa init-pki ./easyrsa build-ca ./easyrsa gen-dh cd /etc/openvpn openvpn --genkey --secret /etc/openvpn/ta.key  詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。
-./easyrsa build-caを実行すると&hellip;
-Enter PEM pass phrase:  こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。
-サーバー側の証明書を作成 パスワードがめんどくさいのでパスワードなし(no pass)にします。
-cd /etc/openvpn/easy-rsa ./easyrsa build-server-full server nopass  Server側のkey:/etc/openvpn/easy-rsa/pki/private/server.key
-Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
-クライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。</div>
-    </div>
-  </a>
-</article>
-</div>
         
         <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/">
@@ -1711,6 +1624,80 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
 </article>
 </div>
         
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/recommended-used-laptop-manufacturers/">
+    <div class="thumb thumb-76f363c955870f25c95425cf40ef6909"></div>
+
+    <div class="inner">
+      <h2 class="title">おすすめの中古ノートパソコンメーカー</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-05-19T19:23:25JST">May 19, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回はおすすめの中古パソコンのメーカーを紹介をします！
+第1位　Let&rsquo;s note   特徴  バッテリーが結構持つ キーボードがそこそこ打ちやすい 軽い＆頑丈 ディスクドライブが入る（機種によって違う）  個人的には中古ノートパソコンを買うならLet&rsquo;s noteが一番いいと思います。 Let&rsquo;s noteはかなり丈夫な作りになっており、パソコンを机の上から落としても壊れない設計になっているため、筆者のように雑に扱うパソコンユーザーにはかなりおすすめのノートパソコンとなります。 バッテリーも交換し気になっているのでバッテリーが劣化した場合は取り替えることで使えるのでおすすめです。スペック的には他の中古ノートパソコンと比べるとコストパフォーマンスはあまりよくありませんが、パソコン自体の重さが軽いのでモバイルノートパソコンとしていろんな場所で使える点がかなり優れた製品のように思います。また、業務で使うことを想定されていることもあって、新製品でもHDMIやD-subを搭載しているので変換ケーブルが必要ないので持ち歩きに使う端末としてめちゃくちゃおすすめです。 また、Let&rsquo;s noteはキーストローク（キーボードのキーを押すときの深さのことです）が深くかなり打ちやすいので仕事や趣味で文字打ちを重視してる方はおすすめです。
+第二位 ThinkPad   特徴  頑丈 キーボード最強 トラックポインターがなかなか使いやすい かっこいい  中古のThinkpadもかなりいいと思います。 Let&rsquo;s Noteに比べると重いというところはあるものの、かっこよさは絶対ThinkPadの方が上です。 最近のThinkPadではバッテリー交換が出来なくなってきているのですが、中古パソコンの大半はバッテリー交換が出来るようになっているので電池が消耗した際の交換もすぐ出来るのであえて中古を買うというのも一つの選択肢のように思います。 ThinkPadの特徴ともいえる、トラックポイントが慣れるとかなり使いやすいです。キーボードで打っている時にどうしてもマウスで動かさなければならないところが出てきても、トラックポイントの場合は少しの移動で済みます。
+まとめ 中古パソコンを買う際はThinkPadかLet&rsquo;s Noteが超おすすめです。 中古パソコンということもあり、頑丈性が強い方が絶対にいいです。基本、紹介させていただいた2つのメーカーはバッテリーを取り替えることもできるので、十分普段使い出来ます。 筆者も、Let&rsquo;s NoteのCF-SX2という機種の中古パソコンを使っていますが、バッテリーは余裕で6～7時間以上は持ちます。あまり、触らなかったら8時間はいけます。 とこんな感じなので、お金がない学生はあまり、パソコンにはお金をかけたくない方にはお勧めです！（＾＿＾）</div>
+    </div>
+  </a>
+</article>
+</div>
+        
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/5-recommended-free-tool-apps/">
+    <div class="thumb thumb-3cf301221e65f40ba426c78b49d44074"></div>
+
+    <div class="inner">
+      <h2 class="title">おすすめの無料ツールアプリ5選</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-04-30T02:33:50JST">Apr 30, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回は、おすすめの無料ツールアプリを紹介していきます。 今回は5選ということでツールアプリを5つ紹介させていただきます。
+1.LastPass   対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.lastpass.lpandroid iOS(iTunes):https://itunes.apple.com/jp/app/lastpass-password-manager/id324613447?mt=8 公式サイト:https://www.lastpass.com/ja パスワード管理アプリのLastPassはおすすめです。 Android版ではアプリやブラウザなどで自動入力することができるので、Android端末を持っている方は是非入れてほしいアプリだと思います。つい最近までは、有料版のみでの対応となっていましたが、無料版でも自動入力が出来るようになりました。 iOS版でも半自動入力してくれます。 PC版のブラウザの拡張プラグインもあるので、端末間でのパスワードを共有するのに使うことが出来ます。 パソコンと端末をシームレスに共有することができるのでおすすめのアプリです。
+2.Keep   対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.google.android.keep&amp;hl=ja iOS(iTunes):https://itunes.apple.com/jp/app/google-keep/id1029207872?mt=8 公式サイト:https://keep.google.com/ Googleが提供しているメモ帳サービスになります。 メモ帳アプリはいろいろありますが、Keepの良さはUIがかなりシンプルなところです。 使って損はないサービスのように思います。
+3.Send Anywhere   対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.estmob.android.sendanywhere iOS(iTunes):https://itunes.apple.com/jp/app/send-anywhere-ファイル転送-送信/id596642855?mt=8 公式サイト:https://send-anywhere.com/ja/ OSに関係なくインターネットさえつながっていれば、ファイルを送れるサービスです。 iOSの場合はAirDropという最強の機能があるんですが、Windowsにはファイルを飛ばすことができないということと、Androidの場合はそのような機能がないので頻繁にパソコンに送りたいという方にはおすすめのアプリです。
+4.pushbullet   対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.pushbullet.android iOS(iTunes):https://itunes.apple.com/jp/app/pushbullet/id810352052?mt=8 Pushbulletはパソコンに通知を送ったり、ブラウザをパソコンで見たい時にリンクを送れるアプリです。例えば、スマホで見ていたサイトをパソコンで見たいと思った時に、Chromeのようにマルチプラットフォームでも同期ができる場合は、履歴からたどれば見ていたリンクを表示することができます。しかし、探すのがめんどくさい場合や違うブラウザで見たい時などに不便になります。そこで、このアプリを使うとブラウザに関係なくリンクなどを送ることができる（リンクだけではなく、動画や写真とかも送れるがリンクに特化している）のでスマホで作業した後にパソコンで続行したい時に使う時にとても便利なアプリです。</div>
+    </div>
+  </a>
+</article>
+</div>
+        
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/silent-powerconnect6248/">
+    <div class="thumb thumb-e44079f1fc20e9aaf48df394eb047f6a"></div>
+
+    <div class="inner">
+      <h2 class="title">PowerConnect6248を静音化</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-04-25T07:17:56JST">Apr 25, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今まで、家にはPowerConnect2724とx600-24Tsという24ポートのハブが二台あるんですが、それでも足りなくなってきたということもあり、PowerConnect6248をヤフオクで落札しました。 L4スイッチで48ポートもあるということで、かなり期待しているんですが問題があります。 それはうるさいことです。 PowerConnect2724の24ポートのハブでもなかなかうるさかったのですが、48ポート搭載しているPowerConnect6248は許容範囲を超えちゃいました。 まあ、普通に考えて1Uサイズで48ポートもあってLayer4まで対応しちゃってるハブなのでファンがアレなので、今回は静音化してみます。 注意 分解するので故障の可能性があるので、自己責任でお願い致します。 （これだけは言っておきますが、絶対しない方がいいです。機械的には&hellip;） 普通の人は↓こういうものを諦めて買いましょう。
+  TP-Link スイッチングハブ 48ポート TL-SG1048 10/100/1000Mbps 金属筐体 ギガビット 5年保証 Amazon  楽天市場  Yahooショッピング      用意する物 必須
+ 抵抗（各種抵抗値） 半田ごてセット  あればいい物
+ テスター 可変抵抗（これはあった方がいい）  作業開始 まず、分解 まず分解しないと何も始まらないので、ネジを外して中身を開けてみます。  
+PowerConnect6248中身[/caption] こんな感じになってます。
+ファンに抵抗を入れてみる ここで、可変抵抗を持っているとかなり便利です。ファンのスピードを適当に決めてから可変抵抗の抵抗値をテスターで調べるのが一番手っ取り早いように思います。 個人的には22Ω+47Ωの合計69Ωがファンも静かでいいと思いました。 images/fix/silent/powerconnect6248  
+動作確認のためにクリップ型のジャンパー線があるとかなり便利です。
+半田付けする   こんな感じになりました。抵抗を直列に繋ぐときは長くならないように工夫した方がいいです。 これで一回電源をつけて動作確認をして、静かになっていたら成功です。
+絶縁処理 このままだと、ハブ本体を動かした時などに基盤と抵抗が触れてショートしちゃう可能性が高いので、絶縁処理をしておきます。 絶縁処理といってもセロハンテープなどでまくだけでもかなり十分です。機械的には  
+  適当といえば適当ですが、絶縁さえ出来ていれば問題ないです
+まとめ これで静音化の作業は終了となります。 かなり静かになりましたが、うるさくても問題がない方や自宅サーバールームがある方は静音化はしないほうがいいです。意外とこのハブは熱を持ちます。 回転数を落としたこともあり、ファンのステータス表示が赤になってしまいましたが、大丈夫でしょう</div>
+    </div>
+  </a>
+</article>
+</div>
+        
       </div>
     </div>
 
@@ -1757,15 +1744,15 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
     <div class="articles sm">
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-and-other-equipment-in-2019-09/">
-    <div class="thumb thumb-f83a755fd9853572aad6c42556448636"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-etc/">
+    <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅その他機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T02:17:49JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1775,15 +1762,15 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-network-equipment-in-2019-09/">
-    <div class="thumb thumb-2a85ed102c559293842df029813a72bc"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1793,15 +1780,15 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/home-server-introduction-in-2019-09/">
-    <div class="thumb thumb-07ba3fd37d86fe46e203f7f731958e4c"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-server/">
+    <div class="thumb thumb-19971e8392a11ceb1aa7842258d66991"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅サーバーの紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T00:49:00JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 

@@ -275,6 +275,7 @@ article.sn .thumb {
   }
 }
 
+article.sn > .article-crumb,
 article.sn > .article-header,
 article.sn > .article-body,
 article.sn .article-footer {
@@ -286,6 +287,7 @@ article.sn > .article-body {
 }
 
 @media (max-width: 768px) {
+  article.sn > .article-crumb,
   article.sn > .article-header,
   article.sn > .article-body,
   article.sn .article-footer {
@@ -553,7 +555,7 @@ section.footer > header a {
 /* Parts:breadcrumb */
 .crumb ol {
   text-overflow: ellipsis;
-  color: #cfd8dc;
+  color: #90979a;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -573,7 +575,7 @@ section.footer > header a {
 }
 
 .crumb a {
-  color: #cfd8dc;
+  color: #000000;
 }
 
 .crumb i {
@@ -723,19 +725,19 @@ section.footer > header a {
 
 
 
-.thumb-f83a755fd9853572aad6c42556448636 {
+.thumb-b321bee5ec23290f401bfd429d918247 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg);
 }
 
 
 
-.thumb-2a85ed102c559293842df029813a72bc {
+.thumb-a22089782467ad0ea8e69c86618215c7 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/serverroom.jpg);
 }
 
 
 
-.thumb-07ba3fd37d86fe46e203f7f731958e4c {
+.thumb-19971e8392a11ceb1aa7842258d66991 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg);
 }
 
@@ -1191,7 +1193,7 @@ section.footer > header a {
 
 
 
-.thumb-3754dbb55b8f68d19048416c24928174 {
+.thumb-204b515bb46611ed78b48e609e708cfd {
   background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
@@ -1354,7 +1356,6 @@ section.footer > header a {
 
 
 
-
  body { font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif; } 
  .h-logo { font-family: Lobster, cursive; } 
     </style>
@@ -1399,100 +1400,6 @@ ga('send', 'pageview');
         
         
         
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/">
-    <div class="thumb thumb-a604eee1a619bfc9841b5b3b824420e6"></div>
-
-    <div class="inner">
-      <h2 class="title">CentOSでリンクアグリゲーションの設定をしてみる</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-19T01:29:33JST">Nov 19, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
-リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
-設定方法 設定方法として、以下の2つがあります。
- nmtui（GUI） nmcli（CUI)  今回はこの内のnmtuiを使った設定方法を紹介します。 nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。
-設定していく 1.nmtuiを起動する sudo nmtui
-恐らく、管理者権限ではないと設定出来ない可能性が高いです。  
-こんな感じのネットワークの設定画面が表示されます。
-2.LAGの設定をしていく Edit a connectionを選択してから、Addを選択すると、下のようなものが出てきます。
-  LAGを使う場合はBondを選択します。
-3.bondの設定をしていく   AddでEthernetを選択し、Device名を手打ちでします。 それから、Modeで802.3adを選択すると、リンクアグリゲーションを使うことが出来るようになります。 IPv4を固定にしたい場合は、Manualですることができます。 最後にOKを選択し、ダイアログを閉じます。 これでLAGを使用することが可能になります。
-4.IPアドレスを取得＆pingが通るか確認する google.co.jpにpingが通るか確認するには
-ping google.co.jp  IPアドレスが取得されているか確認したい場合は
-ip addr  これで確認することが可能になります。</div>
-    </div>
-  </a>
-</article>
-</div>
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/compare-recommended-rental-servers/">
-    <div class="thumb thumb-fa19de21998237e94faf8f5c0aa5a124"></div>
-
-    <div class="inner">
-      <h2 class="title">おすすめのレンタルサーバーを比較</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-12T01:26:24JST">Nov 12, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">レンタルサーバーは数多くあると思うので、おすすめのレンタルサーバーを抜粋して紹介します。一応、順位をつけますがあくまでも筆者の意見であるということを留意してください。
-1位 XServer 
-機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|○|○(リストア時、料金発生)|○|○|○|無制限|MySQL,SQLite|70G～|
-料金＆プラン（24ヶ月、36ヶ月継続プランもあり） |プラン|容量|初期費用|3ヶ月継続|6ヶ月継続|12ヶ月継続| |X10|200G|3000円|1200円×3ヶ月|1100円×6ヶ月|1000円×12ヶ月| |X20|300G|3000円|2400円×3ヶ月|2200円×6ヶ月|2000円×12ヶ月| |X30|400G|3000円|4800円×3ヶ月|4400円×6ヶ月|4000円×12ヶ月|
-その他
- 転送量はプランによって変わります。 また、データベースのMySQLは50個～になっておりプランによって変わります。  エックスサーバー 有名なレンタルサーバーの一つです。 安定性が高く、契約している人が多いレンタルサーバーです。 サーバースペックが高速と言われているのこともあり、確かにページのレスポンスもかなり早いです。 ブログを始めようと思っている方はこちらのレンタルサーバーが一番おすすめです！！！
-2位 さくらのレンタルサーバー 
-機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|△|○|△|○|○|無制限|MySQL,SQLite|40G～|
-料金＆プラン |プラン|容量|初期費用|月額|年間一括契約| |ライト|10G|1029円|129円|1543円| |スタンダード|100G|1029円|515円|5142円| |プレミアム|200G|1029円|1543円|15428円| |ビジネス|300G|5142円|2571円|25714円| |ビジネスプロ|500G|5142円|4628円|46286円| |マネージド|700G|48600円|12960円～|142560円～|
-注意事項
- SSHやCronはプランによって使えない場合があります。 MySQLはライトプランでは使うことができません。 マネージドプランはサーバーを占有するので料金が高いです。HDD以外にSSDプランもあります。  さくらのレンタルサーバ さくらのレンタルサーバーはかなり安いプランからあるので、おすすめです。 また、さくらインターネットが運営していることもあり安定しているので、おすすめです。 WordPressを使うにはスタンダードプラン以上である必要があるので注意してください。（MySQLが使えないので&hellip;） アクセス数がめちゃくちゃありすぎて困る(^^;)という方は、マネージドプランを選択することで対処出来ると思われます。
-3位 LOLIPOP  機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|○|△(オプション料金300円/月)|△|○|○|無制限|MySQL,SQLite|40G～|
-料金＆プラン |プラン|容量|初期費用|1・3ヶ月|6・12・24・36ヶ月| |エコノミープラン|10G|1500円|100円/月|100円/月| |ライトプラン|50G|1500円|300円/月|250円/月| |スタンダードプラン|120G|1500円|600円/月|500円/月| |エンタープライズプラン|400G|3000円|2300円/月|2000円/月|
-注意事項
- SSHはプランによって使えない場合があります。 MySQLはエコノミープランでは使うことができません。（ライトプランは1個までに鳴っています。） バックアップは7世代まで出来ますが、オプション料金の300円/月が必要になります。 ファイル上限数あり  こちらもレンタルサーバーではかなりの大御所です。 ファイルの上限数があるので、注意が必要です。 また、LOLIPOPでもWordPressを使うにはライトプラン以上が必要となります。 エンタープライズプランでは転送量が無制限になるので、アクセス数が大量な方は必要です。</div>
-    </div>
-  </a>
-</article>
-</div>
-        
-        <div class="mcol c6"><article class="li">
-  <a href="https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/">
-    <div class="thumb thumb-d73c73655efa2bdfcdf2ca7208398360"></div>
-
-    <div class="inner">
-      <h2 class="title">ブレードサーバーの中を見てみる1</h2>
-
-      <ul class="facts">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-11T05:01:52JST">Nov 11, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-      <div class="summary">みなさん、ブレードサーバーって知っていますか？
-今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
-ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
-特徴として  200V電源ないとキツイ 拡張ボードで拡張することが出来る ブレードを交換するだけで長く使うことが出来る コスパ的に安くなる場合があるらしい？  ブレードを交換するだけで長く使うことができるというのはブレードだけを新しく変えることで新しいCPUの載っているものを使うことができます。 4～5台以上になるとラックサーバーに比べてブレードサーバーの方がコストパフォーマンスがよいとされています。（私はそのように思っていませんが&hellip;）
-ブレードの紹介 今回はブレードのエンクロージャの紹介ではなく、ブレードの方の紹介させていただきます。 HP ProLiant 460 Series Generation 6 Bladeという型番の紹介をしていきます。 こいつはCPUは2個ついており、メモリは12スロットあります。 また、SAS又はSATA系の2.5インチHDDかSSDを搭載できます。 最大でDC12Vの40Aまで電源を供給されるブレードサーバーになります。
-中を見てみる   これがもらったブレードです。
-背面はこんな感じ   これがブレードの背面コネクタになります。 白い穴みたいなところに電源が通っているという感じです。
-側面   背面にはSDカードスロットで挿すことが可能になってます。 恐らく、ESXiのブート元で使ったりする用だと思われます。
-中身を見ていきましょう   このような感じになっています。
-蓋     こんな感じでわかりやすく書かれています。ここら辺は、普通のサーバーと同じような感じです。
-中身はこんな感じ～         CPUが見ての通り2つ搭載されています。 また、メモリの方も2Gx6あります。
-まとめ 記念にブレードを持って帰ったのはいいのですが、エンクロージャ（ブレードの側）がないと使い物にならないです。 お金持ちにでもなれたらブレードサーバーを買って購入したいものです。 ブレードサーバーを8つ本気で動かそうとすると200Vで50Aぐらい食うので日常生活では騒音＋電気代の問題があるので、使えるものではないです。 次回の「ブレードサーバーの中を見てみる2」ではブレードサーバーの拡張ボードの紹介をします。</div>
-    </div>
-  </a>
-</article>
-</div>
         
         <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/use-of-homeserver-and-vps/">
@@ -1668,6 +1575,94 @@ interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-abov
 </article>
 </div>
         
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-using-wpa2psk-with-aironet/">
+    <div class="thumb thumb-efab3ca6cb492519cd9130c2087724fc"></div>
+
+    <div class="inner">
+      <h2 class="title">Cisco_AironetでWPA2-PSKを使ってみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-10-09T02:15:26JST">Oct 9, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
+前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
+初期の設定 マルチssidを有効にするために
+dot11 mbssid  を実行します。
+ssidの設定 vlanで指定する場合はauthentication openの前の行に下記のようなコマンドを入力してください。 vlan 100  100のところには適当な物に変更してください。
+2.4ghz側 dot11 ssid test-2.4ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  passwordのところにはssidに対するWifiのパスワードを設定してください。 5ghz側の設定も同じようにしていきます。
+5ghz側 dot11 ssid test-5ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  こちらも同様にpasswordのところには適当なパスワードを入力してください。
+無線の設定 トランクなどでvlanを分けている場合はSSIDから飛ばすVLANごとに設定を入れる必要があります。その場合は、
+ssid test-2.4ghz  の前の行に下記のようなコマンドを入れます。
+encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書き換えてください。</div>
+    </div>
+  </a>
+</article>
+</div>
+        
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/">
+    <div class="thumb thumb-e609f839254c60896d411665e71c8256"></div>
+
+    <div class="inner">
+      <h2 class="title">nextcloudでアップロードができない理由はこれだった...</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-09-25T04:27:25JST">Sep 25, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
+戦犯は&hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
+なぜわかったのか？ nextcloudのweb操作で小さいファイルだとアップロードできるのに、１MBを超えるファイルをアップロードしようとすると、なぜか途中で止まってしまうということが起こりました。 そこで、nextcloudのクライアントからを入れてみたときに、どんな挙動が起こるのか確かめてみると&hellip;  
+これについて調べてみると、phpというよりもwebサーバー本体のコンフィグの設定に問題があることを知りました。 apache2かnginxのどっちがおかしいのかと考えると、nginx側がおかしいということに気づきました。
+対処法 nginxのコンフィグを変更する server { #省略 client\_max\_body_size 1000m; #省略 }  こんな感じで/etc/nginx/nginx.conf又は/etc/nginx/conf.d/cloud.confあたりに突っ込めばアップロードできるようになりました。
+nginxを再起動 systemctl restart nginx  nginxを再起動すると見事にファイルをアップロードできるようになりました。
+まとめ 今回の原因として、nginxをあまり触っていなかったことが問題になりました。 やっぱりコンフィグ類はちゃんと覚えておくべきだということを改めて実感しました。</div>
+    </div>
+  </a>
+</article>
+</div>
+        
+        <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-building-a-centos-openvpn-server/">
+    <div class="thumb thumb-d2b93cf49d51b47b0a8699fc8c777bcc"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSのOpenVPNサーバーを構築してみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-09-07T20:00:06JST">Sep 7, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
+この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
+その１:VPS側（サーバー側）の設定
+その２:pfsense側（クライアント側）の設定
+その３:ファイアーウォールの設定
+VPS側で
+OpenVPNの設定をしていく この記事ではCentOSを使った紹介をしていきます。
+最初にやっておくこと
+CentOSにepelのレポジトリを使えるようにしておきましょう
+関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa  フォルダを作る mkdir /etc/openvpn/easy-rsa  フォルダ群をコピー cp /usr/share/easy-rsa/***/* /etc/openvpn/easy-rsa/ -R  米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）
+認証局を作る cd /etc/openvpn/easy-rsa ./easyrsa init-pki ./easyrsa build-ca ./easyrsa gen-dh cd /etc/openvpn openvpn --genkey --secret /etc/openvpn/ta.key  詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。
+./easyrsa build-caを実行すると&hellip;
+Enter PEM pass phrase:  こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。
+サーバー側の証明書を作成 パスワードがめんどくさいのでパスワードなし(no pass)にします。
+cd /etc/openvpn/easy-rsa ./easyrsa build-server-full server nopass  Server側のkey:/etc/openvpn/easy-rsa/pki/private/server.key
+Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
+クライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。</div>
+    </div>
+  </a>
+</article>
+</div>
+        
       </div>
     </div>
 
@@ -1714,15 +1709,15 @@ interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-abov
     <div class="articles sm">
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-and-other-equipment-in-2019-09/">
-    <div class="thumb thumb-f83a755fd9853572aad6c42556448636"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-etc/">
+    <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅その他機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T02:17:49JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1732,15 +1727,15 @@ interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-abov
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-network-equipment-in-2019-09/">
-    <div class="thumb thumb-2a85ed102c559293842df029813a72bc"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1750,15 +1745,15 @@ interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-abov
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/home-server-introduction-in-2019-09/">
-    <div class="thumb thumb-07ba3fd37d86fe46e203f7f731958e4c"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-server/">
+    <div class="thumb thumb-19971e8392a11ceb1aa7842258d66991"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅サーバーの紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T00:49:00JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 

@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="https://yoneyan.dev/images/logo.png">
 
 
-<link rel="canonical" type="text/html" href="https://yoneyan.dev/post/home-server-introduction-in-2019-09/" title="のんびりと生きたい">
+<link rel="canonical" type="text/html" href="https://yoneyan.dev/homeserver/2019-09-etc/" title="のんびりと生きたい">
 
 
 
@@ -30,30 +30,60 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster%7cLato:400,700" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title>2019年度(8月)自宅サーバーの紹介 - のんびりと生きたい</title>
+    <title>2019年度(8月)自宅その他機器の紹介 - のんびりと生きたい</title>
     
-<meta name="description" content="サーバーの紹介 ネットワーク機器は多すぎるので別記事にしています。
-また、サーバーやネットワークに属さない機器はこちらで紹介しています。
-   運用中  Fujitsu TX1310 M1 &mdash;Windows Server 2019 Standard (AD,RDP) Fujitsu TX100 S3 &mdash;-FiberChannel検証用 Fujitsu CELSIUS W510 &mdash;-録画サーバー(Win10 Pro) Fujitsu TX100 S3 &mdash;-鯖部屋クライアントPC(Win10 Pro) Dell T320 &mdash;-メインサーバー1(CentOS7) x2 Dell T320 &mdash;-メインサーバー2(CentOS7)(運用予定) x3 Dell T420 &mdash;-貸出用(未完成) x4     機種 CPU RAM DISK その他     TX1310 M1 Pentium G3240 6G 120G(SSD)&#43;160Gx2&#43;700Gx2    TX100 S3 謎 2G iscsi boot    CELSIUS W510 Xeon E3-1225 4G 64G(SSD)&#43;320Gx2 エンコード用 RX470   TX100 S3 Xeon E3-1280 6G 64G(SSD) AD管理   T320 E5-2450L 20G 120G(SSD)x2&#43;1TBx6 メインサーバー   T320 E5-2450L 2G  構築予定   T420 E5-2450L 64G 1TBx2     1 家にADを構築したいと思ったので構築しました">
+<meta name="description" content="サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話    Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS    UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+    Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。">
 
-<meta property="og:title" content="2019年度(8月)自宅サーバーの紹介 - のんびりと生きたい">
+<meta property="og:title" content="2019年度(8月)自宅その他機器の紹介 - のんびりと生きたい">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://yoneyan.dev/amp/post/home-server-introduction-in-2019-09/">
-<meta property="og:image" content="https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg">
+<meta property="og:url" content="https://yoneyan.dev/amp/homeserver/2019-09-etc/">
+<meta property="og:image" content="https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg">
 <meta property="og:site_name" content="のんびりと生きたい">
-<meta property="og:description" content="サーバーの紹介 ネットワーク機器は多すぎるので別記事にしています。
-また、サーバーやネットワークに属さない機器はこちらで紹介しています。
-   運用中  Fujitsu TX1310 M1 &mdash;Windows Server 2019 Standard (AD,RDP) Fujitsu TX100 S3 &mdash;-FiberChannel検証用 Fujitsu CELSIUS W510 &mdash;-録画サーバー(Win10 Pro) Fujitsu TX100 S3 &mdash;-鯖部屋クライアントPC(Win10 Pro) Dell T320 &mdash;-メインサーバー1(CentOS7) x2 Dell T320 &mdash;-メインサーバー2(CentOS7)(運用予定) x3 Dell T420 &mdash;-貸出用(未完成) x4     機種 CPU RAM DISK その他     TX1310 M1 Pentium G3240 6G 120G(SSD)&#43;160Gx2&#43;700Gx2    TX100 S3 謎 2G iscsi boot    CELSIUS W510 Xeon E3-1225 4G 64G(SSD)&#43;320Gx2 エンコード用 RX470   TX100 S3 Xeon E3-1280 6G 64G(SSD) AD管理   T320 E5-2450L 20G 120G(SSD)x2&#43;1TBx6 メインサーバー   T320 E5-2450L 2G  構築予定   T420 E5-2450L 64G 1TBx2     1 家にADを構築したいと思ったので構築しました">
+<meta property="og:description" content="サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話    Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS    UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+    Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="のんびりと生きたい">
-<meta name="twitter:url" content="https://yoneyan.dev/amp/post/home-server-introduction-in-2019-09/">
-<meta name="twitter:title" content="2019年度(8月)自宅サーバーの紹介 - のんびりと生きたい">
-<meta name="twitter:description" content="サーバーの紹介 ネットワーク機器は多すぎるので別記事にしています。
-また、サーバーやネットワークに属さない機器はこちらで紹介しています。
-   運用中  Fujitsu TX1310 M1 &mdash;Windows Server 2019 Standard (AD,RDP) Fujitsu TX100 S3 &mdash;-FiberChannel検証用 Fujitsu CELSIUS W510 &mdash;-録画サーバー(Win10 Pro) Fujitsu TX100 S3 &mdash;-鯖部屋クライアントPC(Win10 Pro) Dell T320 &mdash;-メインサーバー1(CentOS7) x2 Dell T320 &mdash;-メインサーバー2(CentOS7)(運用予定) x3 Dell T420 &mdash;-貸出用(未完成) x4     機種 CPU RAM DISK その他     TX1310 M1 Pentium G3240 6G 120G(SSD)&#43;160Gx2&#43;700Gx2    TX100 S3 謎 2G iscsi boot    CELSIUS W510 Xeon E3-1225 4G 64G(SSD)&#43;320Gx2 エンコード用 RX470   TX100 S3 Xeon E3-1280 6G 64G(SSD) AD管理   T320 E5-2450L 20G 120G(SSD)x2&#43;1TBx6 メインサーバー   T320 E5-2450L 2G  構築予定   T420 E5-2450L 64G 1TBx2     1 家にADを構築したいと思ったので構築しました">
-<meta name="twitter:image" content="https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg">
+<meta name="twitter:url" content="https://yoneyan.dev/amp/homeserver/2019-09-etc/">
+<meta name="twitter:title" content="2019年度(8月)自宅その他機器の紹介 - のんびりと生きたい">
+<meta name="twitter:description" content="サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話    Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS    UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+    Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。">
+<meta name="twitter:image" content="https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg">
 
 
 <script type="application/ld+json">
@@ -64,15 +94,15 @@
       "@type": "WebPage",
       "@id":"https:\/\/yoneyan.dev\/"
     },
-    "headline": "2019年度(8月)自宅サーバーの紹介-のんびりと生きたい",
+    "headline": "2019年度(8月)自宅その他機器の紹介-のんびりと生きたい",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/yoneyan.dev\/images\/server\/home\/2019\/09\/homeserver.jpg",
+      "url": "https:\/\/yoneyan.dev\/images\/server\/home\/2019\/09\/ipphone.jpg",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2019-09-13T00:49:00JST",
-    "dateModified": "2019-09-13T00:49:00JST",
+    "datePublished": "2019-09-13T02:17:49JST",
+    "dateModified": "2019-09-13T02:17:49JST",
     "author": {
       "@type": "Person",
       "name": "のんびりと生きたい"
@@ -343,6 +373,7 @@ article.sn .thumb {
   }
 }
 
+article.sn > .article-crumb,
 article.sn > .article-header,
 article.sn > .article-body,
 article.sn .article-footer {
@@ -354,6 +385,7 @@ article.sn > .article-body {
 }
 
 @media (max-width: 768px) {
+  article.sn > .article-crumb,
   article.sn > .article-header,
   article.sn > .article-body,
   article.sn .article-footer {
@@ -621,7 +653,7 @@ section.footer > header a {
 /* Parts:breadcrumb */
 .crumb ol {
   text-overflow: ellipsis;
-  color: #cfd8dc;
+  color: #90979a;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -641,7 +673,7 @@ section.footer > header a {
 }
 
 .crumb a {
-  color: #cfd8dc;
+  color: #000000;
 }
 
 .crumb i {
@@ -791,19 +823,19 @@ section.footer > header a {
 
 
 
-.thumb-f83a755fd9853572aad6c42556448636 {
+.thumb-b321bee5ec23290f401bfd429d918247 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg);
 }
 
 
 
-.thumb-2a85ed102c559293842df029813a72bc {
+.thumb-a22089782467ad0ea8e69c86618215c7 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/serverroom.jpg);
 }
 
 
 
-.thumb-07ba3fd37d86fe46e203f7f731958e4c {
+.thumb-19971e8392a11ceb1aa7842258d66991 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg);
 }
 
@@ -1259,7 +1291,7 @@ section.footer > header a {
 
 
 
-.thumb-3754dbb55b8f68d19048416c24928174 {
+.thumb-204b515bb46611ed78b48e609e708cfd {
   background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
@@ -1422,7 +1454,6 @@ section.footer > header a {
 
 
 
-
  body { font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif; } 
  .h-logo { font-family: Lobster, cursive; } 
 .l-container { max-width: 40rem; margin: 0 auto; }
@@ -1449,25 +1480,59 @@ section.footer > header a {
       <div class="l-container">
         
 <article class="sn">
+  <div class="article-crumb">
+    <nav class="crumb">
+      
+      <ol  class="nav navbar-nav">
+  
+  
+    
+  
+    
+  
+<li>
+  
+  <a href="https://yoneyan.dev/"><i class="fas fa-home" aria-hidden="true"></i>Home</a>
+  
+</li>
 
-  <div class="thumb thumb-07ba3fd37d86fe46e203f7f731958e4c"></div>
+  
+<li>
+  
+  <a href="https://yoneyan.dev/homeserver/">Homeservers</a>
+  
+</li>
+
+  
+<li class="active">
+  
+  <a href="https://yoneyan.dev/amp/homeserver/2019-09-etc/">2019年度(8月)自宅その他機器の紹介</a>
+  
+</li>
+
+</ol>
+
+
+    </nav>
+  </div>
+  <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
 
   <header class="article-header">
-    <h1 class="title">2019年度(8月)自宅サーバーの紹介</h1>
+    <h1 class="title">2019年度(8月)自宅その他機器の紹介</h1>
 
     <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-09-13T00:49:00JST">Sep 13, 2019</time></li>
+      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-09-13T02:17:49JST">Sep 13, 2019</time></li>
       
-      <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://yoneyan.dev/post/">POST</a></li>
+      <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://yoneyan.dev/homeserver/">HOMESERVER</a></li>
       
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&text=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&t=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&text=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&t=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
   </header>
@@ -1478,16 +1543,14 @@ section.footer > header a {
 <ul>
 <li>
 <ul>
-<li><a href="#サーバーの紹介">サーバーの紹介</a>
-<ul>
 <li>
 <ul>
-<li><a href="#運用中">運用中</a></li>
-<li><a href="#検証用">検証用</a></li>
-<li><a href="#お亡くなりになったサーバー達">お亡くなりになったサーバー達</a></li>
-<li><a href="#サーバーパーツ達">サーバーパーツ達</a></li>
+<li><a href="#ip電話">IP電話</a></li>
+<li><a href="#ups">UPS</a></li>
+<li><a href="#ltoドライブ">LTOドライブ</a></li>
+<li><a href="#スマートスピーカ">スマートスピーカ</a></li>
 </ul></li>
-</ul></li>
+<li><a href="#まとめ">まとめ</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1496,184 +1559,95 @@ section.footer > header a {
 
   <div class="article-body">
 
-<h2 id="サーバーの紹介">サーバーの紹介</h2>
+<p>サーバー機器は<a href="https://yoneyan.dev/home-server-introduction-in-2019-09/">こちら</a>で紹介しています。</p>
 
 <p>ネットワーク機器は多すぎるので<a href="https://yoneyan.dev/Introduction-of-home-network-equipment-in-2019-09/">別記事</a>にしています。</p>
 
-<p>また、サーバーやネットワークに属さない機器は<a href="https://yoneyan.dev/Introduction-of-home-and-other-equipment-in-2019-09/">こちら</a>で紹介しています。</p>
+<h3 id="ip電話">IP電話</h3>
 
 <figure>
-  <amp-img src="https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg" alt="" width=1024 height=768 layout="responsive"></amp-img>
+  <amp-img src="https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg" alt="" width=1024 height=768 layout="responsive"></amp-img>
   
 </figure>
 
-<h4 id="運用中">運用中</h4>
+<p>Cisco IP Phone 3兄弟</p>
 
 <ul>
-<li>Fujitsu TX1310 M1 &mdash;Windows Server 2019 Standard (AD,RDP)</li>
-<li>Fujitsu TX100 S3 &mdash;-FiberChannel検証用</li>
-<li>Fujitsu CELSIUS W510 &mdash;-録画サーバー(Win10 Pro)</li>
-<li>Fujitsu TX100 S3 &mdash;-鯖部屋クライアントPC(Win10 Pro)</li>
-<li>Dell T320 &mdash;-メインサーバー1(CentOS7) x2</li>
-<li>Dell T320 &mdash;-メインサーバー2(CentOS7)(運用予定) x3</li>
-<li>Dell T420 &mdash;-貸出用(未完成) x4</li>
+<li>Cisco IP Phone 7961 x2</li>
+<li>Cisco IP Phone 7962</li>
+<li>Cisco IP Phone 7941G x2</li>
+<li>Cisco IP Phone 6921</li>
+<li>メーカ＆型番忘れたIP電話 x3</li>
 </ul>
 
-<table>
-<thead>
-<tr>
-<th>機種</th>
-<th>CPU</th>
-<th>RAM</th>
-<th>DISK</th>
-<th>その他</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>TX1310 M1</td>
-<td>Pentium G3240</td>
-<td>6G</td>
-<td>120G(SSD)+160Gx2+700Gx2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>TX100 S3</td>
-<td>謎</td>
-<td>2G</td>
-<td>iscsi boot</td>
-<td></td>
-</tr>
-
-<tr>
-<td>CELSIUS W510</td>
-<td>Xeon E3-1225</td>
-<td>4G</td>
-<td>64G(SSD)+320Gx2</td>
-<td>エンコード用 RX470</td>
-</tr>
-
-<tr>
-<td>TX100 S3</td>
-<td>Xeon E3-1280</td>
-<td>6G</td>
-<td>64G(SSD)</td>
-<td>AD管理</td>
-</tr>
-
-<tr>
-<td>T320</td>
-<td>E5-2450L</td>
-<td>20G</td>
-<td>120G(SSD)x2+1TBx6</td>
-<td>メインサーバー</td>
-</tr>
-
-<tr>
-<td>T320</td>
-<td>E5-2450L</td>
-<td>2G</td>
-<td></td>
-<td>構築予定</td>
-</tr>
-
-<tr>
-<td>T420</td>
-<td>E5-2450L</td>
-<td>64G</td>
-<td>1TBx2</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-<p>1 家にADを構築したいと思ったので構築しました</p>
-
-<p>2 主にPXEブート、iscsiブート、KVMによる仮想化を提供しています。アクセスが多いということもあり、スイッチには10Gで接続しています。</p>
-
-<p>3 まだ、構築が終わっていないサーバーです。完成時にはメインサーバー1の補助的な役割を担ってもらう予定です。</p>
-
-<p>4 夢のひとつに友達にサーバーを貸すという目標があり、そのためのサーバーです。openstackを動かそうと企んでます。</p>
-
-<h4 id="検証用">検証用</h4>
-
-<ul>
-<li>Fujitsu RX300 S6</li>
-<li>HP DL360 G7</li>
-<li>HP Proliant DL320s</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>機種</th>
-<th>CPU</th>
-<th>RAM</th>
-<th>DISK</th>
-<th>その他</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>RX300 S6</td>
-<td>謎のXeon x2</td>
-<td>8G</td>
-<td>80G</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DL360 G7</td>
-<td>謎のXeon x2</td>
-<td>8G</td>
-<td>40G</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DL320s</td>
-<td>謎のXeon</td>
-<td>8G</td>
-<td>不明</td>
-<td>爆音</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="お亡くなりになったサーバー達">お亡くなりになったサーバー達</h4>
-
-<p>このサーバーはかなり処分に困っています。</p>
-
-<ul>
-<li>HP DL360 G7</li>
-<li>HP Storageworks(ここからは覚えていない)</li>
-</ul>
-
-<p>DL360 G7は活用するために机として機能しており、StorageWorksはラック型サーバーの台になっており今でも働いてくれています。</p>
-
-<h4 id="サーバーパーツ達">サーバーパーツ達</h4>
+<h3 id="ups">UPS</h3>
 
 <figure>
-  <amp-img src="https://yoneyan.dev/images/server/home/2019/09/serverpowersupply.jpg" alt="" width=720 height=960 layout="responsive"></amp-img>
+  <amp-img src="https://yoneyan.dev/images/server/home/2019/09/UPS.jpg" alt="" width=720 height=960 layout="responsive"></amp-img>
   
 </figure>
 
-<p>電源</p>
+<p>UPS3台（部屋移動前）</p>
 
-<p>時間がある方はネットワーク機器<a href="https://yoneyan.dev/Introduction-of-home-network-equipment/">こちら</a>で紹介しています。</p>
+<ul>
+<li>Smart-UPS 500 LCD x2</li>
+<li>Smart-UPS 500</li>
+</ul>
+
+<p>この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;</p>
+
+<h3 id="ltoドライブ">LTOドライブ</h3>
+
+<p><a href="https://www.youtube.com/watch?v=spdsu90GAss">https://www.youtube.com/watch?v=spdsu90GAss</a></p>
+
+<p>ETERNUS LT20(HPのOEM)</p>
+
+<ul>
+<li>ETERNUS LT20</li>
+</ul>
+
+<p>1UのLTOドライブです。最大でLTOカートリッジが8台入ります。</p>
+
+<p>LTOドライブの規格はLTO4です。</p>
+
+<p>Mini-SASケーブルがないので、バックアップできない状態です。</p>
+
+<p>そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。</p>
+
+<h3 id="スマートスピーカ">スマートスピーカ</h3>
+
+<p>スマートスピーカはどこの家にもあると思いますが、紹介します。</p>
+
+<figure>
+  <amp-img src="https://yoneyan.dev/images/server/home/2019/09/smartspeaker.jpg" alt="" width=680 height=510 layout="responsive"></amp-img>
+  
+</figure>
+
+<ul>
+<li>Google Home Mini x2</li>
+<li>Google Home （親分サイズ）</li>
+<li>Alexa Mini</li>
+<li>Alexa （親分サイズ）</li>
+<li>LINE Clova</li>
+</ul>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>自宅はこのようになっています。</p>
+
+<p>みなさんは、このような状況にならないようにご注意ください＼(^o^)／</p>
+
+<p>サーバーラックは持ってないけど、自宅ラックは最高だぜーー</p>
 </div>
 
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&text=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&t=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2famp%2fpost%2fhome-server-introduction-in-2019-09%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&text=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&t=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2famp%2fhomeserver%2f2019-09-etc%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
 
@@ -1683,9 +1657,9 @@ section.footer > header a {
           <ol>
             <li><a href="https://yoneyan.dev/"><i class="fas fa-home" aria-hidden="true"></i>TOP</a></li>
             
-            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://yoneyan.dev/post/" itemprop="url"><span itemprop="title">POST</span></a></li>
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://yoneyan.dev/homeserver/" itemprop="url"><span itemprop="title">HOMESERVER</span></a></li>
             
-            <li class="active">2019年度(8月)自宅サーバーの紹介</li>
+            <li class="active">2019年度(8月)自宅その他機器の紹介</li>
           </ol>
         </nav>
       </div>
@@ -1729,37 +1703,15 @@ section.footer > header a {
     <div class="mcol c6">
       <header>Previous Article</header>
       <article class="lism">
-  <a href="https://yoneyan.dev/amp/post/what-to-do-when-you-dont-link-up-with-gs724t/">
-    <div class="thumb thumb-e20d89de9d63f010b864a4aa4cc9f427"></div>
-
-    <div class="inner">
-      <div class="title">GS724Tでリンクアップしない時の対処法</div>
-
-      <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="15007-08-15T00:48:35JST">Aug 15, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-    </div>
-  </a>
-</article>
-
-    </div>
-    
-    
-    <div class="mcol c6">
-      <header>Next Article</header>
-      <article class="lism">
-  <a href="https://yoneyan.dev/amp/post/introduction-of-home-network-equipment-in-2019-09/">
-    <div class="thumb thumb-2a85ed102c559293842df029813a72bc"></div>
+  <a href="https://yoneyan.dev/amp/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1768,6 +1720,7 @@ section.footer > header a {
 </article>
 
     </div>
+    
     
   </div>
 </div>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yoneyan.dev/post/introduction-of-home-and-other-equipment-in-2019-09/</loc>
+    <loc>https://yoneyan.dev/homeserver/2019-09-etc/</loc>
     <lastmod>2019-09-13T02:17:49+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -24,7 +24,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/</loc>
+    <loc>https://yoneyan.dev/homeserver/</loc>
     <lastmod>2019-09-13T02:17:49+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/introduction-of-home-network-equipment-in-2019-09/</loc>
+    <loc>https://yoneyan.dev/homeserver/2019-08-net/</loc>
     <lastmod>2019-09-13T01:44:15+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -52,7 +52,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/home-server-introduction-in-2019-09/</loc>
+    <loc>https://yoneyan.dev/homeserver/2019-09-server/</loc>
     <lastmod>2019-09-13T00:49:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -60,6 +60,13 @@
   
   <url>
     <loc>https://yoneyan.dev/post/what-to-do-when-you-dont-link-up-with-gs724t/</loc>
+    <lastmod>2019-08-15T00:48:35+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoneyan.dev/post/</loc>
     <lastmod>2019-08-15T00:48:35+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -941,7 +948,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/introduction-of-homeserver-in-fy2017/</loc>
+    <loc>https://yoneyan.dev/homeserver/2017-server/</loc>
     <lastmod>2017-09-10T19:22:05+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

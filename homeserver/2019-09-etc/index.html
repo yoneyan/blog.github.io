@@ -11,91 +11,70 @@
 <link rel="apple-touch-icon" href="https://yoneyan.dev/images/logo.png">
 
 
-<link rel="amphtml" type="text/html" href="https://yoneyan.dev/amp/post/introduction-of-homeserver-in-fy2017/" title="のんびりと生きたい">
+<link rel="amphtml" type="text/html" href="https://yoneyan.dev/amp/homeserver/2019-09-etc/" title="のんびりと生きたい">
 
 
 
-    <link rel="canonical" href="https://yoneyan.dev/post/introduction-of-homeserver-in-fy2017/">
+    <link rel="canonical" href="https://yoneyan.dev/homeserver/2019-09-etc/">
     
     <link href="https://fonts.googleapis.com/css?family=Lobster%7cLato:400,700" rel="stylesheet">
     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title>2017年度 自宅サーバーの紹介 - のんびりと生きたい</title>
+    <title>2019年度(8月)自宅その他機器の紹介 - のんびりと生きたい</title>
     
-<meta name="description" content="このページでは自分の所有又は契約しているサーバーの紹介をやっていきたいと思います。
-2017/09/10稼働中のサーバーのみ執筆
-所有しているサーバー 稼働中  TX100S1（CentOS7）主にネットワークを管理 TX100S1（windows10）主にファイルを管理 Raspberry Pi 2（raspbian）主にロガー  普段全く使わないサーバー  機種不明(corei3の初期)　主にゲーム用サーバー  検証用サーバー（こっちも全く使わない）  Express5800/110Rh-1 Express5800/110Rh-1  契約しているサーバー  Time4Server（CentOS7） レンタルサーバー  TX100 S1 (CentOS 7)   OS：CentOS7
-スペック
-CPU:Core2Duo E7500
-RAM:4G
-SSD(OS用) 64G
-HDD(データ用)160G、80G、80G
-使用用途:DHCPサーバー、VPNサーバー、WEBサーバー、PXEサーバー、ファイルサーバー、NTPサーバー
-このサーバーでは主に宅内のネットワークを担っているサーバーになっています。また、DHCPサーバーを使って宅内で使っている端末にIPアドレスを割り振りをしています。softetherVPNを使って外部から宅内ネットワークに接続できるので一応、外で家にファイルを忘れたという時でも対応できます。（たぶん）
-TX100 S1 (Windows10 Pro)   OS:Windows10 Pro 64bit
-スペック
-CPU:Core2Quad Q8400
-RAM:8G
-SSD(OS用) 32G
-HDD(データ用)750G、750G、320G、160G
-使用用途:DLNAサーバー、録画サーバー、TV配信サーバー（もちろん、ローカルのみ）、ファイルサーバー、バックアップサーバー、監視カメラ、緊急地震速報
-このサーバーで主に、ファイルサーバーを担っています。
-緊急地震速報はSignalNow Xを使って、地震情報を受け取ると、スピーカーから大音量でアラートをなるようにしています。PS3MediaServerを使って、テレビとかに配信できるようにしています。
-上記のサーバーのコンソール部       まあ、こんな感じです">
+<meta name="description" content="サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話   Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS   UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+   Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。">
 
-<meta property="og:title" content="2017年度 自宅サーバーの紹介 - のんびりと生きたい">
+<meta property="og:title" content="2019年度(8月)自宅その他機器の紹介 - のんびりと生きたい">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://yoneyan.dev/post/introduction-of-homeserver-in-fy2017/">
-<meta property="og:image" content="https://yoneyan.dev/images/free_images/server_1.jpg">
+<meta property="og:url" content="https://yoneyan.dev/homeserver/2019-09-etc/">
+<meta property="og:image" content="https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg">
 <meta property="og:site_name" content="のんびりと生きたい">
-<meta property="og:description" content="このページでは自分の所有又は契約しているサーバーの紹介をやっていきたいと思います。
-2017/09/10稼働中のサーバーのみ執筆
-所有しているサーバー 稼働中  TX100S1（CentOS7）主にネットワークを管理 TX100S1（windows10）主にファイルを管理 Raspberry Pi 2（raspbian）主にロガー  普段全く使わないサーバー  機種不明(corei3の初期)　主にゲーム用サーバー  検証用サーバー（こっちも全く使わない）  Express5800/110Rh-1 Express5800/110Rh-1  契約しているサーバー  Time4Server（CentOS7） レンタルサーバー  TX100 S1 (CentOS 7)   OS：CentOS7
-スペック
-CPU:Core2Duo E7500
-RAM:4G
-SSD(OS用) 64G
-HDD(データ用)160G、80G、80G
-使用用途:DHCPサーバー、VPNサーバー、WEBサーバー、PXEサーバー、ファイルサーバー、NTPサーバー
-このサーバーでは主に宅内のネットワークを担っているサーバーになっています。また、DHCPサーバーを使って宅内で使っている端末にIPアドレスを割り振りをしています。softetherVPNを使って外部から宅内ネットワークに接続できるので一応、外で家にファイルを忘れたという時でも対応できます。（たぶん）
-TX100 S1 (Windows10 Pro)   OS:Windows10 Pro 64bit
-スペック
-CPU:Core2Quad Q8400
-RAM:8G
-SSD(OS用) 32G
-HDD(データ用)750G、750G、320G、160G
-使用用途:DLNAサーバー、録画サーバー、TV配信サーバー（もちろん、ローカルのみ）、ファイルサーバー、バックアップサーバー、監視カメラ、緊急地震速報
-このサーバーで主に、ファイルサーバーを担っています。
-緊急地震速報はSignalNow Xを使って、地震情報を受け取ると、スピーカーから大音量でアラートをなるようにしています。PS3MediaServerを使って、テレビとかに配信できるようにしています。
-上記のサーバーのコンソール部       まあ、こんな感じです">
+<meta property="og:description" content="サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話   Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS   UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+   Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="のんびりと生きたい">
-<meta name="twitter:url" content="https://yoneyan.dev/post/introduction-of-homeserver-in-fy2017/">
-<meta name="twitter:title" content="2017年度 自宅サーバーの紹介 - のんびりと生きたい">
-<meta name="twitter:description" content="このページでは自分の所有又は契約しているサーバーの紹介をやっていきたいと思います。
-2017/09/10稼働中のサーバーのみ執筆
-所有しているサーバー 稼働中  TX100S1（CentOS7）主にネットワークを管理 TX100S1（windows10）主にファイルを管理 Raspberry Pi 2（raspbian）主にロガー  普段全く使わないサーバー  機種不明(corei3の初期)　主にゲーム用サーバー  検証用サーバー（こっちも全く使わない）  Express5800/110Rh-1 Express5800/110Rh-1  契約しているサーバー  Time4Server（CentOS7） レンタルサーバー  TX100 S1 (CentOS 7)   OS：CentOS7
-スペック
-CPU:Core2Duo E7500
-RAM:4G
-SSD(OS用) 64G
-HDD(データ用)160G、80G、80G
-使用用途:DHCPサーバー、VPNサーバー、WEBサーバー、PXEサーバー、ファイルサーバー、NTPサーバー
-このサーバーでは主に宅内のネットワークを担っているサーバーになっています。また、DHCPサーバーを使って宅内で使っている端末にIPアドレスを割り振りをしています。softetherVPNを使って外部から宅内ネットワークに接続できるので一応、外で家にファイルを忘れたという時でも対応できます。（たぶん）
-TX100 S1 (Windows10 Pro)   OS:Windows10 Pro 64bit
-スペック
-CPU:Core2Quad Q8400
-RAM:8G
-SSD(OS用) 32G
-HDD(データ用)750G、750G、320G、160G
-使用用途:DLNAサーバー、録画サーバー、TV配信サーバー（もちろん、ローカルのみ）、ファイルサーバー、バックアップサーバー、監視カメラ、緊急地震速報
-このサーバーで主に、ファイルサーバーを担っています。
-緊急地震速報はSignalNow Xを使って、地震情報を受け取ると、スピーカーから大音量でアラートをなるようにしています。PS3MediaServerを使って、テレビとかに配信できるようにしています。
-上記のサーバーのコンソール部       まあ、こんな感じです">
-<meta name="twitter:image" content="https://yoneyan.dev/images/free_images/server_1.jpg">
+<meta name="twitter:url" content="https://yoneyan.dev/homeserver/2019-09-etc/">
+<meta name="twitter:title" content="2019年度(8月)自宅その他機器の紹介 - のんびりと生きたい">
+<meta name="twitter:description" content="サーバー機器はこちらで紹介しています。
+ネットワーク機器は多すぎるので別記事にしています。
+IP電話   Cisco IP Phone 3兄弟
+ Cisco IP Phone 7961 x2 Cisco IP Phone 7962 Cisco IP Phone 7941G x2 Cisco IP Phone 6921 メーカ＆型番忘れたIP電話 x3  UPS   UPS3台（部屋移動前）
+ Smart-UPS 500 LCD x2 Smart-UPS 500  この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;
+LTOドライブ https://www.youtube.com/watch?v=spdsu90GAss
+ETERNUS LT20(HPのOEM)
+ ETERNUS LT20  1UのLTOドライブです。最大でLTOカートリッジが8台入ります。
+LTOドライブの規格はLTO4です。
+Mini-SASケーブルがないので、バックアップできない状態です。
+そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。
+スマートスピーカ スマートスピーカはどこの家にもあると思いますが、紹介します。
+   Google Home Mini x2 Google Home （親分サイズ） Alexa Mini Alexa （親分サイズ） LINE Clova  まとめ 自宅はこのようになっています。">
+<meta name="twitter:image" content="https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg">
 
 
 <script type="application/ld+json">
@@ -106,15 +85,15 @@ HDD(データ用)750G、750G、320G、160G
       "@type": "WebPage",
       "@id":"https:\/\/yoneyan.dev\/"
     },
-    "headline": "2017年度 自宅サーバーの紹介-のんびりと生きたい",
+    "headline": "2019年度(8月)自宅その他機器の紹介-のんびりと生きたい",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/yoneyan.dev\/images\/free_images\/server_1.jpg",
+      "url": "https:\/\/yoneyan.dev\/images\/server\/home\/2019\/09\/ipphone.jpg",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2017-09-10T19:22:05JST",
-    "dateModified": "2017-09-10T19:22:05JST",
+    "datePublished": "2019-09-13T02:17:49JST",
+    "dateModified": "2019-09-13T02:17:49JST",
     "author": {
       "@type": "Person",
       "name": "のんびりと生きたい"
@@ -385,6 +364,7 @@ article.sn .thumb {
   }
 }
 
+article.sn > .article-crumb,
 article.sn > .article-header,
 article.sn > .article-body,
 article.sn .article-footer {
@@ -396,6 +376,7 @@ article.sn > .article-body {
 }
 
 @media (max-width: 768px) {
+  article.sn > .article-crumb,
   article.sn > .article-header,
   article.sn > .article-body,
   article.sn .article-footer {
@@ -663,7 +644,7 @@ section.footer > header a {
 /* Parts:breadcrumb */
 .crumb ol {
   text-overflow: ellipsis;
-  color: #cfd8dc;
+  color: #90979a;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -683,7 +664,7 @@ section.footer > header a {
 }
 
 .crumb a {
-  color: #cfd8dc;
+  color: #000000;
 }
 
 .crumb i {
@@ -833,19 +814,19 @@ section.footer > header a {
 
 
 
-.thumb-f83a755fd9853572aad6c42556448636 {
+.thumb-b321bee5ec23290f401bfd429d918247 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg);
 }
 
 
 
-.thumb-2a85ed102c559293842df029813a72bc {
+.thumb-a22089782467ad0ea8e69c86618215c7 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/serverroom.jpg);
 }
 
 
 
-.thumb-07ba3fd37d86fe46e203f7f731958e4c {
+.thumb-19971e8392a11ceb1aa7842258d66991 {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg);
 }
 
@@ -1301,7 +1282,7 @@ section.footer > header a {
 
 
 
-.thumb-3754dbb55b8f68d19048416c24928174 {
+.thumb-204b515bb46611ed78b48e609e708cfd {
   background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
@@ -1464,7 +1445,6 @@ section.footer > header a {
 
 
 
-
  body { font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif; } 
  .h-logo { font-family: Lobster, cursive; } 
     </style>
@@ -1499,25 +1479,59 @@ ga('send', 'pageview');
   <div class="mcol c8">
 
     <article class="sn">
+  <div class="article-crumb">
+    <nav class="crumb">
+      
+      <ol  class="nav navbar-nav">
+  
+  
+    
+  
+    
+  
+<li>
+  
+  <a href="https://yoneyan.dev/"><i class="fas fa-home" aria-hidden="true"></i>Home</a>
+  
+</li>
 
-  <div class="thumb thumb-3754dbb55b8f68d19048416c24928174"></div>
+  
+<li>
+  
+  <a href="https://yoneyan.dev/homeserver/">Homeservers</a>
+  
+</li>
+
+  
+<li class="active">
+  
+  <a href="https://yoneyan.dev/homeserver/2019-09-etc/">2019年度(8月)自宅その他機器の紹介</a>
+  
+</li>
+
+</ol>
+
+
+    </nav>
+  </div>
+  <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
 
   <header class="article-header">
-    <h1 class="title">2017年度 自宅サーバーの紹介</h1>
+    <h1 class="title">2019年度(8月)自宅その他機器の紹介</h1>
 
     <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-09-10T19:22:05JST">Sep 10, 2017</time></li>
+      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-09-13T02:17:49JST">Sep 13, 2019</time></li>
       
-      <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://yoneyan.dev/post/">POST</a></li>
+      <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://yoneyan.dev/homeserver/">HOMESERVER</a></li>
       
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&title=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&text=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&t=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&title=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&text=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&t=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
   </header>
@@ -1530,22 +1544,13 @@ ga('send', 'pageview');
 <ul>
 <li>
 <ul>
-<li><a href="#所有しているサーバー">所有しているサーバー</a>
-<ul>
-<li><a href="#稼働中">　稼働中</a></li>
-<li><a href="#普段全く使わないサーバー">普段全く使わないサーバー</a></li>
-<li><a href="#検証用サーバー-こっちも全く使わない">検証用サーバー（こっちも全く使わない）</a></li>
-<li><a href="#契約しているサーバー">契約しているサーバー</a></li>
+<li><a href="#ip電話">IP電話</a></li>
+<li><a href="#ups">UPS</a></li>
+<li><a href="#ltoドライブ">LTOドライブ</a></li>
+<li><a href="#スマートスピーカ">スマートスピーカ</a></li>
 </ul></li>
+<li><a href="#まとめ">まとめ</a></li>
 </ul></li>
-<li><a href="#tx100-s1-centos-7">TX100 S1 (CentOS 7)</a></li>
-<li><a href="#tx100-s1-windows10-pro">TX100 S1 (Windows10 Pro)</a>
-<ul>
-<li><a href="#上記のサーバーのコンソール部">上記のサーバーのコンソール部</a></li>
-</ul></li>
-<li><a href="#raspberry-pi-2">Raspberry Pi 2</a></li>
-</ul></li>
-<li><a href="#tx100-s1で-の問題点">TX100 S1で の問題点</a></li>
 </ul>
 </nav>
   </div>
@@ -1553,156 +1558,95 @@ ga('send', 'pageview');
 
   <div class="article-body">
 
-<p>このページでは自分の所有又は契約しているサーバーの紹介をやっていきたいと思います。</p>
+<p>サーバー機器は<a href="https://yoneyan.dev/home-server-introduction-in-2019-09/">こちら</a>で紹介しています。</p>
 
-<p>2017/09/10稼働中のサーバーのみ執筆</p>
+<p>ネットワーク機器は多すぎるので<a href="https://yoneyan.dev/Introduction-of-home-network-equipment-in-2019-09/">別記事</a>にしています。</p>
 
-<h3 id="所有しているサーバー">所有しているサーバー</h3>
+<h3 id="ip電話">IP電話</h3>
 
-<h4 id="稼働中">　稼働中</h4>
+<figure>
+  <img src="https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg" alt="" width="1024" height="768">
+  
+</figure>
+
+<p>Cisco IP Phone 3兄弟</p>
 
 <ul>
-<li>TX100S1（CentOS7）主にネットワークを管理</li>
-<li>TX100S1（windows10）主にファイルを管理</li>
-<li>Raspberry Pi 2（raspbian）主にロガー</li>
+<li>Cisco IP Phone 7961 x2</li>
+<li>Cisco IP Phone 7962</li>
+<li>Cisco IP Phone 7941G x2</li>
+<li>Cisco IP Phone 6921</li>
+<li>メーカ＆型番忘れたIP電話 x3</li>
 </ul>
 
-<h4 id="普段全く使わないサーバー">普段全く使わないサーバー</h4>
+<h3 id="ups">UPS</h3>
+
+<figure>
+  <img src="https://yoneyan.dev/images/server/home/2019/09/UPS.jpg" alt="" width="720" height="960">
+  
+</figure>
+
+<p>UPS3台（部屋移動前）</p>
 
 <ul>
-<li>機種不明(corei3の初期)　主にゲーム用サーバー</li>
+<li>Smart-UPS 500 LCD x2</li>
+<li>Smart-UPS 500</li>
 </ul>
 
-<h4 id="検証用サーバー-こっちも全く使わない">検証用サーバー（こっちも全く使わない）</h4>
+<p>この3台のUPSの内2台がバッテリーが死んでしまっているので停電すると終わります^^;</p>
+
+<h3 id="ltoドライブ">LTOドライブ</h3>
+
+<p><a href="https://www.youtube.com/watch?v=spdsu90GAss">https://www.youtube.com/watch?v=spdsu90GAss</a></p>
+
+<p>ETERNUS LT20(HPのOEM)</p>
 
 <ul>
-<li>Express5800/110Rh-1</li>
-<li>Express5800/110Rh-1</li>
+<li>ETERNUS LT20</li>
 </ul>
 
-<h4 id="契約しているサーバー">契約しているサーバー</h4>
+<p>1UのLTOドライブです。最大でLTOカートリッジが8台入ります。</p>
+
+<p>LTOドライブの規格はLTO4です。</p>
+
+<p>Mini-SASケーブルがないので、バックアップできない状態です。</p>
+
+<p>そのケーブルは中古でもそこそこするので、有り余っている方で譲っていただける場合はメールまでお願いします。</p>
+
+<h3 id="スマートスピーカ">スマートスピーカ</h3>
+
+<p>スマートスピーカはどこの家にもあると思いますが、紹介します。</p>
+
+<figure>
+  <img src="https://yoneyan.dev/images/server/home/2019/09/smartspeaker.jpg" alt="" width="680" height="510">
+  
+</figure>
 
 <ul>
-<li>Time4Server（CentOS7）</li>
-<li>レンタルサーバー</li>
+<li>Google Home Mini x2</li>
+<li>Google Home （親分サイズ）</li>
+<li>Alexa Mini</li>
+<li>Alexa （親分サイズ）</li>
+<li>LINE Clova</li>
 </ul>
 
-<h2 id="tx100-s1-centos-7">TX100 S1 (CentOS 7)</h2>
+<h2 id="まとめ">まとめ</h2>
 
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/left.jpg" alt="" width="768" height="1024">
-  
-</figure>
+<p>自宅はこのようになっています。</p>
 
-<p>OS：CentOS7</p>
+<p>みなさんは、このような状況にならないようにご注意ください＼(^o^)／</p>
 
-<p><strong>スペック</strong></p>
-
-<p>CPU:Core2Duo E7500</p>
-
-<p>RAM:4G</p>
-
-<p>SSD(OS用) 64G</p>
-
-<p>HDD(データ用)160G、80G、80G</p>
-
-<p>使用用途:DHCPサーバー、VPNサーバー、WEBサーバー、PXEサーバー、ファイルサーバー、NTPサーバー</p>
-
-<p>このサーバーでは主に宅内のネットワークを担っているサーバーになっています。また、DHCPサーバーを使って宅内で使っている端末にIPアドレスを割り振りをしています。softetherVPNを使って外部から宅内ネットワークに接続できるので一応、外で家にファイルを忘れたという時でも対応できます。（たぶん）</p>
-
-<h2 id="tx100-s1-windows10-pro">TX100 S1 (Windows10 Pro)</h2>
-
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/right.jpg" alt="" width="768" height="1024">
-  
-</figure>
-
-<p>OS:Windows10 Pro 64bit</p>
-
-<p><strong>スペック</strong></p>
-
-<p>CPU:Core2Quad Q8400</p>
-
-<p>RAM:8G</p>
-
-<p>SSD(OS用) 32G</p>
-
-<p>HDD(データ用)750G、750G、320G、160G</p>
-
-<p>使用用途:DLNAサーバー、録画サーバー、TV配信サーバー（もちろん、ローカルのみ）、ファイルサーバー、バックアップサーバー、監視カメラ、緊急地震速報</p>
-
-<p>このサーバーで主に、ファイルサーバーを担っています。</p>
-
-<p>緊急地震速報はSignalNow Xを使って、地震情報を受け取ると、スピーカーから大音量でアラートをなるようにしています。PS3MediaServerを使って、テレビとかに配信できるようにしています。</p>
-
-<h3 id="上記のサーバーのコンソール部">上記のサーバーのコンソール部</h3>
-
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/console1.jpg" alt="" width="768" height="576">
-  
-</figure>
-
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/console2.jpg" alt="" width="768" height="576">
-  
-</figure>
-
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/console3.jpg" alt="" width="768" height="576">
-  
-</figure>
-
-<p>まあ、こんな感じです</p>
-
-<p>キーボードとマウスとモニターという至って普通の構成です。</p>
-
-<p>マウスに値段が書かれていますが、気にしないでね</p>
-
-<p>上記の二つのサーバーは家のネットワークをすべて担っているので&hellip;KVMスイッチを使って二つのサーバーを切り替えれるようにしています。</p>
-
-<h2 id="raspberry-pi-2">Raspberry Pi 2</h2>
-
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/raspi.jpg" alt="" width="768" height="576">
-  
-</figure>
-
-<p>OS:raspbian</p>
-
-<p>パソコン部屋の遠隔リモコン操作と温度と室温をロガーできるようにしています。</p>
-
-<figure>
-  <img src="https://yoneyan.dev/images/server/home/2017/09/web.png" alt="" width="521" height="663">
-  
-</figure>
-
-<p>こんな感じにやってます。</p>
-
-<p>あと、SDブートの場合だと、耐久性に問題があると思い、centos7サーバーからNFSブートしています。</p>
-
-<h1 id="tx100-s1で-の問題点">TX100 S1で の問題点</h1>
-
-<p>今のところ、問題点として消費電力という問題があります。</p>
-
-<p>ワットチェッカーで確認したところCentOS7の方は50Wでwindows10Proの方は100Wも食ってるので、そろそろ家計に影響が出始めそうなので、Corei5又はXeonあたりの最新のCPUが搭載されているサーバーがほしいなあと思っていますｗ(あまり電気代が変わらないかもしれませんが、最近のCPUは消費電力が低いので期待してます。)</p>
-
-<p>1台のサーバーを使って仮想で動かすのが一番集約できて管理も手っ取り早くなるのでいいのかなと考えています。</p>
-
-<p>なんせ、TX100S1はCPUソケットがLGA775でメモリがDDR2しか刺さらないので8G上限なので&hellip;</p>
-
-<p>下手にサーバーを止めるとめんどいのでそのままほったらかしにしています</p>
-
-<p>一番安くすむ方法はメインPCがCorei7 4790kのインテル入ってるので、それに統合しろと話なんですが、サーバーはサーバーは独立しておきたいというところはあるので&hellip;</p>
+<p>サーバーラックは持ってないけど、自宅ラックは最高だぜーー</p>
 </div>
 
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&title=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&text=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&t=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f&title=2017%e5%b9%b4%e5%ba%a6%20%e8%87%aa%e5%ae%85%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2fpost%2fintroduction-of-homeserver-in-fy2017%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&text=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&t=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f&title=2019%e5%b9%b4%e5%ba%a6%288%e6%9c%88%29%e8%87%aa%e5%ae%85%e3%81%9d%e3%81%ae%e4%bb%96%e6%a9%9f%e5%99%a8%e3%81%ae%e7%b4%b9%e4%bb%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2fhomeserver%2f2019-09-etc%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
 
@@ -1712,9 +1656,9 @@ ga('send', 'pageview');
           <ol>
             <li><a href="https://yoneyan.dev/"><i class="fas fa-home" aria-hidden="true"></i>TOP</a></li>
             
-            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://yoneyan.dev/post/" itemprop="url"><span itemprop="title">POST</span></a></li>
+            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://yoneyan.dev/homeserver/" itemprop="url"><span itemprop="title">HOMESERVER</span></a></li>
             
-            <li class="active">2017年度 自宅サーバーの紹介</li>
+            <li class="active">2019年度(8月)自宅その他機器の紹介</li>
           </ol>
         </nav>
       </div>
@@ -1761,15 +1705,15 @@ ga('send', 'pageview');
         <div class="mcol c6">
           <header>Previous Article</header>
           <article class="lism">
-  <a href="https://yoneyan.dev/post/steam-recommended-girl-game/">
-    <div class="thumb thumb-3552cf81461ead0993aee7921d4ad6c0"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
 
     <div class="inner">
-      <div class="title">（英語の勉強にもなる）Steamおすすめ美少女ゲーム</div>
+      <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="12007-07-12T00:18:19JST">Jul 12, 2017</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1779,27 +1723,6 @@ ga('send', 'pageview');
 
         </div>
         
-        
-        <div class="mcol c6">
-          <header>Next Article</header>
-          <article class="lism">
-  <a href="https://yoneyan.dev/post/tunebrowser-is-the-best-music-playback-software/">
-    <div class="thumb thumb-a125ea2dc298bb5406cd62bb03ef7927"></div>
-
-    <div class="inner">
-      <div class="title">TuneBrowserが最高の音楽再生ソフトである件</div>
-
-      <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="1007-10-01T09:00:41JST">Oct 1, 2017</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-      </ul>
-
-    </div>
-  </a>
-</article>
-
-        </div>
         
       </div>
     </div>
@@ -1855,15 +1778,15 @@ ga('send', 'pageview');
     <div class="articles sm">
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-and-other-equipment-in-2019-09/">
-    <div class="thumb thumb-f83a755fd9853572aad6c42556448636"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-etc/">
+    <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅その他機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T02:17:49JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1873,15 +1796,15 @@ ga('send', 'pageview');
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/introduction-of-home-network-equipment-in-2019-09/">
-    <div class="thumb thumb-2a85ed102c559293842df029813a72bc"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
@@ -1891,15 +1814,15 @@ ga('send', 'pageview');
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/post/home-server-introduction-in-2019-09/">
-    <div class="thumb thumb-07ba3fd37d86fe46e203f7f731958e4c"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-09-server/">
+    <div class="thumb thumb-19971e8392a11ceb1aa7842258d66991"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅サーバーの紹介</div>
 
       <ul class="facts sm">
         <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T00:49:00JST">Sep 13, 2019</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
         
       </ul>
 
