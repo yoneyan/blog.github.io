@@ -54,8 +54,7 @@ set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp
       <pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate>
       
       <guid>https://yoneyan.dev/post/set-pppoe-with-edgerouter/</guid>
-      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
-みんな大好きEdgerouterでPPPoEの設定をしていきます。
+      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。
 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。（間違っている可能性があるので、その際は指摘の方よろしくお願いいたします。）
 環境 プロバイダ:eo光
 サービス名:1ギガコース
@@ -80,7 +79,7 @@ WAN:eth0
 LAN:eth1
 とします。
 また、上の注意の点でも書きましたが、ファイアウォールを設定していないので、ご注意ください。
-使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface &#39;pppoe0&#39;  ↑これをやっていないせいでかなり時間をとりました。</description>
+使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface &#39;pppoe0&#39;  これをやっていないせいでかなり時間をとりました。</description>
     </item>
     
     <item>
@@ -90,11 +89,7 @@ LAN:eth1
       
       <guid>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
       <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
-
-EdgeRouter X, 5-port
-Amazon
-楽天市場
-それでは構築していきます。
+   Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
 LACPの設定を行う まず、最初にLACPの設定を行っていきます。
 1．bondインタフェースを作成する set interfaces bonding bond0 description &amp;quot;LAG Interface&amp;quot;  descriptionはbond0に対する名前なので各自で変更してください。
@@ -102,8 +97,7 @@ LACPの設定を行う まず、最初にLACPの設定を行っていきます�
 LACPではhash-policyというものがあるので、ここではlayer2としておきます。
 タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
 今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
-set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。
-2．タグVLANの設定をする set interfaces bonding bond0 vif 100 address 192.</description>
+set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。</description>
     </item>
     
   </channel>

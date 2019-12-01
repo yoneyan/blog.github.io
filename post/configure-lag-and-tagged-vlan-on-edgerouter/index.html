@@ -24,11 +24,7 @@
     <title>EdgeRouterでLAGとタグVLANを設定する - のんびりと生きたい</title>
     
 <meta name="description" content="EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
-
-EdgeRouter X, 5-port
-Amazon
-楽天市場
-それでは構築していきます。
+  Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
 LACPの設定を行う まず、最初にLACPの設定を行っていきます。
 1．bondインタフェースを作成する set interfaces bonding bond0 description &quot;LAG Interface&quot;  descriptionはbond0に対する名前なので各自で変更してください。
@@ -36,8 +32,7 @@ LACPの設定を行う まず、最初にLACPの設定を行っていきます�
 LACPではhash-policyというものがあるので、ここではlayer2としておきます。
 タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
 今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
-set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。
-2．タグVLANの設定をする set interfaces bonding bond0 vif 100 address 192.">
+set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。">
 
 <meta property="og:title" content="EdgeRouterでLAGとタグVLANを設定する - のんびりと生きたい">
 <meta property="og:type" content="article">
@@ -45,11 +40,7 @@ set interfaces ethernet eth3 vif 100  このようにしてあげることで使
 <meta property="og:image" content="https://yoneyan.dev/images/free_images/router_1.jpg">
 <meta property="og:site_name" content="のんびりと生きたい">
 <meta property="og:description" content="EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
-
-EdgeRouter X, 5-port
-Amazon
-楽天市場
-それでは構築していきます。
+  Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
 LACPの設定を行う まず、最初にLACPの設定を行っていきます。
 1．bondインタフェースを作成する set interfaces bonding bond0 description &quot;LAG Interface&quot;  descriptionはbond0に対する名前なので各自で変更してください。
@@ -57,8 +48,7 @@ LACPの設定を行う まず、最初にLACPの設定を行っていきます�
 LACPではhash-policyというものがあるので、ここではlayer2としておきます。
 タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
 今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
-set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。
-2．タグVLANの設定をする set interfaces bonding bond0 vif 100 address 192.">
+set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -66,11 +56,7 @@ set interfaces ethernet eth3 vif 100  このようにしてあげることで使
 <meta name="twitter:url" content="https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/">
 <meta name="twitter:title" content="EdgeRouterでLAGとタグVLANを設定する - のんびりと生きたい">
 <meta name="twitter:description" content="EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
-
-EdgeRouter X, 5-port
-Amazon
-楽天市場
-それでは構築していきます。
+  Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
 LACPの設定を行う まず、最初にLACPの設定を行っていきます。
 1．bondインタフェースを作成する set interfaces bonding bond0 description &quot;LAG Interface&quot;  descriptionはbond0に対する名前なので各自で変更してください。
@@ -78,8 +64,7 @@ LACPの設定を行う まず、最初にLACPの設定を行っていきます�
 LACPではhash-policyというものがあるので、ここではlayer2としておきます。
 タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
 今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
-set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。
-2．タグVLANの設定をする set interfaces bonding bond0 vif 100 address 192.">
+set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。">
 <meta name="twitter:image" content="https://yoneyan.dev/images/free_images/router_1.jpg">
 
 
@@ -114,7 +99,7 @@ set interfaces ethernet eth3 vif 100  このようにしてあげることで使
         "height": 60
       }
     },
-    "description": "EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。\n\nEdgeRouter X, 5-port\nAmazon\n楽天市場\nそれでは構築していきます。\n今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。\nLACPの設定を行う まず、最初にLACPの設定を行っていきます。\n1．bondインタフェースを作成する set interfaces bonding bond0 description \x26quot;LAG Interface\x26quot;  descriptionはbond0に対する名前なので各自で変更してください。\n2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。\nLACPではhash-policyというものがあるので、ここではlayer2としておきます。\nタグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。\n今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、\nset interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。\n2．タグVLANの設定をする set interfaces bonding bond0 vif 100 address 192."
+    "description": "EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。\n  Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。\n今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。\nLACPの設定を行う まず、最初にLACPの設定を行っていきます。\n1．bondインタフェースを作成する set interfaces bonding bond0 description \x26quot;LAG Interface\x26quot;  descriptionはbond0に対する名前なので各自で変更してください。\n2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。\nLACPではhash-policyというものがあるので、ここではlayer2としておきます。\nタグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。\n今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、\nset interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。"
   }
 </script>
 
@@ -1167,14 +1152,14 @@ section.footer > header a {
 
 
 
-.thumb-517b49f7b5f98589a74d73a69ae0d0a1 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-b31b89bf504e8fb023f93cad8b1bfacd {
+  background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
 
 
-.thumb-93b08f3e655d2f75a7dcbfee7d2854d2 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-6b4a9744aaabce79a2ba9d11b4a38dfc {
+  background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
 
@@ -1191,8 +1176,8 @@ section.footer > header a {
 
 
 
-.thumb-6ec9847ecfb94e990c39d0fb44f19ddd {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-e44079f1fc20e9aaf48df394eb047f6a {
+  background-image: url(https://yoneyan.dev/images/free_images/network_1.jpg);
 }
 
 
@@ -1209,20 +1194,20 @@ section.footer > header a {
 
 
 
-.thumb-221ba4e62da2fe31b813f611022ee4cd {
+.thumb-985992bab2a6c1383f5d5d2fd02f95e4 {
+  background-image: url(https://yoneyan.dev/images/free_images/game_1.jpg);
+}
+
+
+
+.thumb-7b46239b386cceb8891c2d0a96c4d291 {
   background-image: url(https://yoneyan.dev/images/free_images/.jpg);
 }
 
 
 
-.thumb-8d2d1d0360723622a7798727ffc650b7 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
-}
-
-
-
-.thumb-29f3860febd4e50d8685351037210d62 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-0f839f2736dbd5f86b63656cf0ccb7da {
+  background-image: url(https://yoneyan.dev/images/game/hard/ps3-2.jpg);
 }
 
 
@@ -1233,13 +1218,7 @@ section.footer > header a {
 
 
 
-.thumb-1d7806e2b818864269fe9d8d69fc1a59 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
-}
-
-
-
-.thumb-73433e3db16c9e7b2700f16189366f90 {
+.thumb-ef8f44e18a0b8ced053d57dfc00febf9 {
   background-image: url(https://yoneyan.dev/images/free_images/.jpg);
 }
 
@@ -1251,8 +1230,8 @@ section.footer > header a {
 
 
 
-.thumb-977970388824334fe4ed36ecf1990186 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-ebbb64c96a5eddb0cbf49738f077d192 {
+  background-image: url(https://yoneyan.dev/images/game/hard/ps4pro.png);
 }
 
 
@@ -1269,7 +1248,7 @@ section.footer > header a {
 
 
 
-.thumb-484ed57d13b9f85b4b638be541f5214a {
+.thumb-fcf1f9b47f596b96570b9414b911410b {
   background-image: url(https://yoneyan.dev/images/free_images/washhouse.png);
 }
 
@@ -1300,7 +1279,7 @@ section.footer > header a {
 
 
 .thumb-3552cf81461ead0993aee7921d4ad6c0 {
-  background-image: url(https://yoneyan.dev/images/free_images/gmae_1.jpg);
+  background-image: url(https://yoneyan.dev/images/free_images/game_1.jpg);
 }
 
 
@@ -1541,13 +1520,27 @@ ga('send', 'pageview');
 
 <p>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。</p>
 
-<p><a href="https://www.amazon.co.jp/Ubiquiti-Networks-ER-X-Edgerouter-ER-X%EF%BC%88%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%EF%BC%89/dp/B010MZFH5A/ref=as_li_ss_tl?ie=UTF8&amp;qid=1549553464&amp;sr=8-1&amp;keywords=edgerouter&amp;linkCode=ll1&amp;tag=yonedayuto-22&amp;linkId=617eaa3e33ca7d846353fda7de2ca8f1&amp;language=ja_JP"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/flare-onlineshop/cabinet/101965/1/b0144r449w_0.jpg?_ex=128x128" alt="" /></a></p>
-
-<p><strong>EdgeRouter X, 5-port</strong></p>
-
-<p><a href="https://amzn.to/2Jm8Fug">Amazon</a></p>
-
-<p><a href="https://hb.afl.rakuten.co.jp/hgc/16e6fee6.9a58a496.16e6fee7.9016bd28/kaereba_main_201902080029120755?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2Fedge%2520router%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2F">楽天市場</a></p>
+<div class="item-box">
+    <div class="item-image">
+      <a href="https://www.amazon.co.jp/Ubiquiti-Networks-ER-X-Edgerouter-ER-X%EF%BC%88%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%EF%BC%89/dp/B010MZFH5A/ref=as_li_ss_tl?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;keywords=edge&#43;router&amp;qid=1575200218&amp;sr=8-2&amp;linkCode=ll1&amp;tag=yonedayuto-22&amp;linkId=e0a3e758b46cad91dec24bf65c04795f&amp;language=ja_JP" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/31WLrEKWR%2BL.jpg" alt="Ubiquiti Networks Edgerouter ER-X（日本国内）" width=113 />
+      </a>
+    </div>
+    <div class="item-info">
+      <div>Ubiquiti Networks Edgerouter ER-X（日本国内） <br />
+      <div class="item-name">
+        <a href="https://www.amazon.co.jp/Ubiquiti-Networks-ER-X-Edgerouter-ER-X%EF%BC%88%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%EF%BC%89/dp/B010MZFH5A/ref=as_li_ss_tl?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;keywords=edge&#43;router&amp;qid=1575200218&amp;sr=8-2&amp;linkCode=ll1&amp;tag=yonedayuto-22&amp;linkId=e0a3e758b46cad91dec24bf65c04795f&amp;language=ja_JP" target="_blank">Amazon</a>
+      </div>
+      <div class="item-name">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/19bf8eee.9249361e.19bf8eef.4574c5df/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkabau-r%2Fb0144r449w%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkabau-r%2Fi%2F10000004%2F&amp;link_type=hybrid_url&amp;ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjB9" target="_blank">楽天市場</a>
+      </div>
+      <div class="item-name">
+        <a href="" target="_blank">Yahooショッピング</a>
+      </div>
+      </div>
+    </div>
+    <div class="clear-left"></div>
+  </div>
 
 <p>それでは構築していきます。</p>
 
@@ -1973,7 +1966,7 @@ set interfaces bonding bond0 vif 200 address 192.168.200.1/24
   <header>CATEGORIES</header>
   <div>
     <ul class="terms">
-      <li><a href="https://yoneyan.dev/categories/recommend">recommend <span class="count">(24)</span></a></li><li><a href="https://yoneyan.dev/categories/network">network <span class="count">(20)</span></a></li><li><a href="https://yoneyan.dev/categories/setting">setting <span class="count">(16)</span></a></li><li><a href="https://yoneyan.dev/categories/build">build <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/server">server <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/review">review <span class="count">(10)</span></a></li><li><a href="https://yoneyan.dev/categories/memo">memo <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/categories/free_talk">free_talk <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/categories/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/categories/software">software <span class="count">(4)</span></a></li>
+      <li><a href="https://yoneyan.dev/categories/recommend">recommend <span class="count">(23)</span></a></li><li><a href="https://yoneyan.dev/categories/network">network <span class="count">(20)</span></a></li><li><a href="https://yoneyan.dev/categories/setting">setting <span class="count">(16)</span></a></li><li><a href="https://yoneyan.dev/categories/build">build <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/server">server <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/review">review <span class="count">(10)</span></a></li><li><a href="https://yoneyan.dev/categories/memo">memo <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/categories/free_talk">free_talk <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/categories/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/categories/software">software <span class="count">(4)</span></a></li>
     </ul>
   </div>
 </section>
@@ -1985,7 +1978,7 @@ set interfaces bonding bond0 vif 200 address 192.168.200.1/24
   <header>TAGS</header>
   <div>
     <ul class="terms">
-      <li><a href="https://yoneyan.dev/tags/vps">vps <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/tags/cisco">cisco <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/edgerouter">edgerouter <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/ps4">ps4 <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/openvpn">openvpn <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/server">server <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/centos">centos <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/game">game <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/steam">steam <span class="count">(3)</span></a></li>
+      <li><a href="https://yoneyan.dev/tags/vps">vps <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/tags/cisco">cisco <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/edgerouter">edgerouter <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/openvpn">openvpn <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/ps4">ps4 <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/server">server <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/centos">centos <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/game">game <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/steam">steam <span class="count">(3)</span></a></li>
     </ul>
   </div>
 </section>

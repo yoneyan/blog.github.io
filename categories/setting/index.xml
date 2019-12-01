@@ -223,7 +223,7 @@ nginxを再起動 systemctl restart nginx  nginxを再起動すると見事に�
       <pubDate>Sun, 08 Apr 2018 12:11:09 +0900</pubDate>
       
       <guid>https://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/</guid>
-      <description>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できないという謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&amp;hellip;&amp;hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
+      <description>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&amp;hellip;&amp;hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
 起きたこと    記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
 
@@ -270,11 +270,9 @@ UPnP Access Control Listsの設定    設定例としてはこんな感じにな
       <guid>https://yoneyan.dev/post/cannot-update-with-freshclam/</guid>
       <description>ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
 ウイルス定義ファイルを更新しようとすると&amp;hellip;    おい&amp;hellip;まじか&amp;hellip;
-root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).
-こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので
-rm /var/log/clamav/freshclam.log
-というコマンドを実行すると、
-root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started at Mon Jul 10 00:03:32 2017 Downloading main.cvd [100%] main.cvd updated (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr) Downloading daily.cvd [100%] daily.cvd updated (version: 23548, sigs: 1739222, f-level: 63, builder: neo) bytecode.cvd is up to date (version: 305, sigs: 62, f-level: 63, builder: neo) Database updated (6305533 signatures) from db.</description>
+root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).  こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので
+rm /var/log/clamav/freshclam.log  というコマンドを実行すると、
+root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started at Mon Jul 10 00:03:32 2017 Downloading main.cvd \[100%\] main.cvd updated (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr) Downloading daily.cvd \[100%\] daily.cvd updated (version: 23548, sigs: 1739222, f-level: 63, builder: neo) bytecode.cvd is up to date (version: 305, sigs: 62, f-level: 63, builder: neo) Database updated (6305533 signatures) from db.</description>
     </item>
     
     <item>

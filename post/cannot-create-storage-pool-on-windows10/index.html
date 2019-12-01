@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>windows10で記憶域プールが作成できない - のんびりと生きたい</title>
     
-<meta name="description" content="TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できないという謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
+<meta name="description" content="TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
 起きたこと   記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
 そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  
@@ -34,7 +34,7 @@
 <meta property="og:url" content="https://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/">
 <meta property="og:image" content="https://yoneyan.dev/images/free_images/windows.jpg">
 <meta property="og:site_name" content="のんびりと生きたい">
-<meta property="og:description" content="TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できないという謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
+<meta property="og:description" content="TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
 起きたこと   記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
 そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  
@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="のんびりと生きたい">
 <meta name="twitter:url" content="https://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/">
 <meta name="twitter:title" content="windows10で記憶域プールが作成できない - のんびりと生きたい">
-<meta name="twitter:description" content="TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できないという謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
+<meta name="twitter:description" content="TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
 起きたこと   記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
 そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  
@@ -84,7 +84,7 @@
         "height": 60
       }
     },
-    "description": "TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できないという謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは\x26hellip;\x26hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。\n起きたこと   記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https:\/\/signal-flag-z.blogspot.jp\/2017\/07\/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。\n解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  \nそこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  \nまとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！"
+    "description": "TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは\x26hellip;\x26hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。\n起きたこと   記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https:\/\/signal-flag-z.blogspot.jp\/2017\/07\/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。\n解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  \nそこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  \nまとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！"
   }
 </script>
 
@@ -1137,14 +1137,14 @@ section.footer > header a {
 
 
 
-.thumb-517b49f7b5f98589a74d73a69ae0d0a1 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-b31b89bf504e8fb023f93cad8b1bfacd {
+  background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
 
 
-.thumb-93b08f3e655d2f75a7dcbfee7d2854d2 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-6b4a9744aaabce79a2ba9d11b4a38dfc {
+  background-image: url(https://yoneyan.dev/images/free_images/server_1.jpg);
 }
 
 
@@ -1161,8 +1161,8 @@ section.footer > header a {
 
 
 
-.thumb-6ec9847ecfb94e990c39d0fb44f19ddd {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-e44079f1fc20e9aaf48df394eb047f6a {
+  background-image: url(https://yoneyan.dev/images/free_images/network_1.jpg);
 }
 
 
@@ -1179,20 +1179,20 @@ section.footer > header a {
 
 
 
-.thumb-221ba4e62da2fe31b813f611022ee4cd {
+.thumb-985992bab2a6c1383f5d5d2fd02f95e4 {
+  background-image: url(https://yoneyan.dev/images/free_images/game_1.jpg);
+}
+
+
+
+.thumb-7b46239b386cceb8891c2d0a96c4d291 {
   background-image: url(https://yoneyan.dev/images/free_images/.jpg);
 }
 
 
 
-.thumb-8d2d1d0360723622a7798727ffc650b7 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
-}
-
-
-
-.thumb-29f3860febd4e50d8685351037210d62 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-0f839f2736dbd5f86b63656cf0ccb7da {
+  background-image: url(https://yoneyan.dev/images/game/hard/ps3-2.jpg);
 }
 
 
@@ -1203,13 +1203,7 @@ section.footer > header a {
 
 
 
-.thumb-1d7806e2b818864269fe9d8d69fc1a59 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
-}
-
-
-
-.thumb-73433e3db16c9e7b2700f16189366f90 {
+.thumb-ef8f44e18a0b8ced053d57dfc00febf9 {
   background-image: url(https://yoneyan.dev/images/free_images/.jpg);
 }
 
@@ -1221,8 +1215,8 @@ section.footer > header a {
 
 
 
-.thumb-977970388824334fe4ed36ecf1990186 {
-  background-image: url(https://yoneyan.dev/images/free_images/.jpg);
+.thumb-ebbb64c96a5eddb0cbf49738f077d192 {
+  background-image: url(https://yoneyan.dev/images/game/hard/ps4pro.png);
 }
 
 
@@ -1239,7 +1233,7 @@ section.footer > header a {
 
 
 
-.thumb-484ed57d13b9f85b4b638be541f5214a {
+.thumb-fcf1f9b47f596b96570b9414b911410b {
   background-image: url(https://yoneyan.dev/images/free_images/washhouse.png);
 }
 
@@ -1270,7 +1264,7 @@ section.footer > header a {
 
 
 .thumb-3552cf81461ead0993aee7921d4ad6c0 {
-  background-image: url(https://yoneyan.dev/images/free_images/gmae_1.jpg);
+  background-image: url(https://yoneyan.dev/images/free_images/game_1.jpg);
 }
 
 
@@ -1504,7 +1498,10 @@ ga('send', 'pageview');
 
   <div class="article-body">
 
-<p>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、<strong>記憶域プールが作成できない</strong>という謎の問題が発生しました。windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。</p>
+<p>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。
+そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。
+いつも通りにその機能を使おうとしたのですが、<strong>記憶域プールが作成できない</strong> という謎の問題が発生しました。
+windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。</p>
 
 <h3 id="起きたこと">起きたこと</h3>
 
@@ -1627,8 +1624,8 @@ HDDが壊れちゃったのかなと思い、ディスクの管理を見ても�
         <div class="mcol c6">
           <header>Next Article</header>
           <article class="lism">
-  <a href="https://yoneyan.dev/post/2018-04-25-silent-powerconnect6248/">
-    <div class="thumb thumb-6ec9847ecfb94e990c39d0fb44f19ddd"></div>
+  <a href="https://yoneyan.dev/post/silent-powerconnect6248/">
+    <div class="thumb thumb-e44079f1fc20e9aaf48df394eb047f6a"></div>
 
     <div class="inner">
       <div class="title">PowerConnect6248を静音化</div>
@@ -1887,7 +1884,7 @@ HDDが壊れちゃったのかなと思い、ディスクの管理を見ても�
   <header>CATEGORIES</header>
   <div>
     <ul class="terms">
-      <li><a href="https://yoneyan.dev/categories/recommend">recommend <span class="count">(24)</span></a></li><li><a href="https://yoneyan.dev/categories/network">network <span class="count">(20)</span></a></li><li><a href="https://yoneyan.dev/categories/setting">setting <span class="count">(16)</span></a></li><li><a href="https://yoneyan.dev/categories/build">build <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/server">server <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/review">review <span class="count">(10)</span></a></li><li><a href="https://yoneyan.dev/categories/memo">memo <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/categories/free_talk">free_talk <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/categories/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/categories/software">software <span class="count">(4)</span></a></li>
+      <li><a href="https://yoneyan.dev/categories/recommend">recommend <span class="count">(23)</span></a></li><li><a href="https://yoneyan.dev/categories/network">network <span class="count">(20)</span></a></li><li><a href="https://yoneyan.dev/categories/setting">setting <span class="count">(16)</span></a></li><li><a href="https://yoneyan.dev/categories/build">build <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/server">server <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/review">review <span class="count">(10)</span></a></li><li><a href="https://yoneyan.dev/categories/memo">memo <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/categories/free_talk">free_talk <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/categories/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/categories/software">software <span class="count">(4)</span></a></li>
     </ul>
   </div>
 </section>
@@ -1899,7 +1896,7 @@ HDDが壊れちゃったのかなと思い、ディスクの管理を見ても�
   <header>TAGS</header>
   <div>
     <ul class="terms">
-      <li><a href="https://yoneyan.dev/tags/vps">vps <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/tags/cisco">cisco <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/edgerouter">edgerouter <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/ps4">ps4 <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/openvpn">openvpn <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/server">server <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/centos">centos <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/game">game <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/steam">steam <span class="count">(3)</span></a></li>
+      <li><a href="https://yoneyan.dev/tags/vps">vps <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/tags/cisco">cisco <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/edgerouter">edgerouter <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/openvpn">openvpn <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/ps4">ps4 <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/server">server <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/centos">centos <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/game">game <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/steam">steam <span class="count">(3)</span></a></li>
     </ul>
   </div>
 </section>
