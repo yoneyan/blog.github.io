@@ -725,7 +725,7 @@ section.footer > header a {
 
 
 
-.thumb-b321bee5ec23290f401bfd429d918247 {
+.thumb-6764b54b0d1661845590622ae858e36f {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/ipphone.jpg);
 }
 
@@ -737,7 +737,7 @@ section.footer > header a {
 
 
 
-.thumb-19971e8392a11ceb1aa7842258d66991 {
+.thumb-e411741d2a73dee3f61df88799a4631f {
   background-image: url(https://yoneyan.dev/images/server/home/2019/09/homeserver.jpg);
 }
 
@@ -1187,7 +1187,7 @@ section.footer > header a {
 
 
 
-.thumb-a125ea2dc298bb5406cd62bb03ef7927 {
+.thumb-2eecd6a816bb659d5d09475d5606f3a4 {
   background-image: url(https://yoneyan.dev/images/free_images/music_1.jpg);
 }
 
@@ -1265,13 +1265,13 @@ section.footer > header a {
 
 
 
-.thumb-46d1568338f817eb538cb89ef6183976 {
+.thumb-dc315ca62b15aa799c069db19fdba12d {
   background-image: url(https://yoneyan.dev/images/free_images/software_1.jpg);
 }
 
 
 
-.thumb-8a8b305d93bd4d8cf7b769e4095238fd {
+.thumb-ae66a27bd91ceb24131ead7fb223e1a2 {
   background-image: url(https://yoneyan.dev/images/free_images/software_1.jpg);
 }
 
@@ -1283,7 +1283,7 @@ section.footer > header a {
 
 
 
-.thumb-edb10af718a73523b189ef9f893e557e {
+.thumb-506418afc462970e315d0d2f2ad8c17a {
   background-image: url(https://yoneyan.dev/images/free_images/game_1.jpg);
 }
 
@@ -1343,13 +1343,13 @@ section.footer > header a {
 
 
 
-.thumb-a75bdae693a11718db7056d1bdabfd73 {
+.thumb-70cc87f6a35af04e202db28de6cf3052 {
   background-image: url(https://yoneyan.dev/images/free_images/software_1.jpg);
 }
 
 
 
-.thumb-ff160586a276992f2a242b8b3834f134 {
+.thumb-cd3f7ed7a2fc841be51a072980bccca8 {
   background-image: url(https://yoneyan.dev/images/free_images/software_1.jpg);
 }
 
@@ -1395,13 +1395,1637 @@ ga('send', 'pageview');
     </header>
     
 
-    <div class="articles">
-      <div class="mrow">
+    
+      <div class="articles">
+        <div class="mrow">
+          
+          
+          
+            
+          
+          
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/what-to-do-when-you-dont-link-up-with-gs724t/">
+    <div class="thumb thumb-e20d89de9d63f010b864a4aa4cc9f427"></div>
+
+    <div class="inner">
+      <h2 class="title">GS724Tでリンクアップしない時の対処法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-08-15T00:48:35JST">Aug 15, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
+      </ul>
+
+      <div class="summary">GS724TにLANケーブルを刺しても機嫌がいいときはアップしてくれますが、悪いときは本当にリンクアップしてくれない時が多く、まじめにイライラしてきたのでいろいろ探っているとおそらく原因がわかったのでこちらに対処法を載せます。
+私自身の環境だけに要因する問題の可能性もあるので、あくまでもこういう場合があるよと思っていただけると幸いです。
+GS724Tとは   amazon
+GS724Tを簡単に紹介します。
+GS724TはNetgear社の24ポートのSmart Switchです。
+Smart Switchということもあり、LACPやらSNMPなどのそこそこ使える機能が豊富でしかも現時点ではヤフオクでも安く手に入るのが一番うれしいところです。
+また、スパニングツリーも使えるためLANケーブルをループして事故を起こすことも未然に防げます。
+問題の解決 LANケーブルをつないでもリンクアップしないという前代未聞の意味のわからないことになっているので、トラブルシューティングとしてGS724Tで有効になっている機能をことごとく無効にします。
+そうすると&hellip;.
+  Flow Control Setting
+フロー制御が原因でした。
+フロー制御とは 私自身も詳しく説明できないのですが、、
+送信側と受信側のリンクの速度の差でバッファがオーバーにならないように制御するものです。おそらく、この機能が悪さをしているのが原因だと思われます。
+フロー制御が働いても速度に制限をかけたり、パケットを一時的に中断させたりするだけなのでおそらくGS724Tのバグです。
+フロー制御の無効化方法 １．ログインする ２．Switchingタブに移動   Switchingのタブに移動（ここではSystemタブになっている）
+Switchingのタブに移動させます。
+３．Flow Controlを選択   Flow Controlを選択
+Flow Controlを選択します。
+４．無効化する   Flow Controlの設定
+Global Flow Control(IEEE 802.3x) Modeの部分をDisableにする
+これにより、フロー制御を無効にできます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/">
+    <div class="thumb thumb-3117ae926654c7379796cde55648a2af"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSで無線を有線に変換する(2)</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-08-11T23:56:52JST">Aug 11, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
+      </ul>
+
+      <div class="summary">CentOSを使って無線を有線にしなければならないことができたので、備忘録として書きます。
+構築   APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。
+前提条件として
+WLAN側：DHCP（ここでは、172.16.100.100がDHCPより取得したと仮定する）
+LAN側：172.16.200.1&frasl;24
+WLANインターフェース:wlp2s0
+LANインターフェース:eth0
+とします。
+1．無線側の設定 1.1．WLAN側インターフェースを確認する NetworkManagerのデバイスを一覧で出してみます。
+ nmcli device  とすると、
+ DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet disconnected　-- wlp2s0 wifi disconnected　--  wlp2s0がunmanagedになっている場合は、 nmcliで無線がunmanagedの場合の対処法 こちらに対処法を記事にしたのでご覧ください。
+1.2．WLANのSSIDを設定する nmcli device wifi connect [ssid] password [password]  [ssid]にWiFiのSSIDを、[password]にはSSIDに対するパスワードを入力してください。
+2．有線側の設定 2.1．IPアドレスを固定で設定する nmcli connection modify eth0 ipv4.method manual nmcli connection modify eth0 ipv4.addresses &quot;172.16.200.1/24&quot;  172.16.200.1/24の部分にLAN側のIPアドレスを記入します。
+2.2．DHCPサーバを構築する DHCPサーバをインストールする
+yum -y install dhcp  /etc/dhcp/dhcpd.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/">
+    <div class="thumb thumb-7086bb320ca9856c8ec3b5f203b229dc"></div>
+
+    <div class="inner">
+      <h2 class="title">nmcliで無線がunmanagedの場合の対処法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-08-11T23:29:40JST">Aug 11, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
+      </ul>
+
+      <div class="summary">nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
+ここでは無線LANをWLANと記述します。
+確認してみる nmcli device  より、WLANの管理状態を確かめてみます。
+ DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet connected eth0 wlp2s0 wifi unmanaged --  とこのようにWLANだけ管理されていない状況になっていることがわかります。
+このような場合は、NetworkManagerのWifiを管理するNetworkManager-wifiを入れる必要があります。
+yum -y install NetworkManager-wifi  このパッケージを導入してから
+nmcli d wifi nmcli d nmcli connection  を実行してから、しっかりと周りのwifiが見えていれば成功です！！
+失敗例 nmcli device set wlp2s0 managed yes  とこのコマンドを実行すると、一見有効になってように見えます。
+しかし、
+nmcli d wifi  としてもなにも帰ってこないので、 networkmanager-wifiパッケージが入っていないのがおそらく原因で無理なのだと思われます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/">
+    <div class="thumb thumb-916b8872f5a6f383f9a53c9fde635b40"></div>
+
+    <div class="inner">
+      <h2 class="title">virt-install時にbr0のエラーが出て進まない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-07-31T21:58:46JST">Jul 31, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
-        <div class="mcol c6"><article class="li">
+      </ul>
+
+      <div class="summary">環境 OS: CentOS7 7.6.1810
+Bridge: br0 (eth0をbr0にブリッジで接続している)
+起こったこと virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。
+virt-install --name centos7 --ram 4096 --disk /mnt/data/images/centos7.img --vcpus 2 --os-type linux --os-variant rhel7 --network bridge=br0 --graphics none --console pty,target_type=serial --location 'http://ftp.iij.ad.jp/pub/linux/centos/7/os/x86_64/' --extra-args 'console=ttyS0,115200n8 serial'  上記のようにvirt-installを行うと、
+Starting install... Retrieving file vmlinuz... | 6.3 MB 00:00:00 Retrieving file initrd.img... | 50 MB 00:00:02 ERROR internal error: /usr/libexec/qemu-bridge-helper --use-vnet --br=br0 --fd=26: failed to communicate with bridge helper: Transport endpoint is not connected stderr=access denied by acl file  このようなエラーメッセージを吐きました。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/">
+    <div class="thumb thumb-e5391359808129446d26bf6265cdf30a"></div>
+
+    <div class="inner">
+      <h2 class="title">Allied Telesis stack状態を初期の状況に戻す方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-07-31T00:15:47JST">Jul 31, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">x510-28gtxというL3スイッチを実際に使っています。
+ヤフオクで購入したのですが、パスワードはわかるものの、stackが組まれており、よくわからない状態になっていたので完全に初期化してみました。
+スタック番号が「２」になっている状態です。
+パスワードがわからない状態の初期化方法 ブートローダ部分で、
+Ctrl + B -&gt; 5 -&gt; 1 -&gt; 0 -&gt; 9
+とすることでパスワードが掛かっている状態でも初期状態に戻すことができるようになります。
+しかし、この操作をしても以前のスタックが組まれたままになっており完全に初期化したいという状態なので、完全に初期化を実行したいと思います。
+完全に初期化 enableコマンドで入り、管理用コマンドが実行できるような環境にしておきます。
+AlliedWare Plus (TM) 5.4.9 03/29/19 02:51:50 awplus&gt; awplus&gt;en awplus#  いよいよ強制初期化のコマンドを実行します。
+awplus#atmf cleanup  [atmf cleanup]というコマンドを使うことで、完全に初期化することができます。
+スタックが組まれた状態でも初期の状況に戻してくれるので、今回のような完全な初期化を行いたい場合はおすすめです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/">
+    <div class="thumb thumb-b44df70d4c3bb3d0b31b654db3e85018"></div>
+
+    <div class="inner">
+      <h2 class="title">apcupsdで自動シャットダウンをできるようにする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-07-30T01:52:07JST">Jul 30, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">apcupsdとは APC製のUPSにつながれたサーバ機器を安全にシャットダウンされるように作られたアプリケーションです。
+また、このアプリケーションを使うことで複数台のサーバ機器を同時にシャットダウン出来ることも特徴の一つです。
+構成 構成としてこのようになっています。
+SmartUPS 500につながっているもの
+ TX1310 M1 ( ADサーバ Windows Server 2019 Standard) Fujitsu W510 ( 録画サーバ Windows 10)  この２台サーバ機器がつながっています。
+UPSとサーバ機器にはUSB経由でTX1310 M1に接続されています。
+TX1310 M1をマスターとして運用します。
+今回はUPSとサーバ間はUSBで接続するという条件で記事を執筆していきます。
+構築 マスター側の設定 １．apcupsdをダウンロード・インストールする http://www.apcupsd.org/
+  apcupsdダウンロード
+リンクからWindows版をダウンロードします。
+ダウンロードした後は、インストールしてください。
+２．ドライバを入れる   ドライバインストール前
+ドライバを入れ替える必要があるので、更新します。
+  ドライバの更新からコンピューターを参照してドライバーソフトウェアを検索をすると、
+  ドライバ更新
+このような画面が出てくるので、ドライバが入っているフォルダを選択し、次へとすると、自動更新がかかります。
+  ドライバ更新後
+ドライバを更新すると(Apcupsd) となります。
+３．apcupsdの設定をする   start menu  Edit Configuration fileという項目から設定ファイルを変更します。
+##UPSの名前 #UPSNAME -&gt; UPSNAME UPS-1 ##シャットダウンまでの時間 TIMEOUT 60 -&gt; TIMEOUT 180  コンフィグを変更した場合は、サービスでapcupsdが動いているのでサービスを再起動させます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/open-port-with-freebsd/">
+    <div class="thumb thumb-f6e23c74cac6978270803fe7e3aa4b0c"></div>
+
+    <div class="inner">
+      <h2 class="title">FreeBSDでポート開放をする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-07-22T11:16:02JST">Jul 22, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">FreeBSDとは 私自身もよくわかっていないところが多いので、https://ja.wikipedia.org/wiki/FreeBSDこちらを参考に箇条書きしてみるとこんな感じになりました。
+ FreeBSDはUnix系のOS 処理速度よりも安定性を重視した設計がされているらしい？ Linux向けに開発されたものもしっかりと動く パッケージマネージャとしてpkgが入っている  始めよう 有効化する ファイアウォールのコマンドとしてipfwを使うのですが、初期の状態では
+root@localhost:~ # ipfw list ipfw: retrieving config failed: Protocol not available  とこのようなエラーが入ります。この場合は、/etc/rc.confからファイアウォールを有効にする必要が出てきます。
+/etc/rc.confに以下の
+# Firewall firewall_enable=&quot;YES&quot;  設定をする こちらのサイトを参考にさせていただきました。ありがとうございます。
+https://server-setting.info/freebsd/freebsd_ipfw.html
+/etc/rc.confに以下を追加する
+firewall_script=&quot;/usr/local/etc/ipfw.rules&quot;  /usr/local/etc/ipfw.rulesに以下のコンフィグを書きます。
+#!/bin/sh # IPF=&quot;ipfw -q add&quot; ipfw -q -f flush #loopback $IPF 10 allow all from any to any via lo0 $IPF 20 deny all from any to 127.0.0.0/8 $IPF 30 deny all from 127.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/gpd-micropc-reviews/">
+    <div class="thumb thumb-58f22730f3bce915414c21620d7f3921"></div>
+
+    <div class="inner">
+      <h2 class="title">GPD MicroPCのレビュー</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-06-20T01:31:33JST">Jun 20, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">クラウドファンディングから約4か月が経ちやっと届いたので軽くレビューしていきます。
+外見   GPD MicroPC（前方）
+  GPD MicroPC（左）
+  GPD MicroPC（キーボード）
+  GPD MicroPC（インターフェース側1）
+  GPD MicroPC（インターフェース側2）
+  GPD MicroPC（裏）
+スペック CPU: Intel Celeron N4100 GPU: intel UHD graphics 600 ( CPU内臓） Memory: 8GB(DDR4) Storage: 128GB (換装可能） Display: 1280*720 (光沢) タッチパネル非対応 Keyboard: US配列（バックライト付き） Interface: MicroSD,USB3.0 x3,RS-232C,HDMI,LAN,Type-C,イヤホンジャック Power: Type-C（12V 2.0A） Battery: 3100mAh x2 weight: 440g accessories: ACアダプター（QC対応）、Type-C to Type-C cable
+OSは最初からWindows10 Proが搭載されています。
+詳しくは：https://www.gpd-direct.jp/gpd-micropc
+上記のリンクが公式サイトに飛べるので、詳しく知りたい方はそちらをご覧ください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/">
+    <div class="thumb thumb-1793353749ce340d46b74c0d59b7102a"></div>
+
+    <div class="inner">
+      <h2 class="title">mineoが最強だと思う理由</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-06-18T00:15:58JST">Jun 18, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">mineoは株式会社オプテージが運営しているMVMOのサービスです。
+今回は、mineoが個人的になぜ最強だと思うのか？どういう点で最強だと思ったのかを紹介させていただきます。
+そもそもmineoとは  mineoは格安SIMを提供するMVMOサービスです。
+キャリアとしては、docomo、au、ソフトバンクの全社に対応しています。
+1．通信容量を格安でチャージができる よくテザリングをする人やブラウジングする人は思っている以上に通信量が使われている場合が多いと思います。毎月のようによく使う人であればFujiWifiや他のMVMOからデータ容量が多いものを契約した方がいいかもしれません。
+しかし、筆者のようにたまに、遠出した時にバカみたいにテザリングしたり間違ってISOファイルをダウンロードしたりすることがある人もいるかもしれません。そのような人にMineoはかなりおすすめです。
+Mineoには他のところにはないようなパケットシェア機能というものがあります。自分が契約している複数のSIMをパケットシェアするといった機能は最近では普通ですが、自分以外の契約者の過剰分のパケットをもらうことで通信データ容量を増やせると言う物です。
+自分以外の 契約者の過剰分のパケットをもらうとありますが、実はこれがメルカリに売っているんです。
+  メルカリで「mineo　パケット」での検索結果
+筆者自身が個人的に思っている相場として、
+3G程度：300円
+10G程度：800円～900円
+です。
+これで、足りなくなった時にここでパケットを買うといった感じです。
+例として 例えば、3G(3000M)プランを契約していてまだ、半月しか立っていないのに500Mぐらいしかないという時にメルカリに売りに出されているパケットを購入して補充するというような具合です。
+2．オプションサービスが充実している mineoの凄いところはオプションサービスがかなり充実しているところです。
+注意： オプションサービスには別途料金が必要になります
+例として、執筆段階(2019/06/18)のエンタメ系の一部のサービスと料金を下に簡単にまとめます。
+ANiUTA: 600円/月 RecMusicライトプラン: 300円/月 AWA: 960円/月 Hulu: 1007円/月 U-NEXT: 1060円/月 雑誌読み放題タブホ: 518円/月
+＊料金表記は税込みです(記事執筆時の価格)
+このように、MVNOとは言えないほどのサービスがオプションで契約可能となっています。
+ANiUTAを使う場合は特におすすめ 筆者自身も使っていたものとしてANiUTAというアニメ中心の楽曲を配信しているサービスがあります。
+AndroidとiOSの両方で提供されていますが、iOSで契約すると、同じOSでは有料会員になれますがAndroid端末では購入履歴がない（AppleのApp Store側で支払っていることをGoogleのPlayStoreではわからない）ため異なる端末を持っている人には使いづらいという問題があります。
+しかし、Mineoのオプションサービスとして申し込みをするとeoIDを用いてログインする形になるので、異なるOSでも使えるという裏技的な方法も可能となります。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-a-real-dual-boot-with-x230/">
+    <div class="thumb thumb-782923c36614ea79026800dc81e8df91"></div>
+
+    <div class="inner">
+      <h2 class="title">x230で本当のデュアルブートをしてみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-06-16T17:07:07JST">Jun 16, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">神機種と呼ばれている x230というThinkpadを愛用しています。
+少し、話が逸れてしまいますが、自分が持っているThinkpadにはいくつか問題があります。
+まず、キーボードを交換した時にすべてのネジが行方不明になり出先でもキーボードの外れる問題
+  どこでも外れるキーボード
+そして、画面の縁の一部が外れる問題
+  画面の縁が外れる
+画面のすべてのインジケーター部分の故障（これのせいで、充電してるのかしてないのかがまったくわからない）
+  インジケーターの故障
+最後に、盛大に落としたときに割れた部分を同じように落とした結果&hellip;
+  割れた部分の被害
+さすがに、割れたままにしておくと尖っていて危なかったので、けがしない程度に削りました。
+災難なことを乗り越えてきたx230ですが、真面目にデュアルブートをしてみたいという欲望に駆られてしまったので、実戦してみました。
+前置きがかなり長くなりましたが、いよいよ本題です！！
+デュアルブートしたい デュアルブートする方法として、
+ 1つのストレージで異なるOSを同居させる 違うストレージにそれぞれ異なるOSを入れる  自分は後者の違うストレージにそれぞれ異なるOSを入れることにしました。
+しかし、違うストレージに1つずつ入れるとなると入れたいOSの数のストレージを用意する必要出てきます。これではスロットが何台あっても足りません。
+そこで、
+  思い出しました。
+これは使えるのではないのかと。
+物理デュアルブート 物理的にストレージを変えることで、GRUBがバグることがあっても違うOSが入ったストレージに交換すればいいということや、いくらでも検証でOSをぶっ壊せるのでよくやらかす人にはおすすめです。
+問題点 しかし、この画期的？な方法にもそもそもの問題点があります。
+一番の問題点として、SATAコネクタがやられる可能性が高いです。規格上では50回とされているため、故障する可能性としてはかなり高いです。
+また、出先でコネクタがやられるとかなり厄介なことになるので、注意が必要です。（注意と言っても難しいと思いますが&hellip;）
+そして、他の問題点として ダサい。なんと言っても ダサい。
+しかも、スリープ中にカバンに入れて持ち運んでる時にストレージが奥深くに追いやられて気付かずに起動してフリーズするといったこともあったりします。
+いろんな人にお前のPC大丈夫かと心配されることがあるかもしれません。（大丈夫だと思うのは自分だけかもしれませんが&hellip;）
+実際の状態 これが本当のデュアルブートです pic.twitter.com/M18sngdCGS
+&mdash; yoneyan (@yoneyan_ja) June 2, 2019  デュアルブート
+まとめ このようなことありますが、生活が豊かになるので皆さんも実践してみましょう！！</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/">
+    <div class="thumb thumb-f9f9bb81846bcc45f3b609adff291fe3"></div>
+
+    <div class="inner">
+      <h2 class="title">nginxでリバースプロキシとLet&#39;s Encryptを導入する</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-06-04T19:03:13JST">Jun 4, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">nginxでLet&rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
+当方のLet&rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
+今回はリバースプロキシを使用します。
+リバースプロキシの設定 １．configを作成する /etc/nginx 上にnginxのいろんな設定ファイルがあります。
+特に、nginxのメインとなる主の設定ファイルとなるのが/etc/nginx/nginx.confです。
+ですが、このファイルを直接弄ってしまうとわかりにくいという問題が起きるので今回は/etc/nginx/conf.d/以下のファイルを新たに作成します。
+/etc/nginx/conf.d/[好きな名前].conf
+server{ server_name example.net; listen 80; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-Host $host; proxy_set_header X-Forwarded-Server $host; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; location /test1/ { proxy_pass http://localhost:8080/; } location /test2/ { proxy_pass http://localhost:3000/; } }  ２．動いているか確認する systemctl restart nginx  nginxを再起動させて、リバースプロキシが働いてくれているか確認します。
+Let&rsquo;s Encryptの設定 ０．Let&rsquo;s Encryptで必要なものを入れる yum -y install epel-release yum -y install certbot  certbotというものが必要となるので、インストールします。
+１．証明書を取得する certbotを使って取得します。
+certbot certonly --standalone  ２．設定に追加する certbotを実行することで、</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/linux-disk-capacity-expansion-method/">
+    <div class="thumb thumb-9a93ffa9516cec8ca70b97882cc89d19"></div>
+
+    <div class="inner">
+      <h2 class="title">Linuxのディスク容量拡張の方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-06-03T13:59:36JST">Jun 3, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
+VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
+前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。
+0．partedが入っていない場合はインストールする partedは標準のLinuxOSでは入っている場合が多いですが、実際に入っていない場合もあるかもしれないので、その場合入れてあげます。
+debian系
+apt install parted  RedHat系
+yum install parted  これで、パーティションツールを入れることができます。
+１．partedから容量を拡張する sudo parted print all # /dev/sdaを選択する select /dev/sda # /dev/sdaのパーティションの構成をみる print /dev/sda # パーティション2をリサイズする resizepart 2  「End 400G 」100%とすることで、最大容量まで拡張できます。
+最後に/dev/sdaの容量を見てみます。
+print /dev/sda  2．実容量を拡張する df -h  これでマウント中の容量を見ることができます。
+そうすると実容量が拡張されていないため、resize2fs というコマンドを使っていきます。
+sudo resize2fs /dev/sda2  もちろんですが、root権限が必要です。
+３．容量を確認する df -h  これで/dev/sda2の部分の容量が拡張されているのかを確認してください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/">
+    <div class="thumb thumb-37673ceb953b148384b6e643b48c1ea0"></div>
+
+    <div class="inner">
+      <h2 class="title">TX1310 M1でホットスワップが出来ない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-05-19T20:48:06JST">May 19, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
+何が出来ないのか？ 本来、この機器ではホットスワップには対応していないのですが、大体のAHCIで動いてるシステムは使えるはずなのですが、使えない。
+しかも、ホットスワップ出来ないだけだと不便だけで済みますが、記憶域プールが謎のエラーを吐いて、作成出来ないのが致命的です。
+また、問題はWindows 10だけではなく、Linuxでもホットスワップ出来ませんでした。
+対処法 ドライバを入れてあげます。
+1．チップセットドライバを入れてあげる 一応、Intelの公式にチップセットドライバというものがあるので、それをダウンロードしてインストールしてあげます。
+https://downloadcenter.intel.com/ja/download/28710/Intel-Server-Chipset-Driver-for-Windows-?v=t
+こちらから.exe形式のファイルをダウンロードして、インストールします。
+2．AHCI、SATAコントローラーのドライバを入れてあげる これが一番重要になってきます。
+https://support.lenovo.com/jp/ja/downloads/ds101491
+こちらから.exe形式のファイルをダウンロードし、起動させると、Cドライブ直下にDriverというファイルが出来るので、そこからインストールします。
+まとめ これにより、TX1310 M1でホットスワップが出来るようになりました。
+TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種の場合では、ドライバを入れてあげないといけないので注意が必要です。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/">
+    <div class="thumb thumb-bb2a214cda9cb130d9bed9c7cbfc8372"></div>
+
+    <div class="inner">
+      <h2 class="title">ラック型サーバーでハードウェアRAIDを使いたくない理由</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-04-17T23:35:47JST">Apr 17, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">この記事ではラック型サーバーでハードウェアRAIDを使いたくない理由をここで話したいと思います。
+簡潔に言うと、壊れるととてもめんどくさいからです。
+理由 ハードウェアRAIDは専用のSASやSATAカード内のチップで処理させています。
+それに対して、ソフトウェアRAIDはOS側がソフトウェア的にRAID処理を行っています。
+これによるメリットとデメリットというのをこちらに記していきます。
+ハードウェアRAIDのメリット  速い 安定性  ハードウェアRAIDのデメリット  カード自体が故障した際にややこしくなる  ソフトウェアRAIDのメリット  インストールする際に操作が必要 OSにHDDを挿すことで、RAID情報を読み取れる  ソフトウェアRAIDのデメリット  ハードウェアに比べて遅いらしい？  というようにそれぞれメリットとデメリットがあります。
+ハードウェアRAIDはメーカーの保守契約前提ということもあり、私のように自宅サーバーとして使う場合は、ソフトウェアRAIDの方がおすすめです。
+ハードウェアRAIDでも、家に同じSASカードのストックがあれば、なんとかなります。大体のRAIDカードはRAID情報を読み取ってくれます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/using-openvpn-client-with-edgerouter/">
+    <div class="thumb thumb-33527f429c53262b59dd9eb48ea0a686"></div>
+
+    <div class="inner">
+      <h2 class="title">EdgerouterでOpenVPNクライアントを使う</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-04-17T21:37:37JST">Apr 17, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
+サーバー側の設定はこちらから
+1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
+mkdir /config/vpn/ mkdir /config/vpn/VPN1 cd /config/vpn/VPN1  2．必要なファイルをEdgerouterに持ってくる winscpなどで必要なファイルを入れます。
+ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイルを入れてあげます。
+/config/vpn/VPN1/ca.crt
+/config/vpn/VPN1/client1.crt
+/config/vpn/VPN1/client1.key
+/config/vpn/VPN1/ta.key
+というようなファイル構成になります。
+3．OpenVPNクライアントのコンフィグを作ってあげる。 vi client.ovpn  client dev-type tun proto udp ;VPNサーバーのipアドレス、ポート番号を指定 remote 0.0.0.0 1194 resolv-retry infinite nobind persist-key persist-tun ca /config/vpn/VPN1/ca.crt cert /config/vpn/VPN1/client1.crt key /config/vpn/VPN1/client1.key tls-auth /config/vpn/VPN1/ta.key 1 cipher AES-256-CBC auth SHA512 ;圧縮を有効 comp-lzo verb 1 reneg-sec 0  4．設定を適応する configure set interfaces openvpn vtun0 config-file /config/vpn/VPN1/client.ovpn set interfaces openvpn vtun0 description server_name  5．疎通できているか確認する show interfaces openvpn ip a  これらのコマンドでS/L部分がu/uになっていると、リンクアップしているといる意味です。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/configure-network-settings-for-brocade300_fabricos/">
+    <div class="thumb thumb-bfcedb73215949b2616a5df5ba3744f4"></div>
+
+    <div class="inner">
+      <h2 class="title">Brocade 300(FabricOS)のネットワーク設定をする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-04-07T23:53:10JST">Apr 7, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary"> FC-SANを使うためにBrocade 300を導入したのはいいのですが、なかなか普通のL2やL3スイッチのようには設定が行かないので、備忘録もかねて記事化していきます。
+ネットワーク設定とは？ sshやtelnet、アップデートの時などに必要になってきます。
+そのために今回はネットワーク設定をしていきます。
+設定方法 かなり簡単にできます。
+ipaddrset  このコマンドを実行することで、ネットワーク設定が簡単にできます。
+ウィザード方式で設定ができるのでかなり楽だと思います。
+switch:admin&gt; ipaddrset Ethernet IP Address [10.77.77.77]:192.168.10.100 Ethernet Subnetmask [255.0.0.0]:255.255.255.0 Gateway IP Address [none]:192.168.10.1 DHCP [Off]:off  以上でネットワークの設定が完了します。
+IPアドレスが逆に知りたいときはipaddrshowというコマンドを実行することでわかります。
+switch:admin&gt; ipaddrshow SWITCH Ethernet IP Address: 192.168.10.100 Ethernet Subnetmask: 255.255.255.0 Gateway IP Address: 192.168.10.1  </div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/">
+    <div class="thumb thumb-6ea90e529ebc98de2739fad5f005bdd6"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOS7でLACPとタグVLANを使ってみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-31T20:02:44JST">Mar 31, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
+環境 CentOS=========L3 Switch(vlan10,vlan20)
+2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
+CentOS側のNIC：eth0,eth1
+設定する １． いらないものを排除する systemctl stop NetworkManager systemctl disable NetworkManager  NetworkManagerが邪魔になるので、停止＆無効にします。
+２．bonding機能を有効にする modprobe bonding  これをしないと、リンクアグリゲーションができないので、忘れずに実行して下さい。
+３．コンフィグを書いていく 3.1．bond0の設定 vi /etc/sysconfig/network-scripts/ifcfg-bond0  DEVICE=bond0 NAME=bond0 TYPE=Bond ONBOOT=yes BOOTPROTO=none BONDING_OPTS=&quot;downdelay=0 miimon=100 mode=802.3ad updelay=0&quot; BONDING_MASTER=yes  3.2．LAGにするインタフェースの設定 vi /etc/sysconfig/network-scripts/ifcfg-eth0  DEVICE=eth0 TYPE=Ethernet BOOTPROTO=none ONBOOT=yes NM_CONTROLLED=no IPV6INIT=no MASTER=bond0 SLAVE=yes  これでeth0は完了です。次にeth1の設定をしていきます。
+vi /etc/sysconfig/network-scripts/ifcfg-eth1  DEVICE=eth1 TYPE=Ethernet BOOTPROTO=none ONBOOT=yes NM_CONTROLLED=no IPV6INIT=no MASTER=bond0 SLAVE=yes  3.3．Bond0に対するTagVLANの設定 VLAN10の設定
+vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&quot;Ethernet&quot; BOOTPROTO=none DEVICE=&quot;bond0.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/">
+    <div class="thumb thumb-eae1bfaf492ad7af34689bb252d299c2"></div>
+
+    <div class="inner">
+      <h2 class="title">LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-31T15:17:42JST">Mar 31, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
+http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
+上のブログさんの記事を参考にしました。（ほぼ、同じです。）
+備忘録として、こちらに書かせていただきます。
+どれくらいの時間がかかるのか cat /proc/mdstat  と実行すると、RAID状況を確認できます。
+改善前 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&gt;....................] resync = 2.1% (21226880/976628736) finish=1186.8min speed=13416K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  13M/secはあまりにも遅すぎるので、これをなのとかします。
+改善後 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&gt;....................] resync = 4.2% (41735552/976628736) finish=292.9min speed=53181K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  改善後はかなり速度が上がりました。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/install-pt2-driver-on-linux/">
+    <div class="thumb thumb-47fc8fa2a0b30b777f97e83a093989d7"></div>
+
+    <div class="inner">
+      <h2 class="title">LinuxでPT2ドライバをインストールする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-25T12:23:32JST">Mar 25, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">PT3ドライバでインストールする記事が多い気がするので、ここに備忘録として書きます。
+CentOSで今回はドライバインストールを行いましたが、他のディストリビューションでも同じです。
+作業開始！ 1．ドライバをダウンロードしてインストールする 1.1．ダウンロードする 以下のものをダウンロードします。 http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2
+cd ~/src wget http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2  1.2．インストールする tar xvlf tip.tar.bz2 cd pt1-7662d0ecd74b/driver make sudo make install  2．modprobeにブラックリストを追加する vi /etc/modprobe.d/blacklist.conf  blacklist earth-pt1  を/etc/modprobe.d/blacklist.confに入力する
+3．再起動する sudo reboot  このコマンドを入力すると再起動されます。
+4．確認する ドライバが導入されたか確認するために、再起動後以下のコマンドを入力します。
+ls /dev/pt1* /dev/pt1video0 /dev/pt1video1 /dev/pt1video2 /dev/pt1video3  このように表示されると導入されています。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/">
+    <div class="thumb thumb-f36f9407596208cf49fea5da9719a479"></div>
+
+    <div class="inner">
+      <h2 class="title">Edgerouterでポート開放をしてみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-22T18:05:10JST">Mar 22, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回はEdgerouterでポート開放をコマンド操作でしていきます。
+こちらのサイトを参考にさせていただきました。
+https://qiita.com/maiani/items/b45b0505377401be083a
+わかりにくい点などがありましたら、上記のサイトさんをご覧ください。
+コマンドで設定していく 今回は以下のポートを開放していきます。
+80/tcp 172.16.1.100
+3389/tcp,3389/udp 172.16.1.10
+1．ファイアウォールの設定 80/tcpの設定をしていきます。
+set firewall name WAN_IN rule 50 description &quot;80/tcp http&quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.16.1.100 set firewall name WAN_IN rule 50 destination port 80 set firewall name WAN_IN rule 50 protocol tcp  3389/tcpと3389/udpポートを設定します。
+set firewall name WAN_IN rule 50 description &quot;3389/tcp,3389/udp RDP&quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/set-pppoe-with-edgerouter/">
+    <div class="thumb thumb-e4adede97234f17a19cf117ee40e89f5"></div>
+
+    <div class="inner">
+      <h2 class="title">EdgerouterでPPPoEの設定をする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-12T00:06:47JST">Mar 12, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
+環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
+設定していく 設定を適応する際はcommit 設定を保存する際はsave
+コマンドが必要です。
+1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &quot;PPPoE&quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-using-ipv6-of-eo-with-edgerouter/">
+    <div class="thumb thumb-94668b7a1ba8892182e26abcd979b943"></div>
+
+    <div class="inner">
+      <h2 class="title"></h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-08T00:07:05JST">Mar 8, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
+Edgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）
+注意：今回の設定ではIPv6のファイアウォールの設定をしていないので、セキュリティ的にかなり危ないので、実際に構築する方はご注意下さい。（当方もファイアウォール周りがあまりわかっていないので、分かり次第、別の記事にさせていただきます。）
+前提条件 プロバイダーはK-opticomのeo光ネット1Gコース（ホームコース）を使用しております。
+WAN:eth0
+LAN:eth1
+とします。
+また、上の注意の点でも書きましたが、ファイアウォールを設定していないので、ご注意ください。
+使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface 'pppoe0'  これをやっていないせいでかなり時間をとりました。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-fix-neovim-error/">
+    <div class="thumb thumb-2a6c29eb9ffe9676a41b2337e39ce0cd"></div>
+
+    <div class="inner">
+      <h2 class="title">neovimでUltiSnips requires py &gt;= 2.7 or py3というエラーの対処法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-02-20T18:53:54JST">Feb 20, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">最近、新たにデスクトップPCにLinuxMintを導入してneovimやtmuxやらの環境構築をしている途中に
+UltiSnips requires py &gt;= 2.7 or py3
+とこのようなエラーをneovimを起動する度に吐いてしまったので対処法を備忘録として載せておきます。
+環境 OS:LinuxMint 19
+原因 apt-get install neovim からインストールしたため、neovimの最新バージョンではないのが原因
+コマンドを入力 pip install neovim  これを入力すると、
+Collecting neovim Using cached https://files.pythonhosted.org/packages/78/ec/ac9905ccab8774b64c37cdff9e08db320c349eda0ae3161aebcac83e5590/neovim-0.3.1.tar.gz Complete output from command python setup.py egg_info: Traceback (most recent call last): File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt; ImportError: No module named setuptools ---------------------------------------- Command &quot;python setup.py egg_info&quot; failed with error code 1 in /tmp/pip-build-bezjAu/neovim/  このような謎エラーが出てきました。
+neovimとpip installで入れようとしているものとバージョンが合わないと怒られます。
+ということで、neovimの公式からインストールしていきましょう。https://github.com/neovim/neovim/wiki/Installing-Neovim
+LinuxMintの場合はベースのディストリビューションがUbuntuになるので、Ubuntuのインストール方法を用います。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/">
+    <div class="thumb thumb-ee61cc8e1908077be6f06acc8d46356c"></div>
+
+    <div class="inner">
+      <h2 class="title">EdgeRouterでLAGとタグVLANを設定する</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-02-08T01:45:05JST">Feb 8, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
+  Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
+今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
+LACPの設定を行う まず、最初にLACPの設定を行っていきます。
+1．bondインタフェースを作成する set interfaces bonding bond0 description &quot;LAG Interface&quot;  descriptionはbond0に対する名前なので各自で変更してください。
+2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。
+LACPではhash-policyというものがあるので、ここではlayer2としておきます。
+タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
+今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
+set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/increase-swap-space-with-vps/">
+    <div class="thumb thumb-680002304cb445f1b81debf30fed3333"></div>
+
+    <div class="inner">
+      <h2 class="title">VPSでスワップ領域を増やす</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-02-05T05:08:54JST">Feb 5, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">VPSで格安のものになってくると、問題となってくるのがスペックになります。
+昔のVPSに比べると、メモリが512MBに増えておりかなり使えるものになってきましたが、それでも不足してしまうという現実があります。
+そこで、気休め程度になってしまいますが、スワップ領域を増やしてみました。
+１．確認する 最初にSWAP領域があるかないか調べるために以下のコマンドを実行します。
+free -m  total used free shared buff/cache available Mem: 481 158 104 0 218 310 Swap: 0 0 0  当方のVPSではこのようになっていました。
+Memがお分かりの通り、実メモリです。
+Swapがスワップ領域です。
+Total 0となっていると、その領域は存在しないという意味です。
+２．スワップ領域を作る dd if=/dev/zero of=/swapfile bs=1M count=4096  ３．適応させていく 3.1.スワップの権限を変更する chmod 600 /swapfile  3.2.スワップを適応する mkswap /swapfile swapon /swapfile  ４．スワップを恒久化する この操作を行わないと再起動で元通りになってしまうので、次回以降の起動のためにこれから設定していきます。
+HDDのマウントなどで使われるfstabに追記していきます。
+/etc/fstabを開き、以下のものを最下位に追記します。
+#Swap Area /swapfile swap swap defaults 0 0  これでスワップ領域の設定が完了します。
+まとめ このような方法でスワップ領域を簡単に作ることができます。
+メモリ不足の根本的な対策は違うプランにして増やすべきですが、私のようにお金がないやほかの諸々の事情がある場合はこれで乗り切れると思います。
+今回はこれで以上です。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/">
+    <div class="thumb thumb-f979e5873acf1746295363cb1f49ca37"></div>
+
+    <div class="inner">
+      <h2 class="title">wordpressでGutenbergエディタが開いてくれない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-01-30T19:41:05JST">Jan 30, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
+結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
+このようになった   Gutenbergが開いてくれない
+上の画像にもあるように、「エディターで予期しないエラーが発生しました」
+「復旧を試みる」をクリックしても何の反応もありませんでした。
+「投稿内容をコピー」や「エラー文をコピー」はクリックすると反応がありしっかりとコピーできました。
+たまたま、開いている記事だけがおかしいのかと思い、いくつか他の記事を開いても同じような現象が発生しました。
+プラグインを疑う 最初にプラグインを疑いました。
+すると、まさかのドンピシャでした。
+  すべてのプラグインを停止
+すべてのプラグインを停止させてから一つずつ有効にさせていくと&hellip;
+  プラグイン一覧
+Gutenbergプラグインが一番怪しいということがわかりました。
+おそらく、標準搭載される前に、このプラグインを使っていたので、これがバージョンが上がった段階でこのような現象が起こったことが今回の原因ではないかと思っています。
+結論 プラグインはしっかり管理しておいた方がいいです
+私の場合は、プラグインの関連でこの問題が起こりました。逆に、プラグインを全部無効にしてもGutenbergエディタが開けない場合は他の問題が起因している可能性が高いです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/">
+    <div class="thumb thumb-af52aa9af4225045cc566d54dee14483"></div>
+
+    <div class="inner">
+      <h2 class="title">RTX1200でeo光のIPv6を使えるようにする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-01-30T17:17:30JST">Jan 30, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">みなさんRTX1200というyamahaのルータを持っていますか？
+eo光が配布してくれるeo光多機能ルータというものがありますが、使いやすいのですが民生用ということもあり機能が限定されています。 また、安定性もそこまで正直なところそこまで良くないです。
+ということで、今回はRTX1200でもeo光のIPv6を使えるようになるという記事を拝見させていただきましたので、当ブログでも紹介させていただきます。
+参考にさせていただいた記事 http://sky.jp/sub218.html
+作業開始 共通部分 ipv6 route default gateway pp 1 ipv6 prefix 1 dhcp-prefix@pp1::/64  pp部分 pp select 1 description pp PRV/PPPoE/0:eo pp keepalive interval 30 retry-interval=30 count=12 pp always-on on pppoe use lan2 pppoe auto disconnect off pp auth accept pap chap pp auth myname ID password ppp lcp mru on 1454 ppp ipcp ipaddress on ppp ipcp msext on ppp ccp type none ppp ipv6cp use on ip pp nat descriptor 1 ipv6 pp rip send off ipv6 pp dhcp service client ipv6 pp secure filter in 1010 1011 1012 2000 ipv6 pp secure filter out 3000 dynamic 100 101 102 103 104 105 106 pp enable 1  pppoeの設定箇所に以下のコンフィグを流し込む</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/">
+    <div class="thumb thumb-1b3694e31c6e8350e0fc49c085f23c00"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSでL2TPサーバーを構築してみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-01-18T16:21:21JST">Jan 18, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
+VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
+OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。
+L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分がありますが、AndroidやiOSやWindowsのようなクライアントの標準機能（外部アプリやソフトなし）で簡単に繋ぐことが可能なので、おすすめです。
+構築開始！ １ 必要な物をインストールする yum -y install xl2tpd libreswan  ２ L2TPを設定する L2TPサーバーの設定をしていきます。
+2.1 xl2tpdのメインの設定を変更する 共通する設定
+/etc/xl2tpd/xl2tpd.conf
+[global] ;パスの指定 auth file = /etc/ppp/chap-secrets ;グローバルIPアドレスをここに指定する listen-addr = xx.xx.xx.xx [lns default] ;L2TPクライアントから割り当てられるIPアドレスの範囲を指定する ip range = 192.168.1.128-192.168.1.254 ;L2TPサーバー側の仮想ネットワークのIPアドレスを指定する local ip = 192.168.1.99 ;chap認証を拒否するのか refuse chap = yes ;pap認証を拒否するのか refuse pap = yes ;認証を許可するのか require authentication = yes ;ホスト名 name = LinuxVPNserver ;デバッグを取るか、取らないか ppp debug = yes pppのオプションファイルの場所を指定 pppoptfile = /etc/ppp/options.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/use-openvpn-to-connect-vps-and-pfsense-at-home_part2/">
+    <div class="thumb thumb-937409701cde51150a09041f7a30c8ae"></div>
+
+    <div class="inner">
+      <h2 class="title">openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-01-10T11:49:55JST">Jan 10, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
+その2ではopenvpnのクライアントになるpfsense側の設定をしていきます。
+前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
+サーバーIP:10.0.0.9
+openvpn（サーバー側）のポート:1194/udp
+サーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動   1.2.CAを追加する Addをクリックする
+  Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
+Certificate data に ca.crtの内容をすべて入れます。
+Serial for next certificate はよくわからなかったので「1」と入れました。
+1.3.クライアント証明書を登録する Certificate ManagerにあるCertificateに移動します。
+  Descriptive name に適当な名前をつけます。
+Certificate data にclient1.crtの内容を入れます。
+Private key data にclient1.keyの内容を入れます。
+2.pfsenseでopenvpnの設定を開く   VPN-&gt;OpenVPNを開きます。
+2.1.openvpnでclientを追加する   AddでClientを追加します。
+2.2.設定をしていく   Server host or address:10.0.0.9　&lt; -サーバーIP
+Description: &lt; - openvpnのClient名の設定（わかりやすい名前で良い）</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/">
+    <div class="thumb thumb-e154f7ce1b50d5030325abd3e883cbd9"></div>
+
+    <div class="inner">
+      <h2 class="title">大好きな曲を電話回線網から流す方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-25T05:28:23JST">Dec 25, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+最終日ということもあり気合を入れて紹介させていただきます。
+作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&hellip;）
+このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
+お家の方にも紹介していただけると楽しんでいただけると思います。電話帳に登録した方がいらっしゃれば、私の方まで報告していただけると嬉しいです。
+コンギョバージョン
+05054377759
+一般男性脱糞シリーズバージョン
+05054377762
+＊追記　ゆゆうたの様々な曲を取り寄せております、ゆゆうた楽曲専用ダイヤルを開設いたしました。
+ゆゆうた楽曲専用ダイヤル
+05053595690
+暇な方は是非この電話番号にかけてみてください。
+もし、通じない場合はお家の固定回線からかけてみてください
+誰でも簡単に作ることができるのでそのレシピを紹介します。
+仕組み   材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+＊VPS or 自宅サーバーをサーバーと略させていただきます。
+レシピ 0.SIP情報を観察する   ドメインとSIPアカウント、そのパスワードをメモっておきます。
+1.Asteriskをサーバーに入れてあげます CentOSさんの場合はパッケージが標準で搭載されていないので、Debianさんにお願いします。
+Debianさん
+apt -y install asterisk apt -y install mpg123  mpg123はasteriskでmp3を流すためのコーディック用のパッケージです。
+2.Asteriskの設定ファイルを調理してあげます /etc/asterisk/sip.conf　を開きます。
+（お好きなエディタから開いて下さい。)
+register=&gt;sipアカウント:sipアカウントのパスワード@ドメイン  ;IP [fusion-smart_1] type=friend username=sipアカウント fromuser=sipアカウント secret=sipアカウントのパスワード host=smart.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/configure-vlan-with-powerconnect/">
+    <div class="thumb thumb-80777496656477bf6615e08ccf9d2f7a"></div>
+
+    <div class="inner">
+      <h2 class="title">PowerConnectでVLANの設定をする</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-21T11:44:05JST">Dec 21, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">PowerConnect6248というものをバリバリ動かしている筆者です。
+やっぱり、家庭では最低でも48ポート必要ですよね？
+まあ、こいつのせいで電気代が掛かっているので対処法を考えていますが&hellip;
+Ciscoのスイッチとは設定方法がすこし異なるところもあるので、今回はその部分を説明させていただきます。
+VLANの種類 VLANでの設定方法では以下の2つの種類があります。
+ accessポート trunkポート  前半にaccessポート、後半にtrunkポートの設定方法について説明させていただきます。
+Accessポートの設定編 Accessポートの設定方法を紹介します。
+例として：1/g12ポートにVLAN100を割り当て、1/g13ポートのVLAN200と割り当てるとします。
+ config vlan database vlan 100 vlan 200 exit interface ethernet 1/g12 switchport access vlan 100 exit interface ethernet 1/g13 switchport access vlan 200 exit  上記のコードでaccessポートの設定ができます。
+vlan databaseで使うVLANを設定しないと文句を言われるので、注意して下さい。
+Trunkポートの設定編 そもそも、trunkポートとは複数のVLANを一つのインタフェースで実現する際に使用します。
+それでは設定方法を紹介します。
+例として、1/g1をVLAN 5,10,20とします。
+ config vlan database vlan 5 vlan 10 vlan 20 exit interface ethernet 1/g1 switchport mode trunk switchport trunk allowed vlan add 5,10,20 exit  このような感じで簡単に設定ができます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/building-openstack-part1/">
+    <div class="thumb thumb-f4ba660c2ff14013bae998dd48b979cd"></div>
+
+    <div class="inner">
+      <h2 class="title">openstackを構築していくpart1</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-12T21:53:06JST">Dec 12, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">openstackを自力で一から頑張って構築していこうという試みを始めます。
+検証目的の場合であれば、centosのpackstackのような自動インストールツールを使うべきです。 実用的な運用を目指していこうという主旨の上でやっていきます。
+筆者自身も構築途中ということもあり、時間をかけて記事を出していく予定なので、よろしくお願いします。
+注意：わからなくなり断念する可能性がありますが、ご了承のほどお願いします。
+Part1ではopenstackの構造を わかった範囲 で説明させていただきます。
+openstackの特徴 そもそもopenstackの特徴として、IaaS(Infrastructure as a Service)の環境を自分たちでも簡単に構築できる点です。
+また、openstackにはコンポーネントというものがあり、イメージファイルを管理するGlanceやユーザ情報を管理しているKeystoneなどのように機能別に分かれているのが特徴です。
+コンポーネントに分ける利点として、一つのサービスが止まってもすべてが死なないだろうという考えがあるからです。
+一つ死んだらまずいんじゃね？と言われるとその通りですが、少しでもサービスの全停止を防ぐためという目的があるからです。
+openstackの構築形式 openstackの構築の形式として、以下の2つがあります。
+ すべてのコンポーネントを一台のサーバーに導入する(All in one) コンポーネントをノードごとにサーバーに分けて導入する  前者の一台のサーバーにすべてのコンポーネントを導入する方法はあまり、おすすめできません。ノードごとにサーバーを分けてコンポーネントを導入する方法を推奨します。
+理由として、All in oneで設計してしまうと、物理的にサーバーが故障した場合に対処しづらい点があるからです。
+各ノードごとに分けて構築していると、死んだサーバーのノードのみを復旧できるからです。それにより、リスク回避ができます。すべてのサービスが瞬時に使えなくなるということがなくなるという利点があるからです。
+これらによって、各ノードごとにコンポーネントを分けてサーバーに導入するのをおすすめしています。
+主なコンポーネント(絶対に必要なもの）  Keystone Nova Glance Neutron Horizon Cinder Swift(必須ではない)  この上記のコンポーネントが必須となります。重要なものなので、一応リストに入れておきました。
+各コンポーネントの紹介はこれからやっていきます。
+Keystone Keystoneとはそれぞれのコンポーネントに対するユーザや認証情報を管理しています。
+openstackでややこしくなるところでもあります。
+プロジェクトやユーザ情報などを登録します。ユーザごとに権限を割り当てることができるのでopenstackの根幹に関わる重要なコンポーネントです。
+Nova Novaとはコンピュートノードで使われています。
+仮想マシンの作成や起動などの制御に使われている。
+KVMなどの仮想マシンを操作するコンポーネントと思っていただいても大丈夫です。
+仮想マシンを管理するものであって仮想マシンではないので、注意してください。
+Glance isoデータなどの仮想ディスクイメージを管理しているコンポーネントです。
+isoデータのみではなく、vdiやvhdなどのVMイメージなどの保存などを提供しています。
+Neutron ネットワークを管理しているコンポーネントです。
+L2やL3スイッチのネットワークを作成することが可能になります。
+Horizon WebGUIを管理しているコンポーネントです。
+Cinder 永続的なデータを提供するコンポーネントです。
+VMとつなげて、提供するということもありVM上で使用するストレージを管理するというふうに筆者は思っています。（間違っていたら、コメント下さい
+Swift 分散型のストレージサービスを提供するコンポーネントです。
+また、REST APIでアクセスをさせるのでVMが起動・停止にかかわらずアクセスできる点がメリットです。画像ファイルやログファイルを保存するのに特化しています。
+まとめ このように必須のコンポーネントだけでもこれだけあります。なかなかややこしいのが現状です。この回ではopenstackを構築していく上での基本事項を紹介させていただきました。 次回のPart2からいよいよ闇の構築をしていきます</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/">
+    <div class="thumb thumb-50483c79ff61b62341ddbb0fe4102f2c"></div>
+
+    <div class="inner">
+      <h2 class="title">Proxmoxがかなり使いやすい件について</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-11T23:59:39JST">Dec 11, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">Proxmoxというハイパーバイザー型のOSがありますが、かなり使いやすいので便利な点をこの記事で紹介していきます。
+Proxmoxとはなんぞや(^^;)? KVMとOpenVZをサポートしているハイパーバイザー型のOSです。 Linuxには仮想マシンであるKVMとコンテナであるOpenVZはLinux系であればかんたんに構築できますが、GUI管理が簡単にできないという問題点がありました。 それがProxmoxでは簡単にWebGUIで操作することができます。
+ということで、そろそろ使いやすい点を紹介していきます。
+使いやすい理由 １．WebGUIが神 こんな感じのWebGUIです。かっこいい上にかなり使いやすいのでESXiのような手軽さで使うことが可能になっています。
+メモリやCPU使用率も簡単に確認することができます。
+  Proxmox内で仮想マシン選択時
+2．バックアップが取りやすい WebGUIからワンクリックでバックアップを取ることが出来ます。
+復元も「リストア」をクリックすることで、一瞬で復元させることも可能です。
+LZO、GZIPを使って圧縮してバックアップすることができるので、ディスク容量をあまりとられない点でもかなりおすすめです。
+  ３．コンソールもかなり使いやすい  noVNC SPICE  この3つのコンソールを使うことができる（SPICEは操作したい方のクライアント側にソフトを入れる必要あり）
+  このような感じでブラウザから簡単に仮想マシンに接続することができます。
+４．Debianベースのため拡張しやすい XenServer（XenServerはCentOSがベース）にも言えることになりますが、ProxmoxはDebianベースで作られているため拡張がしやすいです。
+筆者の場合では、WebminやソフトウェアRAIDの管理ツールであるmdadmを入れています。
+  Proxmoxに導入しているWebmin
+このようにDebianベースのソフトウェアを導入することができるので、今まで慣れてきたソフトウェアも簡単に導入することができます。
+まとめ これらの理由から筆者はハイパーバイザーOSであるProxmoxをおすすめします。
+LinuxではKVMを動かすことができますが、なかなかCUIでの操作が大変だったりGUIでの操作では複雑なことができなかったりなどと取っ掛かりにくいという点があります。 しかし、Proxmoxの場合では誰でも使えるようにチューニングされた状態でOSを提供してくれているということもありかなりおすすめです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-initialize-ap-firmware-on-cisco892w/">
+    <div class="thumb thumb-3b268b99ebd6f104f593d6af4c39f9ec"></div>
+
+    <div class="inner">
+      <h2 class="title">Cisco892WでAPファームウェアを初期化する方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-09T21:59:07JST">Dec 9, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">Cisco892WはAPファームウェアとルータ用ファームウェアが別れているなかなか変態仕様になっています。 初期化をどのようにするのかこの記事で紹介していきます。
+そもそもCisco 892Wとは？ Cisco 892Wはルータとアクセスポイントが合体したものです。扱いとしてはルータになります。Cisco 892に無線機能がついただけのものです。
+Cisco892Wはルータとアクセスポイントが合体していることもあり、ルータ用OSとアクセスポイント用のOSが分かれている特殊な機種です。
+簡潔に言うと、ルータ用のファームウェアとアクセスポイント用のファームウェアは別々にあるということです。
+そのこともあり、ルータだけでなくアクセスポイント側の知識もないとこのルータを触ることが難しいので気合をいれて構築していきます！
+APファームウェアの初期化 これからいよいよAPファームウェアの初期化を行っていきます。
+グローバルコンフィグレーションモードではなく特権モードで行います。
+Router# &lt;===特権モードはこんな感じ
+Router(config)#&lt;===グローバルコンフィグレーションモードはこんな感じ
+service-module wlan-ap 0 reset  上記のコマンドを入力すると、
+ Use reset only to recover from shutdown or failed state AP config will not be saved Do you want to reset?[confirm]  「本当にリセットするの？」と892W君が確認してくれるのでyと入力するとリセットが開始されます。
+まとめ このような感じでAPファームウェアの初期化を行うことが可能となりました。
+892Wの欠点はAP側の設定を大胆に間違ってしまう（パスワードがわからなくなったりなど）と、初期化するしか方法がなくなるので注意が必要です。 家庭用のものではルータ＋APが入っているのが出回っていますが、業務用の場合であればルータとAPが分かれている場合が多いです。 家庭用であれば、合体している方が便利というのが一番だと思いますが、難しいところです。
+少しずつ、892WやAironet系のCiscoの無線機器の記事も出していく予定ですので、よろしくお願いします。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/redundant-wan-with-ciscorouter/">
+    <div class="thumb thumb-bc403f43fa14bc4fc1f27b7388b24da0"></div>
+
+    <div class="inner">
+      <h2 class="title">CiscoルータでWANを冗長化する</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-06T00:31:45JST">Dec 6, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。
+CiscoルータでWAN側の冗長化を行うために、HSRPというCisco独自のプロトコルを使用します。 また、デフォルトゲートウェイを冗長化するものとして、VRRPというプロトコルが存在しますが、今回はこれを使用しません。
+今回は例として、Cisco 841Mを使って構築します。
+VRRPの弱点 VRRPもHSRPと同様のCisco独自プロトコルですが、ルータの冗長化はできます。しかし、WAN側の冗長化ができないという欠点を持っています。
+そこで、今回はWAN側の冗長化を目標にしているので、HSRPを使用します。
+（VRRPでもできるのかもしれませんが知識不足で分かっておりません。）
+Cisco以外の機種では&hellip; HSRPはお得意のCisco独自プロトコルとなっています。他社のネットワーク機器では独自のプロトコル又は出来ない可能性が高いので気をつけてください。
+構築していく 以下のようなトポ図で構築すると仮定します。
+  上のルータをrouter1とし、下のルータをrouter2とします。
+また、LAN側は同一ネットワークである必要があるので注意してください。
+各ルータのインターフェースは下記の通りとします。
+router1
+WAN側：GigabitEthernet 0/5
+LAN側：GigabitEthernet 0/0
+router2
+WAN側：GigabitEthernet 0/5
+LAN側：GigabitEthernet 0/0
+Router1の設定 LAN側のinterfaceに
+ standby 10 ip 192.168.0.1 standby 10 priority 105 standby 10 preempt  を設定するだけです。
+standby 10 ip 192.168.0.1の10の部分はHSRPのグループ番号なので適当な数字を入れても問題ありません。
+priority 105の部分はどのルータを優先的に使うのかという設定です。
+Router2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 priority 100  を設定するだけです。
+コンフィグの内容はrouter1に書いた内容と同じです。
+まとめ VRRPでは物理的なルータの冗長化をすることしかできませんが、Cisco独自プロトコルになってしまいます。 しかし、HSRPを使うとWANの冗長化をすることが簡単にできるので、家庭でCiscoのルータでWANの冗長化をする際は是非参考にしていただければ幸いです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/create-software-raid-with-proxmox/">
+    <div class="thumb thumb-cae066edf7affdcf5a08bb11627ed18c"></div>
+
+    <div class="inner">
+      <h2 class="title">proxmox（Debian系）でソフトウェアRAIDを組む</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-02T22:01:52JST">Dec 2, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回はproxmoxというハイパーバイザーOSを使ってソフトウェアRAIDを組んでみます。 ソフトウェアRAIDを組む方法として、mdadmを使って構築していきます。普通はmdadmをコマンド操作で構築しますが、正直なところキツイのでwebminを使ってRAID構築をしていきます。webminではWebUIから構築出来ますが、実際に動いているのはmdadmなので「コマンド操作したい！」となった時でも対応できるのでおすすめです。
+1．最初にWebminの導入 1.1 Webminをダウンロード http://www.webmin.com/download.html から最新版の.debファイルをwget経由でダウンロードします。
+wget https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  https://~all.debの部分は最新版のリンク先を貼り付けてください。
+1.2 Webminをインストール このように、dpkgで.debファイルをインストールします。
+dpkg -i https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  恐らく、これでエラーを吐いてインストールできないので（インストール出来たらこのコマンドは必要ないです。）、次のコマンドを実行します。
+apt-get -f install  このようにすると、Webminをインストールできます。 最後にダウンロードした.debファイルは必要なくなるので、削除しておきましょう。
+rm webmin*  これでhttps://[proxmoxのIPアドレス]:10000にアクセス出来るか確かめておきましょう。
+1.3 mdadmをインストールする webminをインストールしてもソフトウェアRAIDの管理ソフトウェアのmdadmがインストールされないので、導入します。
+apt-get install mdadm  これでインストールは終了です。
+2.ソフトウェアRAIDを構築 2.1 最初に webminをrootパスワードでログインしてください。
+2.2 RAIDで使用するディスクをごにょごにょする 1．ハードウェア＞ローカルディスクのパーティションに移動します。
+  2．使用するディスクを選択します。
+  3．Wipe PartitionsよりGPTを選択してWipe and Re-Labelをクリックします。  
+  4．ここからは、RAID用のパーティションを作成します。プライマリ パーティションを追加を選択します。
+  5．種類の部分をLinuxRAIDにし、作成します。
+  2.3 RAIDを構築する 1．ハードウェア＞Linux RAIDまで移動します。
+  2．このような感じで選択出来るので、構築したいRAIDを選択して、次のレベルのRAIDデバイスを作成 をクリックします。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_1/">
+    <div class="thumb thumb-1753fbec006ba9c2679ee447527edc92"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSで無線から有線に変換する(1)</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-20T14:06:55JST">Nov 20, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">諸事情でどこかのイベントでバックボーンを構築をする際に無線から有線に変換する必要性が出てきたので、この記事ではその方法を紹介します。 トポ図 ルータ &lt;&mdash;&mdash;&mdash;-&gt; CentOS &lt;&mdash;&mdash;&mdash;-&gt; Client External Internal External(eth1),Internal(eth0)
+設定をしてみる 1.firewallコマンド eth0をInternalゾーン
+firewall-cmd --zone=internal --change-interface=eth0  eth1をExternalゾーン
+firewall-cmd --zone=external --change-interface=eth1  永続化する時は、&ndash;permanentをつけるといけます。
+2.IPマスカレード firewall-cmd --zone=external --add-masquerade --permanent firewall-cmd --reload firewall-cmd --zone=external --query-masquerade cat /proc/sys/net/ipv4/ip_forward（「1」であれば有効） firewall-cmd --zone=internal --add-masquerade --permanent firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -o eth1 -j MASQUERADE firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth0 -o eth1 -j ACCEPT firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth1 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT  3.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/">
+    <div class="thumb thumb-a604eee1a619bfc9841b5b3b824420e6"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSでリンクアグリゲーションの設定をしてみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-19T01:29:33JST">Nov 19, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
+リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
+設定方法 設定方法として、以下の2つがあります。
+ nmtui（GUI） nmcli（CUI)  今回はこの内のnmtuiを使った設定方法を紹介します。 nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。
+設定していく 1.nmtuiを起動する sudo nmtui
+恐らく、管理者権限ではないと設定出来ない可能性が高いです。  
+こんな感じのネットワークの設定画面が表示されます。
+2.LAGの設定をしていく Edit a connectionを選択してから、Addを選択すると、下のようなものが出てきます。
+  LAGを使う場合はBondを選択します。
+3.bondの設定をしていく   AddでEthernetを選択し、Device名を手打ちでします。 それから、Modeで802.3adを選択すると、リンクアグリゲーションを使うことが出来るようになります。 IPv4を固定にしたい場合は、Manualですることができます。 最後にOKを選択し、ダイアログを閉じます。 これでLAGを使用することが可能になります。
+4.IPアドレスを取得＆pingが通るか確認する google.co.jpにpingが通るか確認するには
+ping google.co.jp  IPアドレスが取得されているか確認したい場合は
+ip addr  これで確認することが可能になります。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/compare-recommended-rental-servers/">
+    <div class="thumb thumb-fa19de21998237e94faf8f5c0aa5a124"></div>
+
+    <div class="inner">
+      <h2 class="title">おすすめのレンタルサーバーを比較</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-12T01:26:24JST">Nov 12, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">レンタルサーバーは数多くあると思うので、おすすめのレンタルサーバーを抜粋して紹介します。一応、順位をつけますがあくまでも筆者の意見であるということを留意してください。
+1位 XServer 
+機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|○|○(リストア時、料金発生)|○|○|○|無制限|MySQL,SQLite|70G～|
+料金＆プラン（24ヶ月、36ヶ月継続プランもあり） |プラン|容量|初期費用|3ヶ月継続|6ヶ月継続|12ヶ月継続| |X10|200G|3000円|1200円×3ヶ月|1100円×6ヶ月|1000円×12ヶ月| |X20|300G|3000円|2400円×3ヶ月|2200円×6ヶ月|2000円×12ヶ月| |X30|400G|3000円|4800円×3ヶ月|4400円×6ヶ月|4000円×12ヶ月|
+その他
+ 転送量はプランによって変わります。 また、データベースのMySQLは50個～になっておりプランによって変わります。  エックスサーバー 有名なレンタルサーバーの一つです。 安定性が高く、契約している人が多いレンタルサーバーです。 サーバースペックが高速と言われているのこともあり、確かにページのレスポンスもかなり早いです。 ブログを始めようと思っている方はこちらのレンタルサーバーが一番おすすめです！！！
+2位 さくらのレンタルサーバー 
+機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|△|○|△|○|○|無制限|MySQL,SQLite|40G～|
+料金＆プラン |プラン|容量|初期費用|月額|年間一括契約| |ライト|10G|1029円|129円|1543円| |スタンダード|100G|1029円|515円|5142円| |プレミアム|200G|1029円|1543円|15428円| |ビジネス|300G|5142円|2571円|25714円| |ビジネスプロ|500G|5142円|4628円|46286円| |マネージド|700G|48600円|12960円～|142560円～|
+注意事項
+ SSHやCronはプランによって使えない場合があります。 MySQLはライトプランでは使うことができません。 マネージドプランはサーバーを占有するので料金が高いです。HDD以外にSSDプランもあります。  さくらのレンタルサーバ さくらのレンタルサーバーはかなり安いプランからあるので、おすすめです。 また、さくらインターネットが運営していることもあり安定しているので、おすすめです。 WordPressを使うにはスタンダードプラン以上である必要があるので注意してください。（MySQLが使えないので&hellip;） アクセス数がめちゃくちゃありすぎて困る(^^;)という方は、マネージドプランを選択することで対処出来ると思われます。
+3位 LOLIPOP  機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|○|△(オプション料金300円/月)|△|○|○|無制限|MySQL,SQLite|40G～|
+料金＆プラン |プラン|容量|初期費用|1・3ヶ月|6・12・24・36ヶ月| |エコノミープラン|10G|1500円|100円/月|100円/月| |ライトプラン|50G|1500円|300円/月|250円/月| |スタンダードプラン|120G|1500円|600円/月|500円/月| |エンタープライズプラン|400G|3000円|2300円/月|2000円/月|
+注意事項
+ SSHはプランによって使えない場合があります。 MySQLはエコノミープランでは使うことができません。（ライトプランは1個までに鳴っています。） バックアップは7世代まで出来ますが、オプション料金の300円/月が必要になります。 ファイル上限数あり  こちらもレンタルサーバーではかなりの大御所です。 ファイルの上限数があるので、注意が必要です。 また、LOLIPOPでもWordPressを使うにはライトプラン以上が必要となります。 エンタープライズプランでは転送量が無制限になるので、アクセス数が大量な方は必要です。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/">
+    <div class="thumb thumb-d73c73655efa2bdfcdf2ca7208398360"></div>
+
+    <div class="inner">
+      <h2 class="title">ブレードサーバーの中を見てみる1</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-11T05:01:52JST">Nov 11, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">みなさん、ブレードサーバーって知っていますか？
+今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
+ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
+特徴として  200V電源ないとキツイ 拡張ボードで拡張することが出来る ブレードを交換するだけで長く使うことが出来る コスパ的に安くなる場合があるらしい？  ブレードを交換するだけで長く使うことができるというのはブレードだけを新しく変えることで新しいCPUの載っているものを使うことができます。 4～5台以上になるとラックサーバーに比べてブレードサーバーの方がコストパフォーマンスがよいとされています。（私はそのように思っていませんが&hellip;）
+ブレードの紹介 今回はブレードのエンクロージャの紹介ではなく、ブレードの方の紹介させていただきます。 HP ProLiant 460 Series Generation 6 Bladeという型番の紹介をしていきます。 こいつはCPUは2個ついており、メモリは12スロットあります。 また、SAS又はSATA系の2.5インチHDDかSSDを搭載できます。 最大でDC12Vの40Aまで電源を供給されるブレードサーバーになります。
+中を見てみる   これがもらったブレードです。
+背面はこんな感じ   これがブレードの背面コネクタになります。 白い穴みたいなところに電源が通っているという感じです。
+側面   背面にはSDカードスロットで挿すことが可能になってます。 恐らく、ESXiのブート元で使ったりする用だと思われます。
+中身を見ていきましょう   このような感じになっています。
+蓋     こんな感じでわかりやすく書かれています。ここら辺は、普通のサーバーと同じような感じです。
+中身はこんな感じ～         CPUが見ての通り2つ搭載されています。 また、メモリの方も2Gx6あります。
+まとめ 記念にブレードを持って帰ったのはいいのですが、エンクロージャ（ブレードの側）がないと使い物にならないです。 お金持ちにでもなれたらブレードサーバーを買って購入したいものです。 ブレードサーバーを8つ本気で動かそうとすると200Vで50Aぐらい食うので日常生活では騒音＋電気代の問題があるので、使えるものではないです。 次回の「ブレードサーバーの中を見てみる2」ではブレードサーバーの拡張ボードの紹介をします。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/use-of-homeserver-and-vps/">
+    <div class="thumb thumb-b70e6d932f25d3112d9cd29eb2abf88e"></div>
+
+    <div class="inner">
+      <h2 class="title">自宅サーバーとVPSの使い分け</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-10T02:41:27JST">Nov 10, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回は自分なりの自宅サーバーとVPSの使い分けの仕方を紹介します。 そもそもの話になってはしまうのですが、自宅サーバーとVPSの簡単な説明をさせていただきます。
+自宅サーバーとVPSの説明 自宅サーバーとは？ 自宅サーバーとはそのままの意味で、自宅で運用するサーバーのことを言います。
+    こんな感じのものです。
+VPSとは？ VPSとは、自分の家ではなく、ホスティングサービスを貸している会社のサーバーの一部を使っているもののことを言います。 レンタルサーバーと違う点として、root権限を使うことができるので、自由にアプリケーションをインストールすることが出来るサービスです。 専用サーバーではなく共用サーバーになるので、パフォーマンスの低下などがありますが値段が安いので使っている方も多いサービスになります。 VPSの例として、 さくらのVPS ConoHa VPS Windows ServerなどはVPSで契約するとかなり安いです。ライセンス込みの値段になっているのでおすすめです。
+どちらを使うべきか？ このような方は自宅サーバーを使うべき！  ファイルサーバーを使っている 録画サーバーを使っている ハードが大好き メモリをかなり使うもの ゲームサーバーを使っている  このような用途で使われる方は自宅サーバーを使うべきです。 人にサーバーを貸したり、ゲームサーバーを運用する方はスペックがかなり必要になってくるのでVPSよりも自宅サーバーの方がいいです。
+このような方ならVPSがおすすめ  あまり使わない WebServerしか使わない メモリが少ないサービスを動かす 安定性重視  このような方はVPSのみで十分です。 安定性のことを考えると自宅サーバーよりも断然VPSです。 お家に自家発電がある方は別ですがそのような家はないと思います。
+自宅サーバーとVPSの両方を使うべきな人 安定性とハードな使い方をする人（ゲームサーバーや人にサーバーを貸すような使い方） は自宅サーバーとVPSの両方を使うべきです。 あまり、止めたくないサービスをVPSで動かし、ストレージサーバーやゲーム系のサーバーを自宅サーバーで動かすような運用の仕方が一番いいと思っています。 私自身もそのような運用の手段を取っております。 このブログはレンタルサーバーで運用していて、個人で使う物であまり止めたくないサービスをVPS、ストレージサーバーやゲームサーバーを自宅サーバーで運用しています。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/aws-lightsail-is-too-cheap/">
+    <div class="thumb thumb-f3df56baeef42f26e5bafb3b18324804"></div>
+
+    <div class="inner">
+      <h2 class="title">AWSのLightsailというVPSが安すぎる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-09T02:20:35JST">Nov 9, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">AWSってみなさん知っている方が多いと思います。EC2という従量課金制のものがあることを知っている人が多いと思います。 AWSでVPSと同等のものがあります。それがLightsailです。 今回はLightsailの簡単な紹介とメリットとデメリットを書いていきます。
+Lightsailって何？ Lightsailは俗にいうVPSです。 Lightsail=VPSと考えても大丈夫です。
+何がいいのか？  安い（ガチで安い。安すぎる Lightsailの中身はEC2のサーバーと同じ（AWSの人が言ってた） WindowsServerも安い VPCピアというのでAWSの他のサービスに連携できるらしい（やってないのでわからない） データベースプランもある（これも使ったことないのでわからん）  値段 VPSを使う奥様方にはありがたいぐらい安いです。
+Linux系   80USD、160USDプランもあります。（2018/11/09執筆時）
+  OSは↑のものが対応しています。（2018/11/09執筆時）
+WindowsServer系   120USD、240USDプランもあります。（2018/11/09執筆時） SQL Serverプランもあります。 これを見るとかなりお値段がお安いことがわかると思います。
+メリット  安い IPv4の固定IP使える（たしか、上限5個まで。それ以上は0.5~1.0ドルぐらいかかります。） 安定している（AWSだけはある） 安い割にストレージ容量がでかい データベース専用プランあり 日本リージョンに対応している（東京リージョンのみ）  デメリット  Webコンソールはssh接続しかできない（OS自体バグったり、sshの設定をミスると最初からインストールする羽目になるので注意が必要です。） IPv6が使えない 一応、開発用途らしい（どっちでもいい） 大阪ゾーンはない（おそらくこれからもないんじゃねって感じ）  思うこと 正直なところWebコンソールからでもssh接続しかできないのがかなりの問題です。 OS自体バグる以前にsshの設定をミスると一発アウトなので気をつける必要がかなりあります。 会社で使えるかと言われると微妙なところなので、そこは正直に↓のところを使っておきましょう。 さくらのVPS konohaVPS 個人でする分や開発用途で使う分にはかなりおすすめです。 デメリットの部分さえわかって使えば、かなりおすすめのVPSの一つです。 AWSということもあり、安定していることもありおすすめです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/">
+    <div class="thumb thumb-3ee55f2024d3edfef2570b7784098807"></div>
+
+    <div class="inner">
+      <h2 class="title">ラックサーバ(RX300 S6)を静音化してみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-08T17:40:23JST">Nov 8, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">現在、メインで動かし続けている自宅のサーバーがRX300 S6になりますが、2Uだからということもありますが、かなりうるさいという問題が発生しました。 普通に考えるとデータセンターに置く物なのでうるさい理由がわかりますが、この状態では家で他の作業が出来ないのであまりよくないのですがファンを静音化する作業してみました。
+そもそも、静音化とは サーバー内のファンの速度を意図的に落とすことのことです。 サーバーやパソコンにとってはあまりよろしくないのが実情ですが、うるさすぎるので仕方がないという感じです。 これによって壊れることもありますので、自己責任で作業をしてください。 かなりやってることはかなりよろしくないので、わかった上でしてください。
+作業していく 1．抵抗を選ぶ 1/4W（0.25W）の抵抗を使ってみたのですが、電流が強すぎて煙を出して「プシュ〜〜」という音をしながら焼ける事件が起きたので10Wのセメント抵抗を使います。 ファンに書いてある↓の電流と電圧などに気をつけて作業してください。抵抗値は電圧と電流を元に計算します。  
+1/4W抵抗は↓のようなものです。普通の抵抗です。
+  OSOYOO(オソヨー)金属皮膜抵抗器 抵抗セット 10Ω~1MΩ 30種類 各20本入り 合計600本 (600本セット) Amazon  楽天市場  Yahooショッピング      セメント抵抗はこんな感じのものです。結構ガチなやつです。
+  TDO抵抗器 角形セメント抵抗器 10W MS-10 20ΩJ (10個入) Amazon  楽天市場  Yahooショッピング      サーバーのファンに合わせて抵抗は合わせてください。そうしないと下手をすると燃えます
+2．ファンに抵抗をつなげていく   おそらく、わかりにくいと思いますが、ファンの赤い配線の間に抵抗を入れてあげます。 サーバー系のファンは3～4の配線がされていることが多いです。  
+  かっこいいと言える配線ではありませんが、こんな感じに通すことで一応スマートにはなります。 最終的に同じことを5回繰り返して大好きなラックサーバーに入れると↓になります。  
+以外とスマートにまとまったので、満足しています。
+3．電源をつけてみる 電源をつけるときは気をつけてください。 下手すると燃えるかもしれないので、電源をすぐ引っこ抜けるようにしておきましょう。 今は、結構動いてくれてます。 めっちゃ静かになりました。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/asterisk-error1/">
+    <div class="thumb thumb-644e4dbadcc2f256fdc38d79e8698382"></div>
+
+    <div class="inner">
+      <h2 class="title">asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-04T03:18:33JST">Nov 4, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/">
+    <div class="thumb thumb-cc9e69d0460298185af53c42b2e78277"></div>
+
+    <div class="inner">
+      <h2 class="title">UbuntuServerでOpenVPNサーバーを構築</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-10-17T00:34:29JST">Oct 17, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
+OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
+2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
+3.varsファイルを設定していく export KEY_COUNTRY=&quot;JA&quot; export KEY_PROVINCE=&quot;OSA&quot; export KEY_CITY=&quot;Osaka&quot; export KEY_ORG=&quot;test&quot; export KEY_EMAIL=&quot;test@myhost.mydomain&quot; export KEY_OU=&quot;test&quot;  vi varsやnano varsのようなコマンドで設定しています。 varsファイルの編集が終わったら必ず
+source ./vars  を実行します。
+4.CA証明書・秘密鍵を作っていく ./clean-all cp openssl-1.0.0.cnf openssl.cnf ./build-ca  cp openssl-1.0.0.cnf openssl.cnfをしないと./build-caの段階でエラーを吐きます。
+5.サーバー証明書・秘密鍵を作っていく ./build-key-server server  Enterを押しまくってyを入力します。
+6.DHパラメータを作っていく ./build-dh  多少時間かかります。
+7.TLSの秘密鍵を作っていく openvpn --genkey --secret ta.key  8.クライアント側の証明書を作っていく ./build-key client1 nopass  client1のところは適当な名前にしてください client1.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/reverse-proxy-with-grafana-with-nginx/">
+    <div class="thumb thumb-793d7eda7fd4daf200dcfc92705238a1"></div>
+
+    <div class="inner">
+      <h2 class="title">grafanaをnginxでリバースプロキシしてみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-10-15T04:20:47JST">Oct 15, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">みなさん大好きなGrafanaを使っている方は、たくさんいらっしゃると思うのですが、今回はnginxを使ってリバースプロキシを使ってみました。少しだけややこしいと思ったので記事にします。 正直なところ、ここを見なくても公式サイトにしっかりと載せてくれてます。 おそらく、そちらを見た方がいいです。 http://docs.grafana.org/installation/behind_proxy/
+今回やりたいこと ドメインはtest.domainと仮定します。 http://test.domain/grafana/でアクセス出来るようにする test.domainはもちろん自分のドメインに変えてください。
+ nginxのリバースプロキシの設定 grafanaの設定  終了です
+1.nginxの設定 nginxのリバースプロキシの設定からしていきます。
+server { listen 80; server_name test.domain location /grafana/ { proxy_pass http://localhost:3000/; } }  2.grafana側の設定を変更する /etc/grafana/grafana.iniから設定を変更する
+[server] domain = test.domain root_url = %(protocol)s://%(domain)s/grafana/  これで終わりです。 公式サイトではこの後にもHA Proxyの設定もいろいろ変更しないといけないと表記されていましたが、HA Proxyの設定をしなくてもいけました。
+まとめ Grafanaでリバースプロキシの設定をするときは少しgrafana側の設定をする必要がでてくるので、公式サイトさえみればなんとかなると思うので頑張って設定してください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/cisco-aironet-does-not-get-802.11n-speed/">
+    <div class="thumb thumb-fcc6b6a748248ba665f1208e2cde96ff"></div>
+
+    <div class="inner">
+      <h2 class="title">Cisco_Aironetで802.11nの速度が出ない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-10-09T02:33:27JST">Oct 9, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
+Dot11Radio1の設定 5ghzの設定になるので、Dot11Radio1でコンフィグを弄ります。 方法を簡単に書くと、チャンネルを適当なところで固定してから40Mhzの設定をするという感じです。 802.11nは2つのチャンネルを束ねて、速度を倍にしているといったごり押しな規格になっておりチャンネルが自動設定ではなぜかうまく行かないので、手動で合わせます。 また、どのチャンネルが重なっていないのかはスマホにWifiアナライザーのアプリを入れておくとかなり幸せになれます。
+interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1  とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
+まとめ 802.11nの設定はコツさえ掴めたらなんとかなりますが、能力不足の自分にはかなりきつかったです。 もっとよく知りたい方は、Ciscoの公式サイトにしっかりと説明を書いてくれているのでじっくり読むことをおすすめします。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-using-wpa2psk-with-aironet/">
+    <div class="thumb thumb-efab3ca6cb492519cd9130c2087724fc"></div>
+
+    <div class="inner">
+      <h2 class="title">Cisco_AironetでWPA2-PSKを使ってみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-10-09T02:15:26JST">Oct 9, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
+前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
+初期の設定 マルチssidを有効にするために
+dot11 mbssid  を実行します。
+ssidの設定 vlanで指定する場合はauthentication openの前の行に下記のようなコマンドを入力してください。 vlan 100  100のところには適当な物に変更してください。
+2.4ghz側 dot11 ssid test-2.4ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  passwordのところにはssidに対するWifiのパスワードを設定してください。 5ghz側の設定も同じようにしていきます。
+5ghz側 dot11 ssid test-5ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  こちらも同様にpasswordのところには適当なパスワードを入力してください。
+無線の設定 トランクなどでvlanを分けている場合はSSIDから飛ばすVLANごとに設定を入れる必要があります。その場合は、
+ssid test-2.4ghz  の前の行に下記のようなコマンドを入れます。
+encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書き換えてください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/">
+    <div class="thumb thumb-e609f839254c60896d411665e71c8256"></div>
+
+    <div class="inner">
+      <h2 class="title">nextcloudでアップロードができない理由はこれだった...</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-09-25T04:27:25JST">Sep 25, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
+戦犯は&hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
+なぜわかったのか？ nextcloudのweb操作で小さいファイルだとアップロードできるのに、１MBを超えるファイルをアップロードしようとすると、なぜか途中で止まってしまうということが起こりました。 そこで、nextcloudのクライアントからを入れてみたときに、どんな挙動が起こるのか確かめてみると&hellip;  
+これについて調べてみると、phpというよりもwebサーバー本体のコンフィグの設定に問題があることを知りました。 apache2かnginxのどっちがおかしいのかと考えると、nginx側がおかしいということに気づきました。
+対処法 nginxのコンフィグを変更する server { #省略 client\_max\_body_size 1000m; #省略 }  こんな感じで/etc/nginx/nginx.conf又は/etc/nginx/conf.d/cloud.confあたりに突っ込めばアップロードできるようになりました。
+nginxを再起動 systemctl restart nginx  nginxを再起動すると見事にファイルをアップロードできるようになりました。
+まとめ 今回の原因として、nginxをあまり触っていなかったことが問題になりました。 やっぱりコンフィグ類はちゃんと覚えておくべきだということを改めて実感しました。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/try-building-a-centos-openvpn-server/">
+    <div class="thumb thumb-d2b93cf49d51b47b0a8699fc8c777bcc"></div>
+
+    <div class="inner">
+      <h2 class="title">CentOSのOpenVPNサーバーを構築してみる</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-09-07T20:00:06JST">Sep 7, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
+この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
+その１:VPS側（サーバー側）の設定
+その２:pfsense側（クライアント側）の設定
+その３:ファイアーウォールの設定
+VPS側で
+OpenVPNの設定をしていく この記事ではCentOSを使った紹介をしていきます。
+最初にやっておくこと
+CentOSにepelのレポジトリを使えるようにしておきましょう
+関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa  フォルダを作る mkdir /etc/openvpn/easy-rsa  フォルダ群をコピー cp /usr/share/easy-rsa/***/* /etc/openvpn/easy-rsa/ -R  米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）
+認証局を作る cd /etc/openvpn/easy-rsa ./easyrsa init-pki ./easyrsa build-ca ./easyrsa gen-dh cd /etc/openvpn openvpn --genkey --secret /etc/openvpn/ta.key  詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。
+./easyrsa build-caを実行すると&hellip;
+Enter PEM pass phrase:  こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。
+サーバー側の証明書を作成 パスワードがめんどくさいのでパスワードなし(no pass)にします。
+cd /etc/openvpn/easy-rsa ./easyrsa build-server-full server nopass  Server側のkey:/etc/openvpn/easy-rsa/pki/private/server.key
+Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
+クライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/">
     <div class="thumb thumb-1ef0bb421f7b938aca9f8a04dc80741a"></div>
 
@@ -1451,8 +3075,10 @@ Amazon
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/how-to-play-a-pc-game-outside-1_rdp/">
     <div class="thumb thumb-8f047839945817489d5ec619d57d45ca"></div>
 
@@ -1485,8 +3111,10 @@ VPNプロバイダ:Windows（ビルトイン） 接続名:名前（なんでも�
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/how-to-play-pc-games-remotely_rdp/">
     <div class="thumb thumb-51aa8682072ac76c5dbdc378e301c1dd"></div>
 
@@ -1514,8 +3142,10 @@ VPNプロバイダ:Windows（ビルトイン） 接続名:名前（なんでも�
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/">
     <div class="thumb thumb-1d31a530fca6ba9bac31d1c521063cb2"></div>
 
@@ -1543,8 +3173,10 @@ GPD Win2   CPU:Core m3-7Y30 メモリ:4G又は8G バッテリー:7000mAh、3.8V
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/">
     <div class="thumb thumb-15230553a080c3fa1f66d36653f37545"></div>
 
@@ -1576,8 +3208,10 @@ POEとはPowerOverEthernetの略でLANケーブル一本で通信と電源を同
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/">
     <div class="thumb thumb-b31b89bf504e8fb023f93cad8b1bfacd"></div>
 
@@ -1601,8 +3235,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/pros-and-cons-of-rack-servers/">
     <div class="thumb thumb-6b4a9744aaabce79a2ba9d11b4a38dfc"></div>
 
@@ -1623,8 +3259,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/recommended-used-laptop-manufacturers/">
     <div class="thumb thumb-76f363c955870f25c95425cf40ef6909"></div>
 
@@ -1645,8 +3283,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/5-recommended-free-tool-apps/">
     <div class="thumb thumb-3cf301221e65f40ba426c78b49d44074"></div>
 
@@ -1668,8 +3308,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
   </a>
 </article>
 </div>
-        
-        <div class="mcol c6"><article class="li">
+            
+          
+            
+              <div class="mcol c6"><article class="li">
   <a href="https://yoneyan.dev/post/silent-powerconnect6248/">
     <div class="thumb thumb-e44079f1fc20e9aaf48df394eb047f6a"></div>
 
@@ -1697,9 +3339,1261 @@ PowerConnect6248中身[/caption] こんな感じになってます。
   </a>
 </article>
 </div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/">
+    <div class="thumb thumb-7faf8972334dcccef0280b6eee771176"></div>
+
+    <div class="inner">
+      <h2 class="title">windows10で記憶域プールが作成できない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-04-08T12:11:09JST">Apr 8, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
-      </div>
+      </ul>
+
+      <div class="summary">TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&hellip;&hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
+起きたこと   記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
+解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
+そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  
+まとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！</div>
     </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/3-recommended-town-construction-games-on-steam/">
+    <div class="thumb thumb-6c6850d5fad90f311748de35efc15184"></div>
+
+    <div class="inner">
+      <h2 class="title">Steamでおすすめの町建設ゲーム3選</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-03-22T17:22:35JST">Mar 22, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回はSteamでおすすめの町建設ゲームを3つほど紹介させていただきます。
+SimCity™ 4 Deluxe Edition   通常価格:1980円 対応OS:windowsXP（windows10動作可能） 最低スペック
+ CPU pentium3 500以降 Memory 256MB GPU 32MB、DirectX7.0以降対応のグラフィックボードであること Storage 1.6GB以上  Steam:http://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/ 町建設ゲームで一番有名なのがSimcityシリーズだと思います。 Steam版の残念なところはSimcityシリーズの最新作はOriginにしかないところです。 最新作ではないというところもあり、かなりゲームシステム的には古いですが、逆に懐かしのSimcityのスーパーファミコン版を思い出すところもあり、これはこれで面白いと思います。 日本語化する必要はありますが、比較的簡単にできるので、そこら辺は安心してください。 町建設ゲームといえばSimcityシリーズというところもあるので、みなさん是非やってみてはいかがでしょうか。 スペック的には今のパソコンでは余裕でいけます。
+Cities: Skylines   通常価格:2980円 （Deluxe Editionは3980円） 対応OS:windowsXP～windows8.1（windows10でも動作確認） 最低スペック * CPU Intel Core 2 Duo 3.0GHz 又は AMD Athlon 64 X2 6400+ 3.2GHz以降 * Memory 4G * GPU nVIDIA GeForce GTX 260, 512 MB or ATI Radeon HD 5670, 512 MB 以降 * Storage 4G以降</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/those-who-play-beautiful-girl-games-should-buy-xbox360/">
+    <div class="thumb thumb-985992bab2a6c1383f5d5d2fd02f95e4"></div>
+
+    <div class="inner">
+      <h2 class="title">美少女ゲームをやる人はXbox360を買うべき！！</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-03-09T22:09:46JST">Mar 9, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">美少女ゲームをするのにXbox360がおすすめの理由をこの記事では紹介させていただきます。
+理由 ゲームソフトがほかのコンシューマ機に比べてかなり安いという点にあります。 PC版の方をやりたくても10年以上のゲームでさえ、中古価格が5000円や10000円のゲームも多いんですよねーー だからコンシューマ機版の美少女ゲームをやることになってしまうんですが、PC版に比べて安いとは言っても美少女ゲームの多くは結構お値段が張ります。（特に有名なやつは&hellip;） 例えば、これらのソフトで比較してみましょう
+ゲームソフト比較 車輪の国、向日葵の少女   車輪の国 向日葵の少女(通常版) - Xbox360 Amazon  楽天市場  Yahooショッピング      とこのようにPS3やPSPでは新品や中古に関わらず未だにこのような値段がします。 しかし、Xbox360版はかなり価格が抑えられています。他のコンシューマ機の中古のゲームソフトに比べてかなり安く買えます。 なぜかXbox360版の通常版より限定版が安いのはちょっと謎ですがw ゲームソフトによってPS3版の方が安いというものもありますが、美少女ゲームの多くはXbox360版のソフトの方が安く買うことが出来ます。
+CHAOS;HEAD NOAH   CHAOS; HEAD NOAH (カオスヘッドノア) (通常版) 【CEROレーティング「Z」】 - Xbox360 Amazon  楽天市場  Yahooショッピング      CHAOS;HEAD NOAHで比較してみましょう。
+このようにXbox版の方が安いです。
+2019/11現在はPSP版の方が安くなっています。
+家でやるなら据え置き 少し話が変わりますが、Xbox360でやるならポータブルゲーム機で出来た方がいいという方もいると思います。 外でも楽しみたいなと思う方はPSPやPSVitaでやるのをおすすめします。 しかし、家でしかゲームをしない場合はポータブルゲーム機より据え置きでやるのをおすすめです！！！ 理由は 画質 です。 据え置きの場合は1080i以上の画質で楽しむことが出来るので感情が入りやすいという利点があります。 持ち運びできないので寝ながらゲームをすることが出来ないのが唯一の欠点です。 寝ながらゲームする方は少し高いですが、PSP用のソフトを買った方がいいです。
+まとめ 中古の場合だと、ゲームソフトによりますが、amazonで1円で出品している物もあるので、かなりお得にゲームが出来ます。 美少女ゲーム以外でも古めのゲームはXbox360の方が安くなる場合も多いです。 Xbox360の本体もヤフオクなどでうまいこと落札すると5000円ぐらいで手に入れることが出来るので、初期費用もPS4やPS3に比べると低いのでおすすめです。 さすがに生産終了していることもあって、新品は高いので中古で買いましょう！！！ みなさんによいゲームライフの助けになれば幸いです(^^)!</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/impression-that-i-tried-using-p10lite-for-one-month/">
+    <div class="thumb thumb-7b46239b386cceb8891c2d0a96c4d291"></div>
+
+    <div class="inner">
+      <h2 class="title">P10 liteの一ヶ月使ってみた感想</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-03-08T16:40:56JST">Mar 8, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">P10 liteを一ヶ月間使ってみた感想をこちらの記事に執筆させていただきます。 まず、スペックやらいろいろ紹介してから感想という流れで行きます。
+スペック CPU:HUAWEI Kirin658 オクタコア (4×2.1GHz+4x1.7GHz) RAM:3G ROM：32G WIFI/Bluetooth:802.11a/b/g/n/ac,Bluetooth4.1, センサー:加速度, コンパス, ジャイロ, 環境光, 近接, 指紋センサー GPS:GPS/AGPS/Glonass 画面:1920x1080(フルHD) とこんな感じです。auのVoLTEにも対応しているので日本で使うにはまったく問題ないように思います。 スペック的にもメモリが3Gもあり、マルチタスクでそこそこアプリも比較的多めに起動できます。さすがにアプリを起動しすぎると動作が重くなるのでそこら辺は注意をしておいた方がいいです。
+価格 P10 Lite これが今回レビューする機種です。 最新の機種はこちら P30 Lite
+写真はこんな感じ     台湾の九份で撮った写真です。[/caption]
+感想 いい点 あまり、ゲームをしない方には特におすすめのスマホです。 ゲームをする方でもアイマスの音ゲーぐらいなら普通にさくさくゲーム出来るので、FPSのように3Dをめちゃくちゃ多様する3Dゲームをあまりしない方にもおすすめのスマホです。 ストレージも32Gがあるので、写真やアプリなどをかなり大量に入れることが出来るので、いろんなアプリを入れて使う方にもおすすめのスマホです。 値段も25000円（執筆者購入時）だったのでスマホの中ではかなりコストパフォーマンスに優れているといった印象です。 カメラの性能もかなりいいので、スマホのカメラを使っている方はかなりいいように思いました。 指紋認証もかなり素早くこの価格帯のスマホでは十分だと思いました。 液晶も見やすいので動画を見ていても疲れないのもよい点でしょう。
+悪い点 この価格帯で悪い点はあまりないのですが、以下の点が少し悪いかなと思います。
+ アプリを起動しすぎるとかなり重くなる おサイフケータイ（NFC）をつけてほしい  大体こんな感じです。 CPUもそこそこの性能ですが、やっぱりミドルレンジということもあり、アプリを起動しすぎると重くなる傾向にあります。例えば、6個ぐらいアプリを動かしている中カメラを起動するとかなり重い場面があったのでそこが唯一の欠点のように思いました。まあ、これはユーザー側で対処できる問題（アプリを使った後はタスクキルする）なのでなんとかなりますが、注意は必要です。 おサイフケータイをつけてほしい理由としてはやっぱりスマホ一つで支払いが行えるのはかなり便利だからです。まあ、ここはandroidpayが日本でちゃんと対応することで機種が増えていくとは思うんですが、いつになることやら～ていうのが正直なところです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/buy-ps3-first-before-you-buy-ps4/">
+    <div class="thumb thumb-0f839f2736dbd5f86b63656cf0ccb7da"></div>
+
+    <div class="inner">
+      <h2 class="title">PS4を買う前にまずPS3を買え！！！</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-02-05T13:24:35JST">Feb 5, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">題名通りです。PS4を買う前にPS3を買った方がいい理由を今回紹介させていただきます。
+理由  PS3の方がゲームソフトが安い PSStoreでも同じゲームでもPS3の方が安い  みなさん、お気づきだと思いますが、理由はゲームソフトが安いという点です。 なにかしらPSのゲームソフトは高いです。パソコンでゲームをするユーザーの中でよく使われるSteamというゲームクライアントがあります。そこはしょっちゅうセールやってるので比較的安く買えることが多いですが、PSStoreでは安く買えるのは大体、年末とかゴールデンウイークあたりぐらいです。なので、いろんなゲームをやりたい人はまずPS3を買う方がいいのではないのかと思います。 PS4でPS3のソフトが動いたらいいんですが、互換機能が入っていないのでPS3を買うのが一番の近道ではないのかなと思います。
+PS3を手に入れる方法 メルカリやamazonの中古で売っています。 なるべくCECH-2500A以上の機種を購入した方がいいです。 初期シリーズのCECH*00はPS2との互換が取れていますが、半田クラックの問題がありYLOD問題がよく起こるので買うのは控えた方がいいです。どうしてもPS2をやりたい方は本体を買った方がいいでしょう。実機からBIOSの抜き取れる方はPCでPCSX2のエミュレータを使うのもありのように思います。   PlayStation3 チャコール・ブラック 500GB (CECH4300C) Amazon  楽天市場  Yahooショッピング     
+ゲームソフトの例 全体的にPS3版はかなり安いです。
+長所と短所 PS3の長所 その理由の部分でも書きましたがゲームソフトがかなり安いという点です。 もし、飽きてPS4をやるようになった方でもPSPlusのフリープレイソフトにPS3のゲームも入っているのでそのゲームをすることもできるので、買って損はないように思います。
+PS3の短所 PS3も一応フルHDには対応している物の音ゲーや美少女ゲームのように軽いゲームは対応している物も多いですが、RPGやFPSなどのように重いゲームは大体HD（720P）までのゲームが多いで注意が必要です。テレビでゲームをやる人は720Pや1080Pはあまり問題ありませんが、モニターで近くでゲームをやる筆者の環境のような方は画質が悪いと思う部分があるので注意が必要です。
+まとめ このように欠点もありますが、やっぱりゲームソフトが安く買える点は買う側にとってはかなり重要です。 みなさんもなるべくいろんなゲームに触れてみたいけどお金がないという筆者のような方は絶対おすすめなので是非購入してみてください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/">
+    <div class="thumb thumb-733906d206316cb4aff85734b62fa2e6"></div>
+
+    <div class="inner">
+      <h2 class="title">Gmail管理でInboxが超使いやすい件について</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-02-03T16:52:18JST">Feb 3, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">非常に悲しいことに、2019/04/02にInboxのサービスが終了してしまいました。
+みなさんはウェブメールは何を使っていますか？
+Googleの@gmail.comを使っている人もいれば、Appleの@icloud.comを使う人、Yahooの@yahoo.co.jpのようにいろんなウェブメールを使っていると思います。しかし、そこで問題となるのが、様々なメールが来ることで読むのがめんどくさくなるということがよくあります。そこで、今回は一番多くの人が利用しているGmailでの話になりますが、管理アプリを紹介していきます。
+Inboxとは？ 初リリースが2014年と比較的に新しいGoogleの公式サービスになります。
+googleのGmailチームは日々流れ込む大量のメールを処理するような上級者向けのサービスとして開発されたという契機があるみたいです。これにより、Inboxを使うことで、かなり管理が楽にすることが出来るようになりました。
+Inboxの特徴  ジャンルごとに自動的に分類してくれる Gmailとは別物 スマホ版はスヌーズ機能（後で通知）がある UIが洗練されていて見やすい  といった特徴があります。
+InboxとGmailの違い Gmail
+  Inbox
+  とこのようになっています。
+Inboxは自動的にショッピングやマネーのように分けてくれるのでかなりわかりやすくなりました。
+自分のようにメールを分けるのがめんどくさい人でも自動的にやってくれるので是非使ってみてほしいところです。
+Gmailで自分でメールボックスを分ける機能がありますが、わかりにくいｗ
+それに比べてInboxでは誰でもわかるようなUIになっているので是非今すぐ使ってほしいです！
+Inboxの長所 Inboxで一番特徴的な機能はジャンルごとに自動的に分類してくれる機能です。
+最近はamazonでの購入時や銀行関連で通知がメールで来ることが頻繁にあり、重要なメールを見落としがちになりますが、Inboxを使うと未然に防ぐことが出来るのが一番の特徴になっています。
+後で通知してほしいメール（例えば、会議などのスケジュールが決まっているようなもの）を簡単に設定することも可能です。
+Inboxの短所 Gmailの標準アプリとは異なる点が唯一の短所だと思います。
+Gmailと分けることでアプリ使う層を分けることが出来るという利点が生まれますが、逆にこの便利なアプリの存在がわかっていないという人も多いのでそのところが唯一の短所ではないのかなと思います。
+まとめ Inboxの紹介をさせていただきました。
+いままでのGmailよりも使いやすくなっているのでメール管理に困っている方は是非使ってみてください！！！</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-karaoke-without-delay-on-ps4/">
+    <div class="thumb thumb-ef8f44e18a0b8ced053d57dfc00febf9"></div>
+
+    <div class="inner">
+      <h2 class="title">PS4で遅延なくカラオケをする方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-01-20T10:56:41JST">Jan 20, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">お詫びと訂正
+(2019/03/11 20:08) 有線マイクでの採点は現時点ではできません。
+(2019/03/11 17:30) 当方の知識不足による影響で「センド＆リターン付きのミキサーを使う方法」にて間違った方法を載せておりました。原因と致しまして、当方のfx sendの知識が不十分でした。誠にお詫び申し上げます。只今、対処法につきまして、模索しておりますのでもう少しお待ちください。
+amazonリンクを修正中によりアクセスできない可能性があります。
+PS4でカラオケ＠DAMしてみる 前回、このブログではPC版のカラオケ＠DAMを紹介させていただきましたが、最近PS4を購入したのでPS4版のカラオケ＠DAMを試してみました。そうすると、PC版と同じように遅延が発生したのでその対処方を今回は記事にさせていただきます。
+PS4版の利点  導入しやすい 採点機能が二種類ある（PC版は1種類） 契約はチケット形式になっており、1日間、30日間、1年間の三種類がある（1年間契約ならお得！）  PS4版の欠点  オーディオインタフェースを使うことが出来ない PS4が必要  ざっと書きましたが、このような感じになっています。
+遅延なくカラオケをする方法 遅延なくカラオケをする方法として2通りの方法があります。
+ 有線マイクを使う方法（採点できない） ワイヤレスマイクを使う方法（音声を受け取る側に出力端子が2つあるもの）  方法があります。
+注意していただきたいところとして、「有線マイクを使う方法」では採点ができないという点です。
+「センド＆リターン付きミキサーを使う方法」を試された方で、採点をしたい方は、現時点では採点できません。
+共通して必要なもの PS4につなげるときに必要になるものです。
+マイクの音とカラオケ音源を混ぜる必要があるため、ミキサーが必要になります。
+{:nomarkdown}  {:/nomarkdown}
+大体、こういう汎用性のあるものは認識してくれるので家に転がってるものがあればそれでも使えることは多いです。オーディオインタフェースは基本無理です。
+ミキサーに接続するときに業務用の6.3mmジャックというものになるので
+{:nomarkdown}   {:/nomarkdown}
+スピーカー（必要な場合）
+ミキサーに音が出力されるため、スピーカーで流す場合は別途でスピーカーを用意する必要があります。
+イヤホンでカラオケする場合は必要ではないです。
+{:nomarkdown}  {:/nomarkdown}
+有線マイクを使う方法（採点はできません） こちらの方法ではPS4側にマイク音がいかないので、採点出来ないです。
+有線マイクが必要になります。
+{:nomarkdown} {:/nomarkdown}
+接続方法 1．ミキサー部分のMICに有線マイクをつなげます。
+2．テレビのイヤホンジャックから音源を取り出し、ミキサーのLINE INに接続します。
+ワイヤレスマイクを使う方法 こちらの方法は検証済みです。また、こちらの方法では採点も可能です。
+PS4側につなげる必要があるので、オーディオアダプタをつけます。
+大体、こういう汎用性のあるものは認識してくれるので家に転がってるものがあればそれでも使えることは多いです。オーディオインタフェースは基本無理です。
+  Behringer Xenyx q502usb Amazon  楽天市場  Yahooショッピング      {:nomarkdown} {:/nomarkdown}</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/">
+    <div class="thumb thumb-8173a5b53ecaf210b93bed9af449d3d6"></div>
+
+    <div class="inner">
+      <h2 class="title">pfsenseでPS4やPS3のNATタイプ3になる際の対処法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-01-18T12:01:34JST">Jan 18, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">最近自作ルーターを構築して、WebGUIで管理できるpfsenseというOSインストールして使っている筆者です。
+pfsenseを構築したことで安定性がかなり上がったのですが、一つ問題が発生しました。それはPS3とPS4のオンライン機能です。pfsenseにしたことで、NATタイプ3になってしまい、オンラインで遊ぶ時に支障を来し始めたので、その対処法を紹介させていただきます。
+NATタイプとは？ PSにはネットワークの判別方法としてNATタイプというものがあります。
+NATタイプには以下の種類があります。
+ NATタイプ1 NATタイプ2 NATタイプ3  NATタイプ1とは？ PPPoE接続している際に表示されます。ルーターに接続せずに直で刺している状況です。
+普通はルーターに接続しているのでこのような場合はほぼないでしょうｗ
+NATタイプ2とは？ 一つのルーターを使ってアドレス変換ができている状況です。
+NATタイプ3とは？ 複数のルーターを経由して接続されている状況です。
+IPマスカレードで接続している場合でもこの表示が出ます。
+大体、この接続の場合はPSNのオンライン機能に一部に制限が発生する場合があります。
+自分の場合はパーティーのボイスチャットができなくなるという支障が出ました。
+NATタイプ何ならいいのか？ NATタイプ1とNATタイプ2であればPSのオンライン機能を支障が起こることなく楽しめます。
+NATタイプ3の場合は上でも書いてる通り、オンライン機能の一部に支障をきたすことになります。
+pfsenseの設定していく 1.Firewall-&gt;NAT-&gt;Outboundの設定 Outbound NAT Modeの設定   Hybrid Outbound NAT を選択して、Saveしてください。
+Mappingsの設定   Addをクリックする
+  上の通りに設定する。
+Sourceは自分のIPアドレスを設定
+入力が終わると、Saveして保存する
+  この通りになっているか確認してApply Settingする。
+2.Services-&gt;UPnP &amp; NAT-PMPの設定 UPnP &amp; NAT-PMP　Settingの設定   このように設定します。
+注意点としてはLog packetsとDefault Denyを有効にしてください。
+UPnP Access Control Listsの設定   設定例としてはこんな感じになりますう。
+ACL Entriesのところに</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/ps4slim-or-ps4pro/">
+    <div class="thumb thumb-ebbb64c96a5eddb0cbf49738f077d192"></div>
+
+    <div class="inner">
+      <h2 class="title">ps4slimとps4proはどっちの方がいいのか？</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-01-14T10:30:03JST">Jan 14, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">今回は現行機のPS4 slimとPS4 Proのどっちを買えばいいのか迷っている方の助けになればいいなと思い自分の意見を言いたいと思います。
+PS4の本体仕様を比較 PS4 Slim  メインプロセッサー
+Single-chip custom processor CPU : x86-64 AMD “Jaguar”, 8 cores GPU : 1.84 TFLOPS, AMD Radeon™ based graphics engine
+ メモリ
+GDDR5 8GB
+ ハードディスク
+500GB×1 ※1
+ 外形寸法
+約 265mm×39mm×288mm（幅×高さ×奥行き） （最大突起含まず）
+ 質量
+約 2.1kg
+ 光学ドライブ（読み出し専用）
+BD 6倍速CAV DVD 8倍速CAV
+ 入出力
+Super-Speed USB (USB 3.1 Gen1）ポート×2 AUXポート×1
+ 通信
+Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T) IEEE 802.11 a/b/g/n/ac Bluetooth® 4.0(LE)</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/why-you-dont-really-need-usb-typec/">
+    <div class="thumb thumb-838a2c278034a922c0d40b0e2e55f25d"></div>
+
+    <div class="inner">
+      <h2 class="title">USB-typeCが個人的にまだいらないと思う理由</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-12-13T19:20:14JST">Dec 13, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">USB-typeCが個人的にまだ必要でない理由をここに書いていきます。
+そもそもUSB-typeCというのは？ USBの次世代の規格です。USB3.0の次の規格でUSB3.1になります。 type-A,type-B,type-Cとありますが、これはUSBの形状が違うだけです。 このほかにもmini-type-A,mini-type-Bというものがあったり、micro-type-A,micro-type-Bといったものがあります。
+パソコンにはいらない パソコンにはいらないという理由は現時点で使われている周辺機器が、Type-Aの機器が多いという点です。  
+右のやつがUSB-Type-Aで、左のやつがmicrousb-Type-Aです。 現時点ではUSB-TypeAの方が使いやすいというのが一番の理由でしょう。 Type-Cにしてまで現状まだまだ使えるものを切り捨てる理由があまりないというのが多くの理由でしょう。Type-C対応製品を買うにもコストがかかってしまいます 現時点で売られているパソコンでも、Type-AとType-Cを両立させているような製品が販売されています。例えば、Type-Aを2個、Type-Cを1個というようなノートパソコンが増えています。Type-Cは拡張できるので正直一つあれば十分です。Type-Cが1ポートしか搭載されていないパソコンがありますが、変換ケーブルを持ち歩かないといけないのでそれが案外めんどくさいんですよね。（だから、自分はLet&rsquo;s NOTEが好きって感じですｗ） 変換器を挟むことによって、かさばったり、ノートパソコンからビヨーンとケーブルが伸びるのもどうかなという感じなので、わざわざ急いでType-C搭載パソコンを購入する必要はない用に思います。 実際、デスクトップパソコンではType-Cだけというのはほぼありません。理由としては、扱いにくいからというのが一番の理由です。現時点で使われている機器はデスクトップパソコンで使う場合には、据え置き周辺機器はあまり抜き差しをする必要があまり高くないので、わざわざType-Cにする必要がないというのが一番の大きな原因のように思います。 Type-Cの変換器はこんなものがあります。
+android端末にはちょうどいい android端末のようにモバイルで使うことを想定されている端末にはType-Cが一番適しているように思います。Type-Cは、充電しながらUSB機器を使えるというのが特徴です。MicroUSBでも充電しながら出来るものがありますが、給電不足やらなんやらでうまいこと行かないことが多いのでそういう点では非常に便利なインタフェースなのではないのかなと思います。 左がType-Cで、右がMicroUSBです。  
+  しかも、毎日スマホは充電するものなので、裏表がないType-Cのようなインタフェースはモバイル端末として一番適しているように思います。
+まとめ パソコンも最終的にはType-Cになっていくと思いますが、現時点ではまだまだ普及していないので、必要ないと思います。しかし、スマホのように毎日充電するような端末では裏表のないType-Cがめちゃくちゃ使いやすいのでおすすめです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/">
+    <div class="thumb thumb-8dec64112290766ab3809556c694a925"></div>
+
+    <div class="inner">
+      <h2 class="title">LastPassという最強のパスワード管理ソフトについて</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-12-13T11:46:18JST">Dec 13, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">みなさんはパスワード管理ソフトを知っていますか？ パスワードは自分で覚えることに超したことはないですが、登録しているサイトが10個以上になってくると覚えることが厳しくなってきます。 覚えにくくなることでパスワードの使い回しやわかりやすいパスワードにしてしまいがちになってしまいます。 そこで、今回はLastPassというクラウド型のパスワード管理サービスを紹介していきます。
+LastPassとは？ クラウド型のパスワード管理サービスになります。 このサービスの特徴はパソコン、スマホなどのデバイスを問うことなく無料でパスワード管理をすることが出来るのが特徴になっています。 ほかのパスワード管理サービスの中には、1Passwordというサービスがあります。 デバイス間でパスワードを同期させる場合は月額課金が必要となりますが、LastPassの場合は無料で使うことが出来ます。
+機能や対応OSなど 対応OS  Chromiumウェブプラグインが使えるブラウザ（windows,Mac,Linux） android ios  機能  マルチデバイスでIDとパスワードを同期 緊急アクセス  値段体系 値段体系として
+ Free Premium　2ドル Families　4ドル Teams　1ユーザーあたり2.42ドル Enterprise　1ユーザーあたり4ドルからスタート  （2017/12/13現時点）
+があります。
+Free はマルチデバイス、セキュリティチャレンジ、二段階認証という機能があります。
+Premium は暗号化された1GBのスペースと、優先サポート、YubiKeyとSesameの二段階認証、パスワードを一時的に貸し出す的なことができるのが主な機能になっています。
+Families はPremiumと同等の機能が6人まで使えるようになります。
+TeamsとEnterprise は企業向けなので、個人はFreeで十分なのではないかなと思います。
+個人で使うならFreeで十分です。二段階認証でYubiKeyやSesameを使う人はPremiumしましょう。
+LastPassの長所と短所 長所 LastPassの長所として、無料でほぼすべての機能を使えるところが一番よいところです。 ほかのパスワード管理サービスやソフトなどでは有料版を購入する必要がありますが、LastPassの場合は無料版でも十分に使える点で素晴らしいというところです。 android版では自動入力してくれるのでかなり便利に使うことが出来ます。
+短所 これは短所になるかわかりませんが、IDとパスワードをクラウド上で管理するのでいくら暗号化されているとしても、サーバー攻撃などでデータが漏出する可能性があるという点が一番怖いところになっています。 そんなこと言ってたら現在のクラウドサービスをすべて使えないのと同じなのでそこのところは安心して使いましょう。 対策方法としてはパスワードを長くすることと、二段階認証をすることでかなり安全性が高くなるのでおすすめです。
+まとめ LastPassは最強のパスワード管理ソフトであると言っても過言ではありません。 パスワードは自分で覚えるのが一番いいとされていますが、覚えられなくなりほかのサイトのパスワードを使い回しをすることになってしまうので、このようなパスワード管理ソフトはめちゃくちゃ便利であるように思います。 クラウド型ということもあって情報漏洩のリスクがありますが、暗号化されているので、二段階認証とLastPassのマスターパスワードだけは強力にしておいた方がいいです。 ということで、今回はLastPassの紹介でした！</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/repair-because-my-washing-machine-cannot-drain/">
+    <div class="thumb thumb-fcf1f9b47f596b96570b9414b911410b"></div>
+
+    <div class="inner">
+      <h2 class="title">我が家の洗濯機が排水できないので修理する</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-11-13T02:59:19JST">Nov 13, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">我が家の洗濯機が壊れてしまいました。機種はTW-180VEです。 症状としてはエラーが出て、洗濯できても排水できないという状況らしい。 新しく買うのもお金がかかるということもあるので、排水以外は故障していない感じなので修理することにしてみました。 ぐぐると私と同じような排水弁の問題がかなり出てきました。 これぐらいならなんとかなるんではないかと思ったので修理してみます。
+分解して故障箇所を特定してみる。   洗濯機の下の部分を外します。ネジはプラスドライバーで開けれます。  
+はい、開きました。 排水弁と、モーター部分を見てみます。  
+はい、モーターと排水弁をつなげているはずのワイヤーがありません。 排水できなかったのはこれが原因のようです。 排水弁は左のプラスチックの塊で、モーターは丸っこいやつです。 本来なら排水弁とモーターは針金でつながれているはずなのですが、金属疲労かしらんけど切れていました。 10年間使っていることも考えればこうなることもわかりますが、こうなるとは誰もがわからないと思います。 もうちょっと丈夫にしてほしいと思いましたが、これぐらいなら直せそうなので直していきます。
+修理代 針金代100円のみ（ホームセンターで買いました）   スチール針金 Amazon  楽天市場  Yahooショッピング      こんな感じのものでも十分使えます。
+修理していく 注意事項
+ 分解する際は電源コードを外して、感電が起こらないように注意してください。 基盤部分にはふれないようしましょう。（下手したら壊れます） 水漏れに注意して作業しましょう。（基盤部分に水がかかったりするとまずいので気をつけて作業してください） フローリングのように床が水に弱い場合はしっかりとタオルなどを用意しておきましょう    こいつが排水弁です。歯車みたいな形をしているところを回すと、  
+こんな感じで取れます。 排水弁のゴムの部分にプラスチックの棒が刺さっていますが、抜いても問題ないので無理矢理引っこ抜いてください。 中にバネが入っているので開けるとき少し堅いかもしれません。  
+見事に中のバネが途中で切れていました。 無理矢理ですがこのバネの間に針金を突っ込みます。 家に針金がなかったのでホームセンターで買ってきました。  
+一応、二種類の太さの針金を買ってきました。一つで100円です。かなり安い。 これをバネの間に突っ込んで無理矢理プラスチックに突っ込んでみると  
+このように入れます。 あとは、ゴムの部分にこのプラスチックのピストンを入れます。  
+こんな感じになりました。 針金は長くなくても大丈夫です。これの3分の1ぐらいの長さで十分でした。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/i-asked-shacho-san-about-the-resale-of-pt3-or-the-development-of-pt4/">
+    <div class="thumb thumb-e807644f1a24192a599aa8bb83c9481f"></div>
+
+    <div class="inner">
+      <h2 class="title">PT3の再販又はPT4の開発はどうなのかしゃちょーさんに聞いてみた</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-11-12T03:52:56JST">Nov 12, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">最近は少なくなりましたが、
+ PT3の再販は果たしてどうなのか？ PT4の開発はいつ？  という情報が錯綜していたので、つい最近有限会社アースソフトにメールを送って聞いてみました。
+メールをした結果   本文を打ち出すと
+アースソフトの長田と申します。
+この度はお問い合わせを頂きましてありがとうございます。
+現在のところ、PT3 の再生産や後継機を発売する予定はありません。
+PT3 は 2年間以上、販売店にて税込 1万円未満で販売されていました。
+2015年秋以降の販売は低調で、ほぼ需要は満たしたと考えております。
+流通在庫がなくなってからの新規の需要があるのは承知していますが、
+生産数が少なくなることから後継機のコストアップは必至であり、
+従来機種との比較でお客様にとってのメリットを出せません。
+宜しくお願い致します。
+とのことでした。
+お忙しい中、メールを返信していただいた社長さん本当にありがとうございました。
+メールから推測されるこれからのアースソフトの動向 個人的にはPT3の再生産や後継機を出してほしいところですが、きつそうですね。
+そこは少し残念ですが、仕方がないことですね。
+地デジやBSなどで新たな方式が出たら出るかもしれませんが&hellip;&hellip;
+期待はあまりしない方がいいでしょう。
+中古でもアホみたいに値段が上がっています。なんとかならんのかな～
+PT3はこれ
+
+PT3 Rev.A
+posted with カエレバ
+アースソフト
+Amazon
+楽天市場
+Yahooショッピング
+これはPT2
+
+アースソフト　PT2
+posted with カエレバ
+アースソフト
+Amazon
+楽天市場
+Yahooショッピング
+今買うとしたらPT2の中古がいいかもしれません。PCIEしかつなげないマザーボードもありますが、変換すればなんとかなりますｗ
+アースソフト以外のTS抜きチューナーは何があるのか？ アースソフト以外でもTS抜きチューナーはPLEX社であります。
+アースソフトに比べて安定性には欠けるものの、最低でも年一回は新しいものをリリースしているので、現行で新品を購入する際はおすすめです。
+でも、安定性ではアースソフトの方が上です。これはまじです。
+2017年（現時点最新モデル）
+
+PLEX 地上デジタル・BS・CS対応TVチューナー PX-W3PE4
+posted with カエレバ
+プレクス 2017-04-19
+Amazon</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/">
+    <div class="thumb thumb-1ec8df5a38e69cc430d4cd2c7fe3d9c4"></div>
+
+    <div class="inner">
+      <h2 class="title">Windows10 Fall Creators Updateでonedriveのファイルオンデマンドが使えない場合の対処法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-10-22T04:25:45JST">Oct 22, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">つい最近、年に二回のwindows10鬼の大型アップデートの時期が来てしまいました。 普通はwindows updateを待つべき何ですが、いきなりアップデートされては困るのでいつも手動でアップデートさせている筆者です。年一回で十分のように思ってしまうのは自分だけなのかなｗ 今回は、アップデートしたのはいいんですが、今回のアップデートの醍醐味のひとつであるonedriveのファイルオンデマンドが使えないので、その対処法についてこの記事ではご紹介していきます。  
+Windows 10 Fall Creators Updateにアップデートさせたのになんでないねんｗって普通なるよねー
+そもそも、なぜこうなってしまうのか？ onedriveのバージョンが古いというのが一番の影響になります。 一番、最新のonedriveに更新する必要があります。 そもそも、なんでアップデートしたときにonedriveの最新版を入れないのかがよくわからないんですがｗ ここではWindows 10 Fall Creators Updateを更新したという前提で手順を説明させていただきます。
+手順 1．onedriveの最新版をダウンロードし、インストール こちらのリンクからダウンロードし、インストールしてください。
+2．再起動する そのままの意味です。普通に再起動してください。
+3．onedriveの設定をする   このowndriveロゴを右クリックで開き、設定を選択します。  
+設定画面が出てきたら、ファイルのオンデマンドというのが出てきているので、ここのチェックボックスにチェックを入れることで有効になります。
+もし、ここでファイルのオンデマンドという項目が出てきていない場合は、何回か手順1を繰り返すとできる可能性があります。
+それでも、うまくいない場合は下のコメント欄に質問していただけると、お役に立てるかわかりませんが、可能な限り返事させていただきますのでよろしくお願いいたします。
+まとめ Windows10 Fall Creators Updateは大型アップデートの中では一番実用度が高いアップデートだと個人的には思っています。 今回の大型アップデートの醍醐味のひとつなのにこの問題はどうなのかなと思ってしまうところですが、windowsupdateでまだ供給されていないので仕方がないのかなと思う気持ちもあります。これが使えると容量不足に悩まされることなく、使えるので皆さんも使ってみてください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/steam-recommended-girl-game/">
+    <div class="thumb thumb-3552cf81461ead0993aee7921d4ad6c0"></div>
+
+    <div class="inner">
+      <h2 class="title">（英語の勉強にもなる）Steamおすすめ美少女ゲーム</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-07-12T00:18:19JST">Jul 12, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">PCゲームストアで有名なSteamの中には皆さん知っての通りたくさんの種類のゲームがあります。そこで、たくさんの種類の中でもギャルゲーと呼ばれる美少女ゲームというものがあります。Steamでは数多くのギャルゲーがあり、日本の会社が出したゲームもたくさんありますが、残念なことに世界に向けて売っているゲームになるので、ボイスは日本語なのに字幕が英語だけというものが多いので辞書引っ張りながらになるので時間はかかりますが、いい勉強にもなると思います。
+英語が本当に苦手な方でも面白いので国内版を是非国内版を買ってみてはいかがでしょうか。
+ここでの美少女ゲームはエ＊ゲーは該当しないので、18歳未満の方でも安心してできますｗ
+Steam版がここまで安い理由 価格的になぜここまで抑えられているのか疑問に思う方もいると思いますが、大体のゲームの開発費自体は国内で回収済みのようで、最低限の翻訳費を回収すればいいのでこの価格が実現できているみたいです。
+eden*   公式ページ:http://www.minori.ph/lineup/eden_/
+Steam版(字幕英語):http://store.steampowered.com/app/315810/eden/
+国内版(完全日本語):http://amzn.to/2uDeygk
+minoriが2009年9月18日に販売したインタラクティブ・ノベルになります。
+相変わらずminori作品のopはめちゃくちゃ絵がいいですｗ
+ストーリー性はかなりよくできています。amazonやSteamでの評価でも星5に近いくらいのスコアを出しています。アニメ化してもいいと言われるほどの作品で自分も実際にやってみてそのように思いました。個人的に中古で買おうかなと思っているゲームでしたが、中古価格でも未だに5000円以上するので、頑張って英語を翻訳しながらゲームをやっていこうと思います。
+Harmonia   公式ページ:http://key.visualarts.gr.jp/harmonia/
+Steam版(字幕英語):http://store.steampowered.com/app/421660/Harmonia/
+国内版(完全日本語):http://amzn.to/2vFETar
+CLANNADやAIRで有名な株式会社ビジュアルアーツのKeyブランドの2017/07時点で新作ゲームになります。
+国内版とsteam版とではかなり内容が違います。
+Steam版では先行販売を開始し、1ルートのみしか入っていないのでボリュームが少ないのが欠点です。
+Steam版はもともと、先行で発売という形で販売されていました。
+国内版では完成版として販売されているので、ルートが多岐にわたっています。
+なので、いろんなルートでゲームを楽しみたいと思っている方は国内版を買うことをおすすめします。Steam版をやってから国内版買うのもいいかもしれません。
+planetarian ~the reverie of a little planet~   公式ページ:http://key.visualarts.gr.jp/product/planetarian/
+Steam版(日本語・英語両方対応):http://store.steampowered.com/app/316720/planetarian_the_reverie_of_a_little_planet/
+国内版(完全日本語):http://amzn.to/2vG5Laa
+Steam版では日本語と英語の両方に対応しています。
+当初は英語のみの対応でしたが、日本語にも対応しました。
+これもkey作品になります。
+このplanetarianは国内版では 2004年11月29日と昔の作品になっています。
+初回販売から12年が経った2016年にはweb配信アニメとして、公開され、劇場版もあるので、ゲーム本編をクリアしてから見るのもいいように思います。
+まとめ このように（英語の勉強にもなる）美少女ゲームを紹介させていただきましたが、ストーリーだけをするのでもかなり楽しめる作品が多いので皆さん探してみてはいかがでしょうか？
+＊ゲームが増え次第この記事に追加します。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/cannot-update-with-freshclam/">
+    <div class="thumb thumb-333da5e9d440c3b78b1282c7882f2cba"></div>
+
+    <div class="inner">
+      <h2 class="title">freshclamで更新できない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-07-10T00:24:16JST">Jul 10, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
+ウイルス定義ファイルを更新しようとすると&hellip;   おい&hellip;まじか&hellip;
+root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).  こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので
+rm /var/log/clamav/freshclam.log  というコマンドを実行すると、
+root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started at Mon Jul 10 00:03:32 2017 Downloading main.cvd \[100%\] main.cvd updated (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr) Downloading daily.cvd \[100%\] daily.cvd updated (version: 23548, sigs: 1739222, f-level: 63, builder: neo) bytecode.cvd is up to date (version: 305, sigs: 62, f-level: 63, builder: neo) Database updated (6305533 signatures) from db.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/three-recommended-paid-smartphone-games/">
+    <div class="thumb thumb-06d036756ce47c738ce7cca6fdaf756c"></div>
+
+    <div class="inner">
+      <h2 class="title">有料スマホゲームのおすすめ3選</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-06-26T02:07:53JST">Jun 26, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">スマートフォンゲームで課金ゲームが乱立する中でみなさんに個人的に思うandroid,iosの両方が対応する有料ゲームを紹介させていただきます。
+また、値段やアプリの対応OSのバージョンはブログ執筆時のもになりますのでご注意のほどよろしくお願いいたします。
+Minecraft: Pocket Edition   android 840円
+androidバージョン:Android 4.2 Jelly Bean 以降
+googleplayリンク:https://play.google.com/store/apps/details?id=com.mojang.minecraftpe&amp;hl=ja
+ios 840円
+iosバージョン:ios8以降
+itunesリンク:https://itunes.apple.com/jp/app/minecraft-pocket-edition/id479516143?mt=8
+レビュー 大人気シリーズのMinecraftのモバイル版になっています。
+Minecraftのシリーズの中ではPC版やモバイル版、ゲーム機用にリリースにされています。
+MinecraftPE版は元々はレッドストーン回路やネザーゲートが実装されていないことや世界が有限だったのでPC版のように複雑なことができませんでした。しかし、ちょうど2016年あたりの大型アップデートを期にPC版と同じような機能が搭載されました。
+これにより、スマホさえあればより楽しく遊べるようになり、ゲームを楽しめるようになりました。
+注意点としてはいろんな機能が実装されたため動作が重くなってきているので、端末にそこそこの性能がないときついのでスペックが低い端末などでは設定で低めにすると比較的軽く動くので参考にしてください。
+Another　World     android 648円
+リンク:https://play.google.com/store/apps/details?id=jp.wkb.anotherworld&amp;hl=ja
+ios 480円
+リンク:https://itunes.apple.com/jp/app/another-world-20th-anniversary/id460076328?mt=8
+レビュー アクションアドベンチャーゲームになります。
+ゲーム内容としては実験中に事故で現実から異世界に飛ばされ、その世界から脱出するというゲームです。
+1991年に発売され、いろんなゲーム機に移植されました。
+移植ということもあって、当時のドット絵又は高解像度版で遊べるようになっているので自分好みの方ゲームを進めることができる点もポイントになります。
+スマホでアクションゲームということになるので、物理コントローラーで慣れている方には操作感が難しくなりますが、そこらへんは頑張ればなんとかなります。（最悪、Bluetoothのコントローラーでも使えるので）
+MONUMENT VALLEY   android android版ではシリーズが今の段階では一つのみ
+MONUMENT VALLEY
+リンク:https://play.google.com/store/apps/details?id=com.ustwo.monumentvalley&amp;hl=ja
+ios シリーズが二つあります。
+MONUMENT VALLEY
+リンク:https://itunes.apple.com/jp/app/monument-valley/id728293409?mt=8
+MONUMENT VALLEY 2
+リンク:https://itunes.apple.com/jp/app/monument-valley-2/id1187265767?mt=8
+レビュー アップルデザイン賞2014を受賞した脱出系のゲーム作品になります。
+普通、脱出ゲームというと、部屋の隅々から道具を探して脱出方法を考えるというのがメジャーですが、このゲームは一風変わったゲームになっております。
+なにが変わっているのかというかだまし絵を使った脱出ゲームという今までにはない、新感覚のゲームです。
+アップルデザイン賞を取っていることもあって、めちゃくちゃ絵がきれいです。BGMもいいんです。本当に。
+よくこんなゲームが作れたなあと思う作品でした。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/wonderfox-dvd-video-converter-reviews/">
+    <div class="thumb thumb-80054e28951cd84c0035f79a5d0fec3a"></div>
+
+    <div class="inner">
+      <h2 class="title">WonderFox DVD Video Converterのレビュー</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-05-14T14:22:19JST">May 14, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">DVDリッピングソフトとして、WonderFox Soft社が作っているWonderFox DVD Video Converterの紹介をさせていただきます。
+WonderFox DVD Video Converterの概要   ジャンル:マルチメディアツール 対応OS:windows2000以降 有料ソフト（試用版あり）
+公式サイト：http://www.videoconverterfactory.com/dvd-video-converter/index-jp.html
+WonderFox DVD Video Converterの特徴  動画形式を適切に変換 メディアプレイヤー ビデオ編集 無料着メロメーカー 複数のビデオファイルを一つのメディアファイルに統合 Webからの動画をダウンロード リージョンコードの解析  というのが主な機能になります。 今回はこれらの機能のすべてを紹介できればいいのですが、主要な機能のうち最後の二つは法律に抵触してしまう可能性があるので上記の6と７の機能はレビューできておりませんがご了承ください。 また、当方の問題で申し訳ございませんが、最近忙しいので、記事を後ほど追加する方式でレビュー記事を書く予定です。
+動画変換   このソフトは動画変換をする際に様々なフォーマットに変換することができます。 各デバイス用に変換したい動画データはファイルフォーマットを選ぶ必要がないのでパソコンが苦手な方や初心者の方でも簡単に使えるソフトになっています。
+メディアプレーヤー メディアプレーヤーの機能もあります。  
+音声ファイルや映像ファイルもちゃんと再生してくれます。 この機能は案外便利で、変換した動画や音楽を簡単にプレビューできるのにちょうどいいと感じました。
+まとめ 一部の機能しか紹介できていませんが、後ほど書いてきます。 このソフトはもともと、DVDリッピングソフトになりますが、それ以外でもいろんな用途に使えるのではないのかなと思いました。 ブログをやっている人間なので、法律に触れるのは書く側にも見る側にもよろしくないのでレビューをしておりません。しかし、動画変換としても十分に使えると思うので、皆さん使ってみてはいかがでしょうか？</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/">
+    <div class="thumb thumb-1253d09e2eb935ad2082bb45fa7e1d07"></div>
+
+    <div class="inner">
+      <h2 class="title">teamviewerでリモート元のパソコンの音を消す方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-04-21T00:00:59JST">Apr 21, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">個人用途では無料で使える上に、様々なデバイスからパソコンにリモートアクセスすることが可能なのTeamViewerというソフトがあります。 teamviewerを使っていたらわかるんですが、リモート先の端末から音を出すとどうしてもリモート元のパソコンからも音が出てしまいます。 自分のようにギャルゲーをTeamViewerを使って遊んでいますが、音が出てかなり困っています&hellip; それを対処するため一応、回避方法がわかったので紹介していきます。
+解決策 新しくオーディオデバイスを買うということです。 最初から内蔵されているオーディオデバイスではスピーカーの出力を担当させて、新たに買ったオーディオデバイスはTeamViewer専用で使うという方法です。 windowsの場合、アプリケーションをどれか一つのオーディオデバイスにしか出力することができません。既定値設定が一つのデバイスに絞られているので、実際には同時で複数のデバイスに出力することができません。 それならば、家で使うときはいつも使ってるオーディオデバイスを使えるようにします。逆に、TeamViewerのようなリモートソフトを使うときはリモート専用に別のオーディオデバイスを使えば家ではなることないと思いました。
+やってみる 1.TeamViewerの専用のオーディオデバイスを買います。 こういうのは安いもので十分なので、amazonでUSBオーディオデバイスでしらべると大量に出てくるのでそれから調べるのもありです。  
+こんなやつを買いました。送料がかかったので、少しだけ高くなりましたが、500円程度で収まります。
+2.パソコンに接続   買ったUSBオーディオデバイスをパソコンに接続します。 もちろん、こっち側にはスピーカとか差したらだめです。差したら意味がないんでｗｗｗ
+3.TeamViewerでリモートで操作する際の設定方法 1.TeamViewerでパソコンに接続します。   2.サウンド設定を開きます   スピーカーマークを右クリックして、  
+再生デバイスを選択してください。
+3.オーディオデバイスの名前を変更する   オーディオデバイスの名前を変更する際は、名前を変更したいデバイスを右クリックからプロパティから、このように名前の変更をすることができます。  
+わかりやすいようにしっかりと名前をつけておいた方がいいです。
+4.TeamViewer用に使ったオーディオデバイスを既定設定する TeamViewerだけで音を鳴らしたい場合は、先ほど接続したオーディオデバイスを選択し、  
+既定値に設定というのがあるのでそれをクリックすると、  
+音がTeamViewerでしか鳴らなくなります。 逆に、戻す場合は最初に設定されていたオーディオデバイスを選択し、先ほどと同じように既定値に設定をすると、戻ります。
+まとめ 自動化するのが夢ですが、自分の技術では到底不可能なので、この方法が現時点では最良なのではないのかなと思い紹介させていただきました。 TeamViewerだけではなくAnyDeskのように他のリモートソフトでも使えるので試してみてはどうでしょうか？</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/serveros-selection-method/">
+    <div class="thumb thumb-9af828b5a2a8485404a6d68e6f368194"></div>
+
+    <div class="inner">
+      <h2 class="title">サーバーOSの選定法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-04-18T00:00:52JST">Apr 18, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">個人的に思うサーバーOSの選定法を紹介していきます。 サーバーOSの種類としてはWindows系、Debian系、RedHatLinux系、Unix系などたくさんあり、選択に迷ってしまうというのが現状です。自分も今のところ自宅サーバーの範囲での趣味なので、参考になるのかわかりませんが、もし参考にしていただき、役に立つととても嬉しく思います。
+サーバー構成 自分の家の場合、メインブログ（本ページ）はレンタルサーバーで運用しています。その理由はまた、別記事で書く予定です。 基本的に自宅サーバーで動かしているのは、友達や家族、自分が使うためのサーバーにしています。 サーバーOSとしては windows10Pro&mdash;バックアップサーバー、ファイル共有、DLNAサーバー、地デジ配信サーバー(spinel3を使用)、緊急地震速報の通知、リモートデスクトップ CentOS7&mdash;&mdash;&mdash;-NTPサーバー、Webサーバー、NTPサーバー、仮想化サーバー、監視サーバー、簡易監視カメラ録画サーバー として使っています。
+サーバーOSを決める手順  自分がサーバーで具体的になにをやりたいのかを決める それに見合うサーバーOSを決める サーバー構成を決める  とこんな感じなのではないのかなと思います。
+サーバーOSの種類 今回は3つ紹介します。他にもありますが多すぎるので割愛します。（多すぎる）
+Debian系(Debian,UbuntuServer) DebianがベースになっているLinuxOSになります。 パッケージ管理がaptになっています。 デスクトップでubuntu系を使ったことがある人には比較的入りやすいと思います。 ubuntuserverは安定性が他に比べると悪いと言われていますが、自宅サーバーで使う分には全く問題ないように思います。パッケージ数も多く、apt-get install で大体のものが入るので、初心者にはかなりおすすめです。
+Red Hat Enterprise Linux系(CentOS,Fedora) もともと、Red Hat Enterprise Linuxは商用ですが、GPLライセンスのもとでRed Hat Enterprise Linuxが公開されているので、それをベースとしてCentOSを有志が作り上げました。Red Hat Enterprise Linuxということもあって、安定性が高いのが、利点です。 また、全世界で見るとシェアが少なくなっていますが、日本ではまだまだシェアが高いこともあって、使い方などのブログも多数あり、トラブルなどが起こった時には強い味方になります。
+Windows系(windowsserver,windows10など) 普段使っているパソコンがwindowsならファイル共有用サーバーではwindowsPCを使ったほうがかなり構築が楽です。 自宅サーバーでwindows10で構築している理由としては記憶域というものが使えるからです。RAIDのように複雑ではなく、自分のような初心者でも簡単に構築できるのでかなりおすすめです。他にはクライアント側が大体がwindowsなのでファイル系の管轄はwindows側に託しています。ドメイン参加のようなことをしないなら無理にwindowsserverにする必要もないように思います。
+まとめ このように簡単にサーバーOSの紹介の方をさせていただきました。 サーバーOSを決めるのはかなり迷うと思いますが、試行錯誤した上でこれから何を使っていくのか決めていくのが一番いいのではなにのかなと思います。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/cons-of-android/">
+    <div class="thumb thumb-48d82599c0cf4ccd39536778b2b68ee5"></div>
+
+    <div class="inner">
+      <h2 class="title">android使いが思う欠点</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-04-08T13:47:27JST">Apr 8, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">android使いとしていつも触っていて思うandroidの欠点についてこの記事で話していきます。 この記事では批判している文章もありますが、ここを改善してほしいという期待の意味を込めて作っているということを頭に入れておいていただければありがたいです。
+筆者のandroidを使用歴 androidを初めて使ったのは2013年になります。 親に頼んでそろそろnexus7(2013)が出るのにあまりにも待てなくてnexus7(2012)を買ってもらいました。そこから、自分のandroid生活が始まりました。その頃のandroidのバージョンは4.3〜4.4の時でした。
+android4.4より以前の端末は使い物にならない android２.xを使ったことがなかったのであまり喋ることができませんが、友達に昔の端末を触らしてもらったときは今に比べるとレスポンスが悪く、確かに使いづらかった記憶があります。なので、androidからiphoneに買い換える人が多かったのだなあと思いました。
+スマホでゲームは？ 自分はスマホではあまりゲームはしません。やるとしても、スマホにしかないギャルゲーやIngressぐらいです。（最近あまりやっていないですが&hellip;） 個人的にはでかい画面でゲームをするほうが好みなので&hellip;
+本題 前置きが長くなりましたが、、androidの欠点について話していきます。
+自分が思うandroidの２つの欠点 1.androidOSのアップデートがなかなか来ない。 2.音声遅延が激しい とこの二点です。 まず最初のandroidOSのアップデートがなかなか来ないという点について説明します。 androidのOSアップデート仕組みとして説明します。
+androidOSのアップデートがなかなか来ない androidのOS自体はgoogleが開発して、各種メーカーがそのOSに手を加えて、我々のスマホにアップデートが配信されていきます。この方法は全く問題がないのですが、メーカー側がOSアップデートをあまり積極的にしていない点です。windowsのようにドライバだけをメーカーが提供する方法に変えていけば少なくても壊れるまで使えるので良くなるのではないのかなと思います。androidOSは初期に比べて著しく使いやすくなっています。電池持ちやレスポンスなども徐々に改善されています。しかし、毎回思いますが、OSのスペックに満たしているにもかかわらずメーカー側からアップデートが来ないのはもったいないと毎回思わされます。そこのところを改善していけばよくなっていくのではないのかなと思います。
+音声遅延が激しい 次に音声遅延が激しい点について書いていきます。 iosではよくDTMアプリや音ゲーがよく見かけますが、androidではあまり見かけません。その理由はandroidは遅延が激しい点です。最近のandroidはOSのアップデートを重ねていくうちにかなり改善されてきました。44msから16msにまで遅延が減ってきているので、今後に期待というところです。しかし、自分が持っているzenfone2laser(ze500kl)ではandroid5.1でも100ms以上もある場合もあるので、端末によって前後するので注意が必要です。
+まとめ 欠点もたくさんandroidですが、OSのバージョンが上がるごとにかなり良くなってきているのも事実です。音声遅延の問題はバージョンアップで何とかなるにしても、androidのアップデートをメーカー側がするのではなく、OSのアップデートはGoogleが行って、センサー系などのメーカー独自部分はメーカーがドライバーやソフトウェアを提供するという形にすれば毎回あほみたいにスマホを買い替える人も少なくなるのでいいのではないのかなと思います。メーカー側にとっては大打撃かもしれませんが&hellip; ということで今回はこれで終わります。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/">
+    <div class="thumb thumb-7b77983dcefba169a56301c05af4009e"></div>
+
+    <div class="inner">
+      <h2 class="title">キャリアから格安スマホ(IIJmio)に乗り換え（MNP編）</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-02-12T18:58:28JST">Feb 12, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">MNPとは 正式名所はMobile Number Portabilityと言い、番号ポータビリティと言います。 キャリアを変更した際でも番号を変更せずにそのまま使うことができるシステムです。 例えば、auからドコモに切り替えのように大手キャリアから大手キャリアに乗り換える際は、ショップ側が勝手にMNP転出や転入をしてくれています。しかし、自分で格安スマホに乗り換える際は、それを自分でしなくてはいけないということになります。
+MNP転出の作業 MNP転出（MNP予約番号の取得）－＞乗り換え先にMNP転入 という形になります。 また、正常にMNP転入が完了すると、自動的に前使っていたキャリアとの契約が解除されます。 そのため契約解除月でないときに解除すると、1万円ぐらいかかることがあるので注意しましょう。
+MNP転出の際の注意点  キャリアメールが使えなくなる ポイントがなくなる 分割支払いの残額がある場合は引き続き支払う必要がある  キャリアメールを使っている場合はgmailなどのフリーメールを使うのがおすすめです。
+料金 MNP転出（MNP予約番号の取得）や転入の際には料金が発生します。 2017/02/11の料金設定です。（変わっている場合はコメント欄又はお問い合わせから報告の方よろしくお願いします） [table id=1 /][table id=1 /] とこのようになっています。 3社共に店舗でも可能ですが、並ぶのもめんどくさいので電話又はインターネットでするのがいいでしょう。
+MNP転出方法 必ず注意点を見てから手続きしてください。
+docomo 注意点:https://www.nttdocomo.co.jp/support/procedure/change_release/release/cancel_mnp/index.html 電話:0120-800-000 インターネット:My docomo（https://www.nttdocomo.co.jp/mydocomo/index.html）→ログイン→ドコモオンライン手続き
+au 注意点:https://www.au.com/support/service/mobile/procedure/contract/cancel/cancellation/ 電話:0077-75470
+ソフトバンク 注意点:http://www.softbank.jp/mobile/support/cancellation/mnp/ 電話:0800-100-5533
+注意点 電話で手続きする際には受付時間があるので注意してください。
+MNP転出をする auから乗り換えるので、さっそく電話をかけてみることにしました。 自動音声案内でMNP転出を進めるー＞auの暗証番号や電話番号、氏名を言うー＞注意点などの説明ー＞最後に割引の話をされるが、断るー＞MNP予約番号が口頭で言われるのでメモする。（一応、SMSにも予約番号が届きます） とこんな感じです。 まさか、MNPをやめると、安くしますよと提案されるとは思いませんでしたｗ そのことも考えると、インターネットでMNP転出できるdocomoの方が親切だなと思いました。
+まとめ とこのようにMNP転出の方法を簡単に説明させていただきました。 キャリアは高いんですよ。本当に。家の光回線の方が安いという時点で払うのがあほらしくなってきます。 docomoはやっぱりいいなと思いました。スマホを解約したり、契約していなくてもdヒッツやdアニメなどのサービスは契約できるので他社も見習った方がいいんじゃないかなと思いました。 次回は、IIJimoに移行していきますが、少しだけ別ジャンルの記事を書く予定なので少々お待ちください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/transfer-from-carrier-to-iijmio/">
+    <div class="thumb thumb-b96ea13a1a7efc34a7c9b476e97102ba"></div>
+
+    <div class="inner">
+      <h2 class="title">キャリアから格安スマホ(IIJmio)に乗り換え（準備編）</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-02-11T03:17:06JST">Feb 11, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">あなたはどこの携帯電話会社で契約していますか？ 大手キャリアのau,docomo,softbankの三社で契約されている方が多いでしょう。 学生なら学生割引が効いて安くなりますが、それでも高くなってしまいます。
+この記事を書くきっかけ この記事を書くきっかけになったのは母親のスマホ料金です。端末前払い しているのに月額5700円です。これ保険などのオプション抜いてこれですよ。馬鹿なの？という値段設定です。 パカパカケータイからキャリア変更せずにそのまま契約したせいでこの値段になったのかもしれませんが、高すぎます&hellip; わざわざ電話もかけないし、データ量7GBしかないのに家の光回線と同じ料金を払わないといけないのかという話になり、格安スマホに変えようとなったわけです。 ということで格安スマホに移行（準備編）をここでは説明させていただきます。 また、端末はキャリアで使っていたものではなく今回は新しく買いました。 そういうこともあり、キャリア端末を使って格安SIMを運用する際はやり方が少し異なる場合があるのでご注意ください。時間があれば記事を書こうかなと思っています。
+格安SIMの注意点  格安SIMの種類によって、昼間や帰宅ダッシュの時間帯の通信速度が遅くなる可能性が高い キャリアメールが使えない  通信速度が落ちるのは格安SIMの種類によるので、「格安SIM　速度　比較」でググると出てくるので各自で調べておいてください。今回はIIJmioにしました。
+覚悟すること  今回は新規でSIMフリースマホを購入するので、前まで使っていたスマホの設定やアプリなどを自分で移行する必要がある 手間がかかる（クソめんどくさい）  必要なもの  SIMフリースマホ 格安SIM クレジットカード 本人確認書類（免許証など） インターネット環境（契約する時に使う） MNP予約番号  キャリアスマホを使ってもいけますが、新しく買うことにしました。キャリアスマホを使う際の注意点などがあるので、別の記事で掲載する予定です。 新しく買う理由は老眼で今使っているキャリアスマホが小っちゃくて見えないらしいｗｗｗ（年って怖いですね） ということでスペックは置いといて、でっかいやつの方がいいということになったのでZenfoneGOを買いました。 SIMロックフリー端末一覧（amazon） こちらからamazonでSIMロックフリー端末を探すことができます。 それにしても安くなりましたねーー。スマホがそこそこのスペックでも2万円以内で買えるようになりましたので手が届きやすいのではないのかなと思います。 iphoneを買う場合は、公式のapplestoreで購入を。公式で買うと間違えなくSIMフリーなのでおすすめです。 個人的にiphoneも買いたいけど高いという方は、安いandroid端末＋ipodtouchを買うのがおすすめです。 格安SIMでは現在、ドコモとauの通信回線を使うことができます。 個人的にドコモ回線の方が汎用性が高いのでおすすめです。auも悪くはないんですが、周波数帯が特殊なので対応していない端末があります。なので、特別な理由がなかったらドコモ回線で使いましょう。 格安SIMはいろんな種類があるのでサービスなども格安SIMを提供する会社によって違うのでよく調べてから買うのをおすすめします。 買う際に注意するのは音声通話機能付きのSIMであるか確認してから買ってください。そうしないと、キャリアで使っていた電話番号を引継ぎできないので注意！ クレジットカードは毎月の支払いに必要になります。最近はVISAデビットでの支払いができなくなっているので普通のクレジットカードを使う方がいいでしょう。 本人確認書類は契約の際に必要になります。 契約などの書類はすべてインターネットを介するので必須です。 と準備編はこのような感じです。 MNP予約番号については次の記事の方に書きます。 今回はここまでにさせていただきます。それではまた&hellip;</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/">
+    <div class="thumb thumb-d276fa421cdcec208fd9596b17462959"></div>
+
+    <div class="inner">
+      <h2 class="title">wordpressに入れておくべき日本製テーマ3選</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-02-08T23:34:47JST">Feb 8, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">ブログサイトでwordpressを使う方が増えています。 その事実としてなんと全世界のサイトで約25％がwordpressが使われているという統計が出ています。どこまで成長するか分からないですね。（もちろんいい意味で） ということで、たくさんの人がwordpressを使っているということもあるので今回はwordpressおすすめの（日本で作られた）テーマを3つ選びました。 あくまで個人的な意見なのでそこらへんはご了承ください
+1.simplicity リンク:https://wp-simplicity.com/ 設定方法などが公式サイトにしっかりと書かれているので初心者にはおすすめです。 当ブログサイトもこちらのテーマを使わせていただいております。 adsense広告の配置が簡単に変えられる点でとても気に入っています。(´▽｀) 記事のの手前にadsense広告を設置することも可能なので本当に助かっています。 画像遅延読み込みやSEO対策の詳細な設定もできます。なので、このテーマを入れておけばプラグインをインストールしまくる必要がなくなるのでサーバーの負担軽減にもなります。 シェアボタンの位置を簡単にカスタマイズできる点もおすすめです。
+2.Xeory   リンク:https://xeory.jp/ このテーマはダウンロードする際に簡単な会員登録が必要になります。 こちらも公式サイトにかなり親切丁寧に設定方法やSEO関連のことまで載っています。 企業向けのテーマとしておすすめです。 お問い合わせページを簡単に作ることができるのでwordpressを使って企業のホームページを作るときに便利です。 XeoryBaseというブログ用のテーマもあるのでブログとして使う方にもおすすめです。
+3.stinger8   リンク:http://wp-fun.com/
+無料版stingerの最新版になります。 stinger7と比べてかなり機能が削られましたが、そのおかげでかなり軽量化されています。 カスタマイズしまくりたい！！という方にはお勧めです。 著者も当初はこのテーマを使っていましたが、adsense広告の配置を好きなようにできなかったこともあり断念しました。 個人的にはレイアウトは好みなんですが、stingerの強みの機能はほとんどが有料化されちゃいました。そこだけが残念&hellip; 有料版を買っちゃえばいいんですが、さすがにそれはきついという方はstinger7などの以前のバージョンを導入する方がいいかもしれません。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/permalink-cannot-be-translated-into-japanese-with-simplicity/">
+    <div class="thumb thumb-ea44b7843602a1084db58317896b0650"></div>
+
+    <div class="inner">
+      <h2 class="title">Simplicityでパーマリンクが日本語にできない</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-02-06T23:58:32JST">Feb 6, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">雑談 つい最近、wordpressテーマをstinger8からSimplicity2に変更しました。
+変更理由としてはstinger系が有料化したことにより、かなり機能が削られてしまいました。機能はプラグインで補えるのでどちらでもいいのですが、adsense広告がどうしても縦並びになってしまい悩んでいました。テーマ編集で横並びにしようと、ごにょごにょしても全く改善される見込みがなかったので。久しぶりにSimplicityを入れようと思い入れました。
+adsense広告が横並びになってくれる上に、いろいろこのテーマ単体で設定できるのでこれからは使おうかなと思っているところです。
+本題 その話はさておき&hellip;
+今回はSimplicityで新規作成したときにブログ開設当初からパーマリンク設定を投稿名にしているにもかかわらず、編集しても日本語に変更できないという謎現象が起こりました。
+  https://[domain-name]/browserなら変更が可能ですが、
+https://[domain-name]/ブラウザにはなぜか変更できなかったんです。
+英語や数字なら問題ないのに日本語への変更が不能だったので、いろいろ設定をいじってみると、簡単に解決できました。
+設定方法 1.当たり前ですが、管理者ログインします。 2.外観＞カスタマイズを選択します。   3.カスタマイズ欄からその他が下の方にあるので見つけたら選択   4.そうすると、日本語のスラッグを有効にするというチェックマークが出てくるのでチェックマークにチェックをつける   5.これで終わり まとめ このように簡単にできます。
+ていうかこれ、google大先生に尋ねると普通に公式サイトに詳しくやり方が載っていました。Simplicityは公式サイトもかなり充実しており、ヘルプも大量に載っているのでそちらから調べた方がいいように思いました。
+SEO的には英語の方がいいやら数字の方がいいやらたくさんあると言われています。しかし、正直なところどっちがいいのかと言われてもわからないんです。リニューアル前のブログではパーマリンクをすべて英語にしていましたが、海外の人が見てくれるようなグローバルな仕様にしていないからいいかなと思い、リニューアル後はすべてパーマリンクを日本語にしました。
+ということで、もしわからない点などがありましたら答える範囲でお答えさせていただきますので、コメント欄に送信してください。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/introduced-linageos14.1-to-zenfone2laser/">
+    <div class="thumb thumb-9ef8692abf2e97f7b7f4a4a614fc35f8"></div>
+
+    <div class="inner">
+      <h2 class="title">zenfone2laserにLineageOS 14.1を導入してみた</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-31T02:12:27JST">Jan 31, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">前回、zenfone2laserにCM13を導入しましたが、いつのまにかandroid7.0ベースのLineageOS 14.1というのが出ていたので今回はこれを導入してみます。
+カスタムROM情報 android7.1.1ベースになりました。
+android7.1.1でできること  マルチウィンドウが標準で使えるようになった アプリの一括アンインストールができるようになった バッテリー節電機能が強化された デザインの変更  などの機能強化されました。 またセキュリティも強化されています。
+今回のカスタムROMの詳細   作業 準備するもの ROM本体 https://www.androidfilehost.com/?w=files&amp;flid=133264 から最新のROMをダウンロードします。 TWRPの導入 これは前回説明しているのでこの記事では省きます。 前回の記事はこちらから
+導入 1.最初にカスタムROMを導入するために前に導入したTWRPリカバリモードを起動します。 TWRPを導入していない場合は前回の記事で導入を！
+2.SDカードにさっきダウンロードしたカスタムROMをSDカード又は内蔵メモリに転送します。   3.TWRPリカバリモードから先ほど転送したzipをインストールする 転送したZIPを選択してインストールを開始します。 今回は前回の環境を残すためにフォーマットを行わないことにしました。
+4.インストール完了し、再起動を行います 再起動します。
+  こんな感じの起動ロゴが出てきます。
+    ちゃんと起動してくれました。
+使ってみた感想 このカスタムROMは頻繁に更新しているのでセキュリティやバグなどもあまりないのでおすすめです。 前使っていたカスタムROMはバッテリー消費がかなり早く、標準ROMに戻そうかなとも思っていましたが、今回はこれで落ち着きそうです。 それにandroid7.0のマルチウィンドウが非常に使いやすいです。  
+これは使いやすいです。  
+  このようにOS自体のメモリ占有率も比較的軽く収まっています  
+通知エリアがシンプルになりました。
+まとめ このカスタムROMは入れておくべきだと思いました。 前回の記事でCM13を入れた方はこちらに乗り換えほうがHDRモードでのカメラ撮影もできるようになっているので、導入するのをおすすめします。 わからないことがあればコメント欄で質問していただくと答えれる範囲で回答させていただきます。 ここまで見てくださってありがとうございました。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/5-paid-services-to-contract/">
+    <div class="thumb thumb-284b0ab8720bd78aa3865b72a4de1d9d"></div>
+
+    <div class="inner">
+      <h2 class="title">契約すべき有料サービス5選</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-29T23:59:43JST">Jan 29, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">1.amazonプライム会員   公式サイト：https://www.amazon.co.jp/gp/prime
+年間:3900円（月額換算:325円）
+契約方法:クレジットカード（デビットカードも可能）のみ
+よい点
+ 配送無料 お急ぎ便無料 プライムミュージック プライムビデオなど  悪い点
+ 特にないが、契約の際はクレジットカードが必要  一番おすすめの有料サービスです。 この価格帯で豊富なサービスがあるので絶対契約しておいた方がいいです。
+2.dヒッツ   公式サイト：https://selection.music.dmkt-sp.jp/
+月額500円(税抜）
+契約方法:クレジットカード（デビットカードも可能）のみ
+対応OS:android、ios
+よい点
+ 日本の曲が多い アニソンも比較的多い  悪い点
+ スマホにキャッシュできる曲が一か月につき10曲ずつしか登録できないので注意！！ モバイルOSにしか対応していないのでパソコンなどで聞くことができない。  しかし、一か月に10曲しか聞けないというわけでもなく、dヒッツ内でプレイリストが作られている曲はストリーミングでの再生ができます。 dヒッツは他の聴き放題サービスと比べてアニソンやJ-POPも多いのでおすすめです。
+3.カラオケ＠DAM   公式サイト：http://www.clubdam.com/app/karaokeAtDam/
+月額1080円（yahooプライム＋yahooウォレット払いで216円割引）
+契約方法:クレジットカード（デビットカードも不可）、yahooウォレット、携帯払い 対応OS:PS4、XboxONE、Windows10
+よい点
+ 家でカラオケが楽しめる ほとんどの据え置きデバイスに対応している 精密採点相当の採点機能ができる  悪い点
+ 採点機能は精密採点のみ  デビットカードでの決済はできませんが、yahooウォレット経由で支払うと、デビットカードでも支払いが可能になります。 カラオケがパソコンではなくゲーム機でもできるようになっているので導入しやすいと思います。 これを契約すると、正直カラオケ屋に行く必要があまりなくなりましたｗｗｗ とはいっても採点機能がなどがLIVEDAMよりも少ないという点は注意してください。
+４.ニコニコ動画   公式サイト：https://secure.nicovideo.jp/secure/premium_detail
+月額:540円 契約方法:クレジットカード、webmoney、ケータイ払い、APPLEIDなど
+よい点
+ プレミアム専用回線 低画質モード回避 ニコ割、広告を非表示にできる マイリスト、マイメモリなどの登録数が増える 生放送の優先視聴 生放送の配信など 支払方法が多種多様にある。  悪い点</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/i-bought-segasaturn-now/">
+    <div class="thumb thumb-eaebf7017fd5329b4374e4a2abb2a906"></div>
+
+    <div class="inner">
+      <h2 class="title">今頃セガサターン買ってきた</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-25T23:43:43JST">Jan 25, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">ハードオフでセガサターンを買ってきました！！
+なぜ買ったのか？ サクラ大戦というゲームに興味を持ったので買いました。  
+これです。 ということでセガサターン中古をハードオフでちょうど3200円くらいで売っていたので買いました。
+開封   付属品はセガサターン本体、コントローラ、電源コード、AVコードが入っていました。 正直なところメルカリやオークションで買った方が安くつくのではないかなと思いましたが、今回はすぐに遊びたいのでハードオフで買ってきました。
+  このゲーム機で搭載されているセーブデータ保存用の内臓メモリはSRAMと呼ばれるものでバッテリバックアップによるものなのでボタン電池を入れます。
+接続   ぱぱっと繋げました。 AVケーブルと電源とコントローラをつなげばおｋです。
+設定など     こんな感じに起動しました。 このモニターぐらいの大きさならグラフィックを気にせずに遊べそうです。  
+起動が終わるとこのように時間設定がでてくるので設定します。正直ここは適当でも全く問題ないと思います。  
+こんな感じでメインメニューぽい？ものが出てきます。 CDが再生できるようになっています。 わざわざ今頃セガサターンでCDを再生することはないと思いますが、当時は便利だったのでしょう。
+ゲーム起動 当たり前ですが普通に動きました。
+パワーメモリーがほしいところ 本体のメモリでセーブデータを保存することができますが、バッテリの消耗などでデータが消える可能性があります。 しかし、パワーメモリーというものをSEGAで出しており、バッテリなしで半永久的にセーブデータを保存できるようなものがあります。 amazonの中古でも1000以下で買えるので比較的安いです。ここまでするぐらいならエミュレータを使った方が早いという話ですが、まあそこはおいておきましょう。 このパワーメモリーというのもデータは破損がおこしやすいと言われているのでそこらへんはhttp://www.geocities.co.jp/Playtown-Domino/2061/GAME/pmemory.htmlのサイト様が詳しく書いてくださっているのでそちらを読んでください。
+セガサターンのゲームディスクの媒体 セガサターンのゲームディスクの媒体はCDROMです。セガサターンの次世代機のDreamCastはGDROMという独自のディスク媒体のせいで、パソコンでは簡単に読み取れませんが、セガサターンのゲームソフトはPCでも何の問題もなく読み込んでくれるのでエミュレータやディスク管理ソフトなどを使うと、バックアップやゲームで遊ぶことができるので比較的に楽にできます。 一応、SSFというBIOS内臓してくれているエミュレータもあるのでパソコンでやるときはおすすめです。
+まとめ サクラ大戦をしたくて買いましたが、名作の格闘ゲームなどもセガサターンで多くリリースしていたらしいのでもし売っていたら買おうかなと思っています。 データ破損が怖いので通常プレイはPCエミュレータでやろうかなと思っています。SSFというエミュはBIOSが内臓されているらしいんですが、著作権的には心配ですがやってみようかなと思っています。 いつになるかわかりませんが、SSFのレビューなどもさせていただきます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/open-sidewinder-precisionpro/">
+    <div class="thumb thumb-84eed77f999363ff5e771ab5de7d7449"></div>
+
+    <div class="inner">
+      <h2 class="title">sidewinder precision proを開封</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-22T15:04:21JST">Jan 22, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">一週間ぐらい前にハードオフに行ってきてジャンク売り場にsidewinder precision proが売ってたので買ってきました。 他にもいろいろ買ってきているので後日記事にする予定なのでお楽しみにーー
+何故買ったのか Steamで販売しているMicrosoft Flight Simulator X :Steam Editonを買ったからです。 フライトシミュレーターと言えばこれというぐらい認知度が高く、前々から買おうかなと思っていたんですが、なかなか金欠で買えなかったという感じです。 つい最近、このゲームが割引セールに入っていたので買いました。たしか1000円以内だった気がするけど忘れました&hellip; コントローラを買わずにこのゲームを始めたのでキーボードやXboxONEコントローラではあまりにも操作性が悪くてできそうにもなかったので専用のコントローラを買おうと思っていたんですが、 そこそこのお値段がするので買うのをためらっていました。 ハードオフに別の用（ジャンク巡り）で行ったところsidewinder precision proが売っており、買いました。
+パソコンに接続 sidewinder precision proを勢いで買ったので対応OSなどを確認せずに家に帰ったので大丈夫かなと思いつつ、パソコンに繋げるとちゃんと認識してくれました。  
+なんか変換ケーブル引っ付いてるので  
+抜いてみると  
+古！！この形状どっかで見たことあるぞと思ったので探すと  
+ありました。 つい最近メルカリで買ったものです。エロゲー用途で使っているwindows98自作PCです。 実はこのブログの著者は1999年生まれなのでwin98が出たときにはまだ生まれてないという事実ｗｗｗ この規格はたしかUSB以前に作られたはず。名前はわかりませんがUSB普及する前にMIDI関連やゲームコントローラの接続端子で使われていたみたいです。
+改めてPCが認識したことにびっくりした このコントローラはOSがwin98の時に出たみたいです。 これがよく今のパソコンでドライバを入れずに認識してくれたのでかなりびっくりしました。 あの天下のMicrosoft純正のコントローラのおかげなのでしょう。 古いデバイスは今のNT系列のOSや64bitに対応していないものが多く心配でしたが全く問題ありませんでした。
+動作確認   こんな感じでゲームをしてみると、 やばい&hellip;めちゃくちゃ楽しい&hellip; というのが率直な感想です。  
+コントローラはいい感じに手にフィットしてくれます。 コントローラが位置ずれを起こすこともなかったのでフライトシミュレータをするときにお世話になりそうです。
+まとめ 850円ぐらいで買ったので比較的安く買えたのではないのかなと思いました。たまにしかしないゲームのために4000円以上の専用コントローラーを買うのはどうかなと思っていたのでよかったです。。 古いデバイスでも使えるものは使えると改めてよくわかりました。 フライトシミュレーターで使うと本当にゲームに没頭して時間を忘れてしまいそうですｗｗｗ 次回もハードオフのジャンク売り場で購入したものを記事にするので見ていただけるとありがたいです！</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/">
+    <div class="thumb thumb-023ae6cb896631f3760afb9c056d1d53"></div>
+
+    <div class="inner">
+      <h2 class="title">家でカラオケを楽しむ（カラオケ@DAM for windows10）</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-19T17:04:29JST">Jan 19, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">カラオケ@DAMを契約して半年以上経つのでそちらの詳細なレビューをします。
+カラオケ＠DAMとは カラオケ界で有名なDAMの開発、提供元の第一興商のサービスの一つです。
+もとはXboxOneだけのサービスでしたが、昨年windows10でのサービスを開始し、PS4でもサービスが開始しました。
+ここではカラオケ＠DAM for windows10のレビューをします。
+カラオケ＠DAM for windows10とは windows10版のカラオケ＠DAMのサービスで、パソコンにマイクをつなげてカラオケを楽しむサービスです。
+ゲーム機を持っていないけどパソコンは持っているという人には導入しやすいのでおすすめです！！
+しかし、名前の通りwindows10 64bit以外では動かないので注意が必要です。
+自分の環境 自作PC　OS:windows10 64bit CPU:corei7 メモリ:16GB GPU:gtx970
+オーディオインターフェース　UR12
+使ってみた感じ めちゃくちゃよかったです。
+家で精密採点並みの採点が月額1080円で楽しめるので契約する価値はこれだけであると思いました。
+LIVEDAMと使い勝手がかなり違うので、一番最初使うときに戸惑るかもしれませんが慣れたら大丈夫です。
+  精密採点Win10を有効にすると、
+    しっかりと採点してくれます。曲はサクラ大戦の曲です。
+カラオケ映像は公式PV映像はほぼないと思った方がいいです。著作権の問題で公式PVが出せないらしいです。
+採点結果は
+    こんな感じに出ます。
+思っていたよりも、詳細に出してくれます。
+もちろん業務用に比べると、項目は少ないですが家で歌う分には十分な機能だと思いました。
+支払方法 クレジットカードや各社キャリア携帯の簡単決済、yahooウォレットを使うことができます。
+yahooウォレットで支払う際、yahooプレミアム会員に入会していると、なんと月額1080円から月額864円になります。
+コンビニ振込に対応していないので学生のようにクレジットカードを持っていない場合はyahooウォレットを使って支払うこともできるのでおすすめです。
+＊Yahoo!ウォレットによる決済は終了しました。
+http://www.clubdam.com/app/dam/dam/oshirase133.htm
+現在はクレジットカードとドコモ簡単決済とau簡単決済に対応しています。
+この記事作成当初ではデビットカードによる支払いは出来ませんでしたが、現在は対応しているそうです。（住信SBIネット銀行ではOK）
+対応してはいるものの、銀行によっては対応していない場合はがありますので、安心して契約を続ける際はクレジットカードがおすすめです。
+しかし、デビットカードによる支払いもできるのでデビットカードに対応している学生の方は支払うことができます。
+オーディオインターフェースを使う理由 USBマイクではなく、オーディオインターフェースを使うのが一番いいと思います。しかし、構築するのが少々やっかいになるので注意してください。
+USBマイクを使うとどうしても遅延が発生してしまいます。転送速度の問題なのかわからないですが、どう考えても遅延が改善される見込みがなかったのでオーディオインターフェースのDIRECTMONITOR機能を使いました。
+DIRECTMONITORとは DIRECTMONITORとはsteinbergのオーディオインターフェースについている機能です。他社のオーディオインターフェースにも名前は違いますが、同じような機能があるのでそこらへんは調べていただけると助かります。
+USBマイクを介すると USBマイク-&gt;パソコン-&gt;音声出力(音楽&amp;マイク)
+これをオーディオインターフェースのDIRECTMONITORを使うと マイク-&gt;オーディオインターフェース-&gt;パソコン
+↓マイク
+パソコン(音楽)-&gt;音声出力(音楽&amp;マイク)
+USBマイクを介すると、いったんパソコンにマイク音声をパソコンに送ってから音楽とマイク音声を合成するのでどうしても遅延が発生してしまいます。
+しかしながら、リアルタイムで音楽とマイク音声を外部のオーディオインターフェース側で処理するので遅延がなくカラオケができるようになります。
+生放送のようにリアルタイムが重視されている場面でよく使われている機能です。
+おすすめの設定 DIRECTMONITORを有効にして、カラオケ設定でマイク音量を少し調節することで、いい感じのエコーが出るのでおすすめです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/install-cm13-in-zenfone2laser/">
+    <div class="thumb thumb-9b76cb95b433bc11d4a706d29bb631b8"></div>
+
+    <div class="inner">
+      <h2 class="title">zenfone2laserにCM13を導入する</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-18T16:20:09JST">Jan 18, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">昔に実は記事を作っていましたがブログを再構築したためもう一回書き直すことにしました。
+用意しておくもの パソコン、USBケーブル、スマホ本体を用意してください。
+パソコンにadbをインストール https://forum.xda-developers.com/showthread.php?t=2588979 こちらからダウンロードしてインストーラを実行すると、簡単にadbが構築できます。
+ダウンロードするもの ze500klのブートローダアンロック用apkファイル http://dlcdnet.asus.com/pub/ASUS/ZenFone/ZE500KL/0518-1134_SIGNED_UnlockTool_ZE500KL_AndroidM.apk
+twrpカスタムリカバリ 適当なところからカスタムリカバリを持ってきます。
+カスタムROM https://forum.xda-developers.com/zenfone-2-laser/general/rom-cyanogenmod-13-0-t3451781 から  
+Buildsからダウンロードします。
+opengapps http://opengapps.org/  
+上に行くほど機能が増えますが、デフォルトアプリが多くなる原因にもなるので microかnanoのダウンロードをお勧めします。 写真はARMになっていますが、ARM64でダウンロードしてください。
+作業開始 作業を始める前に絶対にデータのバックアップを行ってください。 また、スマホ自体が文鎮化する可能性もあるので作業には注意してください。 1.fastbootモードに入る ボリュームUPを押しながら、電源ボタンを押すと、Fastbootモードが起動します。 ここでtwrpカスタムリカバリをインストールします
+fastboot flash recovery twrp-3.0.2-0-ze500kl.img 又は fastboot flash recovery D:\ダウンロード\twrp-3.0.2-0-ze500kl.img
+2.電源を切り、リカバリモードに入ります 電源ボタンを長押しで強制的に電源を落とします。 次に、ボリュームDOWNを押しながら、電源ボタンを押し、リカバリモードを起動します。
+3.リカバリモードでの操作 wipe&gt;Format Dataからストレージをフォーマットします。 yesと打ちエンターをタップするとフォーマットが始まります。 パソコンではスマホのストレージが認識され、マウントされるので、カスタムROMを入れます。zipは展開せずにそのまま入れてください。
+  スマホに操作を戻し、install&gt;さっき転送したファイルをインストールします。 インストールが終わるとRebootSystemが出てくるので再起動します。
+4.起動！！ 宇宙人みたいな起動ロゴが出たら成功です！！  
+5.セットアップ 1.言語を設定します   2.WIFIの設定   3.モバイルデータの設定   4.Cyanogenに協力するか、しないか   5.セットアップ完了     6.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/">
+    <div class="thumb thumb-b940cc36f5bc37f632189bd5885110ee"></div>
+
+    <div class="inner">
+      <h2 class="title">kinectでMMDを動かしてみた</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-17T15:20:24JST">Jan 17, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
+著者のPC環境 OS:windows10Pro
+CPU:corei7 4790k
+GPU:gtx970
+memory:16GB
+kinect:kinectv1（初期）
+となっています。そこそこのスペックが必要と思っていましたが、CF-S9(Corei5-520M/GPUオンボード)でも動いたので、そこまでのスペックの高くないパソコンでも動きました。
+環境構築をする 方法  OPENNIを使って動かす MoggNUIを使って動かす  kinectでMMDを動かす方法はこの二つがあります。
+今回は2番の方法で構築していきます。OPENNIを使ってもできますが、windows７じゃないと動かないなどの問題が起きてあきらめました&hellip;
+それ以前にOPENNIを使って構築するのがくそみたいにめんどくさいので2番の方法をお勧めします。
+ダウンロード Kinect for Windows SDK v1.8（必須）
+https://www.microsoft.com/en-us/download/details.aspx?id=40278
+MikuMikuDance（DirectX9 Ver）とDxOpenNI.dll（必須）
+http://www.geocities.jp/higuchuu4/
+MoggNUI（必須）
+https://sites.google.com/site/moggproject/
+もし、リンク切れがあった場合はお問い合わせ欄又は下にあるフォーム欄に訂正箇所を送信していただけると助かります！！
+インストール １.最初にKinect for Windows SDK v1.8をインストールします。   インストールします。インストールすると自動的にドライバも導入されるのでこの作業はしましょう。
+2.MikuMikuDance（DirectX9 Ver）を適当なフォルダに展開する   こんな風に展開します。
+これでMikuMikuDance.exeを起動できるか確かめましょう。
+もし動かない場合は下のランタイムをインストールしてください。
+Microsoft Visual C++ 2005 再頒布可能パッケージ(x86) Microsoft Visual C++ 2008 再頒布可能パッケージ(x86) DirectX エンド ユーザー ランタイム
+3.DxOpenNI.dllとMoggNUI の導入 DxOpenNI.dllを展開すると
+  のように出てくるのでSamplesConfig.xmlだけをMMDのDataフォルダに入れます。
+次にMoggNUIを展開し
+  jaフォルダとDxOpenNI.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/i-bought-kinectv1/">
+    <div class="thumb thumb-5e1de5bd97387e052525aab2f9ee5233"></div>
+
+    <div class="inner">
+      <h2 class="title">Kinect v1を買ったので簡単に紹介</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-16T17:47:38JST">Jan 16, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">kinect v1をフリマアプリのメルカリで買ったので紹介させていただきます。
+kinectとは マイクロソフトから販売されているデバイスです。 kinect自体は15000円もするのでゲーム機の周辺機器としては高いです。 高い理由は中にCPUが入っているからです。中に入っているCPUを外してしまうと、ゲーム機内で処理負担が大きくなるといった問題があり、値段がどうしても上がってしまったみたいです。
+kinectはもともとwindowsに対応していなかった！ 今となってはマイクロソフトが公式にドライバやSDKなどを出していますが、それは2011年の話です。 kinectの初期型が出たのは2010年ですが、その頃は公式にドライバがなかったのでパソコンとは接続できませんでしたが、すごい人たちがkinectの構造を解析しオープンソースとしてドライバを出していました。しかし、その時マイクロソフトは否定的な立場をとっていましたが、その後、2011年4月になりSDKの公開を発表し2012年2月にkinect for windowsを正式に公開されました。
+kinectでできること 3D深度センサー、RGBカメラ、指向性マイクアレイが搭載されています。 ジェスチャーコントロール、体の動きを認識、音声認識です。 音声認識はマイクでもできるますが、体の動きを認識することができるので福祉の世界でも使われることが多くなっています。
+kinectはそこまで高くない（開発用途では） kinectは開発用途にも使え、開発用途としてはかなりお値段がお安いので、いろんなところで使われています。 なので、xboxでkinectを使ってゲームをする人よりも開発用途で使っている人の方がぶっちゃけた話を多いと思います。
+kinectv2を買わなかった理由 この理由は高かったからです。新世代は心拍数が計ることができるようになったり、6人同時キャプチャーもできるようになりましたが、   Xbox One Kinect センサー Amazon  楽天市場  Yahooショッピング      このようにkinect本体で15000円ほどかかり、   Xbox One Kinect センサー用 Windows PCアダプター Xbox One S/Xbox One X 用アダプター Amazon  楽天市場  Yahooショッピング      パソコンに接続するには変換ケーブルが必要になってくるので、新品で買うと約2万円ほどします。 中古で買うと少し値段はかからないと思いますが、抑えても10000円以上はするでしょう。 ということでメルカリでkinect v1が送料込みで4000円で売っていたので買ったという感じです。 amazonでは比較的安く売っています。   Xbox 360 Kinect センサー Amazon  楽天市場  Yahooショッピング</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/benefits-of-amazon-prime/">
+    <div class="thumb thumb-1c408b7bedf97e29407786bc1249bbbf"></div>
+
+    <div class="inner">
+      <h2 class="title">Amazonプライムのメリット</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-16T16:42:28JST">Jan 16, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">Amazon.co.jp使っている方もたくさんいると思います。でも、Amazonプライム会員になる必要はないと思っている方もたくさんいます。
+そこで、Amazonプライム会員の魅力を一つずつ紹介させていただきます。
+2019/04/17：プライム会員値上げの為訂正致しました。
+１.値段が安い amazonプライム会員のお値段ですが、なんと年たったの4900円です。月額に直すと410円になります。
+月額410円と考えるとめちゃくちゃ安いと思いませんか？
+ニコニコ動画のプレミアムは月額500円もかかるのでそれに比べても安すぎます。
+お急ぎ便 2016年3月までは発送料がかかりませんでしたが、2016年4月からは2000円未満の買い物で350円かかるようになりました。
+2000円未満の買い物
+350円
+お急ぎ便
+360円
+当日お急ぎ便
+514円
+日時指定配達
+360円（当日514円）
+普通ならこれぐらいかかります。
+しかし、プライム会員になると
+「すべて無料」
+になります。
+注意点 このプライム特典は値段の横に書いてあるプライムマークがついていないと利用できません。
+といってもほとんどがプライムマークがついているのであんまり問題はないでしょう。
+2.会員限定先行タイムセール amazonではタイムセールがありますが、プライム会員になると30分前から先行でタイムセールに参加することができます。
+3.Amazonパントリー   食品や日用品が安くなります。
+外に出るのがめんどくさい人にはありがたいサービスですねｗｗｗ
+1箱当たり290円かかりますが、引きこもりにとってはありがたいサービスです。
+４.amazonプライム家族会員 この特典では家族の最大2人がプライム家族会員を利用することができます。
+家族会員ではお急ぎ便、amazonバンドリー、会員限定タイムセールの特典を受けることができます。
+家族でamazonをよく使っている方にはとてもおすすめです。
+5.プライムビデオ これは特定の映像作品を無料で見れるサービスです。HuluやdTVみたいなサービスです。
+  このようにプライムというロゴが入っている映像作品が無料で見ることができます。
+2017/1/15時点のプライムビデオで見れる映像作品は
+  もあります。めちゃくちゃ多いです。
+今期のアニメ（2017年春アニメ）だけで10作品もあるのでおすすめです。
+アニメだけでもかなりの数が収録されているのでアニメファンの方にはプライム会員に入会したら、ぜひ使ってほしいサービスです。
+6.PrimeMusic   音楽の聴き放題サービスです。
+100万曲以上収録しています。
+ジャンルは洋楽が多いですが、アニソンは少ないです。ですが、洋楽が好きな方や作業系BGMとして聴く方には持って来いのサービスです。
+半年前に比べて楽曲数も増えてきていますが、dヒッツなどのサービスにはまだまだ敵っていないというのが現状です。
+と言っても洋楽がかなり豊富にあるので、使って損はないでしょう。
+7.定期おトク便 おまとめ割引   対象商品を3点以上まとめて買うと、割引が適用されるサービスです。
+  こんな感じです。
+割引対象商品は食品、サプリ、日用品です。
+日用品を買うときにはめちゃくちゃ役に立ちそうです。
+8.プライム・フォト   プライム・フォトでは容量無制限で写真を保存できるサービスです。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/post/impression-of-using-xboxone-controller/">
+    <div class="thumb thumb-788f6e8f468150a7a3b8ff39158deb9b"></div>
+
+    <div class="inner">
+      <h2 class="title">xbox one コントローラを初めて使った感想</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2017-01-11T03:49:01JST">Jan 11, 2017</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
+        
+      </ul>
+
+      <div class="summary">xbox one コントローラを購入したのでこちらの開封と簡単なレビューをさせていただきます。
+購入した理由 最近あまりゲームしなくなりましたが、たまにするときもあります。筆者の場合ゲーム機でゲームをやるのではなくパソコンでやっています。理由はゲーム機を買うお金がないので&hellip; ということでパソコンでゲームを楽しんでいますが、パソコンでする場合はシミュレーションやFPSやRPGなどのゲームジャンルがほぼすべてのキーボードとマウスで全く問題なく快適に遊ぶことができます。 著者もキーボードとマウスで十分なので全く問題ないと思っていましたが、前々からコントローラで遊んでみたいなあと思うようになり、今回購入してみました。
+買った商品 自分が買ったxbox one コントローラはこれです。
+新コントローラと旧コントローラの比較   マイクロソフト ゲームコントローラー Bluetooth/有線接続/xbox one/Windows対応 PC用USBケーブル同梱 4N6-00003 Amazon  楽天市場  Yahooショッピング      区別方法  
+bluetoothに対応している方が新コントローラになります。 自分が買ったのは旧コントローラになりますが、新コントローラと何が違うのか紹介します。 まず、新コントローラではパソコンと接続することをよく考えられており、いろんな機能が増えました。 旧コントローラでもワイヤレス機能が使えますが、xboxone本体と接続するのみです。 なので、パソコンでワイヤレス接続をすること ができません。 しかし、新コントローラではパソコンでBluetoothを使ったワイヤレスで接続できるようになりました。 イヤホンジャックなどもついており、完全なパソコン用コントローラをマイクロソフトが作ってくれたという感じです。
+パソコンに接続してからすること コントローラのファームウェアアップデートにストアアプリでXboxアクセサリーというものが必要なので、インストールしておきましょう。  
+インストールして起動すると  
+こんな感じにいきなり更新が必要ですと出てくるので、更新しておきましょう。 更新させると完了を知らせる画面が出てきます。
+使った感じの感想 初めてのコントローラということで、xboxone コントローラを使いましたがとても使いやすいと感じました。 ボタンだけで17ボタンあり、アナログスティックは2つあります。 地味にアナログスティックにもボタンが入っており、押し込むことでボタンの機能が使えます。 グリップが持ちやすくて、あまり疲れにくくなっているように感じました。 びっくりした点はL1とR1のボタンが普通のボタンではなく押す強さによって、認識してくれるのでびっくりしました。 今のコントローラって進化しているんだなと率直に感じました。 FPSなどのゲームは今までキーボードとマウスでやっていたので慣れるのに時間がかかりそうな感じはしますが、慣れると何かしらと便利なので頑張ります。
+気になる点として ボタンの押すときのカチカチという音が少しうるさいなあと感じた点です。 それ以外は不満点は特になかったです。
+まとめ まだ使ってみて少しなので時間を空けてまた、記事にする予定です。 ちゃんとしたコントローラを買うのはこれで初めてですが、実はPS1のコントローラとコンバータを合わせて買って使ってみました。 しかし、中古のコントローラということもあってアナログスティックが微妙に位置ずれを起こしているし、ボタンが少ないという問題もあって実用には至りませんでした。 ということもあり、今回はちゃんとしたコントローラを買おうということで買いましたが、思っていたよりも良かったです！ やっぱりパソコン用のこういうゲームコントローラーはxbox関連が一番いいのではないかなと思わせてくれる商品でした。 これからはこれを使って遊んでいきたいなと思っています。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+          
+        </div>
+      </div>
+    
 
     
 <nav class="paging">
@@ -1744,8 +4638,8 @@ PowerConnect6248中身[/caption] こんな感じになってます。
     <div class="articles sm">
       
       <article class="lism">
-  <a href="https://yoneyan.dev/homeserver/2019-09-etc/">
-    <div class="thumb thumb-b321bee5ec23290f401bfd429d918247"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-etc/">
+    <div class="thumb thumb-6764b54b0d1661845590622ae858e36f"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅その他機器の紹介</div>
@@ -1780,8 +4674,8 @@ PowerConnect6248中身[/caption] こんな感じになってます。
 
       
       <article class="lism">
-  <a href="https://yoneyan.dev/homeserver/2019-09-server/">
-    <div class="thumb thumb-19971e8392a11ceb1aa7842258d66991"></div>
+  <a href="https://yoneyan.dev/homeserver/2019-08-server/">
+    <div class="thumb thumb-e411741d2a73dee3f61df88799a4631f"></div>
 
     <div class="inner">
       <div class="title">2019年度(8月)自宅サーバーの紹介</div>
@@ -1928,16 +4822,6 @@ PowerConnect6248中身[/caption] こんな感じになってます。
 </section>
 
     
-<section class="sidebar">
-  <header>CATEGORIES</header>
-  <div>
-    <ul class="terms">
-      <li><a href="https://yoneyan.dev/categories/recommend">recommend <span class="count">(23)</span></a></li><li><a href="https://yoneyan.dev/categories/network">network <span class="count">(20)</span></a></li><li><a href="https://yoneyan.dev/categories/setting">setting <span class="count">(16)</span></a></li><li><a href="https://yoneyan.dev/categories/build">build <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/server">server <span class="count">(13)</span></a></li><li><a href="https://yoneyan.dev/categories/review">review <span class="count">(10)</span></a></li><li><a href="https://yoneyan.dev/categories/memo">memo <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/categories/free_talk">free_talk <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/categories/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/categories/software">software <span class="count">(4)</span></a></li>
-    </ul>
-  </div>
-</section>
-
-
 
     
 <section class="sidebar">
