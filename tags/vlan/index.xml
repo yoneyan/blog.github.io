@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VLAN on のんびりと生きたい</title>
+    <title>vlan on のんびりと生きたい</title>
     <link>https://yoneyan.dev/tags/vlan/</link>
-    <description>Recent content in VLAN on のんびりと生きたい</description>
+    <description>Recent content in vlan on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 08 Feb 2019 01:45:05 +0900</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>EdgeRouterでLAGとタグVLANを設定する</title>
-      <link>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</link>
       <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</guid>
       <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
    Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。

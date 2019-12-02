@@ -21,7 +21,7 @@
     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title> - のんびりと生きたい</title>
+    <title>Edgerouterでeo光のIPv6を使ってみる - のんびりと生きたい</title>
     
 <meta name="description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
 Edgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）
@@ -33,7 +33,7 @@ LAN:eth1
 また、上の注意の点でも書きましたが、ファイアウォールを設定していないので、ご注意ください。
 使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface &#39;pppoe0&#39;  これをやっていないせいでかなり時間をとりました。">
 
-<meta property="og:title" content=" - のんびりと生きたい">
+<meta property="og:title" content="Edgerouterでeo光のIPv6を使ってみる - のんびりと生きたい">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/">
 <meta property="og:image" content="https://yoneyan.dev/images/free_images/router_1.jpg">
@@ -52,7 +52,7 @@ LAN:eth1
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="のんびりと生きたい">
 <meta name="twitter:url" content="https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/">
-<meta name="twitter:title" content=" - のんびりと生きたい">
+<meta name="twitter:title" content="Edgerouterでeo光のIPv6を使ってみる - のんびりと生きたい">
 <meta name="twitter:description" content="Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
 Edgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）
 注意：今回の設定ではIPv6のファイアウォールの設定をしていないので、セキュリティ的にかなり危ないので、実際に構築する方はご注意下さい。（当方もファイアウォール周りがあまりわかっていないので、分かり次第、別の記事にさせていただきます。）
@@ -73,7 +73,7 @@ LAN:eth1
       "@type": "WebPage",
       "@id":"https:\/\/yoneyan.dev\/"
     },
-    "headline": "-のんびりと生きたい",
+    "headline": "Edgerouterでeo光のIPv6を使ってみる-のんびりと生きたい",
     "image": {
       "@type": "ImageObject",
       "url": "https:\/\/yoneyan.dev\/images\/free_images\/router_1.jpg",
@@ -958,7 +958,7 @@ section.footer > header a {
 
 
 
-.thumb-ee61cc8e1908077be6f06acc8d46356c {
+.thumb-7a9f1990d0a1af4fdf3d13f7e893a90f {
   background-image: url(https://yoneyan.dev/images/free_images/router_1.jpg);
 }
 
@@ -1502,7 +1502,7 @@ ga('send', 'pageview');
   
 <li class="active">
   
-  <a href="https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/"></a>
+  <a href="https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/">Edgerouterでeo光のIPv6を使ってみる</a>
   
 </li>
 
@@ -1514,7 +1514,7 @@ ga('send', 'pageview');
   <div class="thumb thumb-64e236012b6c2bc1f44390680f68ff73"></div>
 
   <header class="article-header">
-    <h1 class="title"></h1>
+    <h1 class="title">Edgerouterでeo光のIPv6を使ってみる</h1>
 
     <ul class="facts">
       <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2019-03-08T00:07:05JST">Mar 8, 2019</time></li>
@@ -1524,10 +1524,10 @@ ga('send', 'pageview');
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&text=&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&t=" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&text=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&t=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
   <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
@@ -1633,10 +1633,10 @@ set interfaces ethernet eth0 pppoe0 firewall local ipv6-name WANv6_LOCAL
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&text=&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&t=" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&text=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&t=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f&title=Edgerouter%e3%81%a7eo%e5%85%89%e3%81%aeIPv6%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
   <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2ftech%2fnetwork%2fusing-ipv6-of-eo-with-edgerouter%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
@@ -1649,7 +1649,7 @@ set interfaces ethernet eth0 pppoe0 firewall local ipv6-name WANv6_LOCAL
             
             <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://yoneyan.dev/tech/" itemprop="url"><span itemprop="title">TECH</span></a></li>
             
-            <li class="active"></li>
+            <li class="active">Edgerouterでeo光のIPv6を使ってみる</li>
           </ol>
         </nav>
       </div>

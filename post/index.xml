@@ -280,24 +280,6 @@ LinuxMintの場合はベースのディストリビューションがUbuntuに�
     </item>
     
     <item>
-      <title>EdgeRouterでLAGとタグVLANを設定する</title>
-      <link>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</link>
-      <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
-      <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
-   Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
-今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
-LACPの設定を行う まず、最初にLACPの設定を行っていきます。
-1．bondインタフェースを作成する set interfaces bonding bond0 description &amp;quot;LAG Interface&amp;quot;  descriptionはbond0に対する名前なので各自で変更してください。
-2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。
-LACPではhash-policyというものがあるので、ここではlayer2としておきます。
-タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
-今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
-set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。</description>
-    </item>
-    
-    <item>
       <title>VPSでスワップ領域を増やす</title>
       <link>https://yoneyan.dev/post/increase-swap-space-with-vps/</link>
       <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>

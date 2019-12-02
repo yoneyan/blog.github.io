@@ -487,7 +487,7 @@ set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp
     </item>
     
     <item>
-      <title></title>
+      <title>Edgerouterでeo光のIPv6を使ってみる</title>
       <link>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</link>
       <pubDate>Fri, 08 Mar 2019 00:07:05 +0900</pubDate>
       
@@ -523,10 +523,10 @@ LinuxMintの場合はベースのディストリビューションがUbuntuに�
     
     <item>
       <title>EdgeRouterでLAGとタグVLANを設定する</title>
-      <link>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</link>
       <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/configure-lag-and-tagged-vlan-on-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</guid>
       <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
    Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
