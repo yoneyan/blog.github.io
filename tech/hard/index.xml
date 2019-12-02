@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>etc on のんびりと生きたい</title>
+    <link>https://yoneyan.dev/tech/hard/</link>
+    <description>Recent content in etc on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 30 Jul 2019 01:52:07 +0900</lastBuildDate>
+    
+	<atom:link href="https://yoneyan.dev/tech/hard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>apcupsdで自動シャットダウンをできるようにする</title>
+      <link>https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/</link>
+      <pubDate>Tue, 30 Jul 2019 01:52:07 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/</guid>
+      <description>apcupsdとは APC製のUPSにつながれたサーバ機器を安全にシャットダウンされるように作られたアプリケーションです。
+また、このアプリケーションを使うことで複数台のサーバ機器を同時にシャットダウン出来ることも特徴の一つです。
+構成 構成としてこのようになっています。
+SmartUPS 500につながっているもの
+ TX1310 M1 ( ADサーバ Windows Server 2019 Standard) Fujitsu W510 ( 録画サーバ Windows 10)  この２台サーバ機器がつながっています。
+UPSとサーバ機器にはUSB経由でTX1310 M1に接続されています。
+TX1310 M1をマスターとして運用します。
+今回はUPSとサーバ間はUSBで接続するという条件で記事を執筆していきます。
+構築 マスター側の設定 １．apcupsdをダウンロード・インストールする http://www.apcupsd.org/
+   apcupsdダウンロード
+リンクからWindows版をダウンロードします。
+ダウンロードした後は、インストールしてください。
+２．ドライバを入れる    ドライバインストール前
+ドライバを入れ替える必要があるので、更新します。
+   ドライバの更新からコンピューターを参照してドライバーソフトウェアを検索をすると、
+   ドライバ更新
+このような画面が出てくるので、ドライバが入っているフォルダを選択し、次へとすると、自動更新がかかります。
+   ドライバ更新後
+ドライバを更新すると(Apcupsd) となります。
+３．apcupsdの設定をする    start menu  Edit Configuration fileという項目から設定ファイルを変更します。</description>
+    </item>
+    
+    <item>
+      <title>TX1310 M1でホットスワップが出来ない</title>
+      <link>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</link>
+      <pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</guid>
+      <description>ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
+何が出来ないのか？ 本来、この機器ではホットスワップには対応していないのですが、大体のAHCIで動いてるシステムは使えるはずなのですが、使えない。
+しかも、ホットスワップ出来ないだけだと不便だけで済みますが、記憶域プールが謎のエラーを吐いて、作成出来ないのが致命的です。
+また、問題はWindows 10だけではなく、Linuxでもホットスワップ出来ませんでした。
+対処法 ドライバを入れてあげます。
+1．チップセットドライバを入れてあげる 一応、Intelの公式にチップセットドライバというものがあるので、それをダウンロードしてインストールしてあげます。
+https://downloadcenter.intel.com/ja/download/28710/Intel-Server-Chipset-Driver-for-Windows-?v=t
+こちらから.exe形式のファイルをダウンロードして、インストールします。
+2．AHCI、SATAコントローラーのドライバを入れてあげる これが一番重要になってきます。
+https://support.lenovo.com/jp/ja/downloads/ds101491
+こちらから.exe形式のファイルをダウンロードし、起動させると、Cドライブ直下にDriverというファイルが出来るので、そこからインストールします。
+まとめ これにより、TX1310 M1でホットスワップが出来るようになりました。
+TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種の場合では、ドライバを入れてあげないといけないので注意が必要です。</description>
+    </item>
+    
+    <item>
+      <title>ブレードサーバーの中を見てみる1</title>
+      <link>https://yoneyan.dev/tech/hard/look-bladeserver_1/</link>
+      <pubDate>Sun, 11 Nov 2018 05:01:52 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/hard/look-bladeserver_1/</guid>
+      <description>みなさん、ブレードサーバーって知っていますか？
+今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
+ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
+特徴として  200V電源ないとキツイ 拡張ボードで拡張することが出来る ブレードを交換するだけで長く使うことが出来る コスパ的に安くなる場合があるらしい？  ブレードを交換するだけで長く使うことができるというのはブレードだけを新しく変えることで新しいCPUの載っているものを使うことができます。 4～5台以上になるとラックサーバーに比べてブレードサーバーの方がコストパフォーマンスがよいとされています。（私はそのように思っていませんが&amp;hellip;）
+ブレードの紹介 今回はブレードのエンクロージャの紹介ではなく、ブレードの方の紹介させていただきます。 HP ProLiant 460 Series Generation 6 Bladeという型番の紹介をしていきます。 こいつはCPUは2個ついており、メモリは12スロットあります。 また、SAS又はSATA系の2.5インチHDDかSSDを搭載できます。 最大でDC12Vの40Aまで電源を供給されるブレードサーバーになります。
+中を見てみる    これがもらったブレードです。
+背面はこんな感じ    これがブレードの背面コネクタになります。 白い穴みたいなところに電源が通っているという感じです。
+側面    背面にはSDカードスロットで挿すことが可能になってます。 恐らく、ESXiのブート元で使ったりする用だと思われます。
+中身を見ていきましょう    このような感じになっています。
+蓋       こんな感じでわかりやすく書かれています。ここら辺は、普通のサーバーと同じような感じです。
+中身はこんな感じ～             CPUが見ての通り2つ搭載されています。 また、メモリの方も2Gx6あります。</description>
+    </item>
+    
+  </channel>
+</rss>
