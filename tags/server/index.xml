@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>server on のんびりと生きたい</title>
+    <title>Server on のんびりと生きたい</title>
     <link>https://yoneyan.dev/tags/server/</link>
-    <description>Recent content in server on のんびりと生きたい</description>
+    <description>Recent content in Server on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 12 Nov 2018 01:26:24 +0900</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>おすすめのレンタルサーバーを比較</title>
-      <link>https://yoneyan.dev/post/compare-recommended-rental-servers/</link>
+      <link>https://yoneyan.dev/talk/rental-servers/</link>
       <pubDate>Mon, 12 Nov 2018 01:26:24 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/compare-recommended-rental-servers/</guid>
+      <guid>https://yoneyan.dev/talk/rental-servers/</guid>
       <description>レンタルサーバーは数多くあると思うので、おすすめのレンタルサーバーを抜粋して紹介します。一応、順位をつけますがあくまでも筆者の意見であるということを留意してください。
 1位 XServer 
 機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|○|○(リストア時、料金発生)|○|○|○|無制限|MySQL,SQLite|70G～|
@@ -36,10 +36,10 @@
     
     <item>
       <title>ブレードサーバーの中を見てみる1</title>
-      <link>https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</link>
+      <link>https://yoneyan.dev/tech/hard/look-bladeserver_1/</link>
       <pubDate>Sun, 11 Nov 2018 05:01:52 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</guid>
+      <guid>https://yoneyan.dev/tech/hard/look-bladeserver_1/</guid>
       <description>みなさん、ブレードサーバーって知っていますか？
 今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
 ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
@@ -55,10 +55,10 @@
     
     <item>
       <title>ラックサーバ(RX300 S6)を静音化してみる</title>
-      <link>https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</link>
+      <link>https://yoneyan.dev/fix/silence-rx300s6/</link>
       <pubDate>Thu, 08 Nov 2018 17:40:23 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</guid>
+      <guid>https://yoneyan.dev/fix/silence-rx300s6/</guid>
       <description>現在、メインで動かし続けている自宅のサーバーがRX300 S6になりますが、2Uだからということもありますが、かなりうるさいという問題が発生しました。 普通に考えるとデータセンターに置く物なのでうるさい理由がわかりますが、この状態では家で他の作業が出来ないのであまりよくないのですがファンを静音化する作業してみました。
 そもそも、静音化とは サーバー内のファンの速度を意図的に落とすことのことです。 サーバーやパソコンにとってはあまりよろしくないのが実情ですが、うるさすぎるので仕方がないという感じです。 これによって壊れることもありますので、自己責任で作業をしてください。 かなりやってることはかなりよろしくないので、わかった上でしてください。
 作業していく 1．抵抗を選ぶ 1/4W（0.25W）の抵抗を使ってみたのですが、電流が強すぎて煙を出して「プシュ〜〜」という音をしながら焼ける事件が起きたので10Wのセメント抵抗を使います。 ファンに書いてある↓の電流と電圧などに気をつけて作業してください。抵抗値は電圧と電流を元に計算します。  
@@ -73,10 +73,10 @@
     
     <item>
       <title>サーバーOSの選定法</title>
-      <link>https://yoneyan.dev/post/serveros-selection-method/</link>
+      <link>https://yoneyan.dev/talk/serveros-selection/</link>
       <pubDate>Tue, 18 Apr 2017 00:00:52 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/serveros-selection-method/</guid>
+      <guid>https://yoneyan.dev/talk/serveros-selection/</guid>
       <description>個人的に思うサーバーOSの選定法を紹介していきます。 サーバーOSの種類としてはWindows系、Debian系、RedHatLinux系、Unix系などたくさんあり、選択に迷ってしまうというのが現状です。自分も今のところ自宅サーバーの範囲での趣味なので、参考になるのかわかりませんが、もし参考にしていただき、役に立つととても嬉しく思います。
 サーバー構成 自分の家の場合、メインブログ（本ページ）はレンタルサーバーで運用しています。その理由はまた、別記事で書く予定です。 基本的に自宅サーバーで動かしているのは、友達や家族、自分が使うためのサーバーにしています。 サーバーOSとしては windows10Pro&amp;mdash;バックアップサーバー、ファイル共有、DLNAサーバー、地デジ配信サーバー(spinel3を使用)、緊急地震速報の通知、リモートデスクトップ CentOS7&amp;mdash;&amp;mdash;&amp;mdash;-NTPサーバー、Webサーバー、NTPサーバー、仮想化サーバー、監視サーバー、簡易監視カメラ録画サーバー として使っています。
 サーバーOSを決める手順  自分がサーバーで具体的になにをやりたいのかを決める それに見合うサーバーOSを決める サーバー構成を決める  とこんな感じなのではないのかなと思います。

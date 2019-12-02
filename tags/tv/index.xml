@@ -13,10 +13,10 @@
     
     <item>
       <title>LinuxでPT2ドライバをインストールする</title>
-      <link>https://yoneyan.dev/post/install-pt2-driver-on-linux/</link>
+      <link>https://yoneyan.dev/tech/tv/install-pt2-driver-on-linux/</link>
       <pubDate>Mon, 25 Mar 2019 12:23:32 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/install-pt2-driver-on-linux/</guid>
+      <guid>https://yoneyan.dev/tech/tv/install-pt2-driver-on-linux/</guid>
       <description>PT3ドライバでインストールする記事が多い気がするので、ここに備忘録として書きます。
 CentOSで今回はドライバインストールを行いましたが、他のディストリビューションでも同じです。
 作業開始！ 1．ドライバをダウンロードしてインストールする 1.1．ダウンロードする 以下のものをダウンロードします。 http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2

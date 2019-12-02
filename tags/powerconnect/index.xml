@@ -35,10 +35,10 @@ Trunkポートの設定編 そもそも、trunkポートとは複数のVLANを�
     
     <item>
       <title>PowerConnect6248を静音化</title>
-      <link>https://yoneyan.dev/post/silent-powerconnect6248/</link>
+      <link>https://yoneyan.dev/fix/silent-powerconnect6248/</link>
       <pubDate>Wed, 25 Apr 2018 07:17:56 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/silent-powerconnect6248/</guid>
+      <guid>https://yoneyan.dev/fix/silent-powerconnect6248/</guid>
       <description>今まで、家にはPowerConnect2724とx600-24Tsという24ポートのハブが二台あるんですが、それでも足りなくなってきたということもあり、PowerConnect6248をヤフオクで落札しました。 L4スイッチで48ポートもあるということで、かなり期待しているんですが問題があります。 それはうるさいことです。 PowerConnect2724の24ポートのハブでもなかなかうるさかったのですが、48ポート搭載しているPowerConnect6248は許容範囲を超えちゃいました。 まあ、普通に考えて1Uサイズで48ポートもあってLayer4まで対応しちゃってるハブなのでファンがアレなので、今回は静音化してみます。 注意 分解するので故障の可能性があるので、自己責任でお願い致します。 （これだけは言っておきますが、絶対しない方がいいです。機械的には&amp;hellip;） 普通の人は↓こういうものを諦めて買いましょう。
    TP-Link スイッチングハブ 48ポート TL-SG1048 10/100/1000Mbps 金属筐体 ギガビット 5年保証 Amazon  楽天市場  Yahooショッピング      用意する物 必須
  抵抗（各種抵抗値） 半田ごてセット  あればいい物

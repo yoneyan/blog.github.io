@@ -6,9 +6,381 @@
     <description>Recent content in Tech on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
+    <lastBuildDate>Tue, 30 Jul 2019 01:52:07 +0900</lastBuildDate>
     
 	<atom:link href="https://yoneyan.dev/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>apcupsdで自動シャットダウンをできるようにする</title>
+      <link>https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/</link>
+      <pubDate>Tue, 30 Jul 2019 01:52:07 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/</guid>
+      <description>apcupsdとは APC製のUPSにつながれたサーバ機器を安全にシャットダウンされるように作られたアプリケーションです。
+また、このアプリケーションを使うことで複数台のサーバ機器を同時にシャットダウン出来ることも特徴の一つです。
+構成 構成としてこのようになっています。
+SmartUPS 500につながっているもの
+ TX1310 M1 ( ADサーバ Windows Server 2019 Standard) Fujitsu W510 ( 録画サーバ Windows 10)  この２台サーバ機器がつながっています。
+UPSとサーバ機器にはUSB経由でTX1310 M1に接続されています。
+TX1310 M1をマスターとして運用します。
+今回はUPSとサーバ間はUSBで接続するという条件で記事を執筆していきます。
+構築 マスター側の設定 １．apcupsdをダウンロード・インストールする http://www.apcupsd.org/
+   apcupsdダウンロード
+リンクからWindows版をダウンロードします。
+ダウンロードした後は、インストールしてください。
+２．ドライバを入れる    ドライバインストール前
+ドライバを入れ替える必要があるので、更新します。
+   ドライバの更新からコンピューターを参照してドライバーソフトウェアを検索をすると、
+   ドライバ更新
+このような画面が出てくるので、ドライバが入っているフォルダを選択し、次へとすると、自動更新がかかります。
+   ドライバ更新後
+ドライバを更新すると(Apcupsd) となります。
+３．apcupsdの設定をする    start menu  Edit Configuration fileという項目から設定ファイルを変更します。</description>
+    </item>
+    
+    <item>
+      <title>TX1310 M1でホットスワップが出来ない</title>
+      <link>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</link>
+      <pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</guid>
+      <description>ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
+何が出来ないのか？ 本来、この機器ではホットスワップには対応していないのですが、大体のAHCIで動いてるシステムは使えるはずなのですが、使えない。
+しかも、ホットスワップ出来ないだけだと不便だけで済みますが、記憶域プールが謎のエラーを吐いて、作成出来ないのが致命的です。
+また、問題はWindows 10だけではなく、Linuxでもホットスワップ出来ませんでした。
+対処法 ドライバを入れてあげます。
+1．チップセットドライバを入れてあげる 一応、Intelの公式にチップセットドライバというものがあるので、それをダウンロードしてインストールしてあげます。
+https://downloadcenter.intel.com/ja/download/28710/Intel-Server-Chipset-Driver-for-Windows-?v=t
+こちらから.exe形式のファイルをダウンロードして、インストールします。
+2．AHCI、SATAコントローラーのドライバを入れてあげる これが一番重要になってきます。
+https://support.lenovo.com/jp/ja/downloads/ds101491
+こちらから.exe形式のファイルをダウンロードし、起動させると、Cドライブ直下にDriverというファイルが出来るので、そこからインストールします。
+まとめ これにより、TX1310 M1でホットスワップが出来るようになりました。
+TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種の場合では、ドライバを入れてあげないといけないので注意が必要です。</description>
+    </item>
+    
+    <item>
+      <title>LinuxでPT2ドライバをインストールする</title>
+      <link>https://yoneyan.dev/tech/tv/install-pt2-driver-on-linux/</link>
+      <pubDate>Mon, 25 Mar 2019 12:23:32 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/tv/install-pt2-driver-on-linux/</guid>
+      <description>PT3ドライバでインストールする記事が多い気がするので、ここに備忘録として書きます。
+CentOSで今回はドライバインストールを行いましたが、他のディストリビューションでも同じです。
+作業開始！ 1．ドライバをダウンロードしてインストールする 1.1．ダウンロードする 以下のものをダウンロードします。 http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2
+cd ~/src wget http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2  1.2．インストールする tar xvlf tip.tar.bz2 cd pt1-7662d0ecd74b/driver make sudo make install  2．modprobeにブラックリストを追加する vi /etc/modprobe.d/blacklist.conf  blacklist earth-pt1  を/etc/modprobe.d/blacklist.confに入力する
+3．再起動する sudo reboot  このコマンドを入力すると再起動されます。
+4．確認する ドライバが導入されたか確認するために、再起動後以下のコマンドを入力します。
+ls /dev/pt1* /dev/pt1video0 /dev/pt1video1 /dev/pt1video2 /dev/pt1video3  このように表示されると導入されています。</description>
+    </item>
+    
+    <item>
+      <title>wordpressでGutenbergエディタが開いてくれない</title>
+      <link>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</link>
+      <pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</guid>
+      <description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
+結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
+このようになった    Gutenbergが開いてくれない
+上の画像にもあるように、「エディターで予期しないエラーが発生しました」
+「復旧を試みる」をクリックしても何の反応もありませんでした。
+「投稿内容をコピー」や「エラー文をコピー」はクリックすると反応がありしっかりとコピーできました。
+たまたま、開いている記事だけがおかしいのかと思い、いくつか他の記事を開いても同じような現象が発生しました。
+プラグインを疑う 最初にプラグインを疑いました。
+すると、まさかのドンピシャでした。
+   すべてのプラグインを停止
+すべてのプラグインを停止させてから一つずつ有効にさせていくと&amp;hellip;
+   プラグイン一覧
+Gutenbergプラグインが一番怪しいということがわかりました。
+おそらく、標準搭載される前に、このプラグインを使っていたので、これがバージョンが上がった段階でこのような現象が起こったことが今回の原因ではないかと思っています。
+結論 プラグインはしっかり管理しておいた方がいいです
+私の場合は、プラグインの関連でこの問題が起こりました。逆に、プラグインを全部無効にしてもGutenbergエディタが開けない場合は他の問題が起因している可能性が高いです。</description>
+    </item>
+    
+    <item>
+      <title>大好きな曲を電話回線網から流す方法</title>
+      <link>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</link>
+      <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</guid>
+      <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+最終日ということもあり気合を入れて紹介させていただきます。
+作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
+このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
+お家の方にも紹介していただけると楽しんでいただけると思います。電話帳に登録した方がいらっしゃれば、私の方まで報告していただけると嬉しいです。
+コンギョバージョン
+05054377759
+一般男性脱糞シリーズバージョン
+05054377762
+＊追記　ゆゆうたの様々な曲を取り寄せております、ゆゆうた楽曲専用ダイヤルを開設いたしました。
+ゆゆうた楽曲専用ダイヤル
+05053595690
+暇な方は是非この電話番号にかけてみてください。
+もし、通じない場合はお家の固定回線からかけてみてください
+誰でも簡単に作ることができるのでそのレシピを紹介します。
+仕組み   材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+＊VPS or 自宅サーバーをサーバーと略させていただきます。
+レシピ 0.SIP情報を観察する    ドメインとSIPアカウント、そのパスワードをメモっておきます。
+1.Asteriskをサーバーに入れてあげます CentOSさんの場合はパッケージが標準で搭載されていないので、Debianさんにお願いします。
+Debianさん
+apt -y install asterisk apt -y install mpg123  mpg123はasteriskでmp3を流すためのコーディック用のパッケージです。
+2.Asteriskの設定ファイルを調理してあげます /etc/asterisk/sip.conf　を開きます。
+（お好きなエディタから開いて下さい。)
+register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメイン  ;IP [fusion-smart_1] type=friend username=sipアカウント fromuser=sipアカウント secret=sipアカウントのパスワード host=smart.</description>
+    </item>
+    
+    <item>
+      <title>ブレードサーバーの中を見てみる1</title>
+      <link>https://yoneyan.dev/tech/hard/look-bladeserver_1/</link>
+      <pubDate>Sun, 11 Nov 2018 05:01:52 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/hard/look-bladeserver_1/</guid>
+      <description>みなさん、ブレードサーバーって知っていますか？
+今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
+ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
+特徴として  200V電源ないとキツイ 拡張ボードで拡張することが出来る ブレードを交換するだけで長く使うことが出来る コスパ的に安くなる場合があるらしい？  ブレードを交換するだけで長く使うことができるというのはブレードだけを新しく変えることで新しいCPUの載っているものを使うことができます。 4～5台以上になるとラックサーバーに比べてブレードサーバーの方がコストパフォーマンスがよいとされています。（私はそのように思っていませんが&amp;hellip;）
+ブレードの紹介 今回はブレードのエンクロージャの紹介ではなく、ブレードの方の紹介させていただきます。 HP ProLiant 460 Series Generation 6 Bladeという型番の紹介をしていきます。 こいつはCPUは2個ついており、メモリは12スロットあります。 また、SAS又はSATA系の2.5インチHDDかSSDを搭載できます。 最大でDC12Vの40Aまで電源を供給されるブレードサーバーになります。
+中を見てみる    これがもらったブレードです。
+背面はこんな感じ    これがブレードの背面コネクタになります。 白い穴みたいなところに電源が通っているという感じです。
+側面    背面にはSDカードスロットで挿すことが可能になってます。 恐らく、ESXiのブート元で使ったりする用だと思われます。
+中身を見ていきましょう    このような感じになっています。
+蓋       こんな感じでわかりやすく書かれています。ここら辺は、普通のサーバーと同じような感じです。
+中身はこんな感じ～             CPUが見ての通り2つ搭載されています。 また、メモリの方も2Gx6あります。</description>
+    </item>
+    
+    <item>
+      <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</title>
+      <link>https://yoneyan.dev/tech/asterisk/error1/</link>
+      <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/asterisk/error1/</guid>
+      <description>Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。</description>
+    </item>
+    
+    <item>
+      <title>外でPCゲームをする方法その1（rdp編）</title>
+      <link>https://yoneyan.dev/tech/remote/play-a-pcgame-outside-1_rdp/</link>
+      <pubDate>Mon, 06 Aug 2018 03:08:24 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/remote/play-a-pcgame-outside-1_rdp/</guid>
+      <description>この記事はリモートでPCゲームをする方法（rdp編）の続き？になります。 前回の記事では家庭内LANでPCゲームをする方法を紹介しましたが、この記事では外でPCゲームをする方法を紹介します。
+方法として リモートデスクトップを使って外でPCゲームをする方法として、下の二つの方法があります。
+ VPNをつなげてローカルIPでリモートデスクトップ接続する ルータをポート開放してリモートデスクトップ接続する  この記事では、VPNを使ったつなげてローカルIPでRDP接続する方法を紹介します。この方法が一番手っ取り早く、簡単にできる方法になると思います。(たぶん&amp;hellip;(^^;))
+やっていく 1．リモートデスクトップのホスト側にVPNサーバーをインストールする VPN接続するために、リモートデスクトップのホスト側にVPNサーバーを導入します。 VPNサーバーのソフトとして、softetherVPNを使います。 SoftetherVPNのダウンロード ここから  
+
+こんな感じで選択すると、下の方にいっぱいダウンロードリンクが出てくるので、一番上にある物をダウンロードします。 ダウンロードしたものをインストールします。インストール方法は「はい」をクリックしまくるだけで問題ないです。
+2．softetherVPNの設定をする 起動すると、  
+
+接続をクリックします。 すると、パスワードを作成しろというダイアログが出てくるので、適当にパスワードを考えて打ちます。 そうすると、  
+
+簡易セットアップが出てくるので、一番上にあるリモートアクセスVPNサーバーにチェックボックスを入れて、次へを選択します。 次にいろいろ出てきますが、すべてOK又は次へを選択して進みまくってください。  
+
+すると、上のようなメインメニューが出てきます。今回はVPN Azureを使うので、VPN Azure設定を選択します。  
+
+すると、上のような画面が出てくるので、VPN Azureを有効にするにチェックボックスを入れて、OKを押します。（ホスト名の変更で.vpnazure.netのの部分を自分で決めることができます） VPN Azureホスト名というところをどこかしらにメモっておきます。 これでAzureを使ったVPNが使用できるようになりました。 しかし、VPNをつなげた際に誰が接続しているのかわからないためユーザーを追加してやる必要が出てきます。 そこで、ユーザーの追加を行います。 メインメニュー内の仮想HUBの管理を選択します。  
+
+ユーザーの管理を選択します。  
+
+すると、こんな画面が出てくるので、新規作成を選択してユーザーを登録します。  
+
+ユーザー名とパスワード認証の欄を入力するだけで十分です。 それらが入力できたらOKをクリックします。 これでホスト側の設定は終了です。
+3．接続してみる やっとここまで来ました。もう少しなので頑張ってください。 ここからはクライアント側（RDPで繋ぐ側）のパソコンの設定に入ります。 設定－＞ネットワークとインターネット－＞VPNまでいきます。</description>
+    </item>
+    
+    <item>
+      <title>リモートでPCゲームをする方法(rdp編)</title>
+      <link>https://yoneyan.dev/tech/remote/play-pc-games-remotely_rdp/</link>
+      <pubDate>Mon, 06 Aug 2018 00:23:06 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/remote/play-pc-games-remotely_rdp/</guid>
+      <description>この記事では、Windows10Proに標準で搭載されている機能であるリモートデスクトップを使ってリモートでPCゲームをする方法を紹介します。 （リモートデスクトップを使って外でゲームをする方法はまたどっかで紹介します。） 正直なところゲームは出来ますが、リモートデスクトップ経由でゲームをするということが想定されていないためできないゲームもありますが、2D系のゲームなら比較的できます。 ですが、さすがに実用できるほどのものでもないのでそこだけは注意してください。 美少女ゲームぐらいであれば意外と動いてくれます。
+リモートデスクトップとは？ リモートデスクトップ正式名称はRDP（Remote Desktop Protocol）になります。 Windowsでは全エディションにRDPのクライアントが初期状態からインストールされているはずです。（AD環境下はわかりません） それによって、Windows搭載のRDPのバージョンさえ適合されていれば（されていなくてもたいてい動く）接続できます。
+準備するもの  Windows7 Pro以上（Windows7 Pro以上でないとRDPのホスト（サーバー）機能を使えないので注意！） クライアントのPCがWindows7以上であること（バージョンはなんでもよい）  Windows7以上ですが、Windows10の方が問題が起きにくいのでWindows10をおすすめします。
+設定をしていこう（まず、家庭内でつなげるようにしてみる） ここでは、Windows10 Proで説明します。
+1.Windows10 ProのRDP機能を有効化 設定－＞システム－＞リモートデスクトップに移動すると、下のような物が出てきます。  
+
+これが出てきたら、リモートデスクトップを有効にするをオンにします。  
+
+オンにするときに上のような物が出てきますが、確認をクリックして有効にします。
+2.内部のネットワークから一回接続してみる。 本当に有効化出来たか確認するために、家庭内LANに繋がっている状況で試しに繋いでみます。 別のWindows機から、リモートデスクトップ接続というものがどこかにあるはずなので探します。（検索でrdpって打つと普通に出てきます。）  
+
+これで接続することで、  
+
+こんな感じでゲームも一応出来なくはないです。
+まとめ ゲームをサクサク出来るまではいきませんが、普通に2Dゲームぐらいならなんとかできます。 美少女ゲームのようにパラパラ漫画みたいなゲームは余裕で出来ます。 今回は家庭内LANで出来るようになりましたが、次の記事では外から接続する方法を紹介します。</description>
+    </item>
+    
+    <item>
+      <title>PS4で遅延なくカラオケをする方法</title>
+      <link>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</link>
+      <pubDate>Sat, 20 Jan 2018 10:56:41 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</guid>
+      <description>お詫びと訂正
+(2019/03/11 20:08) 有線マイクでの採点は現時点ではできません。
+(2019/03/11 17:30) 当方の知識不足による影響で「センド＆リターン付きのミキサーを使う方法」にて間違った方法を載せておりました。原因と致しまして、当方のfx sendの知識が不十分でした。誠にお詫び申し上げます。只今、対処法につきまして、模索しておりますのでもう少しお待ちください。
+amazonリンクを修正中によりアクセスできない可能性があります。
+PS4でカラオケ＠DAMしてみる 前回、このブログではPC版のカラオケ＠DAMを紹介させていただきましたが、最近PS4を購入したのでPS4版のカラオケ＠DAMを試してみました。そうすると、PC版と同じように遅延が発生したのでその対処方を今回は記事にさせていただきます。
+PS4版の利点  導入しやすい 採点機能が二種類ある（PC版は1種類） 契約はチケット形式になっており、1日間、30日間、1年間の三種類がある（1年間契約ならお得！）  PS4版の欠点  オーディオインタフェースを使うことが出来ない PS4が必要  ざっと書きましたが、このような感じになっています。
+遅延なくカラオケをする方法 遅延なくカラオケをする方法として2通りの方法があります。
+ 有線マイクを使う方法（採点できない） ワイヤレスマイクを使う方法（音声を受け取る側に出力端子が2つあるもの）  方法があります。
+注意していただきたいところとして、「有線マイクを使う方法」では採点ができないという点です。
+「センド＆リターン付きミキサーを使う方法」を試された方で、採点をしたい方は、現時点では採点できません。
+共通して必要なもの PS4につなげるときに必要になるものです。
+マイクの音とカラオケ音源を混ぜる必要があるため、ミキサーが必要になります。
+{:nomarkdown}  {:/nomarkdown}
+大体、こういう汎用性のあるものは認識してくれるので家に転がってるものがあればそれでも使えることは多いです。オーディオインタフェースは基本無理です。
+ミキサーに接続するときに業務用の6.3mmジャックというものになるので
+{:nomarkdown}   {:/nomarkdown}
+スピーカー（必要な場合）
+ミキサーに音が出力されるため、スピーカーで流す場合は別途でスピーカーを用意する必要があります。
+イヤホンでカラオケする場合は必要ではないです。
+{:nomarkdown}  {:/nomarkdown}
+有線マイクを使う方法（採点はできません） こちらの方法ではPS4側にマイク音がいかないので、採点出来ないです。
+有線マイクが必要になります。
+{:nomarkdown} {:/nomarkdown}
+接続方法 1．ミキサー部分のMICに有線マイクをつなげます。
+2．テレビのイヤホンジャックから音源を取り出し、ミキサーのLINE INに接続します。
+ワイヤレスマイクを使う方法 こちらの方法は検証済みです。また、こちらの方法では採点も可能です。
+PS4側につなげる必要があるので、オーディオアダプタをつけます。
+大体、こういう汎用性のあるものは認識してくれるので家に転がってるものがあればそれでも使えることは多いです。オーディオインタフェースは基本無理です。
+   Behringer Xenyx q502usb Amazon  楽天市場  Yahooショッピング      {:nomarkdown} {:/nomarkdown}</description>
+    </item>
+    
+    <item>
+      <title>teamviewerでリモート元のパソコンの音を消す方法</title>
+      <link>https://yoneyan.dev/tech/remote/turn-off-the-remote-computer-sound-with-teamviewer/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:59 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/remote/turn-off-the-remote-computer-sound-with-teamviewer/</guid>
+      <description>個人用途では無料で使える上に、様々なデバイスからパソコンにリモートアクセスすることが可能なのTeamViewerというソフトがあります。 teamviewerを使っていたらわかるんですが、リモート先の端末から音を出すとどうしてもリモート元のパソコンからも音が出てしまいます。 自分のようにギャルゲーをTeamViewerを使って遊んでいますが、音が出てかなり困っています&amp;hellip; それを対処するため一応、回避方法がわかったので紹介していきます。
+解決策 新しくオーディオデバイスを買うということです。 最初から内蔵されているオーディオデバイスではスピーカーの出力を担当させて、新たに買ったオーディオデバイスはTeamViewer専用で使うという方法です。 windowsの場合、アプリケーションをどれか一つのオーディオデバイスにしか出力することができません。既定値設定が一つのデバイスに絞られているので、実際には同時で複数のデバイスに出力することができません。 それならば、家で使うときはいつも使ってるオーディオデバイスを使えるようにします。逆に、TeamViewerのようなリモートソフトを使うときはリモート専用に別のオーディオデバイスを使えば家ではなることないと思いました。
+やってみる 1.TeamViewerの専用のオーディオデバイスを買います。 こういうのは安いもので十分なので、amazonでUSBオーディオデバイスでしらべると大量に出てくるのでそれから調べるのもありです。  
+
+こんなやつを買いました。送料がかかったので、少しだけ高くなりましたが、500円程度で収まります。
+2.パソコンに接続    買ったUSBオーディオデバイスをパソコンに接続します。 もちろん、こっち側にはスピーカとか差したらだめです。差したら意味がないんでｗｗｗ
+3.TeamViewerでリモートで操作する際の設定方法 1.TeamViewerでパソコンに接続します。    2.サウンド設定を開きます    スピーカーマークを右クリックして、  
+
+再生デバイスを選択してください。
+3.オーディオデバイスの名前を変更する    オーディオデバイスの名前を変更する際は、名前を変更したいデバイスを右クリックからプロパティから、このように名前の変更をすることができます。  
+
+わかりやすいようにしっかりと名前をつけておいた方がいいです。
+4.TeamViewer用に使ったオーディオデバイスを既定設定する TeamViewerだけで音を鳴らしたい場合は、先ほど接続したオーディオデバイスを選択し、  
+
+既定値に設定というのがあるのでそれをクリックすると、  
+
+音がTeamViewerでしか鳴らなくなります。 逆に、戻す場合は最初に設定されていたオーディオデバイスを選択し、先ほどと同じように既定値に設定をすると、戻ります。
+まとめ 自動化するのが夢ですが、自分の技術では到底不可能なので、この方法が現時点では最良なのではないのかなと思い紹介させていただきました。 TeamViewerだけではなくAnyDeskのように他のリモートソフトでも使えるので試してみてはどうでしょうか？</description>
+    </item>
+    
+    <item>
+      <title>Simplicityでパーマリンクが日本語にできない</title>
+      <link>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</link>
+      <pubDate>Mon, 06 Feb 2017 23:58:32 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</guid>
+      <description>雑談 つい最近、wordpressテーマをstinger8からSimplicity2に変更しました。
+変更理由としてはstinger系が有料化したことにより、かなり機能が削られてしまいました。機能はプラグインで補えるのでどちらでもいいのですが、adsense広告がどうしても縦並びになってしまい悩んでいました。テーマ編集で横並びにしようと、ごにょごにょしても全く改善される見込みがなかったので。久しぶりにSimplicityを入れようと思い入れました。
+adsense広告が横並びになってくれる上に、いろいろこのテーマ単体で設定できるのでこれからは使おうかなと思っているところです。
+本題 その話はさておき&amp;hellip;
+今回はSimplicityで新規作成したときにブログ開設当初からパーマリンク設定を投稿名にしているにもかかわらず、編集しても日本語に変更できないという謎現象が起こりました。
+   https://[domain-name]/browserなら変更が可能ですが、
+https://[domain-name]/ブラウザにはなぜか変更できなかったんです。
+英語や数字なら問題ないのに日本語への変更が不能だったので、いろいろ設定をいじってみると、簡単に解決できました。
+設定方法 1.当たり前ですが、管理者ログインします。 2.外観＞カスタマイズを選択します。    3.カスタマイズ欄からその他が下の方にあるので見つけたら選択    4.そうすると、日本語のスラッグを有効にするというチェックマークが出てくるのでチェックマークにチェックをつける    5.これで終わり まとめ このように簡単にできます。
+ていうかこれ、google大先生に尋ねると普通に公式サイトに詳しくやり方が載っていました。Simplicityは公式サイトもかなり充実しており、ヘルプも大量に載っているのでそちらから調べた方がいいように思いました。
+SEO的には英語の方がいいやら数字の方がいいやらたくさんあると言われています。しかし、正直なところどっちがいいのかと言われてもわからないんです。リニューアル前のブログではパーマリンクをすべて英語にしていましたが、海外の人が見てくれるようなグローバルな仕様にしていないからいいかなと思い、リニューアル後はすべてパーマリンクを日本語にしました。
+ということで、もしわからない点などがありましたら答える範囲でお答えさせていただきますので、コメント欄に送信してください。</description>
+    </item>
+    
+    <item>
+      <title>zenfone2laserにLineageOS 14.1を導入してみた</title>
+      <link>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</link>
+      <pubDate>Tue, 31 Jan 2017 02:12:27 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</guid>
+      <description>前回、zenfone2laserにCM13を導入しましたが、いつのまにかandroid7.0ベースのLineageOS 14.1というのが出ていたので今回はこれを導入してみます。
+カスタムROM情報 android7.1.1ベースになりました。
+android7.1.1でできること  マルチウィンドウが標準で使えるようになった アプリの一括アンインストールができるようになった バッテリー節電機能が強化された デザインの変更  などの機能強化されました。 またセキュリティも強化されています。
+今回のカスタムROMの詳細    作業 準備するもの ROM本体 https://www.androidfilehost.com/?w=files&amp;amp;flid=133264 から最新のROMをダウンロードします。 TWRPの導入 これは前回説明しているのでこの記事では省きます。 前回の記事はこちらから
+導入 1.最初にカスタムROMを導入するために前に導入したTWRPリカバリモードを起動します。 TWRPを導入していない場合は前回の記事で導入を！
+2.SDカードにさっきダウンロードしたカスタムROMをSDカード又は内蔵メモリに転送します。    3.TWRPリカバリモードから先ほど転送したzipをインストールする 転送したZIPを選択してインストールを開始します。 今回は前回の環境を残すためにフォーマットを行わないことにしました。
+4.インストール完了し、再起動を行います 再起動します。
+   こんな感じの起動ロゴが出てきます。
+      ちゃんと起動してくれました。
+使ってみた感想 このカスタムROMは頻繁に更新しているのでセキュリティやバグなどもあまりないのでおすすめです。 前使っていたカスタムROMはバッテリー消費がかなり早く、標準ROMに戻そうかなとも思っていましたが、今回はこれで落ち着きそうです。 それにandroid7.0のマルチウィンドウが非常に使いやすいです。  
+
+これは使いやすいです。  
+
+   このようにOS自体のメモリ占有率も比較的軽く収まっています  
+
+通知エリアがシンプルになりました。
+まとめ このカスタムROMは入れておくべきだと思いました。 前回の記事でCM13を入れた方はこちらに乗り換えほうがHDRモードでのカメラ撮影もできるようになっているので、導入するのをおすすめします。 わからないことがあればコメント欄で質問していただくと答えれる範囲で回答させていただきます。 ここまで見てくださってありがとうございました。</description>
+    </item>
+    
+    <item>
+      <title>zenfone2laserにCM13を導入する</title>
+      <link>https://yoneyan.dev/tech/android/cm13-zenfone2laser/</link>
+      <pubDate>Wed, 18 Jan 2017 16:20:09 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/android/cm13-zenfone2laser/</guid>
+      <description>昔に実は記事を作っていましたがブログを再構築したためもう一回書き直すことにしました。
+用意しておくもの パソコン、USBケーブル、スマホ本体を用意してください。
+パソコンにadbをインストール https://forum.xda-developers.com/showthread.php?t=2588979 こちらからダウンロードしてインストーラを実行すると、簡単にadbが構築できます。
+ダウンロードするもの ze500klのブートローダアンロック用apkファイル http://dlcdnet.asus.com/pub/ASUS/ZenFone/ZE500KL/0518-1134_SIGNED_UnlockTool_ZE500KL_AndroidM.apk
+twrpカスタムリカバリ 適当なところからカスタムリカバリを持ってきます。
+カスタムROM https://forum.xda-developers.com/zenfone-2-laser/general/rom-cyanogenmod-13-0-t3451781 から  
+
+Buildsからダウンロードします。
+opengapps http://opengapps.org/  
+
+上に行くほど機能が増えますが、デフォルトアプリが多くなる原因にもなるので microかnanoのダウンロードをお勧めします。 写真はARMになっていますが、ARM64でダウンロードしてください。
+作業開始 作業を始める前に絶対にデータのバックアップを行ってください。 また、スマホ自体が文鎮化する可能性もあるので作業には注意してください。 1.fastbootモードに入る ボリュームUPを押しながら、電源ボタンを押すと、Fastbootモードが起動します。 ここでtwrpカスタムリカバリをインストールします
+fastboot flash recovery twrp-3.0.2-0-ze500kl.img 又は fastboot flash recovery D:\ダウンロード\twrp-3.0.2-0-ze500kl.img
+2.電源を切り、リカバリモードに入ります 電源ボタンを長押しで強制的に電源を落とします。 次に、ボリュームDOWNを押しながら、電源ボタンを押し、リカバリモードを起動します。
+3.リカバリモードでの操作 wipe&amp;gt;Format Dataからストレージをフォーマットします。 yesと打ちエンターをタップするとフォーマットが始まります。 パソコンではスマホのストレージが認識され、マウントされるので、カスタムROMを入れます。zipは展開せずにそのまま入れてください。
+   スマホに操作を戻し、install&amp;gt;さっき転送したファイルをインストールします。 インストールが終わるとRebootSystemが出てくるので再起動します。
+4.起動！！ 宇宙人みたいな起動ロゴが出たら成功です！！  
+
+5.セットアップ 1.言語を設定します    2.WIFIの設定    3.モバイルデータの設定    4.</description>
+    </item>
+    
+    <item>
+      <title>kinectでMMDを動かしてみた</title>
+      <link>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</link>
+      <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</guid>
+      <description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
+著者のPC環境 OS:windows10Pro
+CPU:corei7 4790k
+GPU:gtx970
+memory:16GB
+kinect:kinectv1（初期）
+となっています。そこそこのスペックが必要と思っていましたが、CF-S9(Corei5-520M/GPUオンボード)でも動いたので、そこまでのスペックの高くないパソコンでも動きました。
+環境構築をする 方法  OPENNIを使って動かす MoggNUIを使って動かす  kinectでMMDを動かす方法はこの二つがあります。
+今回は2番の方法で構築していきます。OPENNIを使ってもできますが、windows７じゃないと動かないなどの問題が起きてあきらめました&amp;hellip;
+それ以前にOPENNIを使って構築するのがくそみたいにめんどくさいので2番の方法をお勧めします。
+ダウンロード Kinect for Windows SDK v1.8（必須）
+https://www.microsoft.com/en-us/download/details.aspx?id=40278
+MikuMikuDance（DirectX9 Ver）とDxOpenNI.dll（必須）
+http://www.geocities.jp/higuchuu4/
+MoggNUI（必須）
+https://sites.google.com/site/moggproject/
+もし、リンク切れがあった場合はお問い合わせ欄又は下にあるフォーム欄に訂正箇所を送信していただけると助かります！！
+インストール １.最初にKinect for Windows SDK v1.8をインストールします。    インストールします。インストールすると自動的にドライバも導入されるのでこの作業はしましょう。
+2.MikuMikuDance（DirectX9 Ver）を適当なフォルダに展開する    こんな風に展開します。
+これでMikuMikuDance.exeを起動できるか確かめましょう。
+もし動かない場合は下のランタイムをインストールしてください。
+Microsoft Visual C++ 2005 再頒布可能パッケージ(x86) Microsoft Visual C++ 2008 再頒布可能パッケージ(x86) DirectX エンド ユーザー ランタイム
+3.DxOpenNI.dllとMoggNUI の導入 DxOpenNI.dllを展開すると
+   のように出てくるのでSamplesConfig.</description>
+    </item>
     
   </channel>
 </rss>

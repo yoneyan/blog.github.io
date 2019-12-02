@@ -97,10 +97,10 @@ encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書�
     
     <item>
       <title>勉強でおすすめのCiscoルータ3選</title>
-      <link>https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</link>
+      <link>https://yoneyan.dev/talk/recommend/cisco-routers/</link>
       <pubDate>Sun, 12 Aug 2018 01:40:01 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</guid>
+      <guid>https://yoneyan.dev/talk/recommend/cisco-routers/</guid>
       <description>1位 C841M    C841M-4X-JSEC
 フラッシュメモリ:2G
 メモリ:512MB

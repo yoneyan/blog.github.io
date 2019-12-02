@@ -13,10 +13,10 @@
     
     <item>
       <title>kinectでMMDを動かしてみた</title>
-      <link>https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</link>
+      <link>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</link>
       <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</guid>
+      <guid>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</guid>
       <description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
 著者のPC環境 OS:windows10Pro
 CPU:corei7 4790k

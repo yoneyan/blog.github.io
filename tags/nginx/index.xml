@@ -13,10 +13,10 @@
     
     <item>
       <title>nginxでリバースプロキシとLet&#39;s Encryptを導入する</title>
-      <link>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
+      <link>https://yoneyan.dev/tech/linux/reverse-proxy-and-letsencrypt-with-nginx/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
+      <guid>https://yoneyan.dev/tech/linux/reverse-proxy-and-letsencrypt-with-nginx/</guid>
       <description>nginxでLet&amp;rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
 当方のLet&amp;rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
 今回はリバースプロキシを使用します。

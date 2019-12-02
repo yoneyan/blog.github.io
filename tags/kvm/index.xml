@@ -13,10 +13,10 @@
     
     <item>
       <title>virt-install時にbr0のエラーが出て進まない</title>
-      <link>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</link>
+      <link>https://yoneyan.dev/tech/linux/error-libvirt-1/</link>
       <pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</guid>
+      <guid>https://yoneyan.dev/tech/linux/error-libvirt-1/</guid>
       <description>環境 OS: CentOS7 7.6.1810
 Bridge: br0 (eth0をbr0にブリッジで接続している)
 起こったこと virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。

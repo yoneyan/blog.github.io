@@ -13,10 +13,10 @@
     
     <item>
       <title>freshclamで更新できない</title>
-      <link>https://yoneyan.dev/post/cannot-update-with-freshclam/</link>
+      <link>https://yoneyan.dev/tech/linux/not-update-freshclam/</link>
       <pubDate>Mon, 10 Jul 2017 00:24:16 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/cannot-update-with-freshclam/</guid>
+      <guid>https://yoneyan.dev/tech/linux/not-update-freshclam/</guid>
       <description>ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
 ウイルス定義ファイルを更新しようとすると&amp;hellip;    おい&amp;hellip;まじか&amp;hellip;
 root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).  こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので

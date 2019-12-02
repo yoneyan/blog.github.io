@@ -13,10 +13,10 @@
     
     <item>
       <title>Linuxのディスク容量拡張の方法</title>
-      <link>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
+      <link>https://yoneyan.dev/tech/linux/linux-disk-capacity-expansion-method/</link>
       <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
+      <guid>https://yoneyan.dev/tech/linux/linux-disk-capacity-expansion-method/</guid>
       <description>UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
 VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
 前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。

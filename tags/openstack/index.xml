@@ -13,10 +13,10 @@
     
     <item>
       <title>openstackを構築していくpart1</title>
-      <link>https://yoneyan.dev/post/building-openstack-part1/</link>
+      <link>https://yoneyan.dev/building/openstack/part1/</link>
       <pubDate>Wed, 12 Dec 2018 21:53:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/building-openstack-part1/</guid>
+      <guid>https://yoneyan.dev/building/openstack/part1/</guid>
       <description>openstackを自力で一から頑張って構築していこうという試みを始めます。
 検証目的の場合であれば、centosのpackstackのような自動インストールツールを使うべきです。 実用的な運用を目指していこうという主旨の上でやっていきます。
 筆者自身も構築途中ということもあり、時間をかけて記事を出していく予定なので、よろしくお願いします。

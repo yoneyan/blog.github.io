@@ -13,10 +13,10 @@
     
     <item>
       <title>PS4を買う前にまずPS3を買え！！！</title>
-      <link>https://yoneyan.dev/post/buy-ps3-first-before-you-buy-ps4/</link>
+      <link>https://yoneyan.dev/talk/buy-ps3/</link>
       <pubDate>Mon, 05 Feb 2018 13:24:35 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/buy-ps3-first-before-you-buy-ps4/</guid>
+      <guid>https://yoneyan.dev/talk/buy-ps3/</guid>
       <description>題名通りです。PS4を買う前にPS3を買った方がいい理由を今回紹介させていただきます。
 理由  PS3の方がゲームソフトが安い PSStoreでも同じゲームでもPS3の方が安い  みなさん、お気づきだと思いますが、理由はゲームソフトが安いという点です。 なにかしらPSのゲームソフトは高いです。パソコンでゲームをするユーザーの中でよく使われるSteamというゲームクライアントがあります。そこはしょっちゅうセールやってるので比較的安く買えることが多いですが、PSStoreでは安く買えるのは大体、年末とかゴールデンウイークあたりぐらいです。なので、いろんなゲームをやりたい人はまずPS3を買う方がいいのではないのかと思います。 PS4でPS3のソフトが動いたらいいんですが、互換機能が入っていないのでPS3を買うのが一番の近道ではないのかなと思います。
 PS3を手に入れる方法 メルカリやamazonの中古で売っています。 なるべくCECH-2500A以上の機種を購入した方がいいです。 初期シリーズのCECH*00はPS2との互換が取れていますが、半田クラックの問題がありYLOD問題がよく起こるので買うのは控えた方がいいです。どうしてもPS2をやりたい方は本体を買った方がいいでしょう。実機からBIOSの抜き取れる方はPCでPCSX2のエミュレータを使うのもありのように思います。    PlayStation3 チャコール・ブラック 500GB (CECH4300C) Amazon  楽天市場  Yahooショッピング     
@@ -28,10 +28,10 @@ PS3の短所 PS3も一応フルHDには対応している物の音ゲーや美�
     
     <item>
       <title>PS4で遅延なくカラオケをする方法</title>
-      <link>https://yoneyan.dev/post/how-to-karaoke-without-delay-on-ps4/</link>
+      <link>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</link>
       <pubDate>Sat, 20 Jan 2018 10:56:41 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-karaoke-without-delay-on-ps4/</guid>
+      <guid>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</guid>
       <description>お詫びと訂正
 (2019/03/11 20:08) 有線マイクでの採点は現時点ではできません。
 (2019/03/11 17:30) 当方の知識不足による影響で「センド＆リターン付きのミキサーを使う方法」にて間違った方法を載せておりました。原因と致しまして、当方のfx sendの知識が不十分でした。誠にお詫び申し上げます。只今、対処法につきまして、模索しておりますのでもう少しお待ちください。
@@ -95,10 +95,10 @@ UPnP Access Control Listsの設定    設定例としてはこんな感じにな
     
     <item>
       <title>ps4slimとps4proはどっちの方がいいのか？</title>
-      <link>https://yoneyan.dev/post/ps4slim-or-ps4pro/</link>
+      <link>https://yoneyan.dev/talk/ps4slim-or-ps4pro/</link>
       <pubDate>Sun, 14 Jan 2018 10:30:03 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/ps4slim-or-ps4pro/</guid>
+      <guid>https://yoneyan.dev/talk/ps4slim-or-ps4pro/</guid>
       <description>今回は現行機のPS4 slimとPS4 Proのどっちを買えばいいのか迷っている方の助けになればいいなと思い自分の意見を言いたいと思います。
 PS4の本体仕様を比較 PS4 Slim  メインプロセッサー
 Single-chip custom processor CPU : x86-64 AMD “Jaguar”, 8 cores GPU : 1.84 TFLOPS, AMD Radeon™ based graphics engine

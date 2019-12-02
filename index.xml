@@ -135,10 +135,10 @@ nmcli d wifi  としてもなにも帰ってこないので、 networkmanager-wi
     
     <item>
       <title>virt-install時にbr0のエラーが出て進まない</title>
-      <link>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</link>
+      <link>https://yoneyan.dev/tech/linux/error-libvirt-1/</link>
       <pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</guid>
+      <guid>https://yoneyan.dev/tech/linux/error-libvirt-1/</guid>
       <description>環境 OS: CentOS7 7.6.1810
 Bridge: br0 (eth0をbr0にブリッジで接続している)
 起こったこと virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。
@@ -167,10 +167,10 @@ awplus#atmf cleanup  [atmf cleanup]というコマンドを使うことで、完
     
     <item>
       <title>apcupsdで自動シャットダウンをできるようにする</title>
-      <link>https://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/</link>
+      <link>https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/</link>
       <pubDate>Tue, 30 Jul 2019 01:52:07 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/enable-automatic-shutdown-with-apcupsd/</guid>
+      <guid>https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/</guid>
       <description>apcupsdとは APC製のUPSにつながれたサーバ機器を安全にシャットダウンされるように作られたアプリケーションです。
 また、このアプリケーションを使うことで複数台のサーバ機器を同時にシャットダウン出来ることも特徴の一つです。
 構成 構成としてこのようになっています。
@@ -228,10 +228,10 @@ firewall_script=&amp;quot;/usr/local/etc/ipfw.rules&amp;quot;  /usr/local/etc/ip
     
     <item>
       <title>mineoが最強だと思う理由</title>
-      <link>https://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/</link>
+      <link>https://yoneyan.dev/talk/mineo-is-strongest/</link>
       <pubDate>Tue, 18 Jun 2019 00:15:58 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/why-you-think-mineo-is-the-strongest/</guid>
+      <guid>https://yoneyan.dev/talk/mineo-is-strongest/</guid>
       <description>mineoは株式会社オプテージが運営しているMVMOのサービスです。
 今回は、mineoが個人的になぜ最強だと思うのか？どういう点で最強だと思ったのかを紹介させていただきます。
 そもそもmineoとは  mineoは格安SIMを提供するMVMOサービスです。
@@ -260,10 +260,10 @@ AndroidとiOSの両方で提供されていますが、iOSで契約すると、�
     
     <item>
       <title>x230で本当のデュアルブートをしてみる</title>
-      <link>https://yoneyan.dev/post/try-a-real-dual-boot-with-x230/</link>
+      <link>https://yoneyan.dev/talk/real-dual-boot-with-x230/</link>
       <pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-a-real-dual-boot-with-x230/</guid>
+      <guid>https://yoneyan.dev/talk/real-dual-boot-with-x230/</guid>
       <description>神機種と呼ばれている x230というThinkpadを愛用しています。
 少し、話が逸れてしまいますが、自分が持っているThinkpadにはいくつか問題があります。
 まず、キーボードを交換した時にすべてのネジが行方不明になり出先でもキーボードの外れる問題
@@ -297,10 +297,10 @@ AndroidとiOSの両方で提供されていますが、iOSで契約すると、�
     
     <item>
       <title>nginxでリバースプロキシとLet&#39;s Encryptを導入する</title>
-      <link>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</link>
+      <link>https://yoneyan.dev/tech/linux/reverse-proxy-and-letsencrypt-with-nginx/</link>
       <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/introducing-reverse-proxy-and-letsencrypt-with-nginx/</guid>
+      <guid>https://yoneyan.dev/tech/linux/reverse-proxy-and-letsencrypt-with-nginx/</guid>
       <description>nginxでLet&amp;rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
 当方のLet&amp;rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
 今回はリバースプロキシを使用します。
@@ -316,10 +316,10 @@ certbot certonly --standalone  ２．設定に追加する certbotを実行す�
     
     <item>
       <title>Linuxのディスク容量拡張の方法</title>
-      <link>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</link>
+      <link>https://yoneyan.dev/tech/linux/linux-disk-capacity-expansion-method/</link>
       <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/linux-disk-capacity-expansion-method/</guid>
+      <guid>https://yoneyan.dev/tech/linux/linux-disk-capacity-expansion-method/</guid>
       <description>UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
 VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
 前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。
@@ -337,10 +337,10 @@ sudo resize2fs /dev/sda2  もちろんですが、root権限が必要です。
     
     <item>
       <title>TX1310 M1でホットスワップが出来ない</title>
-      <link>https://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/</link>
+      <link>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</link>
       <pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/cannot-hotswap-with-tx1310_m1/</guid>
+      <guid>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</guid>
       <description>ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
 何が出来ないのか？ 本来、この機器ではホットスワップには対応していないのですが、大体のAHCIで動いてるシステムは使えるはずなのですが、使えない。
 しかも、ホットスワップ出来ないだけだと不便だけで済みますが、記憶域プールが謎のエラーを吐いて、作成出来ないのが致命的です。
@@ -358,10 +358,10 @@ TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種
     
     <item>
       <title>ラック型サーバーでハードウェアRAIDを使いたくない理由</title>
-      <link>https://yoneyan.dev/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</link>
+      <link>https://yoneyan.dev/talk/hardware-raid/</link>
       <pubDate>Wed, 17 Apr 2019 23:35:47 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/why-you-dont-want-to-use-hardware-raid-on-rackservers/</guid>
+      <guid>https://yoneyan.dev/talk/hardware-raid/</guid>
       <description>この記事ではラック型サーバーでハードウェアRAIDを使いたくない理由をここで話したいと思います。
 簡潔に言うと、壊れるととてもめんどくさいからです。
 理由 ハードウェアRAIDは専用のSASやSATAカード内のチップで処理させています。
@@ -393,10 +393,10 @@ ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイル�
     
     <item>
       <title>Brocade 300(FabricOS)のネットワーク設定をする</title>
-      <link>https://yoneyan.dev/post/configure-network-settings-for-brocade300_fabricos/</link>
+      <link>https://yoneyan.dev/building/fablic_os/network/</link>
       <pubDate>Sun, 07 Apr 2019 23:53:10 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/configure-network-settings-for-brocade300_fabricos/</guid>
+      <guid>https://yoneyan.dev/building/fablic_os/network/</guid>
       <description> FC-SANを使うためにBrocade 300を導入したのはいいのですが、なかなか普通のL2やL3スイッチのようには設定が行かないので、備忘録もかねて記事化していきます。
 ネットワーク設定とは？ sshやtelnet、アップデートの時などに必要になってきます。
 そのために今回はネットワーク設定をしていきます。
@@ -427,10 +427,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;qu
     
     <item>
       <title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title>
-      <link>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</link>
+      <link>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</link>
       <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/what-to-do-when-rebuilding-is-too-slow-when-building-raid-on-linux/</guid>
+      <guid>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</guid>
       <description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
 http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
 上のブログさんの記事を参考にしました。（ほぼ、同じです。）
@@ -442,10 +442,10 @@ http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
     
     <item>
       <title>LinuxでPT2ドライバをインストールする</title>
-      <link>https://yoneyan.dev/post/install-pt2-driver-on-linux/</link>
+      <link>https://yoneyan.dev/tech/tv/install-pt2-driver-on-linux/</link>
       <pubDate>Mon, 25 Mar 2019 12:23:32 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/install-pt2-driver-on-linux/</guid>
+      <guid>https://yoneyan.dev/tech/tv/install-pt2-driver-on-linux/</guid>
       <description>PT3ドライバでインストールする記事が多い気がするので、ここに備忘録として書きます。
 CentOSで今回はドライバインストールを行いましたが、他のディストリビューションでも同じです。
 作業開始！ 1．ドライバをダウンロードしてインストールする 1.1．ダウンロードする 以下のものをダウンロードします。 http://hg.honeyplanet.jp/pt1/archive/tip.tar.bz2
@@ -505,10 +505,10 @@ LAN:eth1
     
     <item>
       <title>neovimでUltiSnips requires py &gt;= 2.7 or py3というエラーの対処法</title>
-      <link>https://yoneyan.dev/post/how-to-fix-neovim-error/</link>
+      <link>https://yoneyan.dev/tech/linux/fix-neovim-error/</link>
       <pubDate>Wed, 20 Feb 2019 18:53:54 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-fix-neovim-error/</guid>
+      <guid>https://yoneyan.dev/tech/linux/fix-neovim-error/</guid>
       <description>最近、新たにデスクトップPCにLinuxMintを導入してneovimやtmuxやらの環境構築をしている途中に
 UltiSnips requires py &amp;gt;= 2.7 or py3
 とこのようなエラーをneovimを起動する度に吐いてしまったので対処法を備忘録として載せておきます。
@@ -541,10 +541,10 @@ set interfaces ethernet eth3 vif 100  このようにしてあげることで使
     
     <item>
       <title>VPSでスワップ領域を増やす</title>
-      <link>https://yoneyan.dev/post/increase-swap-space-with-vps/</link>
+      <link>https://yoneyan.dev/tech/linux/increase-swap-space/</link>
       <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/increase-swap-space-with-vps/</guid>
+      <guid>https://yoneyan.dev/tech/linux/increase-swap-space/</guid>
       <description>VPSで格安のものになってくると、問題となってくるのがスペックになります。
 昔のVPSに比べると、メモリが512MBに増えておりかなり使えるものになってきましたが、それでも不足してしまうという現実があります。
 そこで、気休め程度になってしまいますが、スワップ領域を増やしてみました。
@@ -564,10 +564,10 @@ HDDのマウントなどで使われるfstabに追記していきます。
     
     <item>
       <title>wordpressでGutenbergエディタが開いてくれない</title>
-      <link>https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</link>
+      <link>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</link>
       <pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/gutenberg-editor-does-not-open-in-wordpress/</guid>
+      <guid>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</guid>
       <description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
 結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
 このようになった    Gutenbergが開いてくれない
@@ -641,10 +641,10 @@ Private key data にclient1.keyの内容を入れます。
     
     <item>
       <title>大好きな曲を電話回線網から流す方法</title>
-      <link>https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/</link>
+      <link>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</link>
       <pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-play-your-favorite-songs-from-the-telephone-network/</guid>
+      <guid>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</guid>
       <description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
 最終日ということもあり気合を入れて紹介させていただきます。
 作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
@@ -695,10 +695,10 @@ Trunkポートの設定編 そもそも、trunkポートとは複数のVLANを�
     
     <item>
       <title>openstackを構築していくpart1</title>
-      <link>https://yoneyan.dev/post/building-openstack-part1/</link>
+      <link>https://yoneyan.dev/building/openstack/part1/</link>
       <pubDate>Wed, 12 Dec 2018 21:53:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/building-openstack-part1/</guid>
+      <guid>https://yoneyan.dev/building/openstack/part1/</guid>
       <description>openstackを自力で一から頑張って構築していこうという試みを始めます。
 検証目的の場合であれば、centosのpackstackのような自動インストールツールを使うべきです。 実用的な運用を目指していこうという主旨の上でやっていきます。
 筆者自身も構築途中ということもあり、時間をかけて記事を出していく予定なので、よろしくお願いします。
@@ -736,10 +736,10 @@ Swift 分散型のストレージサービスを提供するコンポーネン�
     
     <item>
       <title>Proxmoxがかなり使いやすい件について</title>
-      <link>https://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</link>
+      <link>https://yoneyan.dev/talk/easy-to-use-proxmox/</link>
       <pubDate>Tue, 11 Dec 2018 23:59:39 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/about-proxmox-is-quite-easy-to-use/</guid>
+      <guid>https://yoneyan.dev/talk/easy-to-use-proxmox/</guid>
       <description>Proxmoxというハイパーバイザー型のOSがありますが、かなり使いやすいので便利な点をこの記事で紹介していきます。
 Proxmoxとはなんぞや(^^;)? KVMとOpenVZをサポートしているハイパーバイザー型のOSです。 Linuxには仮想マシンであるKVMとコンテナであるOpenVZはLinux系であればかんたんに構築できますが、GUI管理が簡単にできないという問題点がありました。 それがProxmoxでは簡単にWebGUIで操作することができます。
 ということで、そろそろ使いやすい点を紹介していきます。
@@ -815,10 +815,10 @@ Router2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 pri
     
     <item>
       <title>proxmox（Debian系）でソフトウェアRAIDを組む</title>
-      <link>https://yoneyan.dev/post/create-software-raid-with-proxmox/</link>
+      <link>https://yoneyan.dev/tech/linux/create-software-raid-with-proxmox/</link>
       <pubDate>Sun, 02 Dec 2018 22:01:52 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/create-software-raid-with-proxmox/</guid>
+      <guid>https://yoneyan.dev/tech/linux/create-software-raid-with-proxmox/</guid>
       <description>今回はproxmoxというハイパーバイザーOSを使ってソフトウェアRAIDを組んでみます。 ソフトウェアRAIDを組む方法として、mdadmを使って構築していきます。普通はmdadmをコマンド操作で構築しますが、正直なところキツイのでwebminを使ってRAID構築をしていきます。webminではWebUIから構築出来ますが、実際に動いているのはmdadmなので「コマンド操作したい！」となった時でも対応できるのでおすすめです。
 1．最初にWebminの導入 1.1 Webminをダウンロード http://www.webmin.com/download.html から最新版の.debファイルをwget経由でダウンロードします。
 wget https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  https://~all.debの部分は最新版のリンク先を貼り付けてください。
@@ -875,10 +875,10 @@ ip addr  これで確認することが可能になります。</description>
     
     <item>
       <title>おすすめのレンタルサーバーを比較</title>
-      <link>https://yoneyan.dev/post/compare-recommended-rental-servers/</link>
+      <link>https://yoneyan.dev/talk/rental-servers/</link>
       <pubDate>Mon, 12 Nov 2018 01:26:24 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/compare-recommended-rental-servers/</guid>
+      <guid>https://yoneyan.dev/talk/rental-servers/</guid>
       <description>レンタルサーバーは数多くあると思うので、おすすめのレンタルサーバーを抜粋して紹介します。一応、順位をつけますがあくまでも筆者の意見であるということを留意してください。
 1位 XServer 
 機能 |CGI|PHP|Cron|自動バックアップ|SSH|FTP|無料SSL|ドメイン|データベース|転送量(1日)| |○|○|○|○(リストア時、料金発生)|○|○|○|無制限|MySQL,SQLite|70G～|
@@ -898,10 +898,10 @@ ip addr  これで確認することが可能になります。</description>
     
     <item>
       <title>ブレードサーバーの中を見てみる1</title>
-      <link>https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</link>
+      <link>https://yoneyan.dev/tech/hard/look-bladeserver_1/</link>
       <pubDate>Sun, 11 Nov 2018 05:01:52 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/take-a-look-inside-the-bladeserver_1/</guid>
+      <guid>https://yoneyan.dev/tech/hard/look-bladeserver_1/</guid>
       <description>みなさん、ブレードサーバーって知っていますか？
 今回はブレードサーバーのエンクロージャ（側の部分）も手に入れようとしていたのですが、重すぎて持って帰ることを断念しました。 （重さはエンクロージャだけで60～100kg以上あります)1Fだと持って帰ってはいたのですが、自分の部屋が2Fにあるので断念しました。
 ブレードサーバーとは？ サーバーをたくさん搭載できるものです。 1Uに比べると、たくさん搭載することができます。
@@ -917,10 +917,10 @@ ip addr  これで確認することが可能になります。</description>
     
     <item>
       <title>自宅サーバーとVPSの使い分け</title>
-      <link>https://yoneyan.dev/post/use-of-homeserver-and-vps/</link>
+      <link>https://yoneyan.dev/talk/use-of-homeserver-and-vps/</link>
       <pubDate>Sat, 10 Nov 2018 02:41:27 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/use-of-homeserver-and-vps/</guid>
+      <guid>https://yoneyan.dev/talk/use-of-homeserver-and-vps/</guid>
       <description>今回は自分なりの自宅サーバーとVPSの使い分けの仕方を紹介します。 そもそもの話になってはしまうのですが、自宅サーバーとVPSの簡単な説明をさせていただきます。
 自宅サーバーとVPSの説明 自宅サーバーとは？ 自宅サーバーとはそのままの意味で、自宅で運用するサーバーのことを言います。
       こんな感じのものです。
@@ -932,10 +932,10 @@ VPSとは？ VPSとは、自分の家ではなく、ホスティングサービ�
     
     <item>
       <title>AWSのLightsailというVPSが安すぎる</title>
-      <link>https://yoneyan.dev/post/aws-lightsail-is-too-cheap/</link>
+      <link>https://yoneyan.dev/talk/lightsail-is-too-cheap/</link>
       <pubDate>Fri, 09 Nov 2018 02:20:35 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/aws-lightsail-is-too-cheap/</guid>
+      <guid>https://yoneyan.dev/talk/lightsail-is-too-cheap/</guid>
       <description>AWSってみなさん知っている方が多いと思います。EC2という従量課金制のものがあることを知っている人が多いと思います。 AWSでVPSと同等のものがあります。それがLightsailです。 今回はLightsailの簡単な紹介とメリットとデメリットを書いていきます。
 Lightsailって何？ Lightsailは俗にいうVPSです。 Lightsail=VPSと考えても大丈夫です。
 何がいいのか？  安い（ガチで安い。安すぎる Lightsailの中身はEC2のサーバーと同じ（AWSの人が言ってた） WindowsServerも安い VPCピアというのでAWSの他のサービスに連携できるらしい（やってないのでわからない） データベースプランもある（これも使ったことないのでわからん）  値段 VPSを使う奥様方にはありがたいぐらい安いです。
@@ -947,10 +947,10 @@ WindowsServer系    120USD、240USDプランもあります。（2018/11/09執�
     
     <item>
       <title>ラックサーバ(RX300 S6)を静音化してみる</title>
-      <link>https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</link>
+      <link>https://yoneyan.dev/fix/silence-rx300s6/</link>
       <pubDate>Thu, 08 Nov 2018 17:40:23 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-to-silence-the-rackserver_rx300s6/</guid>
+      <guid>https://yoneyan.dev/fix/silence-rx300s6/</guid>
       <description>現在、メインで動かし続けている自宅のサーバーがRX300 S6になりますが、2Uだからということもありますが、かなりうるさいという問題が発生しました。 普通に考えるとデータセンターに置く物なのでうるさい理由がわかりますが、この状態では家で他の作業が出来ないのであまりよくないのですがファンを静音化する作業してみました。
 そもそも、静音化とは サーバー内のファンの速度を意図的に落とすことのことです。 サーバーやパソコンにとってはあまりよろしくないのが実情ですが、うるさすぎるので仕方がないという感じです。 これによって壊れることもありますので、自己責任で作業をしてください。 かなりやってることはかなりよろしくないので、わかった上でしてください。
 作業していく 1．抵抗を選ぶ 1/4W（0.25W）の抵抗を使ってみたのですが、電流が強すぎて煙を出して「プシュ〜〜」という音をしながら焼ける事件が起きたので10Wのセメント抵抗を使います。 ファンに書いてある↓の電流と電圧などに気をつけて作業してください。抵抗値は電圧と電流を元に計算します。  
@@ -965,10 +965,10 @@ WindowsServer系    120USD、240USDプランもあります。（2018/11/09執�
     
     <item>
       <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</title>
-      <link>https://yoneyan.dev/post/asterisk-error1/</link>
+      <link>https://yoneyan.dev/tech/asterisk/error1/</link>
       <pubDate>Sun, 04 Nov 2018 03:18:33 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/asterisk-error1/</guid>
+      <guid>https://yoneyan.dev/tech/asterisk/error1/</guid>
       <description>Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
 解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
 [transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
@@ -994,10 +994,10 @@ source ./vars  を実行します。
     
     <item>
       <title>grafanaをnginxでリバースプロキシしてみる</title>
-      <link>https://yoneyan.dev/post/reverse-proxy-with-grafana-with-nginx/</link>
+      <link>https://yoneyan.dev/tech/linux/reverse-proxy-with-grafana-with-nginx/</link>
       <pubDate>Mon, 15 Oct 2018 04:20:47 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/reverse-proxy-with-grafana-with-nginx/</guid>
+      <guid>https://yoneyan.dev/tech/linux/reverse-proxy-with-grafana-with-nginx/</guid>
       <description>みなさん大好きなGrafanaを使っている方は、たくさんいらっしゃると思うのですが、今回はnginxを使ってリバースプロキシを使ってみました。少しだけややこしいと思ったので記事にします。 正直なところ、ここを見なくても公式サイトにしっかりと載せてくれてます。 おそらく、そちらを見た方がいいです。 http://docs.grafana.org/installation/behind_proxy/
 今回やりたいこと ドメインはtest.domainと仮定します。 http://test.domain/grafana/でアクセス出来るようにする test.domainはもちろん自分のドメインに変えてください。
  nginxのリバースプロキシの設定 grafanaの設定  終了です
@@ -1039,10 +1039,10 @@ encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書�
     
     <item>
       <title>nextcloudでアップロードができない理由はこれだった...</title>
-      <link>https://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/</link>
+      <link>https://yoneyan.dev/tech/linux/cant-upload-with-nextcloud/</link>
       <pubDate>Tue, 25 Sep 2018 04:27:25 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/this-is-why-i-cant-upload-with-nextcloud/</guid>
+      <guid>https://yoneyan.dev/tech/linux/cant-upload-with-nextcloud/</guid>
       <description>nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
 戦犯は&amp;hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
 なぜわかったのか？ nextcloudのweb操作で小さいファイルだとアップロードできるのに、１MBを超えるファイルをアップロードしようとすると、なぜか途中で止まってしまうということが起こりました。 そこで、nextcloudのクライアントからを入れてみたときに、どんな挙動が起こるのか確かめてみると&amp;hellip;  
@@ -1080,10 +1080,10 @@ Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
     
     <item>
       <title>勉強でおすすめのCiscoルータ3選</title>
-      <link>https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</link>
+      <link>https://yoneyan.dev/talk/recommend/cisco-routers/</link>
       <pubDate>Sun, 12 Aug 2018 01:40:01 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/3-recommended-cisco-routers-for-study/</guid>
+      <guid>https://yoneyan.dev/talk/recommend/cisco-routers/</guid>
       <description>1位 C841M    C841M-4X-JSEC
 フラッシュメモリ:2G
 メモリ:512MB
@@ -1119,10 +1119,10 @@ Cisco</description>
     
     <item>
       <title>外でPCゲームをする方法その1（rdp編）</title>
-      <link>https://yoneyan.dev/post/how-to-play-a-pc-game-outside-1_rdp/</link>
+      <link>https://yoneyan.dev/tech/remote/play-a-pcgame-outside-1_rdp/</link>
       <pubDate>Mon, 06 Aug 2018 03:08:24 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-play-a-pc-game-outside-1_rdp/</guid>
+      <guid>https://yoneyan.dev/tech/remote/play-a-pcgame-outside-1_rdp/</guid>
       <description>この記事はリモートでPCゲームをする方法（rdp編）の続き？になります。 前回の記事では家庭内LANでPCゲームをする方法を紹介しましたが、この記事では外でPCゲームをする方法を紹介します。
 方法として リモートデスクトップを使って外でPCゲームをする方法として、下の二つの方法があります。
  VPNをつなげてローカルIPでリモートデスクトップ接続する ルータをポート開放してリモートデスクトップ接続する  この記事では、VPNを使ったつなげてローカルIPでRDP接続する方法を紹介します。この方法が一番手っ取り早く、簡単にできる方法になると思います。(たぶん&amp;hellip;(^^;))
@@ -1149,10 +1149,10 @@ Cisco</description>
     
     <item>
       <title>リモートでPCゲームをする方法(rdp編)</title>
-      <link>https://yoneyan.dev/post/how-to-play-pc-games-remotely_rdp/</link>
+      <link>https://yoneyan.dev/tech/remote/play-pc-games-remotely_rdp/</link>
       <pubDate>Mon, 06 Aug 2018 00:23:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-play-pc-games-remotely_rdp/</guid>
+      <guid>https://yoneyan.dev/tech/remote/play-pc-games-remotely_rdp/</guid>
       <description>この記事では、Windows10Proに標準で搭載されている機能であるリモートデスクトップを使ってリモートでPCゲームをする方法を紹介します。 （リモートデスクトップを使って外でゲームをする方法はまたどっかで紹介します。） 正直なところゲームは出来ますが、リモートデスクトップ経由でゲームをするということが想定されていないためできないゲームもありますが、2D系のゲームなら比較的できます。 ですが、さすがに実用できるほどのものでもないのでそこだけは注意してください。 美少女ゲームぐらいであれば意外と動いてくれます。
 リモートデスクトップとは？ リモートデスクトップ正式名称はRDP（Remote Desktop Protocol）になります。 Windowsでは全エディションにRDPのクライアントが初期状態からインストールされているはずです。（AD環境下はわかりません） それによって、Windows搭載のRDPのバージョンさえ適合されていれば（されていなくてもたいてい動く）接続できます。
 準備するもの  Windows7 Pro以上（Windows7 Pro以上でないとRDPのホスト（サーバー）機能を使えないので注意！） クライアントのPCがWindows7以上であること（バージョンはなんでもよい）  Windows7以上ですが、Windows10の方が問題が起きにくいのでWindows10をおすすめします。
@@ -1172,10 +1172,10 @@ Cisco</description>
     
     <item>
       <title>おすすめウルトラモバイルPC3選。買うしかない...</title>
-      <link>https://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/</link>
+      <link>https://yoneyan.dev/talk/recommend/umpc/</link>
       <pubDate>Wed, 01 Aug 2018 23:30:30 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/3-recommended-ultra-mobile-pcs/</guid>
+      <guid>https://yoneyan.dev/talk/recommend/umpc/</guid>
       <description>みなさん、ウルトラモバイルPCって知ってますか？ 最近は昔ほどの勢いはありませんが、少なからずほしいと思う方がいらっしゃると思います。そこでこの記事では、ウルトラモバイルPC＝UMPCを紹介していきます。
 GPD Pocket    CPU:Atom x7-Z8750 メモリ:4G又は8G バッテリー:7000mAh、3.8V ストレージ:128G(eMMC)600 解像度:1920x1200 無線:Wifi802.11ac Bluetooth4.1 端子系:Type-A(USB3.0),Type-C(USB3.0),MicroHDMI,イヤホンジャック OS:Windows10 Home 価格:60000円～（GPD Pocket）
 これはやばいです。 小さいながらもキーボードとトラックポイントがしっかりと付いており、操作性は悪くないです。さすがに、小さすぎるということもありキーボードが打ちにくい点はありますが、慣れればなんとかなります。インターフェース系がType-AとType-Cが備わっているため、既存のUSB機器につなげることができるのでかなり利便性が高いです。また、Type-CはPowerDeliveryに対応していることもあり使いながらでも十分に充電できる仕様になっているのが特徴です。通勤や通学途中にAndroidタブレットでは物足りないという方にはもってこいの商品になっています。
@@ -1190,10 +1190,10 @@ GPD Win2    CPU:Core m3-7Y30 メモリ:4G又は8G バッテリー:7000mAh、3.8
     
     <item>
       <title>自宅で業務用ルータをおすすめする理由</title>
-      <link>https://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</link>
+      <link>https://yoneyan.dev/talk/recommend-commercial-router/</link>
       <pubDate>Wed, 27 Jun 2018 07:33:56 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/reasons-to-recommend-a-commercial-router-at-home/</guid>
+      <guid>https://yoneyan.dev/talk/recommend-commercial-router/</guid>
       <description>みなさんは、自宅のルータはどういうものを使ってますか？
 たぶん、普通の人ならプロバイダーが貸し出ししているルータ又は市販のルータを使ってると思います。（バッファローやIO dataのルータのように&amp;hellip;）
 業務用ルータのメリット  安定している 設定項目が多い コマンドで設定ができる（ごく一部の機種を除いて） POE対応の機種もある  このメリットを1つずつ紹介します。
@@ -1212,10 +1212,10 @@ POEとはPowerOverEthernetの略でLANケーブル一本で通信と電源を同
     
     <item>
       <title>自宅サーバとVPSの長所と短所の比較</title>
-      <link>https://yoneyan.dev/post/comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</link>
+      <link>https://yoneyan.dev/talk/homeserver-and-vps/</link>
       <pubDate>Tue, 12 Jun 2018 07:19:01 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/comparison-of-advantages-and-disadvantages-of-homeserver-and-vps/</guid>
+      <guid>https://yoneyan.dev/talk/homeserver-and-vps/</guid>
       <description>この記事では、自宅サーバとVPSの二つを対象にして、長所と短所を比較してみます。
 自宅サーバの長所     ハードウェア単位での知識が増える ネットワークの勉強になる そこそこのスペックを比較的安く中古で買える ローカルでのファイルのやりとりは速い  自宅サーバの一番の特徴としてハードウェアの知識が増える点です。特に大学生で自分のようにインフラのような仕事につきたいと思ってる方にはおすすめです。 中古のサーバ機の場合は、比較的安くハードを買うことが出来るので、サーバを置く場所さえあればなんとかなりますファイルの共有をよくしている方はVPSよりも自宅サーバの方がおすすめです。やっぱり自宅の有線の方が当たり前ですが速いです。
 自宅サーバの短所  電気代やばい ハードウェアの管理をやっておかないとだめ  電気代はかなり行きます。そこが唯一の問題です。また、HDDが消耗品ということもあるのでハードウェアの管理をしっかりしておかないといけないという点です。  
@@ -1228,10 +1228,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
     
     <item>
       <title>ラック型サーバーの良い点と悪い点</title>
-      <link>https://yoneyan.dev/post/pros-and-cons-of-rack-servers/</link>
+      <link>https://yoneyan.dev/talk/rackserver/</link>
       <pubDate>Tue, 05 Jun 2018 15:04:37 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/pros-and-cons-of-rack-servers/</guid>
+      <guid>https://yoneyan.dev/talk/rackserver/</guid>
       <description>みなさんは、家にサーバーありますか？ あると思います でも、単にサーバーを置くだけでは満足できなくなってきている方も多いと思います。 タワー型サーバーでは満足がいかなくなってくると、 次は&amp;hellip;&amp;hellip;ラック型サーバーに手を出してしまうのが普通だと思います。 筆者もまさしく、そんな状況になってラック型サーバーの良いところと悪いところを紹介します。
 ラック型サーバーの良いところ  CPU二個積めるやつやメモリがめちゃくちゃ搭載できるサーバーが比較的安い価格で買える メモリでRegisterdに対応しているサーバーが多い 積みやすい 漬物石の代わりになる  CPU二個積めるサーバーが安く手に入るというのが一番の特徴と言っても過言です。 CPU二個積む分消費電力が増えてしまうというやばいところが増えてくるというのも事実ですが、コア数を使うような仮想化用途ではおすすめです。 また、ラック型サーバーになってくると、メモリも6つ以上搭載出来るのが多くを占めるので、これも仮想化するのにはおすすめです。 ヤフオクで中古のタワー型サーバーの場合、メモリのECCでRegisteredに対応していない機種が多いということです。 2Uサーバーや1Uサーバーの一番の特徴は昔のアンプみたいに上に載せれる点です。 ハードウェアメンテナンスをする際は取り出す必要がありますが、大体のラック型サーバーは前面からHDDを交換できるので、比較的管理が楽なのでおすすめなところです。
 ラック型サーバーの悪いところ  うるさい タワー型に比べて高い（気がする） ファンが多い 電気代が&amp;hellip;  こういった感じです。 ラック型サーバーはうるさいというのが一番の欠点です。 どれくらいのうるさいのかと言うと、ダイソンの掃除機並にうるさいです。 ラック型サーバーになるので、24時間運用することになるので、ダイソンの掃除機が24時間鳴りっぱなしというすごい状況になります。 こちらにどんな感じの音なのか体験してほしいので、載せました。 これを聞いてみるとその迫力が少しでも伝わるのではないでしょうか？ ラック型サーバ＝ダイソンの掃除機 並の音になるので家に置くには難しい点です。 ほかに問題になってくるのが電気代です。 ほとんどのラック型サーバはタワー型サーバに比べて電気代が高いです。 ラック型は冗長化に優れすぎていて電源がホットスワップに対応している変態的なサーバになってしまうので、電源が二個入るのでその時点で待機電力がそこそこ食います。 また、マザーボードもタワー型に比べると消費電力が高い感じがする（低いものがあるかもしれない）ので、家に置くならタワー型がおすすめかなと思います。
@@ -1240,10 +1240,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
     
     <item>
       <title>おすすめの中古ノートパソコンメーカー</title>
-      <link>https://yoneyan.dev/post/recommended-used-laptop-manufacturers/</link>
+      <link>https://yoneyan.dev/talk/recommended-used-laptop/</link>
       <pubDate>Sat, 19 May 2018 19:23:25 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/recommended-used-laptop-manufacturers/</guid>
+      <guid>https://yoneyan.dev/talk/recommended-used-laptop/</guid>
       <description>今回はおすすめの中古パソコンのメーカーを紹介をします！
 第1位　Let&amp;rsquo;s note    特徴  バッテリーが結構持つ キーボードがそこそこ打ちやすい 軽い＆頑丈 ディスクドライブが入る（機種によって違う）  個人的には中古ノートパソコンを買うならLet&amp;rsquo;s noteが一番いいと思います。 Let&amp;rsquo;s noteはかなり丈夫な作りになっており、パソコンを机の上から落としても壊れない設計になっているため、筆者のように雑に扱うパソコンユーザーにはかなりおすすめのノートパソコンとなります。 バッテリーも交換し気になっているのでバッテリーが劣化した場合は取り替えることで使えるのでおすすめです。スペック的には他の中古ノートパソコンと比べるとコストパフォーマンスはあまりよくありませんが、パソコン自体の重さが軽いのでモバイルノートパソコンとしていろんな場所で使える点がかなり優れた製品のように思います。また、業務で使うことを想定されていることもあって、新製品でもHDMIやD-subを搭載しているので変換ケーブルが必要ないので持ち歩きに使う端末としてめちゃくちゃおすすめです。 また、Let&amp;rsquo;s noteはキーストローク（キーボードのキーを押すときの深さのことです）が深くかなり打ちやすいので仕事や趣味で文字打ちを重視してる方はおすすめです。
 第二位 ThinkPad    特徴  頑丈 キーボード最強 トラックポインターがなかなか使いやすい かっこいい  中古のThinkpadもかなりいいと思います。 Let&amp;rsquo;s Noteに比べると重いというところはあるものの、かっこよさは絶対ThinkPadの方が上です。 最近のThinkPadではバッテリー交換が出来なくなってきているのですが、中古パソコンの大半はバッテリー交換が出来るようになっているので電池が消耗した際の交換もすぐ出来るのであえて中古を買うというのも一つの選択肢のように思います。 ThinkPadの特徴ともいえる、トラックポイントが慣れるとかなり使いやすいです。キーボードで打っている時にどうしてもマウスで動かさなければならないところが出てきても、トラックポイントの場合は少しの移動で済みます。
@@ -1265,10 +1265,10 @@ VPSの短所  ハードウェアでの拡張が出来ない 共用使用にな�
     
     <item>
       <title>PowerConnect6248を静音化</title>
-      <link>https://yoneyan.dev/post/silent-powerconnect6248/</link>
+      <link>https://yoneyan.dev/fix/silent-powerconnect6248/</link>
       <pubDate>Wed, 25 Apr 2018 07:17:56 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/silent-powerconnect6248/</guid>
+      <guid>https://yoneyan.dev/fix/silent-powerconnect6248/</guid>
       <description>今まで、家にはPowerConnect2724とx600-24Tsという24ポートのハブが二台あるんですが、それでも足りなくなってきたということもあり、PowerConnect6248をヤフオクで落札しました。 L4スイッチで48ポートもあるということで、かなり期待しているんですが問題があります。 それはうるさいことです。 PowerConnect2724の24ポートのハブでもなかなかうるさかったのですが、48ポート搭載しているPowerConnect6248は許容範囲を超えちゃいました。 まあ、普通に考えて1Uサイズで48ポートもあってLayer4まで対応しちゃってるハブなのでファンがアレなので、今回は静音化してみます。 注意 分解するので故障の可能性があるので、自己責任でお願い致します。 （これだけは言っておきますが、絶対しない方がいいです。機械的には&amp;hellip;） 普通の人は↓こういうものを諦めて買いましょう。
    TP-Link スイッチングハブ 48ポート TL-SG1048 10/100/1000Mbps 金属筐体 ギガビット 5年保証 Amazon  楽天市場  Yahooショッピング      用意する物 必須
  抵抗（各種抵抗値） 半田ごてセット  あればいい物
@@ -1284,10 +1284,10 @@ PowerConnect6248中身[/caption] こんな感じになってます。
     
     <item>
       <title>windows10で記憶域プールが作成できない</title>
-      <link>https://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/</link>
+      <link>https://yoneyan.dev/tech/windows/cannot-create-storage-pool-on-windows10/</link>
       <pubDate>Sun, 08 Apr 2018 12:11:09 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/cannot-create-storage-pool-on-windows10/</guid>
+      <guid>https://yoneyan.dev/tech/windows/cannot-create-storage-pool-on-windows10/</guid>
       <description>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&amp;hellip;&amp;hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
 起きたこと    記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
@@ -1311,10 +1311,10 @@ Cities: Skylines    通常価格:2980円 （Deluxe Editionは3980円） 対応OS
     
     <item>
       <title>美少女ゲームをやる人はXbox360を買うべき！！</title>
-      <link>https://yoneyan.dev/post/those-who-play-beautiful-girl-games-should-buy-xbox360/</link>
+      <link>https://yoneyan.dev/talk/play-beautiful-girl-games/</link>
       <pubDate>Fri, 09 Mar 2018 22:09:46 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/those-who-play-beautiful-girl-games-should-buy-xbox360/</guid>
+      <guid>https://yoneyan.dev/talk/play-beautiful-girl-games/</guid>
       <description>美少女ゲームをするのにXbox360がおすすめの理由をこの記事では紹介させていただきます。
 理由 ゲームソフトがほかのコンシューマ機に比べてかなり安いという点にあります。 PC版の方をやりたくても10年以上のゲームでさえ、中古価格が5000円や10000円のゲームも多いんですよねーー だからコンシューマ機版の美少女ゲームをやることになってしまうんですが、PC版に比べて安いとは言っても美少女ゲームの多くは結構お値段が張ります。（特に有名なやつは&amp;hellip;） 例えば、これらのソフトで比較してみましょう
 ゲームソフト比較 車輪の国、向日葵の少女    車輪の国 向日葵の少女(通常版) - Xbox360 Amazon  楽天市場  Yahooショッピング      とこのようにPS3やPSPでは新品や中古に関わらず未だにこのような値段がします。 しかし、Xbox360版はかなり価格が抑えられています。他のコンシューマ機の中古のゲームソフトに比べてかなり安く買えます。 なぜかXbox360版の通常版より限定版が安いのはちょっと謎ですがw ゲームソフトによってPS3版の方が安いというものもありますが、美少女ゲームの多くはXbox360版のソフトの方が安く買うことが出来ます。
@@ -1342,10 +1342,10 @@ CHAOS;HEAD NOAH    CHAOS; HEAD NOAH (カオスヘッドノア) (通常版) 【CE
     
     <item>
       <title>PS4を買う前にまずPS3を買え！！！</title>
-      <link>https://yoneyan.dev/post/buy-ps3-first-before-you-buy-ps4/</link>
+      <link>https://yoneyan.dev/talk/buy-ps3/</link>
       <pubDate>Mon, 05 Feb 2018 13:24:35 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/buy-ps3-first-before-you-buy-ps4/</guid>
+      <guid>https://yoneyan.dev/talk/buy-ps3/</guid>
       <description>題名通りです。PS4を買う前にPS3を買った方がいい理由を今回紹介させていただきます。
 理由  PS3の方がゲームソフトが安い PSStoreでも同じゲームでもPS3の方が安い  みなさん、お気づきだと思いますが、理由はゲームソフトが安いという点です。 なにかしらPSのゲームソフトは高いです。パソコンでゲームをするユーザーの中でよく使われるSteamというゲームクライアントがあります。そこはしょっちゅうセールやってるので比較的安く買えることが多いですが、PSStoreでは安く買えるのは大体、年末とかゴールデンウイークあたりぐらいです。なので、いろんなゲームをやりたい人はまずPS3を買う方がいいのではないのかと思います。 PS4でPS3のソフトが動いたらいいんですが、互換機能が入っていないのでPS3を買うのが一番の近道ではないのかなと思います。
 PS3を手に入れる方法 メルカリやamazonの中古で売っています。 なるべくCECH-2500A以上の機種を購入した方がいいです。 初期シリーズのCECH*00はPS2との互換が取れていますが、半田クラックの問題がありYLOD問題がよく起こるので買うのは控えた方がいいです。どうしてもPS2をやりたい方は本体を買った方がいいでしょう。実機からBIOSの抜き取れる方はPCでPCSX2のエミュレータを使うのもありのように思います。    PlayStation3 チャコール・ブラック 500GB (CECH4300C) Amazon  楽天市場  Yahooショッピング     
@@ -1357,10 +1357,10 @@ PS3の短所 PS3も一応フルHDには対応している物の音ゲーや美�
     
     <item>
       <title>Gmail管理でInboxが超使いやすい件について</title>
-      <link>https://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/</link>
+      <link>https://yoneyan.dev/talk/useful-inbox/</link>
       <pubDate>Sat, 03 Feb 2018 16:52:18 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/about-easy-to-use-inbox-in-gmail-management/</guid>
+      <guid>https://yoneyan.dev/talk/useful-inbox/</guid>
       <description>非常に悲しいことに、2019/04/02にInboxのサービスが終了してしまいました。
 みなさんはウェブメールは何を使っていますか？
 Googleの@gmail.comを使っている人もいれば、Appleの@icloud.comを使う人、Yahooの@yahoo.co.jpのようにいろんなウェブメールを使っていると思います。しかし、そこで問題となるのが、様々なメールが来ることで読むのがめんどくさくなるということがよくあります。そこで、今回は一番多くの人が利用しているGmailでの話になりますが、管理アプリを紹介していきます。
@@ -1385,10 +1385,10 @@ Gmailと分けることでアプリ使う層を分けることが出来るとい
     
     <item>
       <title>PS4で遅延なくカラオケをする方法</title>
-      <link>https://yoneyan.dev/post/how-to-karaoke-without-delay-on-ps4/</link>
+      <link>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</link>
       <pubDate>Sat, 20 Jan 2018 10:56:41 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-karaoke-without-delay-on-ps4/</guid>
+      <guid>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</guid>
       <description>お詫びと訂正
 (2019/03/11 20:08) 有線マイクでの採点は現時点ではできません。
 (2019/03/11 17:30) 当方の知識不足による影響で「センド＆リターン付きのミキサーを使う方法」にて間違った方法を載せておりました。原因と致しまして、当方のfx sendの知識が不十分でした。誠にお詫び申し上げます。只今、対処法につきまして、模索しておりますのでもう少しお待ちください。
@@ -1452,10 +1452,10 @@ UPnP Access Control Listsの設定    設定例としてはこんな感じにな
     
     <item>
       <title>ps4slimとps4proはどっちの方がいいのか？</title>
-      <link>https://yoneyan.dev/post/ps4slim-or-ps4pro/</link>
+      <link>https://yoneyan.dev/talk/ps4slim-or-ps4pro/</link>
       <pubDate>Sun, 14 Jan 2018 10:30:03 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/ps4slim-or-ps4pro/</guid>
+      <guid>https://yoneyan.dev/talk/ps4slim-or-ps4pro/</guid>
       <description>今回は現行機のPS4 slimとPS4 Proのどっちを買えばいいのか迷っている方の助けになればいいなと思い自分の意見を言いたいと思います。
 PS4の本体仕様を比較 PS4 Slim  メインプロセッサー
 Single-chip custom processor CPU : x86-64 AMD “Jaguar”, 8 cores GPU : 1.84 TFLOPS, AMD Radeon™ based graphics engine
@@ -1477,10 +1477,10 @@ Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T) IEEE 802.11 a/b/g/n/ac Bluetooth® 4
     
     <item>
       <title>USB-typeCが個人的にまだいらないと思う理由</title>
-      <link>https://yoneyan.dev/post/why-you-dont-really-need-usb-typec/</link>
+      <link>https://yoneyan.dev/talk/need-usbtypec/</link>
       <pubDate>Wed, 13 Dec 2017 19:20:14 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/why-you-dont-really-need-usb-typec/</guid>
+      <guid>https://yoneyan.dev/talk/need-usbtypec/</guid>
       <description>USB-typeCが個人的にまだ必要でない理由をここに書いていきます。
 そもそもUSB-typeCというのは？ USBの次世代の規格です。USB3.0の次の規格でUSB3.1になります。 type-A,type-B,type-Cとありますが、これはUSBの形状が違うだけです。 このほかにもmini-type-A,mini-type-Bというものがあったり、micro-type-A,micro-type-Bといったものがあります。
 パソコンにはいらない パソコンにはいらないという理由は現時点で使われている周辺機器が、Type-Aの機器が多いという点です。  
@@ -1494,10 +1494,10 @@ android端末にはちょうどいい android端末のようにモバイルで�
     
     <item>
       <title>LastPassという最強のパスワード管理ソフトについて</title>
-      <link>https://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</link>
+      <link>https://yoneyan.dev/talk/about-lastpass/</link>
       <pubDate>Wed, 13 Dec 2017 11:46:18 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/about-the-strongest-password-management-software-called-lastpass/</guid>
+      <guid>https://yoneyan.dev/talk/about-lastpass/</guid>
       <description>みなさんはパスワード管理ソフトを知っていますか？ パスワードは自分で覚えることに超したことはないですが、登録しているサイトが10個以上になってくると覚えることが厳しくなってきます。 覚えにくくなることでパスワードの使い回しやわかりやすいパスワードにしてしまいがちになってしまいます。 そこで、今回はLastPassというクラウド型のパスワード管理サービスを紹介していきます。
 LastPassとは？ クラウド型のパスワード管理サービスになります。 このサービスの特徴はパソコン、スマホなどのデバイスを問うことなく無料でパスワード管理をすることが出来るのが特徴になっています。 ほかのパスワード管理サービスの中には、1Passwordというサービスがあります。 デバイス間でパスワードを同期させる場合は月額課金が必要となりますが、LastPassの場合は無料で使うことが出来ます。
 機能や対応OSなど 対応OS  Chromiumウェブプラグインが使えるブラウザ（windows,Mac,Linux） android ios  機能  マルチデバイスでIDとパスワードを同期 緊急アクセス  値段体系 値段体系として
@@ -1515,10 +1515,10 @@ LastPassの長所と短所 長所 LastPassの長所として、無料でほぼ�
     
     <item>
       <title>我が家の洗濯機が排水できないので修理する</title>
-      <link>https://yoneyan.dev/post/repair-because-my-washing-machine-cannot-drain/</link>
+      <link>https://yoneyan.dev/fix/repair-washing-machine/</link>
       <pubDate>Mon, 13 Nov 2017 02:59:19 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/repair-because-my-washing-machine-cannot-drain/</guid>
+      <guid>https://yoneyan.dev/fix/repair-washing-machine/</guid>
       <description>我が家の洗濯機が壊れてしまいました。機種はTW-180VEです。 症状としてはエラーが出て、洗濯できても排水できないという状況らしい。 新しく買うのもお金がかかるということもあるので、排水以外は故障していない感じなので修理することにしてみました。 ぐぐると私と同じような排水弁の問題がかなり出てきました。 これぐらいならなんとかなるんではないかと思ったので修理してみます。
 分解して故障箇所を特定してみる。    洗濯機の下の部分を外します。ネジはプラスドライバーで開けれます。  
 
@@ -1538,10 +1538,10 @@ LastPassの長所と短所 長所 LastPassの長所として、無料でほぼ�
     
     <item>
       <title>PT3の再販又はPT4の開発はどうなのかしゃちょーさんに聞いてみた</title>
-      <link>https://yoneyan.dev/post/i-asked-shacho-san-about-the-resale-of-pt3-or-the-development-of-pt4/</link>
+      <link>https://yoneyan.dev/talk/asked-pt3-developer/</link>
       <pubDate>Sun, 12 Nov 2017 03:52:56 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/i-asked-shacho-san-about-the-resale-of-pt3-or-the-development-of-pt4/</guid>
+      <guid>https://yoneyan.dev/talk/asked-pt3-developer/</guid>
       <description>最近は少なくなりましたが、
  PT3の再販は果たしてどうなのか？ PT4の開発はいつ？  という情報が錯綜していたので、つい最近有限会社アースソフトにメールを送って聞いてみました。
 メールをした結果    本文を打ち出すと
@@ -1590,10 +1590,10 @@ posted with カエレバ
     
     <item>
       <title>Windows10 Fall Creators Updateでonedriveのファイルオンデマンドが使えない場合の対処法</title>
-      <link>https://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</link>
+      <link>https://yoneyan.dev/tech/windows/cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</link>
       <pubDate>Sun, 22 Oct 2017 04:25:45 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/what-to-do-if-you-cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</guid>
+      <guid>https://yoneyan.dev/tech/windows/cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</guid>
       <description>つい最近、年に二回のwindows10鬼の大型アップデートの時期が来てしまいました。 普通はwindows updateを待つべき何ですが、いきなりアップデートされては困るのでいつも手動でアップデートさせている筆者です。年一回で十分のように思ってしまうのは自分だけなのかなｗ 今回は、アップデートしたのはいいんですが、今回のアップデートの醍醐味のひとつであるonedriveのファイルオンデマンドが使えないので、その対処法についてこの記事ではご紹介していきます。  
 
 Windows 10 Fall Creators Updateにアップデートさせたのになんでないねんｗって普通なるよねー
@@ -1696,10 +1696,10 @@ Steam版では日本語と英語の両方に対応しています。
     
     <item>
       <title>freshclamで更新できない</title>
-      <link>https://yoneyan.dev/post/cannot-update-with-freshclam/</link>
+      <link>https://yoneyan.dev/tech/linux/not-update-freshclam/</link>
       <pubDate>Mon, 10 Jul 2017 00:24:16 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/cannot-update-with-freshclam/</guid>
+      <guid>https://yoneyan.dev/tech/linux/not-update-freshclam/</guid>
       <description>ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
 ウイルス定義ファイルを更新しようとすると&amp;hellip;    おい&amp;hellip;まじか&amp;hellip;
 root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).  こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので
@@ -1709,10 +1709,10 @@ root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started a
     
     <item>
       <title>有料スマホゲームのおすすめ3選</title>
-      <link>https://yoneyan.dev/post/three-recommended-paid-smartphone-games/</link>
+      <link>https://yoneyan.dev/game/smartphone/paid-games/</link>
       <pubDate>Mon, 26 Jun 2017 02:07:53 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/three-recommended-paid-smartphone-games/</guid>
+      <guid>https://yoneyan.dev/game/smartphone/paid-games/</guid>
       <description>スマートフォンゲームで課金ゲームが乱立する中でみなさんに個人的に思うandroid,iosの両方が対応する有料ゲームを紹介させていただきます。
 また、値段やアプリの対応OSのバージョンはブログ執筆時のもになりますのでご注意のほどよろしくお願いいたします。
 Minecraft: Pocket Edition    android 840円
@@ -1767,10 +1767,10 @@ WonderFox DVD Video Converterの特徴  動画形式を適切に変換 メディ
     
     <item>
       <title>teamviewerでリモート元のパソコンの音を消す方法</title>
-      <link>https://yoneyan.dev/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</link>
+      <link>https://yoneyan.dev/tech/remote/turn-off-the-remote-computer-sound-with-teamviewer/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:59 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-turn-off-the-remote-computer-sound-with-teamviewer/</guid>
+      <guid>https://yoneyan.dev/tech/remote/turn-off-the-remote-computer-sound-with-teamviewer/</guid>
       <description>個人用途では無料で使える上に、様々なデバイスからパソコンにリモートアクセスすることが可能なのTeamViewerというソフトがあります。 teamviewerを使っていたらわかるんですが、リモート先の端末から音を出すとどうしてもリモート元のパソコンからも音が出てしまいます。 自分のようにギャルゲーをTeamViewerを使って遊んでいますが、音が出てかなり困っています&amp;hellip; それを対処するため一応、回避方法がわかったので紹介していきます。
 解決策 新しくオーディオデバイスを買うということです。 最初から内蔵されているオーディオデバイスではスピーカーの出力を担当させて、新たに買ったオーディオデバイスはTeamViewer専用で使うという方法です。 windowsの場合、アプリケーションをどれか一つのオーディオデバイスにしか出力することができません。既定値設定が一つのデバイスに絞られているので、実際には同時で複数のデバイスに出力することができません。 それならば、家で使うときはいつも使ってるオーディオデバイスを使えるようにします。逆に、TeamViewerのようなリモートソフトを使うときはリモート専用に別のオーディオデバイスを使えば家ではなることないと思いました。
 やってみる 1.TeamViewerの専用のオーディオデバイスを買います。 こういうのは安いもので十分なので、amazonでUSBオーディオデバイスでしらべると大量に出てくるのでそれから調べるのもありです。  
@@ -1793,10 +1793,10 @@ WonderFox DVD Video Converterの特徴  動画形式を適切に変換 メディ
     
     <item>
       <title>サーバーOSの選定法</title>
-      <link>https://yoneyan.dev/post/serveros-selection-method/</link>
+      <link>https://yoneyan.dev/talk/serveros-selection/</link>
       <pubDate>Tue, 18 Apr 2017 00:00:52 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/serveros-selection-method/</guid>
+      <guid>https://yoneyan.dev/talk/serveros-selection/</guid>
       <description>個人的に思うサーバーOSの選定法を紹介していきます。 サーバーOSの種類としてはWindows系、Debian系、RedHatLinux系、Unix系などたくさんあり、選択に迷ってしまうというのが現状です。自分も今のところ自宅サーバーの範囲での趣味なので、参考になるのかわかりませんが、もし参考にしていただき、役に立つととても嬉しく思います。
 サーバー構成 自分の家の場合、メインブログ（本ページ）はレンタルサーバーで運用しています。その理由はまた、別記事で書く予定です。 基本的に自宅サーバーで動かしているのは、友達や家族、自分が使うためのサーバーにしています。 サーバーOSとしては windows10Pro&amp;mdash;バックアップサーバー、ファイル共有、DLNAサーバー、地デジ配信サーバー(spinel3を使用)、緊急地震速報の通知、リモートデスクトップ CentOS7&amp;mdash;&amp;mdash;&amp;mdash;-NTPサーバー、Webサーバー、NTPサーバー、仮想化サーバー、監視サーバー、簡易監視カメラ録画サーバー として使っています。
 サーバーOSを決める手順  自分がサーバーで具体的になにをやりたいのかを決める それに見合うサーバーOSを決める サーバー構成を決める  とこんな感じなのではないのかなと思います。
@@ -1808,28 +1808,11 @@ Windows系(windowsserver,windows10など) 普段使っているパソコンがwi
     </item>
     
     <item>
-      <title>android使いが思う欠点</title>
-      <link>https://yoneyan.dev/post/cons-of-android/</link>
-      <pubDate>Sat, 08 Apr 2017 13:47:27 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/post/cons-of-android/</guid>
-      <description>android使いとしていつも触っていて思うandroidの欠点についてこの記事で話していきます。 この記事では批判している文章もありますが、ここを改善してほしいという期待の意味を込めて作っているということを頭に入れておいていただければありがたいです。
-筆者のandroidを使用歴 androidを初めて使ったのは2013年になります。 親に頼んでそろそろnexus7(2013)が出るのにあまりにも待てなくてnexus7(2012)を買ってもらいました。そこから、自分のandroid生活が始まりました。その頃のandroidのバージョンは4.3〜4.4の時でした。
-android4.4より以前の端末は使い物にならない android２.xを使ったことがなかったのであまり喋ることができませんが、友達に昔の端末を触らしてもらったときは今に比べるとレスポンスが悪く、確かに使いづらかった記憶があります。なので、androidからiphoneに買い換える人が多かったのだなあと思いました。
-スマホでゲームは？ 自分はスマホではあまりゲームはしません。やるとしても、スマホにしかないギャルゲーやIngressぐらいです。（最近あまりやっていないですが&amp;hellip;） 個人的にはでかい画面でゲームをするほうが好みなので&amp;hellip;
-本題 前置きが長くなりましたが、、androidの欠点について話していきます。
-自分が思うandroidの２つの欠点 1.androidOSのアップデートがなかなか来ない。 2.音声遅延が激しい とこの二点です。 まず最初のandroidOSのアップデートがなかなか来ないという点について説明します。 androidのOSアップデート仕組みとして説明します。
-androidOSのアップデートがなかなか来ない androidのOS自体はgoogleが開発して、各種メーカーがそのOSに手を加えて、我々のスマホにアップデートが配信されていきます。この方法は全く問題がないのですが、メーカー側がOSアップデートをあまり積極的にしていない点です。windowsのようにドライバだけをメーカーが提供する方法に変えていけば少なくても壊れるまで使えるので良くなるのではないのかなと思います。androidOSは初期に比べて著しく使いやすくなっています。電池持ちやレスポンスなども徐々に改善されています。しかし、毎回思いますが、OSのスペックに満たしているにもかかわらずメーカー側からアップデートが来ないのはもったいないと毎回思わされます。そこのところを改善していけばよくなっていくのではないのかなと思います。
-音声遅延が激しい 次に音声遅延が激しい点について書いていきます。 iosではよくDTMアプリや音ゲーがよく見かけますが、androidではあまり見かけません。その理由はandroidは遅延が激しい点です。最近のandroidはOSのアップデートを重ねていくうちにかなり改善されてきました。44msから16msにまで遅延が減ってきているので、今後に期待というところです。しかし、自分が持っているzenfone2laser(ze500kl)ではandroid5.1でも100ms以上もある場合もあるので、端末によって前後するので注意が必要です。
-まとめ 欠点もたくさんandroidですが、OSのバージョンが上がるごとにかなり良くなってきているのも事実です。音声遅延の問題はバージョンアップで何とかなるにしても、androidのアップデートをメーカー側がするのではなく、OSのアップデートはGoogleが行って、センサー系などのメーカー独自部分はメーカーがドライバーやソフトウェアを提供するという形にすれば毎回あほみたいにスマホを買い替える人も少なくなるのでいいのではないのかなと思います。メーカー側にとっては大打撃かもしれませんが&amp;hellip; ということで今回はこれで終わります。</description>
-    </item>
-    
-    <item>
       <title>キャリアから格安スマホ(IIJmio)に乗り換え（MNP編）</title>
-      <link>https://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/</link>
+      <link>https://yoneyan.dev/talk/wwan/iijmio-mnp/</link>
       <pubDate>Sun, 12 Feb 2017 18:58:28 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/change-from-carrier-to-iijmio_mnp/</guid>
+      <guid>https://yoneyan.dev/talk/wwan/iijmio-mnp/</guid>
       <description>MNPとは 正式名所はMobile Number Portabilityと言い、番号ポータビリティと言います。 キャリアを変更した際でも番号を変更せずにそのまま使うことができるシステムです。 例えば、auからドコモに切り替えのように大手キャリアから大手キャリアに乗り換える際は、ショップ側が勝手にMNP転出や転入をしてくれています。しかし、自分で格安スマホに乗り換える際は、それを自分でしなくてはいけないということになります。
 MNP転出の作業 MNP転出（MNP予約番号の取得）－＞乗り換え先にMNP転入 という形になります。 また、正常にMNP転入が完了すると、自動的に前使っていたキャリアとの契約が解除されます。 そのため契約解除月でないときに解除すると、1万円ぐらいかかることがあるので注意しましょう。
 MNP転出の際の注意点  キャリアメールが使えなくなる ポイントがなくなる 分割支払いの残額がある場合は引き続き支払う必要がある  キャリアメールを使っている場合はgmailなどのフリーメールを使うのがおすすめです。
@@ -1845,10 +1828,10 @@ MNP転出をする auから乗り換えるので、さっそく電話をかけ�
     
     <item>
       <title>キャリアから格安スマホ(IIJmio)に乗り換え（準備編）</title>
-      <link>https://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</link>
+      <link>https://yoneyan.dev/talk/wwan/carrier-to-iijmio/</link>
       <pubDate>Sat, 11 Feb 2017 03:17:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/transfer-from-carrier-to-iijmio/</guid>
+      <guid>https://yoneyan.dev/talk/wwan/carrier-to-iijmio/</guid>
       <description>あなたはどこの携帯電話会社で契約していますか？ 大手キャリアのau,docomo,softbankの三社で契約されている方が多いでしょう。 学生なら学生割引が効いて安くなりますが、それでも高くなってしまいます。
 この記事を書くきっかけ この記事を書くきっかけになったのは母親のスマホ料金です。端末前払い しているのに月額5700円です。これ保険などのオプション抜いてこれですよ。馬鹿なの？という値段設定です。 パカパカケータイからキャリア変更せずにそのまま契約したせいでこの値段になったのかもしれませんが、高すぎます&amp;hellip; わざわざ電話もかけないし、データ量7GBしかないのに家の光回線と同じ料金を払わないといけないのかという話になり、格安スマホに変えようとなったわけです。 ということで格安スマホに移行（準備編）をここでは説明させていただきます。 また、端末はキャリアで使っていたものではなく今回は新しく買いました。 そういうこともあり、キャリア端末を使って格安SIMを運用する際はやり方が少し異なる場合があるのでご注意ください。時間があれば記事を書こうかなと思っています。
 格安SIMの注意点  格安SIMの種類によって、昼間や帰宅ダッシュの時間帯の通信速度が遅くなる可能性が高い キャリアメールが使えない  通信速度が落ちるのは格安SIMの種類によるので、「格安SIM　速度　比較」でググると出てくるので各自で調べておいてください。今回はIIJmioにしました。
@@ -1857,10 +1840,10 @@ MNP転出をする auから乗り換えるので、さっそく電話をかけ�
     
     <item>
       <title>wordpressに入れておくべき日本製テーマ3選</title>
-      <link>https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</link>
+      <link>https://yoneyan.dev/talk/recommend/wordpress-theme/</link>
       <pubDate>Wed, 08 Feb 2017 23:34:47 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/3-japanese-made-themes-that-should-be-included-in-wordpress/</guid>
+      <guid>https://yoneyan.dev/talk/recommend/wordpress-theme/</guid>
       <description>ブログサイトでwordpressを使う方が増えています。 その事実としてなんと全世界のサイトで約25％がwordpressが使われているという統計が出ています。どこまで成長するか分からないですね。（もちろんいい意味で） ということで、たくさんの人がwordpressを使っているということもあるので今回はwordpressおすすめの（日本で作られた）テーマを3つ選びました。 あくまで個人的な意見なのでそこらへんはご了承ください
 1.simplicity リンク:https://wp-simplicity.com/ 設定方法などが公式サイトにしっかりと書かれているので初心者にはおすすめです。 当ブログサイトもこちらのテーマを使わせていただいております。 adsense広告の配置が簡単に変えられる点でとても気に入っています。(´▽｀) 記事のの手前にadsense広告を設置することも可能なので本当に助かっています。 画像遅延読み込みやSEO対策の詳細な設定もできます。なので、このテーマを入れておけばプラグインをインストールしまくる必要がなくなるのでサーバーの負担軽減にもなります。 シェアボタンの位置を簡単にカスタマイズできる点もおすすめです。
 2.Xeory    リンク:https://xeory.jp/ このテーマはダウンロードする際に簡単な会員登録が必要になります。 こちらも公式サイトにかなり親切丁寧に設定方法やSEO関連のことまで載っています。 企業向けのテーマとしておすすめです。 お問い合わせページを簡単に作ることができるのでwordpressを使って企業のホームページを作るときに便利です。 XeoryBaseというブログ用のテーマもあるのでブログとして使う方にもおすすめです。
@@ -1870,10 +1853,10 @@ MNP転出をする auから乗り換えるので、さっそく電話をかけ�
     
     <item>
       <title>Simplicityでパーマリンクが日本語にできない</title>
-      <link>https://yoneyan.dev/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</link>
+      <link>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</link>
       <pubDate>Mon, 06 Feb 2017 23:58:32 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/permalink-cannot-be-translated-into-japanese-with-simplicity/</guid>
+      <guid>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</guid>
       <description>雑談 つい最近、wordpressテーマをstinger8からSimplicity2に変更しました。
 変更理由としてはstinger系が有料化したことにより、かなり機能が削られてしまいました。機能はプラグインで補えるのでどちらでもいいのですが、adsense広告がどうしても縦並びになってしまい悩んでいました。テーマ編集で横並びにしようと、ごにょごにょしても全く改善される見込みがなかったので。久しぶりにSimplicityを入れようと思い入れました。
 adsense広告が横並びになってくれる上に、いろいろこのテーマ単体で設定できるのでこれからは使おうかなと思っているところです。
@@ -1939,10 +1922,10 @@ androidやiosでは今のところアプリはありませんが、作る計画�
     
     <item>
       <title>zenfone2laserにLineageOS 14.1を導入してみた</title>
-      <link>https://yoneyan.dev/post/introduced-linageos14.1-to-zenfone2laser/</link>
+      <link>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</link>
       <pubDate>Tue, 31 Jan 2017 02:12:27 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/introduced-linageos14.1-to-zenfone2laser/</guid>
+      <guid>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</guid>
       <description>前回、zenfone2laserにCM13を導入しましたが、いつのまにかandroid7.0ベースのLineageOS 14.1というのが出ていたので今回はこれを導入してみます。
 カスタムROM情報 android7.1.1ベースになりました。
 android7.1.1でできること  マルチウィンドウが標準で使えるようになった アプリの一括アンインストールができるようになった バッテリー節電機能が強化された デザインの変更  などの機能強化されました。 またセキュリティも強化されています。
@@ -2015,10 +1998,10 @@ Microsoft Flight Simulator X:Steam Edition    リンク：http://store.</descrip
     
     <item>
       <title>契約すべき有料サービス5選</title>
-      <link>https://yoneyan.dev/post/5-paid-services-to-contract/</link>
+      <link>https://yoneyan.dev/talk/recommend/services/</link>
       <pubDate>Sun, 29 Jan 2017 23:59:43 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/5-paid-services-to-contract/</guid>
+      <guid>https://yoneyan.dev/talk/recommend/services/</guid>
       <description>1.amazonプライム会員    公式サイト：https://www.amazon.co.jp/gp/prime 年間:3900円（月額換算:325円） 契約方法:クレジットカード（デビットカードも可能）のみ
 よい点
  配送無料 お急ぎ便無料 プライムミュージック プライムビデオなど  悪い点
@@ -2084,10 +2067,10 @@ Microsoft Flight Simulator X:Steam Edition    リンク：http://store.</descrip
     
     <item>
       <title>家でカラオケを楽しむ（カラオケ@DAM for windows10）</title>
-      <link>https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</link>
+      <link>https://yoneyan.dev/review/services/karaoke-windows10/</link>
       <pubDate>Thu, 19 Jan 2017 17:04:29 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/enjoy-karaoke-at-home_windows10/</guid>
+      <guid>https://yoneyan.dev/review/services/karaoke-windows10/</guid>
       <description>カラオケ@DAMを契約して半年以上経つのでそちらの詳細なレビューをします。
 カラオケ＠DAMとは カラオケ界で有名なDAMの開発、提供元の第一興商のサービスの一つです。
 もとはXboxOneだけのサービスでしたが、昨年windows10でのサービスを開始し、PS4でもサービスが開始しました。
@@ -2126,10 +2109,10 @@ USBマイクを介すると USBマイク-&amp;gt;パソコン-&amp;gt;音声出�
     
     <item>
       <title>zenfone2laserにCM13を導入する</title>
-      <link>https://yoneyan.dev/post/install-cm13-in-zenfone2laser/</link>
+      <link>https://yoneyan.dev/tech/android/cm13-zenfone2laser/</link>
       <pubDate>Wed, 18 Jan 2017 16:20:09 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/install-cm13-in-zenfone2laser/</guid>
+      <guid>https://yoneyan.dev/tech/android/cm13-zenfone2laser/</guid>
       <description>昔に実は記事を作っていましたがブログを再構築したためもう一回書き直すことにしました。
 用意しておくもの パソコン、USBケーブル、スマホ本体を用意してください。
 パソコンにadbをインストール https://forum.xda-developers.com/showthread.php?t=2588979 こちらからダウンロードしてインストーラを実行すると、簡単にadbが構築できます。
@@ -2153,10 +2136,10 @@ fastboot flash recovery twrp-3.0.2-0-ze500kl.img 又は fastboot flash recovery 
     
     <item>
       <title>kinectでMMDを動かしてみた</title>
-      <link>https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</link>
+      <link>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</link>
       <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/i-tried-moving-mmd-with-kinect/</guid>
+      <guid>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</guid>
       <description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
 著者のPC環境 OS:windows10Pro
 CPU:corei7 4790k
@@ -2199,10 +2182,10 @@ kinectv2を買わなかった理由 この理由は高かったからです。�
     
     <item>
       <title>Amazonプライムのメリット</title>
-      <link>https://yoneyan.dev/post/benefits-of-amazon-prime/</link>
+      <link>https://yoneyan.dev/talk/amazon-prime/</link>
       <pubDate>Mon, 16 Jan 2017 16:42:28 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/benefits-of-amazon-prime/</guid>
+      <guid>https://yoneyan.dev/talk/amazon-prime/</guid>
       <description>Amazon.co.jp使っている方もたくさんいると思います。でも、Amazonプライム会員になる必要はないと思っている方もたくさんいます。
 そこで、Amazonプライム会員の魅力を一つずつ紹介させていただきます。
 2019/04/17：プライム会員値上げの為訂正致しました。

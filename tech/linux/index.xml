@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on のんびりと生きたい</title>
+    <link>https://yoneyan.dev/tech/linux/</link>
+    <description>Recent content in Linux on のんびりと生きたい</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 31 Jul 2019 21:58:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://yoneyan.dev/tech/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>virt-install時にbr0のエラーが出て進まない</title>
+      <link>https://yoneyan.dev/tech/linux/error-libvirt-1/</link>
+      <pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/error-libvirt-1/</guid>
+      <description>環境 OS: CentOS7 7.6.1810
+Bridge: br0 (eth0をbr0にブリッジで接続している)
+起こったこと virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。
+virt-install --name centos7 --ram 4096 --disk /mnt/data/images/centos7.img --vcpus 2 --os-type linux --os-variant rhel7 --network bridge=br0 --graphics none --console pty,target_type=serial --location &#39;http://ftp.iij.ad.jp/pub/linux/centos/7/os/x86_64/&#39; --extra-args &#39;console=ttyS0,115200n8 serial&#39;  上記のようにvirt-installを行うと、
+Starting install... Retrieving file vmlinuz... | 6.3 MB 00:00:00 Retrieving file initrd.img... | 50 MB 00:00:02 ERROR internal error: /usr/libexec/qemu-bridge-helper --use-vnet --br=br0 --fd=26: failed to communicate with bridge helper: Transport endpoint is not connected stderr=access denied by acl file  このようなエラーメッセージを吐きました。</description>
+    </item>
+    
+    <item>
+      <title>nginxでリバースプロキシとLet&#39;s Encryptを導入する</title>
+      <link>https://yoneyan.dev/tech/linux/reverse-proxy-and-letsencrypt-with-nginx/</link>
+      <pubDate>Tue, 04 Jun 2019 19:03:13 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/reverse-proxy-and-letsencrypt-with-nginx/</guid>
+      <description>nginxでLet&amp;rsquo;s Encryptを用いてhttps（SSL/TLS）を有効にする方法をこちらに書いていきます。
+当方のLet&amp;rsquo;s Encryptの記事は備忘録と書きます。他社のサイトさんの方がわかりやすいと思うので、わからない点などがあれば調べていただければ幸いです。
+今回はリバースプロキシを使用します。
+リバースプロキシの設定 １．configを作成する /etc/nginx 上にnginxのいろんな設定ファイルがあります。
+特に、nginxのメインとなる主の設定ファイルとなるのが/etc/nginx/nginx.confです。
+ですが、このファイルを直接弄ってしまうとわかりにくいという問題が起きるので今回は/etc/nginx/conf.d/以下のファイルを新たに作成します。
+/etc/nginx/conf.d/[好きな名前].conf
+server{ server_name example.net; listen 80; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-Host $host; proxy_set_header X-Forwarded-Server $host; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; location /test1/ { proxy_pass http://localhost:8080/; } location /test2/ { proxy_pass http://localhost:3000/; } }  ２．動いているか確認する systemctl restart nginx  nginxを再起動させて、リバースプロキシが働いてくれているか確認します。
+Let&amp;rsquo;s Encryptの設定 ０．Let&amp;rsquo;s Encryptで必要なものを入れる yum -y install epel-release yum -y install certbot  certbotというものが必要となるので、インストールします。
+１．証明書を取得する certbotを使って取得します。
+certbot certonly --standalone  ２．設定に追加する certbotを実行することで、</description>
+    </item>
+    
+    <item>
+      <title>Linuxのディスク容量拡張の方法</title>
+      <link>https://yoneyan.dev/tech/linux/linux-disk-capacity-expansion-method/</link>
+      <pubDate>Mon, 03 Jun 2019 13:59:36 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/linux-disk-capacity-expansion-method/</guid>
+      <description>UbuntuServerのディスクの容量を拡張する必要が出てきたので、ここに備忘録として残していきます。
+VPSを使っていると、スケールアップなどで容量が拡張してくれるものがあります。しかし、ディスクとしては拡張されていても最初から入っているパーティションが勝手に伸びたり縮んだりすることが出来ないので我々が操作をしてあげないといけません。
+前提条件 /dev/sda2のパーティションの容量を拡張するという想定で拡張の方法を書いていきます。
+0．partedが入っていない場合はインストールする partedは標準のLinuxOSでは入っている場合が多いですが、実際に入っていない場合もあるかもしれないので、その場合入れてあげます。
+debian系
+apt install parted  RedHat系
+yum install parted  これで、パーティションツールを入れることができます。
+１．partedから容量を拡張する sudo parted print all # /dev/sdaを選択する select /dev/sda # /dev/sdaのパーティションの構成をみる print /dev/sda # パーティション2をリサイズする resizepart 2  「End 400G 」100%とすることで、最大容量まで拡張できます。
+最後に/dev/sdaの容量を見てみます。
+print /dev/sda  2．実容量を拡張する df -h  これでマウント中の容量を見ることができます。
+そうすると実容量が拡張されていないため、resize2fs というコマンドを使っていきます。
+sudo resize2fs /dev/sda2  もちろんですが、root権限が必要です。
+３．容量を確認する df -h  これで/dev/sda2の部分の容量が拡張されているのかを確認してください。</description>
+    </item>
+    
+    <item>
+      <title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title>
+      <link>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</link>
+      <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</guid>
+      <description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
+http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
+上のブログさんの記事を参考にしました。（ほぼ、同じです。）
+備忘録として、こちらに書かせていただきます。
+どれくらいの時間がかかるのか cat /proc/mdstat  と実行すると、RAID状況を確認できます。
+改善前 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&amp;gt;....................] resync = 2.1% (21226880/976628736) finish=1186.8min speed=13416K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  13M/secはあまりにも遅すぎるので、これをなのとかします。
+改善後 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&amp;gt;....................] resync = 4.2% (41735552/976628736) finish=292.9min speed=53181K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  改善後はかなり速度が上がりました。</description>
+    </item>
+    
+    <item>
+      <title>neovimでUltiSnips requires py &gt;= 2.7 or py3というエラーの対処法</title>
+      <link>https://yoneyan.dev/tech/linux/fix-neovim-error/</link>
+      <pubDate>Wed, 20 Feb 2019 18:53:54 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/fix-neovim-error/</guid>
+      <description>最近、新たにデスクトップPCにLinuxMintを導入してneovimやtmuxやらの環境構築をしている途中に
+UltiSnips requires py &amp;gt;= 2.7 or py3
+とこのようなエラーをneovimを起動する度に吐いてしまったので対処法を備忘録として載せておきます。
+環境 OS:LinuxMint 19
+原因 apt-get install neovim からインストールしたため、neovimの最新バージョンではないのが原因
+コマンドを入力 pip install neovim  これを入力すると、
+Collecting neovim Using cached https://files.pythonhosted.org/packages/78/ec/ac9905ccab8774b64c37cdff9e08db320c349eda0ae3161aebcac83e5590/neovim-0.3.1.tar.gz Complete output from command python setup.py egg_info: Traceback (most recent call last): File &amp;quot;&amp;lt;string&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt; ImportError: No module named setuptools ---------------------------------------- Command &amp;quot;python setup.py egg_info&amp;quot; failed with error code 1 in /tmp/pip-build-bezjAu/neovim/  このような謎エラーが出てきました。
+neovimとpip installで入れようとしているものとバージョンが合わないと怒られます。
+ということで、neovimの公式からインストールしていきましょう。https://github.com/neovim/neovim/wiki/Installing-Neovim
+LinuxMintの場合はベースのディストリビューションがUbuntuになるので、Ubuntuのインストール方法を用います。</description>
+    </item>
+    
+    <item>
+      <title>VPSでスワップ領域を増やす</title>
+      <link>https://yoneyan.dev/tech/linux/increase-swap-space/</link>
+      <pubDate>Tue, 05 Feb 2019 05:08:54 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/increase-swap-space/</guid>
+      <description>VPSで格安のものになってくると、問題となってくるのがスペックになります。
+昔のVPSに比べると、メモリが512MBに増えておりかなり使えるものになってきましたが、それでも不足してしまうという現実があります。
+そこで、気休め程度になってしまいますが、スワップ領域を増やしてみました。
+１．確認する 最初にSWAP領域があるかないか調べるために以下のコマンドを実行します。
+free -m  total used free shared buff/cache available Mem: 481 158 104 0 218 310 Swap: 0 0 0  当方のVPSではこのようになっていました。
+Memがお分かりの通り、実メモリです。
+Swapがスワップ領域です。
+Total 0となっていると、その領域は存在しないという意味です。
+２．スワップ領域を作る dd if=/dev/zero of=/swapfile bs=1M count=4096  ３．適応させていく 3.1.スワップの権限を変更する chmod 600 /swapfile  3.2.スワップを適応する mkswap /swapfile swapon /swapfile  ４．スワップを恒久化する この操作を行わないと再起動で元通りになってしまうので、次回以降の起動のためにこれから設定していきます。
+HDDのマウントなどで使われるfstabに追記していきます。
+/etc/fstabを開き、以下のものを最下位に追記します。
+#Swap Area /swapfile swap swap defaults 0 0  これでスワップ領域の設定が完了します。
+まとめ このような方法でスワップ領域を簡単に作ることができます。
+メモリ不足の根本的な対策は違うプランにして増やすべきですが、私のようにお金がないやほかの諸々の事情がある場合はこれで乗り切れると思います。
+今回はこれで以上です。</description>
+    </item>
+    
+    <item>
+      <title>proxmox（Debian系）でソフトウェアRAIDを組む</title>
+      <link>https://yoneyan.dev/tech/linux/create-software-raid-with-proxmox/</link>
+      <pubDate>Sun, 02 Dec 2018 22:01:52 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/create-software-raid-with-proxmox/</guid>
+      <description>今回はproxmoxというハイパーバイザーOSを使ってソフトウェアRAIDを組んでみます。 ソフトウェアRAIDを組む方法として、mdadmを使って構築していきます。普通はmdadmをコマンド操作で構築しますが、正直なところキツイのでwebminを使ってRAID構築をしていきます。webminではWebUIから構築出来ますが、実際に動いているのはmdadmなので「コマンド操作したい！」となった時でも対応できるのでおすすめです。
+1．最初にWebminの導入 1.1 Webminをダウンロード http://www.webmin.com/download.html から最新版の.debファイルをwget経由でダウンロードします。
+wget https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  https://~all.debの部分は最新版のリンク先を貼り付けてください。
+1.2 Webminをインストール このように、dpkgで.debファイルをインストールします。
+dpkg -i https://prdownloads.sourceforge.net/webadmin/webmin\_1.900\_all.deb  恐らく、これでエラーを吐いてインストールできないので（インストール出来たらこのコマンドは必要ないです。）、次のコマンドを実行します。
+apt-get -f install  このようにすると、Webminをインストールできます。 最後にダウンロードした.debファイルは必要なくなるので、削除しておきましょう。
+rm webmin*  これでhttps://[proxmoxのIPアドレス]:10000にアクセス出来るか確かめておきましょう。
+1.3 mdadmをインストールする webminをインストールしてもソフトウェアRAIDの管理ソフトウェアのmdadmがインストールされないので、導入します。
+apt-get install mdadm  これでインストールは終了です。
+2.ソフトウェアRAIDを構築 2.1 最初に webminをrootパスワードでログインしてください。
+2.2 RAIDで使用するディスクをごにょごにょする 1．ハードウェア＞ローカルディスクのパーティションに移動します。
+   2．使用するディスクを選択します。
+   3．Wipe PartitionsよりGPTを選択してWipe and Re-Labelをクリックします。  
+
+   4．ここからは、RAID用のパーティションを作成します。プライマリ パーティションを追加を選択します。
+   5．種類の部分をLinuxRAIDにし、作成します。
+   2.</description>
+    </item>
+    
+    <item>
+      <title>grafanaをnginxでリバースプロキシしてみる</title>
+      <link>https://yoneyan.dev/tech/linux/reverse-proxy-with-grafana-with-nginx/</link>
+      <pubDate>Mon, 15 Oct 2018 04:20:47 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/reverse-proxy-with-grafana-with-nginx/</guid>
+      <description>みなさん大好きなGrafanaを使っている方は、たくさんいらっしゃると思うのですが、今回はnginxを使ってリバースプロキシを使ってみました。少しだけややこしいと思ったので記事にします。 正直なところ、ここを見なくても公式サイトにしっかりと載せてくれてます。 おそらく、そちらを見た方がいいです。 http://docs.grafana.org/installation/behind_proxy/
+今回やりたいこと ドメインはtest.domainと仮定します。 http://test.domain/grafana/でアクセス出来るようにする test.domainはもちろん自分のドメインに変えてください。
+ nginxのリバースプロキシの設定 grafanaの設定  終了です
+1.nginxの設定 nginxのリバースプロキシの設定からしていきます。
+server { listen 80; server_name test.domain location /grafana/ { proxy_pass http://localhost:3000/; } }  2.grafana側の設定を変更する /etc/grafana/grafana.iniから設定を変更する
+[server] domain = test.domain root_url = %(protocol)s://%(domain)s/grafana/  これで終わりです。 公式サイトではこの後にもHA Proxyの設定もいろいろ変更しないといけないと表記されていましたが、HA Proxyの設定をしなくてもいけました。
+まとめ Grafanaでリバースプロキシの設定をするときは少しgrafana側の設定をする必要がでてくるので、公式サイトさえみればなんとかなると思うので頑張って設定してください。</description>
+    </item>
+    
+    <item>
+      <title>nextcloudでアップロードができない理由はこれだった...</title>
+      <link>https://yoneyan.dev/tech/linux/cant-upload-with-nextcloud/</link>
+      <pubDate>Tue, 25 Sep 2018 04:27:25 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/cant-upload-with-nextcloud/</guid>
+      <description>nextcloudというOSSの自前でクラウドっぽいことができるものを愛用していますが、nginxをリバースプロキシとして使い、apache2上にnextcloudを立てました。 しかし、構築した際に問題が発生したので今回の対処法を紹介します。
+戦犯は&amp;hellip; nginx先輩でした。 最初に答えを言うのはあれですが、これだけで5時間以上の時間を費やしました。 nginxのデフォルトの設定ではアップロードが512kbしかできないらしく、こいつが原因でした。
+なぜわかったのか？ nextcloudのweb操作で小さいファイルだとアップロードできるのに、１MBを超えるファイルをアップロードしようとすると、なぜか途中で止まってしまうということが起こりました。 そこで、nextcloudのクライアントからを入れてみたときに、どんな挙動が起こるのか確かめてみると&amp;hellip;  
+
+これについて調べてみると、phpというよりもwebサーバー本体のコンフィグの設定に問題があることを知りました。 apache2かnginxのどっちがおかしいのかと考えると、nginx側がおかしいということに気づきました。
+対処法 nginxのコンフィグを変更する server { #省略 client\_max\_body_size 1000m; #省略 }  こんな感じで/etc/nginx/nginx.conf又は/etc/nginx/conf.d/cloud.confあたりに突っ込めばアップロードできるようになりました。
+nginxを再起動 systemctl restart nginx  nginxを再起動すると見事にファイルをアップロードできるようになりました。
+まとめ 今回の原因として、nginxをあまり触っていなかったことが問題になりました。 やっぱりコンフィグ類はちゃんと覚えておくべきだということを改めて実感しました。</description>
+    </item>
+    
+    <item>
+      <title>freshclamで更新できない</title>
+      <link>https://yoneyan.dev/tech/linux/not-update-freshclam/</link>
+      <pubDate>Mon, 10 Jul 2017 00:24:16 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/linux/not-update-freshclam/</guid>
+      <description>ubuntuserverにfreshclamをインストールしたときに、エラーが出てできなかったのでそれの回避方法を紹介します。
+ウイルス定義ファイルを更新しようとすると&amp;hellip;    おい&amp;hellip;まじか&amp;hellip;
+root@yns-linuxserver:/home/yonedayuto# freshclam ERROR: /var/log/clamav/freshclam.log is locked by another process ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).  こんな感じのエラー内容を読むと、freshclam.logはほかのプロセスによって使われているよーー。内部のロガーが問題だよということで、正直よくわからないので
+rm /var/log/clamav/freshclam.log  というコマンドを実行すると、
+root@yns-linuxserver:/home/yonedayuto# freshclam ClamAV update process started at Mon Jul 10 00:03:32 2017 Downloading main.cvd \[100%\] main.cvd updated (version: 58, sigs: 4566249, f-level: 60, builder: sigmgr) Downloading daily.cvd \[100%\] daily.cvd updated (version: 23548, sigs: 1739222, f-level: 63, builder: neo) bytecode.cvd is up to date (version: 305, sigs: 62, f-level: 63, builder: neo) Database updated (6305533 signatures) from db.</description>
+    </item>
+    
+  </channel>
+</rss>
