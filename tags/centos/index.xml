@@ -13,10 +13,10 @@
     
     <item>
       <title>CentOS7でLACPとタグVLANを使ってみる</title>
-      <link>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</link>
+      <link>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</link>
       <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</guid>
+      <guid>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</guid>
       <description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
 環境 CentOS=========L3 Switch(vlan10,vlan20)
 2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
@@ -52,10 +52,10 @@ ip addr  これで確認することが可能になります。</description>
     
     <item>
       <title>CentOSのOpenVPNサーバーを構築してみる</title>
-      <link>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</link>
+      <link>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</link>
       <pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</guid>
+      <guid>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</guid>
       <description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
 この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
 その１:VPS側（サーバー側）の設定

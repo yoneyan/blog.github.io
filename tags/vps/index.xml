@@ -36,10 +36,10 @@ HDDのマウントなどで使われるfstabに追記していきます。
     
     <item>
       <title>CentOSでL2TPサーバーを構築してみる</title>
-      <link>https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</link>
+      <link>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</link>
       <pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</guid>
+      <guid>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</guid>
       <description>UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
 VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
 OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。

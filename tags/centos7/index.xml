@@ -13,10 +13,10 @@
     
     <item>
       <title>nmcliで無線がunmanagedの場合の対処法</title>
-      <link>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</link>
+      <link>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</link>
       <pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</guid>
+      <guid>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</guid>
       <description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
 ここでは無線LANをWLANと記述します。
 確認してみる nmcli device  より、WLANの管理状態を確かめてみます。

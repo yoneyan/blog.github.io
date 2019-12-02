@@ -13,10 +13,10 @@
     
     <item>
       <title>RTX1200でeo光のIPv6を使えるようにする</title>
-      <link>https://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</link>
+      <link>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</link>
       <pubDate>Wed, 30 Jan 2019 17:17:30 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</guid>
+      <guid>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</guid>
       <description>みなさんRTX1200というyamahaのルータを持っていますか？
 eo光が配布してくれるeo光多機能ルータというものがありますが、使いやすいのですが民生用ということもあり機能が限定されています。 また、安定性もそこまで正直なところそこまで良くないです。
 ということで、今回はRTX1200でもeo光のIPv6を使えるようになるという記事を拝見させていただきましたので、当ブログでも紹介させていただきます。

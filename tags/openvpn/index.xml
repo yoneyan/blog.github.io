@@ -13,10 +13,10 @@
     
     <item>
       <title>EdgerouterでOpenVPNクライアントを使う</title>
-      <link>https://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</link>
       <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</guid>
       <description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
 サーバー側の設定はこちらから
 1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
@@ -32,10 +32,10 @@ ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイル�
     
     <item>
       <title>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</title>
-      <link>https://yoneyan.dev/post/use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</link>
+      <link>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</link>
       <pubDate>Thu, 10 Jan 2019 11:49:55 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</guid>
+      <guid>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</guid>
       <description>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
 その2ではopenvpnのクライアントになるpfsense側の設定をしていきます。
 前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
@@ -73,10 +73,10 @@ source ./vars  を実行します。
     
     <item>
       <title>CentOSのOpenVPNサーバーを構築してみる</title>
-      <link>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</link>
+      <link>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</link>
       <pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</guid>
+      <guid>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</guid>
       <description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
 この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
 その１:VPS側（サーバー側）の設定

@@ -13,10 +13,10 @@
     
     <item>
       <title>EdgerouterでOpenVPNクライアントを使う</title>
-      <link>https://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</link>
       <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</guid>
       <description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
 サーバー側の設定はこちらから
 1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
@@ -32,10 +32,10 @@ ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイル�
     
     <item>
       <title>Edgerouterでポート開放をしてみる</title>
-      <link>https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</link>
       <pubDate>Fri, 22 Mar 2019 18:05:10 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</guid>
       <description>今回はEdgerouterでポート開放をコマンド操作でしていきます。
 こちらのサイトを参考にさせていただきました。
 https://qiita.com/maiani/items/b45b0505377401be083a
@@ -50,10 +50,10 @@ set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp
     
     <item>
       <title>EdgerouterでPPPoEの設定をする</title>
-      <link>https://yoneyan.dev/post/set-pppoe-with-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</link>
       <pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/set-pppoe-with-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</guid>
       <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
 環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
 設定していく 設定を適応する際はcommit 設定を保存する際はsave
@@ -63,10 +63,10 @@ set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp
     
     <item>
       <title></title>
-      <link>https://yoneyan.dev/post/try-using-ipv6-of-eo-with-edgerouter/</link>
+      <link>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</link>
       <pubDate>Fri, 08 Mar 2019 00:07:05 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-using-ipv6-of-eo-with-edgerouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</guid>
       <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
 Edgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）
 注意：今回の設定ではIPv6のファイアウォールの設定をしていないので、セキュリティ的にかなり危ないので、実際に構築する方はご注意下さい。（当方もファイアウォール周りがあまりわかっていないので、分かり次第、別の記事にさせていただきます。）

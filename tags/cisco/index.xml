@@ -13,10 +13,10 @@
     
     <item>
       <title>Cisco892WでAPファームウェアを初期化する方法</title>
-      <link>https://yoneyan.dev/post/how-to-initialize-ap-firmware-on-cisco892w/</link>
+      <link>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</link>
       <pubDate>Sun, 09 Dec 2018 21:59:07 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/how-to-initialize-ap-firmware-on-cisco892w/</guid>
+      <guid>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</guid>
       <description>Cisco892WはAPファームウェアとルータ用ファームウェアが別れているなかなか変態仕様になっています。 初期化をどのようにするのかこの記事で紹介していきます。
 そもそもCisco 892Wとは？ Cisco 892Wはルータとアクセスポイントが合体したものです。扱いとしてはルータになります。Cisco 892に無線機能がついただけのものです。
 Cisco892Wはルータとアクセスポイントが合体していることもあり、ルータ用OSとアクセスポイント用のOSが分かれている特殊な機種です。
@@ -79,10 +79,10 @@ interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-abov
     
     <item>
       <title>Cisco_AironetでWPA2-PSKを使ってみる</title>
-      <link>https://yoneyan.dev/post/try-using-wpa2psk-with-aironet/</link>
+      <link>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</link>
       <pubDate>Tue, 09 Oct 2018 02:15:26 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-using-wpa2psk-with-aironet/</guid>
+      <guid>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</guid>
       <description>自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
 前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
 初期の設定 マルチssidを有効にするために

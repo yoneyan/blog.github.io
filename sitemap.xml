@@ -38,21 +38,21 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/what-to-do-when-you-dont-link-up-with-gs724t/</loc>
+    <loc>https://yoneyan.dev/tech/network/approach-do-not-link-up-with-gs724t/</loc>
     <lastmod>2019-08-15T00:48:35+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/</loc>
+    <loc>https://yoneyan.dev/tech/network/</loc>
     <lastmod>2019-08-15T00:48:35+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_2/</loc>
+    <loc>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_2/</loc>
     <lastmod>2019-08-11T23:56:52+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -66,7 +66,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/what-to-do-if-the-radio-is-unmanaged-with-nmcli/</loc>
+    <loc>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</loc>
     <lastmod>2019-08-11T23:29:40+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -87,6 +87,13 @@
   </url>
   
   <url>
+    <loc>https://yoneyan.dev/post/</loc>
+    <lastmod>2019-07-31T21:58:46+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://yoneyan.dev/post/br0-error-does-not-appear-during-virt-install/</loc>
     <lastmod>2019-07-31T21:58:46+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -94,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/how-to-return-the-alliedtelesis-stacks-tate-to-the-initial-state/</loc>
+    <loc>https://yoneyan.dev/tech/network/initial_alliedtelesis-stacks/</loc>
     <lastmod>2019-07-31T00:15:47+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -115,7 +122,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/open-port-with-freebsd/</loc>
+    <loc>https://yoneyan.dev/tech/network/open-port-with-freebsd/</loc>
     <lastmod>2019-07-22T11:16:02+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -213,7 +220,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/using-openvpn-client-with-edgerouter/</loc>
+    <loc>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</loc>
     <lastmod>2019-04-17T21:37:37+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -248,7 +255,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-using-lacp-and-tagged-vlan-on-centos7/</loc>
+    <loc>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</loc>
     <lastmod>2019-03-31T20:02:44+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -283,21 +290,21 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-opening-the-port-with-edgerouter/</loc>
+    <loc>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</loc>
     <lastmod>2019-03-22T18:05:10+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/set-pppoe-with-edgerouter/</loc>
+    <loc>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</loc>
     <lastmod>2019-03-12T00:06:47+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-using-ipv6-of-eo-with-edgerouter/</loc>
+    <loc>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</loc>
     <lastmod>2019-03-08T00:07:05+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -374,14 +381,14 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/make-it-possible-to-use-ipv6-of-eo-with-rtx1200/</loc>
+    <loc>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</loc>
     <lastmod>2019-01-30T17:17:30+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-building-an-l2tp-server-on-centos/</loc>
+    <loc>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</loc>
     <lastmod>2019-01-18T16:21:21+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -395,7 +402,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/use-openvpn-to-connect-vps-and-pfsense-at-home_part2/</loc>
+    <loc>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</loc>
     <lastmod>2019-01-10T11:49:55+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -465,7 +472,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/how-to-initialize-ap-firmware-on-cisco892w/</loc>
+    <loc>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</loc>
     <lastmod>2018-12-09T21:59:07+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -486,7 +493,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/convert-wireless-to-wired-with-centos_1/</loc>
+    <loc>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_1/</loc>
     <lastmod>2018-11-20T14:06:55+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -584,7 +591,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-using-wpa2psk-with-aironet/</loc>
+    <loc>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</loc>
     <lastmod>2018-10-09T02:15:26+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -605,7 +612,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-building-a-centos-openvpn-server/</loc>
+    <loc>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</loc>
     <lastmod>2018-09-07T20:00:06+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -780,7 +787,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/what-to-do-when-becoming-nat-type-3-of-ps4-or-ps3-with-pfsense/</loc>
+    <loc>https://yoneyan.dev/tech/network/becoming-nat-type-3-of-playstation-with-pfsense/</loc>
     <lastmod>2018-01-18T12:01:34+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
