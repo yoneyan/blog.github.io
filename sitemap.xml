@@ -437,6 +437,13 @@
   </url>
   
   <url>
+    <loc>https://yoneyan.dev/tech/asterisk/</loc>
+    <lastmod>2018-12-25T05:28:23+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://yoneyan.dev/tags/asterisk/</loc>
     <lastmod>2018-12-25T05:28:23+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1034,6 +1041,13 @@
   <url>
     <loc>https://yoneyan.dev/app/remote-freesoft/</loc>
     <lastmod>2017-02-03T03:05:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoneyan.dev/tech/android/</loc>
+    <lastmod>2017-01-31T02:12:27+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

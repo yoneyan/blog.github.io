@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ⚡>
+<html>
   <head>
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
@@ -11,90 +11,19 @@
 <link rel="apple-touch-icon" href="https://yoneyan.dev/images/logo.png">
 
 
-<link rel="canonical" type="text/html" href="https://yoneyan.dev/tech/asterisk/error1/" title="のんびりと生きたい">
+<link rel="alternate" type="application/rss+xml" href="https://yoneyan.dev/tech/asterisk/index.xml" title="のんびりと生きたい">
 
 
 
-
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-    <meta name="amp-google-client-id-api" content="googleanalytics">
-    
-
+    <link rel="canonical" href="https://yoneyan.dev/tech/asterisk/">
     
     <link href="https://fonts.googleapis.com/css?family=Lobster%7cLato:400,700" rel="stylesheet">
     
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title>asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る - のんびりと生きたい</title>
+    <title>Asterisk - のんびりと生きたい</title>
     
-<meta name="description" content="Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
-解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
-まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。">
-
-<meta property="og:title" content="asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る - のんびりと生きたい">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://yoneyan.dev/amp/tech/asterisk/error1/">
-<meta property="og:image" content="https://yoneyan.dev/images/free_images/phone.jpg">
-<meta property="og:site_name" content="のんびりと生きたい">
-<meta property="og:description" content="Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
-解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
-まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。">
-<meta property="og:locale" content="ja_JP">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="のんびりと生きたい">
-<meta name="twitter:url" content="https://yoneyan.dev/amp/tech/asterisk/error1/">
-<meta name="twitter:title" content="asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る - のんびりと生きたい">
-<meta name="twitter:description" content="Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
-解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
-[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
-まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。">
-<meta name="twitter:image" content="https://yoneyan.dev/images/free_images/phone.jpg">
-
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id":"https:\/\/yoneyan.dev\/"
-    },
-    "headline": "asteriskでUnable to retrieve PJSIP transport 'simpletrans'というエラーが出る-のんびりと生きたい",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:\/\/yoneyan.dev\/images\/free_images\/phone.jpg",
-      "height": 800,
-      "width": 800
-    },
-    "datePublished": "2018-11-04T03:18:33JST",
-    "dateModified": "2018-11-04T03:18:33JST",
-    "author": {
-      "@type": "Person",
-      "name": "のんびりと生きたい"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "のんびりと生きたい",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https:\/\/yoneyan.dev\/images/logo.png",
-        "width": 600,
-        "height": 60
-      }
-    }
-  }
-</script>
-
-
-    <style amp-custom>
+    <style>
 html {
   font-size: 18px;
   background-color: rgba(236,239,241,.5);
@@ -1423,224 +1352,221 @@ section.footer > header a {
 
  body { font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif; } 
  .h-logo { font-family: Lobster, cursive; } 
-.l-container { max-width: 40rem; margin: 0 auto; }
     </style>
+
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', "UA-77706989-10", 'auto', {'useAmpClientId': true});
+ga('send', 'pageview');
+</script>
+
   </head>
-
   <body>
-    
-    <amp-analytics type="googleanalytics" id="analytics1">
-      <script type="application/json"> { "vars": { "account": "UA-77706989-10"}, "triggers": { "trackPageview": { "on": "visible", "request": "pageview" } } }
-      </script>
-    </amp-analytics>
-    
-
     <header class="l-header">
       <div class="l-container">
         <div class="logo">
           <a href="https://yoneyan.dev/">のんびりと生きたい</a>
         </div>
+        
+<div class="description">
+  This site is tech blog
+</div>
+
+
       </div>
     </header>
 
     <main>
       <div class="l-container">
         
-<article class="sn">
-  <div class="article-crumb">
-    <nav class="crumb">
-      
-      <ol  class="nav navbar-nav">
-  
-  
-    
-  
-    
-  
-    
-  
-<li>
-  
-  <a href="https://yoneyan.dev/"><i class="fas fa-home" aria-hidden="true"></i>Home</a>
-  
-</li>
-
-  
-<li>
-  
-  <a href="https://yoneyan.dev/tech/">Tech</a>
-  
-</li>
-
-  
-<li>
-  
-  <a href="https://yoneyan.dev/tech/asterisk/">Asterisk</a>
-  
-</li>
-
-  
-<li class="active">
-  
-  <a href="https://yoneyan.dev/amp/tech/asterisk/error1/">asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</a>
-  
-</li>
-
-</ol>
-
-
-    </nav>
-  </div>
-  <div class="thumb thumb-af83fc5ce750528704206eec412e5f2f"></div>
-
-  <header class="article-header">
-    <h1 class="title">asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</h1>
-
-    <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-04T03:18:33JST">Nov 4, 2018</time></li>
-      
-      <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://yoneyan.dev/tech/">TECH</a></li>
-      
-    </ul>
-
-    <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&title=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&text=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&t=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&title=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
-</aside>
-
-  </header>
-
-  
-  <div class="toc">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#unable-to-retrieve-pjsip-transport-simpletransというエラーについて">Unable to retrieve PJSIP transport simpletransというエラーについて</a></li>
-<li><a href="#解決方法">解決方法</a></li>
-<li><a href="#まとめ">まとめ</a></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-  
-
-  <div class="article-body">
-
-<h2 id="unable-to-retrieve-pjsip-transport-simpletransというエラーについて">Unable to retrieve PJSIP transport simpletransというエラーについて</h2>
-
-<p>結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。</p>
-
-<h2 id="解決方法">解決方法</h2>
-
-<p>超簡単です。transportの部分を書き換えてあげるだけでいいです。</p>
-
-<pre><code>[transport-udp]
-type=transport
-protocol=udp
-bind=0.0.0.0
-
-[acl]
-permit=0.0.0.0/0.0.0.0
-
-[100]
-type=endpoint
-transport=simpletrans
-allow=all
-aors=100
-auth=auth100
-
-[100]
-type=aor
-max_contacts=1
-
-[auth100]
-type=auth
-auth_type=userpass
-password=password
-username=100
-</code></pre>
-
-<p>transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。
-内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。</p>
-
-<h2 id="まとめ">まとめ</h2>
-
-<p>これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。</p>
-</div>
-
-  <footer class="article-footer">
-
-    <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&title=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b" title="はてなブックマーク" class="ht" target="_blank" rel="nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&text=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&t=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b" title="Facebookでシェア" class="fb" target="_blank" rel="nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f&title=asterisk%e3%81%a7Unable%20to%20retrieve%20PJSIP%20transport%20%27simpletrans%27%e3%81%a8%e3%81%84%e3%81%86%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%8c%e5%87%ba%e3%82%8b" title="Pocketに保存" class="pk" target="_blank" rel="nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fyoneyan.dev%2famp%2ftech%2fasterisk%2ferror1%2f" title="LINEでシェア" class="ln" target="_blank" rel="nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
-</aside>
-
-
-    <section class="footer">
-      <div>
-        <nav class="crumb">
-          <ol>
-            <li><a href="https://yoneyan.dev/"><i class="fas fa-home" aria-hidden="true"></i>TOP</a></li>
-            
-            <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://yoneyan.dev/tech/" itemprop="url"><span itemprop="title">TECH</span></a></li>
-            
-            <li class="active">asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</li>
-          </ol>
-        </nav>
-      </div>
-    </section>
+<div class="mrow">
+  <div class="mcol c8">
 
     
+    <header class="page-title">
+      <h1 class="title">Asterisk</h1>
+    </header>
     
+
     
-    <section class="footer">
-      <header>
-        <a href="https://yoneyan.dev/tags/">TAGS</a>
-      </header>
-      <div>
-        <ul class="terms">
+      <div class="articles">
+        <div class="mrow">
           
-          <li><a href="https://yoneyan.dev/tags/asterisk/">asterisk</a></li>
           
-        </ul>
-      </div>
-    </section>
-    
-    
-    <amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-3354860886584500"
-     data-ad-slot="9949467437"
-     data-auto-format="rspv"
-     data-full-width="">
-     <div overflow=""></div>
-    </amp-ad>
-  </footer>
-
-</article>
-
-
-<div class="adj">
-  <div class="mrow">
-    
-    <div class="mcol c6">
-      <header>Previous Article</header>
-      <article class="lism">
-  <a href="https://yoneyan.dev/amp/tech/network/openvpn-server-for-ubuntuserver/">
-    <div class="thumb thumb-f3e45846c546313f302584fb297dc0f1"></div>
+          
+            
+          
+          
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/">
+    <div class="thumb thumb-0a76138d7c80ce02f147615eaa037672"></div>
 
     <div class="inner">
-      <div class="title">UbuntuServerでOpenVPNサーバーを構築</div>
+      <h2 class="title">大好きな曲を電話回線網から流す方法</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-12-25T05:28:23JST">Dec 25, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
+      <div class="summary">この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+最終日ということもあり気合を入れて紹介させていただきます。
+作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&hellip;）
+このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
+お家の方にも紹介していただけると楽しんでいただけると思います。電話帳に登録した方がいらっしゃれば、私の方まで報告していただけると嬉しいです。
+コンギョバージョン
+05054377759
+一般男性脱糞シリーズバージョン
+05054377762
+＊追記　ゆゆうたの様々な曲を取り寄せております、ゆゆうた楽曲専用ダイヤルを開設いたしました。
+ゆゆうた楽曲専用ダイヤル
+05053595690
+暇な方は是非この電話番号にかけてみてください。
+もし、通じない場合はお家の固定回線からかけてみてください
+誰でも簡単に作ることができるのでそのレシピを紹介します。
+仕組み   材料  VPS or 自宅サーバー スマホ fusion IP Phone smartのようにSIPで接続が可能なプロバイダ  これだけです。
+＊VPS or 自宅サーバーをサーバーと略させていただきます。
+レシピ 0.SIP情報を観察する   ドメインとSIPアカウント、そのパスワードをメモっておきます。
+1.Asteriskをサーバーに入れてあげます CentOSさんの場合はパッケージが標準で搭載されていないので、Debianさんにお願いします。
+Debianさん
+apt -y install asterisk apt -y install mpg123  mpg123はasteriskでmp3を流すためのコーディック用のパッケージです。
+2.Asteriskの設定ファイルを調理してあげます /etc/asterisk/sip.conf　を開きます。
+（お好きなエディタから開いて下さい。)
+register=&gt;sipアカウント:sipアカウントのパスワード@ドメイン  ;IP [fusion-smart_1] type=friend username=sipアカウント fromuser=sipアカウント secret=sipアカウントのパスワード host=smart.</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+            
+              <div class="mcol c6"><article class="li">
+  <a href="https://yoneyan.dev/tech/asterisk/error1/">
+    <div class="thumb thumb-af83fc5ce750528704206eec412e5f2f"></div>
+
+    <div class="inner">
+      <h2 class="title">asteriskでUnable to retrieve PJSIP transport &#39;simpletrans&#39;というエラーが出る</h2>
+
+      <ul class="facts">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2018-11-04T03:18:33JST">Nov 4, 2018</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
+      <div class="summary">Unable to retrieve PJSIP transport simpletransというエラーについて 結果を言うと、だれでもわかるような超単純なミスでした。[simpletrans]というtransportセクションが見つからないという意味です。
+解決方法 超簡単です。transportの部分を書き換えてあげるだけでいいです。
+[transport-udp] type=transport protocol=udp bind=0.0.0.0 [acl] permit=0.0.0.0/0.0.0.0 [100] type=endpoint transport=simpletrans allow=all aors=100 auth=auth100 [100] type=aor max_contacts=1 [auth100] type=auth auth_type=userpass password=password username=100  transport=simpletransの部分をtransport-udpに書き換えてあげることで問題が解決します。 内線番号で指定できる理由は複数のtransportがあった場合、どれがどれを使えばいいかわからなくなるのでここで指定する必要があるらしいです。
+まとめ これは誰でもわかるようなミスなのですが、解決するまでかなりの時間を要したので備忘録として残しておきます。</div>
+    </div>
+  </a>
+</article>
+</div>
+            
+          
+          
+        </div>
+      </div>
+    
+
+    
+
+  </div>
+  <div class="mcol c4">
+    <aside class="l-sidebar">
+
+  <div class="sections sidebar">
+    
+<section class="sidebar">
+  <header>AUTHOR</header>
+  <div>
+    <div class="author">
+      
+      <div class="author-thumb" style="background-image: url(https://yoneyan.dev/images/profile.jpg);"></div>
+      
+      <div class="author-name">yoneyan(よねやん)</div>
+      <ul class="author-facts">
+        <li><a href="https://www.facebook.com/yoneyan.ja" rel="nofollow" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/yoneyan_ja" rel="nofollow" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/yoneyan" rel="nofollow" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+      <div class="author-description"><p>Thank you for visiting my page.</p> <p>My profile site is https://yoneyan.net! I am mainly studying network.</p></div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="sidebar">
+  <header>LATESTS</header>
+  <div>
+    <div class="articles sm">
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/homeserver/2019-08-etc/">
+    <div class="thumb thumb-6764b54b0d1661845590622ae858e36f"></div>
+
+    <div class="inner">
+      <div class="title">2019年度(8月)自宅その他機器の紹介</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="17007-10-17T00:34:29JST">Oct 17, 2018</time></li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T02:17:49JST">Sep 13, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/homeserver/2019-08-net/">
+    <div class="thumb thumb-a22089782467ad0ea8e69c86618215c7"></div>
+
+    <div class="inner">
+      <div class="title">2019年度(8月)自宅ネットワーク機器の紹介</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T01:44:15JST">Sep 13, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/homeserver/2019-08-server/">
+    <div class="thumb thumb-e411741d2a73dee3f61df88799a4631f"></div>
+
+    <div class="inner">
+      <div class="title">2019年度(8月)自宅サーバーの紹介</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="13007-09-13T00:49:00JST">Sep 13, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>HOMESERVER</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/tech/network/approach-do-not-link-up-with-gs724t/">
+    <div class="thumb thumb-1036ea40acc9defe4ca8cb5942b1338a"></div>
+
+    <div class="inner">
+      <div class="title">GS724Tでリンクアップしない時の対処法</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="15007-08-15T00:48:35JST">Aug 15, 2019</time></li>
         <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
         
       </ul>
@@ -1649,21 +1575,17 @@ username=100
   </a>
 </article>
 
-    </div>
-    
-    
-    <div class="mcol c6">
-      <header>Next Article</header>
+      
       <article class="lism">
-  <a href="https://yoneyan.dev/amp/fix/silence-rx300s6/">
-    <div class="thumb thumb-58d742b1e9ee5a7ffbe7ff632f4ce935"></div>
+  <a href="https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_2/">
+    <div class="thumb thumb-916edecca850b12fba216de530733a13"></div>
 
     <div class="inner">
-      <div class="title">ラックサーバ(RX300 S6)を静音化してみる</div>
+      <div class="title">CentOSで無線から有線に変換する(2)</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="8007-11-08T17:40:23JST">Nov 8, 2018</time></li>
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>FIX</li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="11007-08-11T23:56:52JST">Aug 11, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
         
       </ul>
 
@@ -1671,11 +1593,121 @@ username=100
   </a>
 </article>
 
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/">
+    <div class="thumb thumb-fdd05a1c4346a07d8fa7b0e298d70658"></div>
+
+    <div class="inner">
+      <div class="title">nmcliで無線がunmanagedの場合の対処法</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="11007-08-11T23:29:40JST">Aug 11, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
     </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/tech/linux/error-libvirt-1/">
+    <div class="thumb thumb-b3a22ab46469c6b53a9e446f8893da65"></div>
+
+    <div class="inner">
+      <div class="title">virt-install時にbr0のエラーが出て進まない</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="31007-07-31T21:58:46JST">Jul 31, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/tech/network/initial_alliedtelesis-stacks/">
+    <div class="thumb thumb-6eae0e041365dd4aa516cf859d125983"></div>
+
+    <div class="inner">
+      <div class="title">Allied Telesis stack状態を初期の状況に戻す方法</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="31007-07-31T00:15:47JST">Jul 31, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/tech/hard/automatic-shutdown-with-apcupsd/">
+    <div class="thumb thumb-2638817b73aca2e24a46802767d6a172"></div>
+
+    <div class="inner">
+      <div class="title">apcupsdで自動シャットダウンをできるようにする</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="30007-07-30T01:52:07JST">Jul 30, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+      <article class="lism">
+  <a href="https://yoneyan.dev/tech/network/open-port-with-freebsd/">
+    <div class="thumb thumb-30451a92d29cd94fa41bec431974da4b"></div>
+
+    <div class="inner">
+      <div class="title">FreeBSDでポート開放をする</div>
+
+      <ul class="facts sm">
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="22007-07-22T11:16:02JST">Jul 22, 2019</time></li>
+        <li><i class="fas fa-bookmark" aria-hidden="true"></i>TECH</li>
+        
+      </ul>
+
+    </div>
+  </a>
+</article>
+
+      
+    </div>
+  </div>
+</section>
+
     
+
+    
+<section class="sidebar">
+  <header>TAGS</header>
+  <div>
+    <ul class="terms">
+      <li><a href="https://yoneyan.dev/tags/vps">vps <span class="count">(6)</span></a></li><li><a href="https://yoneyan.dev/tags/cisco">cisco <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/edgerouter">edgerouter <span class="count">(5)</span></a></li><li><a href="https://yoneyan.dev/tags/homeserver">homeserver <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/openvpn">openvpn <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/ps4">ps4 <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/server">server <span class="count">(4)</span></a></li><li><a href="https://yoneyan.dev/tags/centos">centos <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/game">game <span class="count">(3)</span></a></li><li><a href="https://yoneyan.dev/tags/steam">steam <span class="count">(3)</span></a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+  </div>
+
+</aside>
+
   </div>
 </div>
-
 
       </div>
     </main>
@@ -1690,5 +1722,8 @@ username=100
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
+
