@@ -129,7 +129,14 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/gpd-micropc-reviews/</loc>
+    <loc>https://yoneyan.dev/review/hard/gpd-micropc/</loc>
+    <lastmod>2019-06-20T01:31:33+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoneyan.dev/review/hard/</loc>
     <lastmod>2019-06-20T01:31:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -430,7 +437,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/configure-vlan-with-powerconnect/</loc>
+    <loc>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</loc>
     <lastmod>2018-12-21T11:44:05+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -479,7 +486,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/redundant-wan-with-ciscorouter/</loc>
+    <loc>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</loc>
     <lastmod>2018-12-06T00:31:45+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -500,7 +507,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</loc>
+    <loc>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</loc>
     <lastmod>2018-11-19T01:29:33+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -563,7 +570,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</loc>
+    <loc>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</loc>
     <lastmod>2018-10-17T00:34:29+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -584,7 +591,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/cisco-aironet-does-not-get-802.11n-speed/</loc>
+    <loc>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</loc>
     <lastmod>2018-10-09T02:33:27+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -745,7 +752,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/impression-that-i-tried-using-p10lite-for-one-month/</loc>
+    <loc>https://yoneyan.dev/review/hard/p10_lite/</loc>
     <lastmod>2018-03-08T16:40:56+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -906,7 +913,14 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/wonderfox-dvd-video-converter-reviews/</loc>
+    <loc>https://yoneyan.dev/review/soft/</loc>
+    <lastmod>2017-05-14T14:22:19+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoneyan.dev/review/soft/wonderfox_dvdvideo_converter/</loc>
     <lastmod>2017-05-14T14:22:19+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1025,14 +1039,14 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/i-bought-segasaturn-now/</loc>
+    <loc>https://yoneyan.dev/review/hard/segasaturn/</loc>
     <lastmod>2017-01-25T23:43:43+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/open-sidewinder-precisionpro/</loc>
+    <loc>https://yoneyan.dev/review/hard/sidewinder-precisionpro/</loc>
     <lastmod>2017-01-22T15:04:21+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1067,7 +1081,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/i-bought-kinectv1/</loc>
+    <loc>https://yoneyan.dev/review/hard/kinect-v1/</loc>
     <lastmod>2017-01-16T17:47:38+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1081,7 +1095,7 @@
   </url>
   
   <url>
-    <loc>https://yoneyan.dev/post/impression-of-using-xboxone-controller/</loc>
+    <loc>https://yoneyan.dev/review/hard/xboxone-controller/</loc>
     <lastmod>2017-01-11T03:49:01+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1109,6 +1123,12 @@
   
   <url>
     <loc>https://yoneyan.dev/game/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yoneyan.dev/review/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

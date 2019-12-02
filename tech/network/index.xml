@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on のんびりと生きたい</title>
+    <title>Network on のんびりと生きたい</title>
     <link>https://yoneyan.dev/tech/network/</link>
-    <description>Recent content in Tech on のんびりと生きたい</description>
+    <description>Recent content in Network on のんびりと生きたい</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 15 Aug 2019 00:48:35 +0900</lastBuildDate>
@@ -273,6 +273,28 @@ Private key data にclient1.keyの内容を入れます。
     </item>
     
     <item>
+      <title>PowerConnectでVLANの設定をする</title>
+      <link>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</link>
+      <pubDate>Fri, 21 Dec 2018 11:44:05 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</guid>
+      <description>PowerConnect6248というものをバリバリ動かしている筆者です。
+やっぱり、家庭では最低でも48ポート必要ですよね？
+まあ、こいつのせいで電気代が掛かっているので対処法を考えていますが&amp;hellip;
+Ciscoのスイッチとは設定方法がすこし異なるところもあるので、今回はその部分を説明させていただきます。
+VLANの種類 VLANでの設定方法では以下の2つの種類があります。
+ accessポート trunkポート  前半にaccessポート、後半にtrunkポートの設定方法について説明させていただきます。
+Accessポートの設定編 Accessポートの設定方法を紹介します。
+例として：1/g12ポートにVLAN100を割り当て、1/g13ポートのVLAN200と割り当てるとします。
+ config vlan database vlan 100 vlan 200 exit interface ethernet 1/g12 switchport access vlan 100 exit interface ethernet 1/g13 switchport access vlan 200 exit  上記のコードでaccessポートの設定ができます。
+vlan databaseで使うVLANを設定しないと文句を言われるので、注意して下さい。
+Trunkポートの設定編 そもそも、trunkポートとは複数のVLANを一つのインタフェースで実現する際に使用します。
+それでは設定方法を紹介します。
+例として、1/g1をVLAN 5,10,20とします。
+ config vlan database vlan 5 vlan 10 vlan 20 exit interface ethernet 1/g1 switchport mode trunk switchport trunk allowed vlan add 5,10,20 exit  このような感じで簡単に設定ができます。</description>
+    </item>
+    
+    <item>
       <title>Cisco892WでAPファームウェアを初期化する方法</title>
       <link>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</link>
       <pubDate>Sun, 09 Dec 2018 21:59:07 +0900</pubDate>
@@ -295,6 +317,38 @@ service-module wlan-ap 0 reset  上記のコマンドを入力すると、
     </item>
     
     <item>
+      <title>CiscoルータでWANを冗長化する</title>
+      <link>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</link>
+      <pubDate>Thu, 06 Dec 2018 00:31:45 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</guid>
+      <description>関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。
+CiscoルータでWAN側の冗長化を行うために、HSRPというCisco独自のプロトコルを使用します。 また、デフォルトゲートウェイを冗長化するものとして、VRRPというプロトコルが存在しますが、今回はこれを使用しません。
+今回は例として、Cisco 841Mを使って構築します。
+VRRPの弱点 VRRPもHSRPと同様のCisco独自プロトコルですが、ルータの冗長化はできます。しかし、WAN側の冗長化ができないという欠点を持っています。
+そこで、今回はWAN側の冗長化を目標にしているので、HSRPを使用します。
+（VRRPでもできるのかもしれませんが知識不足で分かっておりません。）
+Cisco以外の機種では&amp;hellip; HSRPはお得意のCisco独自プロトコルとなっています。他社のネットワーク機器では独自のプロトコル又は出来ない可能性が高いので気をつけてください。
+構築していく 以下のようなトポ図で構築すると仮定します。
+   上のルータをrouter1とし、下のルータをrouter2とします。
+また、LAN側は同一ネットワークである必要があるので注意してください。
+各ルータのインターフェースは下記の通りとします。
+router1
+WAN側：GigabitEthernet 0/5
+LAN側：GigabitEthernet 0/0
+router2
+WAN側：GigabitEthernet 0/5
+LAN側：GigabitEthernet 0/0
+Router1の設定 LAN側のinterfaceに
+ standby 10 ip 192.168.0.1 standby 10 priority 105 standby 10 preempt  を設定するだけです。
+standby 10 ip 192.168.0.1の10の部分はHSRPのグループ番号なので適当な数字を入れても問題ありません。
+priority 105の部分はどのルータを優先的に使うのかという設定です。
+Router2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 priority 100  を設定するだけです。
+コンフィグの内容はrouter1に書いた内容と同じです。
+まとめ VRRPでは物理的なルータの冗長化をすることしかできませんが、Cisco独自プロトコルになってしまいます。 しかし、HSRPを使うとWANの冗長化をすることが簡単にできるので、家庭でCiscoのルータでWANの冗長化をする際は是非参考にしていただければ幸いです。</description>
+    </item>
+    
+    <item>
       <title>CentOSで無線から有線に変換する(1)</title>
       <link>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_1/</link>
       <pubDate>Tue, 20 Nov 2018 14:06:55 +0900</pubDate>
@@ -305,6 +359,57 @@ service-module wlan-ap 0 reset  上記のコマンドを入力すると、
 firewall-cmd --zone=internal --change-interface=eth0  eth1をExternalゾーン
 firewall-cmd --zone=external --change-interface=eth1  永続化する時は、&amp;ndash;permanentをつけるといけます。
 2.IPマスカレード firewall-cmd --zone=external --add-masquerade --permanent firewall-cmd --reload firewall-cmd --zone=external --query-masquerade cat /proc/sys/net/ipv4/ip_forward（「1」であれば有効） firewall-cmd --zone=internal --add-masquerade --permanent firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -o eth1 -j MASQUERADE firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth0 -o eth1 -j ACCEPT firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth1 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT  3.</description>
+    </item>
+    
+    <item>
+      <title>CentOSでリンクアグリゲーションの設定をしてみる</title>
+      <link>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</link>
+      <pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</guid>
+      <description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
+リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
+設定方法 設定方法として、以下の2つがあります。
+ nmtui（GUI） nmcli（CUI)  今回はこの内のnmtuiを使った設定方法を紹介します。 nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。
+設定していく 1.nmtuiを起動する sudo nmtui
+恐らく、管理者権限ではないと設定出来ない可能性が高いです。  
+
+こんな感じのネットワークの設定画面が表示されます。
+2.LAGの設定をしていく Edit a connectionを選択してから、Addを選択すると、下のようなものが出てきます。
+   LAGを使う場合はBondを選択します。
+3.bondの設定をしていく    AddでEthernetを選択し、Device名を手打ちでします。 それから、Modeで802.3adを選択すると、リンクアグリゲーションを使うことが出来るようになります。 IPv4を固定にしたい場合は、Manualですることができます。 最後にOKを選択し、ダイアログを閉じます。 これでLAGを使用することが可能になります。
+4.IPアドレスを取得＆pingが通るか確認する google.co.jpにpingが通るか確認するには
+ping google.co.jp  IPアドレスが取得されているか確認したい場合は
+ip addr  これで確認することが可能になります。</description>
+    </item>
+    
+    <item>
+      <title>UbuntuServerでOpenVPNサーバーを構築</title>
+      <link>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</link>
+      <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</guid>
+      <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
+OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
+2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
+3.varsファイルを設定していく export KEY_COUNTRY=&amp;quot;JA&amp;quot; export KEY_PROVINCE=&amp;quot;OSA&amp;quot; export KEY_CITY=&amp;quot;Osaka&amp;quot; export KEY_ORG=&amp;quot;test&amp;quot; export KEY_EMAIL=&amp;quot;test@myhost.mydomain&amp;quot; export KEY_OU=&amp;quot;test&amp;quot;  vi varsやnano varsのようなコマンドで設定しています。 varsファイルの編集が終わったら必ず
+source ./vars  を実行します。
+4.CA証明書・秘密鍵を作っていく ./clean-all cp openssl-1.0.0.cnf openssl.cnf ./build-ca  cp openssl-1.0.0.cnf openssl.cnfをしないと./build-caの段階でエラーを吐きます。
+5.サーバー証明書・秘密鍵を作っていく ./build-key-server server  Enterを押しまくってyを入力します。
+6.DHパラメータを作っていく ./build-dh  多少時間かかります。
+7.TLSの秘密鍵を作っていく openvpn --genkey --secret ta.key  8.クライアント側の証明書を作っていく ./build-key client1 nopass  client1のところは適当な名前にしてください client1.</description>
+    </item>
+    
+    <item>
+      <title>Cisco_Aironetで802.11nの速度が出ない</title>
+      <link>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</link>
+      <pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate>
+      
+      <guid>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</guid>
+      <description>お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&amp;hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
+Dot11Radio1の設定 5ghzの設定になるので、Dot11Radio1でコンフィグを弄ります。 方法を簡単に書くと、チャンネルを適当なところで固定してから40Mhzの設定をするという感じです。 802.11nは2つのチャンネルを束ねて、速度を倍にしているといったごり押しな規格になっておりチャンネルが自動設定ではなぜかうまく行かないので、手動で合わせます。 また、どのチャンネルが重なっていないのかはスマホにWifiアナライザーのアプリを入れておくとかなり幸せになれます。
+interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1  とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
+まとめ 802.11nの設定はコツさえ掴めたらなんとかなりますが、能力不足の自分にはかなりきつかったです。 もっとよく知りたい方は、Ciscoの公式サイトにしっかりと説明を書いてくれているのでじっくり読むことをおすすめします。</description>
     </item>
     
     <item>

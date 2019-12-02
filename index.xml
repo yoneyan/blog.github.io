@@ -212,10 +212,10 @@ firewall_script=&amp;quot;/usr/local/etc/ipfw.rules&amp;quot;  /usr/local/etc/ip
     
     <item>
       <title>GPD MicroPCのレビュー</title>
-      <link>https://yoneyan.dev/post/gpd-micropc-reviews/</link>
+      <link>https://yoneyan.dev/review/hard/gpd-micropc/</link>
       <pubDate>Thu, 20 Jun 2019 01:31:33 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/gpd-micropc-reviews/</guid>
+      <guid>https://yoneyan.dev/review/hard/gpd-micropc/</guid>
       <description>クラウドファンディングから約4か月が経ちやっと届いたので軽くレビューしていきます。
 外見    GPD MicroPC（前方）
    GPD MicroPC（左）
@@ -673,10 +673,10 @@ register=&amp;gt;sipアカウント:sipアカウントのパスワード@ドメ�
     
     <item>
       <title>PowerConnectでVLANの設定をする</title>
-      <link>https://yoneyan.dev/post/configure-vlan-with-powerconnect/</link>
+      <link>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</link>
       <pubDate>Fri, 21 Dec 2018 11:44:05 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/configure-vlan-with-powerconnect/</guid>
+      <guid>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</guid>
       <description>PowerConnect6248というものをバリバリ動かしている筆者です。
 やっぱり、家庭では最低でも48ポート必要ですよね？
 まあ、こいつのせいで電気代が掛かっているので対処法を考えていますが&amp;hellip;
@@ -783,10 +783,10 @@ service-module wlan-ap 0 reset  上記のコマンドを入力すると、
     
     <item>
       <title>CiscoルータでWANを冗長化する</title>
-      <link>https://yoneyan.dev/post/redundant-wan-with-ciscorouter/</link>
+      <link>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</link>
       <pubDate>Thu, 06 Dec 2018 00:31:45 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/redundant-wan-with-ciscorouter/</guid>
+      <guid>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</guid>
       <description>関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。
 CiscoルータでWAN側の冗長化を行うために、HSRPというCisco独自のプロトコルを使用します。 また、デフォルトゲートウェイを冗長化するものとして、VRRPというプロトコルが存在しますが、今回はこれを使用しません。
 今回は例として、Cisco 841Mを使って構築します。
@@ -853,10 +853,10 @@ firewall-cmd --zone=external --change-interface=eth1  永続化する時は、&a
     
     <item>
       <title>CentOSでリンクアグリゲーションの設定をしてみる</title>
-      <link>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</link>
+      <link>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</link>
       <pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</guid>
+      <guid>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</guid>
       <description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
 リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
 設定方法 設定方法として、以下の2つがあります。
@@ -977,10 +977,10 @@ WindowsServer系    120USD、240USDプランもあります。（2018/11/09執�
     
     <item>
       <title>UbuntuServerでOpenVPNサーバーを構築</title>
-      <link>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</link>
+      <link>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</link>
       <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</guid>
+      <guid>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</guid>
       <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
 OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
 2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
@@ -1009,10 +1009,10 @@ server { listen 80; server_name test.domain location /grafana/ { proxy_pass http
     
     <item>
       <title>Cisco_Aironetで802.11nの速度が出ない</title>
-      <link>https://yoneyan.dev/post/cisco-aironet-does-not-get-802.11n-speed/</link>
+      <link>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</link>
       <pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/cisco-aironet-does-not-get-802.11n-speed/</guid>
+      <guid>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</guid>
       <description>お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&amp;hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
 Dot11Radio1の設定 5ghzの設定になるので、Dot11Radio1でコンフィグを弄ります。 方法を簡単に書くと、チャンネルを適当なところで固定してから40Mhzの設定をするという感じです。 802.11nは2つのチャンネルを束ねて、速度を倍にしているといったごり押しな規格になっておりチャンネルが自動設定ではなぜかうまく行かないので、手動で合わせます。 また、どのチャンネルが重なっていないのかはスマホにWifiアナライザーのアプリを入れておくとかなり幸せになれます。
 interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1  とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
@@ -1327,10 +1327,10 @@ CHAOS;HEAD NOAH    CHAOS; HEAD NOAH (カオスヘッドノア) (通常版) 【CE
     
     <item>
       <title>P10 liteの一ヶ月使ってみた感想</title>
-      <link>https://yoneyan.dev/post/impression-that-i-tried-using-p10lite-for-one-month/</link>
+      <link>https://yoneyan.dev/review/hard/p10_lite/</link>
       <pubDate>Thu, 08 Mar 2018 16:40:56 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/impression-that-i-tried-using-p10lite-for-one-month/</guid>
+      <guid>https://yoneyan.dev/review/hard/p10_lite/</guid>
       <description>P10 liteを一ヶ月間使ってみた感想をこちらの記事に執筆させていただきます。 まず、スペックやらいろいろ紹介してから感想という流れで行きます。
 スペック CPU:HUAWEI Kirin658 オクタコア (4×2.1GHz+4x1.7GHz) RAM:3G ROM：32G WIFI/Bluetooth:802.11a/b/g/n/ac,Bluetooth4.1, センサー:加速度, コンパス, ジャイロ, 環境光, 近接, 指紋センサー GPS:GPS/AGPS/Glonass 画面:1920x1080(フルHD) とこんな感じです。auのVoLTEにも対応しているので日本で使うにはまったく問題ないように思います。 スペック的にもメモリが3Gもあり、マルチタスクでそこそこアプリも比較的多めに起動できます。さすがにアプリを起動しすぎると動作が重くなるのでそこら辺は注意をしておいた方がいいです。
 価格 P10 Lite これが今回レビューする機種です。 最新の機種はこちら P30 Lite
@@ -1750,10 +1750,10 @@ MONUMENT VALLEY 2
     
     <item>
       <title>WonderFox DVD Video Converterのレビュー</title>
-      <link>https://yoneyan.dev/post/wonderfox-dvd-video-converter-reviews/</link>
+      <link>https://yoneyan.dev/review/soft/wonderfox_dvdvideo_converter/</link>
       <pubDate>Sun, 14 May 2017 14:22:19 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/wonderfox-dvd-video-converter-reviews/</guid>
+      <guid>https://yoneyan.dev/review/soft/wonderfox_dvdvideo_converter/</guid>
       <description>DVDリッピングソフトとして、WonderFox Soft社が作っているWonderFox DVD Video Converterの紹介をさせていただきます。
 WonderFox DVD Video Converterの概要    ジャンル:マルチメディアツール 対応OS:windows2000以降 有料ソフト（試用版あり）
 公式サイト：http://www.videoconverterfactory.com/dvd-video-converter/index-jp.html
@@ -2036,10 +2036,10 @@ Microsoft Flight Simulator X:Steam Edition    リンク：http://store.</descrip
     
     <item>
       <title>今頃セガサターン買ってきた</title>
-      <link>https://yoneyan.dev/post/i-bought-segasaturn-now/</link>
+      <link>https://yoneyan.dev/review/hard/segasaturn/</link>
       <pubDate>Wed, 25 Jan 2017 23:43:43 +0000</pubDate>
       
-      <guid>https://yoneyan.dev/post/i-bought-segasaturn-now/</guid>
+      <guid>https://yoneyan.dev/review/hard/segasaturn/</guid>
       <description>ハードオフでセガサターンを買ってきました！！
 なぜ買ったのか？ サクラ大戦というゲームに興味を持ったので買いました。  
 
@@ -2060,10 +2060,10 @@ Microsoft Flight Simulator X:Steam Edition    リンク：http://store.</descrip
     
     <item>
       <title>sidewinder precision proを開封</title>
-      <link>https://yoneyan.dev/post/open-sidewinder-precisionpro/</link>
+      <link>https://yoneyan.dev/review/hard/sidewinder-precisionpro/</link>
       <pubDate>Sun, 22 Jan 2017 15:04:21 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/open-sidewinder-precisionpro/</guid>
+      <guid>https://yoneyan.dev/review/hard/sidewinder-precisionpro/</guid>
       <description>一週間ぐらい前にハードオフに行ってきてジャンク売り場にsidewinder precision proが売ってたので買ってきました。 他にもいろいろ買ってきているので後日記事にする予定なのでお楽しみにーー
 何故買ったのか Steamで販売しているMicrosoft Flight Simulator X :Steam Editonを買ったからです。 フライトシミュレーターと言えばこれというぐらい認知度が高く、前々から買おうかなと思っていたんですが、なかなか金欠で買えなかったという感じです。 つい最近、このゲームが割引セールに入っていたので買いました。たしか1000円以内だった気がするけど忘れました&amp;hellip; コントローラを買わずにこのゲームを始めたのでキーボードやXboxONEコントローラではあまりにも操作性が悪くてできそうにもなかったので専用のコントローラを買おうと思っていたんですが、 そこそこのお値段がするので買うのをためらっていました。 ハードオフに別の用（ジャンク巡り）で行ったところsidewinder precision proが売っており、買いました。
 パソコンに接続 sidewinder precision proを勢いで買ったので対応OSなどを確認せずに家に帰ったので大丈夫かなと思いつつ、パソコンに繋げるとちゃんと認識してくれました。  
@@ -2185,10 +2185,10 @@ Microsoft Visual C++ 2005 再頒布可能パッケージ(x86) Microsoft Visual C
     
     <item>
       <title>Kinect v1を買ったので簡単に紹介</title>
-      <link>https://yoneyan.dev/post/i-bought-kinectv1/</link>
+      <link>https://yoneyan.dev/review/hard/kinect-v1/</link>
       <pubDate>Mon, 16 Jan 2017 17:47:38 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/i-bought-kinectv1/</guid>
+      <guid>https://yoneyan.dev/review/hard/kinect-v1/</guid>
       <description>kinect v1をフリマアプリのメルカリで買ったので紹介させていただきます。
 kinectとは マイクロソフトから販売されているデバイスです。 kinect自体は15000円もするのでゲーム機の周辺機器としては高いです。 高い理由は中にCPUが入っているからです。中に入っているCPUを外してしまうと、ゲーム機内で処理負担が大きくなるといった問題があり、値段がどうしても上がってしまったみたいです。
 kinectはもともとwindowsに対応していなかった！ 今となってはマイクロソフトが公式にドライバやSDKなどを出していますが、それは2011年の話です。 kinectの初期型が出たのは2010年ですが、その頃は公式にドライバがなかったのでパソコンとは接続できませんでしたが、すごい人たちがkinectの構造を解析しオープンソースとしてドライバを出していました。しかし、その時マイクロソフトは否定的な立場をとっていましたが、その後、2011年4月になりSDKの公開を発表し2012年2月にkinect for windowsを正式に公開されました。
@@ -2248,10 +2248,10 @@ kinectv2を買わなかった理由 この理由は高かったからです。�
     
     <item>
       <title>xbox one コントローラを初めて使った感想</title>
-      <link>https://yoneyan.dev/post/impression-of-using-xboxone-controller/</link>
+      <link>https://yoneyan.dev/review/hard/xboxone-controller/</link>
       <pubDate>Wed, 11 Jan 2017 03:49:01 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/impression-of-using-xboxone-controller/</guid>
+      <guid>https://yoneyan.dev/review/hard/xboxone-controller/</guid>
       <description>xbox one コントローラを購入したのでこちらの開封と簡単なレビューをさせていただきます。
 購入した理由 最近あまりゲームしなくなりましたが、たまにするときもあります。筆者の場合ゲーム機でゲームをやるのではなくパソコンでやっています。理由はゲーム機を買うお金がないので&amp;hellip; ということでパソコンでゲームを楽しんでいますが、パソコンでする場合はシミュレーションやFPSやRPGなどのゲームジャンルがほぼすべてのキーボードとマウスで全く問題なく快適に遊ぶことができます。 著者もキーボードとマウスで十分なので全く問題ないと思っていましたが、前々からコントローラで遊んでみたいなあと思うようになり、今回購入してみました。
 買った商品 自分が買ったxbox one コントローラはこれです。

@@ -31,10 +31,10 @@ set interfaces ethernet eth3 vif 100  このようにしてあげることで使
     
     <item>
       <title>PowerConnectでVLANの設定をする</title>
-      <link>https://yoneyan.dev/post/configure-vlan-with-powerconnect/</link>
+      <link>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</link>
       <pubDate>Fri, 21 Dec 2018 11:44:05 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/configure-vlan-with-powerconnect/</guid>
+      <guid>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</guid>
       <description>PowerConnect6248というものをバリバリ動かしている筆者です。
 やっぱり、家庭では最低でも48ポート必要ですよね？
 まあ、こいつのせいで電気代が掛かっているので対処法を考えていますが&amp;hellip;

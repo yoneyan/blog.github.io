@@ -30,10 +30,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;qu
     
     <item>
       <title>CentOSでリンクアグリゲーションの設定をしてみる</title>
-      <link>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</link>
+      <link>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</link>
       <pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/try-setting-linkaggregation-on-centos/</guid>
+      <guid>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</guid>
       <description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
 リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
 設定方法 設定方法として、以下の2つがあります。

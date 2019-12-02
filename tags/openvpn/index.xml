@@ -56,10 +56,10 @@ Private key data にclient1.keyの内容を入れます。
     
     <item>
       <title>UbuntuServerでOpenVPNサーバーを構築</title>
-      <link>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</link>
+      <link>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</link>
       <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
       
-      <guid>https://yoneyan.dev/post/openvpn-server-for-ubuntuserver/</guid>
+      <guid>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</guid>
       <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
 OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
 2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
