@@ -1,66 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Android on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tech/etc/</link>
-    <description>Recent content in Android on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Wed, 30 Jan 2019 19:41:05 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tech/etc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>wordpressでGutenbergエディタが開いてくれない</title>
-      <link>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</link>
-      <pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</guid>
-      <description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on のんびりと生きたい</title><link>https://yoneyan.dev/tech/etc/</link><description>Recent content in Android on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 30 Jan 2019 19:41:05 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>wordpressでGutenbergエディタが開いてくれない</title><link>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</link><pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate><guid>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</guid><description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
 結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
-このようになった    Gutenbergが開いてくれない
+このようになった Gutenbergが開いてくれない
 上の画像にもあるように、「エディターで予期しないエラーが発生しました」
 「復旧を試みる」をクリックしても何の反応もありませんでした。
 「投稿内容をコピー」や「エラー文をコピー」はクリックすると反応がありしっかりとコピーできました。
 たまたま、開いている記事だけがおかしいのかと思い、いくつか他の記事を開いても同じような現象が発生しました。
 プラグインを疑う 最初にプラグインを疑いました。
 すると、まさかのドンピシャでした。
-   すべてのプラグインを停止
+すべてのプラグインを停止
 すべてのプラグインを停止させてから一つずつ有効にさせていくと&amp;hellip;
-   プラグイン一覧
+プラグイン一覧
 Gutenbergプラグインが一番怪しいということがわかりました。
 おそらく、標準搭載される前に、このプラグインを使っていたので、これがバージョンが上がった段階でこのような現象が起こったことが今回の原因ではないかと思っています。
 結論 プラグインはしっかり管理しておいた方がいいです
-私の場合は、プラグインの関連でこの問題が起こりました。逆に、プラグインを全部無効にしてもGutenbergエディタが開けない場合は他の問題が起因している可能性が高いです。</description>
-    </item>
-    
-    <item>
-      <title>PS4で遅延なくカラオケをする方法</title>
-      <link>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</link>
-      <pubDate>Sat, 20 Jan 2018 10:56:41 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</guid>
-      <description>お詫びと訂正
+私の場合は、プラグインの関連でこの問題が起こりました。逆に、プラグインを全部無効にしてもGutenbergエディタが開けない場合は他の問題が起因している可能性が高いです。</description></item><item><title>PS4で遅延なくカラオケをする方法</title><link>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</link><pubDate>Sat, 20 Jan 2018 10:56:41 +0900</pubDate><guid>https://yoneyan.dev/tech/etc/karaoke-without-delay-on-ps4/</guid><description>お詫びと訂正
 (2019/03/11 20:08) 有線マイクでの採点は現時点ではできません。
 (2019/03/11 17:30) 当方の知識不足による影響で「センド＆リターン付きのミキサーを使う方法」にて間違った方法を載せておりました。原因と致しまして、当方のfx sendの知識が不十分でした。誠にお詫び申し上げます。只今、対処法につきまして、模索しておりますのでもう少しお待ちください。
 amazonリンクを修正中によりアクセスできない可能性があります。
 PS4でカラオケ＠DAMしてみる 前回、このブログではPC版のカラオケ＠DAMを紹介させていただきましたが、最近PS4を購入したのでPS4版のカラオケ＠DAMを試してみました。そうすると、PC版と同じように遅延が発生したのでその対処方を今回は記事にさせていただきます。
-PS4版の利点  導入しやすい 採点機能が二種類ある（PC版は1種類） 契約はチケット形式になっており、1日間、30日間、1年間の三種類がある（1年間契約ならお得！）  PS4版の欠点  オーディオインタフェースを使うことが出来ない PS4が必要  ざっと書きましたが、このような感じになっています。
+PS4版の利点 導入しやすい 採点機能が二種類ある（PC版は1種類） 契約はチケット形式になっており、1日間、30日間、1年間の三種類がある（1年間契約ならお得！） PS4版の欠点 オーディオインタフェースを使うことが出来ない PS4が必要 ざっと書きましたが、このような感じになっています。
 遅延なくカラオケをする方法 遅延なくカラオケをする方法として2通りの方法があります。
- 有線マイクを使う方法（採点できない） ワイヤレスマイクを使う方法（音声を受け取る側に出力端子が2つあるもの）  方法があります。
+有線マイクを使う方法（採点できない） ワイヤレスマイクを使う方法（音声を受け取る側に出力端子が2つあるもの） 方法があります。
 注意していただきたいところとして、「有線マイクを使う方法」では採点ができないという点です。
 「センド＆リターン付きミキサーを使う方法」を試された方で、採点をしたい方は、現時点では採点できません。
 共通して必要なもの PS4につなげるときに必要になるものです。
 マイクの音とカラオケ音源を混ぜる必要があるため、ミキサーが必要になります。
-{:nomarkdown}  {:/nomarkdown}
+{:nomarkdown} {:/nomarkdown}
 大体、こういう汎用性のあるものは認識してくれるので家に転がってるものがあればそれでも使えることは多いです。オーディオインタフェースは基本無理です。
 ミキサーに接続するときに業務用の6.3mmジャックというものになるので
-{:nomarkdown}   {:/nomarkdown}
+{:nomarkdown} {:/nomarkdown}
 スピーカー（必要な場合）
 ミキサーに音が出力されるため、スピーカーで流す場合は別途でスピーカーを用意する必要があります。
 イヤホンでカラオケする場合は必要ではないです。
-{:nomarkdown}  {:/nomarkdown}
+{:nomarkdown} {:/nomarkdown}
 有線マイクを使う方法（採点はできません） こちらの方法ではPS4側にマイク音がいかないので、採点出来ないです。
 有線マイクが必要になります。
 {:nomarkdown} {:/nomarkdown}
@@ -69,43 +41,25 @@ PS4版の利点  導入しやすい 採点機能が二種類ある（PC版は1�
 ワイヤレスマイクを使う方法 こちらの方法は検証済みです。また、こちらの方法では採点も可能です。
 PS4側につなげる必要があるので、オーディオアダプタをつけます。
 大体、こういう汎用性のあるものは認識してくれるので家に転がってるものがあればそれでも使えることは多いです。オーディオインタフェースは基本無理です。
-   Behringer Xenyx q502usb Amazon  楽天市場  Yahooショッピング      {:nomarkdown} {:/nomarkdown}</description>
-    </item>
-    
-    <item>
-      <title>Simplicityでパーマリンクが日本語にできない</title>
-      <link>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</link>
-      <pubDate>Mon, 06 Feb 2017 23:58:32 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</guid>
-      <description>雑談 つい最近、wordpressテーマをstinger8からSimplicity2に変更しました。
+Behringer Xenyx q502usb Amazon 楽天市場 Yahooショッピング {:nomarkdown} {:/nomarkdown}</description></item><item><title>Simplicityでパーマリンクが日本語にできない</title><link>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</link><pubDate>Mon, 06 Feb 2017 23:58:32 +0900</pubDate><guid>https://yoneyan.dev/tech/etc/error-permalink-japanese-with-simplicity/</guid><description>雑談 つい最近、wordpressテーマをstinger8からSimplicity2に変更しました。
 変更理由としてはstinger系が有料化したことにより、かなり機能が削られてしまいました。機能はプラグインで補えるのでどちらでもいいのですが、adsense広告がどうしても縦並びになってしまい悩んでいました。テーマ編集で横並びにしようと、ごにょごにょしても全く改善される見込みがなかったので。久しぶりにSimplicityを入れようと思い入れました。
 adsense広告が横並びになってくれる上に、いろいろこのテーマ単体で設定できるのでこれからは使おうかなと思っているところです。
 本題 その話はさておき&amp;hellip;
 今回はSimplicityで新規作成したときにブログ開設当初からパーマリンク設定を投稿名にしているにもかかわらず、編集しても日本語に変更できないという謎現象が起こりました。
-   https://[domain-name]/browserなら変更が可能ですが、
+https://[domain-name]/browserなら変更が可能ですが、
 https://[domain-name]/ブラウザにはなぜか変更できなかったんです。
 英語や数字なら問題ないのに日本語への変更が不能だったので、いろいろ設定をいじってみると、簡単に解決できました。
-設定方法 1.当たり前ですが、管理者ログインします。 2.外観＞カスタマイズを選択します。    3.カスタマイズ欄からその他が下の方にあるので見つけたら選択    4.そうすると、日本語のスラッグを有効にするというチェックマークが出てくるのでチェックマークにチェックをつける    5.これで終わり まとめ このように簡単にできます。
+設定方法 1.当たり前ですが、管理者ログインします。 2.外観＞カスタマイズを選択します。 3.カスタマイズ欄からその他が下の方にあるので見つけたら選択 4.そうすると、日本語のスラッグを有効にするというチェックマークが出てくるのでチェックマークにチェックをつける 5.これで終わり まとめ このように簡単にできます。
 ていうかこれ、google大先生に尋ねると普通に公式サイトに詳しくやり方が載っていました。Simplicityは公式サイトもかなり充実しており、ヘルプも大量に載っているのでそちらから調べた方がいいように思いました。
 SEO的には英語の方がいいやら数字の方がいいやらたくさんあると言われています。しかし、正直なところどっちがいいのかと言われてもわからないんです。リニューアル前のブログではパーマリンクをすべて英語にしていましたが、海外の人が見てくれるようなグローバルな仕様にしていないからいいかなと思い、リニューアル後はすべてパーマリンクを日本語にしました。
-ということで、もしわからない点などがありましたら答える範囲でお答えさせていただきますので、コメント欄に送信してください。</description>
-    </item>
-    
-    <item>
-      <title>kinectでMMDを動かしてみた</title>
-      <link>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</link>
-      <pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</guid>
-      <description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
+ということで、もしわからない点などがありましたら答える範囲でお答えさせていただきますので、コメント欄に送信してください。</description></item><item><title>kinectでMMDを動かしてみた</title><link>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</link><pubDate>Tue, 17 Jan 2017 15:20:24 +0900</pubDate><guid>https://yoneyan.dev/tech/etc/tried-moving-mmd-with-kinect/</guid><description>前回はkinectの簡単な紹介をさせていただきました。ということで今回は本題であるkinectを使ってMMDを動かしてみます！！
 著者のPC環境 OS:windows10Pro
 CPU:corei7 4790k
 GPU:gtx970
 memory:16GB
 kinect:kinectv1（初期）
 となっています。そこそこのスペックが必要と思っていましたが、CF-S9(Corei5-520M/GPUオンボード)でも動いたので、そこまでのスペックの高くないパソコンでも動きました。
-環境構築をする 方法  OPENNIを使って動かす MoggNUIを使って動かす  kinectでMMDを動かす方法はこの二つがあります。
+環境構築をする 方法 OPENNIを使って動かす MoggNUIを使って動かす kinectでMMDを動かす方法はこの二つがあります。
 今回は2番の方法で構築していきます。OPENNIを使ってもできますが、windows７じゃないと動かないなどの問題が起きてあきらめました&amp;hellip;
 それ以前にOPENNIを使って構築するのがくそみたいにめんどくさいので2番の方法をお勧めします。
 ダウンロード Kinect for Windows SDK v1.8（必須）
@@ -115,14 +69,10 @@ http://www.geocities.jp/higuchuu4/
 MoggNUI（必須）
 https://sites.google.com/site/moggproject/
 もし、リンク切れがあった場合はお問い合わせ欄又は下にあるフォーム欄に訂正箇所を送信していただけると助かります！！
-インストール １.最初にKinect for Windows SDK v1.8をインストールします。    インストールします。インストールすると自動的にドライバも導入されるのでこの作業はしましょう。
-2.MikuMikuDance（DirectX9 Ver）を適当なフォルダに展開する    こんな風に展開します。
+インストール １.最初にKinect for Windows SDK v1.8をインストールします。 インストールします。インストールすると自動的にドライバも導入されるのでこの作業はしましょう。
+2.MikuMikuDance（DirectX9 Ver）を適当なフォルダに展開する こんな風に展開します。
 これでMikuMikuDance.exeを起動できるか確かめましょう。
 もし動かない場合は下のランタイムをインストールしてください。
 Microsoft Visual C++ 2005 再頒布可能パッケージ(x86) Microsoft Visual C++ 2008 再頒布可能パッケージ(x86) DirectX エンド ユーザー ランタイム
 3.DxOpenNI.dllとMoggNUI の導入 DxOpenNI.dllを展開すると
-   のように出てくるのでSamplesConfig.</description>
-    </item>
-    
-  </channel>
-</rss>
+のように出てくるのでSamplesConfig.</description></item></channel></rss>

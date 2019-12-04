@@ -1,56 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>app on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/app/</link>
-    <description>Recent content in app on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Mon, 30 Apr 2018 02:33:50 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/app/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>おすすめの無料ツールアプリ5選</title>
-      <link>https://yoneyan.dev/app/tool/</link>
-      <pubDate>Mon, 30 Apr 2018 02:33:50 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/app/tool/</guid>
-      <description>今回は、おすすめの無料ツールアプリを紹介していきます。 今回は5選ということでツールアプリを5つ紹介させていただきます。
-1.LastPass    対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.lastpass.lpandroid iOS(iTunes):https://itunes.apple.com/jp/app/lastpass-password-manager/id324613447?mt=8 公式サイト:https://www.lastpass.com/ja パスワード管理アプリのLastPassはおすすめです。 Android版ではアプリやブラウザなどで自動入力することができるので、Android端末を持っている方は是非入れてほしいアプリだと思います。つい最近までは、有料版のみでの対応となっていましたが、無料版でも自動入力が出来るようになりました。 iOS版でも半自動入力してくれます。 PC版のブラウザの拡張プラグインもあるので、端末間でのパスワードを共有するのに使うことが出来ます。 パソコンと端末をシームレスに共有することができるのでおすすめのアプリです。
-2.Keep    対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.google.android.keep&amp;amp;hl=ja iOS(iTunes):https://itunes.apple.com/jp/app/google-keep/id1029207872?mt=8 公式サイト:https://keep.google.com/ Googleが提供しているメモ帳サービスになります。 メモ帳アプリはいろいろありますが、Keepの良さはUIがかなりシンプルなところです。 使って損はないサービスのように思います。
-3.Send Anywhere    対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.estmob.android.sendanywhere iOS(iTunes):https://itunes.apple.com/jp/app/send-anywhere-ファイル転送-送信/id596642855?mt=8 公式サイト:https://send-anywhere.com/ja/ OSに関係なくインターネットさえつながっていれば、ファイルを送れるサービスです。 iOSの場合はAirDropという最強の機能があるんですが、Windowsにはファイルを飛ばすことができないということと、Androidの場合はそのような機能がないので頻繁にパソコンに送りたいという方にはおすすめのアプリです。
-4.pushbullet    対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.pushbullet.android iOS(iTunes):https://itunes.apple.com/jp/app/pushbullet/id810352052?mt=8 Pushbulletはパソコンに通知を送ったり、ブラウザをパソコンで見たい時にリンクを送れるアプリです。例えば、スマホで見ていたサイトをパソコンで見たいと思った時に、Chromeのようにマルチプラットフォームでも同期ができる場合は、履歴からたどれば見ていたリンクを表示することができます。しかし、探すのがめんどくさい場合や違うブラウザで見たい時などに不便になります。そこで、このアプリを使うとブラウザに関係なくリンクなどを送ることができる（リンクだけではなく、動画や写真とかも送れるがリンクに特化している）のでスマホで作業した後にパソコンで続行したい時に使う時にとても便利なアプリです。</description>
-    </item>
-    
-    <item>
-      <title>おすすめのブラウザ4選</title>
-      <link>https://yoneyan.dev/app/browser/</link>
-      <pubDate>Sun, 05 Feb 2017 23:59:24 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/app/browser/</guid>
-      <description>1.Chrome    リンク:https://www.google.co.jp/chrome/browser/
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>app on のんびりと生きたい</title><link>https://yoneyan.dev/app/</link><description>Recent content in app on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 30 Apr 2018 02:33:50 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/app/index.xml" rel="self" type="application/rss+xml"/><item><title>おすすめの無料ツールアプリ5選</title><link>https://yoneyan.dev/app/tool/</link><pubDate>Mon, 30 Apr 2018 02:33:50 +0900</pubDate><guid>https://yoneyan.dev/app/tool/</guid><description>今回は、おすすめの無料ツールアプリを紹介していきます。 今回は5選ということでツールアプリを5つ紹介させていただきます。
+1.LastPass 対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.lastpass.lpandroid iOS(iTunes):https://itunes.apple.com/jp/app/lastpass-password-manager/id324613447?mt=8 公式サイト:https://www.lastpass.com/ja パスワード管理アプリのLastPassはおすすめです。 Android版ではアプリやブラウザなどで自動入力することができるので、Android端末を持っている方は是非入れてほしいアプリだと思います。つい最近までは、有料版のみでの対応となっていましたが、無料版でも自動入力が出来るようになりました。 iOS版でも半自動入力してくれます。 PC版のブラウザの拡張プラグインもあるので、端末間でのパスワードを共有するのに使うことが出来ます。 パソコンと端末をシームレスに共有することができるのでおすすめのアプリです。
+2.Keep 対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.google.android.keep&amp;amp;hl=ja iOS(iTunes):https://itunes.apple.com/jp/app/google-keep/id1029207872?mt=8 公式サイト:https://keep.google.com/ Googleが提供しているメモ帳サービスになります。 メモ帳アプリはいろいろありますが、Keepの良さはUIがかなりシンプルなところです。 使って損はないサービスのように思います。
+3.Send Anywhere 対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.estmob.android.sendanywhere iOS(iTunes):https://itunes.apple.com/jp/app/send-anywhere-ファイル転送-送信/id596642855?mt=8 公式サイト:https://send-anywhere.com/ja/ OSに関係なくインターネットさえつながっていれば、ファイルを送れるサービスです。 iOSの場合はAirDropという最強の機能があるんですが、Windowsにはファイルを飛ばすことができないということと、Androidの場合はそのような機能がないので頻繁にパソコンに送りたいという方にはおすすめのアプリです。
+4.pushbullet 対応OS:Android,iOS Android(GooglePlay):https://play.google.com/store/apps/details?id=com.pushbullet.android iOS(iTunes):https://itunes.apple.com/jp/app/pushbullet/id810352052?mt=8 Pushbulletはパソコンに通知を送ったり、ブラウザをパソコンで見たい時にリンクを送れるアプリです。例えば、スマホで見ていたサイトをパソコンで見たいと思った時に、Chromeのようにマルチプラットフォームでも同期ができる場合は、履歴からたどれば見ていたリンクを表示することができます。しかし、探すのがめんどくさい場合や違うブラウザで見たい時などに不便になります。そこで、このアプリを使うとブラウザに関係なくリンクなどを送ることができる（リンクだけではなく、動画や写真とかも送れるがリンクに特化している）のでスマホで作業した後にパソコンで続行したい時に使う時にとても便利なアプリです。</description></item><item><title>おすすめのブラウザ4選</title><link>https://yoneyan.dev/app/browser/</link><pubDate>Sun, 05 Feb 2017 23:59:24 +0900</pubDate><guid>https://yoneyan.dev/app/browser/</guid><description>1.Chrome リンク:https://www.google.co.jp/chrome/browser/
 OS:windows7以降(32bit,64bit),macos10.9以降,linux(64bitのみ),android,ios
 Chromiumベースで作られています。 googleが自ら作っているブラウザです。使っている人が一番多いといわれています。 しかし、このブラウザで20タブ前後開くとRAMが2G以上も消費します。なので、比較的高性能なパソコンでないと、動作に支障をきたすのであまりお勧めできません。 ですが、googleが作っていることもあって連携がちゃんとできているので、
-2.Firefox    リンク:https://www.mozilla.org/ja/firefox/new/ OS:windowsXPSP2以降(32bit,64bit),macos10.9以降,linux(32bit,64bit),android,ios
+2.Firefox リンク:https://www.mozilla.org/ja/firefox/new/ OS:windowsXPSP2以降(32bit,64bit),macos10.9以降,linux(32bit,64bit),android,ios
 なんといっても、拡張機能の種類の多さです。数えきれないほどあるのでカスタマイズしまくりたい人にはおすすめです。 また、タブを開きすぎてもメモリの消費が比較的少ないです。しかし、拡張機能（プラグイン）を入れすぎると、重くなってしまうところに注意が必要です。 開発環境などが詰め込まれているFirefoxDevelopEdition版もあります。UIがかっこいいということもあって自分はこれを使っています。
-3.Opera    リンク:http://www.opera.com/ja
+3.Opera リンク:http://www.opera.com/ja
 OS:windows(32bit,64bit),macos10.9以降,linux(32bit,64bit),android,ios
 Chromiumベースです。なので、不具合なくほぼすべてのサイトが見れます。（たぶん） 広告カットによる、節電機能や低速回線でも快適に使えるようにOperaTarboというものが標準で搭載されています。 また、Chromiumベースということで、Chromeと同じベースエンジンを使用しているのであまり問題なく、使えます。 ネットブックなどのように遠隔地や低スペックパソコンで使う場合におすすめです。
-4.Vivaldi    リンク:https://vivaldi.com
+4.Vivaldi リンク:https://vivaldi.com
 OS:windows(32bit,64bit),macos10.9以降,linux(32bit,64bit)
-最近、新たに作られたブラウザです。 最近のブラウザの中では使用するメモリがかなり低いです。 しかし、できたばっかりということもあって不具合が多い印象があります。正しく表示してくれなかったり、クリックしても次に進めないようなことが多いように思います。アップデートでどんどん良くなってきているので、大丈夫でしょう。 このブラウザのCEOが元OperaのCEOということもあるので、これからが楽しみです。</description>
-    </item>
-    
-    <item>
-      <title>PCリモートにおすすめのフリーソフト3選</title>
-      <link>https://yoneyan.dev/app/remote-freesoft/</link>
-      <pubDate>Fri, 03 Feb 2017 03:05:13 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/app/remote-freesoft/</guid>
-      <description>どうしてもPCを遠隔地や離れた部屋から操作したい時があります。そのときにリモートでPCを操作できるフリーソフトを集めてみました。
-1.TeamViewer    公式サイト:https://www.teamviewer.com/ja/download/windows/ 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/teamviewer/
+最近、新たに作られたブラウザです。 最近のブラウザの中では使用するメモリがかなり低いです。 しかし、できたばっかりということもあって不具合が多い印象があります。正しく表示してくれなかったり、クリックしても次に進めないようなことが多いように思います。アップデートでどんどん良くなってきているので、大丈夫でしょう。 このブラウザのCEOが元OperaのCEOということもあるので、これからが楽しみです。</description></item><item><title>PCリモートにおすすめのフリーソフト3選</title><link>https://yoneyan.dev/app/remote-freesoft/</link><pubDate>Fri, 03 Feb 2017 03:05:13 +0900</pubDate><guid>https://yoneyan.dev/app/remote-freesoft/</guid><description>どうしてもPCを遠隔地や離れた部屋から操作したい時があります。そのときにリモートでPCを操作できるフリーソフトを集めてみました。
+1.TeamViewer 公式サイト:https://www.teamviewer.com/ja/download/windows/ 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/teamviewer/
 対応OS(ホスト側):windows,mac,linux,android
 対応OS(クライアント側):windows,mac,linux,android,ios,windowsRT,blackberry
 定番のリモートソフトです。
@@ -58,20 +21,16 @@ OS:windows(32bit,64bit),macos10.9以降,linux(32bit,64bit)
 このソフトはほぼすべてのマルチプラットフォームに対応しているのでどの端末からでもリモートアクセスできる点が優れています。
 会議という機能があり、パソコンの画面を全員で見ながら指示を出したり、チャットをすることもできるので動画編集などのように家にいてもクリエイター同士で話し合いながら作業をすることも可能です。
 一台のクライアントから複数接続も簡単にできるので、複数のPCを操作することも可能です。
-2.AnyDesk    公式サイト:https://anydesk.com/remote-desktop 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/anydesk/
+2.AnyDesk 公式サイト:https://anydesk.com/remote-desktop 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/anydesk/
 対応OS(ホスト側):windows,mac,linux,freebsd
 対応OS(クライアント側):windows,mac,linux,freebsd
 また、GPUを使用するので遅延などがあまりなく、遠隔PCからゲームをするのに適しています。（さすがにFPSやMMORPGは無理ですが&amp;hellip;）
 ゲームに適していることもあり、ほかのPCリモートソフトに比べて、品質を損なわずに圧縮率を高めています。
 androidやiosでは今のところアプリはありませんが、作る計画もあるみたいなので楽しみです。
 シンプルで使いやすいソフトになるのでパソコンが苦手な方でも簡単に使えます。
-3.Mirror-DTC    公式サイト:http://t-ishii.la.coocan.jp/hp/mc/ 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/mirrordtc/
+3.Mirror-DTC 公式サイト:http://t-ishii.la.coocan.jp/hp/mc/ 窓の杜ダウンロードリンク:http://forest.watch.impress.co.jp/library/software/mirrordtc/
 対応OS(ホスト側):windows,mac,ubuntu
 対応OS(クライアント側):windows,mac,ubuntu,android
 このソフトは一言でいえばめちゃくちゃ軽く動いてくれます。あまりリソースを占領しないこともあり、サーバーのGUI操作に向いているように感じます。
 また、圧縮率が高い方なので、外出先からモバイルデータ通信で接続してもあまり、データ量が取られないのでおすすめです。
-遠隔で違う部屋に置いているサーバーをちょっと触りたいけどわざわざ行くのがめんどくさいという方にはおすすめです。</description>
-    </item>
-    
-  </channel>
-</rss>
+遠隔で違う部屋に置いているサーバーをちょっと触りたいけどわざわざ行くのがめんどくさいという方にはおすすめです。</description></item></channel></rss>

@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>pc on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tags/pc/</link>
-    <description>Recent content in pc on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sat, 19 May 2018 19:23:25 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tags/pc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>おすすめの中古ノートパソコンメーカー</title>
-      <link>https://yoneyan.dev/talk/recommended-used-laptop/</link>
-      <pubDate>Sat, 19 May 2018 19:23:25 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/talk/recommended-used-laptop/</guid>
-      <description>今回はおすすめの中古パソコンのメーカーを紹介をします！
-第1位　Let&amp;rsquo;s note    特徴  バッテリーが結構持つ キーボードがそこそこ打ちやすい 軽い＆頑丈 ディスクドライブが入る（機種によって違う）  個人的には中古ノートパソコンを買うならLet&amp;rsquo;s noteが一番いいと思います。 Let&amp;rsquo;s noteはかなり丈夫な作りになっており、パソコンを机の上から落としても壊れない設計になっているため、筆者のように雑に扱うパソコンユーザーにはかなりおすすめのノートパソコンとなります。 バッテリーも交換し気になっているのでバッテリーが劣化した場合は取り替えることで使えるのでおすすめです。スペック的には他の中古ノートパソコンと比べるとコストパフォーマンスはあまりよくありませんが、パソコン自体の重さが軽いのでモバイルノートパソコンとしていろんな場所で使える点がかなり優れた製品のように思います。また、業務で使うことを想定されていることもあって、新製品でもHDMIやD-subを搭載しているので変換ケーブルが必要ないので持ち歩きに使う端末としてめちゃくちゃおすすめです。 また、Let&amp;rsquo;s noteはキーストローク（キーボードのキーを押すときの深さのことです）が深くかなり打ちやすいので仕事や趣味で文字打ちを重視してる方はおすすめです。
-第二位 ThinkPad    特徴  頑丈 キーボード最強 トラックポインターがなかなか使いやすい かっこいい  中古のThinkpadもかなりいいと思います。 Let&amp;rsquo;s Noteに比べると重いというところはあるものの、かっこよさは絶対ThinkPadの方が上です。 最近のThinkPadではバッテリー交換が出来なくなってきているのですが、中古パソコンの大半はバッテリー交換が出来るようになっているので電池が消耗した際の交換もすぐ出来るのであえて中古を買うというのも一つの選択肢のように思います。 ThinkPadの特徴ともいえる、トラックポイントが慣れるとかなり使いやすいです。キーボードで打っている時にどうしてもマウスで動かさなければならないところが出てきても、トラックポイントの場合は少しの移動で済みます。
-まとめ 中古パソコンを買う際はThinkPadかLet&amp;rsquo;s Noteが超おすすめです。 中古パソコンということもあり、頑丈性が強い方が絶対にいいです。基本、紹介させていただいた2つのメーカーはバッテリーを取り替えることもできるので、十分普段使い出来ます。 筆者も、Let&amp;rsquo;s NoteのCF-SX2という機種の中古パソコンを使っていますが、バッテリーは余裕で6～7時間以上は持ちます。あまり、触らなかったら8時間はいけます。 とこんな感じなので、お金がない学生はあまり、パソコンにはお金をかけたくない方にはお勧めです！（＾＿＾）</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pc on のんびりと生きたい</title><link>https://yoneyan.dev/tags/pc/</link><description>Recent content in pc on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 19 May 2018 19:23:25 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/pc/index.xml" rel="self" type="application/rss+xml"/><item><title>おすすめの中古ノートパソコンメーカー</title><link>https://yoneyan.dev/talk/recommended-used-laptop/</link><pubDate>Sat, 19 May 2018 19:23:25 +0900</pubDate><guid>https://yoneyan.dev/talk/recommended-used-laptop/</guid><description>今回はおすすめの中古パソコンのメーカーを紹介をします！
+第1位　Let&amp;rsquo;s note 特徴 バッテリーが結構持つ キーボードがそこそこ打ちやすい 軽い＆頑丈 ディスクドライブが入る（機種によって違う） 個人的には中古ノートパソコンを買うならLet&amp;rsquo;s noteが一番いいと思います。 Let&amp;rsquo;s noteはかなり丈夫な作りになっており、パソコンを机の上から落としても壊れない設計になっているため、筆者のように雑に扱うパソコンユーザーにはかなりおすすめのノートパソコンとなります。 バッテリーも交換し気になっているのでバッテリーが劣化した場合は取り替えることで使えるのでおすすめです。スペック的には他の中古ノートパソコンと比べるとコストパフォーマンスはあまりよくありませんが、パソコン自体の重さが軽いのでモバイルノートパソコンとしていろんな場所で使える点がかなり優れた製品のように思います。また、業務で使うことを想定されていることもあって、新製品でもHDMIやD-subを搭載しているので変換ケーブルが必要ないので持ち歩きに使う端末としてめちゃくちゃおすすめです。 また、Let&amp;rsquo;s noteはキーストローク（キーボードのキーを押すときの深さのことです）が深くかなり打ちやすいので仕事や趣味で文字打ちを重視してる方はおすすめです。
+第二位 ThinkPad 特徴 頑丈 キーボード最強 トラックポインターがなかなか使いやすい かっこいい 中古のThinkpadもかなりいいと思います。 Let&amp;rsquo;s Noteに比べると重いというところはあるものの、かっこよさは絶対ThinkPadの方が上です。 最近のThinkPadではバッテリー交換が出来なくなってきているのですが、中古パソコンの大半はバッテリー交換が出来るようになっているので電池が消耗した際の交換もすぐ出来るのであえて中古を買うというのも一つの選択肢のように思います。 ThinkPadの特徴ともいえる、トラックポイントが慣れるとかなり使いやすいです。キーボードで打っている時にどうしてもマウスで動かさなければならないところが出てきても、トラックポイントの場合は少しの移動で済みます。
+まとめ 中古パソコンを買う際はThinkPadかLet&amp;rsquo;s Noteが超おすすめです。 中古パソコンということもあり、頑丈性が強い方が絶対にいいです。基本、紹介させていただいた2つのメーカーはバッテリーを取り替えることもできるので、十分普段使い出来ます。 筆者も、Let&amp;rsquo;s NoteのCF-SX2という機種の中古パソコンを使っていますが、バッテリーは余裕で6～7時間以上は持ちます。あまり、触らなかったら8時間はいけます。 とこんな感じなので、お金がない学生はあまり、パソコンにはお金をかけたくない方にはお勧めです！（＾＿＾）</description></item></channel></rss>

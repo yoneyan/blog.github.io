@@ -1,48 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CentOS7 on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tags/centos7/</link>
-    <description>Recent content in CentOS7 on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 11 Aug 2019 23:29:40 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tags/centos7/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>nmcliで無線がunmanagedの場合の対処法</title>
-      <link>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</link>
-      <pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</guid>
-      <description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CentOS7 on のんびりと生きたい</title><link>https://yoneyan.dev/tags/centos7/</link><description>Recent content in CentOS7 on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 11 Aug 2019 23:29:40 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/centos7/index.xml" rel="self" type="application/rss+xml"/><item><title>nmcliで無線がunmanagedの場合の対処法</title><link>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</link><pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate><guid>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</guid><description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
 ここでは無線LANをWLANと記述します。
-確認してみる nmcli device  より、WLANの管理状態を確かめてみます。
- DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet connected eth0 wlp2s0 wifi unmanaged --  とこのようにWLANだけ管理されていない状況になっていることがわかります。
+確認してみる nmcli device より、WLANの管理状態を確かめてみます。
+DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet connected eth0 wlp2s0 wifi unmanaged -- とこのようにWLANだけ管理されていない状況になっていることがわかります。
 このような場合は、NetworkManagerのWifiを管理するNetworkManager-wifiを入れる必要があります。
-yum -y install NetworkManager-wifi  このパッケージを導入してから
-nmcli d wifi nmcli d nmcli connection  を実行してから、しっかりと周りのwifiが見えていれば成功です！！
-失敗例 nmcli device set wlp2s0 managed yes  とこのコマンドを実行すると、一見有効になってように見えます。
+yum -y install NetworkManager-wifi このパッケージを導入してから
+nmcli d wifi nmcli d nmcli connection を実行してから、しっかりと周りのwifiが見えていれば成功です！！
+失敗例 nmcli device set wlp2s0 managed yes とこのコマンドを実行すると、一見有効になってように見えます。
 しかし、
-nmcli d wifi  としてもなにも帰ってこないので、 networkmanager-wifiパッケージが入っていないのがおそらく原因で無理なのだと思われます。</description>
-    </item>
-    
-    <item>
-      <title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title>
-      <link>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</link>
-      <pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</guid>
-      <description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
+nmcli d wifi としてもなにも帰ってこないので、 networkmanager-wifiパッケージが入っていないのがおそらく原因で無理なのだと思われます。</description></item><item><title>LinuxでRAID構築する際にリビルドが遅すぎる時の対処法</title><link>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</link><pubDate>Sun, 31 Mar 2019 15:17:42 +0900</pubDate><guid>https://yoneyan.dev/tech/linux/rebuilding-slow-when-building-raid-on-linux/</guid><description>CentOSで1TBのHDDをRAID1に構築する際にかなり時間が掛かりそうだったので、対処法の紹介です。
 http://liliumrubellum.blog10.fc2.com/blog-entry-300.html
 上のブログさんの記事を参考にしました。（ほぼ、同じです。）
 備忘録として、こちらに書かせていただきます。
-どれくらいの時間がかかるのか cat /proc/mdstat  と実行すると、RAID状況を確認できます。
-改善前 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&amp;gt;....................] resync = 2.1% (21226880/976628736) finish=1186.8min speed=13416K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  13M/secはあまりにも遅すぎるので、これをなのとかします。
-改善後 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&amp;gt;....................] resync = 4.2% (41735552/976628736) finish=292.9min speed=53181K/sec bitmap: 8/8 pages [32KB], 65536KB chunk  改善後はかなり速度が上がりました。</description>
-    </item>
-    
-  </channel>
-</rss>
+どれくらいの時間がかかるのか cat /proc/mdstat と実行すると、RAID状況を確認できます。
+改善前 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&amp;gt;....................] resync = 2.1% (21226880/976628736) finish=1186.8min speed=13416K/sec bitmap: 8/8 pages [32KB], 65536KB chunk 13M/secはあまりにも遅すぎるので、これをなのとかします。
+改善後 Personalities : [raid1] md0 : active raid1 sdc1[1] sdb1[0] 976628736 blocks super 1.2 [2/2] [UU] [&amp;gt;....................] resync = 4.2% (41735552/976628736) finish=292.9min speed=53181K/sec bitmap: 8/8 pages [32KB], 65536KB chunk 改善後はかなり速度が上がりました。</description></item></channel></rss>

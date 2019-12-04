@@ -1,50 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Windows on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tech/windows/</link>
-    <description>Recent content in Windows on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 08 Apr 2018 12:11:09 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tech/windows/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>windows10で記憶域プールが作成できない</title>
-      <link>https://yoneyan.dev/tech/windows/cannot-create-storage-pool-on-windows10/</link>
-      <pubDate>Sun, 08 Apr 2018 12:11:09 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/windows/cannot-create-storage-pool-on-windows10/</guid>
-      <description>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&amp;hellip;&amp;hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
-起きたこと    記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
-解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。  
-
-そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。  
-
-まとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！</description>
-    </item>
-    
-    <item>
-      <title>Windows10 Fall Creators Updateでonedriveのファイルオンデマンドが使えない場合の対処法</title>
-      <link>https://yoneyan.dev/tech/windows/cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</link>
-      <pubDate>Sun, 22 Oct 2017 04:25:45 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/windows/cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</guid>
-      <description>つい最近、年に二回のwindows10鬼の大型アップデートの時期が来てしまいました。 普通はwindows updateを待つべき何ですが、いきなりアップデートされては困るのでいつも手動でアップデートさせている筆者です。年一回で十分のように思ってしまうのは自分だけなのかなｗ 今回は、アップデートしたのはいいんですが、今回のアップデートの醍醐味のひとつであるonedriveのファイルオンデマンドが使えないので、その対処法についてこの記事ではご紹介していきます。  
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on のんびりと生きたい</title><link>https://yoneyan.dev/tech/windows/</link><description>Recent content in Windows on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 08 Apr 2018 12:11:09 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>windows10で記憶域プールが作成できない</title><link>https://yoneyan.dev/tech/windows/cannot-create-storage-pool-on-windows10/</link><pubDate>Sun, 08 Apr 2018 12:11:09 +0900</pubDate><guid>https://yoneyan.dev/tech/windows/cannot-create-storage-pool-on-windows10/</guid><description>TX100 S3という富士通のサーバーで録画サーバーを作りましたが、冗長化プール絡みで問題があったので対処法などをここに書いていきます。 そもそも記憶域プールを使っている理由はRAIDと同じように保護できるのに、HDDの容量がバラバラでもその機能を使える点です。 いつも通りにその機能を使おうとしたのですが、記憶域プールが作成できない という謎の問題が発生しました。 windows10を使ってる理由のひとつに記憶域プールがあるのにそれが使えなくなってしまうのは&amp;hellip;&amp;hellip;.のような感じになってしまうので当方で起きた事象を紹介させていただきます。
+起きたこと 記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
+解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。
+そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。
+まとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！</description></item><item><title>Windows10 Fall Creators Updateでonedriveのファイルオンデマンドが使えない場合の対処法</title><link>https://yoneyan.dev/tech/windows/cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</link><pubDate>Sun, 22 Oct 2017 04:25:45 +0900</pubDate><guid>https://yoneyan.dev/tech/windows/cannot-use-onedrive-file-on-demand-with-windows10fallcreatorsupdate/</guid><description>つい最近、年に二回のwindows10鬼の大型アップデートの時期が来てしまいました。 普通はwindows updateを待つべき何ですが、いきなりアップデートされては困るのでいつも手動でアップデートさせている筆者です。年一回で十分のように思ってしまうのは自分だけなのかなｗ 今回は、アップデートしたのはいいんですが、今回のアップデートの醍醐味のひとつであるonedriveのファイルオンデマンドが使えないので、その対処法についてこの記事ではご紹介していきます。
 Windows 10 Fall Creators Updateにアップデートさせたのになんでないねんｗって普通なるよねー
 そもそも、なぜこうなってしまうのか？ onedriveのバージョンが古いというのが一番の影響になります。 一番、最新のonedriveに更新する必要があります。 そもそも、なんでアップデートしたときにonedriveの最新版を入れないのかがよくわからないんですがｗ ここではWindows 10 Fall Creators Updateを更新したという前提で手順を説明させていただきます。
 手順 1．onedriveの最新版をダウンロードし、インストール こちらのリンクからダウンロードし、インストールしてください。
 2．再起動する そのままの意味です。普通に再起動してください。
-3．onedriveの設定をする    このowndriveロゴを右クリックで開き、設定を選択します。  
-
+3．onedriveの設定をする このowndriveロゴを右クリックで開き、設定を選択します。
 設定画面が出てきたら、ファイルのオンデマンドというのが出てきているので、ここのチェックボックスにチェックを入れることで有効になります。
 もし、ここでファイルのオンデマンドという項目が出てきていない場合は、何回か手順1を繰り返すとできる可能性があります。
 それでも、うまくいない場合は下のコメント欄に質問していただけると、お役に立てるかわかりませんが、可能な限り返事させていただきますのでよろしくお願いいたします。
-まとめ Windows10 Fall Creators Updateは大型アップデートの中では一番実用度が高いアップデートだと個人的には思っています。 今回の大型アップデートの醍醐味のひとつなのにこの問題はどうなのかなと思ってしまうところですが、windowsupdateでまだ供給されていないので仕方がないのかなと思う気持ちもあります。これが使えると容量不足に悩まされることなく、使えるので皆さんも使ってみてください。</description>
-    </item>
-    
-  </channel>
-</rss>
+まとめ Windows10 Fall Creators Updateは大型アップデートの中では一番実用度が高いアップデートだと個人的には思っています。 今回の大型アップデートの醍醐味のひとつなのにこの問題はどうなのかなと思ってしまうところですが、windowsupdateでまだ供給されていないので仕方がないのかなと思う気持ちもあります。これが使えると容量不足に悩まされることなく、使えるので皆さんも使ってみてください。</description></item></channel></rss>

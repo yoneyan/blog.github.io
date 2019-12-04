@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Services on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/review/services/</link>
-    <description>Recent content in Services on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Thu, 19 Jan 2017 17:04:29 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/review/services/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>家でカラオケを楽しむ（カラオケ@DAM for windows10）</title>
-      <link>https://yoneyan.dev/review/services/karaoke-windows10/</link>
-      <pubDate>Thu, 19 Jan 2017 17:04:29 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/review/services/karaoke-windows10/</guid>
-      <description>カラオケ@DAMを契約して半年以上経つのでそちらの詳細なレビューをします。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Services on のんびりと生きたい</title><link>https://yoneyan.dev/review/services/</link><description>Recent content in Services on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 19 Jan 2017 17:04:29 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/review/services/index.xml" rel="self" type="application/rss+xml"/><item><title>家でカラオケを楽しむ（カラオケ@DAM for windows10）</title><link>https://yoneyan.dev/review/services/karaoke-windows10/</link><pubDate>Thu, 19 Jan 2017 17:04:29 +0900</pubDate><guid>https://yoneyan.dev/review/services/karaoke-windows10/</guid><description>カラオケ@DAMを契約して半年以上経つのでそちらの詳細なレビューをします。
 カラオケ＠DAMとは カラオケ界で有名なDAMの開発、提供元の第一興商のサービスの一つです。
 もとはXboxOneだけのサービスでしたが、昨年windows10でのサービスを開始し、PS4でもサービスが開始しました。
 ここではカラオケ＠DAM for windows10のレビューをします。
@@ -29,11 +10,11 @@
 使ってみた感じ めちゃくちゃよかったです。
 家で精密採点並みの採点が月額1080円で楽しめるので契約する価値はこれだけであると思いました。
 LIVEDAMと使い勝手がかなり違うので、一番最初使うときに戸惑るかもしれませんが慣れたら大丈夫です。
-   精密採点Win10を有効にすると、
-      しっかりと採点してくれます。曲はサクラ大戦の曲です。
+精密採点Win10を有効にすると、
+しっかりと採点してくれます。曲はサクラ大戦の曲です。
 カラオケ映像は公式PV映像はほぼないと思った方がいいです。著作権の問題で公式PVが出せないらしいです。
 採点結果は
-      こんな感じに出ます。
+こんな感じに出ます。
 思っていたよりも、詳細に出してくれます。
 もちろん業務用に比べると、項目は少ないですが家で歌う分には十分な機能だと思いました。
 支払方法 クレジットカードや各社キャリア携帯の簡単決済、yahooウォレットを使うことができます。
@@ -50,8 +31,4 @@ USBマイクを使うとどうしても遅延が発生してしまいます。�
 DIRECTMONITORとは DIRECTMONITORとはsteinbergのオーディオインターフェースについている機能です。他社のオーディオインターフェースにも名前は違いますが、同じような機能があるのでそこらへんは調べていただけると助かります。
 USBマイクを介すると USBマイク-&amp;gt;パソコン-&amp;gt;音声出力(音楽&amp;amp;マイク)
 これをオーディオインターフェースのDIRECTMONITORを使うと マイク-&amp;gt;オーディオインターフェース-&amp;gt;パソコン
-↓マイク</description>
-    </item>
-    
-  </channel>
-</rss>
+↓マイク</description></item></channel></rss>

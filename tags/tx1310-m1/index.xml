@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>TX1310 M1 on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tags/tx1310-m1/</link>
-    <description>Recent content in TX1310 M1 on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 19 May 2019 20:48:06 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tags/tx1310-m1/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>TX1310 M1でホットスワップが出来ない</title>
-      <link>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</link>
-      <pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</guid>
-      <description>ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TX1310 M1 on のんびりと生きたい</title><link>https://yoneyan.dev/tags/tx1310-m1/</link><description>Recent content in TX1310 M1 on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 19 May 2019 20:48:06 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/tx1310-m1/index.xml" rel="self" type="application/rss+xml"/><item><title>TX1310 M1でホットスワップが出来ない</title><link>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</link><pubDate>Sun, 19 May 2019 20:48:06 +0900</pubDate><guid>https://yoneyan.dev/tech/hard/not-hotswap-with-tx1310_m1/</guid><description>ずっと、お家にお眠りなさってたTX1310 M1を最近、Windows10でも入れてリモートアクセス専用PCとして使おうとすると、いろいろ問題が起きたので備忘録＋なんとかする方法をこちらに書かせていただきます。
 何が出来ないのか？ 本来、この機器ではホットスワップには対応していないのですが、大体のAHCIで動いてるシステムは使えるはずなのですが、使えない。
 しかも、ホットスワップ出来ないだけだと不便だけで済みますが、記憶域プールが謎のエラーを吐いて、作成出来ないのが致命的です。
 また、問題はWindows 10だけではなく、Linuxでもホットスワップ出来ませんでした。
@@ -29,8 +10,4 @@ https://downloadcenter.intel.com/ja/download/28710/Intel-Server-Chipset-Driver-f
 https://support.lenovo.com/jp/ja/downloads/ds101491
 こちらから.exe形式のファイルをダウンロードし、起動させると、Cドライブ直下にDriverというファイルが出来るので、そこからインストールします。
 まとめ これにより、TX1310 M1でホットスワップが出来るようになりました。
-TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種の場合では、ドライバを入れてあげないといけないので注意が必要です。</description>
-    </item>
-    
-  </channel>
-</rss>
+TX100 S3の場合だと、標準ドライバでも可能でしたがこの機種の場合では、ドライバを入れてあげないといけないので注意が必要です。</description></item></channel></rss>

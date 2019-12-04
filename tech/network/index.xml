@@ -1,53 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Network on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tech/network/</link>
-    <description>Recent content in Network on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Thu, 15 Aug 2019 00:48:35 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tech/network/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>GS724Tでリンクアップしない時の対処法</title>
-      <link>https://yoneyan.dev/tech/network/approach-do-not-link-up-with-gs724t/</link>
-      <pubDate>Thu, 15 Aug 2019 00:48:35 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/approach-do-not-link-up-with-gs724t/</guid>
-      <description>GS724TにLANケーブルを刺しても機嫌がいいときはアップしてくれますが、悪いときは本当にリンクアップしてくれない時が多く、まじめにイライラしてきたのでいろいろ探っているとおそらく原因がわかったのでこちらに対処法を載せます。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on のんびりと生きたい</title><link>https://yoneyan.dev/tech/network/</link><description>Recent content in Network on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 15 Aug 2019 00:48:35 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/network/index.xml" rel="self" type="application/rss+xml"/><item><title>GS724Tでリンクアップしない時の対処法</title><link>https://yoneyan.dev/tech/network/approach-do-not-link-up-with-gs724t/</link><pubDate>Thu, 15 Aug 2019 00:48:35 +0900</pubDate><guid>https://yoneyan.dev/tech/network/approach-do-not-link-up-with-gs724t/</guid><description>GS724TにLANケーブルを刺しても機嫌がいいときはアップしてくれますが、悪いときは本当にリンクアップしてくれない時が多く、まじめにイライラしてきたのでいろいろ探っているとおそらく原因がわかったのでこちらに対処法を載せます。
 私自身の環境だけに要因する問題の可能性もあるので、あくまでもこういう場合があるよと思っていただけると幸いです。
-GS724Tとは    amazon
+GS724Tとは amazon
 GS724Tを簡単に紹介します。
 GS724TはNetgear社の24ポートのSmart Switchです。
 Smart Switchということもあり、LACPやらSNMPなどのそこそこ使える機能が豊富でしかも現時点ではヤフオクでも安く手に入るのが一番うれしいところです。
 また、スパニングツリーも使えるためLANケーブルをループして事故を起こすことも未然に防げます。
 問題の解決 LANケーブルをつないでもリンクアップしないという前代未聞の意味のわからないことになっているので、トラブルシューティングとしてGS724Tで有効になっている機能をことごとく無効にします。
 そうすると&amp;hellip;.
-   Flow Control Setting
+Flow Control Setting
 フロー制御が原因でした。
 フロー制御とは 私自身も詳しく説明できないのですが、、
 送信側と受信側のリンクの速度の差でバッファがオーバーにならないように制御するものです。おそらく、この機能が悪さをしているのが原因だと思われます。
 フロー制御が働いても速度に制限をかけたり、パケットを一時的に中断させたりするだけなのでおそらくGS724Tのバグです。
-フロー制御の無効化方法 １．ログインする ２．Switchingタブに移動    Switchingのタブに移動（ここではSystemタブになっている）
+フロー制御の無効化方法 １．ログインする ２．Switchingタブに移動 Switchingのタブに移動（ここではSystemタブになっている）
 Switchingのタブに移動させます。
-３．Flow Controlを選択    Flow Controlを選択
+３．Flow Controlを選択 Flow Controlを選択
 Flow Controlを選択します。
-４．無効化する    Flow Controlの設定
+４．無効化する Flow Controlの設定
 Global Flow Control(IEEE 802.3x) Modeの部分をDisableにする
-これにより、フロー制御を無効にできます。</description>
-    </item>
-    
-    <item>
-      <title>CentOSで無線から有線に変換する(2)</title>
-      <link>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_2/</link>
-      <pubDate>Sun, 11 Aug 2019 23:56:52 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_2/</guid>
-      <description>CentOSを使って無線を有線にしなければならないことができたので、備忘録として書きます。
-構築    APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。
+これにより、フロー制御を無効にできます。</description></item><item><title>CentOSで無線から有線に変換する(2)</title><link>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_2/</link><pubDate>Sun, 11 Aug 2019 23:56:52 +0900</pubDate><guid>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_2/</guid><description>CentOSを使って無線を有線にしなければならないことができたので、備忘録として書きます。
+構築 APから飛ばしたものをCentOS RouterでIPマスカレードし、Clientから体外にアクセスできるようにします。
 前提条件として
 WLAN側：DHCP（ここでは、172.16.100.100がDHCPより取得したと仮定する）
 LAN側：172.16.200.1&amp;frasl;24
@@ -55,39 +27,21 @@ WLANインターフェース:wlp2s0
 LANインターフェース:eth0
 とします。
 1．無線側の設定 1.1．WLAN側インターフェースを確認する NetworkManagerのデバイスを一覧で出してみます。
- nmcli device  とすると、
- DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet disconnected　-- wlp2s0 wifi disconnected　--  wlp2s0がunmanagedになっている場合は、 nmcliで無線がunmanagedの場合の対処法 こちらに対処法を記事にしたのでご覧ください。
-1.2．WLANのSSIDを設定する nmcli device wifi connect [ssid] password [password]  [ssid]にWiFiのSSIDを、[password]にはSSIDに対するパスワードを入力してください。
-2．有線側の設定 2.1．IPアドレスを固定で設定する nmcli connection modify eth0 ipv4.method manual nmcli connection modify eth0 ipv4.addresses &amp;quot;172.16.200.1/24&amp;quot;  172.16.200.1/24の部分にLAN側のIPアドレスを記入します。
+nmcli device とすると、
+DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet disconnected　-- wlp2s0 wifi disconnected　-- wlp2s0がunmanagedになっている場合は、 nmcliで無線がunmanagedの場合の対処法 こちらに対処法を記事にしたのでご覧ください。
+1.2．WLANのSSIDを設定する nmcli device wifi connect [ssid] password [password] [ssid]にWiFiのSSIDを、[password]にはSSIDに対するパスワードを入力してください。
+2．有線側の設定 2.1．IPアドレスを固定で設定する nmcli connection modify eth0 ipv4.method manual nmcli connection modify eth0 ipv4.addresses &amp;quot;172.16.200.1/24&amp;quot; 172.16.200.1/24の部分にLAN側のIPアドレスを記入します。
 2.2．DHCPサーバを構築する DHCPサーバをインストールする
-yum -y install dhcp  /etc/dhcp/dhcpd.</description>
-    </item>
-    
-    <item>
-      <title>nmcliで無線がunmanagedの場合の対処法</title>
-      <link>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</link>
-      <pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</guid>
-      <description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
+yum -y install dhcp /etc/dhcp/dhcpd.</description></item><item><title>nmcliで無線がunmanagedの場合の対処法</title><link>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</link><pubDate>Sun, 11 Aug 2019 23:29:40 +0900</pubDate><guid>https://yoneyan.dev/tech/network/approach-setting-nmcli-wlan/</guid><description>nmcliで無線LANの設定がなかなかできなかったので、ここでは簡単に対処法を書きます。
 ここでは無線LANをWLANと記述します。
-確認してみる nmcli device  より、WLANの管理状態を確かめてみます。
- DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet connected eth0 wlp2s0 wifi unmanaged --  とこのようにWLANだけ管理されていない状況になっていることがわかります。
+確認してみる nmcli device より、WLANの管理状態を確かめてみます。
+DEVICE TYPE STATE CONNECTION --------------------------------------------- eth0 ethernet connected eth0 wlp2s0 wifi unmanaged -- とこのようにWLANだけ管理されていない状況になっていることがわかります。
 このような場合は、NetworkManagerのWifiを管理するNetworkManager-wifiを入れる必要があります。
-yum -y install NetworkManager-wifi  このパッケージを導入してから
-nmcli d wifi nmcli d nmcli connection  を実行してから、しっかりと周りのwifiが見えていれば成功です！！
-失敗例 nmcli device set wlp2s0 managed yes  とこのコマンドを実行すると、一見有効になってように見えます。
+yum -y install NetworkManager-wifi このパッケージを導入してから
+nmcli d wifi nmcli d nmcli connection を実行してから、しっかりと周りのwifiが見えていれば成功です！！
+失敗例 nmcli device set wlp2s0 managed yes とこのコマンドを実行すると、一見有効になってように見えます。
 しかし、
-nmcli d wifi  としてもなにも帰ってこないので、 networkmanager-wifiパッケージが入っていないのがおそらく原因で無理なのだと思われます。</description>
-    </item>
-    
-    <item>
-      <title>Allied Telesis stack状態を初期の状況に戻す方法</title>
-      <link>https://yoneyan.dev/tech/network/initial_alliedtelesis-stacks/</link>
-      <pubDate>Wed, 31 Jul 2019 00:15:47 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/initial_alliedtelesis-stacks/</guid>
-      <description>x510-28gtxというL3スイッチを実際に使っています。
+nmcli d wifi としてもなにも帰ってこないので、 networkmanager-wifiパッケージが入っていないのがおそらく原因で無理なのだと思われます。</description></item><item><title>Allied Telesis stack状態を初期の状況に戻す方法</title><link>https://yoneyan.dev/tech/network/initial_alliedtelesis-stacks/</link><pubDate>Wed, 31 Jul 2019 00:15:47 +0900</pubDate><guid>https://yoneyan.dev/tech/network/initial_alliedtelesis-stacks/</guid><description>x510-28gtxというL3スイッチを実際に使っています。
 ヤフオクで購入したのですが、パスワードはわかるものの、stackが組まれており、よくわからない状態になっていたので完全に初期化してみました。
 スタック番号が「２」になっている状態です。
 パスワードがわからない状態の初期化方法 ブートローダ部分で、
@@ -95,71 +49,35 @@ Ctrl + B -&amp;gt; 5 -&amp;gt; 1 -&amp;gt; 0 -&amp;gt; 9
 とすることでパスワードが掛かっている状態でも初期状態に戻すことができるようになります。
 しかし、この操作をしても以前のスタックが組まれたままになっており完全に初期化したいという状態なので、完全に初期化を実行したいと思います。
 完全に初期化 enableコマンドで入り、管理用コマンドが実行できるような環境にしておきます。
-AlliedWare Plus (TM) 5.4.9 03/29/19 02:51:50 awplus&amp;gt; awplus&amp;gt;en awplus#  いよいよ強制初期化のコマンドを実行します。
-awplus#atmf cleanup  [atmf cleanup]というコマンドを使うことで、完全に初期化することができます。
-スタックが組まれた状態でも初期の状況に戻してくれるので、今回のような完全な初期化を行いたい場合はおすすめです。</description>
-    </item>
-    
-    <item>
-      <title>FreeBSDでポート開放をする</title>
-      <link>https://yoneyan.dev/tech/network/open-port-with-freebsd/</link>
-      <pubDate>Mon, 22 Jul 2019 11:16:02 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/open-port-with-freebsd/</guid>
-      <description>FreeBSDとは 私自身もよくわかっていないところが多いので、https://ja.wikipedia.org/wiki/FreeBSDこちらを参考に箇条書きしてみるとこんな感じになりました。
- FreeBSDはUnix系のOS 処理速度よりも安定性を重視した設計がされているらしい？ Linux向けに開発されたものもしっかりと動く パッケージマネージャとしてpkgが入っている  始めよう 有効化する ファイアウォールのコマンドとしてipfwを使うのですが、初期の状態では
-root@localhost:~ # ipfw list ipfw: retrieving config failed: Protocol not available  とこのようなエラーが入ります。この場合は、/etc/rc.confからファイアウォールを有効にする必要が出てきます。
+AlliedWare Plus (TM) 5.4.9 03/29/19 02:51:50 awplus&amp;gt; awplus&amp;gt;en awplus# いよいよ強制初期化のコマンドを実行します。
+awplus#atmf cleanup [atmf cleanup]というコマンドを使うことで、完全に初期化することができます。
+スタックが組まれた状態でも初期の状況に戻してくれるので、今回のような完全な初期化を行いたい場合はおすすめです。</description></item><item><title>FreeBSDでポート開放をする</title><link>https://yoneyan.dev/tech/network/open-port-with-freebsd/</link><pubDate>Mon, 22 Jul 2019 11:16:02 +0900</pubDate><guid>https://yoneyan.dev/tech/network/open-port-with-freebsd/</guid><description>FreeBSDとは 私自身もよくわかっていないところが多いので、https://ja.wikipedia.org/wiki/FreeBSDこちらを参考に箇条書きしてみるとこんな感じになりました。
+FreeBSDはUnix系のOS 処理速度よりも安定性を重視した設計がされているらしい？ Linux向けに開発されたものもしっかりと動く パッケージマネージャとしてpkgが入っている 始めよう 有効化する ファイアウォールのコマンドとしてipfwを使うのですが、初期の状態では
+root@localhost:~ # ipfw list ipfw: retrieving config failed: Protocol not available とこのようなエラーが入ります。この場合は、/etc/rc.confからファイアウォールを有効にする必要が出てきます。
 /etc/rc.confに以下の
-# Firewall firewall_enable=&amp;quot;YES&amp;quot;  設定をする こちらのサイトを参考にさせていただきました。ありがとうございます。
+# Firewall firewall_enable=&amp;quot;YES&amp;quot; 設定をする こちらのサイトを参考にさせていただきました。ありがとうございます。
 https://server-setting.info/freebsd/freebsd_ipfw.html
 /etc/rc.confに以下を追加する
-firewall_script=&amp;quot;/usr/local/etc/ipfw.rules&amp;quot;  /usr/local/etc/ipfw.rulesに以下のコンフィグを書きます。
-#!/bin/sh # IPF=&amp;quot;ipfw -q add&amp;quot; ipfw -q -f flush #loopback $IPF 10 allow all from any to any via lo0 $IPF 20 deny all from any to 127.0.0.0/8 $IPF 30 deny all from 127.</description>
-    </item>
-    
-    <item>
-      <title>EdgerouterでOpenVPNクライアントを使う</title>
-      <link>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</link>
-      <pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</guid>
-      <description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
+firewall_script=&amp;quot;/usr/local/etc/ipfw.rules&amp;quot; /usr/local/etc/ipfw.rulesに以下のコンフィグを書きます。
+#!/bin/sh # IPF=&amp;quot;ipfw -q add&amp;quot; ipfw -q -f flush #loopback $IPF 10 allow all from any to any via lo0 $IPF 20 deny all from any to 127.0.0.0/8 $IPF 30 deny all from 127.</description></item><item><title>EdgerouterでOpenVPNクライアントを使う</title><link>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</link><pubDate>Wed, 17 Apr 2019 21:37:37 +0900</pubDate><guid>https://yoneyan.dev/tech/network/using-openvpn-client-with-edgerouter/</guid><description>EdgerouterでOpenVPNクライアントとして使う方法をこちらに記事にさせていただきます。
 サーバー側の設定はこちらから
 1．フォルダを作る config以下にフォルダを作成します。（config以外に保存することも可能ですが、アップデート時に消える可能性があります。）
-mkdir /config/vpn/ mkdir /config/vpn/VPN1 cd /config/vpn/VPN1  2．必要なファイルをEdgerouterに持ってくる winscpなどで必要なファイルを入れます。
+mkdir /config/vpn/ mkdir /config/vpn/VPN1 cd /config/vpn/VPN1 2．必要なファイルをEdgerouterに持ってくる winscpなどで必要なファイルを入れます。
 ca.crt、client1.crt、client1.key、ta.key を/config/vpn/VPN1にファイルを入れてあげます。
 /config/vpn/VPN1/ca.crt
 /config/vpn/VPN1/client1.crt
 /config/vpn/VPN1/client1.key
 /config/vpn/VPN1/ta.key
 というようなファイル構成になります。
-3．OpenVPNクライアントのコンフィグを作ってあげる。 vi client.ovpn  client dev-type tun proto udp ;VPNサーバーのipアドレス、ポート番号を指定 remote 0.0.0.0 1194 resolv-retry infinite nobind persist-key persist-tun ca /config/vpn/VPN1/ca.crt cert /config/vpn/VPN1/client1.crt key /config/vpn/VPN1/client1.key tls-auth /config/vpn/VPN1/ta.key 1 cipher AES-256-CBC auth SHA512 ;圧縮を有効 comp-lzo verb 1 reneg-sec 0  4．設定を適応する configure set interfaces openvpn vtun0 config-file /config/vpn/VPN1/client.ovpn set interfaces openvpn vtun0 description server_name  5．疎通できているか確認する show interfaces openvpn ip a  これらのコマンドでS/L部分がu/uになっていると、リンクアップしているといる意味です。</description>
-    </item>
-    
-    <item>
-      <title>CentOS7でLACPとタグVLANを使ってみる</title>
-      <link>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</link>
-      <pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</guid>
-      <description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
+3．OpenVPNクライアントのコンフィグを作ってあげる。 vi client.ovpn client dev-type tun proto udp ;VPNサーバーのipアドレス、ポート番号を指定 remote 0.0.0.0 1194 resolv-retry infinite nobind persist-key persist-tun ca /config/vpn/VPN1/ca.crt cert /config/vpn/VPN1/client1.crt key /config/vpn/VPN1/client1.key tls-auth /config/vpn/VPN1/ta.key 1 cipher AES-256-CBC auth SHA512 ;圧縮を有効 comp-lzo verb 1 reneg-sec 0 4．設定を適応する configure set interfaces openvpn vtun0 config-file /config/vpn/VPN1/client.ovpn set interfaces openvpn vtun0 description server_name 5．疎通できているか確認する show interfaces openvpn ip a これらのコマンドでS/L部分がu/uになっていると、リンクアップしているといる意味です。</description></item><item><title>CentOS7でLACPとタグVLANを使ってみる</title><link>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</link><pubDate>Sun, 31 Mar 2019 20:02:44 +0900</pubDate><guid>https://yoneyan.dev/tech/network/using-lacp-and-tagged-vlan-on-centos7/</guid><description>当方の環境で使っているCentOS7でLACPとタグVLANを使う必要が出てきたのでその際に方法をここに備忘録として書きます。
 環境 CentOS=========L3 Switch(vlan10,vlan20)
 2つのLANケーブルを使って、LACPでリンクアグリゲーションを組みます。
 CentOS側のNIC：eth0,eth1
-設定する １． いらないものを排除する systemctl stop NetworkManager systemctl disable NetworkManager  NetworkManagerが邪魔になるので、停止＆無効にします。
-２．bonding機能を有効にする modprobe bonding  これをしないと、リンクアグリゲーションができないので、忘れずに実行して下さい。
-３．コンフィグを書いていく 3.1．bond0の設定 vi /etc/sysconfig/network-scripts/ifcfg-bond0  DEVICE=bond0 NAME=bond0 TYPE=Bond ONBOOT=yes BOOTPROTO=none BONDING_OPTS=&amp;quot;downdelay=0 miimon=100 mode=802.3ad updelay=0&amp;quot; BONDING_MASTER=yes  3.2．LAGにするインタフェースの設定 vi /etc/sysconfig/network-scripts/ifcfg-eth0  DEVICE=eth0 TYPE=Ethernet BOOTPROTO=none ONBOOT=yes NM_CONTROLLED=no IPV6INIT=no MASTER=bond0 SLAVE=yes  これでeth0は完了です。次にeth1の設定をしていきます。
-vi /etc/sysconfig/network-scripts/ifcfg-eth1  DEVICE=eth1 TYPE=Ethernet BOOTPROTO=none ONBOOT=yes NM_CONTROLLED=no IPV6INIT=no MASTER=bond0 SLAVE=yes  3.3．Bond0に対するTagVLANの設定 VLAN10の設定
-vi /etc/sysconfig/network-scripts/ifcfg-bond0.10  TYPE=&amp;quot;Ethernet&amp;quot; BOOTPROTO=none DEVICE=&amp;quot;bond0.</description>
-    </item>
-    
-    <item>
-      <title>Edgerouterでポート開放をしてみる</title>
-      <link>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</link>
-      <pubDate>Fri, 22 Mar 2019 18:05:10 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</guid>
-      <description>今回はEdgerouterでポート開放をコマンド操作でしていきます。
+設定する １． いらないものを排除する systemctl stop NetworkManager systemctl disable NetworkManager NetworkManagerが邪魔になるので、停止＆無効にします。
+２．bonding機能を有効にする modprobe bonding これをしないと、リンクアグリゲーションができないので、忘れずに実行して下さい。
+３．コンフィグを書いていく 3.1．bond0の設定 vi /etc/sysconfig/network-scripts/ifcfg-bond0 DEVICE=bond0 NAME=bond0 TYPE=Bond ONBOOT=yes BOOTPROTO=none BONDING_OPTS=&amp;quot;downdelay=0 miimon=100 mode=802.3ad updelay=0&amp;quot; BONDING_MASTER=yes 3.2．LAGにするインタフェースの設定 vi /etc/sysconfig/network-scripts/ifcfg-eth0 DEVICE=eth0 TYPE=Ethernet BOOTPROTO=none ONBOOT=yes NM_CONTROLLED=no IPV6INIT=no MASTER=bond0 SLAVE=yes これでeth0は完了です。次にeth1の設定をしていきます。
+vi /etc/sysconfig/network-scripts/ifcfg-eth1 DEVICE=eth1 TYPE=Ethernet BOOTPROTO=none ONBOOT=yes NM_CONTROLLED=no IPV6INIT=no MASTER=bond0 SLAVE=yes 3.3．Bond0に対するTagVLANの設定 VLAN10の設定
+vi /etc/sysconfig/network-scripts/ifcfg-bond0.10 TYPE=&amp;quot;Ethernet&amp;quot; BOOTPROTO=none DEVICE=&amp;quot;bond0.</description></item><item><title>Edgerouterでポート開放をしてみる</title><link>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</link><pubDate>Fri, 22 Mar 2019 18:05:10 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</guid><description>今回はEdgerouterでポート開放をコマンド操作でしていきます。
 こちらのサイトを参考にさせていただきました。
 https://qiita.com/maiani/items/b45b0505377401be083a
 わかりにくい点などがありましたら、上記のサイトさんをご覧ください。
@@ -167,30 +85,12 @@ https://qiita.com/maiani/items/b45b0505377401be083a
 80/tcp 172.16.1.100
 3389/tcp,3389/udp 172.16.1.10
 1．ファイアウォールの設定 80/tcpの設定をしていきます。
-set firewall name WAN_IN rule 50 description &amp;quot;80/tcp http&amp;quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.16.1.100 set firewall name WAN_IN rule 50 destination port 80 set firewall name WAN_IN rule 50 protocol tcp  3389/tcpと3389/udpポートを設定します。
-set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp;quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.</description>
-    </item>
-    
-    <item>
-      <title>EdgerouterでPPPoEの設定をする</title>
-      <link>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</link>
-      <pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</guid>
-      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
+set firewall name WAN_IN rule 50 description &amp;quot;80/tcp http&amp;quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.16.1.100 set firewall name WAN_IN rule 50 destination port 80 set firewall name WAN_IN rule 50 protocol tcp 3389/tcpと3389/udpポートを設定します。
+set firewall name WAN_IN rule 50 description &amp;quot;3389/tcp,3389/udp RDP&amp;quot; set firewall name WAN_IN rule 50 action accept set firewall name WAN_IN rule 50 destination address 172.</description></item><item><title>EdgerouterでPPPoEの設定をする</title><link>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</link><pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate><guid>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</guid><description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon 楽天市場 Yahooショッピング みんな大好きEdgerouterでPPPoEの設定をしていきます。 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。
 環境 プロバイダ:eo光 サービス名:1ギガコース WAN側ポート:eth0
 設定していく 設定を適応する際はcommit 設定を保存する際はsave
 コマンドが必要です。
-1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &amp;quot;PPPoE&amp;quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto  2.</description>
-    </item>
-    
-    <item>
-      <title>Edgerouterでeo光のIPv6を使ってみる</title>
-      <link>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</link>
-      <pubDate>Fri, 08 Mar 2019 00:07:05 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</guid>
-      <description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
+1．基本的なPPPoEの設定 set interfaces ethernet eth0 description &amp;quot;PPPoE&amp;quot; set interfaces ethernet eth0 pppoe 0 default-route auto set interfaces ethernet eth0 pppoe 0 mtu 1454 set interfaces ethernet eth0 pppoe 0 name-server auto set interfaces ethernet eth0 pppoe 0 password **** set interfaces ethernet eth0 pppoe 0 user-id **** set interfaces ethernet eth0 pppoe 0 speed auto 2.</description></item><item><title>Edgerouterでeo光のIPv6を使ってみる</title><link>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</link><pubDate>Fri, 08 Mar 2019 00:07:05 +0900</pubDate><guid>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</guid><description>Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon
 Edgerouter Xというルータを買ってしまったのですが、なかなかeo光のIPv6サービスに繋げるのにかなり翻弄したのでここに備忘録として残しておきます。（一応、繋ぐことはできたという記事です。）
 注意：今回の設定ではIPv6のファイアウォールの設定をしていないので、セキュリティ的にかなり危ないので、実際に構築する方はご注意下さい。（当方もファイアウォール周りがあまりわかっていないので、分かり次第、別の記事にさせていただきます。）
 前提条件 プロバイダーはK-opticomのeo光ネット1Gコース（ホームコース）を使用しております。
@@ -198,109 +98,55 @@ WAN:eth0
 LAN:eth1
 とします。
 また、上の注意の点でも書きましたが、ファイアウォールを設定していないので、ご注意ください。
-使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface &#39;pppoe0&#39;  これをやっていないせいでかなり時間をとりました。</description>
-    </item>
-    
-    <item>
-      <title>EdgeRouterでLAGとタグVLANを設定する</title>
-      <link>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</link>
-      <pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</guid>
-      <description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
-   Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon  楽天市場  Yahooショッピング      それでは構築していきます。
+使えるようにしていく 1.インタフェースに設定を入れていく set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 interface eth1 service slaac set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 1 prefix-length /64 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1 set interfaces ethernet eth0 pppoe 0 ipv6 enable set protocols static interface-route6 ::/0 next-hop-interface &#39;pppoe0&#39; これをやっていないせいでかなり時間をとりました。</description></item><item><title>EdgeRouterでLAGとタグVLANを設定する</title><link>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</link><pubDate>Fri, 08 Feb 2019 01:45:05 +0900</pubDate><guid>https://yoneyan.dev/tech/network/setting-lag-and-tagvlan-on-edgerouter/</guid><description>EdgerRouterでLAGの一種であるLACPとタグVLANを使ってみたので、設定方法を紹介させていただきます。
+Ubiquiti Networks Edgerouter ER-X（日本国内） Amazon 楽天市場 Yahooショッピング それでは構築していきます。
 今回はeth1とeth2をLACPでリンクアグリゲーションを行い、その中でVLAN100とVLAN200のタグVLANを使用するという前提で行います。
 LACPの設定を行う まず、最初にLACPの設定を行っていきます。
-1．bondインタフェースを作成する set interfaces bonding bond0 description &amp;quot;LAG Interface&amp;quot;  descriptionはbond0に対する名前なので各自で変更してください。
-2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2  ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。
+1．bondインタフェースを作成する set interfaces bonding bond0 description &amp;quot;LAG Interface&amp;quot; descriptionはbond0に対する名前なので各自で変更してください。
+2．bondインタフェースの設定をする set interfaces bonding bond0 mode 802.3ad set interfaces bonding bond0 hash-policy layer2 ここでmode 802.3adとすることで、LACPの設定をすることが可能になります。他にも、active-backupやロードバランスができるtransmit-load-balanceというものも使えます。
 LACPではhash-policyというものがあるので、ここではlayer2としておきます。
-タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200  100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
+タグVLANの設定を行う 1．インタフェースの中にタグVLANを作成する set interfaces bonding bond0 vif 100 set interfaces bonding bond0 vif 200 100や200以外の他のタグVLANにしたいときは、数字を適切なものに変更してください。
 今回はbondでのタグVLANの設定ですが、eth3のようなインタフェースにタグVLANを割り当てたい場合は、
-set interfaces ethernet eth3 vif 100  このようにしてあげることで使えるようになります。</description>
-    </item>
-    
-    <item>
-      <title>RTX1200でeo光のIPv6を使えるようにする</title>
-      <link>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</link>
-      <pubDate>Wed, 30 Jan 2019 17:17:30 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</guid>
-      <description>みなさんRTX1200というyamahaのルータを持っていますか？
+set interfaces ethernet eth3 vif 100 このようにしてあげることで使えるようになります。</description></item><item><title>RTX1200でeo光のIPv6を使えるようにする</title><link>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</link><pubDate>Wed, 30 Jan 2019 17:17:30 +0900</pubDate><guid>https://yoneyan.dev/tech/network/use-ipv6-of-eo-with-rtx1200/</guid><description>みなさんRTX1200というyamahaのルータを持っていますか？
 eo光が配布してくれるeo光多機能ルータというものがありますが、使いやすいのですが民生用ということもあり機能が限定されています。 また、安定性もそこまで正直なところそこまで良くないです。
 ということで、今回はRTX1200でもeo光のIPv6を使えるようになるという記事を拝見させていただきましたので、当ブログでも紹介させていただきます。
 参考にさせていただいた記事 http://sky.jp/sub218.html
-作業開始 共通部分 ipv6 route default gateway pp 1 ipv6 prefix 1 dhcp-prefix@pp1::/64  pp部分 pp select 1 description pp PRV/PPPoE/0:eo pp keepalive interval 30 retry-interval=30 count=12 pp always-on on pppoe use lan2 pppoe auto disconnect off pp auth accept pap chap pp auth myname ID password ppp lcp mru on 1454 ppp ipcp ipaddress on ppp ipcp msext on ppp ccp type none ppp ipv6cp use on ip pp nat descriptor 1 ipv6 pp rip send off ipv6 pp dhcp service client ipv6 pp secure filter in 1010 1011 1012 2000 ipv6 pp secure filter out 3000 dynamic 100 101 102 103 104 105 106 pp enable 1  pppoeの設定箇所に以下のコンフィグを流し込む</description>
-    </item>
-    
-    <item>
-      <title>CentOSでL2TPサーバーを構築してみる</title>
-      <link>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</link>
-      <pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</guid>
-      <description>UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
+作業開始 共通部分 ipv6 route default gateway pp 1 ipv6 prefix 1 dhcp-prefix@pp1::/64 pp部分 pp select 1 description pp PRV/PPPoE/0:eo pp keepalive interval 30 retry-interval=30 count=12 pp always-on on pppoe use lan2 pppoe auto disconnect off pp auth accept pap chap pp auth myname ID password ppp lcp mru on 1454 ppp ipcp ipaddress on ppp ipcp msext on ppp ccp type none ppp ipv6cp use on ip pp nat descriptor 1 ipv6 pp rip send off ipv6 pp dhcp service client ipv6 pp secure filter in 1010 1011 1012 2000 ipv6 pp secure filter out 3000 dynamic 100 101 102 103 104 105 106 pp enable 1 pppoeの設定箇所に以下のコンフィグを流し込む</description></item><item><title>CentOSでL2TPサーバーを構築してみる</title><link>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</link><pubDate>Fri, 18 Jan 2019 16:21:21 +0900</pubDate><guid>https://yoneyan.dev/tech/network/building-l2tp-server-on-centos/</guid><description>UbuntuServerでL2TPサーバーを構築するという記事を出しましたが、CentOSでの構築方法をここで説明させていただきます。
 VultrというVPSサービスを使っています。Lightsailではなぜかクライアント側が繋がらなかったので諦めました。
 OpenVPNは安全性で言うと、現時点では一番強力と言っても過言ではありませんが、一つ問題があります。その問題は、使いにくいところです。構築するのもVPNを使う側も証明書を入れたりと少々ややこしいのが欠点です。
 L2TPサーバーはOpenVPNに比べると貧弱姓が疑われている部分がありますが、AndroidやiOSやWindowsのようなクライアントの標準機能（外部アプリやソフトなし）で簡単に繋ぐことが可能なので、おすすめです。
-構築開始！ １ 必要な物をインストールする yum -y install xl2tpd libreswan  ２ L2TPを設定する L2TPサーバーの設定をしていきます。
+構築開始！ １ 必要な物をインストールする yum -y install xl2tpd libreswan ２ L2TPを設定する L2TPサーバーの設定をしていきます。
 2.1 xl2tpdのメインの設定を変更する 共通する設定
 /etc/xl2tpd/xl2tpd.conf
-[global] ;パスの指定 auth file = /etc/ppp/chap-secrets ;グローバルIPアドレスをここに指定する listen-addr = xx.xx.xx.xx [lns default] ;L2TPクライアントから割り当てられるIPアドレスの範囲を指定する ip range = 192.168.1.128-192.168.1.254 ;L2TPサーバー側の仮想ネットワークのIPアドレスを指定する local ip = 192.168.1.99 ;chap認証を拒否するのか refuse chap = yes ;pap認証を拒否するのか refuse pap = yes ;認証を許可するのか require authentication = yes ;ホスト名 name = LinuxVPNserver ;デバッグを取るか、取らないか ppp debug = yes pppのオプションファイルの場所を指定 pppoptfile = /etc/ppp/options.</description>
-    </item>
-    
-    <item>
-      <title>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</title>
-      <link>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</link>
-      <pubDate>Thu, 10 Jan 2019 11:49:55 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</guid>
-      <description>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
+[global] ;パスの指定 auth file = /etc/ppp/chap-secrets ;グローバルIPアドレスをここに指定する listen-addr = xx.xx.xx.xx [lns default] ;L2TPクライアントから割り当てられるIPアドレスの範囲を指定する ip range = 192.168.1.128-192.168.1.254 ;L2TPサーバー側の仮想ネットワークのIPアドレスを指定する local ip = 192.168.1.99 ;chap認証を拒否するのか refuse chap = yes ;pap認証を拒否するのか refuse pap = yes ;認証を許可するのか require authentication = yes ;ホスト名 name = LinuxVPNserver ;デバッグを取るか、取らないか ppp debug = yes pppのオプションファイルの場所を指定 pppoptfile = /etc/ppp/options.</description></item><item><title>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その2）</title><link>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</link><pubDate>Thu, 10 Jan 2019 11:49:55 +0900</pubDate><guid>https://yoneyan.dev/tech/network/connect-to-vps-and-home-pfsense-router/</guid><description>openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）の続きです。
 その2ではopenvpnのクライアントになるpfsense側の設定をしていきます。
 前提条件 前提条件としてサーバー側の設定が以下のものと仮定して説明します。
 サーバーIP:10.0.0.9
 openvpn（サーバー側）のポート:1194/udp
-サーバー側から取ってくるべきである物  ta.key ca.crt client1.crt client1.key  1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動    1.2.CAを追加する Addをクリックする
-   Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
+サーバー側から取ってくるべきである物 ta.key ca.crt client1.crt client1.key 1.pfsenseにopenvpnの証明書を登録する 1.1.System/Certificate Managerに移動 1.2.CAを追加する Addをクリックする
+Descriptive name に わかりやすい名前をつけます。例えば、[サーバー名_CA]のような感じです。
 Certificate data に ca.crtの内容をすべて入れます。
 Serial for next certificate はよくわからなかったので「1」と入れました。
 1.3.クライアント証明書を登録する Certificate ManagerにあるCertificateに移動します。
-   Descriptive name に適当な名前をつけます。
+Descriptive name に適当な名前をつけます。
 Certificate data にclient1.crtの内容を入れます。
 Private key data にclient1.keyの内容を入れます。
-2.pfsenseでopenvpnの設定を開く    VPN-&amp;gt;OpenVPNを開きます。
-2.1.openvpnでclientを追加する    AddでClientを追加します。
-2.2.設定をしていく    Server host or address:10.</description>
-    </item>
-    
-    <item>
-      <title>PowerConnectでVLANの設定をする</title>
-      <link>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</link>
-      <pubDate>Fri, 21 Dec 2018 11:44:05 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</guid>
-      <description>PowerConnect6248というものをバリバリ動かしている筆者です。
+2.pfsenseでopenvpnの設定を開く VPN-&amp;gt;OpenVPNを開きます。
+2.1.openvpnでclientを追加する AddでClientを追加します。
+2.2.設定をしていく Server host or address:10.</description></item><item><title>PowerConnectでVLANの設定をする</title><link>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</link><pubDate>Fri, 21 Dec 2018 11:44:05 +0900</pubDate><guid>https://yoneyan.dev/tech/network/setting-vlan-with-powerconnect/</guid><description>PowerConnect6248というものをバリバリ動かしている筆者です。
 やっぱり、家庭では最低でも48ポート必要ですよね？
 まあ、こいつのせいで電気代が掛かっているので対処法を考えていますが&amp;hellip;
 Ciscoのスイッチとは設定方法がすこし異なるところもあるので、今回はその部分を説明させていただきます。
 VLANの種類 VLANでの設定方法では以下の2つの種類があります。
- accessポート trunkポート  前半にaccessポート、後半にtrunkポートの設定方法について説明させていただきます。
+accessポート trunkポート 前半にaccessポート、後半にtrunkポートの設定方法について説明させていただきます。
 Accessポートの設定編 Accessポートの設定方法を紹介します。
 例として：1/g12ポートにVLAN100を割り当て、1/g13ポートのVLAN200と割り当てるとします。
- config vlan database vlan 100 vlan 200 exit interface ethernet 1/g12 switchport access vlan 100 exit interface ethernet 1/g13 switchport access vlan 200 exit  上記のコードでaccessポートの設定ができます。
+config vlan database vlan 100 vlan 200 exit interface ethernet 1/g12 switchport access vlan 100 exit interface ethernet 1/g13 switchport access vlan 200 exit 上記のコードでaccessポートの設定ができます。
 vlan databaseで使うVLANを設定しないと文句を言われるので、注意して下さい。
 Trunkポートの設定編 そもそも、trunkポートとは複数のVLANを一つのインタフェースで実現する際に使用します。
 それでは設定方法を紹介します。
 例として、1/g1をVLAN 5,10,20とします。
- config vlan database vlan 5 vlan 10 vlan 20 exit interface ethernet 1/g1 switchport mode trunk switchport trunk allowed vlan add 5,10,20 exit  このような感じで簡単に設定ができます。</description>
-    </item>
-    
-    <item>
-      <title>Cisco892WでAPファームウェアを初期化する方法</title>
-      <link>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</link>
-      <pubDate>Sun, 09 Dec 2018 21:59:07 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</guid>
-      <description>Cisco892WはAPファームウェアとルータ用ファームウェアが別れているなかなか変態仕様になっています。 初期化をどのようにするのかこの記事で紹介していきます。
+config vlan database vlan 5 vlan 10 vlan 20 exit interface ethernet 1/g1 switchport mode trunk switchport trunk allowed vlan add 5,10,20 exit このような感じで簡単に設定ができます。</description></item><item><title>Cisco892WでAPファームウェアを初期化する方法</title><link>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</link><pubDate>Sun, 09 Dec 2018 21:59:07 +0900</pubDate><guid>https://yoneyan.dev/tech/network/initialize-cisco_892w-firmware/</guid><description>Cisco892WはAPファームウェアとルータ用ファームウェアが別れているなかなか変態仕様になっています。 初期化をどのようにするのかこの記事で紹介していきます。
 そもそもCisco 892Wとは？ Cisco 892Wはルータとアクセスポイントが合体したものです。扱いとしてはルータになります。Cisco 892に無線機能がついただけのものです。
 Cisco892Wはルータとアクセスポイントが合体していることもあり、ルータ用OSとアクセスポイント用のOSが分かれている特殊な機種です。
 簡潔に言うと、ルータ用のファームウェアとアクセスポイント用のファームウェアは別々にあるということです。
@@ -309,20 +155,11 @@ APファームウェアの初期化 これからいよいよAPファームウェ
 グローバルコンフィグレーションモードではなく特権モードで行います。
 Router# &amp;lt;===特権モードはこんな感じ
 Router(config)#&amp;lt;===グローバルコンフィグレーションモードはこんな感じ
-service-module wlan-ap 0 reset  上記のコマンドを入力すると、
- Use reset only to recover from shutdown or failed state AP config will not be saved Do you want to reset?[confirm]  「本当にリセットするの？」と892W君が確認してくれるのでyと入力するとリセットが開始されます。
+service-module wlan-ap 0 reset 上記のコマンドを入力すると、
+Use reset only to recover from shutdown or failed state AP config will not be saved Do you want to reset?[confirm] 「本当にリセットするの？」と892W君が確認してくれるのでyと入力するとリセットが開始されます。
 まとめ このような感じでAPファームウェアの初期化を行うことが可能となりました。
 892Wの欠点はAP側の設定を大胆に間違ってしまう（パスワードがわからなくなったりなど）と、初期化するしか方法がなくなるので注意が必要です。 家庭用のものではルータ＋APが入っているのが出回っていますが、業務用の場合であればルータとAPが分かれている場合が多いです。 家庭用であれば、合体している方が便利というのが一番だと思いますが、難しいところです。
-少しずつ、892WやAironet系のCiscoの無線機器の記事も出していく予定ですので、よろしくお願いします。</description>
-    </item>
-    
-    <item>
-      <title>CiscoルータでWANを冗長化する</title>
-      <link>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</link>
-      <pubDate>Thu, 06 Dec 2018 00:31:45 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</guid>
-      <description>関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。
+少しずつ、892WやAironet系のCiscoの無線機器の記事も出していく予定ですので、よろしくお願いします。</description></item><item><title>CiscoルータでWANを冗長化する</title><link>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</link><pubDate>Thu, 06 Dec 2018 00:31:45 +0900</pubDate><guid>https://yoneyan.dev/tech/network/redundant-wan-with-ciscorouter/</guid><description>関西ネットワークトラブルシュートワークショップ（略してKNTW）というものを我々が運営させていただいているのですが、その際のバックボーンネットワークとして実際に使ったネットワークです。
 CiscoルータでWAN側の冗長化を行うために、HSRPというCisco独自のプロトコルを使用します。 また、デフォルトゲートウェイを冗長化するものとして、VRRPというプロトコルが存在しますが、今回はこれを使用しません。
 今回は例として、Cisco 841Mを使って構築します。
 VRRPの弱点 VRRPもHSRPと同様のCisco独自プロトコルですが、ルータの冗長化はできます。しかし、WAN側の冗長化ができないという欠点を持っています。
@@ -330,7 +167,7 @@ VRRPの弱点 VRRPもHSRPと同様のCisco独自プロトコルですが、ル�
 （VRRPでもできるのかもしれませんが知識不足で分かっておりません。）
 Cisco以外の機種では&amp;hellip; HSRPはお得意のCisco独自プロトコルとなっています。他社のネットワーク機器では独自のプロトコル又は出来ない可能性が高いので気をつけてください。
 構築していく 以下のようなトポ図で構築すると仮定します。
-   上のルータをrouter1とし、下のルータをrouter2とします。
+上のルータをrouter1とし、下のルータをrouter2とします。
 また、LAN側は同一ネットワークである必要があるので注意してください。
 各ルータのインターフェースは下記の通りとします。
 router1
@@ -340,103 +177,48 @@ router2
 WAN側：GigabitEthernet 0/5
 LAN側：GigabitEthernet 0/0
 Router1の設定 LAN側のinterfaceに
- standby 10 ip 192.168.0.1 standby 10 priority 105 standby 10 preempt  を設定するだけです。
+standby 10 ip 192.168.0.1 standby 10 priority 105 standby 10 preempt を設定するだけです。
 standby 10 ip 192.168.0.1の10の部分はHSRPのグループ番号なので適当な数字を入れても問題ありません。
 priority 105の部分はどのルータを優先的に使うのかという設定です。
-Router2の設定 LAN側のinterfaceに  standby 10 ip 192.168.0.2 standby 10 priority 100  を設定するだけです。
+Router2の設定 LAN側のinterfaceに standby 10 ip 192.168.0.2 standby 10 priority 100 を設定するだけです。
 コンフィグの内容はrouter1に書いた内容と同じです。
-まとめ VRRPでは物理的なルータの冗長化をすることしかできませんが、Cisco独自プロトコルになってしまいます。 しかし、HSRPを使うとWANの冗長化をすることが簡単にできるので、家庭でCiscoのルータでWANの冗長化をする際は是非参考にしていただければ幸いです。</description>
-    </item>
-    
-    <item>
-      <title>CentOSで無線から有線に変換する(1)</title>
-      <link>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_1/</link>
-      <pubDate>Tue, 20 Nov 2018 14:06:55 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_1/</guid>
-      <description>諸事情でどこかのイベントでバックボーンを構築をする際に無線から有線に変換する必要性が出てきたので、この記事ではその方法を紹介します。 トポ図 ルータ &amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; CentOS &amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; Client External Internal External(eth1),Internal(eth0)
+まとめ VRRPでは物理的なルータの冗長化をすることしかできませんが、Cisco独自プロトコルになってしまいます。 しかし、HSRPを使うとWANの冗長化をすることが簡単にできるので、家庭でCiscoのルータでWANの冗長化をする際は是非参考にしていただければ幸いです。</description></item><item><title>CentOSで無線から有線に変換する(1)</title><link>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_1/</link><pubDate>Tue, 20 Nov 2018 14:06:55 +0900</pubDate><guid>https://yoneyan.dev/tech/network/convert-wireless-to-wired-with-centos_1/</guid><description>諸事情でどこかのイベントでバックボーンを構築をする際に無線から有線に変換する必要性が出てきたので、この記事ではその方法を紹介します。 トポ図 ルータ &amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; CentOS &amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;-&amp;gt; Client External Internal External(eth1),Internal(eth0)
 設定をしてみる 1.firewallコマンド eth0をInternalゾーン
-firewall-cmd --zone=internal --change-interface=eth0  eth1をExternalゾーン
-firewall-cmd --zone=external --change-interface=eth1  永続化する時は、&amp;ndash;permanentをつけるといけます。
-2.IPマスカレード firewall-cmd --zone=external --add-masquerade --permanent firewall-cmd --reload firewall-cmd --zone=external --query-masquerade cat /proc/sys/net/ipv4/ip_forward（「1」であれば有効） firewall-cmd --zone=internal --add-masquerade --permanent firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -o eth1 -j MASQUERADE firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth0 -o eth1 -j ACCEPT firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth1 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT  3.</description>
-    </item>
-    
-    <item>
-      <title>CentOSでリンクアグリゲーションの設定をしてみる</title>
-      <link>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</link>
-      <pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</guid>
-      <description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
+firewall-cmd --zone=internal --change-interface=eth0 eth1をExternalゾーン
+firewall-cmd --zone=external --change-interface=eth1 永続化する時は、&amp;ndash;permanentをつけるといけます。
+2.IPマスカレード firewall-cmd --zone=external --add-masquerade --permanent firewall-cmd --reload firewall-cmd --zone=external --query-masquerade cat /proc/sys/net/ipv4/ip_forward（「1」であれば有効） firewall-cmd --zone=internal --add-masquerade --permanent firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -o eth1 -j MASQUERADE firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth0 -o eth1 -j ACCEPT firewall-cmd --direct --add-rule ipv4 filter FORWARD 0 -i eth1 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT 3.</description></item><item><title>CentOSでリンクアグリゲーションの設定をしてみる</title><link>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</link><pubDate>Mon, 19 Nov 2018 01:29:33 +0900</pubDate><guid>https://yoneyan.dev/tech/network/setting-linkaggregation-on-centos/</guid><description>今回はCentOSでIEEE 802.3ad規格のリンクアグリゲーションを構築してみます。 IEEE 802.3adとは国際で定められたリンクアグリゲーションの規格のことを指します。 この記事ではここからLAGと表記していきます。 この記事ではCentOSにリンクアグリゲーションの設定を最初からやっていきます。
 リンクアグリゲーションとは？ この記事を見てくださっている方はおわかりだと思いますが、LAGとはLANケーブルを数本束ねて高速化＆耐障害性に優れているものになっています。 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。
 設定方法 設定方法として、以下の2つがあります。
- nmtui（GUI） nmcli（CUI)  今回はこの内のnmtuiを使った設定方法を紹介します。 nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。
+nmtui（GUI） nmcli（CUI) 今回はこの内のnmtuiを使った設定方法を紹介します。 nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。
 設定していく 1.nmtuiを起動する sudo nmtui
-恐らく、管理者権限ではないと設定出来ない可能性が高いです。  
-
+恐らく、管理者権限ではないと設定出来ない可能性が高いです。
 こんな感じのネットワークの設定画面が表示されます。
 2.LAGの設定をしていく Edit a connectionを選択してから、Addを選択すると、下のようなものが出てきます。
-   LAGを使う場合はBondを選択します。
-3.bondの設定をしていく    AddでEthernetを選択し、Device名を手打ちでします。 それから、Modeで802.3adを選択すると、リンクアグリゲーションを使うことが出来るようになります。 IPv4を固定にしたい場合は、Manualですることができます。 最後にOKを選択し、ダイアログを閉じます。 これでLAGを使用することが可能になります。
+LAGを使う場合はBondを選択します。
+3.bondの設定をしていく AddでEthernetを選択し、Device名を手打ちでします。 それから、Modeで802.3adを選択すると、リンクアグリゲーションを使うことが出来るようになります。 IPv4を固定にしたい場合は、Manualですることができます。 最後にOKを選択し、ダイアログを閉じます。 これでLAGを使用することが可能になります。
 4.IPアドレスを取得＆pingが通るか確認する google.co.jpにpingが通るか確認するには
-ping google.co.jp  IPアドレスが取得されているか確認したい場合は
-ip addr  これで確認することが可能になります。</description>
-    </item>
-    
-    <item>
-      <title>UbuntuServerでOpenVPNサーバーを構築</title>
-      <link>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</link>
-      <pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</guid>
-      <description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
-OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa  openvpnとeasy-esaを入れます。
-2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca  make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
-3.varsファイルを設定していく export KEY_COUNTRY=&amp;quot;JA&amp;quot; export KEY_PROVINCE=&amp;quot;OSA&amp;quot; export KEY_CITY=&amp;quot;Osaka&amp;quot; export KEY_ORG=&amp;quot;test&amp;quot; export KEY_EMAIL=&amp;quot;test@myhost.mydomain&amp;quot; export KEY_OU=&amp;quot;test&amp;quot;  vi varsやnano varsのようなコマンドで設定しています。 varsファイルの編集が終わったら必ず
-source ./vars  を実行します。
-4.CA証明書・秘密鍵を作っていく ./clean-all cp openssl-1.0.0.cnf openssl.cnf ./build-ca  cp openssl-1.0.0.cnf openssl.cnfをしないと./build-caの段階でエラーを吐きます。
-5.サーバー証明書・秘密鍵を作っていく ./build-key-server server  Enterを押しまくってyを入力します。
-6.DHパラメータを作っていく ./build-dh  多少時間かかります。
-7.TLSの秘密鍵を作っていく openvpn --genkey --secret ta.key  8.クライアント側の証明書を作っていく ./build-key client1 nopass  client1のところは適当な名前にしてください client1.</description>
-    </item>
-    
-    <item>
-      <title>Cisco_Aironetで802.11nの速度が出ない</title>
-      <link>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</link>
-      <pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</guid>
-      <description>お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&amp;hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
+ping google.co.jp IPアドレスが取得されているか確認したい場合は
+ip addr これで確認することが可能になります。</description></item><item><title>UbuntuServerでOpenVPNサーバーを構築</title><link>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</link><pubDate>Wed, 17 Oct 2018 00:34:29 +0900</pubDate><guid>https://yoneyan.dev/tech/network/openvpn-server-for-ubuntuserver/</guid><description>UbuntuServerを使ってOpenVPNサーバーを構築していきます。 openvpnを使ってVPSと自宅のpfsenseにつないでみる（その1）ではCentOSでOpenVPNサーバーを構築していきましたが、UbuntuServerでは少し構築方法が違うのでここで紹介していきます。
+OpenVPNサーバーの構築をしていく 1.関連するパッケージをインストールしていく apt install openvpn easy-rsa openvpnとeasy-esaを入れます。
+2.フォルダやらファイルを作る cd /etc/openvpn make-cadir ca cd ca make-cadir caでcaフォルダに証明書作成ツールなどを勝手に入れてくれます。
+3.varsファイルを設定していく export KEY_COUNTRY=&amp;quot;JA&amp;quot; export KEY_PROVINCE=&amp;quot;OSA&amp;quot; export KEY_CITY=&amp;quot;Osaka&amp;quot; export KEY_ORG=&amp;quot;test&amp;quot; export KEY_EMAIL=&amp;quot;test@myhost.mydomain&amp;quot; export KEY_OU=&amp;quot;test&amp;quot; vi varsやnano varsのようなコマンドで設定しています。 varsファイルの編集が終わったら必ず
+source ./vars を実行します。
+4.CA証明書・秘密鍵を作っていく ./clean-all cp openssl-1.0.0.cnf openssl.cnf ./build-ca cp openssl-1.0.0.cnf openssl.cnfをしないと./build-caの段階でエラーを吐きます。
+5.サーバー証明書・秘密鍵を作っていく ./build-key-server server Enterを押しまくってyを入力します。
+6.DHパラメータを作っていく ./build-dh 多少時間かかります。
+7.TLSの秘密鍵を作っていく openvpn --genkey --secret ta.key 8.クライアント側の証明書を作っていく ./build-key client1 nopass client1のところは適当な名前にしてください client1.</description></item><item><title>Cisco_Aironetで802.11nの速度が出ない</title><link>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</link><pubDate>Tue, 09 Oct 2018 02:33:27 +0900</pubDate><guid>https://yoneyan.dev/tech/network/slow-speed-aironet802.11n/</guid><description>お家から民生用のバッファローやNECの無線LANを排除してから2ヶ月くらい立ち、かなり満足しているのですが前々からある問題を抱えていました。 それは&amp;hellip; 802.11nの速度が出ない というところです。 自分の知識不足＋やる気のなさ がすべての原因だったのですが、一応備忘録としてこの記事に書いていきます。 5ghzはいけましたが、なぜか2.4ghz側の設定が出来ないので、でき次第こちらか違う記事に載せよう仮名と思っています。 ということで、この記事では5ghzで802.11nの速度を出すための方法のみの紹介となりますが、ご了承のほどお願いします。
 Dot11Radio1の設定 5ghzの設定になるので、Dot11Radio1でコンフィグを弄ります。 方法を簡単に書くと、チャンネルを適当なところで固定してから40Mhzの設定をするという感じです。 802.11nは2つのチャンネルを束ねて、速度を倍にしているといったごり押しな規格になっておりチャンネルが自動設定ではなぜかうまく行かないので、手動で合わせます。 また、どのチャンネルが重なっていないのかはスマホにWifiアナライザーのアプリを入れておくとかなり幸せになれます。
-interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1  とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
-まとめ 802.11nの設定はコツさえ掴めたらなんとかなりますが、能力不足の自分にはかなりきつかったです。 もっとよく知りたい方は、Ciscoの公式サイトにしっかりと説明を書いてくれているのでじっくり読むことをおすすめします。</description>
-    </item>
-    
-    <item>
-      <title>Cisco_AironetでWPA2-PSKを使ってみる</title>
-      <link>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</link>
-      <pubDate>Tue, 09 Oct 2018 02:15:26 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</guid>
-      <description>自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
+interface dot11radio1 stbc beamform ofdm packet retries 32 channel width 40-above channel 5660 station-role root rts retries 32 beacon period 60 beacon dtim-period 1 とこんな感じの設定で行けるはずです。 正直なところ一ヶ月以上前に設定した内容になっているので恐らく間違っているところがあると思われるので、その場合はコメントでよろしくお願いいたします。 わかる範囲で説明すると、 channel width 40-above:こいつが802.11nの設定（40Mhzという意味） channel 5660: こいつは5ghzのどこのチャンネルを使うのかという意味（自分の環境に合わせることを忘れないでください） 他の部分は少しずつ書いていきます。
+まとめ 802.11nの設定はコツさえ掴めたらなんとかなりますが、能力不足の自分にはかなりきつかったです。 もっとよく知りたい方は、Ciscoの公式サイトにしっかりと説明を書いてくれているのでじっくり読むことをおすすめします。</description></item><item><title>Cisco_AironetでWPA2-PSKを使ってみる</title><link>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</link><pubDate>Tue, 09 Oct 2018 02:15:26 +0900</pubDate><guid>https://yoneyan.dev/tech/network/using-wpa2psk-with-aironet/</guid><description>自宅の家にある無線LANを民生用の物から業務用の物に移行しているのですが、初めてCiscoのAironetの設定をすることになったので、その備忘録的なものをこの記事に残しておこうかなと思っています。 CiscoのAironetでも最近のx800SeriesではGUIで操作する方がわかりやすくなっています。しかし、それより以前のものになってくると、GUIよりもCLIの方が把握しやすいので今回の記事ではCLIでの紹介をしていきます。 注)Cisco Aironet x800SeriesのCLIではコマンド体系が刷新されているのでこの記事は参考にならないので、注意してください。
 前提条件として 2.4ghz帯のssidをtest-2.4ghz 5ghz帯のssidをtest-5ghz と上のようなssidを作成してみます。（ssidの名前は適当に変えてください）
 初期の設定 マルチssidを有効にするために
-dot11 mbssid  を実行します。
-ssidの設定 vlanで指定する場合はauthentication openの前の行に下記のようなコマンドを入力してください。 vlan 100  100のところには適当な物に変更してください。
-2.4ghz側 dot11 ssid test-2.4ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  passwordのところにはssidに対するWifiのパスワードを設定してください。 5ghz側の設定も同じようにしていきます。
-5ghz側 dot11 ssid test-5ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password  こちらも同様にpasswordのところには適当なパスワードを入力してください。
+dot11 mbssid を実行します。
+ssidの設定 vlanで指定する場合はauthentication openの前の行に下記のようなコマンドを入力してください。 vlan 100 100のところには適当な物に変更してください。
+2.4ghz側 dot11 ssid test-2.4ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password passwordのところにはssidに対するWifiのパスワードを設定してください。 5ghz側の設定も同じようにしていきます。
+5ghz側 dot11 ssid test-5ghz authentication open authentication key-management wpa version 2 mbssid guest-mode wpa-psk ascii 7 password こちらも同様にpasswordのところには適当なパスワードを入力してください。
 無線の設定 トランクなどでvlanを分けている場合はSSIDから飛ばすVLANごとに設定を入れる必要があります。その場合は、
-ssid test-2.4ghz  の前の行に下記のようなコマンドを入れます。
-encryption vlan 100 mode ciphers aes-ccm  100のところは適当な物に書き換えてください。</description>
-    </item>
-    
-    <item>
-      <title>CentOSのOpenVPNサーバーを構築してみる</title>
-      <link>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</link>
-      <pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</guid>
-      <description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
+ssid test-2.4ghz の前の行に下記のようなコマンドを入れます。
+encryption vlan 100 mode ciphers aes-ccm 100のところは適当な物に書き換えてください。</description></item><item><title>CentOSのOpenVPNサーバーを構築してみる</title><link>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</link><pubDate>Fri, 07 Sep 2018 20:00:06 +0900</pubDate><guid>https://yoneyan.dev/tech/network/building-centos-openvpn-server/</guid><description>OpenVPNを使ってVPSと自宅のpfsenseにつないでみました。
 この記事の構成 このテーマは3つに分けて、記事にしていく予定です。
 その１:VPS側（サーバー側）の設定
 その２:pfsense側（クライアント側）の設定
@@ -445,27 +227,18 @@ VPS側で
 OpenVPNの設定をしていく この記事ではCentOSを使った紹介をしていきます。
 最初にやっておくこと
 CentOSにepelのレポジトリを使えるようにしておきましょう
-関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa  フォルダを作る mkdir /etc/openvpn/easy-rsa  フォルダ群をコピー cp /usr/share/easy-rsa/***/* /etc/openvpn/easy-rsa/ -R  米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）
-認証局を作る cd /etc/openvpn/easy-rsa ./easyrsa init-pki ./easyrsa build-ca ./easyrsa gen-dh cd /etc/openvpn openvpn --genkey --secret /etc/openvpn/ta.key  詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。
+関係するパッケージをインストールする yum --enablerepo=epel -y install openvpn easy-rsa フォルダを作る mkdir /etc/openvpn/easy-rsa フォルダ群をコピー cp /usr/share/easy-rsa/***/* /etc/openvpn/easy-rsa/ -R 米印の部分にはeasy-rsaのバージョンを入れてください。（執筆時は3.03です。）
+認証局を作る cd /etc/openvpn/easy-rsa ./easyrsa init-pki ./easyrsa build-ca ./easyrsa gen-dh cd /etc/openvpn openvpn --genkey --secret /etc/openvpn/ta.key 詳しくはよくわかりませんが、これだけで認証局が超簡単に作ることができます。
 ./easyrsa build-caを実行すると&amp;hellip;
-Enter PEM pass phrase:  こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。
+Enter PEM pass phrase: こういう物が出てくるので、適当に自分で考えてパスフレーズを入力します。
 サーバー側の証明書を作成 パスワードがめんどくさいのでパスワードなし(no pass)にします。
-cd /etc/openvpn/easy-rsa ./easyrsa build-server-full server nopass  Server側のkey:/etc/openvpn/easy-rsa/pki/private/server.key
+cd /etc/openvpn/easy-rsa ./easyrsa build-server-full server nopass Server側のkey:/etc/openvpn/easy-rsa/pki/private/server.key
 Server側のcrt:/etc/openvpn/easy-rsa/pki/issued/server.crt
-クライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。</description>
-    </item>
-    
-    <item>
-      <title>pfsenseでPS4やPS3のNATタイプ3になる際の対処法</title>
-      <link>https://yoneyan.dev/tech/network/becoming-nat-type-3-of-playstation-with-pfsense/</link>
-      <pubDate>Thu, 18 Jan 2018 12:01:34 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/tech/network/becoming-nat-type-3-of-playstation-with-pfsense/</guid>
-      <description>最近自作ルーターを構築して、WebGUIで管理できるpfsenseというOSインストールして使っている筆者です。
+クライアント側の証明書を作成 こちらもパスワードがめんどくさいのでnopassにします。</description></item><item><title>pfsenseでPS4やPS3のNATタイプ3になる際の対処法</title><link>https://yoneyan.dev/tech/network/becoming-nat-type-3-of-playstation-with-pfsense/</link><pubDate>Thu, 18 Jan 2018 12:01:34 +0900</pubDate><guid>https://yoneyan.dev/tech/network/becoming-nat-type-3-of-playstation-with-pfsense/</guid><description>最近自作ルーターを構築して、WebGUIで管理できるpfsenseというOSインストールして使っている筆者です。
 pfsenseを構築したことで安定性がかなり上がったのですが、一つ問題が発生しました。それはPS3とPS4のオンライン機能です。pfsenseにしたことで、NATタイプ3になってしまい、オンラインで遊ぶ時に支障を来し始めたので、その対処法を紹介させていただきます。
 NATタイプとは？ PSにはネットワークの判別方法としてNATタイプというものがあります。
 NATタイプには以下の種類があります。
- NATタイプ1 NATタイプ2 NATタイプ3  NATタイプ1とは？ PPPoE接続している際に表示されます。ルーターに接続せずに直で刺している状況です。
+NATタイプ1 NATタイプ2 NATタイプ3 NATタイプ1とは？ PPPoE接続している際に表示されます。ルーターに接続せずに直で刺している状況です。
 普通はルーターに接続しているのでこのような場合はほぼないでしょうｗ
 NATタイプ2とは？ 一つのルーターを使ってアドレス変換ができている状況です。
 NATタイプ3とは？ 複数のルーターを経由して接続されている状況です。
@@ -474,16 +247,12 @@ IPマスカレードで接続している場合でもこの表示が出ます。
 自分の場合はパーティーのボイスチャットができなくなるという支障が出ました。
 NATタイプ何ならいいのか？ NATタイプ1とNATタイプ2であればPSのオンライン機能を支障が起こることなく楽しめます。
 NATタイプ3の場合は上でも書いてる通り、オンライン機能の一部に支障をきたすことになります。
-pfsenseの設定していく 1.Firewall-&amp;gt;NAT-&amp;gt;Outboundの設定 Outbound NAT Modeの設定    Hybrid Outbound NAT を選択して、Saveしてください。
-Mappingsの設定    Addをクリックする
-   上の通りに設定する。
+pfsenseの設定していく 1.Firewall-&amp;gt;NAT-&amp;gt;Outboundの設定 Outbound NAT Modeの設定 Hybrid Outbound NAT を選択して、Saveしてください。
+Mappingsの設定 Addをクリックする
+上の通りに設定する。
 Sourceは自分のIPアドレスを設定
 入力が終わると、Saveして保存する
-   この通りになっているか確認してApply Settingする。
-2.Services-&amp;gt;UPnP &amp;amp; NAT-PMPの設定 UPnP &amp;amp; NAT-PMP　Settingの設定    このように設定します。
+この通りになっているか確認してApply Settingする。
+2.Services-&amp;gt;UPnP &amp;amp; NAT-PMPの設定 UPnP &amp;amp; NAT-PMP　Settingの設定 このように設定します。
 注意点としてはLog packetsとDefault Denyを有効にしてください。
-UPnP Access Control Listsの設定    設定例としてはこんな感じになりますう。</description>
-    </item>
-    
-  </channel>
-</rss>
+UPnP Access Control Listsの設定 設定例としてはこんな感じになりますう。</description></item></channel></rss>

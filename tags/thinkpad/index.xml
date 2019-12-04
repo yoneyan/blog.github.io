@@ -1,40 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>thinkpad on のんびりと生きたい</title>
-    <link>https://yoneyan.dev/tags/thinkpad/</link>
-    <description>Recent content in thinkpad on のんびりと生きたい</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 16 Jun 2019 17:07:07 +0900</lastBuildDate>
-    
-	<atom:link href="https://yoneyan.dev/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>x230で本当のデュアルブートをしてみる</title>
-      <link>https://yoneyan.dev/talk/real-dual-boot-with-x230/</link>
-      <pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate>
-      
-      <guid>https://yoneyan.dev/talk/real-dual-boot-with-x230/</guid>
-      <description>神機種と呼ばれている x230というThinkpadを愛用しています。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>thinkpad on のんびりと生きたい</title><link>https://yoneyan.dev/tags/thinkpad/</link><description>Recent content in thinkpad on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 16 Jun 2019 17:07:07 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/thinkpad/index.xml" rel="self" type="application/rss+xml"/><item><title>x230で本当のデュアルブートをしてみる</title><link>https://yoneyan.dev/talk/real-dual-boot-with-x230/</link><pubDate>Sun, 16 Jun 2019 17:07:07 +0900</pubDate><guid>https://yoneyan.dev/talk/real-dual-boot-with-x230/</guid><description>神機種と呼ばれている x230というThinkpadを愛用しています。
 少し、話が逸れてしまいますが、自分が持っているThinkpadにはいくつか問題があります。
 まず、キーボードを交換した時にすべてのネジが行方不明になり出先でもキーボードの外れる問題
-   どこでも外れるキーボード
+どこでも外れるキーボード
 そして、画面の縁の一部が外れる問題
-   画面の縁が外れる
+画面の縁が外れる
 画面のすべてのインジケーター部分の故障（これのせいで、充電してるのかしてないのかがまったくわからない）
-   インジケーターの故障
+インジケーターの故障
 最後に、盛大に落としたときに割れた部分を同じように落とした結果&amp;hellip;
-   割れた部分の被害
+割れた部分の被害
 さすがに、割れたままにしておくと尖っていて危なかったので、けがしない程度に削りました。
 災難なことを乗り越えてきたx230ですが、真面目にデュアルブートをしてみたいという欲望に駆られてしまったので、実戦してみました。
 前置きがかなり長くなりましたが、いよいよ本題です！！
 デュアルブートしたい デュアルブートする方法として、
- 1つのストレージで異なるOSを同居させる 違うストレージにそれぞれ異なるOSを入れる  自分は後者の違うストレージにそれぞれ異なるOSを入れることにしました。
+1つのストレージで異なるOSを同居させる 違うストレージにそれぞれ異なるOSを入れる 自分は後者の違うストレージにそれぞれ異なるOSを入れることにしました。
 しかし、違うストレージに1つずつ入れるとなると入れたいOSの数のストレージを用意する必要出てきます。これではスロットが何台あっても足りません。
 そこで、
-   思い出しました。
+思い出しました。
 これは使えるのではないのかと。
 物理デュアルブート 物理的にストレージを変えることで、GRUBがバグることがあっても違うOSが入ったストレージに交換すればいいということや、いくらでも検証でOSをぶっ壊せるのでよくやらかす人にはおすすめです。
 問題点 しかし、この画期的？な方法にもそもそもの問題点があります。
@@ -44,9 +25,5 @@
 しかも、スリープ中にカバンに入れて持ち運んでる時にストレージが奥深くに追いやられて気付かずに起動してフリーズするといったこともあったりします。
 いろんな人にお前のPC大丈夫かと心配されることがあるかもしれません。（大丈夫だと思うのは自分だけかもしれませんが&amp;hellip;）
 実際の状態 これが本当のデュアルブートです pic.twitter.com/M18sngdCGS
-&amp;mdash; yoneyan (@yoneyan_ja) June 2, 2019  デュアルブート
-まとめ このようなことありますが、生活が豊かになるので皆さんも実践してみましょう！！</description>
-    </item>
-    
-  </channel>
-</rss>
+&amp;mdash; yoneyan (@yoneyan_ja) June 2, 2019 デュアルブート
+まとめ このようなことありますが、生活が豊かになるので皆さんも実践してみましょう！！</description></item></channel></rss>
