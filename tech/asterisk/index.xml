@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asterisk on のんびりと生きたい</title><link>https://yoneyan.dev/tech/asterisk/</link><description>Recent content in Asterisk on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 25 Dec 2018 05:28:23 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/asterisk/index.xml" rel="self" type="application/rss+xml"/><item><title>大好きな曲を電話回線網から流す方法</title><link>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</link><pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate><guid>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</guid><description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asterisk on のんびりと生きたい</title><link>https://yoneyan.dev/tech/asterisk/</link><description>Recent content in Asterisk on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/asterisk/index.xml" rel="self" type="application/rss+xml"/><item><title>ポケベルのようななにかを作る</title><link>https://yoneyan.dev/tech/asterisk/like-pocketbell-for-asterisk/</link><pubDate>Fri, 06 Dec 2019 00:00:00 +0900</pubDate><guid>https://yoneyan.dev/tech/asterisk/like-pocketbell-for-asterisk/</guid><description>この記事は、 OIT Advent Calendar 2019の7日目の記事です。
+今年もAdvent Calendarの季節がやってきました。 今回は 2019年9月30日 にお亡くなりになった、ポケベルの追悼の意を込めて作成にあたりました。
+ポケベルとは ポケットベルの略です。 ポケベルにはそれぞれ電話番号が割り当ている。
+ポケベルにメッセージを送るには、送信者は以下の操作が必要になります。
+メッセージを届けたいポケベルの電話番号に掛ける ＊2＊2(コメに−コメに−)を入力　＜ーメッセージを開始時 メッセージの入力 ＃＃を入力　＜ーメッセージを終了時 ３の「メッセージの入力」ではポケベルの文字コード表というものを見ながらダイヤル入力します。
+ポケットベルは受信しかできない通信機器ということもあり、一方通行でのやり取りになっています。
+文字コード表について この文字コード表がドコモ派とテレメ派の2種類あり、契約しているポケベルのキャリアによって 違う文字コードを打つ必要があるという互換性に優れていない状況になっていたらしいです。
+作成経緯や使い方動画 ニコニコ動画版は[こちらから]() Twitter DMの送り方は↓ 成果物 電話を掛けてダイヤルキーからTwitterに投稿できる
+電話番号は 050-5373-8900 です。
+ポケベルの文字コード表は以下こちらから
+投稿されるTwitterはこちらから
+ソースコードはこちらから
+今回作成した文字コード表はテレメをベースにしています。
+投稿のされ方 あかんやん
+&amp;mdash; 📞050-5373-8900 (@TEL_05053738900) December 3, 2019 @yoneyan_ja あかんやん
+&amp;mdash; 📞050-5373-8900 (@TEL_05053738900) December 3, 2019 使い方 ポケベルの操作をなるべく再現されるように試みたが、機能的に削っているものも多いですがその点はご了承ください。
+＊２＊２(コメに−コメに−)を入力　＜ーメッセージを開始時 メッセージの入力 ＃＃を入力　＜ーメッセージを終了時 これでツイートされます。</description></item><item><title>大好きな曲を電話回線網から流す方法</title><link>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</link><pubDate>Tue, 25 Dec 2018 05:28:23 +0900</pubDate><guid>https://yoneyan.dev/tech/asterisk/favorite-songs-from-the-telephone-network/</guid><description>この記事は、 OIT Advent Calendar 2018の25日目の記事です。
 最終日ということもあり気合を入れて紹介させていただきます。
 作った物 いきなりになってしまいますが、作った物から紹介させていただきます。私が大好きな曲の中でもかなりのトップレベルを占める曲として、コンギョと一般男性脱糞シリーズ という曲があります。（最近では鼻歌でも歌ってしまうほどのはまってしまっています&amp;hellip;）
 このような素晴らしい曲は残念ながらインターネット上でのみの配信となっており、インターネットが繋がらない人には聞いてもらうことも出来ません。 そこで、いろんな人に聞いてほしいという思いで電話回線網から音楽を聞けるものを作りました。
