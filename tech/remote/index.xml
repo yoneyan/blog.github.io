@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Remote on のんびりと生きたい</title><link>https://yoneyan.dev/tech/remote/</link><description>Recent content in Remote on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 06 Aug 2018 03:08:24 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/remote/index.xml" rel="self" type="application/rss+xml"/><item><title>外でPCゲームをする方法その1（rdp編）</title><link>https://yoneyan.dev/tech/remote/play-a-pcgame-outside-1_rdp/</link><pubDate>Mon, 06 Aug 2018 03:08:24 +0900</pubDate><guid>https://yoneyan.dev/tech/remote/play-a-pcgame-outside-1_rdp/</guid><description>この記事はリモートでPCゲームをする方法（rdp編）の続き？になります。 前回の記事では家庭内LANでPCゲームをする方法を紹介しましたが、この記事では外でPCゲームをする方法を紹介します。
 方法として リモートデスクトップを使って外でPCゲームをする方法として、下の二つの方法があります。
-VPNをつなげてローカルIPでリモートデスクトップ接続する ルータをポート開放してリモートデスクトップ接続する この記事では、VPNを使ったつなげてローカルIPでRDP接続する方法を紹介します。この方法が一番手っ取り早く、簡単にできる方法になると思います。(たぶん&amp;hellip;(^^;))
+VPNをつなげてローカルIPでリモートデスクトップ接続する ルータをポート開放してリモートデスクトップ接続する この記事では、VPNを使ったつなげてローカルIPでRDP接続する方法を紹介します。
 やっていく 1．リモートデスクトップのホスト側にVPNサーバーをインストールする VPN接続するために、リモートデスクトップのホスト側にVPNサーバーを導入します。 VPNサーバーのソフトとして、softetherVPNを使います。 SoftetherVPNのダウンロード ここから
 こんな感じで選択すると、下の方にいっぱいダウンロードリンクが出てくるので、一番上にある物をダウンロードします。 ダウンロードしたものをインストールします。インストール方法は「はい」をクリックしまくるだけで問題ないです。
 2．softetherVPNの設定をする 起動すると、
