@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>network on のんびりと生きたい</title><link>https://yoneyan.dev/tags/network/</link><description>Recent content in network on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 15 Jan 2020 18:34:29 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/network/index.xml" rel="self" type="application/rss+xml"/><item><title>OPNsenseでipv6のpppoeを使ってみる</title><link>https://yoneyan.dev/tech/network/opnsense_ipv6_pppoe/</link><pubDate>Wed, 15 Jan 2020 18:34:29 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opnsense_ipv6_pppoe/</guid><description>IPoEでの接続方法の記事には調べて出てくるのですが、pppoeでのIPv6の接続方法がなかったので ここに残しておきます。
+1. OPNsenseとは m0n0wallからフォークされたものであり、オープンソースで作られているファイアウォールOSです。
+このOPNsenseはFreeBSDベースで作られており、様々な種類の拡張機能があるのが特徴です。
+また、pfsenseも同様にm0n0wallからフォークしたものですが、Electric Sheep Fencing という企業に買収されているが開発が停滞状況になっているらしいです。
+2. 環境 　プロバイダー: eo光 ホーム1Gコース
+OPNsense version: OPNsense 19.7.9_1-amd64
+OPNSense FreeBSDversion: FreeBSD 11.2-RELEASE-p16-HBSD
+2.1. 構成 　&amp;mdash;&amp;mdash;&amp;mdash;| ONU |&amp;mdash;&amp;mdash;-| OPNsense Router |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; |HomeNetwork|
+eo光の場合は、/64のIPv6アドレスが DHCPv6-PD で降ってくる場合の設定ということもあり 注意が必要です。
+3. 設定方法 これから設定していきます。
+3.1. WAN側の設定 Interfaces-&amp;gt;ｗANを選択し以下の項目を変更する。
+&amp;mdash;General configuration&amp;mdash;
+IPv6 Configuration Type [DHCPv6] &amp;mdash;DHCPv6 client configuration&amp;mdash;
+Configuration Mode [Basic] Request only an IPv6 Prefix [☑] Prefix delegation size [64] Send IPv6 Prefix hint [☑] Use IPv4 connectivity [☑] Use VLAN priority [Disable] 3.</description></item></channel></rss>
