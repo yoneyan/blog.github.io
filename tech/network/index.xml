@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on のんびりと生きたい</title><link>https://yoneyan.dev/tech/network/</link><description>Recent content in Network on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 15 Jan 2020 18:34:29 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/network/index.xml" rel="self" type="application/rss+xml"/><item><title>OPNsenseでipv6のpppoeを使ってみる</title><link>https://yoneyan.dev/tech/network/opnsense_ipv6_pppoe/</link><pubDate>Wed, 15 Jan 2020 18:34:29 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opnsense_ipv6_pppoe/</guid><description>IPoEでの接続方法の記事には調べて出てくるのですが、pppoeでのIPv6の接続方法がなかったので ここに残しておきます。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on のんびりと生きたい</title><link>https://yoneyan.dev/tech/network/</link><description>Recent content in Network on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 17 Jan 2020 01:00:00 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tech/network/index.xml" rel="self" type="application/rss+xml"/><item><title>OPNsenseでDDNSが自動更新されない</title><link>https://yoneyan.dev/tech/network/opnsense_not_update_ddns/</link><pubDate>Fri, 17 Jan 2020 01:00:00 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opnsense_not_update_ddns/</guid><description>OPNsenseでDDNSの自動更新のためにdyndnsというものを使っていますが、エラー吐いてうまく更新してくれなかったので、 解消法をこちらに残しておきます。
+かなり単純すぎる間違いを起こしていたのであまり役に立たないかもしれないですが、 ご了承ください。
+1. 基本 1.1. OPNsenseとは m0n0wallからフォークされたものであり、オープンソースで作られているファイアウォールOSです。
+このOPNsenseはFreeBSDベースで作られており、様々な種類の拡張機能があるのが特徴です。
+また、pfsenseも同様にm0n0wallからフォークしたものですが、Electric Sheep Fencing という企業に買収されているが開発が停滞状況になっているらしいです。
+1.2. dyndnsとは https://github.com/opnsense/plugins
+ここのdns/dyndns以下にソースコードが書かれています。
+Dynamic DNS SupportとあるようにDDNSに対応させるツールになります。
+2. 環境 OPNsense version: OPNsense 19.7.9_1-amd64
+OPNSense FreeBSDversion: FreeBSD 11.2-RELEASE-p16-HBSD
+OPNSense os-dyndns: 1.18_1
+2.1. 構成 　&amp;ndash;| ONU |&amp;mdash;WAN&amp;mdash;| OPNsense Router |&amp;mdash;-LAN&amp;mdash;| HomeNetwork |
+WAN側(PPPoE側)のIPが変更されると自動検知し、dyndnsを用いて自動的に更新する。
+更新させるDDNSサービスとしてDuckDNSを使用しています。
+注意: ログのWAN側のIPは182以下はコメントで隠しているので注意してください。
+3. 状況 これからログを取ります。
+Jan 17 00:51:04 opnsense: /services_dyndns_edit.php: Dynamic DNS: (Unknown Response) Jan 17 00:51:04 opnsense: /services_dyndns_edit.php: Dynamic DNS: PAYLOAD: KO Jan 17 00:51:04 opnsense: /services_dyndns_edit.</description></item><item><title>OPNsenseでipv6のpppoeを使ってみる</title><link>https://yoneyan.dev/tech/network/opnsense_ipv6_pppoe/</link><pubDate>Wed, 15 Jan 2020 18:34:29 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opnsense_ipv6_pppoe/</guid><description>IPoEでの接続方法の記事には調べて出てくるのですが、pppoeでのIPv6の接続方法がなかったので ここに残しておきます。
 1. OPNsenseとは m0n0wallからフォークされたものであり、オープンソースで作られているファイアウォールOSです。
 このOPNsenseはFreeBSDベースで作られており、様々な種類の拡張機能があるのが特徴です。
 また、pfsenseも同様にm0n0wallからフォークしたものですが、Electric Sheep Fencing という企業に買収されているが開発が停滞状況になっているらしいです。
