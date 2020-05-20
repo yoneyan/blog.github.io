@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Command on のんびりと生きたい</title><link>https://yoneyan.dev/tags/command/</link><description>Recent content in Command on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/command/index.xml" rel="self" type="application/rss+xml"/><item><title>各種ネットワーク機器(Cisco、YAMAHAなど)のユーザ設定方法</title><link>https://yoneyan.dev/network/command/useradd/</link><pubDate>Mon, 18 May 2020 00:00:00 +0900</pubDate><guid>https://yoneyan.dev/network/command/useradd/</guid><description>この記事では&amp;hellip; Cisco,Juniper,Yamaha,Allied Telesisのユーザ設定の方法を紹介します。 Yamaha Allied Telesisに関しては後ほど追加します。 ネットワーク機器のコンフィグは追加していく予定です。 自分が使うためのコマンドをまとめていく予定です。
+Cisco ユーザ追加 SW(config)# username &amp;lt;user&amp;gt; password &amp;lt;mode&amp;gt; &amp;lt;pass&amp;gt; user: ユーザ名
+pass: パスワード
+mode: modeは以下の通りです。
+Mode | 内容 &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;- 0 | 暗号化されていない平文のパスワード 7 | 暗号化されたパスワード
+平文のパスワードを暗号化 平文(Mode 0)で登録した際に、暗号化するためには以下のコマンドを実行します。
+SW(config)# service password-encryption ユーザ削除 SW(config)# no username &amp;lt;user&amp;gt; Juniper ユーザ追加 root@Juniper# set system login user &amp;lt;user&amp;gt; class &amp;lt;class&amp;gt; root@Juniper# set system login user &amp;lt;user&amp;gt; authentication &amp;lt;pass&amp;gt; user: ユーザ名
+pass: パスワード</description></item></channel></rss>
