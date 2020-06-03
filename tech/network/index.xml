@@ -2,8 +2,7 @@
 アップデート ge-0/0/0に192.168.0.2/24を割当て
 FTP root@Juniper# set interface ge-0/0/0 unit 0 family inet address 192.168.0.2/24 root@Juniper# set security zones security-zone trust interfaces ge-0/0/0.0 root@Juniper# set security zones security-zone trust host-inbound-traffic system-services all root@Juniper# set security zones security-zone trust host-inbound-traffic protocols all root@Juniper# exit root@Juniper&amp;gt; request system software add no-copy ftp://[user]:[pass]@172.16.0.1/[filename].tgz user: FTPユーザ名
 pass: FTPパスワード
-filename: FTPのファイル名
-FTP root@Juniper# set interface ge-0/0/0 unit 0 family inet address 192.168.0.2/24 root@Juniper# set security zones security-zone trust interfaces ge-0/0/0.</description></item><item><title>OPNsenseでDDNSが自動更新されない</title><link>https://yoneyan.dev/tech/network/opnsense_not_update_ddns/</link><pubDate>Fri, 17 Jan 2020 01:00:00 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opnsense_not_update_ddns/</guid><description>OPNsenseでDDNSの自動更新のためにdyndnsというものを使っていますが、エラー吐いてうまく更新してくれなかったので、 解消法をこちらに残しておきます。
+filename: FTPのファイル名</description></item><item><title>OPNsenseでDDNSが自動更新されない</title><link>https://yoneyan.dev/tech/network/opnsense_not_update_ddns/</link><pubDate>Fri, 17 Jan 2020 01:00:00 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opnsense_not_update_ddns/</guid><description>OPNsenseでDDNSの自動更新のためにdyndnsというものを使っていますが、エラー吐いてうまく更新してくれなかったので、 解消法をこちらに残しておきます。
 かなり単純すぎる間違いを起こしていたのであまり役に立たないかもしれないですが、 ご了承ください。
 1. 基本 1.1. OPNsenseとは m0n0wallからフォークされたものであり、オープンソースで作られているファイアウォールOSです。
 このOPNsenseはFreeBSDベースで作られており、様々な種類の拡張機能があるのが特徴です。

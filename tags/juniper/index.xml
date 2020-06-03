@@ -2,5 +2,4 @@
 アップデート ge-0/0/0に192.168.0.2/24を割当て
 FTP root@Juniper# set interface ge-0/0/0 unit 0 family inet address 192.168.0.2/24 root@Juniper# set security zones security-zone trust interfaces ge-0/0/0.0 root@Juniper# set security zones security-zone trust host-inbound-traffic system-services all root@Juniper# set security zones security-zone trust host-inbound-traffic protocols all root@Juniper# exit root@Juniper&amp;gt; request system software add no-copy ftp://[user]:[pass]@172.16.0.1/[filename].tgz user: FTPユーザ名
 pass: FTPパスワード
-filename: FTPのファイル名
-FTP root@Juniper# set interface ge-0/0/0 unit 0 family inet address 192.168.0.2/24 root@Juniper# set security zones security-zone trust interfaces ge-0/0/0.</description></item></channel></rss>
+filename: FTPのファイル名</description></item></channel></rss>
