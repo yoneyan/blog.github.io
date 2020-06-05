@@ -744,10 +744,7 @@ PowerConnect6248中身[/caption] こんな感じになってます。
 起きたこと 記憶域プールを作成しようとすると、プールを作成できませんという謎のエラーが出ました。 「 エラー理由にドライブの接続を確認して、もう一度やり直してください。」という表示が出ました。 ところが、本体を開けてHDDの接続状況を確認してもしっかりとSATAで接続されています。 HDDが壊れちゃったのかなと思い、ディスクの管理を見てもしっかりとディスクを認識してます。 念のため他のPCでいれても、認識しました。 そこで、ググるとJmicronのSATAコントローラーでは記憶域プールを作成できないという記事が見つかりました。（参考にさせていただいたリンク先https://signal-flag-z.blogspot.jp/2017/07/jmicron-sata-not-support-storage-space.html） サーバーのSATAコントローラーが原因なのかなと思い、デバイスマネージャを見てみました。
 解決 デバイスマネージャを見てみると、SATAコントローラが標準になっていました。
 そこになんとなく、富士通のドライバーダウンロードページからダウンロードしたIntelのSATAドライバーを突っ込んでみると、見事に記憶域プールを作ることができました。
-まとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！</description></item><item><title>Steamでおすすめの町建設ゲーム3選</title><link>https://yoneyan.dev/game/steam/town-construction-games/</link><pubDate>Thu, 22 Mar 2018 17:22:35 +0900</pubDate><guid>https://yoneyan.dev/game/steam/town-construction-games/</guid><description>今回はSteamでおすすめの町建設ゲームを3つほど紹介させていただきます。
-SimCity™ 4 Deluxe Edition 通常価格:1980円 対応OS:windowsXP（windows10動作可能） 最低スペック
-CPU pentium3 500以降 Memory 256MB GPU 32MB、DirectX7.0以降対応のグラフィックボードであること Storage 1.6GB以上 Steam:http://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/ 町建設ゲームで一番有名なのがSimcityシリーズだと思います。 Steam版の残念なところはSimcityシリーズの最新作はOriginにしかないところです。 最新作ではないというところもあり、かなりゲームシステム的には古いですが、逆に懐かしのSimcityのスーパーファミコン版を思い出すところもあり、これはこれで面白いと思います。 日本語化する必要はありますが、比較的簡単にできるので、そこら辺は安心してください。 町建設ゲームといえばSimcityシリーズというところもあるので、みなさん是非やってみてはいかがでしょうか。 スペック的には今のパソコンでは余裕でいけます。
-Cities: Skylines 通常価格:2980円 （Deluxe Editionは3980円） 対応OS:windowsXP～windows8.1（windows10でも動作確認） 最低スペック * CPU Intel Core 2 Duo 3.0GHz 又は AMD Athlon 64 X2 6400+ 3.2GHz以降 * Memory 4G * GPU nVIDIA GeForce GTX 260, 512 MB or ATI Radeon HD 5670, 512 MB 以降 * Storage 4G以降</description></item><item><title>美少女ゲームをやる人はXbox360を買うべき！！</title><link>https://yoneyan.dev/talk/play-beautiful-girl-games/</link><pubDate>Fri, 09 Mar 2018 22:09:46 +0900</pubDate><guid>https://yoneyan.dev/talk/play-beautiful-girl-games/</guid><description>美少女ゲームをするのにXbox360がおすすめの理由をこの記事では紹介させていただきます。
+まとめ windows10になってつい、ドライバが自動的にインストールされてしまうので、ドライバをインストールする必要があまりないなーと思っていたのですが、こういうこともありますｗ 意外とSATAコントローラーが自動でインストールされることが少なく、CF-SX2というノートパソコンでもSATAコントローラーが標準になってました。 これからはクリーンインストールした後は、デバイスマネージャを開いて、しっかりと入っているか確認する必要がありそうです。 記憶域プールを作成できない方はSATAコントローラーを見てみるといいでしょう。 と言う風な感じで今回はこれで終わります。ここまで見てくださった方ありがとうございました！</description></item><item><title>美少女ゲームをやる人はXbox360を買うべき！！</title><link>https://yoneyan.dev/talk/play-beautiful-girl-games/</link><pubDate>Fri, 09 Mar 2018 22:09:46 +0900</pubDate><guid>https://yoneyan.dev/talk/play-beautiful-girl-games/</guid><description>美少女ゲームをするのにXbox360がおすすめの理由をこの記事では紹介させていただきます。
 理由 ゲームソフトがほかのコンシューマ機に比べてかなり安いという点にあります。 PC版の方をやりたくても10年以上のゲームでさえ、中古価格が5000円や10000円のゲームも多いんですよねーー だからコンシューマ機版の美少女ゲームをやることになってしまうんですが、PC版に比べて安いとは言っても美少女ゲームの多くは結構お値段が張ります。（特に有名なやつは&amp;hellip;） 例えば、これらのソフトで比較してみましょう
 ゲームソフト比較 車輪の国、向日葵の少女 車輪の国 向日葵の少女(通常版) - Xbox360 Amazon 楽天市場 Yahooショッピング とこのようにPS3やPSPでは新品や中古に関わらず未だにこのような値段がします。 しかし、Xbox360版はかなり価格が抑えられています。他のコンシューマ機の中古のゲームソフトに比べてかなり安く買えます。 なぜかXbox360版の通常版より限定版が安いのはちょっと謎ですがw ゲームソフトによってPS3版の方が安いというものもありますが、美少女ゲームの多くはXbox360版のソフトの方が安く買うことが出来ます。
 CHAOS;HEAD NOAH CHAOS; HEAD NOAH (カオスヘッドノア) (通常版) 【CEROレーティング「Z」】 - Xbox360 Amazon 楽天市場 Yahooショッピング CHAOS;HEAD NOAHで比較してみましょう。
@@ -1117,49 +1114,7 @@ android7.1.1でできること マルチウィンドウが標準で使えるよ�
 これは使いやすいです。
 このようにOS自体のメモリ占有率も比較的軽く収まっています
 通知エリアがシンプルになりました。
-まとめ このカスタムROMは入れておくべきだと思いました。 前回の記事でCM13を入れた方はこちらに乗り換えほうがHDRモードでのカメラ撮影もできるようになっているので、導入するのをおすすめします。 わからないことがあればコメント欄で質問していただくと答えれる範囲で回答させていただきます。 ここまで見てくださってありがとうございました。</description></item><item><title>Steamでおすすめのシミュレーションゲーム6選</title><link>https://yoneyan.dev/game/steam/simulation-games/</link><pubDate>Mon, 30 Jan 2017 02:14:02 +0900</pubDate><guid>https://yoneyan.dev/game/steam/simulation-games/</guid><description>今回はSteamでおすすめのシミュレーションゲームを紹介します。
-そもそもSteamとはなんじゃいという人は パソコン版のゲーム配信ストアです。PlayStationStoreのパソコン版と思ったらいいのではないのかなと思います。
-Prison Architect リンク：http://store.steampowered.com/app/233450/
-価格：2980円～
-対応プラットフォーム：windows,mac,linux
-リリース日: 2015年10月6日
-言語：日本語対応
-自分のプレイ時間:133時間
-このゲームははまるとやめられませんでした。
-刑務所運営シミュレーションゲームです。
-これははまりすぎてめちゃくちゃ時間を使いました。それほどおもしろいゲームです。
-いかに囚人が脱走しないような建物を作るのか考えながら作ると思わず時間が経ってしまうゲームです。
-値段がそこそこ高いので、Steamで安売りしているときに買うのがいいのではないのかなと思います。
-スマホ版に移植版を出すと公式が言っているのでそれも楽しみです。
-Factorio リンク：http://store.steampowered.com/app/427520/
-価格：2300円現在は3000円～
-対応プラットフォーム：windows,mac,linux
-リリース日:2016年2月26日
-言語：日本語対応
-自分のプレイ時間:77時間
-工業系シミュレーションゲームです。
-生産や採掘などをいかに自動化するかを考えながら楽しめるゲームです。
-いかに効率よく自動化するのか試行錯誤するのがとても楽しいゲームになっています。
-RimWorld リンク：http://store.steampowered.com/app/294100/
-価格：2980円～
-対応プラットフォーム：windows,mac,linux
-リリース日:2016年7月16日
-言語：日本語対応
-自分のプレイ時間:63時間
-タブレットPCのような低スペックでも動くゲームなので買っておいて損はないでしょう。
-惑星から脱出を目指すゲームです。
-その中ではいろんなことが待ち受けていますが、それをとても楽しめるゲームになっています。
-Cities: Skylines リンク：http://store.steampowered.com/app/255710/
-価格：2980円～
-対応プラットフォーム：windows,mac,linux
-リリース日:2015年3月11日
-言語：日本語非対応（有志の方が日本語に翻訳してくれているので日本語化可能）
-自分のプレイ時間:37時間
-町建設シミュレーションゲームです。
-SimCityのPC版を買いましたが、エリアを広げることがあまりできないのでこれを買いました。
-グラフィックがかなりいいので、見ていて飽きないゲームになっています。
-SimCityに飽きた方にもおすすめのゲームなのでやってみてはどうでしょうか
-Microsoft Flight Simulator X:Steam Edition リンク：http://store.</description></item><item><title>契約すべき有料サービス5選</title><link>https://yoneyan.dev/talk/recommend/services/</link><pubDate>Sun, 29 Jan 2017 23:59:43 +0900</pubDate><guid>https://yoneyan.dev/talk/recommend/services/</guid><description>1.amazonプライム会員 公式サイト：https://www.amazon.co.jp/gp/prime 年間:3900円（月額換算:325円） 契約方法:クレジットカード（デビットカードも可能）のみ
+まとめ このカスタムROMは入れておくべきだと思いました。 前回の記事でCM13を入れた方はこちらに乗り換えほうがHDRモードでのカメラ撮影もできるようになっているので、導入するのをおすすめします。 わからないことがあればコメント欄で質問していただくと答えれる範囲で回答させていただきます。 ここまで見てくださってありがとうございました。</description></item><item><title>契約すべき有料サービス5選</title><link>https://yoneyan.dev/talk/recommend/services/</link><pubDate>Sun, 29 Jan 2017 23:59:43 +0900</pubDate><guid>https://yoneyan.dev/talk/recommend/services/</guid><description>1.amazonプライム会員 公式サイト：https://www.amazon.co.jp/gp/prime 年間:3900円（月額換算:325円） 契約方法:クレジットカード（デビットカードも可能）のみ
 よい点
 配送無料 お急ぎ便無料 プライムミュージック プライムビデオなど 悪い点
 特にないが、契約の際はクレジットカードが必要 一番おすすめの有料サービスです。 この価格帯で豊富なサービスがあるので絶対契約しておいた方がいいです。
