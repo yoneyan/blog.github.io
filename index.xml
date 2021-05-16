@@ -2,13 +2,7 @@
 アップデート ge-0/0/0に192.168.0.2/24を割当て
 FTP root@Juniper# set interface ge-0/0/0 unit 0 family inet address 192.168.0.2/24 root@Juniper# set security zones security-zone trust interfaces ge-0/0/0.0 root@Juniper# set security zones security-zone trust host-inbound-traffic system-services all root@Juniper# set security zones security-zone trust host-inbound-traffic protocols all root@Juniper# exit root@Juniper&amp;gt; request system software add no-copy ftp://[user]:[pass]@172.16.0.1/[filename].tgz user: FTPユーザ名
 pass: FTPパスワード
-filename: FTPのファイル名</description></item><item><title>Youtube始めてみます</title><link>https://yoneyan.dev/talk/start-youtube/</link><pubDate>Wed, 03 Jun 2020 13:10:14 +0900</pubDate><guid>https://yoneyan.dev/talk/start-youtube/</guid><description>Youtube始めます。。
-チャンネル
-チャンネル登録はこちら
-経緯 本格的にやり始める際のチャンネル登録者数は97人程度でかなり少なく、どこまで増やせるかに挑戦してみようと思います。 また、Youtubeでサーバやネットワークを触っている人たちがあまりいなさそうなので、この分野でどれくらいの集客が期待できるかということを試してみようと思っています。 サーバやネットワークをやっている人が少ないこともあって、参入するには悪くはないと思っています。 しかし、その分野に興味がある人があまりいない（Youtubeを見ている層ではほぼいない。。）ので現実は厳しそうです。 また、自分の喋りも上手くないのでこの点もなかなか難しいところかなと思っています。
-現状 現状2週間投稿していますが、なかなか厳しいと思っています。サーバやネットワークをYoutube検索で調べる人がまずいない。 Youtube検索で調べる人がいない＝動画を見てくれない という連鎖が起きているので、これを打破しないと厳しいと思っています。 しゃべりの練習になっていいところもあるので、あまり高いところは望ますに淡々とやっていこうと思っています。
-投稿頻度 現時点で約2週間投稿していますが、今のところネタ切れが起きていないのでこのまま毎日投稿していきたいと思っています。
-まとめ 果たして、どこまでできるかわかりませんが少し見ておもしろそうだなという方がいらっしゃれば、チャンネル登録お願いします。。。。</description></item><item><title>各種ネットワーク機器(Cisco、YAMAHAなど)のユーザ設定方法</title><link>https://yoneyan.dev/network/command/useradd/</link><pubDate>Mon, 18 May 2020 00:00:00 +0900</pubDate><guid>https://yoneyan.dev/network/command/useradd/</guid><description>この記事では&amp;hellip; Cisco,Juniper,Yamaha,Allied Telesisのユーザ設定の方法を紹介します。 Yamaha Allied Telesisに関しては後ほど追加します。 ネットワーク機器のコンフィグは追加していく予定です。 自分が使うためのコマンドをまとめていく予定です。
+filename: FTPのファイル名</description></item><item><title>各種ネットワーク機器(Cisco、YAMAHAなど)のユーザ設定方法</title><link>https://yoneyan.dev/network/command/useradd/</link><pubDate>Mon, 18 May 2020 00:00:00 +0900</pubDate><guid>https://yoneyan.dev/network/command/useradd/</guid><description>この記事では&amp;hellip; Cisco,Juniper,Yamaha,Allied Telesisのユーザ設定の方法を紹介します。 Yamaha Allied Telesisに関しては後ほど追加します。 ネットワーク機器のコンフィグは追加していく予定です。 自分が使うためのコマンドをまとめていく予定です。
 Cisco ユーザ追加 SW(config)# username &amp;lt;user&amp;gt; password &amp;lt;mode&amp;gt; &amp;lt;pass&amp;gt; user: ユーザ名
 pass: パスワード
 mode: modeは以下の通りです。
