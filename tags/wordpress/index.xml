@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wordpress on のんびりと生きたい</title><link>https://yoneyan.dev/tags/wordpress/</link><description>Recent content in wordpress on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 30 Jan 2019 19:41:05 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml"/><item><title>wordpressでGutenbergエディタが開いてくれない</title><link>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</link><pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate><guid>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</guid><description>最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。 個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。
-結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。
-このようになった Gutenbergが開いてくれない
-上の画像にもあるように、「エディターで予期しないエラーが発生しました」
-「復旧を試みる」をクリックしても何の反応もありませんでした。
-「投稿内容をコピー」や「エラー文をコピー」はクリックすると反応がありしっかりとコピーできました。
-たまたま、開いている記事だけがおかしいのかと思い、いくつか他の記事を開いても同じような現象が発生しました。
-プラグインを疑う 最初にプラグインを疑いました。
-すると、まさかのドンピシャでした。
-すべてのプラグインを停止
-すべてのプラグインを停止させてから一つずつ有効にさせていくと&amp;hellip;
-プラグイン一覧
-Gutenbergプラグインが一番怪しいということがわかりました。
-おそらく、標準搭載される前に、このプラグインを使っていたので、これがバージョンが上がった段階でこのような現象が起こったことが今回の原因ではないかと思っています。
-結論 プラグインはしっかり管理しておいた方がいいです
-私の場合は、プラグインの関連でこの問題が起こりました。逆に、プラグインを全部無効にしてもGutenbergエディタが開けない場合は他の問題が起因している可能性が高いです。</description></item><item><title>wordpressに入れておくべき日本製テーマ3選</title><link>https://yoneyan.dev/talk/recommend/wordpress-theme/</link><pubDate>Wed, 08 Feb 2017 23:34:47 +0900</pubDate><guid>https://yoneyan.dev/talk/recommend/wordpress-theme/</guid><description>ブログサイトでwordpressを使う方が増えています。 その事実としてなんと全世界のサイトで約25％がwordpressが使われているという統計が出ています。どこまで成長するか分からないですね。（もちろんいい意味で） ということで、たくさんの人がwordpressを使っているということもあるので今回はwordpressおすすめの（日本で作られた）テーマを3つ選びました。 あくまで個人的な意見なのでそこらへんはご了承ください
-1.simplicity リンク:https://wp-simplicity.com/ 設定方法などが公式サイトにしっかりと書かれているので初心者にはおすすめです。 当ブログサイトもこちらのテーマを使わせていただいております。 adsense広告の配置が簡単に変えられる点でとても気に入っています。(´▽｀) 記事のの手前にadsense広告を設置することも可能なので本当に助かっています。 画像遅延読み込みやSEO対策の詳細な設定もできます。なので、このテーマを入れておけばプラグインをインストールしまくる必要がなくなるのでサーバーの負担軽減にもなります。 シェアボタンの位置を簡単にカスタマイズできる点もおすすめです。
-2.Xeory リンク:https://xeory.jp/ このテーマはダウンロードする際に簡単な会員登録が必要になります。 こちらも公式サイトにかなり親切丁寧に設定方法やSEO関連のことまで載っています。 企業向けのテーマとしておすすめです。 お問い合わせページを簡単に作ることができるのでwordpressを使って企業のホームページを作るときに便利です。 XeoryBaseというブログ用のテーマもあるのでブログとして使う方にもおすすめです。
-3.stinger8 リンク:http://wp-fun.com/
-無料版stingerの最新版になります。 stinger7と比べてかなり機能が削られましたが、そのおかげでかなり軽量化されています。 カスタマイズしまくりたい！！という方にはお勧めです。 著者も当初はこのテーマを使っていましたが、adsense広告の配置を好きなようにできなかったこともあり断念しました。 個人的にはレイアウトは好みなんですが、stingerの強みの機能はほとんどが有料化されちゃいました。そこだけが残念&amp;hellip; 有料版を買っちゃえばいいんですが、さすがにそれはきついという方はstinger7などの以前のバージョンを導入する方がいいかもしれません。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wordpress on のんびりと生きたい</title><link>https://yoneyan.dev/tags/wordpress/</link><description>Recent content in wordpress on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 30 Jan 2019 19:41:05 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml"/><item><title>wordpressでGutenbergエディタが開いてくれない</title><link>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</link><pubDate>Wed, 30 Jan 2019 19:41:05 +0900</pubDate><guid>https://yoneyan.dev/tech/etc/gutenberg-editor-error/</guid><description>&lt;p&gt;最近、Wordpressで標準搭載されたGutenbergエディタという世間では賛否両論になっているものがあります。
+個人的には好きなエディタですが、久しぶりに書き溜めていた記事をもう一度書こうと思い開いてみると「エディタで予期しないエラーが発生しました」と出てきてかなり焦りました。&lt;/p&gt;
+&lt;p&gt;結果として、なんとか問題は解消されましたがそこまで大したことはしていないのですが、Wordpressがバグったときに使えると思うので、備忘録として残します。&lt;/p&gt;</description></item><item><title>wordpressに入れておくべき日本製テーマ3選</title><link>https://yoneyan.dev/talk/recommend/wordpress-theme/</link><pubDate>Wed, 08 Feb 2017 23:34:47 +0900</pubDate><guid>https://yoneyan.dev/talk/recommend/wordpress-theme/</guid><description>&lt;p&gt;ブログサイトでwordpressを使う方が増えています。 その事実としてなんと全世界のサイトで約25％がwordpressが使われているという統計が出ています。どこまで成長するか分からないですね。（もちろんいい意味で） ということで、たくさんの人がwordpressを使っているということもあるので今回はwordpressおすすめの（日本で作られた）テーマを3つ選びました。 あくまで個人的な意見なのでそこらへんはご了承ください&lt;/p&gt;</description></item></channel></rss>

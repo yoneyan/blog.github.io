@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>android on のんびりと生きたい</title><link>https://yoneyan.dev/tags/android/</link><description>Recent content in android on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 31 Jan 2017 02:12:27 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>zenfone2laserにLineageOS 14.1を導入してみた</title><link>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</link><pubDate>Tue, 31 Jan 2017 02:12:27 +0900</pubDate><guid>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</guid><description>前回、zenfone2laserにCM13を導入しましたが、いつのまにかandroid7.0ベースのLineageOS 14.1というのが出ていたので今回はこれを導入してみます。
-カスタムROM情報 android7.1.1ベースになりました。
-android7.1.1でできること マルチウィンドウが標準で使えるようになった アプリの一括アンインストールができるようになった バッテリー節電機能が強化された デザインの変更 などの機能強化されました。 またセキュリティも強化されています。
-今回のカスタムROMの詳細 作業 準備するもの ROM本体 https://www.androidfilehost.com/?w=files&amp;amp;flid=133264 から最新のROMをダウンロードします。 TWRPの導入 これは前回説明しているのでこの記事では省きます。 前回の記事はこちらから
-導入 1.最初にカスタムROMを導入するために前に導入したTWRPリカバリモードを起動します。 TWRPを導入していない場合は前回の記事で導入を！
-2.SDカードにさっきダウンロードしたカスタムROMをSDカード又は内蔵メモリに転送します。 3.TWRPリカバリモードから先ほど転送したzipをインストールする 転送したZIPを選択してインストールを開始します。 今回は前回の環境を残すためにフォーマットを行わないことにしました。
-4.インストール完了し、再起動を行います 再起動します。
-こんな感じの起動ロゴが出てきます。
-ちゃんと起動してくれました。
-使ってみた感想 このカスタムROMは頻繁に更新しているのでセキュリティやバグなどもあまりないのでおすすめです。 前使っていたカスタムROMはバッテリー消費がかなり早く、標準ROMに戻そうかなとも思っていましたが、今回はこれで落ち着きそうです。 それにandroid7.0のマルチウィンドウが非常に使いやすいです。
-これは使いやすいです。
-このようにOS自体のメモリ占有率も比較的軽く収まっています
-通知エリアがシンプルになりました。
-まとめ このカスタムROMは入れておくべきだと思いました。 前回の記事でCM13を入れた方はこちらに乗り換えほうがHDRモードでのカメラ撮影もできるようになっているので、導入するのをおすすめします。 わからないことがあればコメント欄で質問していただくと答えれる範囲で回答させていただきます。 ここまで見てくださってありがとうございました。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>android on のんびりと生きたい</title><link>https://yoneyan.dev/tags/android/</link><description>Recent content in android on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 31 Jan 2017 02:12:27 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>zenfone2laserにLineageOS 14.1を導入してみた</title><link>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</link><pubDate>Tue, 31 Jan 2017 02:12:27 +0900</pubDate><guid>https://yoneyan.dev/tech/android/linageos14.1-zenfone2laser/</guid><description>&lt;p&gt;前回、zenfone2laserにCM13を導入しましたが、いつのまにかandroid7.0ベースのLineageOS 14.1というのが出ていたので今回はこれを導入してみます。&lt;/p&gt;</description></item></channel></rss>

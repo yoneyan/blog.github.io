@@ -1,14 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>router on のんびりと生きたい</title><link>https://yoneyan.dev/tags/router/</link><description>Recent content in router on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Jun 2018 07:33:56 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/router/index.xml" rel="self" type="application/rss+xml"/><item><title>自宅で業務用ルータをおすすめする理由</title><link>https://yoneyan.dev/talk/recommend-commercial-router/</link><pubDate>Wed, 27 Jun 2018 07:33:56 +0900</pubDate><guid>https://yoneyan.dev/talk/recommend-commercial-router/</guid><description>みなさんは、自宅のルータはどういうものを使ってますか？
-たぶん、普通の人ならプロバイダーが貸し出ししているルータ又は市販のルータを使ってると思います。（バッファローやIO dataのルータのように&amp;hellip;）
-業務用ルータのメリット 安定している 設定項目が多い コマンドで設定ができる（ごく一部の機種を除いて） POE対応の機種もある このメリットを1つずつ紹介します。
-安定している さすがに、高いと言うこともあり一般家庭で使うルータに比べるとかなり安定しています。 ファンが付いている機種もあり、処理能力が落ちることが少ないです。
-設定項目が多い 設定項目が多いことはかなりのメリットになっています。VPNの設定もルータのみで出来る点がメリットです。 また、ルーティングの設定や802.1xの認証（絶対使わないと思いますが&amp;hellip;）もルータによっては可能になっています。
-コマンドで設定できる これは、GUIで操作したくない人（変態な人）にとって必須と言っても過言ではない機能です。例えば、
-ip address 192.168.0.1 255.255.255.0 とこのような感じでかなり簡単にIPアドレスの設定やサブネットマスクの設定が出来ます。 GUIはマウス操作がめんどくさいと筆者も思っているのでCUIで使ってます。
-POE対応の機種もある 上のルータはFE LANの0-3までがPOE給電対応
-POEとはPowerOverEthernetの略でLANケーブル一本で通信と電源を同時に受電側に送ることが出来る規格のことを言います。POE受電対応の無線LANなどとつなげるとかなり便利です。
-業務用ルータのデメリット 高い 設定が難しい でかい（一部機種） うるさい（一部機種） 高い やっぱり高いというのはあります。
-Cisco Startシリーズ C841M-4X-JSEC/K9/START Amazon 楽天市場 Yahooショッピング こんな感じで無線機能が付いていないのに、1万円以上するということを考えると高いです。 昔に比べるとかなり安くなっています。安定性のことを考えると買うのもおすすめです。
-設定が難しい さすがに、いきなりコマンド操作をすると慣れていてもややこしいです。 ネットワーク機器などを触っていない人が触ると余計にそう思ってしまうでしょう。 そのことも考えると、コマンドアレルギーの方は家庭用のルータをおすすめします。
-でかい＆うるさい これはルータによって違うのでここで書いていいかわかりませんが、家庭用のルータと比べると絶対でかいです。高性能のルータになってくると1Uや2Uのラックに入る形のルータになってしまい、 でかい＆うるさいのオンパレードなのでそのところは注意が必要です。 しかし、普通の業務用ルータではめちゃくちゃでかいということやうるさいことはないので安心して使えると思います。
-まとめ 業務用ルータを使う理由として、自由度が高いのが一番の理由です。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>router on のんびりと生きたい</title><link>https://yoneyan.dev/tags/router/</link><description>Recent content in router on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Jun 2018 07:33:56 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/router/index.xml" rel="self" type="application/rss+xml"/><item><title>自宅で業務用ルータをおすすめする理由</title><link>https://yoneyan.dev/talk/recommend-commercial-router/</link><pubDate>Wed, 27 Jun 2018 07:33:56 +0900</pubDate><guid>https://yoneyan.dev/talk/recommend-commercial-router/</guid><description>&lt;p&gt;みなさんは、自宅のルータはどういうものを使ってますか？&lt;/p&gt;
+&lt;p&gt;たぶん、普通の人ならプロバイダーが貸し出ししているルータ又は市販のルータを使ってると思います。（バッファローやIO dataのルータのように&amp;hellip;）&lt;/p&gt;</description></item></channel></rss>
