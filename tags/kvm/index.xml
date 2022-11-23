@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kvm on のんびりと生きたい</title><link>https://yoneyan.dev/tags/kvm/</link><description>Recent content in kvm on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 31 Jul 2019 21:58:46 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/kvm/index.xml" rel="self" type="application/rss+xml"/><item><title>virt-install時にbr0のエラーが出て進まない</title><link>https://yoneyan.dev/tech/linux/error-libvirt-1/</link><pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate><guid>https://yoneyan.dev/tech/linux/error-libvirt-1/</guid><description>&lt;h3 id=&#34;環境&#34;&gt;環境&lt;/h3&gt;
-&lt;p&gt;OS: CentOS7 7.6.1810&lt;/p&gt;
-&lt;p&gt;Bridge: br0 (eth0をbr0にブリッジで接続している)&lt;/p&gt;
-&lt;h2 id=&#34;起こったこと&#34;&gt;起こったこと&lt;/h2&gt;
-&lt;p&gt;virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kvm on のんびりと生きたい</title><link>https://yoneyan.dev/tags/kvm/</link><description>Recent content in kvm on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 31 Jul 2019 21:58:46 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/kvm/index.xml" rel="self" type="application/rss+xml"/><item><title>virt-install時にbr0のエラーが出て進まない</title><link>https://yoneyan.dev/tech/linux/error-libvirt-1/</link><pubDate>Wed, 31 Jul 2019 21:58:46 +0900</pubDate><guid>https://yoneyan.dev/tech/linux/error-libvirt-1/</guid><description>&lt;h3 id="環境">環境&lt;/h3>
+&lt;p>OS: CentOS7 7.6.1810&lt;/p>
+&lt;p>Bridge: br0 (eth0をbr0にブリッジで接続している)&lt;/p>
+&lt;h2 id="起こったこと">起こったこと&lt;/h2>
+&lt;p>virt-installのコマンドを走らせた際にbridge関連のエラーが出たので対処法をこちらに載せます。&lt;/p></description></item></channel></rss>

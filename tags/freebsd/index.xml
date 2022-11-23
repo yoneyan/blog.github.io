@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>freebsd on のんびりと生きたい</title><link>https://yoneyan.dev/tags/freebsd/</link><description>Recent content in freebsd on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 22 Jul 2019 11:16:02 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/freebsd/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeBSDでポート開放をする</title><link>https://yoneyan.dev/tech/network/open-port-with-freebsd/</link><pubDate>Mon, 22 Jul 2019 11:16:02 +0900</pubDate><guid>https://yoneyan.dev/tech/network/open-port-with-freebsd/</guid><description>&lt;h2 id=&#34;freebsdとは&#34;&gt;FreeBSDとは&lt;/h2&gt;
-&lt;p&gt;私自身もよくわかっていないところが多いので、&lt;a href=&#34;https://ja.wikipedia.org/wiki/FreeBSD&#34;&gt;https://ja.wikipedia.org/wiki/FreeBSD&lt;/a&gt;こちらを参考に箇条書きしてみるとこんな感じになりました。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;FreeBSDはUnix系のOS&lt;/li&gt;
-&lt;li&gt;処理速度よりも安定性を重視した設計がされているらしい？&lt;/li&gt;
-&lt;li&gt;Linux向けに開発されたものもしっかりと動く&lt;/li&gt;
-&lt;li&gt;パッケージマネージャとしてpkgが入っている&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>freebsd on のんびりと生きたい</title><link>https://yoneyan.dev/tags/freebsd/</link><description>Recent content in freebsd on のんびりと生きたい</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 22 Jul 2019 11:16:02 +0900</lastBuildDate><atom:link href="https://yoneyan.dev/tags/freebsd/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeBSDでポート開放をする</title><link>https://yoneyan.dev/tech/network/open-port-with-freebsd/</link><pubDate>Mon, 22 Jul 2019 11:16:02 +0900</pubDate><guid>https://yoneyan.dev/tech/network/open-port-with-freebsd/</guid><description>&lt;h2 id="freebsdとは">FreeBSDとは&lt;/h2>
+&lt;p>私自身もよくわかっていないところが多いので、&lt;a href="https://ja.wikipedia.org/wiki/FreeBSD">https://ja.wikipedia.org/wiki/FreeBSD&lt;/a>こちらを参考に箇条書きしてみるとこんな感じになりました。&lt;/p>
+&lt;ul>
+&lt;li>FreeBSDはUnix系のOS&lt;/li>
+&lt;li>処理速度よりも安定性を重視した設計がされているらしい？&lt;/li>
+&lt;li>Linux向けに開発されたものもしっかりと動く&lt;/li>
+&lt;li>パッケージマネージャとしてpkgが入っている&lt;/li>
+&lt;/ul></description></item></channel></rss>
