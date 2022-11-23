@@ -7,7 +7,7 @@
 例：1GbEのケーブルを2本挿して、LAGにすると、２Gbpsの帯域まで確保することが可能になります。
 もし、一本でも抜けたり故障などで切断されても、冗長化もされているので通常の１Gbpsで通信します。
 このように、絶対止まってほしくないものやNASのように速度が求められていて、止まってほしくないもので使うときに非常に必要になる技術です。</p><h2 id=設定方法>設定方法</h2><p>設定方法として、以下の2つがあります。</p><ul><li>nmtui（GUI）</li><li>nmcli（CUI)</li></ul><p>今回はこの内のnmtuiを使った設定方法を紹介します。
-nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。</p><h2 id=設定していく>設定していく</h2><h3 id=1nmtuiを起動する>1.nmtuiを起動する</h3><p>sudo nmtui</p><p>恐らく、管理者権限ではないと設定出来ない可能性が高いです。</p><p>こんな感じのネットワークの設定画面が表示されます。</p><h3 id=2lagの設定をしていく>2.LAGの設定をしていく</h3><p>Edit a connectionを選択してから、Addを選択すると、下のようなものが出てきます。</p><p>LAGを使う場合はBondを選択します。</p><h3 id=3bondの設定をしていく>3.bondの設定をしていく</h3><p>AddでEthernetを選択し、Device名を手打ちでします。
+nmtuiとnmcliはNetworkManagerの管理ツール的なものと思っていただいても間違っていないです。 環境はCentOS7.5を使用しています。</p><h2 id=設定していく>設定していく</h2><h3 id=1nmtuiを起動する>1.nmtuiを起動する</h3><p>sudo nmtui</p><p>恐らく、管理者権限ではないと設定出来ない可能性が高いです。</p><figure><img src=https://yoneyan.dev/images/app/server/nmtui/mainmenu.webp alt width=768 height=576></figure><p>こんな感じのネットワークの設定画面が表示されます。</p><h3 id=2lagの設定をしていく>2.LAGの設定をしていく</h3><p>Edit a connectionを選択してから、Addを選択すると、下のようなものが出てきます。</p><figure><img src=https://yoneyan.dev/images/app/server/nmtui/add.webp alt width=768 height=576></figure><p>LAGを使う場合はBondを選択します。</p><h3 id=3bondの設定をしていく>3.bondの設定をしていく</h3><figure><img src=https://yoneyan.dev/images/app/server/nmtui/bond.webp alt width=768 height=576></figure><p>AddでEthernetを選択し、Device名を手打ちでします。
 それから、Modeで802.3adを選択すると、リンクアグリゲーションを使うことが出来るようになります。
 IPv4を固定にしたい場合は、Manualですることができます。 最後にOKを選択し、ダイアログを閉じます。
 これでLAGを使用することが可能になります。</p><h3 id=4ipアドレスを取得pingが通るか確認する>4.IPアドレスを取得＆pingが通るか確認する</h3><p>google.co.jpにpingが通るか確認するには</p><pre tabindex=0><code>ping google.co.jp

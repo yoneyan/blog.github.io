@@ -2,7 +2,27 @@
 &lt;p>サーバー側の設定は&lt;a href="http://yoneyan.dev/Try-building-a-CentOS-OpenVPN-server/">こちらから&lt;/a>&lt;/p></description></item><item><title>Edgerouterでポート開放をしてみる</title><link>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</link><pubDate>Fri, 22 Mar 2019 18:05:10 +0900</pubDate><guid>https://yoneyan.dev/tech/network/opening-the-port-with-edgerouter/</guid><description>&lt;p>今回はEdgerouterでポート開放をコマンド操作でしていきます。&lt;/p>
 &lt;p>こちらのサイトを参考にさせていただきました。&lt;/p>
 &lt;p>&lt;a href="https://qiita.com/maiani/items/b45b0505377401be083a">https://qiita.com/maiani/items/b45b0505377401be083a&lt;/a>&lt;/p>
-&lt;p>わかりにくい点などがありましたら、上記のサイトさんをご覧ください。&lt;/p></description></item><item><title>EdgerouterでPPPoEの設定をする</title><link>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</link><pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate><guid>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>わかりにくい点などがありましたら、上記のサイトさんをご覧ください。&lt;/p></description></item><item><title>EdgerouterでPPPoEの設定をする</title><link>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</link><pubDate>Tue, 12 Mar 2019 00:06:47 +0900</pubDate><guid>https://yoneyan.dev/tech/network/setup-edgerouter-pppoe/</guid><description>&lt;div class="item-box">
+&lt;div class="item-image">
+&lt;a href="https://www.amazon.co.jp/Ubiquiti-Networks-ER-X-Edgerouter-ER-X%EF%BC%88%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%EF%BC%89/dp/B010MZFH5A/ref=as_li_ss_tl?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;amp;keywords=edge&amp;#43;router&amp;amp;qid=1575200218&amp;amp;sr=8-2&amp;amp;linkCode=ll1&amp;amp;tag=yonedayuto-22&amp;amp;linkId=e0a3e758b46cad91dec24bf65c04795f&amp;amp;language=ja_JP" target="_blank">
+&lt;amp-img src="https://images-na.ssl-images-amazon.com/images/I/31WLrEKWR%2BL.webp" alt="Ubiquiti Networks Edgerouter ER-X（日本国内）" width=113 height=160>&lt;/amp-img>
+&lt;/a>
+&lt;/div>
+&lt;div class="item-info">
+&lt;div>Ubiquiti Networks Edgerouter ER-X（日本国内） &lt;br />
+&lt;div class="item-name">
+&lt;a href="https://www.amazon.co.jp/Ubiquiti-Networks-ER-X-Edgerouter-ER-X%EF%BC%88%E6%97%A5%E6%9C%AC%E5%9B%BD%E5%86%85%EF%BC%89/dp/B010MZFH5A/ref=as_li_ss_tl?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;amp;keywords=edge&amp;#43;router&amp;amp;qid=1575200218&amp;amp;sr=8-2&amp;amp;linkCode=ll1&amp;amp;tag=yonedayuto-22&amp;amp;linkId=e0a3e758b46cad91dec24bf65c04795f&amp;amp;language=ja_JP" target="_blank">Amazon&lt;/a>
+&lt;/div>
+&lt;div class="item-name">
+&lt;a href="https://hb.afl.rakuten.co.jp/hgc/19bf8eee.9249361e.19bf8eef.4574c5df/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkabau-r%2Fb0144r449w%2F&amp;amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkabau-r%2Fi%2F10000004%2F&amp;amp;link_type=hybrid_url&amp;amp;ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjB9" target="_blank">楽天市場&lt;/a>
+&lt;/div>
+&lt;div class="item-name">
+&lt;a href="" target="_blank">Yahooショッピング&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="clear-left">&lt;/div>
+&lt;/div>
 &lt;p>みんな大好きEdgerouterでPPPoEの設定をしていきます。
 この記事は、備忘録なので設定を変える必要がある部分は各自で変更お願いします。&lt;/p></description></item><item><title>Edgerouterでeo光のIPv6を使ってみる</title><link>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</link><pubDate>Fri, 08 Mar 2019 00:07:05 +0900</pubDate><guid>https://yoneyan.dev/tech/network/using-ipv6-of-eo-with-edgerouter/</guid><description>&lt;p>&lt;strong>Ubiquiti Networks Edgerouter ER-X（日本国内）&lt;/strong>
 &lt;a href="https://amzn.to/2Jm8Fug">Amazon&lt;/a>&lt;/p>
